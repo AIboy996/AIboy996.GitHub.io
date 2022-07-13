@@ -45,13 +45,7 @@ hr {
     height: 0;
     overflow: visible;
 }
-body, li, span, p {
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur),auto;
-}
-a {
-    background-color: transparent;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto;
-}
+
 strong{
     color: #FF0066;
 }
