@@ -1,22 +1,24 @@
-name: Publish docs via GitHub Pages
-on:
-  push:
+name: publish site
+on: # 在什么时候触发工作流
+  push: # 在从本地main分支被push到GitHub仓库时
     branches:
       - main
-
-jobs:
-  build:
-    name: Deploy docs
-    runs-on: ubuntu-latest
+  pull_request: # 在main分支合并别人提的pr时
+    branches:
+      - main
+jobs: # 工作流的具体内容
+  deploy:
+    runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: yangzhang.site
-          CONFIG_FILE: ./public/mkdocs.yml
-          EXTRA_PACKAGES: build-base
+      - uses: actions/checkout@v2 # 先checkout到main分支
+      - uses: actions/setup-python@v2 # 再安装Python3和相关环境
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
+      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: yangzhang.site
