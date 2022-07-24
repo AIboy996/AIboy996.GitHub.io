@@ -18,5 +18,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: yangzhang.site
-          CONFIG_FILE: .public/mkdocs.yml
+          CONFIG_FILE: ./public/mkdocs.yml
           EXTRA_PACKAGES: build-base
