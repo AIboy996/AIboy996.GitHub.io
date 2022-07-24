@@ -46,14 +46,9 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
   language: zh # 一些提示性的文字会变成中文
-  icon:
-    repo: fontawesome/brands/github
 
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
-## [top-right corner]
-repo_url: https://github.com/AIboy996/AIboy996.GitHub.io # 右上角点击跳转的链接
-repo_name: AIboy996.github.io # 右上角的名字
 ## [bottom-left corner]
 copyright: Copyright &copy; 2022 yangzhang # 左下角的版权声明
 ## [bottom-right corner]
@@ -88,7 +83,7 @@ markdown_extensions:
       linenums: true # 显示行号
       auto_title: true # 显示编程语言名称
   - pymdownx.superfences # 代码块高亮插件
-  # - meta # 支持Markdown文件上方自定义标题标签等
+  - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML

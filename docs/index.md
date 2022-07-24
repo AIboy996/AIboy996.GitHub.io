@@ -39,7 +39,7 @@ print('Welcome to my site!')
 
 ## Contact me 🗨 
 
-- 🐧[QQ email](2207854887@qq.com)
+- 🐧[QQ email](mailto:2207854887@qq.com)
 - 🖳 [CSDN Blog](https://blog.csdn.net/qq_47723068)
 
 > 虽然很菜，有问必答
