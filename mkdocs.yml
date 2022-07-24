@@ -1,24 +1,27 @@
-site_name: yangzhang's Bolg
+site_name: yangzhang's Site
 site_url: https://yangzhang.site/
 
 
 nav:
-  - Home: index.md
   - Blog:
-    - Blog/blog-index.md
+    - Blog/index.md
     - Jupyter:
       - (1) 介绍: Blog/jupyter/jupyter1.md
       - (2) 基础使用: Blog/jupyter/jupyter2.md
       - (3) 远程服务: Blog/jupyter/jupyter3.md
       - (4) 进阶使用: Blog/jupyter/jupyter4.md
   - SomeMath:
-    - SomeMath/有理函数不定积分.md
+    - SomeMath/index.md
+    - SomeMath/一道有理函数不定积分.md
     - SomeMath/泰勒展开/泰勒展开.md
     - SomeMath/线性齐次差分方程.md
+  - About:
+    - About/index.md
 
 # [UI]
 ## [top]
 theme:
+  logo: assets/images/summation.png
   name: material
   palette: 
     - scheme: default # 日间模式
@@ -42,7 +45,9 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
+
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
+
 ## [top-right corner]
 repo_url: https://github.com/AIboy996/AIboy996.GitHub.io # 右上角点击跳转的链接
 repo_name: AIboy996.github.io # 右上角的名字
@@ -66,7 +71,6 @@ plugins:
     # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
       lang:
         - en
-        - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
@@ -78,13 +82,8 @@ markdown_extensions:
       auto_title: true # 显示编程语言名称
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
+
 extra_javascript:
-  # latex支持
-  # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
-  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
-  - mkdocs/javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
-extra_css:
-  - mkdocs/css/no-footer.css # 不使用底部的翻页
-  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+  - 'js/extra.js'
+  - 'js/baidu-tongji.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
