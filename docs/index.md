@@ -1,17 +1,36 @@
-# Welcome to MkDocs
+```python
+print('Hello world!')
+```
+## About me 👋
+大家好这里是`AIboy`，~~`AIgirl`的哥哥是也~~（真的是♂啦）
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+当然你也可以喊我`yangzhang`，但我还是觉得`AIboy`更酷一些qwq
 
-## Commands
+我的基本情况：
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- 上海某高校，统计本科在读
+- 没车、没房、没对象
+- 梦想是成为`贰刺螈`和`程序猿`
+- 因为python爱上了撸码，越陷越深
+- 疯狂的jupyter爱好者，即使它不适合写很多东西
+- 数学(又菜又爱)玩家
 
-## Project layout
+## Currently learning 🐌
+- python
+- MySQL
+- R language
+- C language
+- LaTeX
+- html+css+javascript
+- Linux（？
+- SAS（🐕都不用，虽然我会用
+- git（喂还有人在github上吹嘘自己在学git的嘛
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+> 总的来说就是见一点学一点，没事干了学一点，兴趣来了学一点，图一乐
+
+## Contact me 🗨 
+
+- 🐧[QQ email](2207854887@qq.com)
+- 🖳 [CSDN Blog](https://blog.csdn.net/qq_47723068)
+
+> 虽然很菜，有问必答
