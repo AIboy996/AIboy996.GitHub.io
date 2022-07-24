@@ -1,5 +1,9 @@
-今天我们介绍jupyter notebook的保姆级基本使用方法，目录如下：
-[toc]
+---
+tags:
+ - Jupyter
+---
+
+今天我们介绍jupyter notebook的保姆级基本使用方法
 ## 安装和个性化配置
 我们首先介绍如何在计算机上安装jupyter，这里以Windows为例，MacOS和Linux系统也差不多。
 ### Anaconda发行版

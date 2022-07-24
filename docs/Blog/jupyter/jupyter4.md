@@ -1,5 +1,10 @@
-今天的推文是传销jupyter notebook的最后一篇啦！目录如下：
-[toc]
+---
+tags:
+ - Jupyter
+---
+
+
+今天的推文是传销jupyter notebook的最后一篇啦！
 
 `❗❗超级长文警告❗❗`
 ## 系列推文回顾
