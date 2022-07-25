@@ -1,6 +1,7 @@
 site_name: yangzhang's Site
 site_url: https://yangzhang.site/
-
+site_author: yangzhang
+site_description: yangzhang的个人网站
 nav:
   - About:
     - About/index.md
@@ -67,10 +68,10 @@ extra:
 
 plugins:
   - search:
+      prebuild_index: true
       lang:
         - en
-        - zh
-        - jp
+        - ja
   - tags:
       tags_file: tags.md
   - git-revision-date-localized:
