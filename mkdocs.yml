@@ -15,6 +15,9 @@ nav:
       - 基础使用: Blog/jupyter/jupyter2.md
       - 远程服务: Blog/jupyter/jupyter3.md
       - 进阶使用: Blog/jupyter/jupyter4.md
+    - SAS:
+      - SAS的基本操作: Blog/SAS/SAS的基本操作.md
+      - SAS的统计应用: Blog/SAS/SAS的统计应用.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
