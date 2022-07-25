@@ -1,7 +1,5 @@
 ---
 title: Playground of Markdown
-tags:
-  -  About Me
 hide:
   - navigation
 ---
