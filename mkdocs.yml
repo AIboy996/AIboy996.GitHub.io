@@ -3,9 +3,12 @@ site_url: https://yangzhang.site/
 
 
 nav:
+  - About:
+    - About/index.md
+    - About/站内导航.md
+    - About/友链.md
   - Blog:
     - Blog/index.md
-    - Blog/站内导航.md
     - Jupyter:
       - 介绍: Blog/jupyter/jupyter1.md
       - 基础使用: Blog/jupyter/jupyter2.md
@@ -17,8 +20,7 @@ nav:
     - SomeMath/泰勒展开/泰勒展开.md
     - SomeMath/线性齐次差分方程.md
   - Tags: tags.md
-  - About:
-    - About/index.md
+  - Playground: playground.md
 
 # [UI]
 ## [top]
@@ -39,6 +41,7 @@ theme:
         icon: material/weather-sunny
         name: 切换至日间模式
   features:
+    - content.code.annotate # 代码块内的注释
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
@@ -46,9 +49,15 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
   language: zh # 一些提示性的文字会变成中文
+  icon:
+    repo: fontawesome/brands/github
 
-edit_uri: edit/main/docs # 编辑按钮跳转的链接
+edit_uri: ""  # 编辑按钮跳转的链接
 
+
+# Repository
+repo_name: AIboy996.github.io
+repo_url: https://github.com/AIboy996/AIboy996.github.io
 ## [bottom-left corner]
 copyright: Copyright &copy; 2022 yangzhang # 左下角的版权声明
 ## [bottom-right corner]
@@ -69,21 +78,28 @@ plugins:
     # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
       lang:
         - en
+    # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   - tags:
       tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
   
-  
-  # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
+  - footnotes
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       linenums: true # 显示行号
       auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
