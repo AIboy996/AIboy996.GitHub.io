@@ -7,11 +7,11 @@ hide:
 ---
 !!! note
 
-    这里用于调试本站支持的各类markdown扩展语法，基础的语法这里就不赘述了，参见markdown官方教程[^1]。此外，这里涉及的全部内容都可以参见mkdocs material的官网[^2]
+    这里用于调试本站支持的各类markdown扩展语法，基础的语法这里就不赘述了，参见markdown官方教程[^1]。此外，这里涉及的全部内容都可以参见mkdocs material的官网[^2]。并非所有的语法都是原生支持的，有些需要额外的插件以及额外的选项开启，这些都可以在官网上找到。
 ## .md文件的meta信息
 在markdown文件的开头可以进行meta信息的标注：
 （下面这个加号是可以点击的）
-```html title="这一页用到的meta信息"
+```html title="可以设置的meta信息"
 ---
 title: Playground of Markdown <!--(1)-->
 tags: <!--(2)-->
@@ -29,7 +29,7 @@ hide: <!--(3)-->
 2.  tags控制页面的标签，便于归纳整理
 3.  hide可以隐藏相应的内容，例如导航栏、目录等
 
-## 代码块
+## 代码块以及Annotations
 
 === "渲染效果"
 
@@ -38,23 +38,23 @@ hide: <!--(3)-->
       # (1)
       print(i)
     ```
-
+    
     1. 这是一个for循环，依次打印出0-9
 
 === "源代码"
 
     ````html
     <!-- (1)-->
-
+    
     ``` python title="for loop"<!-- (2)-->
     for i in range(10):
       # (1)
       print(i)
     ```
-
+    
     1.  这是一个for循环，依次打印出0-9
     ````
-
+    
     1.  这里还有一个小技巧，如果要在markdown的代码环境中再写markdown代码，可以用(````)来避免语义冲突。
     2.  在```之后可以加上代码语言、代码块标题
 
@@ -92,15 +92,15 @@ hide: <!--(3)-->
 !!! example
 
     === "Unordered List"
-
+    
         ``` markdown
         * Sed sagittis eleifend rutrum
         * Donec vitae suscipit est
         * Nulla tempor lobortis orci
         ```
-
+    
     === "Ordered List"
-
+    
         ``` markdown
         1. Sed sagittis eleifend rutrum
         2. Donec vitae suscipit est
@@ -150,8 +150,93 @@ mkdocs-material支持更多的扩展形式：
 - example
 - quote, cite
 
-
-
+## 图片以及LaTex
+在原有markdown图片引用的基础之上，可以在末尾加上一些参数。LaTex则依然是依靠MathJax实现的，语法上需要小心并非所有的写法通用，具体有何差异可以去官网看一看[^3]。
+=== "渲染效果"
+    ![circle](./assets/images/circle.png){align=right width=400 loading=lazy}
+	这是一个单位圆，图中$P$在第一象限，$PR\perp PQ$，$M,N$的横坐标都是2，问图示两个区域的面积何时相同？
+	
+	想要求解这个问题，我们只需要一些中学的三角函数知识就足矣。
+	
+	这是一个单位圆，那么可以设坐标
+	$$
+	P(\cos\theta,\sin\theta),\quad\theta\in (0,\frac{\pi}{2})
+	$$
+	进而我们可以求得
+	$$
+	R(\cos(\theta+\frac{\pi}{2}),\sin(\theta+\frac{\pi}{2}))
+	和Q(\cos(\theta-\frac{\pi}{2}),\sin(\theta-\frac{\pi}{2}))
+	$$
+	更进一步联立相关直线方程也就不难求得$M,N$的坐标。
+	
+	最后只需要解方程
+	$$
+	(y_M-y_N)(2-x_P)=1
+	$$
+	即得最终的答案。
+=== "源代码"
+	```markdown
+	![circle](./assets/images/circle.png){align=right width=450 loading=lazy}
+	这是一个单位圆，图中$P$在第一象限，$PR\perp PQ$，$M,N$的横坐标都是2，问图示两个区域的面积何时相同？
+	
+	想要求解这个问题，我们只需要一些中学的三角函数知识就足矣。
+	
+	这是一个单位圆，那么可以设坐标
+	$$
+	P(\cos\theta,\sin\theta),\quad\theta\in (0,\frac{\pi}{2})
+	$$
+	进而我们可以求得
+	$$
+	R(\cos(\theta+\frac{\pi}{2}),\sin(\theta+\frac{\pi}{2}))
+	和Q(\cos(\theta-\frac{\pi}{2}),\sin(\theta-\frac{\pi}{2}))
+	$$
+	更进一步联立相关直线方程也就不难求得$M,N$的坐标。
+	
+	最后只需要解方程
+	$$
+	(y_M-y_N)(2-x_P)=1
+	$$
+	即得最终的答案。
+	```
+但是`align`参数无法实现居中效果，可以用下面的写法
+=== "渲染效果"
+	<figure markdown>
+      ![circle](./assets/images/circle.png){width=400}
+      <figcaption>Image caption</figcaption>
+    </figure>
+=== "源代码"
+	```markdown
+	<figure markdown>
+      ![circle](./assets/images/circle.png){width=400}
+      <figcaption>Image caption</figcaption>
+    </figure>
+    ```
+## 流程图
+用的不过，参见mermaid的官网[^4]。我之前都是用的Graphviz，不过这些个东西都大差不差，背后都是用js实现的，有的时候还是用PPT画更快些。
+=== "渲染效果"
+    ``` mermaid
+    graph LR
+      A[Start] --> B{Error?};
+      B -->|Yes| C[Hmm...];
+      C --> D[Debug];
+      D --> B;
+      B ---->|No| E[Yay!];
+    ```
+=== "源代码"
+	````
+	``` mermaid
+    graph LR
+      A[Start] --> B{Error?};
+      B -->|Yes| C[Hmm...];
+      C --> D[Debug];
+      D --> B;
+      B ---->|No| E[Yay!];
+    ```
+    ````
 [^1]: [markdown官方教程：markdownguide.org](https://www.markdownguide.org/)
 
 [^2]: [mkdocs-material官网：squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+
+[^3]: [MathJax官网：www.mathjax.org](https://www.mathjax.org/)
+
+[^4]: [mermaid官网：mermaid-js.github.io/mermaid](https://mermaid-js.github.io/mermaid/#/)

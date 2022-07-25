@@ -1,7 +1,6 @@
 site_name: yangzhang's Site
 site_url: https://yangzhang.site/
 
-
 nav:
   - About:
     - About/index.md
@@ -9,6 +8,7 @@ nav:
     - About/友链.md
   - Blog:
     - Blog/index.md
+    - Blog/用mkdocs搭建个人网站.md
     - Jupyter:
       - 介绍: Blog/jupyter/jupyter1.md
       - 基础使用: Blog/jupyter/jupyter2.md
@@ -22,8 +22,6 @@ nav:
   - Tags: tags.md
   - Playground: playground.md
 
-# [UI]
-## [top]
 theme:
   logo: assets/images/summation.png
   name: material
@@ -54,13 +52,10 @@ theme:
 
 edit_uri: ""  # 编辑按钮跳转的链接
 
-
-# Repository
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-## [bottom-left corner]
 copyright: Copyright &copy; 2022 yangzhang # 左下角的版权声明
-## [bottom-right corner]
+
 extra:
   social: # icons
     - icon: fontawesome/brands/github
@@ -70,21 +65,20 @@ extra:
       link: https://space.bilibili.com/85735334
       name: BiliBili | 豆汁泡纳豆
 
-
-
-# [Extensions]
 plugins:
-  - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+  - search:
       lang:
         - en
-    # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+        - zh
+        - jp
   - tags:
       tags_file: tags.md
   - git-revision-date-localized:
       enable_creation_date: true
   
 markdown_extensions:
+  - md_in_html
+  - attr_list # 给图片后面添加{width="300"}设置大小
   - pymdownx.arithmatex: # latex支持
       generic: true
   - footnotes
@@ -95,7 +89,11 @@ markdown_extensions:
       auto_title: true # 显示编程语言名称
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true 
   - meta # 支持Markdown文件上方自定义标题标签等
