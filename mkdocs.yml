@@ -93,6 +93,7 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true # 固定标题位置为当前位置
+      toc_depth: 3
   - pymdownx.highlight: # 代码块高亮
       linenums: true # 显示行号
       auto_title: true # 显示编程语言名称
