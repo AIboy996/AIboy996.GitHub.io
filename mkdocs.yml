@@ -109,5 +109,6 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_javascript:
+  - javascript/baiduanalysis.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
