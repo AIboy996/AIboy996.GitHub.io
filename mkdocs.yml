@@ -85,8 +85,6 @@ plugins:
         - ja
   - tags:
       tags_file: tags.md
-  - git-revision-date-localized:
-      enable_creation_date: true
   
 markdown_extensions:
   - md_in_html
