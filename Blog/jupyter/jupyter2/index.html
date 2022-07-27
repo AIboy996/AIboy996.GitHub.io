@@ -1,0 +1,1600 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="yangzhang的个人网站">
+      
+      
+        <meta name="author" content="yangzhang">
+      
+      
+        <link rel="canonical" href="https://yangzhang.site/Blog/jupyter/jupyter2/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>基础使用 - yangzhang's Site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-8R9VRSN3S0"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-8R9VRSN3S0",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R9VRSN3S0"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="yangzhang&#39;s Site" class="md-header__button md-logo" aria-label="yangzhang's Site" data-md-component="logo">
+      
+  <img src="../../../assets/images/summation.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yangzhang's Site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基础使用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AIboy996/AIboy996.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AIboy996.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../About/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        Blog
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SomeMath/" class="md-tabs__link">
+        SomeMath
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../playground/" class="md-tabs__link">
+      Playground
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="yangzhang&#39;s Site" class="md-nav__button md-logo" aria-label="yangzhang's Site" data-md-component="logo">
+      
+  <img src="../../../assets/images/summation.png" alt="logo">
+
+    </a>
+    yangzhang's Site
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AIboy996/AIboy996.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AIboy996.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../About/">About</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/%E7%AB%99%E5%86%85%E5%AF%BC%E8%88%AA/" class="md-nav__link">
+        站内导航
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../About/%E5%8F%8B%E9%93%BE/" class="md-nav__link">
+        友链
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Blog</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8mkdocs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" class="md-nav__link">
+        用mkdocs搭建个人网站
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Jupyter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Jupyter" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Jupyter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter1/" class="md-nav__link">
+        介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          基础使用
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        基础使用
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    安装和个性化配置
+  </a>
+  
+    <nav class="md-nav" aria-label="安装和个性化配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaconda" class="md-nav__link">
+    Anaconda发行版
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    精简安装（推荐）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    个性化配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    插件安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook" class="md-nav__link">
+    notebook的书写
+  </a>
+  
+    <nav class="md-nav" aria-label="notebook的书写">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    新建笔记本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    快捷键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    代码单元格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    markdown单元格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    其他单元格
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook_1" class="md-nav__link">
+    notebook的导出
+  </a>
+  
+    <nav class="md-nav" aria-label="notebook的导出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    网页打印
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-as-nbconvert" class="md-nav__link">
+    download as (nbconvert)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandoc" class="md-nav__link">
+    pandoc
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter3/" class="md-nav__link">
+        远程服务
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter4/" class="md-nav__link">
+        进阶使用
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          SAS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SAS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          SAS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SAS/SAS%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="md-nav__link">
+        SAS的基本操作
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SAS/SAS%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        SAS的统计应用
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../SomeMath/">SomeMath</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="SomeMath" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          SomeMath
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          杂题
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="杂题" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          杂题
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/%E4%B8%80%E9%81%93%E5%A4%8D%E6%9D%82%E6%9E%81%E9%99%90/" class="md-nav__link">
+        一道复杂极限
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/%E4%B8%80%E9%81%93%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        一道有理函数不定积分
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        泰勒展开
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/%E7%BA%BF%E6%80%A7%E9%BD%90%E6%AC%A1%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        线性齐次差分方程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Montmort
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Montmort" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Montmort
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/Montmort%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        Montmort问题（一）
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SomeMath/%E5%8F%8C%E6%9B%B2%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        双曲函数
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/" class="md-nav__link">
+        Playground
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    安装和个性化配置
+  </a>
+  
+    <nav class="md-nav" aria-label="安装和个性化配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaconda" class="md-nav__link">
+    Anaconda发行版
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    精简安装（推荐）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    个性化配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    插件安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook" class="md-nav__link">
+    notebook的书写
+  </a>
+  
+    <nav class="md-nav" aria-label="notebook的书写">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    新建笔记本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    快捷键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    代码单元格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    markdown单元格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    其他单元格
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook_1" class="md-nav__link">
+    notebook的导出
+  </a>
+  
+    <nav class="md-nav" aria-label="notebook的导出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    网页打印
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-as-nbconvert" class="md-nav__link">
+    download as (nbconvert)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandoc" class="md-nav__link">
+    pandoc
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+  <a title="阅读量" class="md-content__button md-icon"> 
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z">
+    </path>
+  </svg>
+  </a>
+  
+
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../../tags/#jupyter" class="md-tag">
+          Jupyter
+        </a>
+      
+    
+  </nav>
+
+
+
+  <h1>基础使用</h1>
+
+<p>今天我们介绍jupyter notebook的保姆级基本使用方法</p>
+<h2 id="_1">安装和个性化配置<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>我们首先介绍如何在计算机上安装jupyter，这里以Windows为例，MacOS和Linux系统也差不多。</p>
+<h3 id="anaconda">Anaconda发行版<a class="headerlink" href="#anaconda" title="Permanent link">&para;</a></h3>
+<p>第一种安装方法非常简单，如果你从未接触过python，那么直接选择选择Anaconda发行版可以省去很多麻烦事。</p>
+<p><em>anaconda在英语中意为水蟒而python在英语中意为蟒蛇</em>
+<img alt="" src="https://files.mdnice.com/user/25860/91e03115-a1fc-42b7-aa61-339127fb86ae.png" /></p>
+<p><center>他们的logo都是🐍</center></p>
+<h4 id="step1">Step1<a class="headerlink" href="#step1" title="Permanent link">&para;</a></h4>
+<p>先从官网上下载Anaconda安装包。网站的服务器在国外，没有魔法可能下载很慢，如有需要后台回复<strong>jupyter</strong>我会把最新版的放在网盘供大家下载。</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/1775e6c6-3524-4094-af8b-71a361d83752.png" />
+网址：</p>
+<blockquote>
+<p>https://www.anaconda.com/products/individual</p>
+</blockquote>
+<p>下载完之后直接双击运行。</p>
+<h4 id="step2">Step2<a class="headerlink" href="#step2" title="Permanent link">&para;</a></h4>
+<p>然后进入到安装页面
+<img alt="" src="https://files.mdnice.com/user/25860/e03dfb9f-e9fc-4e2b-85a5-7e4da5958f4e.png" />
+直接<strong>Next</strong></p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/63a9f010-cd20-4412-bd2c-3235bcdc12a9.png" />
+选择<strong>I Agree</strong></p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/87e69f0b-eb88-4450-a8bc-1d8ce11e5a90.png" />
+选择Just me或者All Users都可以，点击<strong>Next</strong></p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/75b03022-6749-4933-9d55-5f4bfb26574a.png" />
+这里要注意安装路径的选择，因为Anaconda非常臃肿，你使用一段时间后可能会达到<strong>10GB</strong>的占用，所以需要提前预算好，我这里是虚拟机演示，没有这方面的顾虑故直接<strong>Next</strong></p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/28ae93f5-c5cd-413f-b406-5a55ef9066d8.png" />
+这里两个选项需要<strong>特别注意</strong>。</p>
+<p>第一个是把anaconda3添加到PATH，如果你点上了会有红色警示，说如果点上了会使得anaconda在任意目录下被找到。一般来说为了方便，我会点上这个选项，这样就可以在任何路径下使用anaconda的命令行工具。</p>
+<p>第二个则是把anaconda的python 3.9解释器注册为默认python解释器。一般新手的python环境比较干净，这个选项不用去管。</p>
+<p>选好之后<strong>Install</strong></p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/ac9dd2a6-b3d9-4333-8de3-b6397139f7bb.png" />
+稍作等待，出现以上画面，然后一连串的<strong>Next</strong>后，来到安装结束界面。</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/44327f32-1560-4992-a6a8-301c37a80d2e.png" />
+点击<strong>Finsh</strong>即可结束安装。</p>
+<p>这时<strong>开始菜单</strong>中会自动添加Anaconda文件夹：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/3b76bbbc-5c1e-4863-b957-11cb36a918c9.png" /></p>
+<blockquote>
+<p>总的来说，安装过程就是不断地Next，需要注意的就是<strong>安装路径</strong>和<strong>是否添加到PATH</strong>这两个地方。</p>
+</blockquote>
+<h4 id="jupyter">启动jupyter<a class="headerlink" href="#jupyter" title="Permanent link">&para;</a></h4>
+<p>有三种方式启动jupyter</p>
+<h5 id="1">1 使用命令行启动<a class="headerlink" href="#1" title="Permanent link">&para;</a></h5>
+<p><img alt="" src="https://files.mdnice.com/user/25860/3b76bbbc-5c1e-4863-b957-11cb36a918c9.png" />
+点击上图第三个快捷方式Anaconda Prompt，会弹出一个命令行窗口：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/b0ebd357-4cf9-4c6b-9f66-b67f00cf8bbe.png" />
+<em>注意这里的（base）代表当前激活的环境，如果使用其他prompt工具比如CMD、Powershell不会自动激活base环境，则需要先激活环境或者直接把anaconda添加到PATH才可以执行相关命令</em></p>
+<p>在命令行输入以下命令可以启动jupyter：
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook
+</code></pre></div></td></tr></table></div>
+运行示例：
+<img alt="" src="https://files.mdnice.com/user/25860/86388bea-0c0a-470e-8ab2-0314802ce6a2.png" />
+一般来说会自动弹出浏览器：
+<img alt="" src="https://files.mdnice.com/user/25860/bc37fde7-a1e7-4ce4-9e63-a8220b6dfd1d.png" />
+至此jupyter notebook就安装成功，并且启动成功了。</p>
+<p>这个命令还可以添加一些参数，例如在指定端口（默认8888）启动：
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook --port<span class="o">=</span><span class="m">8888</span>
+</code></pre></div></td></tr></table></div>
+再如不打开浏览器：
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook --no-browser
+</code></pre></div></td></tr></table></div>
+更多选项可以输入一下命令查看：
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook --help
+</code></pre></div></td></tr></table></div></p>
+<h5 id="2">2 使用快捷方式启动<a class="headerlink" href="#2" title="Permanent link">&para;</a></h5>
+<p><img alt="" src="https://files.mdnice.com/user/25860/3b76bbbc-5c1e-4863-b957-11cb36a918c9.png" />
+点击上图第四个快捷方式在<strong>默认配置</strong>下启动jupyter notebook。</p>
+<h5 id="3-anaconda-navigator">3 使用Anaconda Navigator启动<a class="headerlink" href="#3-anaconda-navigator" title="Permanent link">&para;</a></h5>
+<p><strong>不推荐此方法</strong>，因为Anaconda Navigator非常的卡，响应极慢！！
+<img alt="" src="https://files.mdnice.com/user/25860/3b76bbbc-5c1e-4863-b957-11cb36a918c9.png" />
+点击上图第一个快捷方式，等待加载，然后在图形化界面可以启动jupyter notebook</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/14279667-ac12-4ea3-a582-a48b81cbec35.png" /></p>
+<h4 id="anaconda_1">我需要Anaconda吗<a class="headerlink" href="#anaconda_1" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>不得不说，Anaconda实在是<strong>非常臃肿</strong>。作为一个数据科学软件包，他纳入了诸如jupyter, spyder, TensorFlow, Pytorch, Numba等等等诸多软件。而很多时候我们用不到这些软件，故下一节我们介绍<strong>精简安装</strong>。</p>
+</blockquote>
+<p><img alt="" src="https://files.mdnice.com/user/25860/7426bd79-d71a-4c35-9acd-2ccc4e4b5011.png" />
+<center>Anaconda内置的包</center></p>
+<h3 id="_2">精简安装（推荐）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="step1_1">Step1<a class="headerlink" href="#step1_1" title="Permanent link">&para;</a></h4>
+<p>安装python，安装包同样可以从官网<em>https://www.python.org/downloads/</em>
+获取：
+<img alt="" src="https://files.mdnice.com/user/25860/4a50ed11-f6b4-47d9-ac6f-fd13ed624336.png" />
+我们这里安装3.9.10的版本。点开安装包之后注意勾选上<strong>Add TO PATH</strong>否则只有在安装路径才能使用命令行工具，然后<strong>Install Now</strong>即可一键安装。</p>
+<h4 id="step2_1">Step2<a class="headerlink" href="#step2_1" title="Permanent link">&para;</a></h4>
+<p>安装jupyter，我们首先打开任意的命令行窗口，Windows可以同时按下键盘上的<code>Win</code>和<code>R</code>调出快捷启动，然后输入CMD即可</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/9cb76765-158d-4b93-b6ac-b00b048c5596.png" />
+然后在命令行输入
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip install jupyter notebook
+</code></pre></div></td></tr></table></div>
+即可完成jupyter notebook的安装。</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/3487bbb6-ca8b-4a49-b9d0-dc04e9b2740a.png" />
+等待片刻，pip会自动进行安装：
+<img alt="" src="https://files.mdnice.com/user/25860/34d54d55-d9db-4f16-9572-941c3f98ea8d.png" />
+见到如上字样即代表安装成功，可以在当前命令行直接输入
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook
+</code></pre></div></td></tr></table></div>
+启动jupyter notebook</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/f8c06fa8-d3e4-4917-aa60-5f4a750671b0.png" /></p>
+<blockquote>
+<p>总的来说，使用pip安装jupyter nb实际上非常简单，也更加精简。我更推荐这个安装方法，毕竟你迟早得学会如何安装、管理python的各种库和包。</p>
+</blockquote>
+<h3 id="_3">个性化配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>正式进入jupyter的使用界面，首先看到的是一系列的文件夹，对应着我们默认的工作目录<code>C:\Users\Username</code>，而很多人并不习惯把个人文件放在这个目录下（虽然微软的本意如此）
+<img alt="" src="https://files.mdnice.com/user/25860/3cc1571d-5db6-4833-b98b-658145dd9152.png" />
+并且，我们每次运行jupyter notebook都会自动弹出一个浏览器窗口，有时这很烦人。</p>
+<p>于是我们需要自定义一些配置，所幸jupyter notebook给足了自由发挥的空间。</p>
+<h4 id="_4">生成配置文件<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>还是在命令行，输入以下命令：
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter notebook --generate-config
+</code></pre></div></td></tr></table></div>
+而后会生成一个<code>.py</code>配置文件，并且提示它的位置
+<img alt="" src="https://files.mdnice.com/user/25860/316bdace-cb2b-4fcb-b873-f0493ccac33a.png" />
+我们找到这个文件，用python默认的IDE或者其他任何文本编辑器(例如记事本, VScode, Sublime Text, Notepad等) 打开即可开始自定义。</p>
+<p>可自定义的选项非常多，我们简单介绍几个常用配置。</p>
+<h4 id="_5">自定义工作目录<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>第<code>393行</code>
+<img alt="" src="https://files.mdnice.com/user/25860/85a27e5c-b7ba-4eae-9a62-d41a23222917.png" />
+把<code>#</code>删去取消注释，然后把后面的字符串改为你想要的目录。</p>
+<p>特别注意，windows下默认使用的是<code>C:\Users</code>这种以反斜杠作为目录分隔符的路径，但是在python字符串语法中，反斜杠代表转义符，所以需要在字符串前面加上<code>r</code>也就是<code>r'C:\Users\'</code>python才可以正确识别</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/deb81dba-3593-403f-9e3e-273c88094e81.png" /></p>
+<h4 id="_6">自定义是否打开浏览器<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>第<code>401行</code>
+<img alt="" src="https://files.mdnice.com/user/25860/1d5b73d8-bad9-4c70-b40c-afbd2ba518b5.png" />
+取消注释，把<code>True</code>改为<code>False</code>即可。
+<img alt="" src="https://files.mdnice.com/user/25860/cef628cc-dc7c-4562-96fd-fdd38978bcf6.png" /></p>
+<p>其他诸多配置，可以根据需求配置。修改完成后，保存文件重启jupyter即可应用配置。</p>
+<h2 id="_7">插件安装<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>在正式写notebook之前，我们先把插件安装了，这也是命令行工作，省的后面还要来回切换。</p>
+<p>先执行
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip install jupyter_contrib_nbextensions
+</code></pre></div></td></tr></table></div>
+再执行
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>jupyter contrib nbextension install --user
+</code></pre></div></td></tr></table></div>
+这样再打开jupyter notebook我们就能看到插件目录了：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/dbdd4d1b-1b5d-4535-a1e7-5b8d373d151f.png" />
+在这里你可以选用一些插件。这些插件具体有什么作用下面会有相应的解释，我们后续也会再出一篇推文单独介绍。我选择启用的插件如下：
+<img alt="" src="https://files.mdnice.com/user/25860/ae562e3b-f5c2-4d54-aaee-5937a288e9bb.png" /></p>
+<h2 id="notebook">notebook的书写<a class="headerlink" href="#notebook" title="Permanent link">&para;</a></h2>
+<p>终于可以写一点代码了</p>
+<h3 id="_8">新建笔记本<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>在任意目录点击<code>New</code>可以选择新建文件
+<img alt="" src="https://files.mdnice.com/user/25860/46fd6779-d3c5-4f53-9756-e19823bd6d6f.png" />
+点击<code>Python3(ipykernel)</code>可以新建笔记本，创建完成后自动打开
+<img alt="" src="https://files.mdnice.com/user/25860/b5bd21b5-2e5c-4d77-80b6-ecc3d1b4ef8e.png" />
+这就是我们笔记本的编辑页面，下图有笔记本的基本介绍</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/1ccd6d5a-581e-47a7-a9f8-0e0f87cf69de.png" /></p>
+<h3 id="_9">快捷键<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>如此多的按钮，其实很少用到，因为jupyter notebook有一套非常好用的快捷键。首先我们定义单元格的mode. 一个单元格有两种mode：<code>command mode</code>和<code>edit mode</code>，对应左边会显示不同的颜色。</p>
+<p>蓝色代表<code>command mode</code>
+<img alt="" src="https://files.mdnice.com/user/25860/c814f884-c8e4-45e8-9199-f48b8ae1eb56.png" />
+绿色代表<code>edit mode</code>
+<img alt="" src="https://files.mdnice.com/user/25860/301a9124-2931-4ca5-9d94-91a89e3a8ebf.png" /></p>
+<p>在快捷键在这两种场景下也是区分的，我常用的如下：</p>
+<h4 id="command-mode">command mode<a class="headerlink" href="#command-mode" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>数字1-6</code>，把单元格转换为1-6级标题（实际上是markdown单元格</li>
+<li><code>Y</code>，把单元格转换为代码单元格</li>
+<li><code>M</code>，把单元格转换为markdown单元格</li>
+<li><code>R</code>，把单元格转换为raw单元格</li>
+<li><code>A</code>，在当前单元格上方添加一个单元格</li>
+<li><code>B</code>，在当前单元格下方添加一个单元格</li>
+<li><code>Double D</code>，连续按下两次<code>D</code>，删除选中的单元格</li>
+<li><code>X</code>，剪切选中的单元格（通常我用剪切代替删除</li>
+<li><code>C</code>，复制选中的单元格</li>
+<li><code>V</code>，粘贴已经剪切或复制的单元格</li>
+<li><code>K</code>，选中上一个单元格</li>
+<li><code>J</code>，选中下一个单元格</li>
+<li><code>L</code>，显示当前单元格的行号</li>
+<li><code>Keep Shift</code>，按住<code>Shift</code>点击两个不同的单元格，可以一次性选中多个单元格，配合<code>X</code>,<code>C</code>,<code>V</code>使用</li>
+<li><code>Enter</code>，进入<code>edit mode</code></li>
+</ul>
+<h4 id="edit-mode">edit mode<a class="headerlink" href="#edit-mode" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>Ctrl+Enter</code>，运行当前单元格</li>
+<li><code>Shift+Enter</code>，运行当前单元格并且创建下一个单元格（默认进入edit mode</li>
+</ul>
+<p>还有好多其他的快捷键，这里就不放了，可以通过下面的方式查看：</p>
+<p>点击<code>Help</code>菜单中的<code>Keyboard shortcut</code>
+<img alt="" src="https://files.mdnice.com/user/25860/9be0c753-494f-4114-b1e8-a6d8ae8772e6.png" />
+查看快捷键列表
+<img alt="" src="https://files.mdnice.com/user/25860/63b1bd1c-cdf0-4e23-aa07-52883b5efb72.png" />
+在这里还可以自定义快捷键。</p>
+<h3 id="_10">代码单元格<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h4 id="_11">运行<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>终于可以写点东西了，在jupyter notebook中单元格默认的格式就是代码单元格。你可以在这里写代码，然后运行：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/1800e9a5-8eb0-4fed-a265-a5dee9b2110e.png" />
+<center><i>下面运行时间由插件Execute Time计算</i></center>
+<br>
+你也可以写一些复杂的代码，这时最好开启<code>行号</code>：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/86b4c695-f9f2-4618-b038-3d920754713f.png" />
+单元格左侧<code>In:[23]</code>代表这是第十二个运行的代码，而<code>Out:[12]</code>代表这是第十二次运行的结果。</p>
+<h4 id="_12">输出<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>每次运行jupyter都会自动<code>输出</code>最后一行的运行结果。注意这里的输出并不局限于<code>print</code>，jupyter精心优化了图片、表格等等内容的输出：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/609eb708-258b-45d3-8a3a-c1cbe506e0a1.png" /></p>
+<h4 id="name-space">name space<a class="headerlink" href="#name-space" title="Permanent link">&para;</a></h4>
+<p>注意，这里使用了前面单元格定义的<code>fib()</code>函数，也就是说整个笔记本是在同一个命名空间的，使用同样的内存。</p>
+<p>这需要特别谨慎，因为当笔记本很长时，不要忘记你之前命名过的变量，不然会被覆盖。</p>
+<h4 id="magic-command">magic command<a class="headerlink" href="#magic-command" title="Permanent link">&para;</a></h4>
+<p>比较特别的是，我们不仅可以在代码单元格运行python代码，还可以运行一些其他命令，jupyter称之为<code>magic command</code>，需要用<code>%</code>或者<code>%%</code>（两者有所不同）声明，例如计算程序的平均耗时</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/ea0ef20e-cab4-4c24-bb3f-1b7d2c69e8dd.png" />
+<center><i>一百万次运算的平均耗时</i></center>
+<br></p>
+<p>更多其他的<code>magic command</code>我们后续的推文再介绍。</p>
+<h4 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h4>
+<p>并且我们还可以运行命令行的<code>命令</code>，例如<code>ping</code>，需要用<code>!</code>声明
+<img alt="" src="https://files.mdnice.com/user/25860/d9f89acb-7bee-4d25-aeaa-dd025d074aaf.png" />
+<center><i>校园网是真的拉</i></center></p>
+<h3 id="markdown">markdown单元格<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h3>
+<p>markdown单元格就简单得多，如果你还不会md的语法也不要害怕，它真的非常简单，学会他只需要<strong>2分钟</strong>，但是学好了之后能极大的提升效率。~~我现在这段话也是我用markdown书写的~~:</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/f6fb395a-1cff-4299-b220-9ee848f3cab8.png" />
+<center><i>开始套娃</i></center>
+<br></p>
+<p>markdown于我最大的意义就是可以较为简单地写一些LaTeX数学公式，以及在notebook中嵌入一些媒体内容：</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/47c840b0-1957-49e7-a00f-fc9b39c2557f.png" />
+上面的内容完全对应于下面的文本
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>![](https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png)
+$$\int_{-\infty}^{\infty}e^{-x^2}dx=\sqrt{\pi}$$
+[<span class="nt">python</span>](<span class="na">https://www.python.org/</span>)
+</code></pre></div></td></tr></table></div>
+关于markdown的内容，后续也会单独出一个推文来介绍（疯狂挖坑~）</p>
+<h3 id="_13">其他单元格<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>jupyter自带的就一个<code>Raw NBconvert</code>单元格
+<img alt="" src="https://files.mdnice.com/user/25860/f02a4cd2-107f-4e00-ba1b-a5941b554db9.png" /></p>
+<p>功能非常简单，就是消除一切格式、高亮，用<code>plain text</code>的样式呈现。</p>
+<p>如果安装了一些特殊的插件，可能会有一些其他特殊的单元格，例如<code>Rise</code>这个插件
+<img alt="" src="https://rise.readthedocs.io/en/stable/_images/basic_usage.gif" />
+<center><i>可以实现PPT效果真的太酷了</i></center></p>
+<h2 id="notebook_1">notebook的导出<a class="headerlink" href="#notebook_1" title="Permanent link">&para;</a></h2>
+<p>~~jupyter notebook那么好用，我觉得每个人电脑上都应该装一个。~~很多时候我们会遇到这样一个问题，你呕心沥血写好了一份notebook发过去，但是对方不会用，也懒得折腾。如果是好哥们还好，可以教育一下，如果是Leader或者老师就不太妙，只能自己想办法导出为漂亮的格式。</p>
+<p>常见的有三种方案</p>
+<h3 id="_14">网页打印<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>这个简单粗暴，因为jupyter notebook是实时渲染在网页上的，我们可以直接使用浏览器的打印功能生成pdf</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/6acf41b3-dafa-4b3b-8c78-067e9c9ec3d9.png" /></p>
+<h3 id="download-as-nbconvert">download as (nbconvert)<a class="headerlink" href="#download-as-nbconvert" title="Permanent link">&para;</a></h3>
+<p>jupyter内置了一些可以导出的格式
+<img alt="" src="https://files.mdnice.com/user/25860/8ed48160-864a-4f24-8ddc-ab6594d990dd.png" />
+但是只有少数的格式（例如markdown）可以在不配置任何外部软件的情况下导出成功，大多数文件格式都会导出失败</p>
+<p><img alt="" src="https://files.mdnice.com/user/25860/4a3148cd-e5ac-477b-a2a8-f93b4d2d15c9.png" />
+具体如何配置我们以后再说。</p>
+<h3 id="pandoc">pandoc<a class="headerlink" href="#pandoc" title="Permanent link">&para;</a></h3>
+<p>我们使用pandoc就可以实现格式转换。</p>
+<blockquote>
+<p>Pandoc是使用Haskell语言编写的一款跨平台、自由开源及命令行界面的标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。 摘自维基百科。</p>
+</blockquote>
+<p>具体怎么用，这里实在写不下了，下次再说。</p>
+<h2 id="_15">总结<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>洋洋洒洒写了快4千字了，早就超过了一般人会看完的长度。倒也不期待有人能看到这里，毕竟写这个也是用爱发电，周末无聊罢了。</p>
+<p>jupyter notebook与我而言是陪伴我接触编程到爱上编程的朋友，我的电脑里至今还保存着我第一次学python时的notebook（python是我的first language）我遇到过各种问题，也解决了各种问题。在这样的过程中不断成长着，现在我已经能熟练地面向浏览器编程了，jupyter确实帮了我很多。</p>
+<p>时间不早了，吃饭去了。</p>
+<p>此致，祝好！</p>
+
+
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../jupyter1/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 介绍" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              介绍
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../jupyter3/" class="md-footer__link md-footer__link--next" aria-label="下一页: 远程服务" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              远程服务
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 yangzhang
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/AIboy996" target="_blank" rel="noopener" title="GitHub | AIboy996" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://space.bilibili.com/85735334" target="_blank" rel="noopener" title="BiliBili | 豆汁泡纳豆" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../../js/baidu.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+      
+    
+  </body>
+</html>
