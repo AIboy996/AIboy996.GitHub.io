@@ -32,8 +32,9 @@ nav:
   - Playground: playground.md
 
 theme:
-  logo: assets/images/summation.png
   name: material
+  custom_dir: overrides
+  logo: assets/images/summation.png
   palette: 
     - scheme: default # 日间模式
       primary: indigo # 上方的

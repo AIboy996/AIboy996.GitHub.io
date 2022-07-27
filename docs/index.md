@@ -3,6 +3,7 @@ tags:
 - About Me
 hide:
 - tags
+- nums
 ---
 
 
