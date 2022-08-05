@@ -9,7 +9,9 @@ nav:
     - About/友链.md
   - Blog:
     - Blog/index.md
-    - Blog/用mkdocs搭建个人网站.md
+    - mkdocs:
+      - Blog/mkdocs/理论.md
+      - Blog/mkdocs/实践.md
     - Jupyter:
       - 介绍: Blog/jupyter/jupyter1.md
       - 基础使用: Blog/jupyter/jupyter2.md
