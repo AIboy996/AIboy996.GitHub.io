@@ -9,6 +9,8 @@ nav:
     - About/友链.md
   - Blog:
     - Blog/index.md
+    - 墙和梯子:
+      - Blog/GFW/简介.md
     - mkdocs:
       - Blog/mkdocs/理论.md
       - Blog/mkdocs/实践.md
