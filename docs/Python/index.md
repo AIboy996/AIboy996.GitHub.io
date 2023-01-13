@@ -1,8 +1,9 @@
 ---
 title: Python从入门到入狱
-tags: 
-- python
+tags:
+- python入门
 hide:
+- feedback
 - tags
 ---
 

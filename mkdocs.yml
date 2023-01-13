@@ -24,6 +24,17 @@ nav:
       - SAS的统计应用: Blog/SAS/SAS的统计应用.md
   - Python:
     - Python/index.md
+    - 基础语法:
+      - Python/基础语法/python基础语法1.md
+      - Python/基础语法/python基础语法2.md
+    - 进阶语法:
+      - Python/进阶语法/python进阶语法1.md
+      - Python/进阶语法/python进阶语法2.md
+      - Python/进阶语法/python进阶语法3.md
+    - 标准库:
+      - Python/标准库/os.md
+    - 第三方库:
+      - Python/第三方库/numpy.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
@@ -76,6 +87,20 @@ extra:
   analytics:
     provider: google
     property: G-8R9VRSN3S0
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social: # icons
     - icon: fontawesome/brands/github
       link: https://github.com/AIboy996

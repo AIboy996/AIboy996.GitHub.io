@@ -2,6 +2,9 @@
 title: 关于本站的一切
 tags: 
 - About Me
+- feedback
+hide:
+- tags
 ---
 
 ## 本站的来龙去脉
