@@ -22,6 +22,8 @@ nav:
     - SAS:
       - SAS的基本操作: Blog/SAS/SAS的基本操作.md
       - SAS的统计应用: Blog/SAS/SAS的统计应用.md
+  - Python:
+    - Python/index.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
@@ -87,6 +89,7 @@ plugins:
       prebuild_index: true
       lang:
         - en
+        # 日语搜索汉字
         - ja
   - tags:
       tags_file: tags.md
@@ -115,6 +118,9 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_javascript:
-  - js/baidu.js
+  # 百度的页面访问统计
+  - assets/js/baidu.js
+  # 数学公式格式支持
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
