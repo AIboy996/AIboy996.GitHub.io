@@ -137,6 +137,7 @@ markdown_extensions:
       auto_title: true # 显示编程语言名称
   - admonition
   - pymdownx.details
+  - pymdownx.inlinehilite
   - pymdownx.superfences:
         custom_fences:
             - name: mermaid
