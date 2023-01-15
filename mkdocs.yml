@@ -24,8 +24,8 @@ nav:
       - SAS的统计应用: Blog/SAS/SAS的统计应用.md
   - Python:
     - Python/index.md
+    - Python/python前置知识.md
     - 基础语法:
-      - Python/基础语法/python前置知识.md
       - Python/基础语法/python基础语法1.md
       - Python/基础语法/python基础语法2.md
     - 进阶语法:
