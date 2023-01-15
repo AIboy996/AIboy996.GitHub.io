@@ -25,6 +25,8 @@ nav:
   - Python:
     - Python/index.md
     - Python/python前置知识.md
+    - Python/命令行.md
+    - Python/脚本.md
     - 基础语法:
       - Python/基础语法/python基础语法1.md
       - Python/基础语法/python基础语法2.md
