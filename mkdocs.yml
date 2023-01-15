@@ -5,7 +5,7 @@ site_description: yangzhang的个人网站
 nav:
   - About:
     - About/index.md
-    - About/站内导航.md
+    - About/about.md
     - About/友链.md
   - Blog:
     - Blog/index.md
@@ -25,6 +25,7 @@ nav:
   - Python:
     - Python/index.md
     - 基础语法:
+      - Python/基础语法/python前置知识.md
       - Python/基础语法/python基础语法1.md
       - Python/基础语法/python基础语法2.md
     - 进阶语法:
@@ -32,7 +33,7 @@ nav:
       - Python/进阶语法/python进阶语法2.md
       - Python/进阶语法/python进阶语法3.md
     - 标准库:
-      - Python/标准库/os.md
+      - Python/标准库/OS.md
     - 第三方库:
       - Python/第三方库/numpy.md
   - SomeMath:
