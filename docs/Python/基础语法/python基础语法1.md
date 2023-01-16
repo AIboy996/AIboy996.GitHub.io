@@ -456,27 +456,28 @@ len("hello world")
         所谓的语法糖就是可以减少代码量的一种简便写法。python中到处都是这种语法糖，所以增加了难度，但是学会之后写代码的速度也显著地高。
 
         下面列举一些"*语法糖*"：
+        
         - 取值
-          - `#!python object.__getitem__()`
-          - `object[]`
-          - `object[]`就是`object.__getitem__`的语法糖
+            - `#!python object.__getitem__()`
+            - `object[]`
+            - `object[]`就是`object.__getitem__`的语法糖
         - 切片
-          - `#!python object[slice(1, 10, 2)]`
-          - `object[1:10:2]`
-          - `1:2:3`就是`slice(1,2,3)`的语法糖
+            - `#!python object[slice(1, 10, 2)]`
+            - `object[1:10:2]`
+            - `1:2:3`就是`slice(1,2,3)`的语法糖
         - 调用
-          - `#!python print.__call__(1)`
-          - `#!python print(1)`
-          - `()`就是`__call__`的语法糖
-          - 这个东西能不能称之为语法糖有待商榷，我写在这里是想让读者明白当我们给一个对象加上`()`实际上就是在调用他的`__call__`方法
+            - `#!python print.__call__(1)`
+            - `#!python print(1)`
+            - `()`就是`__call__`的语法糖
+            - 这个东西能不能称之为语法糖有待商榷，我写在这里是想让读者明白当我们给一个对象加上`()`实际上就是在调用他的`__call__`方法
         - 逻辑运算
-          - `#!python 1.__gt__(2)`
-          - `#!python 1 > 2`
-          - `>`就是`__gt__`的语法糖
+            - `#!python 1.__gt__(2)`
+            - `#!python 1 > 2`
+            - `>`就是`__gt__`的语法糖
         - 列表
-          - `#!python [i for i in 'hello']`
-          - `#!python list('hello')`
-          - `[object]`就是`list(object)`的语法糖
+            - `#!python [i for i in 'hello']`
+            - `#!python list('hello')`
+            - `[object]`就是`list(object)`的语法糖
 
         之所以“语法糖”加了引号，是因为一般来说上面这些东西一般来说我们不称之为语法糖，而是视作python语法的一部分。
 
