@@ -30,10 +30,10 @@ nav:
     - 基础语法:
       - Python/基础语法/python基础语法1.md
       - Python/基础语法/python基础语法2.md
-    - 进阶语法:
-      - Python/进阶语法/python进阶语法1.md
-      - Python/进阶语法/python进阶语法2.md
-      - Python/进阶语法/python进阶语法3.md
+    - 高级语法:
+      - Python/进阶语法/python高级语法1.md
+      - Python/进阶语法/python高级语法2.md
+      - Python/进阶语法/python高级语法3.md
     - 标准库:
       - Python/标准库/OS.md
     - 第三方库:
