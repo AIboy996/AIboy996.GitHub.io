@@ -33,11 +33,14 @@ nav:
     - 高级语法:
       - Python/进阶语法/python高级语法1.md
       - Python/进阶语法/python高级语法2.md
-      - Python/进阶语法/python高级语法3.md
     - 标准库:
-      - Python/标准库/OS.md
+      - Python/标准库/os.md
+      - Python/标准库/re.md
     - 第三方库:
+      - Python/第三方库/包管理.md
       - Python/第三方库/numpy.md
+      - Python/第三方库/pandas.md
+      - Python/第三方库/自己写一个包.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:

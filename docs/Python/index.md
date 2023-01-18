@@ -55,12 +55,14 @@ flowchart LR
     包的使用
     end
     subgraph 面向对象编程
-    类
     多态
-    运算符重载
+    属性
+    方法
+    装饰器
     end
     subgraph 函数式编程
     函数
+    迭代器
     生成器
     装饰器
     end
