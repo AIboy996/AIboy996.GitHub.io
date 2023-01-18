@@ -56,6 +56,7 @@ print("hello world")
 但是按照`PEP8`（Python Enhancement Proposal 8）的建议，我们推荐使用4个空格来作为一层缩进。
 
 ## 自定义函数
+### `def`
 自定义函数的格式前文已经多次出现了，这里给出一个更加复杂的版本：
 ```python
 def f(a, b):
@@ -70,6 +71,40 @@ print(f(1, 4)) ## 返回值为5
 参数可以作为函数内部的变量来使用，在函数被调用的时候会把传入的值赋值给对应的变量然后依次执行函数中所有的内容。请注意，函数内部的空间和外部的空间是不同的命名空间，变量并不通用。一般来说内部可以访问外部的变量，但是外部不可以访问内部的变量。
 
 最后用`return`关键字来声明函数的返回值，函数结束之后就会返回这个值。如果没有`return`语句，就会返回一个`None`，代表没有返回值。
+
+函数调用的方式是`()`，读者应该以及很熟悉。而函数传递参数的方式有很多种：
+
+- 按照位置顺序传递：`f(1, 4)`就是这种用法
+- 按照名字传递：`f(a=1, b=4)`这种用法可以无视位置，例如：`f(b=4, a=1)`
+- 混合：`f(1, b=3)`不推荐
+
+一般而言不引起歧义的时候都可以按照位置顺序来传递参数。
+### `lambda`
+之前的文章中也提到过`存在没有名字的函数`，这里我们就来介绍一下所谓的匿名函数。
+
+匿名函数的定义方式为`lambda parameter : return value`，例如
+```python
+lambda x : x+2
+```
+就会返回一个函数，他的作用是把一个数字加上2，我们可以直接调用这个函数：
+```python
+(lambda x : x+2)(3)
+# 返回值是5
+```
+> 注意到上面的`(lambda x : x+2)`里的括号代表一种逻辑优先级，先执行`lambda`语句得到一个函数对象然后再调用，这和数学中的圆括号是类似的。
+
+而如果把匿名函数赋值给一个变量，那么就可以当作正常的函数来使用：
+```python
+add = lambda x,y : x+y
+print(add(1, 2))  ## 打印出来的是3
+```
+由于匿名函数的简洁，我们经常会把它作为一个参数传递到其他函数中：
+```python title="列表中的元素按照实部大小升序排列"
+l = [1j, 2j+3, 1j, 3j+1]
+l.sort(key = lambda x:x.real)
+print(l) # 输出的值为 [1j, 1j, (1+3j), (3+2j)]
+```
+> 这里也展示了python中虚数的表示方法：`1j`，请注意不能用`j`代替`1j`，并且`0`和`0j`也不完全相同，前者是整数对象，后者是复数对象。
 
 更加丰富的函数理论我们会在高级语法的函数式编程模块中介绍。
 
@@ -336,7 +371,11 @@ else:
 ![](./assets/input.png)
 
 可以说这个函数提供了无穷的可玩性。
-
+### 紧凑型的`if`语句
+某些时候`if`语句可以写成只有一行的紧凑形式：
+```python
+abs_of = lambda x: x if x>0 else -x
+```
 ## `match`语句
 `python 3.10`新加入的功能，本身的功能使用`if`语句都可以实现，结构如下：
 ```python
@@ -402,6 +441,7 @@ while n < 10:
 只要条件成立（布尔表达式为真）那么就一直运行下面的循环体。
 
 ## 循环控制
+### `continue`, `break`和`pass`
 下面我们来介绍`continue`，`break`和`pass`，他们都是循环控制中的关键字。
 
 某些时候，我们可能需要直接跳到下一次循环（continue）、提前终止循环（break）或者是啥也不做（pass）。
@@ -415,6 +455,7 @@ for i in range(100):
         pass
 ```
 就是在`0-99`之间的数字，如果是奇数就打印出来，偶数则啥也不做。
+> 当然`while`循环中也可以使用`pass`关键字，逻辑相同
 
 再如：
 ```python
@@ -425,6 +466,7 @@ for i in range(100):
         print(i)
 ```
 就是输出`0-99`所有既是`2`的倍数，又是`3`的倍数的数字。这里使用`continue`的意义在于，每当一个数字是奇数的时候，我们就直接跳过本次循环，而不去判断它是否是`3`的倍数。这样可以极大提高效率。
+> 当然，`while`循环中也可以使用`continue`关键字，逻辑相同
 
 最后：
 ```python
@@ -436,13 +478,110 @@ while True:
         break
 ```
 就是打印出`0-11`的数字，这里写了一个死循环：`while True`，这样的写法也很常见，但是请务必在死循环中明确定义`break`语句，用以终止循环。
-
+> 当然，`for`循环中也可以使用`break`关键字，逻辑相同
 
 此外提一下，如果多层循环嵌套，这些关键字都只会影响本层循环，不会影响外层的循环。
+### 循环的`else`子句
+如果想在循环**正常结束**之后执行一些操作可以使用`else`关键字，例如：
+=== "源代码"
 
-## 异常处理
-最后我们来介绍python中异常的处理。
+    ```python
+    for i in range(10):
+        print(i)
+    else:
+        print("Done")
+    ```
+=== "运行结果"
 
+    ```text
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    Done
+    ```
+如果循环没有正常结束，而是被`break`语句终止，那么`else`子句的内容不会执行：
+=== "源代码"
+
+    ```python
+    for i in range(10):
+        print(i)
+        if i==3:
+            break
+    else:
+        print("Done")
+    ```
+=== "运行结果"
+
+    ```text
+    0
+    1
+    2
+    3
+    ```
+> `while`循环也是如此，如果想要在条件由真变为假之后执行一些操作，可以用`else`子句
+
+## `import`语句
+至此我们python内置的语法我们就基本介绍完了。下面我们来介绍`import`关键字，通过这个语句我们可以导入包和库，例如导入python的标准库`math`：
+```python
+import math
+```
+这行代码就会在当前命名空间创建一个名为`math`的对象，在此之后我们就可以使用这个对象了：
+```python
+import math
+print(math.pi) # 输出值为3.141592653589793
+```
+此外`import`还有很多的变种格式：
+```python title="导入特定的对象"
+from math import pi
+```
+```python title="导入多个对象"
+from math import pi, sqrt
+```
+```python title="导入所有对象"
+from math import *
+```
+```python title="导入特定对象，并且赋值给特定的变量"
+from math import sqrt as sq
+```
+
+值得注意的是，我强调了`import`是在当前命名空间创建一个对象。例如，我在函数内部导入了`math`，但是在函数的外部依然是不能使用的：
+=== "源代码"
+
+    ```python
+    def pr_pi():
+        import math
+        print('(from pr_pi function)',math.pi)
+    pr_pi()
+    print(math.pi)
+    ```
+=== "运行结果"
+
+    ```text
+    C:\Users\yangz\Desktop\py>python hello.py
+    (from pr_pi function) 3.141592653589793
+    Traceback (most recent call last):
+    File "C:\Users\yangz\Desktop\py\hello.py", line 5, in <module>
+        print(math.pi)
+    NameError: name 'math' is not defined
+    ```
+
+代码运行之后成功输出了`(from pr_pi fuction)`的值，但是函数外部的`print(math.pi)`没有成功运行，python抛出了一个`NameError`错误。
+## 异常
+紧接着上文，我们来介绍python中异常（Exception）以及异常的处理、自定义异常。
+
+所谓的异常就是python代码运行过程中出现的错误，错误的类型多种多样，比如语法错误（SyntaxError），变量类型错误（TypeError），变量名字错误（NameError）等等。这些错误都是`BaseException`的子类。在python碰到错误时会停止运行并且抛出一个`Traceback`，准确地指出错误的位置。
+
+这些内容在上一节的[内置异常](/Python/基础语法/python基础语法1/#builtin-exception)也都介绍过。
+
+下面我们来介绍如何处理遇到的异常。
+### `try`语句
 以一个除法计算器为例：
 
 ```python title="除法计算器"
@@ -490,7 +629,87 @@ while True:
 这里面还新加入了两个关键字`else`和`finally`，前者是当没有错误的时候执行，后者是无论如何都会执行。
 
 最后提一句，虽然`try`是一个很好用的语句，但是请不要滥用。只有当处理`input`这类不确定性很大的因素时才值得我们去用（因为错误处理的开销是很大的）。一般情况下还是尽量考虑周全，减少可能出现的错误方为上上策。
+### 自定义异常
+有的时候我们为了提供更加准确的报错信息，可能需要自定义一个异常，然后在合适的地方触发。
 
+自定义的方法就是新定义一个继承自`BaseException`类：
+```python title="大数异常"
+class TooLarge(BaseException):
+    def __str__(self):
+        return "The value is too large."
+
+raise TooLarge
+```
+上面的代码首先自定义了一个类，然后定义了他的`__str__`方法，也就是字符表示。
+
+然后使用`raise`关键字触发了这个错误，运行结果如下：
+![](./assets/large.png)
+
+在实际运用中，异常往往需要配合条件判断在合适的时候触发：
+=== "源代码"
+
+    ```python title="计算一个整数的e指数"
+    from math import e
+
+    class TooLarge(BaseException):
+        def __str__(self):
+            return "The value is too large."
+            
+    def exp(x : int):
+        if isinstance(x, int):
+            if x<1000:
+                return e**x
+            else:
+                raise TooLarge
+        else:
+            raise TypeError("输入了错误的数据类型")
+
+    print(exp(1))
+    try:
+        exp(1001)
+    except TooLarge as e:
+        print(e)
+    try:
+        exp(1.2)
+    except TypeError as e:
+        print(e)
+    ```
+=== "运行结果"
+
+    ```text
+    2.718281828459045
+    The value is too large.
+    输入了错误的数据类型
+    ```
+
+上面的代码中我们要求这个函数输入的值必须是小于一千的整数。
+
+注意到我们在定义函数的时候进行了`type hint`：
+```python title="type hint"
+def exp(x : int):
+    pass
+```
+提示用户输入的值应该是一个整数类。但这只是一种提示，而非强制要求。
+
+如果输入的不是整数，就触发`TypeError("输入了错误的数据类型")`，如果整数大于一千，就触发`TooLarge`。至此，读者应当掌握了自定义异常和触发他们的方法。
+
+当然我们现在定义的异常是非常简陋的，更多的细节留到后续的高级教程来学习。
+
+### `assert`语句
+`assert`就按照英文的语义来理解即可。它的作用很简单，就是断言后面一个布尔表达式为真，如果不是真那就触发`AssertionError`。
+
+例如：
+```python
+assert 1==2
+```
+就会触发错误：
+```text
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AssertionError
+```
+
+这是一个非常好用的语句，但是也请不要滥用。因为它触发的错误类型全都是`AssertionError`，理想的错误控制应该是每种错误分别处理，而不是一锅炖。
 ## 总结
 
 python的这些关键字和一系列的语法息息相关，需要多加练习、熟能生巧。文中给出的代码案例都比较经典，读者可以仔细推敲。

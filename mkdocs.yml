@@ -85,7 +85,7 @@ edit_uri: ""  # 编辑按钮跳转的链接
 
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-copyright: Copyright &copy; 2022 yangzhang # 左下角的版权声明
+copyright: Copyright &copy; 2023 yangzhang # 左下角的版权声明
 
 extra:
   analytics:
@@ -103,8 +103,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+            Thanks for your feedback! Help me improve this page by using the <a href="https://github.com/AIboy996/AIboy996.GitHub.io/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
   social: # icons
     - icon: fontawesome/brands/github
       link: https://github.com/AIboy996
