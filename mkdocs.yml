@@ -116,6 +116,8 @@ extra:
       name: BiliBili | 豆汁泡纳豆
 
 plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
   - search:
       prebuild_index: true
       lang:
@@ -124,6 +126,7 @@ plugins:
         - ja
   - tags:
       tags_file: tags.md
+  
   
 markdown_extensions:
   - md_in_html
