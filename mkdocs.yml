@@ -41,6 +41,10 @@ nav:
       - Python/第三方库/numpy.md
       - Python/第三方库/pandas.md
       - Python/第三方库/自己写一个包.md
+      - Python/第三方库/location.ipynb
+  - Project:
+    - Project/index.md
+    - Project/B站番剧分析.ipynb
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
@@ -116,14 +120,25 @@ extra:
       name: BiliBili | 豆汁泡纳豆
 
 plugins:
+  ## jupyter文件支持
+  - mkdocs-jupyter
+  ## 图片放大插件
+  - glightbox:
+      effect: zoom
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - nonzoom
+  ## 文章日期插件
   - git-revision-date-localized:
       enable_creation_date: true
+  ## 搜索插件
   - search:
-      prebuild_index: true
       lang:
         - en
         # 日语搜索汉字
         - ja
+  ## 文章标签插件
   - tags:
       tags_file: tags.md
   
