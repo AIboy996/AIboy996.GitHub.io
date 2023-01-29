@@ -95,6 +95,13 @@ repo_url: https://github.com/AIboy996/AIboy996.github.io
 copyright: Copyright &copy; 2023 yangzhang # 左下角的版权声明
 
 extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   analytics:
     provider: google
     property: G-8R9VRSN3S0

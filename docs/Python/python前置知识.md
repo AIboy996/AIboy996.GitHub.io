@@ -52,7 +52,7 @@ print("Hello World!"*100)
 - [stackoverflow](https://stackoverflow.com/)：国际著名的程序员问答平台
 - [github](https://github.com)：程序员的集结地，在issue中可以找到很多有用的信息
 
-并且搜索的时候尽量用英文搜索，如果有条件的话使用Google会比较好，如果用不了就用Bing，总之别用百度。中文互联网的环境确实够丑的，[CSDN](https://www.csdn.net/)、[博客园](https://www.cnblogs.com/)之类的博客网站的质量良莠不齐，千万注意甄别。
+并且搜索的时候尽量用英文搜索，如果有条件的话使用Google会比较好，如果用不了就用Bing，总之别用百度。中文互联网的环境确实够臭的，[CSDN](https://www.csdn.net/)、[博客园](https://www.cnblogs.com/)之类的博客网站的质量良莠不齐，千万注意甄别。
 
 ### 有用的网站
 
