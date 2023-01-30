@@ -1,4 +1,5 @@
 ---
+comments: true
 tags:
 - About Me
 hide:
@@ -27,5 +28,5 @@ hide:
 
 目前mkdocs-material理论上是不支持中文搜索的，所以本站仅支持英语、日文搜索（但是也可以搜到一些汉字）。
 
-## 留言功能
-敬请期待~
+## 评论功能
+本站采用了[giscus](https://giscus.app/)评论系统，评论的内容保存在GitHub仓库的discuss板块中（所以需要先使用GitHub账号登录之后才可以评论）。
