@@ -1,0 +1,4 @@
+/* 文章底部的prev/next标签不显示 */
+.md-footer__inner {
+    display: none;
+}
