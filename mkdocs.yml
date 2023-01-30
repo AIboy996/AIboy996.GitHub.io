@@ -45,6 +45,7 @@ nav:
   - Project:
     - Project/index.md
     - Project/B站番剧分析.ipynb
+    - Project/PyScript.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
@@ -174,9 +175,14 @@ markdown_extensions:
       alternate_style: true 
   - meta # 支持Markdown文件上方自定义标题标签等
 
+
+extra_css:
+  - assets/css/extra.css
+
 extra_javascript:
   # 百度的页面访问统计
-  - assets/js/baidu.js
+  # 暂时移除百度的访问统计（加载实在是有点慢
+  # - assets/js/baidu.js
   # 数学公式格式支持
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
   # 鼠标点击特效

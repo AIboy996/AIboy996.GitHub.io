@@ -2,6 +2,7 @@
 title: 胡言乱语
 hide:
 - feedback
+- footer
 ---
 
 # 博客📕

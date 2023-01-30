@@ -1,4 +1,5 @@
 ---
+comments: true
 title: Playground of Markdown
 hide:
   - navigation
