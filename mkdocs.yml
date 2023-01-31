@@ -46,6 +46,8 @@ nav:
   - Project:
     - Project/index.md
     - Project/PyScript.md
+    - Project/选课系统.md
+    - Project/qrq.md
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
@@ -127,6 +129,7 @@ extra:
 
 plugins:
   ## jupyter文件支持
+  ########## 暂时移除此功能
   #- mkdocs-jupyter
   ## 图片放大插件
   - glightbox:
@@ -179,7 +182,7 @@ extra_css:
 
 extra_javascript:
   # 百度的页面访问统计
-  # 暂时移除百度的访问统计（加载实在是有点慢
+  ######## 暂时移除百度的访问统计（加载实在是有点慢
   # - assets/js/baidu.js
   # 数学公式格式支持
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
