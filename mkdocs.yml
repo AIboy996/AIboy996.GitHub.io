@@ -8,6 +8,7 @@ nav:
     - About/about.md
     - About/友链.md
   - Article:
+    - Article/index.md
     - 墙和梯子:
       - Article/GFW/简介.md
     - mkdocs:
@@ -42,10 +43,8 @@ nav:
       - Python/第三方库/numpy.md
       - Python/第三方库/pandas.md
       - Python/第三方库/自己写一个包.md
-      - Python/第三方库/location.ipynb
   - Project:
     - Project/index.md
-    - Project/B站番剧分析.ipynb
     - Project/PyScript.md
   - SomeMath:
     - SomeMath/index.md
@@ -128,7 +127,7 @@ extra:
 
 plugins:
   ## jupyter文件支持
-  - mkdocs-jupyter
+  #- mkdocs-jupyter
   ## 图片放大插件
   - glightbox:
       effect: zoom
