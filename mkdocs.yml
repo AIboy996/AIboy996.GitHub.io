@@ -7,21 +7,22 @@ nav:
     - About/index.md
     - About/about.md
     - About/友链.md
+  - Article:
+    - 墙和梯子:
+      - Article/GFW/简介.md
+    - mkdocs:
+      - Article/mkdocs/理论.md
+      - Article/mkdocs/实践.md
+    - Jupyter:
+      - 介绍: Article/jupyter/jupyter1.md
+      - 基础使用: Article/jupyter/jupyter2.md
+      - 远程服务: Article/jupyter/jupyter3.md
+      - 进阶使用: Article/jupyter/jupyter4.md
+    - SAS:
+      - SAS的基本操作: Article/SAS/SAS的基本操作.md
+      - SAS的统计应用: Article/SAS/SAS的统计应用.md
   - Blog:
     - Blog/index.md
-    - 墙和梯子:
-      - Blog/GFW/简介.md
-    - mkdocs:
-      - Blog/mkdocs/理论.md
-      - Blog/mkdocs/实践.md
-    - Jupyter:
-      - 介绍: Blog/jupyter/jupyter1.md
-      - 基础使用: Blog/jupyter/jupyter2.md
-      - 远程服务: Blog/jupyter/jupyter3.md
-      - 进阶使用: Blog/jupyter/jupyter4.md
-    - SAS:
-      - SAS的基本操作: Blog/SAS/SAS的基本操作.md
-      - SAS的统计应用: Blog/SAS/SAS的统计应用.md
   - Python:
     - Python/index.md
     - Python/python前置知识.md
@@ -89,11 +90,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-edit_uri: ""  # 编辑按钮跳转的链接
-
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-copyright: Copyright &copy; 2023 yangzhang # 左下角的版权声明
+copyright: Copyright &copy; 2022-2023 yangzhang # 左下角的版权声明
 
 extra:
   consent:
