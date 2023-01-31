@@ -15,8 +15,10 @@ hide:
 ## 本站的几个板块
 
 - [**About**](/About)：就是当前板块，提供网站基本信息。
-- [**Blog**](/Blog)：博文板块，放一些IT相关和记录日常的博客。
+- [**Article**](/Article)：文章板块，放一些杂七杂八的文章。
+- [**Blog**](/Blog)：博客板块，放一些记录日常的博客。
 - [**Python**](/Python)：python板块，放一些笔记，包含基础、高级语法知识和各种库的使用。
+- [**Project**](/Project)：项目板块，本人的一些开源项目。
 - [**SomeMath**](/SomeMath)：数学板块，放一些数学相关的文章。
 - [**PlayGround**](/playground)：markdown板块，用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](/tags/)：👇
