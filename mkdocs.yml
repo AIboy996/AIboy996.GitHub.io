@@ -24,6 +24,11 @@ nav:
       - SAS的统计应用: Article/SAS/SAS的统计应用.md
   - Blog:
     - Blog/index.md
+    - 2022:
+      - Blog/2022年度总结.md
+    - 2023:
+      - Blog/卖身.md
+
   - Python:
     - Python/index.md
     - Python/python前置知识.md

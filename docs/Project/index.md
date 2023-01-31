@@ -12,4 +12,4 @@ hide:
 <hr>
 AIboy996's Github chart：
 
-<img src="http://ghchart.rshah.org/AIboy996" alt="AIboy996's Github chart" />
+![AIboy996's Github chart](http://ghchart.rshah.org/AIboy996){.nozoom}
