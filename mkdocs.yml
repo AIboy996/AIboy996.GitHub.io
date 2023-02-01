@@ -25,10 +25,9 @@ nav:
   - Blog:
     - Blog/index.md
     - 2022:
-      - Blog/2022年度总结.md
+      - Blog/2022/2022年度总结.md
     - 2023:
-      - Blog/卖身.md
-
+      - Blog/2023/卖身.md
   - Python:
     - Python/index.md
     - Python/python前置知识.md
@@ -92,6 +91,7 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 代码内容给一个复制按钮
+    - announce.dismiss
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
@@ -155,8 +155,10 @@ plugins:
   ## 文章标签插件
   - tags:
       tags_file: tags.md
-  
-  
+  - minify:
+      minify_html: true
+
+
 markdown_extensions:
   - md_in_html
   - attr_list # 给图片后面添加{width="300"}设置大小
