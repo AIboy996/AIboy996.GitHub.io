@@ -13,8 +13,8 @@ jobs: # 工作流的具体内容
       - uses: actions/checkout@v3 # 先checkout到main分支
         with:
           fetch-depth: 0 # mkdocs-git-revision-date-localized-plugin的要求
-      - uses: actions/setup-python@v2 # 再安装Python3和相关环境
+      - uses: actions/setup-python@v4 # 再安装Python3和相关环境
         with:
-          python-version: 3.x
+          python-version: 3.10
       - run: python3 -m pip install -r requirements.txt
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
