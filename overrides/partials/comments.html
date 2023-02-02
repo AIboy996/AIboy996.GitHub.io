@@ -1,4 +1,6 @@
-{% if page.meta.comments %}
+{% if "comments" in page.meta.hide %}
+<p></p>
+{% else %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 <script src="https://giscus.app/client.js"
         data-repo="AIboy996/AIboy996.GitHub.io"

@@ -2,6 +2,7 @@
 title: 胡编乱造
 hide:
 - feedback
+- comments
 ---
 
 # 文章📰

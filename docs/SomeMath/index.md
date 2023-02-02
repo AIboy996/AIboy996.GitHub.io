@@ -2,6 +2,7 @@
 title: 胡数八道
 hide:
 - feedback
+- comments
 ---
 # 数学➗
 

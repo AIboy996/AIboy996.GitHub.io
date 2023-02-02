@@ -4,8 +4,6 @@ tags:
 - About Me
 hide:
 - tags
-- nums
-- feedback
 ---
 
 ## 本站的来龙去脉

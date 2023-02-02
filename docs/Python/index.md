@@ -5,7 +5,6 @@ tags:
 hide:
 - tags
 - toc
-comments: true
 ---
 
 # Python🐍
@@ -60,6 +59,7 @@ flowchart LR
     属性
     方法
     装饰器
+    描述器
     end
     subgraph 函数式编程
     函数

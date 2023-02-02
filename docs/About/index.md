@@ -1,10 +1,8 @@
 ---
-comments: true
 tags:
 - About Me
 hide:
 - tags
-- nums
 ---
 
 # 站内导航🧭

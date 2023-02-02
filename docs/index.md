@@ -1,13 +1,12 @@
 ---
-tags: 
+tags:
 - About Me
 hide:
 - tags
 - nums
 - feedback
+- comments
 ---
-
-
 
 # 👋
 

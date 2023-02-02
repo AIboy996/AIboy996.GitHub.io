@@ -2,7 +2,7 @@
 title: 胡言乱语
 hide:
 - feedback
-- nums
+- comments
 ---
 
 # 博客📕
