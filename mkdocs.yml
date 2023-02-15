@@ -10,6 +10,12 @@ nav:
     - About/友链.md
   - Article:
     - Article/index.md
+    - Docker:
+      - Article/Docker/docker简介.md
+      - Article/Docker/docker基础.md
+      - Article/Docker/docker进阶.md
+    - Git:
+      - Article/Git/git.md
     - 墙和梯子:
       - Article/GFW/简介.md
     - mkdocs:
