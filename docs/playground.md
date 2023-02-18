@@ -3,6 +3,9 @@ title: Playground of Markdown
 hide:
 - navigation
 ---
+
+## [👉本站的404页面](./none)
+
 !!! note
 
     这里用于调试本站支持的各类markdown扩展语法，基础的语法这里就不赘述了，参见markdown官方教程[^1]。此外，这里涉及的全部内容都可以参见mkdocs material的官网[^2]。并非所有的语法都是原生支持的，有些需要额外的插件以及额外的选项开启，这些都可以在官网上找到。

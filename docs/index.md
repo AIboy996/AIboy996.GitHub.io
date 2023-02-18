@@ -3,7 +3,7 @@ tags:
 - About Me
 hide:
 - tags
-- nums
+- edit
 - feedback
 - comments
 ---

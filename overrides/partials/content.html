@@ -1,0 +1,40 @@
+<!-- Edit and view button -->
+<!-- 是否隐藏编辑按钮 -->
+{% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "edit" in page.meta.hide %}
+{% endif %}
+{% if page.edit_url %}
+{% set edit = "https://github.com/squidfunk/mkdocs-material/edit" %}
+{% set view = "https://raw.githubusercontent.com/squidfunk/mkdocs-material" %}
+<a href="{{ page.edit_url | replace('master', 'main')}}" title="Edit this page" class="md-content__button md-icon" {{ hidden }}>
+    {% include ".icons/material/file-edit-outline.svg" %}
+</a>
+<a href="{{ page.edit_url | replace(edit, view) | replace('master', 'main') }}" title="View source of this page" class="md-content__button md-icon" {{ hidden }}>
+    {% include ".icons/material/file-eye-outline.svg" %}
+</a>
+{% endif %}
+
+<!-- Tags -->
+{% if "tags" in config.plugins %}
+{% include "partials/tags.html" %}
+{% endif %}
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it
+  doesn't, the page title (or respectively site name) is used
+  as the main headline.
+-->
+{% if not "\x3ch1" in page.content %}
+<h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+
+<!-- Markdown content -->
+{{ page.content }}
+
+<!-- Source file information -->
+{% if page.meta and (
+page.meta.git_revision_date_localized or
+page.meta.revision_date
+) %}
+{% include "partials/source-file.html" %}
+{% endif %}
