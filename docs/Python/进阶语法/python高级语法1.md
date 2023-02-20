@@ -198,7 +198,55 @@ print(f.__doc__)
 ```
 写完备的注释，你好我好大家好。
 ## 迭代器
+`迭代器（iterator）`和之前遇到过的`可迭代对象（iterable）`有点类似。
 
+迭代器指的是实现了`__next__`方法的对象（通常是一个数据流），能够通过这个方法（或者`next()`函数）访问数据流中的下一个。
+
+可迭代对象指的是实现了`__iter__`方法的对象，把该对象传递给`iter()`函数可以返回一个迭代器。
+
+例如`#!python [1, 2, 3]`就是一个可迭代对象，`iter([1, 2, 3])`就是一个迭代器。
+
+下面是一个示例：
+
+=== "源代码"
+
+    ```python
+    iterable = [1,2,3]
+    iterator = iter(iterable)
+    print(iterator.__class__)
+    while 1:
+        try:
+            print(iterator.__next__())
+        except StopIteration:
+            print('迭代器终止')
+            break
+    ```
+=== "运行结果"
+
+    ```text
+    <class 'list_iterator'>
+    1
+    2
+    3
+    迭代器终止
+
+    ```
 ## 生成器
+迭代器虽然很重要，但是在函数式编程这一块我们不去深入学习它，只是作为生成器的引入。
 
+生成器（generator）指的是使用`yield`关键字的函数的返回值。
+
+例如：
+```python
+def g(n):
+    assert isinstance(n, int)
+    for i in range(n):
+        yield i
+
+print(g(2).__class__) # 打印出 <class 'generator'>
+```
+
+上例中`g(2)`就是一个生成器。
+
+虽然这个函数并没有一般意义上的输出`return`，但是它仍然是有返回值的。每当我们传递一个整数进去，他都会返回一个生成器。
 ## 装饰器
