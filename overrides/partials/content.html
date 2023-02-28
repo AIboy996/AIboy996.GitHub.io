@@ -1,22 +1,23 @@
 <!-- Edit and view button -->
 <!-- 是否隐藏编辑按钮 -->
 {% if page.meta and page.meta.hide %}
-    {% set hidden = "hidden" if "edit" in page.meta.hide %}
+    {% set hiddenedit = "hidden" if "edit" in page.meta.hide %}
 {% endif %}
 {% if page.edit_url %}
 {% set edit = "https://github.com/squidfunk/mkdocs-material/edit" %}
 {% set view = "https://raw.githubusercontent.com/squidfunk/mkdocs-material" %}
-<a href="{{ page.edit_url | replace('master', 'main') | replace('github.com', 'github.dev') |replace('edit', 'blob')}}" title="Edit this page" class="md-content__button md-icon" {{ hidden }}>
+<a href="{{ page.edit_url | replace('master', 'main') | replace('github.com', 'github.dev') |replace('edit', 'blob')}}" title="Edit this page" class="md-content__button md-icon" {{ hiddenedit }}>
     {% include ".icons/material/file-edit-outline.svg" %}
 </a>
-<a href="{{ page.edit_url | replace(edit, view) | replace('master', 'main')}}" title="View source of this page" class="md-content__button md-icon" {{ hidden }}>
+<a href="{{ page.edit_url | replace(edit, view) | replace('master', 'main')}}" title="View source of this page" class="md-content__button md-icon" {{ hiddenedit }}>
     {% include ".icons/material/file-eye-outline.svg" %}
 </a>
 {% endif %}
 
+
 <!-- Tags -->
-{% if "tags" in config.plugins %}
-{% include "partials/tags.html" %}
+{% if "material/tags" in config.plugins %}
+  {% include "partials/tags.html" %}
 {% endif %}
 
 <!--
