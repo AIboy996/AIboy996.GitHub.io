@@ -174,8 +174,7 @@ plugins:
 markdown_extensions:
   - md_in_html
   - attr_list # 给图片后面添加{width="300"}设置大小
-  - pymdownx.arithmatex: # latex支持
-      generic: true
+  - pymdownx.arithmatex # latex支持
   - footnotes
   - toc:
       permalink: true # 固定标题位置为当前位置
@@ -205,6 +204,10 @@ extra_javascript:
   ######## 暂时移除百度的访问统计（加载实在是有点慢
   # - assets/js/baidu.js
   # 数学公式格式支持
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  ### mathjax2.7.1
+  ### 使用https://codepen.io/pkra/pen/EPeKjo这个项目的代码实现自动换行
+  ###（这个特性mathjax3似乎要支持但是现在还没实现
+  - assets/js/mathjax.js
+  ######## 用html嵌入的方式支持数学公式
   # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js

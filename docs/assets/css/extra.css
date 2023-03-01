@@ -2,3 +2,5 @@
 .md-footer__inner:not([hidden]) {
     display: none;
 }
+
+p { word-wrap:break-word; }
