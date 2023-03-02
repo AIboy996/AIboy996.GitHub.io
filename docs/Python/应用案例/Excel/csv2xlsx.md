@@ -1,3 +1,8 @@
+---
+tags:
+- python案例
+- 微软三件套
+---
 # 超大csv文件转xlsx文件
 任务：把一个`shape=(10000, 44)`的csv文件转换成xlsx格式
 
@@ -118,6 +123,7 @@ os.system("csv2xlsx.exe -o ./tmp/csv2xlsx.xlsx ./tmp/tmp.csv ")
     
 
 这是[一个哥们](https://github.com/mentax/csv2xlsx)用go语言写的，也不错。但是经过我的亲测，如果是更大的文件（百万行），还是不如Excel好用。
+
 
 一些参考资料：
 - [pandas的ExcelWriter](https://pandas.pydata.org/docs/reference/api/pandas.ExcelWriter.html)

@@ -59,6 +59,8 @@ nav:
     - 应用案例（爬虫）:
       - Python/应用案例/爬虫/药监局1.md
       - Python/应用案例/爬虫/药监局2.md
+    - 应用案例（微软三件套）:
+      - Python/应用案例/Excel/csv2xlsx.md
   - Project:
     - Project/index.md
     - Project/PyScript.md
