@@ -18,7 +18,7 @@ tags:
     -rwx------+ 1 yangz yangz 4185300 Mar  2 16:35 tmp.csv
     
 
-# pandas
+## pandas
 在python中提到处理表格数据，最通用的工具就是pandas了。我们可以用`pd.read_csv`把数据读取成`pd.DataFrame`然后再保存为`.xlsx`文件。
 
 
@@ -73,7 +73,7 @@ with zipfile.ZipFile("./tmp/tmp.zip", "w") as zf:
     
 
 而在Windows平台，还有一个强有力的工具：`pywin32`
-# pywin32
+## pywin32
 我们可以通过`pywin32`直接使用Windows上的程序。在这里我们就要用`Excel`给的接口来完成任务。
 
 > Windows默认的文件编码格式是gbk，需要转换一下
@@ -106,7 +106,7 @@ excel.Quit()
 
 这速度，可以说在写`xlsx`格式方面，各种开源库被Excel薄纱。
 
-# csv2xlsx
+## csv2xlsx
 
 
 ```python
@@ -125,7 +125,9 @@ os.system("csv2xlsx.exe -o ./tmp/csv2xlsx.xlsx ./tmp/tmp.csv ")
 这是[一个哥们](https://github.com/mentax/csv2xlsx)用go语言写的，也不错。但是经过我的亲测，如果是更大的文件（百万行），还是不如Excel好用。
 
 
-一些参考资料：
+
+## 一些参考资料
+
 - [pandas的ExcelWriter](https://pandas.pydata.org/docs/reference/api/pandas.ExcelWriter.html)
 - [Excel SaveAs函数手册](https://learn.microsoft.com/zh-cn/office/vba/api/excel.workbook.saveas)
 - [gencache.EnsureDispatch和Dispatch的区别](https://stackoverflow.com/questions/50127959/win32-dispatch-vs-win32-gencache-in-python-what-are-the-pros-and-cons)
