@@ -29,6 +29,24 @@ nav:
     - SAS:
       - SAS的基本操作: Article/SAS/SAS的基本操作.md
       - SAS的统计应用: Article/SAS/SAS的统计应用.md
+    - Statistics:
+      - Article/Statistics/index.md
+      - Article/Statistics/数学分析.md
+      - Article/Statistics/线性代数.md
+      - Article/Statistics/运筹学.md
+      - Article/Statistics/概率论与数理统计.md
+      - Article/Statistics/统计软件.md
+      - Article/Statistics/统计推断.md
+      - Article/Statistics/回归分析.md
+      - Article/Statistics/时间序列分析.md
+      - Article/Statistics/抽样调查.md
+      - Article/Statistics/多元分析.md
+      - Article/Statistics/随机过程.md
+      - Article/Statistics/属性数据分析.md
+      - Article/Statistics/非参数统计.md
+      - Article/Statistics/统计计算.md
+      - Article/Statistics/数据挖掘.md
+      - Article/Statistics/模式识别和机器学习.md
   - Blog:
     - Blog/index.md
     - 2022:
@@ -70,12 +88,12 @@ nav:
   - SomeMath:
     - SomeMath/index.md
     - 杂题:
-        - SomeMath/一道复杂极限.md
-    - SomeMath/泰勒展开/泰勒展开.md
-    - SomeMath/线性齐次差分方程.md
+      - SomeMath/一道复杂极限.md
+      - SomeMath/泰勒展开/泰勒展开.md
+      - SomeMath/线性齐次差分方程.md
     - Montmort:
-        - SomeMath/Montmort问题（一）.md
-    - SomeMath/双曲函数.md
+      - SomeMath/Montmort问题（一）.md
+      - SomeMath/双曲函数.md
   - Tags: tags.md
   - Playground: playground.md
 
