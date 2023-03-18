@@ -12,13 +12,14 @@ hide:
 
 ## 本站的几个板块
 
-- [**About**](/About)：就是当前板块，提供网站基本信息。
-- [**Article**](/Article)：文章板块，放一些杂七杂八的文章。
+- [**About**](/About)：当前板块，提供网站基本信息。
+- [**Article**](/Article)：“文章”板块，放一些杂七杂八的“文章”。
 - [**Blog**](/Blog)：博客板块，放一些记录日常的博客。
-- [**Python**](/Python)：python板块，放一些笔记，包含基础、高级语法知识和各种库的使用。
+- [**Python**](/Python)：Python板块，放一些笔记，包含基础、高级语法知识和各种库的使用。
 - [**Project**](/Project)：项目板块，本人的一些开源项目。
-- [**SomeMath**](/SomeMath)：数学板块，放一些数学相关的文章。
-- [**PlayGround**](/playground)：markdown板块，用来调试mkdocs-material提供的markdown的扩展语法
+- [**Statistics**](/Statistics)：统计学相关。
+- [**SomeMath**](/SomeMath)：数学相关。
+- [**PlayGround**](/playground)：用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](/tags/)：👇
 ## 本站的一些功能
 ### 分类标签

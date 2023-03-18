@@ -7,7 +7,7 @@ hide:
 - toc
 ---
 
-# Python🐍
+# 蟒蛇🐍
 
 !!! quote "The Zen of Python, by Tim Peters"
     Beautiful is better than ugly.
