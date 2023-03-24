@@ -20,6 +20,7 @@ jobs: # 工作流的具体内容
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
   deployment-cloudfare:
     runs-on: ubuntu-latest
+    environment: cloudfare-pages
     permissions:
       contents: read
       deployments: write
