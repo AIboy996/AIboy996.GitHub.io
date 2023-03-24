@@ -18,10 +18,19 @@ jobs: # 工作流的具体内容
           python-version: 3.x
       - run: python3 -m pip install -r requirements.txt
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
   deployment-cloudfare-pages:
     needs: deployment-github-pages
     runs-on: ubuntu-latest
     environment: cloudfare-pages
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
