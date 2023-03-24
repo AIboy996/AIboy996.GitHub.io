@@ -34,7 +34,7 @@ while "False":
 
 ## 联系方式
 
-- 🐧邮箱：[2207854887@qq.com](mailto:2207854887@qq.com)
+- 邮箱：[2207854887@qq.com](mailto:2207854887@qq.com)
 - 个人微信订阅号：
 
 ![](./assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}
