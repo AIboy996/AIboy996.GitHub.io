@@ -5,7 +5,8 @@
 - Document: [markdown](https://www.markdownguide.org/)
 - Build: [MkDocs](https://www.mkdocs.org) 
 - Theme: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
-- Publish: [GitHub Pages](https://pages.github.com) 
+- Publish1: [GitHub Pages](https://pages.github.com) 
+- Publish2: [CloudFare Pages](https://cloudfare.com) 
 
 -----
 
