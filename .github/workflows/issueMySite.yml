@@ -30,15 +30,11 @@ jobs: # 工作流的具体内容
         uses: actions/checkout@v3
         with:
           ref: gh-pages
-
-      # Run a build step here if your project requires
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: d28d3419b6c9d6c2ceeaec2469eac99c
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
           projectName: githubio
           directory: '.'
-          # Optional: Enable this if you want to have GitHub Deployments triggered
-          # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: production
