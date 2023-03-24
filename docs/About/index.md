@@ -26,9 +26,9 @@ hide:
 本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](/tags)板块按照分类标签查看文章。
 
 ### 搜索
-本站有搜索功能（由mkdocs-material驱动），支持搜索文章标题、文字内容、代码等。
+本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
 
-目前mkdocs-material理论上是不支持中文搜索的，所以本站仅支持英语、日文搜索（但是也可以搜到一些汉字）。
+目前理论上是不支持中文搜索的，仅支持英语、日文搜索，但是基于日语的支持实际上也可以搜到一些汉字。
 ### 页面反馈
 本站有反馈功能（由[Google Analytics](https://analytics.google.com/analytics/web/)驱动，需要有cookie许可才能正常运作），在页面底部有`Was this page helpful?`的选项。
 
