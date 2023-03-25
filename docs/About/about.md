@@ -65,5 +65,5 @@ tags:
 
 如果你觉得我就像**世**界上**另**外一个**你**，因而对我产生了些许兴趣，或者你有对本站任何的问题。不妨来联系我：
 
-- 📫 [QQ邮箱](mailto:2207854887@qq.com)
-- 💬 本人微信号的`md5`码：a570c5cfd91e29568b4d1944c4bcd6f4
+- 📫 邮箱：[mail@yangzhang.site](mailto:mail@yangzhang.site)
+- 💬 本人微信号的`md5`码：2868c4b14f63153fc45995d6f54c4750
