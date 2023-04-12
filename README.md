@@ -1,11 +1,11 @@
-# [yangzhang's Site](https://yangzhang.site)
+# yangzhang's Site
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-- Document: [markdown](https://www.markdownguide.org/)
-- Build: [MkDocs](https://www.mkdocs.org) 
-- Theme: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
-- Publish1: [GitHub Pages](https://pages.github.com) 
-- Publish2: [CloudFare Pages](https://cloudfare.com) 
+- 文章: [markdown](https://www.markdownguide.org/)
+- 构建: [MkDocs](https://www.mkdocs.org) 
+- 主题: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
+- 发布1: [GitHub Pages](https://pages.github.com) 
+- 发布2: [CloudFare Pages](https://cloudfare.com) 
 
 -----
 
