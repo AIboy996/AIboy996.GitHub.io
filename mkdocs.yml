@@ -135,7 +135,7 @@ theme:
 
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-copyright: "&copy; 2022-2023 yangzhang" # 左下角的版权声明
+copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2023 yangzhang</a>" # 左下角的版权声明
 
 extra:
   consent:
