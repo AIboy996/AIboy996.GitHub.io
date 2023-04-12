@@ -1,5 +1,7 @@
 # yangzhang's Site
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+-----
 <https://yangzhang.site>
 
 - Document: [markdown](https://www.markdownguide.org/)
@@ -15,3 +17,11 @@
 [Part1 理论](https://yangzhang.site/Blog/mkdocs/%E7%90%86%E8%AE%BA/)
 
 [Part2 实践](https://yangzhang.site/Blog/mkdocs/%E5%AE%9E%E8%B7%B5/)
+
+-----
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
