@@ -1,8 +1,5 @@
-# yangzhang's Site
+# [yangzhang's Site](https://yangzhang.site)
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-
------
-<https://yangzhang.site>
 
 - Document: [markdown](https://www.markdownguide.org/)
 - Build: [MkDocs](https://www.mkdocs.org) 

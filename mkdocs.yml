@@ -228,6 +228,7 @@ extra_javascript:
   # 百度的页面访问统计
   ######## 暂时移除百度的访问统计（加载实在是有点慢
   # - assets/js/baidu.js
+  
   # 数学公式格式支持
   ### mathjax2.7.1
   ### 使用https://codepen.io/pkra/pen/EPeKjo这个项目的代码实现自动换行
