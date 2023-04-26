@@ -53,6 +53,7 @@ nav:
     - 标准库:
       - Python/标准库/os.md
       - Python/标准库/re.md
+      - Python/标准库/time.md
     - 第三方库:
       - Python/第三方库/包管理.md
       - Python/第三方库/numpy.md

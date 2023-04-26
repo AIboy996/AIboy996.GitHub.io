@@ -58,7 +58,6 @@ flowchart LR
     多态
     属性
     方法
-    装饰器
     描述器
     end
     subgraph 函数式编程
