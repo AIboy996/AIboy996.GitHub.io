@@ -101,7 +101,7 @@ nav:
     - Montmort:
       - SomeMath/Montmort问题（一）.md
       - SomeMath/双曲函数.md
-  - Tags: tags.md
+  - Tags: Tags/index.md
   - Playground: playground.md
 
 theme:
@@ -191,9 +191,6 @@ plugins:
         - en
         # 日语搜索汉字
         - ja
-  ## 文章标签插件
-  - tags:
-      tags_file: tags.md
   - minify:
       minify_html: true
 
