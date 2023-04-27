@@ -51,7 +51,7 @@
             {% set tag, ps = item %}
             {# create a link with tag name #}
             {# font size is based on the page count #}
-            <a class="tag" href="{{ config.site_url }}tags/#{{ tag }}">
+            <a class="tag" href="{{ config.site_url }}Tags/#{{ tag }}">
                 <span class="tag-name" style="
                     {% set sz = ps|count %}
                         {% if sz > 10 %}

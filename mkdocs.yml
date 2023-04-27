@@ -176,6 +176,7 @@ plugins:
   ########## 暂时移除此功能
   #- mkdocs-jupyter
   ## 图片放大插件
+  - tags
   - glightbox:
       effect: zoom
       zoomable: true
@@ -193,7 +194,6 @@ plugins:
         - ja
   - minify:
       minify_html: true
-  - tags
 
 markdown_extensions:
   - md_in_html
