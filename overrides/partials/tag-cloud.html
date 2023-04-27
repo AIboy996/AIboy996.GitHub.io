@@ -9,9 +9,6 @@
     {% for tag in p.page.meta.tags %}
       {% if tags|length %}
         {% set ns = namespace(found=False) %}
-        {# read more about scope at 
-        https://jinja.palletsprojects.com/en/2.11.x/templates/#assignments
-        #}
         {# check if tag exists, append to its page list #}
         {% for item in tags %}
           {% set t, ps = item %}

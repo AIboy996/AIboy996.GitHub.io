@@ -1,7 +1,7 @@
 ---
 title: 关于本站和我的一切
 tags: 
-- About Me
+- AboutMe
 ---
 
 ## 本站的来龙去脉

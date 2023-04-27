@@ -16,7 +16,7 @@ hide:
 ---
 title: Playground of Markdown <!--(1)-->
 tags: <!--(2)-->
-  -  About Me
+  -  AboutMe
 hide: <!--(3)-->
   - navigation
   - toc

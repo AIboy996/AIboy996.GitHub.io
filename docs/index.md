@@ -1,6 +1,6 @@
 ---
 tags:
-- About Me
+- AboutMe
 hide:
 - tags
 - edit

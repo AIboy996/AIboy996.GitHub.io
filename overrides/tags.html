@@ -6,14 +6,12 @@
             max-width: 35rem; 
             margin: 0 auto;
         }
-        .md-typeset .tags details {
-            padding: 0.5em 1em;
-        }
-    
     </style>
     <div class="tags">
         {% include "partials/tag-cloud.html" %}
         <hr>
         {% include "partials/tag-page-list.html" %}
+        <hr>
+        {% include "partials/comments.html" %}
     </div>
 {% endblock %}

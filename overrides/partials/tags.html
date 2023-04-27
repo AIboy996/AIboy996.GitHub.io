@@ -1,0 +1,21 @@
+<!-- Determine whether to show tags -->
+{% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "tags" in page.meta.hide %}
+{% endif %}
+
+<!-- Tags -->
+{% if tags %}
+<nav class="md-tags" {{ hidden }}>
+    {% for tag in tags %}
+        {% if config.extra.tags %}
+            {% set icon = " md-tag-icon" %}
+            {% if tag.type %}
+                {% set icon = icon ~ " md-tag--" ~ tag.type %}
+            {% endif %}
+        {% endif %}
+    <a href="/tags#{{ tag.name }}" class="md-tag{{ icon }}">
+        {{- tag.name -}}
+    </a>
+    {% endfor %}
+</nav>
+{% endif %}

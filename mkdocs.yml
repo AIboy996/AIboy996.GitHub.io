@@ -193,7 +193,7 @@ plugins:
         - ja
   - minify:
       minify_html: true
-
+  - tags
 
 markdown_extensions:
   - md_in_html
@@ -218,7 +218,6 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - meta # 支持Markdown文件上方自定义标题标签等
-
 
 extra_css:
   - assets/css/extra.css
