@@ -4,7 +4,7 @@
 {% endif %}
 
 <!-- Tags -->
-{% if tags %}
+{% if page.meta.tags %}
 <nav class="md-tags" {{ hidden }}>
     {% for tag in tags %}
         {% if config.extra.tags %}
