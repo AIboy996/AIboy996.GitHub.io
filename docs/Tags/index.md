@@ -1,5 +1,5 @@
 ---
-template: tags.html
+template: custom_tags.html
 title: Tags
 hide:
 - navigation

@@ -3,8 +3,7 @@
     {% set hidden = "hidden" if "tags" in page.meta.hide %}
 {% endif %}
 
-<!-- Tags -->
-{% if page.meta.tags %}
+{% if tags %}
 <nav class="md-tags" {{ hidden }}>
     {% for tag in tags %}
         {% if config.extra.tags %}

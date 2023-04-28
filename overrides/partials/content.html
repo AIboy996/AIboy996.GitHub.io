@@ -16,7 +16,7 @@
 
 
 <!-- Tags -->
-{% if "material/tags" in config.plugins %}
+{% if "tags" in config.plugins %}
   {% include "partials/tags.html" %}
 {% endif %}
 
@@ -31,6 +31,13 @@
 
 <!-- Markdown content -->
 {{ page.content }}
+
+<!-- 首页放一个标签云 -->
+{% if page.is_homepage %}
+<div class="tag-cloud-toc">
+    {% include "partials/tag-cloud.html" %}
+</div>
+{% endif %}
 
 <!-- Source file information -->
 {% if page.meta and (
