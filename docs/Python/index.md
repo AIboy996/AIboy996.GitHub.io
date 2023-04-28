@@ -93,11 +93,11 @@ flowchart LR
     
     第三方库 --- 画图 & 数据处理 & 统计机器学习 & web技术
     subgraph 文件和系统
-    os;io;time;shutil;
+    os;io;shutil;platform;
   	zipfile;tarfile;
     end
     subgraph 数据
-    string;re;datetime;
+    string;re;datetime;calender;time;
     collections;copy;pprint;
     end
     subgraph 数学
