@@ -5,7 +5,6 @@ hide:
 - tags
 - edit
 - feedback
-- comments
 ---
 
 # 👋

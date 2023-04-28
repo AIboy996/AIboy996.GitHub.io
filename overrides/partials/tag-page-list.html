@@ -71,10 +71,14 @@
     )
   }
   )
+  // 首次加载页面
+  var hash_init = window.location.hash.substr(1);
+  if (hash_init) {
+    document.getElementById(decodeURI(hash_init)).open = true;
+  }
   // 当hash改变的时候，展开对应的列表
   window.addEventListener('hashchange', function () {
     var hash = window.location.hash.substr(1);
-    console.log(hash);
     if (hash) {
       document.getElementById(decodeURI(hash)).open = true;
     }
