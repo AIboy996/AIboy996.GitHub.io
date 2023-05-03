@@ -3,7 +3,7 @@ tags:
 - python标准库
 ---
 
-# time in python
+# time
 
 python中常用的时间相关的标准库有三个。
 

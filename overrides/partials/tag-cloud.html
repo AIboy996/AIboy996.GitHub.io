@@ -50,15 +50,15 @@
             {# create a link with tag name #}
             {# font size is based on the page count #}
             <a class="tag" href="{{ config.site_url }}Tags/#{{ tag }}">
-                <span class="tag-name" style="
+                <span class="tag-name" style="display:inline-block;
                     {% set sz = ps|count %}
                         {% if sz > 10 %}
                             {% set sz = 10 %}
                         {% endif %}
                     {% if page.url == 'tags/' %}
-                        font-size:{{ 2+sz*0.05}}rem;
+                        font-size:{{ 1.75+sz*0.06}}rem;
                     {% else %}
-                        font-size:{{ 1+sz*0.05}}rem;
+                        font-size:{{ 0.75+sz*0.06}}rem;
                     {% endif %}
                     color:{{ color( loop.index%12) }};
                 ">
