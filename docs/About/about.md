@@ -40,7 +40,7 @@ tags:
 !!! info "最近更新"
     页面托管和DNS解析都换成了CloudFare家的产品，原因是在大陆的网络环境中它们更快。
 
-详细的建站教程参见文章[用mkdocs搭建个人网站](/Blog/mkdocs/理论/)
+详细的建站教程参见文章[用mkdocs搭建个人网站](/Article/mkdocs/理论/)
 ## 我是谁？
 ### 我有这样一些名字
 
@@ -67,3 +67,4 @@ tags:
 
 - 📫 邮箱：[mail@yangzhang.site](mailto:mail@yangzhang.site)
 - 💬 本人微信号的`md5`码：2868c4b14f63153fc45995d6f54c4750
+<!-- hint：我的微信号是纯英文字母构成的 -->

@@ -19,11 +19,11 @@ hide:
 - [**Project**](/Project)：项目板块，本人的一些开源项目。
 - [**Statistics**](/Statistics)：统计学相关。
 - [**SomeMath**](/SomeMath)：数学相关。
-- [**PlayGround**](/playground)：用来调试mkdocs-material提供的markdown的扩展语法
-- [**Tags**](/tags/)：👇
+- [**PlayGround**](/Playground)：用来调试mkdocs-material提供的markdown的扩展语法
+- [**Tags**](/Tags/)：👇
 ## 本站的一些功能
 ### 分类标签
-本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](/tags)板块按照分类标签查看文章。
+本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](/Tags)板块按照分类标签查看文章。
 
 ### 搜索
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
