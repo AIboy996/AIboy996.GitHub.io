@@ -102,7 +102,7 @@ nav:
       - SomeMath/Montmort问题（一）.md
       - SomeMath/双曲函数.md
   - Tags: Tags/index.md
-  - Playground: Playground.md
+  - Playground: Playground/index.md
 
 theme:
   name: material
