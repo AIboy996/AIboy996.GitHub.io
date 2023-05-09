@@ -154,7 +154,7 @@ mkdocs-material支持更多的扩展形式：
 ## 图片以及LaTex
 在原有markdown图片引用的基础之上，可以在末尾加上一些参数。LaTex则依然是依靠MathJax实现的，语法上需要小心并非所有的写法通用，具体有何差异可以去官网看一看[^3]。
 === "渲染效果"
-    ![circle](./assets/images/circle.png){align=right width=400 loading=lazy}
+    ![circle](./assets/circle.png){align=right width=400 loading=lazy}
 	这是一个单位圆，图中$P$在第一象限，$PR\perp PQ$，$M,N$的横坐标都是2，问图示两个区域的面积何时相同？
 	
 	想要求解这个问题，我们只需要一些中学的三角函数知识就足矣。
@@ -177,7 +177,7 @@ mkdocs-material支持更多的扩展形式：
 	即得最终的答案。
 === "源代码"
 	```markdown
-	![circle](./assets/images/circle.png){align=right width=450 loading=lazy}
+	![circle](./assets/circle.png){align=right width=450 loading=lazy}
 	这是一个单位圆，图中$P$在第一象限，$PR\perp PQ$，$M,N$的横坐标都是2，问图示两个区域的面积何时相同？
 	
 	想要求解这个问题，我们只需要一些中学的三角函数知识就足矣。
@@ -202,13 +202,13 @@ mkdocs-material支持更多的扩展形式：
 但是`align`参数无法实现居中效果，可以用下面的写法
 === "渲染效果"
 	<figure markdown>
-      ![circle](./assets/images/circle.png){width=400}
+      ![circle](./assets/circle.png){width=400}
       <figcaption>Image caption</figcaption>
     </figure>
 === "源代码"
 	```markdown
 	<figure markdown>
-      ![circle](./assets/images/circle.png){width=400}
+      ![circle](./assets/circle.png){width=400}
       <figcaption>Image caption</figcaption>
     </figure>
     ```

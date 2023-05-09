@@ -170,6 +170,9 @@ extra:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85735334
       name: BiliBili | 豆汁泡纳豆
+    - icon: fontawesome/solid/list-check
+      link: https://bangumi.tv/anime/list/759154/do
+      name: bangumi追番列表
 
 plugins:
   ## jupyter文件支持
