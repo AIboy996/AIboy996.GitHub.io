@@ -30,6 +30,12 @@ img {
 ### 交通
 
 ### 住宿
+- 大阪的酒店
+<video src="assets/IMG_6202.MP4"></video>
+- 京都的酒店
+<video src="assets/IMG_6501.MP4"></video>
+- 东京的公寓
+<video src="assets/IMG_6754.MP4"></video>
 
 ### 吃喝
 
