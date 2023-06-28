@@ -4,7 +4,11 @@ tags:
 - 毕业碎碎念
 ---
 
+# 毕业.旅行
+> From 2023.6.19 to 2023.6.27 in Japan
+
 <style>
+/* 图片居中 */
 img {
   display: block;
   margin-left: auto;
@@ -12,9 +16,6 @@ img {
   width: 70%;
 }
 </style>
-
-# 毕业.旅行
-> From 2023.6.19 to 2023.6.27 in Japan
 
 终于在毕业这样一个特殊的时节去到了心心念念的日本，虽然只是短暂的一周旅行但是真的非常非常非常开心，特此一篇plog聊以纪念。
 
@@ -375,6 +376,7 @@ After：
 ![IMG_7080](assets/IMG_7080.JPEG){width=500}
 ![IMG_7083](assets/IMG_7083.JPEG){width=500}
 ![IMG_7084](assets/IMG_7084.JPEG){width=500}
+![IMG_7092](assets/IMG_7092.JPG){width=500}
 ![IMG_7087](assets/IMG_7087.JPEG){width=500}
 
 - 买点纪念品，溜了
