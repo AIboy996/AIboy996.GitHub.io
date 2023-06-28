@@ -23,7 +23,7 @@ img {
 本来战术总结想放在最后的，但是写着写着发现前面的内容太多了，放在后面估计没什么人看，于是挪到这里。
 ### 旅行的花费
 这大概是大伙比较关心的事情，我这里有一张账单仅供参考：
-![IMG_7122](assets/IMG_7122.PNG){width=500}
+![IMG_7122](assets/IMG_7122.jpg){width=500}
 > 这里面退改签的花费是我个人的原因（为了参加学院的毕业典礼而推迟的旅行，所以我付了我和我朋友双人份的退改签费用）
 
 总的来说，我们八天七晚的旅行花费在万元以内（签证、护照大概500￥可以搞定）
@@ -31,11 +31,11 @@ img {
 
 ### 住宿
 - 大阪的酒店
-<video src="assets/IMG_6202.MP4"></video>
+![type:video](./videos/IMG_6202.mp4)
 - 京都的酒店
-<video src="assets/IMG_6501.MP4"></video>
+![type:video](./videos/IMG_6501.MP4)
 - 东京的公寓
-<video src="assets/IMG_6754.MP4"></video>
+![type:video](./videos/IMG_6754.MP4)
 
 ### 吃喝
 
