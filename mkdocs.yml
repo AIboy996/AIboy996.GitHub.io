@@ -201,6 +201,7 @@ plugins:
         - ja
   - minify:
       minify_html: true
+  - rss
 
 markdown_extensions:
   - md_in_html
