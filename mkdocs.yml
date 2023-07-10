@@ -176,6 +176,9 @@ extra:
     - icon: fontawesome/solid/list-check
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
+    - icon: fontawesome/solid/rss
+      link: https://yangzhang.site/feed_rss_updated.xml
+      name: RSS
 
 plugins:
   ## jupyter文件支持
