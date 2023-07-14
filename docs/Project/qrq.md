@@ -1,6 +1,6 @@
 ---
-comments: true
 tags:
+- JavaScript
 - 开源项目
 title: chrome二维码生成扩展
 ---

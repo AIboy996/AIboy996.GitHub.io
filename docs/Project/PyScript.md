@@ -1,5 +1,4 @@
 ---
-comments: true
 tags:
 - PyScript
 - 开源项目

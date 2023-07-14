@@ -1,6 +1,6 @@
 ---
-comments: true
 tags:
+- Python
 - 开源项目
 title: 基于python的markdown渲染器
 ---
