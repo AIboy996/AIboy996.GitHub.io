@@ -1,6 +1,6 @@
 # yangzhang's Site
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-[![Blog](https://img.shields.io/badge/blog-@champyin-red.svg)](https://yangzhang.site)
+[![Blog](https://img.shields.io/badge/blog-@yangzhang-red.svg)](https://yangzhang.site)
 - 文章: [markdown](https://www.markdownguide.org/)
 - 构建: [MkDocs](https://www.mkdocs.org) 
 - 主题: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
