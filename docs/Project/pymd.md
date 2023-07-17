@@ -1,8 +1,8 @@
 ---
 tags:
-- Python
+- Python项目
 - 开源项目
-title: 基于python的markdown渲染器
+title: 基于Python的markdown渲染器
 ---
 
 # pymd

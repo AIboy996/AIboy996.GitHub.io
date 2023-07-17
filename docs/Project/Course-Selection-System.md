@@ -2,7 +2,7 @@
 title: 基于Django的选课系统
 tags:
 - Django
-- Python
+- Python项目
 - 开源项目
 ---
 
