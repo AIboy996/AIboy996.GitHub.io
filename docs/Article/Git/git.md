@@ -3,7 +3,7 @@ tags:
 - git
 ---
 
-# git cheatsheet
+# 单机git
 
 ```bash
 git init

@@ -1,6 +1,6 @@
 # yangzhang's Site
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-[![Blog](https://img.shields.io/badge/blog-@yangzhang-red.svg)](https://yangzhang.site)
+[![Blog](https://img.shields.io/badge/Site-@yangzhang.site-blue.svg)](https://yangzhang.site)
 - 文章: [markdown](https://www.markdownguide.org/)
 - 构建: [MkDocs](https://www.mkdocs.org) 
 - 主题: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
@@ -21,4 +21,4 @@
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
-[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-red.svg
