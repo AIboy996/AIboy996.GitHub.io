@@ -21,6 +21,8 @@ nav:
     - mkdocs:
       - Article/mkdocs/理论.md
       - Article/mkdocs/实践.md
+    - LaTeX:
+      - Article/latex/latex_basics.md
     - Jupyter:
       - 介绍: Article/jupyter/jupyter1.md
       - 基础使用: Article/jupyter/jupyter2.md
@@ -74,6 +76,7 @@ nav:
     - Project/选课系统.md
     - Project/qrq.md
     - Project/pymd.md
+    - Project/high_school_math.md
   - Statistics:
     - Statistics/index.md
     - 基础课:
