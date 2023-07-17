@@ -7,6 +7,9 @@ tags:
 ## LaTeX是什么
 一种排版语言。
 
+## LaTex家族
+pdflatex，xelatex等等。
+
 ## LaTeX能干什么
 写文章。
 

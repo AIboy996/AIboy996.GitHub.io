@@ -16,11 +16,15 @@ nav:
       - Article/Docker/docker进阶.md
     - Git:
       - Article/Git/git.md
+      - Article/Git/git_server.md
     - 墙和梯子:
       - Article/GFW/简介.md
+      - Article/GFW/客户端.md
+      - Article/GFW/DIY.md
     - mkdocs:
       - Article/mkdocs/理论.md
       - Article/mkdocs/实践.md
+      - Article/mkdocs/best_practices.md
     - LaTeX:
       - Article/latex/latex_basics.md
     - Jupyter:
