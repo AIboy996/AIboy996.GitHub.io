@@ -1,11 +1,13 @@
 ---
+title: 基于Django的选课系统
 tags:
 - Django
 - Python
 - 开源项目
 ---
 
-# 选课系统
+# Course-Selection-System
+
 !!! success inline
     数据库课程大作业，暂无后续更新计划。
 

@@ -47,6 +47,7 @@ nav:
       - Blog/2023/卖身2.md
       - Blog/2023/paper.md
       - Blog/2023/travel_to_japan.md
+      - Blog/2023/中等数学复健.md
   - Python:
     - Python/index.md
     - Python/python前置知识.md
@@ -76,11 +77,12 @@ nav:
       - Python/应用案例/Excel/csv2xlsx.md
   - Project:
     - Project/index.md
-    - Project/PyScript.md
-    - Project/选课系统.md
+    - Project/plt-gallery.md
+    - Project/Course-Selection-System.md
     - Project/qrq.md
     - Project/pymd.md
     - Project/high_school_math.md
+    - Project/AirPrint-with-Python.md
   - Statistics:
     - Statistics/index.md
     - 基础课:
@@ -153,10 +155,10 @@ extra:
   consent:
     title: Cookie consent
     description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+      I am using cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of posts and whether users can find what 
+      they're searching for. With your consent, all of this are helping me to
+      make my site better.
   analytics:
     provider: google
     property: G-8R9VRSN3S0
