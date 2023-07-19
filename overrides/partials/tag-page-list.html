@@ -46,7 +46,7 @@
     <ol>
       {% for p in ps %}
       <li>
-        <a href="{{ p.canonical_url }}">
+        <a href="/{{ p.url }}">
           {%- if p.meta and p.meta.title -%}
           {{- p.meta.title -}}
           {%- else -%}

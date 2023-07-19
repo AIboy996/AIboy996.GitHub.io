@@ -41,12 +41,12 @@ hide:
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
 
 !!! info "已知问题"
-	现在的评论系统有点问题，具体来说就是：子页面的评论会出现在父页面。例如[函数式编程](https://yangzhang.site/Python/%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/python%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%951/)的评论会出现在[Python首页](https://yangzhang.site/Python/)中。推测是URL中含有quoted中文的缘故。
+	现在的评论系统有点问题，具体来说就是：子页面的评论会出现在父页面。例如[函数式编程](/Python/%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/python%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%951/)的评论会出现在[Python首页](/Python/)中。推测是URL中含有quoted中文的缘故。
 
 ### RSS
-本站支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[更新序订阅源（推荐）](https://yangzhang.site/feed_rss_updated.xml)，该链接是按照**更新日期**排序的。
+本站支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[更新序订阅源（推荐）](/feed_rss_updated.xml)，该链接是按照**更新日期**排序的。
 
-你也可以从[创建序订阅源](https://yangzhang.site/feed_rss_created.xml)获取按照文档**创建日期**排序的订阅。
+你也可以从[创建序订阅源](/feed_rss_created.xml)获取按照文档**创建日期**排序的订阅。
 
 ### 颜色彩蛋
 随着星期几的变化，本站的主题色会随之改变：

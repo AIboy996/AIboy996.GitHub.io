@@ -26,7 +26,7 @@ nav:
       - Article/mkdocs/实践.md
       - Article/mkdocs/best_practices.md
     - LaTeX:
-      - Article/latex/latex_basics.md
+      - Article/latex/basic_latex.md
     - Jupyter:
       - 介绍: Article/jupyter/jupyter1.md
       - 基础使用: Article/jupyter/jupyter2.md
@@ -121,15 +121,28 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/images/summation.png
-  palette: 
-    - scheme: default # 日间模式
-      toggle:
-        icon: material/weather-night # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
-      toggle:
-        icon: material/weather-sunny
-        name: 切换至日间模式
+  palette:  # 一周七天，六种颜色
+    - scheme: mon
+      primary: grey
+      accent: orange
+    - scheme: tues
+      primary: blue grey
+      accent: orange
+    - scheme: wed
+      primary: teal
+      accent: orange
+    - scheme: thur
+      primary: indigo
+      accent: orange
+    - scheme: fri
+      primary: pink
+      accent: orange
+    - scheme: sat
+      primary: deep purple
+      accent: orange
+    - scheme: sun
+      primary: deep purple
+      accent: orange
   features:
     - content.code.annotate # 代码块内的注释
     - navigation.tabs # 使用Tab来进行分类
