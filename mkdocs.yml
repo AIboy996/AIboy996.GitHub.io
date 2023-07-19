@@ -122,11 +122,11 @@ theme:
   custom_dir: overrides
   logo: assets/images/summation.png
   palette: 
-    - scheme: day # 日间模式
+    - scheme: default # 日间模式
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: night # 夜间模式
+    - scheme: slate # 夜间模式
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式

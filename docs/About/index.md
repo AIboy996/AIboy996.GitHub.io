@@ -51,9 +51,9 @@ hide:
 ### 颜色彩蛋
 随着星期几的变化，本站的主题色会随之改变：
 
-- 周一：<span style="background-color:#757575;padding:3px;">grey</span>
-- 周二：<span style="background-color:#546d78;padding:3px;">blue grey</span>
-- 周三：<span style="background-color:#009485;padding:3px;">teal</span>
-- 周四：<span style="background-color:#4051b5;padding:3px;">indigo</span>
-- 周五：<span style="background-color:#e92063;padding:3px;">pink</span>
-- 周六、日：<span style="background-color:#7e56c2;padding:3px;">deep purple</span>
+- 周一：<span style="background-color:#757575;padding:5px;margin:3px;color:white;">grey</span>
+- 周二：<span style="background-color:#546d78;padding:5px;margin:3px;color:white;">blue grey</span>
+- 周三：<span style="background-color:#009485;padding:5px;margin:3px;color:white;">teal</span>
+- 周四：<span style="background-color:#4051b5;padding:5px;margin:3px;color:white;">indigo</span>
+- 周五：<span style="background-color:#e92063;padding:5px;margin:3px;color:white;">pink</span>
+- 周六、日：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>

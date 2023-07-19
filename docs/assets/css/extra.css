@@ -15,10 +15,6 @@ margin-left:3px;
 margin-right:3px;
 } */
 
-[data-md-color-scheme="day"] {
+[data-md-color-scheme="default"] {
     --md-primary-fg-color:        #ffffff;
-}
-
-[data-md-color-scheme="night"] {
-    --md-primary-fg-color:        #000000;
 }

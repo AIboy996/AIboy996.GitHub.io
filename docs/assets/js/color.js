@@ -12,9 +12,10 @@ function changeColorByWeekday(){
         "#7e56c2"
         );
     // 选择器，改变日间主题的颜色
-    const root = document.querySelector('[data-md-color-scheme="day"]');
+    const root = document.querySelector('[data-md-color-scheme="default"]');
     root.style.setProperty('--md-primary-fg-color', colors[day]);
     // console.log('color changed');
 }
 
-changeColorByWeekday();
+document.addEventListener("DOMContentLoaded", changeColorByWeekday);
+// $(changeColorByWeekday);
