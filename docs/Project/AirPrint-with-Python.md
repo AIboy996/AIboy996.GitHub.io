@@ -1,7 +1,7 @@
 ---
 title: 基于Python的AirPrint虚拟打印机
 tags:
-- Python项目
+- python项目
 - 开源项目
 ---
 

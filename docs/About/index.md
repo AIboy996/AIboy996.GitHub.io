@@ -47,3 +47,13 @@ hide:
 本站支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[更新序订阅源（推荐）](https://yangzhang.site/feed_rss_updated.xml)，该链接是按照**更新日期**排序的。
 
 你也可以从[创建序订阅源](https://yangzhang.site/feed_rss_created.xml)获取按照文档**创建日期**排序的订阅。
+
+### 颜色彩蛋
+随着星期几的变化，本站的主题色会随之改变：
+
+- 周一：<span style="background-color:#757575;padding:3px;">grey</span>
+- 周二：<span style="background-color:#546d78;padding:3px;">blue grey</span>
+- 周三：<span style="background-color:#009485;padding:3px;">teal</span>
+- 周四：<span style="background-color:#4051b5;padding:3px;">indigo</span>
+- 周五：<span style="background-color:#e92063;padding:3px;">pink</span>
+- 周六、日：<span style="background-color:#7e56c2;padding:3px;">deep purple</span>

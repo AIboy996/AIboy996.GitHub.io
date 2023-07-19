@@ -1,7 +1,7 @@
 site_name: yangzhang's Site
 site_url: https://yangzhang.site/
 site_author: yangzhang
-site_description: yangzhang的个人网站
+site_description: 张杨的个人网站
 nav:
   - About:
     - About/index.md
@@ -122,15 +122,11 @@ theme:
   custom_dir: overrides
   logo: assets/images/summation.png
   palette: 
-    - scheme: default # 日间模式
-      primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
+    - scheme: day # 日间模式
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
-      primary: indigo
-      accent: orange
+    - scheme: night # 夜间模式
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -244,15 +240,17 @@ extra_css:
   - assets/css/extra.css
 
 extra_javascript:
-  # 百度的页面访问统计
-  ######## 暂时移除百度的访问统计（加载实在是有点慢
+  # 百度的页面访问统计【暂时移除百度的访问统计（加载实在是有点慢】
   # - assets/js/baidu.js
   
-  # 数学公式格式支持
+  # 数学公式格式支持，用html嵌入的方式支持数学公式
   ### mathjax2.7.1
   ### 使用https://codepen.io/pkra/pen/EPeKjo这个项目的代码实现自动换行
   ###（这个特性mathjax3似乎要支持但是现在还没实现
   - assets/js/mathjax.js
-  ######## 用html嵌入的方式支持数学公式
+
+  # 随着星期几改变主题颜色
+  - assets/js/color.js
+  
   # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
