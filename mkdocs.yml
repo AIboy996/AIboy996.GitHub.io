@@ -250,7 +250,7 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_css:
-  - assets/css/extra.css
+  - assets/stylesheets/extra.css
 
 extra_javascript:
   # 百度的页面访问统计【暂时移除百度的访问统计（加载实在是有点慢】
@@ -260,10 +260,10 @@ extra_javascript:
   ### mathjax2.7.1
   ### 使用https://codepen.io/pkra/pen/EPeKjo这个项目的代码实现自动换行
   ###（这个特性mathjax3似乎要支持但是现在还没实现
-  - assets/js/mathjax.js
+  - assets/javascripts/mathjax.js
 
   # 随着星期几改变主题颜色
-  - assets/js/color.js
+  - assets/javascripts/color.js
   
   # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
