@@ -9,7 +9,7 @@
 <a href="{{ page.edit_url | replace('master', 'main') | replace('github.com', 'github.dev') |replace('edit', 'blob')}}" title="Edit this page" class="md-content__button md-icon" {{ hiddenedit }}>
     {% include ".icons/material/file-edit-outline.svg" %}
 </a>
-<a href="{{ page.edit_url | replace(edit, view) | replace('master', 'main')}}" title="View source of this page" class="md-content__button md-icon" {{ hiddenedit }}>
+<a href="{{ page.edit_url | replace(edit, view) | replace('master', 'main') | replace('edit','tree')}}" title="View source of this page" class="md-content__button md-icon" {{ hiddenedit }}>
     {% include ".icons/material/file-eye-outline.svg" %}
 </a>
 {% endif %}
