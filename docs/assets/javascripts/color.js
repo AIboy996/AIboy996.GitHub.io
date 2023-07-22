@@ -18,5 +18,7 @@
         window.localStorage.setItem('/.__palette', JSON.stringify(local_json));
         // 刷新页面
         location.reload();
+    } else{
+        console.log("1");
     };
 }());
