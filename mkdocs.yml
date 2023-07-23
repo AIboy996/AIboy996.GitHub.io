@@ -122,6 +122,9 @@ theme:
   custom_dir: overrides
   logo: assets/images/summation.png
   palette:  # 一周七天，六种颜色
+    - scheme: sun
+      primary: deep purple
+      accent: orange
     - scheme: mon
       primary: grey
       accent: orange
@@ -140,9 +143,7 @@ theme:
     - scheme: sat
       primary: deep purple
       accent: orange
-    - scheme: sun
-      primary: deep purple
-      accent: orange
+
   features:
     - content.code.annotate # 代码块内的注释
     - navigation.tabs # 使用Tab来进行分类
