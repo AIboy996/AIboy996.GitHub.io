@@ -40,9 +40,6 @@ hide:
 ### 评论
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
 
-!!! info "已知问题"
-	现在的评论系统有点问题，具体来说就是：子页面的评论会出现在父页面。例如[函数式编程](/Python/%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/python%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%951/)的评论会出现在[Python首页](/Python/)中。推测是URL中含有quoted中文的缘故。
-
 ### RSS
 本站支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[更新序订阅源（推荐）](/feed_rss_updated.xml)，该链接是按照**更新日期**排序的。
 
@@ -51,9 +48,10 @@ hide:
 ### 颜色彩蛋
 随着星期几的变化，本站的主题色会随之改变：
 
+- 周日：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
 - 周一：<span style="background-color:#757575;padding:5px;margin:3px;color:white;">grey</span>
 - 周二：<span style="background-color:#546d78;padding:5px;margin:3px;color:white;">blue grey</span>
 - 周三：<span style="background-color:#009485;padding:5px;margin:3px;color:white;">teal</span>
 - 周四：<span style="background-color:#4051b5;padding:5px;margin:3px;color:white;">indigo</span>
 - 周五：<span style="background-color:#e92063;padding:5px;margin:3px;color:white;">pink</span>
-- 周六、日：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
+- 周六：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
