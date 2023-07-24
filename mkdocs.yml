@@ -6,6 +6,7 @@ nav:
   - About:
     - About/index.md
     - About/about.md
+    - 正式的简历: About/resume.html
     - About/hobby.md
     - About/links.md
   - Article:
@@ -153,7 +154,7 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 代码内容给一个复制按钮
-    - announce.dismiss # 公告标记为已读
+    # - announce.dismiss # 公告标记为已读
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github

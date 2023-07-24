@@ -10,7 +10,7 @@ hide:
 - [杨希杰的主页](https://yang-xijie.github.io/)
 - [谢益辉的主页](https://yihui.org/)
 - [老陳网志](https://blog.chenyyds.com/)
-- [朱英华的主页](https://william-circle.github.io/)
+- [朱英华的主页](https://williamzhu01.github.io/william-circle.github.io/)
 - [张舟的主页](https://zhangzhou.site/)
 
 ## Useful Links
