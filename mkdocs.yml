@@ -109,6 +109,7 @@ nav:
     - SomeMath/index.md
     - 杂题:
       - SomeMath/a_limit.md
+      - SomeMath/rational_numbers_countable.md
     - SomeMath/taylor_expand/taylor_expand.md
     - SomeMath/linear_differential_equation.md
     - SomeMath/hyperbolic_function.md
