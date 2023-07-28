@@ -5,11 +5,11 @@ tags:
 
 # 有理数集是可数的
 
-## Bijective map
+## 双射
 
-## Cardinality
+## 基数
 
-## Proof
+## 证明
 
 Define a map $f:\mathbb{Q} \to \mathbb{N}$ by
 $$
