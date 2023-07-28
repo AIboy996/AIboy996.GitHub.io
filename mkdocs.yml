@@ -112,7 +112,7 @@ nav:
     - 实分析:
       - SomeMath/real/rational_numbers_countable.md
       - SomeMath/taylor_expand/taylor_expand.md
-      - SomeMath/hyperbolic_function.md
+      - SomeMath/real/hyperbolic_function.md
     - 复分析:
       - SomeMath/complex/why_complex.md
     - SomeMath/linear_differential_equation.md
