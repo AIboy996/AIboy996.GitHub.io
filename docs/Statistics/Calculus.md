@@ -20,3 +20,21 @@ tags:
 这是大学入门的第一节数学课。由于高中数学学的还不错，并且江苏的高中数学也教授了一些微积分，所以我适应的比较快，最终也拿到了不错的成绩。
 
 数学分析是一门非常庞杂的学科，知识点非常多，技巧更是数不清。但同时又是非常非常重要的一门课，可以说是渗透到今后的每一节课。建议常看常新，没事儿就拿来复习复习。
+
+
+
+## 公开课
+
+### 清华刘思齐
+
+哔哩哔哩【我真的不懂分析】，647老师的数分有点难，并且没有数学分析一。
+
+### 复旦谢锡麟
+
+好课。
+
+### MIT 18.100A
+
+!!! cite "[MIT 18.100A 2020 fall lec4] Dr. Casey Rodriguez"
+    Algebraic things are, to me, very nice. Because somehow you always deal with equality. So how hard could it be to prove two things are equal to each other? Yet, analysis deals a lot with inequality, which somehow is much more subtle.
+

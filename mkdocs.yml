@@ -109,13 +109,15 @@ nav:
     - SomeMath/index.md
     - 杂题:
       - SomeMath/a_limit.md
-      - SomeMath/rational_numbers_countable.md
-    - SomeMath/taylor_expand/taylor_expand.md
+    - 实分析:
+      - SomeMath/real/rational_numbers_countable.md
+      - SomeMath/taylor_expand/taylor_expand.md
+      - SomeMath/hyperbolic_function.md
+    - 复分析:
+      - SomeMath/complex/why_complex.md
     - SomeMath/linear_differential_equation.md
-    - SomeMath/hyperbolic_function.md
     - Montmort:
       - SomeMath/Montmort1.md
-    
   - Tags: Tags/index.md
   - Playground: Playground/index.md
 
