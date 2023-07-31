@@ -14,3 +14,18 @@ padding-right:13px;
 margin-left:3px;
 margin-right:3px;
 }
+
+.md-typeset h1 {
+    font-weight: 500;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+
+.md-typeset h3 {
+    font-weight: medium; /* 500 */
+    text-decoration: underline;
+}
