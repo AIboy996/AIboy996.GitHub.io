@@ -15,7 +15,15 @@ print("Hello World!"*100)
 ```
 这段代码的功能很简单，按照英语的字面意思理解就猜到：`打印100个Hello World`。我们把这段代码写在一个`hello.py`文件里，然后用`python`解释器解释、运行，就可以在命令行打印出100个Hello World了：
 
-![image-20230115141953635](./assets/image-20230115141953635.png)
+<div class="console">
+
+```console
+$ python hello.py
+
+Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!
+```
+
+</div>
 
 > 这里我用的命令行就是Windows自带的CMD，具体的python命令行操作我们以后再介绍
 

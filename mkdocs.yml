@@ -240,7 +240,7 @@ markdown_extensions:
       permalink: true # 固定标题位置为当前位置
       toc_depth: 3
   - pymdownx.highlight: # 代码块高亮
-      linenums: true # 显示行号
+      linenums: false # 显示行号
       auto_title: true # 显示编程语言名称
   - admonition
   - pymdownx.details
@@ -263,12 +263,6 @@ extra_javascript:
   # 百度的页面访问统计【暂时移除百度的访问统计（加载实在是有点慢】
   # - assets/js/baidu.js
   
-  # 数学公式格式支持，用html嵌入的方式支持数学公式
-  ### mathjax2.7.1
-  ### 使用https://codepen.io/pkra/pen/EPeKjo这个项目的代码实现自动换行
-  ###（这个特性mathjax3似乎要支持但是现在还没实现
-  - assets/javascripts/mathjax.js
-
   # 随着星期几改变主题颜色
   - assets/javascripts/color.js
 
@@ -276,5 +270,11 @@ extra_javascript:
   - assets/javascripts/termynal.js
   - assets/javascripts/gen_termynal.js
   
+  # 数学公式格式支持，用html嵌入的方式支持数学公式自动换行
+  # mathjax似乎要支持但是现在还没实现
+  # Automatic line breaking has not yet been implemented in MathJax version 3, 
+  # but is high on our list for inclusion in a future release.
+  - assets/javascripts/mathjax.js
+
   # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js

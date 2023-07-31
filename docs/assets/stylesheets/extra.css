@@ -1,3 +1,19 @@
+/* termynal组件 */
+.termynal-comment {
+  color: #4a968f;
+  font-style: italic;
+  display: block;
+}
+
+.termy {
+/* For right to left languages */
+direction: ltr;
+}
+
+.termy [data-termynal] {
+white-space: pre-wrap;
+}
+
 /* 隐藏文章底部的prev/next标签 */
 .md-footer__inner:not([hidden]) {
     display: none;
@@ -29,18 +45,3 @@ margin-right:3px;
     font-weight: medium; /* 500 */
     text-decoration: underline;
 }
-
-.termynal-comment {
-    color: #4a968f;
-    font-style: italic;
-    display: block;
-  }
-  
-  .termy {
-    /* For right to left languages */
-    direction: ltr;
-  }
-  
-  .termy [data-termynal] {
-    white-space: pre-wrap;
-  }

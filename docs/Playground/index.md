@@ -49,10 +49,12 @@ hide: <!--(3)-->
     
 
 形如：
-<div class="termy">
+
+<div class="console">
 
 ```console
 $ python3 -m pip install numpy
+# 正在安装numpy，稍作等待
 
 ---> 100%
 ```
