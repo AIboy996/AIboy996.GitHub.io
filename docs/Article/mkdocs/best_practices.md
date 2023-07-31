@@ -8,9 +8,14 @@ tags:
 我收集了一些使用mkdocs搭建的网站实例，仅供参考：
 
 ## [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
-mkdocs的热门主题mkdocs-material官方网页，首页做了深度定制。
+mkdocs-material的官网，首页做了深度定制。
 
 [![](https://gh-card.dev/repos/squidfunk/mkdocs-material.svg?fullname=)](https://github.com/squidfunk/mkdocs-material)
+
+## [FastAPI](https://fastapi.tiangolo.com/)
+大名鼎鼎的python后端项目，他们还是mkdocs-material的insider（而且是唯一的Silver sponsor）
+
+[![](https://gh-card.dev/repos/tiangolo/fastapi.svg?fullname=)](https://github.com/tiangolo/fastapi)
 
 ## [OI Wiki](https://oi.wiki/)
 火爆的wiki网站。

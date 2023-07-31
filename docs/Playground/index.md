@@ -4,12 +4,18 @@ hide:
 - navigation
 ---
 
-## [👉本站的404页面](./none)
 
-!!! note
+
+!!! question "Playground"
 
     这里用于调试本站支持的各类markdown扩展语法，基础的语法这里就不赘述了，参见markdown官方教程[^1]。此外，这里涉及的全部内容都可以参见mkdocs material的官网[^2]。并非所有的语法都是原生支持的，有些需要额外的插件以及额外的选项开启，这些都可以在官网上找到。
-## .md文件的meta信息
+
+## 404
+
+[本站的404页面👉](./none)
+
+## 页面meta信息
+
 在markdown文件的开头可以进行meta信息的标注：
 （下面这个加号是可以点击的）
 ```html title="可以设置的meta信息"
@@ -30,7 +36,30 @@ hide: <!--(3)-->
 2.  tags控制页面的标签，便于归纳整理
 3.  hide可以隐藏相应的内容，例如导航栏、目录等
 
-## 代码块以及Annotations
+## termynal组件
+
+!!! info "termynal js & css"
+    
+    A lightweight, modern and extensible animated terminal window, using
+    async/await.
+
+    - @author Ines Montani <ines@ines.io>
+    - @version 0.0.1
+    - @license MIT
+    
+
+形如：
+<div class="termy">
+
+```console
+$ python3 -m pip install numpy
+
+---> 100%
+```
+
+</div>
+
+## CodeBlock和Annotations
 
 === "渲染效果"
 
@@ -108,8 +137,8 @@ hide: <!--(3)-->
         3. Nulla tempor lobortis orci
         ```
 
-## 突出显示
-Admonitions，也叫call-out，是一种突出内容的手段。
+## Admonitions
+或者叫call-out，是一种突出内容的手段。
 原生的样式比较简单：
 > 突出内容
 > 引用内容
@@ -151,7 +180,7 @@ mkdocs-material支持更多的扩展形式：
 - example
 - quote, cite
 
-## 图片以及LaTex
+## 图片和数学公式
 在原有markdown图片引用的基础之上，可以在末尾加上一些参数。LaTex则依然是依靠MathJax实现的，语法上需要小心并非所有的写法通用，具体有何差异可以去官网看一看[^3]。
 === "渲染效果"
     ![circle](./assets/circle.png){align=right width=400 loading=lazy}
