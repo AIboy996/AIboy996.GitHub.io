@@ -265,6 +265,22 @@ mkdocs-material支持更多的扩展形式：
       B ---->|No| E[Yay!];
     ```
     ````
+## Google广告
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
+     crossorigin="anonymous"></script>
+<!-- ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2353855407972667"
+     data-ad-slot="9380940342"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 [^1]: [markdown官方教程：markdownguide.org](https://www.markdownguide.org/)
 
 [^2]: [mkdocs-material官网：squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
