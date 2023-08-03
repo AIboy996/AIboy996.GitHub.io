@@ -52,7 +52,7 @@ hide: <!--(3)-->
 
 <div class="console">
 
-```console title=""
+```console
 $ python3 -m pip install numpy
 # 正在安装numpy，稍作等待
 

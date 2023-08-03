@@ -241,7 +241,7 @@ markdown_extensions:
       toc_depth: 3
   - pymdownx.highlight: # 代码块高亮
       linenums: false # 显示行号
-      auto_title: true # 显示编程语言名称
+      # auto_title: true # 显示编程语言名称
   - admonition
   - pymdownx.details
   - pymdownx.tasklist
