@@ -1,6 +1,6 @@
 async function setupTermynal() {
     const progressLiteralStart = "---> 100%";
-    const promptLiteralStart = "Bash Session$ ";
+    const promptLiteralStart = "$ ";
     const termynalActivateClass = "console";
     let termynals = [];
 

@@ -52,11 +52,26 @@ hide: <!--(3)-->
 
 <div class="console">
 
-```console
+```console title=""
 $ python3 -m pip install numpy
 # 正在安装numpy，稍作等待
 
 ---> 100%
+
+$ python3 -m pip list
+
+Package    Version
+---------- -------
+altgraph   0.17.2
+future     0.18.2
+macholib   1.15.2
+numpy      1.25.2
+pip        23.2.1
+setuptools 58.0.4
+six        1.15.0
+wheel      0.37.0
+
+
 ```
 
 </div>

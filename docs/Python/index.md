@@ -9,26 +9,43 @@ hide:
 
 # 蟒蛇🐍
 
-!!! quote "The Zen of Python, by Tim Peters"
-    Beautiful is better than ugly.
-    
-    Explicit is better than implicit.
-    
-    Simple is better than complex.
-    
-    Complex is better than complicated.
-    
-    Flat is better than nested.
-    
-    Sparse is better than dense.
-    
-    Readability counts.
-    
-    Special cases aren't special enough to break the rules.
-    
-    ……
+<div class="console">
+
+```console title=""
+$ python3
+
+Python 3.9.6 (default, May  7 2023, 23:32:44) 
+[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+
+$ >>> import this
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
 
 
+```
+
+</div>
 ## 绪
 学了很久的python了，在网上看了许许多多的教程，平时我也写过很多笔记也有很多编程的案例。总想着哪天系统整理一下，放到网上。一方面是方便自己查阅，另外一方面也是希望能帮助到一些入门的小伙伴。构想了许久，终于在这个寒假开启了这个项目。
 
