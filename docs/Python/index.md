@@ -11,14 +11,16 @@ hide:
 
 <div class="console">
 
-```console title=""
+```console
 $ python3
 
 Python 3.9.6 (default, May  7 2023, 23:32:44) 
 [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
-$ >>> import this
+>>>
+
+$ import this
 
 The Zen of Python, by Tim Peters
 
