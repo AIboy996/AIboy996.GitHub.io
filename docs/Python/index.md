@@ -12,16 +12,7 @@ hide:
 <div class="console">
 
 ```console
-$ python3
-
-Python 3.9.6 (default, May  7 2023, 23:32:44) 
-[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
-
->>>
-
-$ import this
-
+$ echo import this > a.py | python a.py
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
