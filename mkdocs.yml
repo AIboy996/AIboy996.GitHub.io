@@ -116,6 +116,7 @@ nav:
       - SomeMath/real/hyperbolic_function.md
     - 复分析:
       - SomeMath/complex/why_complex.md
+      - SomeMath/complex/constructible_number.md
     - SomeMath/linear_differential_equation.md
     - Montmort:
       - SomeMath/Montmort1.md

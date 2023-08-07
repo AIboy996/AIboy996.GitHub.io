@@ -1,3 +1,4 @@
 /venv
 /example.py
 /site
+.DS_Store
