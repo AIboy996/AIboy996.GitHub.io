@@ -45,3 +45,8 @@ margin-right:3px;
     font-weight: medium; /* 500 */
     text-decoration: underline;
 }
+
+/* 视频居中 */
+div.video-container {
+    text-align: center;
+}

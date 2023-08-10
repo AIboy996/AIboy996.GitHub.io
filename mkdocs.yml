@@ -210,7 +210,16 @@ plugins:
   ## jupyter文件支持
   ########## 暂时移除此功能
   #- mkdocs-jupyter
-  - mkdocs-video
+  - mkdocs-video:
+      is_video: true
+      video_muted: false
+      video_controls: true
+      video_autoplay: false
+      css_style:
+        width: "80%"
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
   - tags
   ## 图片放大插件
   - glightbox:
@@ -241,7 +250,6 @@ markdown_extensions:
       permalink: true # 固定标题位置为当前位置
       toc_depth: 3
   - pymdownx.highlight: # 代码块高亮
-      linenums: false # 显示行号
       # auto_title: true # 显示编程语言名称
   - admonition
   - pymdownx.details
