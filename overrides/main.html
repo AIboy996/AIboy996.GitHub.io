@@ -12,12 +12,17 @@
 <!-- Custom JavaScript -->
 {% for script in config.extra_javascript %}
 {% if (script == "assets/javascripts/mathjax.js") %}
-    <!-- load math if needed -->
-    {% if page.meta and "math" in page.meta.extra %}
-    <script src="{{ script | url }}"></script>
+    <!-- don't load mathjax -->
+    {% if page.meta and "math" in page.meta.hide %}
+    <!-- do nothing -->
     {% endif %}
 {% else %}
+   <!-- Detected MkDocs 1.5+ which has `script.path` and `script_tag` -->
+   {% if script.path %}
+     {{ script | script_tag }}
+   {% else %}
      <script src="{{ script | url }}"></script>
+   {% endif %}
 {% endif %}
 {% endfor %}
 {% endblock %}

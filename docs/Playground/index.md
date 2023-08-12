@@ -2,8 +2,6 @@
 title: Playground of Markdown
 hide:
 - navigation
-extra:
-- math
 ---
 
 

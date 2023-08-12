@@ -3,6 +3,7 @@ title: 胡作非为
 hide:
 - feedback
 - comments
+- math
 ---
 
 # 开源项目🚧

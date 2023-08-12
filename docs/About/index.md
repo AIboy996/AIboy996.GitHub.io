@@ -3,6 +3,7 @@ tags:
 - About
 hide:
 - tags
+- math
 ---
 
 # 站内导航🧭

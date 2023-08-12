@@ -5,6 +5,7 @@ tags:
 hide:
 - tags
 - toc
+- math
 ---
 
 # 蟒蛇🐍

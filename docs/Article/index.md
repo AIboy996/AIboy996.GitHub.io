@@ -3,6 +3,7 @@ title: 胡编乱造
 hide:
 - feedback
 - comments
+- math
 ---
 
 # 文章📰
