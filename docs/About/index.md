@@ -32,7 +32,22 @@ hide:
 ### 搜索
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
 
-目前理论上是不支持中文搜索的，仅支持英语、日文搜索，但是基于日语的支持实际上也可以搜到一些汉字。
+目前理论上是不支持中文搜索（`lunr.zh.js`）的，仅支持英语和日文（`lunr.ja.js`）搜索，但是基于日语的支持实际上也可以搜到一些汉字。
+
+??? question "为什么不支持中文"
+
+	!!! quote "squidfunk commented on Jul 20, 2021"
+
+	Adding Chinese language support to the search plugin is currently **not possible** because of a dependency on `nodejieba`. `nodejieba` itself **depends on** `path` and `node-pre-gyp` and potentially other libraries that are not available in a browser environment, and – even worse – seems to include native code. Until those dependencies are removed from lunr-languages and it's upstream dependencies, and replaced with isomorphic JavaScript, adding Chinese search support is blocked.
+
+	简而言之就是`lunr.zh.js`有太多依赖，现在无法引入。
+
+	不过也有奇淫巧计可以实现`lunr.ja.js`的中文搜索效果：<https://github.com/mkdocs/mkdocs/issues/2509>
+	
+	这个issue上有一个哥们稍微修改了mkdocs的源代码（`mkdocs.contrib.search.search_index.py`），用`jieba库`+`lunr.ja.js`实现了不错的中文搜索效果：
+	
+	![](https://user-images.githubusercontent.com/15652226/133886857-557cbe82-ea5e-486c-a40c-917176f9a387.png)
+
 ### 页面反馈
 本站有反馈功能（由[Google Analytics](https://analytics.google.com/analytics/web/)驱动，需要有cookie许可才能正常运作），在页面底部有`Was this page helpful?`的选项。
 

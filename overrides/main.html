@@ -7,22 +7,12 @@
 {% endblock %}
 
 
-
-{% block scripts %}
-<!-- Custom JavaScript -->
-{% for script in config.extra_javascript %}
-{% if (script == "assets/javascripts/mathjax.js") %}
-    <!-- don't load mathjax -->
-    {% if page.meta and "math" in page.meta.hide %}
-    <!-- do nothing -->
-    {% endif %}
-{% else %}
-   <!-- Detected MkDocs 1.5+ which has `script.path` and `script_tag` -->
-   {% if script.path %}
-     {{ script | script_tag }}
-   {% else %}
-     <script src="{{ script | url }}"></script>
-   {% endif %}
+{% block libs %}
+{{ super() }}
+<!-- 数学公式格式支持，用html嵌入的方式支持数学公式自动换行，mathjax似乎要支持但是现在还没实现。
+Automatic line breaking has not yet been implemented in MathJax version 3, 
+but is high on our list for inclusion in a future release. -->
+{% if page.meta and ("math" not in page.meta.hide) %}
+<script src="{{ 'assets/javascripts/mathjax.js' | url }}"></script>
 {% endif %}
-{% endfor %}
 {% endblock %}

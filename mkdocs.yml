@@ -280,12 +280,6 @@ extra_javascript:
   # termynal组件
   - assets/javascripts/termynal.js
   - assets/javascripts/gen_termynal.js
-  
-  # 数学公式格式支持，用html嵌入的方式支持数学公式自动换行
-  # mathjax似乎要支持但是现在还没实现
-  # Automatic line breaking has not yet been implemented in MathJax version 3, 
-  # but is high on our list for inclusion in a future release.
-  - assets/javascripts/mathjax.js
 
   # 鼠标点击特效
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
