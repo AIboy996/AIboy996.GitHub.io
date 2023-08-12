@@ -1,4 +1,4 @@
-{% if "comments" in page.meta.hide %}
+{% if page.meta and ("comments" in page.meta.hide) %}
 <p></p>
 {% else %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>

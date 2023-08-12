@@ -30,7 +30,7 @@ nav:
     - LaTeX:
       - Article/latex/basic_latex.md
     - ManimGL:
-      - Atricle/manim/hello.md
+      - Article/manim/hello.md
     - Jupyter:
       - 介绍: Article/jupyter/jupyter1.md
       - 基础使用: Article/jupyter/jupyter2.md

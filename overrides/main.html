@@ -5,3 +5,19 @@
 <!-- Add announcement here, including arbitrary HTML -->
 最近更新(๑•ᴗ•๑)♡ ： <a href="/Project/high_school_math/">高中数学讲义</a>
 {% endblock %}
+
+
+
+{% block scripts %}
+<!-- Custom JavaScript -->
+{% for script in config.extra_javascript %}
+{% if (script == "assets/javascripts/mathjax.js") %}
+    <!-- load math if needed -->
+    {% if page.meta and "math" in page.meta.extra %}
+    <script src="{{ script | url }}"></script>
+    {% endif %}
+{% else %}
+     <script src="{{ script | url }}"></script>
+{% endif %}
+{% endfor %}
+{% endblock %}
