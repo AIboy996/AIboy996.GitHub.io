@@ -37,8 +37,8 @@ hide:
 ??? question "为什么不支持中文"
 
 	!!! quote "squidfunk commented on Jul 20, 2021"
-
-	Adding Chinese language support to the search plugin is currently **not possible** because of a dependency on `nodejieba`. `nodejieba` itself **depends on** `path` and `node-pre-gyp` and potentially other libraries that are not available in a browser environment, and – even worse – seems to include native code. Until those dependencies are removed from lunr-languages and it's upstream dependencies, and replaced with isomorphic JavaScript, adding Chinese search support is blocked.
+	
+		Adding Chinese language support to the search plugin is currently **not possible** because of a dependency on `nodejieba`. `nodejieba` itself **depends on** `path` and `node-pre-gyp` and potentially other libraries that are not available in a browser environment, and – even worse – seems to include native code. Until those dependencies are removed from lunr-languages and it's upstream dependencies, and replaced with isomorphic JavaScript, adding Chinese search support is blocked.
 
 	简而言之就是`lunr.zh.js`有太多依赖，现在无法引入。
 
