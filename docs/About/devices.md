@@ -44,7 +44,7 @@ tags:
 - `2020-202?`：Nintendo Switch 国行（已于2023破解）
 - `2021-2022`：<s>Xbox One X（咸鱼来，咸鱼去，净消费100￥）</s>
 - `2022-202?`：Nintendo Switch 日版（二手裸机）
-- `202?-202?`：*Play Station 5（谁能送我一个PS5啊）*
+- `2023-202?`：Play Station 5（索尼大法好）
 
 ## 其他屏幕
 

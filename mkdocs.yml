@@ -12,6 +12,7 @@ nav:
     - About/links.md
   - Article:
     - Article/index.md
+    - Article/software.md
     - Docker:
       - Article/Docker/docker_intro.md
       - Article/Docker/docker_basic.md
