@@ -22,6 +22,15 @@
             margin-top: 3px;
         }
     </style>
+    <script>
+        var width = ((typeof screen !== 'undefined') ? screen.width : null)
+        || window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+        if (width <= 800) {
+            window.location = "m.resume.html";
+        }
+    </script>
     <title>Yang Zhang</title>
 </head>
 
