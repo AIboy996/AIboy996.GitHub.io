@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resume.css">
     <script src="resume.js"></script>
+    <script>
+        var width = ((typeof screen !== 'undefined') ? screen.width : null)
+            || window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+        if (width <= 800) {
+            window.location = "m.resume.html";
+        }
+    </script>
     <title>Yang Zhang</title>
 </head>
 
