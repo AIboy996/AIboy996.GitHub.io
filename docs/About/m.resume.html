@@ -2,28 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <style type="text/css">
-        body {
-            text-align: left;
-            font-family: "Times New Roman"
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none
-        }
-
-        a:hover {
-            color: #F00
-        }
-
-        li {
-            margin-top: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="resume.css">
+    <script src="resume.js"></script>
     <title>Yang Zhang</title>
 </head>
 
@@ -33,47 +13,58 @@
             <!-- 4127 × 3212 -->
             <img src="/assets/images/yangzhang.jpg" width="70%" />
         </div>
-        <br/>
+        <br />
         <div style="text-align: center;">
-            <h1 size="6px">Yang Zhang</h1>
-            <audio id="player" src="/assets/audio/zhangyang_pronounce.mp3"></audio>
-            <button style="font-size: x-large;" onclick="document.getElementById('player').play()">
-                Pronounce Yang Zhang(张杨) in Chinese
+            <h1>Yáng Zhāng</h1>
+            <button onclick="document.getElementById('player').play()">
+                Pronounce Zhāng Yáng(张杨) in Chinese
             </button>
+            <div class="popup" onclick="myFunction()">ⓘ
+                <span class="popuptext" id="myPopup">As you know, Chinese naming conventions arrange the surname
+                    before the firstname</span>
+            </div>
             <br><br>
         </div>
         <div style="padding-top: 10px;">
             <hr>
             <h2>About Me</h2>
-            <ul type="circle">
-                <li>M.Sc Student in <a href="https://sds.fudan.edu.cn/">School of Data Science, Fudan
-                        University</a>(since 2023.09)</li>
-                <li>Freshman in <a href="https://zmiclab.github.io/">Fudan ZMIC Lab</a>, Supervised by Prof. <a
-                        href="https://zmiclab.github.io/zxh/">Xiahai Zhuang</a></li>
-                <li>My Email: yangzhang23 [at] m [dot] fudan [dot] edu [dot] cn</li>
-                <li>My Homepage: <a href="https://yangzhang.site/">yangzhang.site</a> </li>
-            </ul>
+            <div class="left_content">
+                <ul type="circle">
+                    <li>M.Sc Student in <a href="https://sds.fudan.edu.cn/">School of Data Science, Fudan
+                            University</a>(since 2023.09)</li>
+                    <li>Freshman in <a href="https://zmiclab.github.io/">Fudan ZMIC Lab</a>, Supervised by Prof. <a
+                            href="https://zmiclab.github.io/zxh/">Xiahai Zhuang</a></li>
+                    <li>My Email: yangzhang23 [at] m [dot] fudan [dot] edu [dot] cn</li>
+                    <li>My Homepage: <a href="https://yangzhang.site/">yangzhang.site</a> </li>
+                </ul>
+            </div>
         </div>
         <div style="padding-top: 10px;">
             <hr>
             <h2>Research Interests</h2>
-            <p>
-                Machine Learning, Computer Vision, Medical Image Computing
-            </p>
+            <div class="left_content">
+                <p>
+                    Machine Learning, Computer Vision, Medical Image Computing
+                </p>
+            </div>
         </div>
         <div style="padding-top: 10px;">
             <hr>
             <h2>Selected Publications</h2>
-            <p>
-                ...
-            </p>
+            <div class="left_content">
+                <p>
+                    ...
+                </p>
+            </div>
         </div>
         <div style="padding-top: 10px;">
             <hr>
             <h2>Open-source Projects</h2>
-            <p>
-                ...
-            </p>
+            <div class="left_content">
+                <p>
+                    ...
+                </p>
+            </div>
         </div>
         <footer style="text-align: center;">
             <hr>
