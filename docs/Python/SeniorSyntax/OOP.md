@@ -5,28 +5,8 @@ tags:
 
 # 面向对象编程
 虽然函数式编程也很好玩，但是我认为python最丰富、可玩性最高的还是OOP（面向对象编程，Object Oriented Programming）。
-## 多态
-多态也就是同一个接口在不同的类上表现出的行为不同。例如：
-```python
->>> class Person:
-...     def __init__(self, name):
-...         self.name = name
-...     def hello(self):
-...         print(f"I am {self.name}")
-...
->>> class Doctor(Person):
-...     def hello(self):
-...         print(f"I am Dr.{self.name}")
-...
->>> alice = Person('Alice')
->>> alice.hello()
-I am Alice
->>> galler = Doctor('Galler')
->>> galler.hello()
-I am Dr.Galler
-```
 ## 属性
-类中可以在不同的命名空间内封装一些变量。
+> 属性就是类命名空间中的变量
 
 我们首先定义这样一个类：
 ```python
@@ -84,7 +64,52 @@ I am Dr.Galler
 '惯用私有属性'
 ```
 ## 方法
+> 方法就是命名空间中的函数
 
+如果你直接在`class`的定义内写一个普通的函数:
+```python
+>>> class Example:
+...     def f(s):
+...         print(s)
+```
+那么它只能通过`Example.f`来调用。
+```python
+>>> Example.f('asd')
+asd
+```
+实例化之后它的行为就会变化，他会默认**把自身作为第一个参数传入**：
+```python
+>>> e = Example()
+>>> e.f()
+<__main__.Example object at 0x102c437d0>
+```
+这个时候函数就没法实现我们想要的功能了：
+```python
+>>> e.f('asd')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Example.f() takes 1 positional argument but 2 were given
+```
+### 多态
+多态也就是同一个接口在不同的类上表现出的行为不同。例如：
+```python
+>>> class Person:
+...     def __init__(self, name):
+...         self.name = name
+...     def hello(self):
+...         print(f"I am {self.name}")
+...
+>>> class Doctor(Person):
+...     def hello(self):
+...         print(f"I am Dr.{self.name}")
+...
+>>> alice = Person('Alice')
+>>> alice.hello()
+I am Alice
+>>> galler = Doctor('Galler')
+>>> galler.hello()
+I am Dr.Galler
+```
 ## 装饰器
 
 ## 描述器
