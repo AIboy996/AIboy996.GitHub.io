@@ -29,3 +29,5 @@ We want to show $f$ is **bijective**.
 Which means: $f(x_1)=f(x_2) \implies x_1=x_2$
 ### Step 2 show $f$ is surjective
 Which means: $\forall y \in \mathbb{N} \quad \exists x \in \mathbb{Q} \quad s.t.\quad f(x)=y$
+
+TBD

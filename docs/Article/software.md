@@ -19,3 +19,5 @@ Mac上好用的软件卸载工具
 ### tachiyomi
 懂得都懂
 ## Linux
+
+TBD
