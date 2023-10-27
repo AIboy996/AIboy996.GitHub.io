@@ -7,7 +7,7 @@ tags:
 # 初见manim
 
 ## 配置环境
-
+TBD:manim 环境配置
 ## hello world!
 
 ```python
@@ -29,5 +29,3 @@ class SquareToCircle(Scene):
 渲染结果：
 
 ![type:video](./assets/SquareToCircle.mp4)
-
-TBD

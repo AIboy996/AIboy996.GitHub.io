@@ -114,4 +114,4 @@ I am Dr.Galler
 
 ## 描述器
 
-TBD
+TBC:Python OOP
