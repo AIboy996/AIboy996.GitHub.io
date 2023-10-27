@@ -71,3 +71,6 @@ hide:
 - 周四：<span style="background-color:#4051b5;padding:5px;margin:3px;color:white;">indigo</span>
 - 周五：<span style="background-color:#e92063;padding:5px;margin:3px;color:white;">pink</span>
 - 周六：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
+
+### 多语言
+等我有空了，会做某些文章的英语版，mkdocs matreials本身也是很好地支持了多语言的。
