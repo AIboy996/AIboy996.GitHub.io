@@ -13,7 +13,7 @@ hide:
 <div class="console">
 
 ```console
-$ echo import this > a.py | python a.py
+$ python -c "import this"
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
