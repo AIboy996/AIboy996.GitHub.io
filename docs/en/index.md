@@ -25,5 +25,5 @@ Welcome to [Yang Zhang's](/About/resume.html) homepage, check [About](/About/) f
 - WeChat Subscriptions
 
 <figure markdown>
-![](./assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}
+![](../assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}
 </figure>
