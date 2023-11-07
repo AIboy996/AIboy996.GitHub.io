@@ -10,36 +10,38 @@ nav:
     - 正式的简历: About/resume.html
     - About/hobby.md
     - About/links.md
-  - Article:
-    - Article/index.md
-    - Article/software.md
+  - Note:
+    - Note/index.md
+    - Note/software.md
     - Docker:
-      - Article/Docker/docker_intro.md
-      - Article/Docker/docker_basic.md
-      - Article/Docker/docker_senior.md
+      - Note/Docker/docker_intro.md
+      - Note/Docker/docker_basic.md
+      - Note/Docker/docker_senior.md
     - Git:
-      - Article/Git/git.md
-      - Article/Git/git_server.md
+      - Note/Git/git.md
+      - Note/Git/git_server.md
     - 墙和梯子:
-      - Article/GFW/intro.md
-      - Article/GFW/client.md
-      - Article/GFW/server.md
+      - Note/GFW/intro.md
+      - Note/GFW/client.md
+      - Note/GFW/server.md
     - mkdocs:
-      - Article/mkdocs/theory.md
-      - Article/mkdocs/practice.md
-      - Article/mkdocs/best_practices.md
+      - Note/mkdocs/theory.md
+      - Note/mkdocs/practice.md
+      - Note/mkdocs/best_practices.md
     - LaTeX:
-      - Article/latex/basic_latex.md
+      - Note/latex/basic_latex.md
     - ManimGL:
-      - Article/manim/hello.md
+      - Note/manim/hello.md
     - Jupyter:
-      - 介绍: Article/jupyter/jupyter1.md
-      - 基础使用: Article/jupyter/jupyter2.md
-      - 远程服务: Article/jupyter/jupyter3.md
-      - 进阶使用: Article/jupyter/jupyter4.md
+      - 介绍: Note/jupyter/jupyter1.md
+      - 基础使用: Note/jupyter/jupyter2.md
+      - 远程服务: Note/jupyter/jupyter3.md
+      - 进阶使用: Note/jupyter/jupyter4.md
     - SAS:
-      - SAS的基本操作: Article/SAS/SAS_basic.md
-      - SAS的统计应用: Article/SAS/SAS_application.md
+      - SAS的基本操作: Note/SAS/SAS_basic.md
+      - SAS的统计应用: Note/SAS/SAS_application.md
+    - Shell:
+      - Note/Shell/man.md
   - Blog:
     - Blog/index.md
     - 2022:
@@ -55,6 +57,7 @@ nav:
       - Blog/2023/recall_high_school_math.md
       - Blog/2023/graduation_pics.md
       - Blog/2023/name.md
+      - Blog/2023/xy.md
   - Python:
     - Python/index.md
     - Python/pre_python.md

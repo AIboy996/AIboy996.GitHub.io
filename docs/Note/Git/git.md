@@ -30,6 +30,7 @@ graph LR
         repo((repository))
         work--add--->stage--commit--->repo
         stage--restore--->work
+        repo--reset--->stage
     end
     subgraph remote
         remoterepo[(repository)]

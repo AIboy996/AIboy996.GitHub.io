@@ -43,7 +43,7 @@ tags:
     !!! info "2023.7 更新"
         页面托管和DNS解析都换成了CloudFare家的产品，原因是在大陆的网络环境中它们更快。
 
-    详细的建站教程参见文章[用mkdocs搭建个人网站](/Article/mkdocs/practice/)
+    详细的建站教程参见文章[用mkdocs搭建个人网站](/Note/mkdocs/practice/)
 
 ## 我是谁？
 ### ID
