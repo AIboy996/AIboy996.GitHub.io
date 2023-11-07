@@ -33,6 +33,16 @@ hide: <!--(3)-->
 2.  tags控制页面的标签，便于归纳整理
 3.  hide可以隐藏相应的内容，例如导航栏、目录、评论区等
 
+!!! note "可以隐藏的组件"
+
+    - navigation：隐藏导航栏
+    - toc：隐藏目录
+    - feedback：隐藏反馈按钮
+    - comments：隐藏评论区
+    - math：不加载math.js
+    - tags：隐藏tag
+    - edit：隐藏编辑按钮
+
 ## 命令行组件
 [termynal](https://github.com/ines/termynal)是一款简洁好看的命令行演示组件。
 
