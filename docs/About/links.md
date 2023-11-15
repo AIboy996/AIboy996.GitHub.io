@@ -23,3 +23,8 @@ hide:
 - [GitHub仓库小卡片生成](https://gh-card.dev/)
 - [CS自学指南](https://csdiy.wiki/)
 - [David Lippman的主页：超好用的graphing tools](http://dlippman.imathas.com/)
+
+## Special
+- TJUPT:
+
+[![](https://tjupt.org/mybar.php?userid=125498.png)](https://tjupt.org/promotionlink.php?key=1dff7324687a78a924366b15ea7fce7f)
