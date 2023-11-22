@@ -178,11 +178,6 @@ repo_url: https://github.com/AIboy996/AIboy996.github.io
 copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2023 yangzhang</a>" # 左下角的版权声明
 
 extra:
-  alternate:
-    - link: /
-      name: zh - 中文
-    - link: /en/
-      name: en - English
   consent:
     title: Cookie consent
     description: >- 
@@ -221,6 +216,18 @@ extra:
       name: RSS
 
 plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+              正式的简历: Resume
   ## jupyter文件支持
   ########## 暂时移除此功能
   #- mkdocs-jupyter
@@ -251,6 +258,7 @@ plugins:
         - en
         # 日语搜索汉字
         - ja
+        - zh
   - minify:
       minify_html: true
   - rss

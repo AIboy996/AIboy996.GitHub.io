@@ -74,4 +74,6 @@ hide:
 - 周六：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
 
 ### 多语言
-等我有空了，会做某些文章的英语版，mkdocs matreials本身也是很好地支持了多语言的。
+> 等我有空了，会做某些文章的英语版，mkdocs matreials本身也是很好地支持了多语言的。
+
+本站使用[mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)实现多语言的支持，如果没有对应的语言默认展示中文的页面。
