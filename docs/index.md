@@ -17,7 +17,7 @@ while "False":
 
 <h2>你好！</h2>
 
-这里是[张杨](/About/resume.html)的主页，你可以查看[站内导航](/About/)快速获悉本站的结构。
+这里是[张杨](./About/resume.html)的主页，你可以查看[站内导航](./About/)快速获悉本站的结构。
 
 <h2>联系方式</h2>
 

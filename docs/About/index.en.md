@@ -13,22 +13,22 @@ hide:
 
 ## Subjects
 
-- [**About**](/About): Here it is, providing an overview of this site.
-- [**Note**](/Note): Some notes and tutorial(mainly related to CS).
-- [**Blog**](/Blog): Personal blog.
-- [**Python**](/Python): Python tutorial comprised of syntax, libraries and some examples.
-- [**Project**](/Project): Open source project of mine.
-- [**Statistics**](/Statistics): A guide for Statistics' undergraduate.
-- [**SomeMath**](/SomeMath): Literally some math.
-- [**PlayGround**](/Playground): Playgorund for markdown syntax with some extensions.
-- [**Tags**](/Tags/): 👇
+- [**About**](../About): Here it is, providing an overview of this site.
+- [**Note**](../Note): Some notes and tutorial(mainly related to CS).
+- [**Blog**](../Blog): Personal blog.
+- [**Python**](../Python): Python tutorial comprised of syntax, libraries and some examples.
+- [**Project**](../Project): Open source project of mine.
+- [**Statistics**](../Statistics): A guide for Statistics' undergraduate.
+- [**SomeMath**](../SomeMath): Literally some math.
+- [**PlayGround**](../Playground): Playgorund for markdown syntax with some extensions.
+- [**Tags**](../Tags/): 👇
 
 ## Plugins
 ### Tags
-I always add tags for each page(but sometimes I hide them for simplification), check [**Tags**](/Tags) to get a Category View.
+I always add tags for each page(but sometimes I hide them for simplification), check [**Tags**](../Tags) to get a Category View.
 
 !!! question "New: tags cloud"
-	Recently I add a *Tag Cloud*, check it on [Homepage](/) and [Tags](/Tags/) page.
+	Recently I add a *Tag Cloud*, check it on [Homepage](../) and [Tags](../Tags/) page.
 
 ### Searching
 Searching is powered by [lunrjs](https://lunrjs.com/), you can search titles, text content and codes. 
@@ -44,7 +44,7 @@ Comments is powered by [giscus](https://giscus.app/). All the comments is stored
 ### RSS
 RSS is powered by [mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/). 
 
-Subscribe [RSS Link1](/feed_rss_updated.xml)(sorted in updated date) for latest news. You can also subscribe [RSS Link2](/feed_rss_created.xml) for news sorted in created date.
+Subscribe [RSS Link1](../feed_rss_updated.xml)(sorted in updated date) for latest news. You can also subscribe [RSS Link2](../feed_rss_created.xml) for news sorted in created date.
 
 ### Theme Colors
 > Some kind of my mood on each day.

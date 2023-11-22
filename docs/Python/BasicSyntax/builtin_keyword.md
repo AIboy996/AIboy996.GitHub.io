@@ -578,7 +578,7 @@ from math import sqrt as sq
 
 所谓的异常就是python代码运行过程中出现的错误，错误的类型多种多样，比如语法错误（SyntaxError），变量类型错误（TypeError），变量名字错误（NameError）等等。这些错误都是`BaseException`的子类。在python碰到错误时会停止运行并且抛出一个`Traceback`，准确地指出错误的位置。
 
-这些内容在上一节的[内置异常](/Python/BasicSyntax/builtin_class/#builtin-exception)也都介绍过。
+这些内容在上一节的[内置异常](../../../Python/BasicSyntax/builtin_class/#builtin-exception)也都介绍过。
 
 下面我们来介绍如何处理遇到的异常。
 ### `try`语句

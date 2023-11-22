@@ -101,4 +101,4 @@ SYNOPSIS
 
 你可以按下方向键++arrow-up++和++arrow-down++（或者++j++和++k++）来上下滑动页面，按下++q++来退出这个页面。
 
-这个页面的更多功能详见[less](/Note/Shell/less)。
+这个页面的更多功能详见[less](../../../Note/Shell/less)。

@@ -17,7 +17,7 @@ while "False":
 
 <h2>Hello!</h2>
 
-Welcome to [Yang Zhang's](/About/resume.html) homepage, check [About](/About/) for overview of this site.
+Welcome to [Yang Zhang's](./About/resume.html) homepage, check [About](./About/) for overview of this site.
 
 <h2>Contact info</h2>
 
