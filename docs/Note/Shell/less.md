@@ -7,5 +7,7 @@ hide:
 ---
 
 # less
+> opposite of more
+
 
 TBD:less

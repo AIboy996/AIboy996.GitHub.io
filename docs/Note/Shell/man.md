@@ -7,6 +7,7 @@ hide:
 ---
 
 # man
+> display online manual documentation pages
 
 ## 什么是Shell
 

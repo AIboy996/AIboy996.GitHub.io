@@ -41,8 +41,12 @@ nav:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
     - Shell:
+      - Note/Shell/linux.md
       - Note/Shell/man.md
+      - Note/Shell/cat.md
       - Note/Shell/less.md
+      - Note/Shell/ls.md
+      - Note/Shell/echo.md
   - Blog:
     - Blog/index.md
     - 2022:
