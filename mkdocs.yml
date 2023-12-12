@@ -49,6 +49,10 @@ nav:
       - Note/Shell/echo.md
   - Blog:
     - Blog/index.md
+    - 2019:
+      - Blog/2019/2019_summary.md
+    - 2020:
+      - Blog/2020/2020_summary.md
     - 2022:
       - Blog/2022/2022_summary.md
     - 2023:
