@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0 # for mkdocs-git-revision-date-localized-plugin
       - uses: actions/setup-python@v4
         with:
-          python-version: "3.10.9"
+          python-version: "3.11.5"
       - run: python3 -m pip install -r requirements.txt
       - run: mkdocs gh-deploy --force -b publishment
   deployment-cloudfare-pages:
