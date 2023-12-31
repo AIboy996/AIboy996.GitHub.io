@@ -6,8 +6,6 @@ hide:
  - math
 ---
 
-# less
-> opposite of more
+# SSH
 
-
-TBD:less
+TBD:ssh

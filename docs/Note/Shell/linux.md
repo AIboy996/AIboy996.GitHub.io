@@ -1,6 +1,5 @@
 ---
 tags:
- - Shell
  - Linux
 hide:
  - math
@@ -13,17 +12,19 @@ hide:
 ## Linux简介
 Linux 是一个开源的类 UNIX 操作系统内核。它被广泛用于服务器环境、嵌入式系统和个人计算机。
 
-Linux发行版繁多，不同的系统的使用方法大同小异，我这里主要以Ubuntu和MacOS（并非Linux，只是类UNIX）为主。
+Linux发行版繁多，不同的系统的使用方法大同小异，我这里主要以Ubuntu（大概是最流行的Linux发行版）和MacOS（并非Linux，只是类UNIX）为主。
 
 ## 用户和登陆
-用户分为普通用户和管理员（用户名是root），管理员拥有系统的一切权限，普通用户很多行为会收到限制。
+用户分为普通用户和管理员（用户名是root），管理员拥有系统的一切权限，普通用户很多行为会受到限制。
 
 如果你有一台本地的Linux计算机，开机后输入账号密码即可登录。
 
 如果要登录到远程Linux服务器，可以使用`ssh`来登录：
 ```bash
-ssh username@hostname -p 22 # 默认端口是22
+ssh username@hostname -p 22 # 默认端口是22，很多时候为了安全考虑服务器不会使用22端口
 ```
+
+如果你新安装了一个Linux系统，按照系统提示的操作新建一个用户即可。
 
 ## 文件和目录
 Linux的世界，一切都是文件。
@@ -55,7 +56,7 @@ GPT说：
 所以，你可以在目录里找到各种各样的文件，控制着整个系统的行为。
 > 所以，随意删除未知的文件是非常危险的行为。
 
-MIT的课程《[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/2020/course-shell/)》讲了一个好玩的例子：
+MIT的课程《[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/2020/course-shell/)》讲了一个好玩的例子，你可以通过改变系统某个文件的内容来控制笔记本电脑的屏幕亮度：
 
 !!! cite "change brightness of laptop"
     For example, the brightness of your laptop’s screen is exposed through a file called brightness under
@@ -69,6 +70,7 @@ MIT的课程《[The Missing Semester of Your CS Education](https://missing.csail
     $ cd /sys/class/backlight/thinkpad_screen
     $ echo 3 | sudo tee brightness
     ```
+
 ## Shell
 Shell是人机交互的桥梁，用户可以使用Shell完成一切的工作。
 
@@ -106,8 +108,56 @@ sudo apt install package_name    # Ubuntu/Debian
 pip install numpy
 ```
 ### 用户管理
-增加新的用户，修改用户密码等。
+增加新的用户：
+```bash
+useradd [options] LOGIN
+```
+删除用户：
+```bash
+userdel
+```
+修改用户：
+```bash
+usermod
+```
+修改登录口令（password，俗称密码）：
+```bash
+passwd
+```
+查看所有的用户：
+```bash
+cat /etc/passwd
+```
+```
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+...
+```
+Each line in the file has seven fields delimited by colons that contain the following information:
+
+- User name.
+- Encrypted password (x means that the password is stored in the /etc/shadow file).
+- User ID number (UID).
+- User’s group ID number (GID).
+- Full name of the user (GECOS).
+- User home directory.
+- Login shell (defaults to /bin/bash).
+
+
 ### 权限管理
 更改文件的所有者、权限等。
+```bash
+chmod
+
+chown
+```
+
 ### 进程管理
 查看、挂起、结束进程。
+```bash
+top
+ps
+kill -s SIGSTOP <pid>
+kill -s SIGCONT <pid>
+kill <pid>
+```

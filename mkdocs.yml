@@ -43,10 +43,6 @@ nav:
     - Shell:
       - Note/Shell/linux.md
       - Note/Shell/man.md
-      - Note/Shell/cat.md
-      - Note/Shell/less.md
-      - Note/Shell/ls.md
-      - Note/Shell/echo.md
   - Blog:
     - Blog/index.md
     - 2019:
@@ -67,6 +63,7 @@ nav:
       - Blog/2023/graduation_pics.md
       - Blog/2023/name.md
       - Blog/2023/bloom.md
+      - Blog/2023/2023_summary.md
   - Python:
     - Python/index.md
     - Python/pre_python.md
