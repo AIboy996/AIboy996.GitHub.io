@@ -12,7 +12,9 @@ tags:
 
 当你运行一个jupyter nb，你能在命令行看到一些提示消息：
 
-![](https://files.mdnice.com/user/25860/5f6141cb-4c0f-4727-90e0-216e9aa2258a.png)
+<figure markdown>
+![](./assets/5f6141cb-4c0f-4727-90e0-216e9aa2258a.png)
+</figure>
 最后一条尤为重要：
 ```shell
 [C 05:23:24.768 NotebookApp]
@@ -31,7 +33,9 @@ or http://127.0.0.1:8888/?token=xxx
 
 这个`.html`文件的内容如下：
 
-![](https://files.mdnice.com/user/25860/84ec0eca-f50d-4247-ab30-6005ecf01bba.png)
+<figure markdown>
+![](./assets/84ec0eca-f50d-4247-ab30-6005ecf01bba.png)
+</figure>
 
 里面只是写了一个函数，点开就会redirect到后面两个对应的地址。
 
@@ -40,7 +44,9 @@ or http://127.0.0.1:8888/?token=xxx
 
 也就是说我们在浏览器输入IPv6网址`[::1]:8888`也是可以访问的：
 
-![](https://files.mdnice.com/user/25860/d830d189-64a8-4e67-a5be-14d5ae029421.png)
+<figure markdown>
+![](./assets/d830d189-64a8-4e67-a5be-14d5ae029421.png)
+</figure>
 
 这里输入token即可访问。
 
@@ -56,11 +62,15 @@ jupyter notebook --generate-config
 
 第`121行`，设置允许远程访问
 
-![](https://files.mdnice.com/user/25860/54dd4ec6-1591-4b62-ace0-10b30800c8d3.png)
+<figure markdown>
+![](./assets/54dd4ec6-1591-4b62-ace0-10b30800c8d3.png)
+</figure>
 
 第`297`行，修改监听的IP地址
 
-![](https://files.mdnice.com/user/25860/b4874dfc-954f-4025-b38c-3551075b2f91.png)
+<figure markdown>
+![](./assets/b4874dfc-954f-4025-b38c-3551075b2f91.png)
+</figure>
 
 这里修改为`'*'`代表任一IP地址都可访问，如果只想在特定的IP地址访问（也就是白名单），输入相应的地址即可。
 
@@ -68,7 +78,9 @@ jupyter notebook --generate-config
 
 第`412`行，修改密码（可选
 
-![](https://files.mdnice.com/user/25860/f41a41a0-ba50-4bd3-9cb5-4a20b1390784.png)
+<figure markdown>
+![](./assets/f41a41a0-ba50-4bd3-9cb5-4a20b1390784.png)
+</figure>
 
 注意密码需要使用一定算法加密过的密钥，例如：
 ```python
@@ -86,20 +98,29 @@ Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38)
 ### 效果展示
 我的电脑在局域网的IP为`192.168.2.169`：
 
-![](https://files.mdnice.com/user/25860/2444e61a-6203-4b4c-8a2a-59afacfb4f60.png)
+<figure markdown>
+![](./assets/2444e61a-6203-4b4c-8a2a-59afacfb4f60.png){width=300}
+</figure>
+
 于是只要在局域网内访问`192.168.2.169:8888`即可使用电脑上的jupyter notebook程序，例如在手机：
 
-![](https://files.mdnice.com/user/25860/83303e25-1205-4864-b1a5-56ced8631a42.jpg)
+<figure markdown>
+![](./assets/83303e25-1205-4864-b1a5-56ced8631a42.jpg){width=300}
+</figure>
 
 再如在**听说读写模拟器**上：
 
-![](https://files.mdnice.com/user/25860/d959ad2f-1119-4923-b13f-d811e9919e66.jpg)
+<figure markdown>
+![](./assets/d959ad2f-1119-4923-b13f-d811e9919e66.jpg){width=300}
+</figure>
 <center><s>iPad生产力指日可待！！</s></center>
 <br>
 
 甚至在**泡面盖**上：
 
-![](https://files.mdnice.com/user/25860/9204c55b-1842-4dec-8c75-3b3bfa230158.jpg)
+<figure markdown>
+![](./assets/9204c55b-1842-4dec-8c75-3b3bfa230158.jpg){width=300}
+</figure>
 <center><s>编程更护眼！！</s></center>
 <br>
 
@@ -109,10 +130,15 @@ Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38)
 
 在iPad上写代码
 
-![](https://files.mdnice.com/user/25860/eb7c6155-c391-42b0-b732-2840c0f43f88.jpg)
+<figure markdown>
+![](./assets/eb7c6155-c391-42b0-b732-2840c0f43f88.jpg){width=400}
+</figure>
 
 手机上也能看到在运行中的笔记本！
-![](https://files.mdnice.com/user/25860/eb83c8c9-af8d-4369-90c2-f77bfa11caf5.jpg)
+
+<figure markdown>
+![](./assets/eb83c8c9-af8d-4369-90c2-f77bfa11caf5.jpg){width=300}
+</figure>
 
 ## 广域网连接
 可局域网连接听起来也挺**鸡肋**的，毕竟都在家（or宿舍）了，我为什么不直接用电脑干活呢？如果能在随时随地访问我的jupyte服务器就好了。
@@ -137,7 +163,9 @@ Sakura：https://www.natfrp.com/
 ### 钞能力
 既然我的电脑获取不到公网IP，那我买一个有公网IP的云服务器不就得了。我本人就在阿里云买了一个乞丐版的服务器：
 
-![](https://files.mdnice.com/user/25860/680e0ae5-2012-47ed-8744-feac88cffd45.png)
+<figure markdown>
+![](./assets/680e0ae5-2012-47ed-8744-feac88cffd45.png)
+</figure>
 不贵（一年100差不多），但是很好玩。
 
 点击**阅读原文**可以查看我搭建整个云服务器的过程，这里也不再赘述。
