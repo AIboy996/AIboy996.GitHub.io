@@ -40,9 +40,10 @@ nav:
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
-    - Shell:
+    - Linux & Shell:
       - Note/Shell/linux.md
       - Note/Shell/man.md
+      - Note/Shell/ssh.md
   - Blog:
     - Blog/index.md
     - 2019:
@@ -64,6 +65,8 @@ nav:
       - Blog/2023/name.md
       - Blog/2023/bloom.md
       - Blog/2023/2023_summary.md
+    - 2024:
+      - Blog/2024/otaku.md
   - Python:
     - Python/index.md
     - Python/pre_python.md
@@ -122,18 +125,19 @@ nav:
       - Statistics/Pattern_Recognition_and_Machine_Learning.md
   - SomeMath:
     - SomeMath/index.md
-    - 杂题:
-      - SomeMath/a_limit.md
     - 实分析:
       - SomeMath/real/rational_numbers_countable.md
-      - SomeMath/taylor_expand/taylor_expand.md
+      - SomeMath/real/taylor_expand/taylor_expand.md
       - SomeMath/real/hyperbolic_function.md
+      - SomeMath/real/a_limit.md
+      - SomeMath/real/derivatives.md
     - 复分析:
       - SomeMath/complex/why_complex.md
       - SomeMath/complex/constructible_number.md
-    - SomeMath/linear_differential_equation.md
-    - Montmort:
-      - SomeMath/Montmort1.md
+    - 代数:
+      - SomeMath/algebra/linear_differential_equation.md
+    - 概率论:
+      - SomeMath/prob/Montmort1.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
 

@@ -13,7 +13,7 @@ hide:
 !!! cite "Wikipedia"
     A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts.
 
-简而言之，Shell是Unix-like操作系统（包括各种Linux、MacOS等）的交互界面，是一个最基本的应用程序，是一种命令行语言，同时也可以作为脚本语言。
+简而言之，Shell是Unix-like操作系统（包括各种Linux、MacOS等）的交互界面，是一个最基本的应用程序，是一种命令行工具，同时也可以作为脚本语言。
 
 ### 各种版本的Shell
 
@@ -102,12 +102,13 @@ SYNOPSIS
 你可以按下方向键++arrow-up++和++arrow-down++（或者++j++和++k++）来上下滑动页面，按下++q++来退出这个页面。
 
 ## 常用的命令
+下面罗列一些常用的Linux命令和案例。
 
 ### ls
 > list directory contents
 
 
-`ls`大概是程序员最爱（使用频率意义下的）的命令之一（和`cd`不相上下），他的功能就是列出当前目录的所有文件和文件夹（**list directory contents**）。
+`ls`大概是程序员最爱（使用频率意义下的）的命令之一（和`cd`不相上下），他的功能就是列出当前目录的所有文件和文件夹。
 
 `ls`有一些常用的参数，可以复合使用：
 
