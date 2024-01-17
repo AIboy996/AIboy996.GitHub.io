@@ -28,6 +28,7 @@ nav:
       - Note/mkdocs/theory.md
       - Note/mkdocs/practice.md
       - Note/mkdocs/best_practices.md
+      - Note/mkdocs/about_math.md
     - LaTeX:
       - Note/latex/basic_latex.md
     - ManimGL:
@@ -131,6 +132,7 @@ nav:
       - SomeMath/real/hyperbolic_function.md
       - SomeMath/real/a_limit.md
       - SomeMath/real/derivatives.md
+      - SomeMath/real/gamma_func.md
     - 复分析:
       - SomeMath/complex/why_complex.md
       - SomeMath/complex/constructible_number.md
@@ -275,7 +277,7 @@ plugins:
 markdown_extensions:
   - md_in_html
   - attr_list # 给图片后面添加{width="300"}设置大小
-  - pymdownx.arithmatex # latex支持
+  # - pymdownx.arithmatex # 更换渲染的方式，不依赖此插件，直接使用MathJax渲染
   - footnotes
   - toc:
       permalink: true # 固定标题位置为当前位置

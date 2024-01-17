@@ -1,0 +1,102 @@
+---
+tags:
+- mkdocs
+---
+
+# 写数学公式的坑
+
+在使用Mkdocs生成网页的过程中，如果你的markdown中包含大量的数学公式，那么你大概率会遇到各种各样的问题。
+
+## `\`的转义
+
+我们都知道，`\`符号在tex中经常用到，而它markdown在文件中又是特殊的转义符号，需要格外注意。
+
+
+### `\\`符号
+如果你想写一个$2\times 2$的矩阵。
+
+- 错误示范：
+=== "渲染"
+    $$
+    \begin{pmatrix}
+    1&0\\
+    0&2
+    \end{pmatrix}
+    $$
+=== "源代码"
+    ```tex  hl_lines="3"
+    $$
+    \begin{pmatrix}
+    1&0\\
+    0&2
+    \end{pmatrix}
+    $$
+    ```
+
+- 正确示范：
+=== "渲染"
+    $$
+    \begin{pmatrix}
+    1&0\\\\
+    0&2
+    \end{pmatrix}
+    $$
+=== "源代码"
+    ```tex hl_lines="3"
+    $$
+    \begin{pmatrix}
+    1&0\\\\
+    0&2
+    \end{pmatrix}
+    $$
+    ```
+### `\{`和`\}`
+再比如我们要写一个自适应大小的大括号。
+
+- 错误示范：
+=== "渲染"
+    $$
+    \exp\left\{ -\frac{x^2}{2} \right\}
+    $$
+=== "源代码"
+    ```tex hl_lines="2"
+    $$
+    \exp\left\{ -\frac{x^2}{2} \right\}
+    $$
+    ```
+
+- 正确示范：
+=== "渲染"
+    $$
+    \exp\left\\{ -\frac{x^2}{2} \right\\}
+    $$
+
+=== "源代码"
+    ```tex hl_lines="2"
+    $$
+    \exp\left\\{ -\frac{x^2}{2} \right\\}
+    $$
+    ```
+
+或者是写一个分段函数。
+
+=== "渲染"
+    $$
+    q(x) = \left\\{
+    \begin{aligned}
+    &1 \quad x\in \mathbb{Q}\\\\
+    &0\quad  \text{otherwise}
+    \end{aligned} \right.
+    $$
+=== "源代码"
+    ```tex hl_lines="4"
+    $$
+    q(x) = \left\\{
+    \begin{aligned}
+    &1 \quad x\in \mathbb{Q}\\\\
+    &0\quad  \text{otherwise}
+    \end{aligned} \right.
+    $$
+    ```
+
+TBC:数学公式的坑

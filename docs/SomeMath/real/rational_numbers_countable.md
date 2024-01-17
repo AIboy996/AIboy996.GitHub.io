@@ -48,7 +48,7 @@ $$
 
 一个简单的例子是：
 $$
-f:\{2k:k\in \mathbb{N}\} \to \mathbb{N}
+f:\\{2k:k\in \mathbb{N}\\} \to \mathbb{N}
 $$
 其中$f(2k)=k$。
 
@@ -79,7 +79,7 @@ $$
 
 下面证明$f$是一个双射。
 
-### Step 1 $f$ 是单射
+### Step 1 f是单射
 也就是要证明$x_1\ne x_2 \implies f(x_1)\ne f(x_2)$
 
 设
@@ -114,7 +114,7 @@ $$
 所以假设不成立，$f(x_1)\ne f(x_2)$
 
 所以$f$是单射。
-### Step 2 $f$ 是满射
+### Step 2 f是满射
 也就是要证明$\forall y \in \mathbb{N} \quad \exists x \in \mathbb{Q} \quad s.t.\quad f(x)=y$
 
 根据算数基本原理，$\forall y \in \mathbb{N}$，存在质因数分解（**按照指数的奇偶分开，按照底数从小到大排列**）
