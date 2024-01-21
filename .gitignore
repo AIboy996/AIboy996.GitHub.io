@@ -1,5 +1,5 @@
 /venv
-/example.py
+*.py
 /site
 .DS_Store
 .vscode

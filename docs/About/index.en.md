@@ -32,6 +32,7 @@ I always add tags for each page(but sometimes I hide them for simplification), c
 
 ### Searching
 Searching is powered by [lunrjs](https://lunrjs.com/), you can search titles, text content and codes. 
+> FYI: External Links are follwed by a small arrow like [github](https://github.com)
 
 ### Feedback
 Feedback is powered by [Google Analytics](https://analytics.google.com/analytics/web/)(need Cookie consent to work), check `Was this page helpful?` on the bottom of each page.

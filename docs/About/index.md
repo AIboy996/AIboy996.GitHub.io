@@ -32,6 +32,7 @@ hide:
 
 ### 搜索
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
+> FYI: 本站（正文中）的外链都会加上这样的小箭头：[github](https://github.com)
 
 目前理论上是不支持中文搜索（`lunr.zh.js`）的，仅支持英语和日文（`lunr.ja.js`）搜索，但是基于日语的支持实际上也可以搜到一些汉字。
 
