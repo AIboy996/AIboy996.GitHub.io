@@ -41,6 +41,7 @@ tags:
 ## 属性（attribute）
 > 属性就是类命名空间中的变量
 
+### 各种属性
 我们定义这样一个类来展示类中几种不同的属性：
 ```python
 >>> class Example:
@@ -116,6 +117,37 @@ storage west
 >>> print(w2.purpose, w2.region)
 storage east
 ```
+
+### 模式匹配
+`__match_args__`，定义了`match`语句中对象的行为，规定了使用哪些变量来进行匹配。
+
+```python
+class A:
+    __match_args__ = ('a','b')
+    def __init__(self, x, y, z):
+        self.a = x
+        self.b = y
+        self.c = z
+        
+obj = A(2,2,3)
+
+match obj:
+    case A(2,2):
+        print(2,2) # this case matched
+    case A(1,1):
+        print(1,1)
+```
+
+### 限定属性
+最后，类定义中还可以规定一个特殊的属性：`__slots__`，使用它可以声明所有的属性。从而显著节省空间、提高属性的查找速度。
+
+用法就是：
+```python
+class A:
+  __slots__  = ['data']
+  pass
+```
+这样A的所有实例就都只有`data`这个属性了，也不可以通过赋值的方式增加其他属性。
 ## 方法（method）
 > 方法就是命名空间中的函数
 
@@ -179,7 +211,20 @@ I am Dr.Galler
 - `__new__`
 - `__call__`
 
-下面我们来逐一介绍。
+需要注意，很多时候我们并不是完全重写这些方法，只是想要在默认的行为中加上一点内容。所以我们首先需要学会如何复现默认的行为（实际上这在前面的文中已经展示过了）。
+
+例如我们想要在`__hash__`被调用的时候输出一句话，然后采用默认的行为：
+
+```python
+class A:
+  def __hash__(self):
+    print('__hash__() is called')
+    return super().__hash__(self) # 父类的hash函数
+```
+
+这里面`super()`返回`A`的父类。所以`super().__hash__(self)`实际上就是调用`A`的父类的`__hash__`方法，在这个例子里就是`object.__hash__(self)`（python类定义时默认的父类是object）。
+
+学会了这一手，就可以来看Python中各种神奇的魔法方法。
 
 ### 类的构造方法
 也就是`__new__`、`__init__`和`__del__`这三个方法。分别定义了如何生成类的实例、如何初始化实例和实例被销毁（Python有自动的内存回收机制）时候的行为。
@@ -223,9 +268,7 @@ class FileObject:
     由于调用`__del__`方法时周边状况已不确定，在其执行期间发生的**异常将被忽略**，改为打印一个警告到`sys.stderr`。
 
 ### 类的表示方法
-`__repr__`, `__str__`, `__format__`, `__hash__`, `__bool__`和`__bytes__`。
-
-依次控制`repr(object)`, `str(object)`, `hash(object)`, `format(object)`, `bool(object)`和`bytes(object)`的行为。
+`__repr__`, `__str__`, `__format__`, `__hash__`, `__bool__`和`__bytes__`依次控制了`repr(object)`, `str(object)`, `hash(object)`, `format(object)`, `bool(object)`和`bytes(object)`的行为。
 
 例如：
 ```python
@@ -246,7 +289,7 @@ vec(1,2,3)
     
     如果一个类定义了可变对象并实现了 `__eq__()` 方法，则它不应该实现 `__hash__()`，因为 hashable 多项集的实现要求键的哈希值是不可变的（如果对象的哈希值发生改变，它将位于错误的哈希桶中）。
 
-### 重载运算符
+### 比较运算符
 运算符号与方法名称的对应关系如下：
 
 - `x<y` 调用 `x.__lt__(y)`
@@ -258,26 +301,115 @@ vec(1,2,3)
 
 这些运算符一般需要返回`True` or `False`。
 
-### 数字类型
-`__add__`
+当然，也可以返回任意值。比如我就要定义`a < 2`是a的二进制值向左移2（这个操作的一般写法是`a << 2`），也不是不可以。
 
-### 访问控制
-`__getattr__`
+### 二元运算符
+主要包括（`+, -, *, @, /, //, %, divmod(), pow(), **, <<, >>, &, ^, |`）。
 
-### 模式匹配
-`__match_args__`
+对应英文简写（`add, sub, mul, matmul, truediv, floordiv, mod, divmod, pow, lshift, rshift, and, xor, or`）。
+
+
+例如`a + b`会（默认）调用运算符`a.__add__(b)`，如果`a`没有实现这个方法并且a和b不是同一个类，那么就会调用b的反射（reverse）的运算符`b.__radd__(a)`，如果这个方法也没实现就会抛出错误。
+
+此外还有一些加强（implemented）运算符（`+=, -=, *=, @=, /=, //=, %=, **=, <<=, >>=, &=, ^=, |=`）。
+
+例如`a += b`等价于`a = a.__iadd__(b)`，如果没实现`__iadd__`就会调用`a.__add__(b)`。
+### 一元运算符
+运算符号与方法名称的对应关系如下：
+
+- `-a` 调用 `a.__neg__()`
+- `+a` 调用 `a.__pos__()`
+- `abs(a)` 调用 `a.__abs__()`
+- `~a` 调用 `a.__invert__()`
+
+### 数值转换
+
+- `float(a)` 调用 `a.__float__()`
+- `complex(a)` 调用 `a.__complex__()`
+- `int(a)` 调用 `a.__int__()`
+- `round(a)` 调用 `a.__round__()`
+- `math.trunc(a)` 调用 `a.__trunc__()`
+- `math.floor(a)` 调用 `a.__floor__()`
+- `math.ceil(a)` 调用 `a.__ceil__()`
+- `operator.index(a)` 调用 `a.__index__()`
+
+### 实例属性访问控制
+`__getattribute__`和`__getattr__`, `__setattr__`, `__delattr__`, `__dir__`这几个方法可以控制实例属性被访问时的行为。
+
+其中`__getattribute__`和`__getattr__`这两个魔术方法的取名非常迷惑。
+
+- 只要我们尝试访问一个类实例的属性，就会触发`__getattribute__`方法。
+    - 特别注意，我们在写类定义的时候`self.xxx`也是会触发`__getattribute__`的，所以需要特别避免递归调用。
+- 只有我们尝试一个**不存在的**类实例的属性，才会触发`__getattr__`方法。
+
+例如我们想让这个类被访问到不存在属性的时候返回`None`，就可以：
+```python
+class A:
+    
+    def __init__(self, x):
+        self.x = x
+    
+    def __getattribute__(self, name):
+        return super().__getattribute__(name)
+        
+    def __getattr__(self, name):
+        return None
+
+a = A(1)
+print(a.x) # print 1
+print(a.data) # print None
+```
+
+当我们给实例的属性赋值时会触发`__setattr__`，例如`a.data = 1`（同样的在定义类的时候, `self.data=1`也是会触发这个方法的，需要注意避免循环调用）
+
+当我们删除实例的属性时会触发`__delattr__`，例如`del a.data`。
+
+`__dir__`方法控制了`dir(object)`的行为，Python要求这个函数必须返回一个序列（例如列表）。
 
 ### 迭代器
-`__iter__`和`__next__`
+定义了`__next__`的是一个迭代器，定义了`__iter__`的是一个可迭代对象。
+
+使用`iter(iterable_object)`可以返回一个迭代器。
+
+使用`for`语句可以遍历迭代器，每一次迭代实际上就是通过`.__next__()`或许序列中的下一个值。
 
 ### 描述器
-`__get__`, `__set__`和`__delete__`
+实现了`__get__`, `__set__`和`__delete__`三个方法中的任意一个的对象称为描述器。他的主要作用是充当另外一个拥有者类的一个可变属性。
 
+例如：
+```python
+import os
+
+class DirectorySize:
+    """描述器"""
+    def __get__(self, obj, objtype=None):
+        return len(os.listdir(obj.dirname))
+
+class Directory:
+    size = DirectorySize() # Descriptor instance           
+    def __init__(self, dirname):
+        self.dirname = dirname  # Regular instance attribute
+```
+
+这个例子中，`Directory.size`就是一个根据`dirname`来动态变化的属性。
+
+更多描述器的使用指南[参见官网](https://docs.python.org/zh-cn/3/howto/descriptor.html)。
 ### 容器
 `__getitem__`
 
 ### 上下文管理器
-`__enter__`和`__exit__`
+定义了`__enter__(self)`和`__exit__(self, exc_type, exc_value, traceback)`的类是一个上下文管理器，可以在`with`语句中使用。
+
+```python
+with ContextManager() as c:
+    # with 语句会首先调用__enter__，把返回值赋值给as后的变量
+    pass
+# 语句结束后运行__exit__
+# 如果没有异常，三个参数都是None
+```
+
+### 可调用对象
+`__call__`
 
 ### 协程行为
 `__await__`
@@ -290,23 +422,31 @@ vec(1,2,3)
 
 `__aexit__`
 
+我也不会。
+
 ### 类方法装饰器
 `@staticmethod`
 
 `@classmethod`
 
 `@abstractmethod`
-## 元类
+
+`@property`
+
+## 控制类的创建
 我们说Python万物皆对象，自然类本身也是一个对象。默认情况下，类是使用`type()`来构建的，它的`__class__`是`type`。
 
 当一个类定义（`class`语块）被执行时，将发生以下步骤:
 
-- 解析 MRO 条目；
+- 解析 MRO 条目；`__mro_entries__`
 - 确定适当的元类；
-- 准备类命名空间；
-- 执行类主体；
-- 创建类对象。
+- 准备类命名空间；`__prepare__`
+- 执行类定义的主体；
+- 创建类对象。`__new__`
 
+### 自定义父类
+
+### 自定义元类
 
 
 TBC:Python OOP
