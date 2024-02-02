@@ -609,11 +609,15 @@ class AsyncContextManager:
 ```
 
 ### 泛型（generic type）
-> PEP 484 – Type Hints提出了Python的类型提示。
+> [PEP 484 - Type Hints](https://peps.python.org/pep-0484/)规范了Python的类型提示。
 
-有这样一种写法你肯的见过：`l: list[int] = [1,2,3]`。
+有种写法你肯的见过：`l: list[int] = [1,2,3]`。
 
-这行代码的type hint用到了`list[int]`，它的实现方式是`__class_getitem__`方法，这个方法应当返回一个 `GenericAlias` 对象。当在类上定义时，`__class_getitem__` 会自动成为类方法。 因此，当它被定义时没有必要使用 `@classmethod` 来装饰。
+这行代码的type hint用到了`list[int]`，那么自然有一种语法可以实现类的`[]`操作符。
+
+它的实现方式是`__class_getitem__`方法，这个方法应当返回一个 `GenericAlias` 对象。
+
+当在类上定义时，`__class_getitem__` 会自动成为类方法。 因此，当它被定义时没有必要使用 `@classmethod` 来装饰。
 
 这个设计的目的就是允许标准库泛型类的运行时形参化以更方便地对这些类应用类型提示。
 
