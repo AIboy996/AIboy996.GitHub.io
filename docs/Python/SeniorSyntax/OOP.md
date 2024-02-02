@@ -4,36 +4,101 @@ tags:
 ---
 
 # 面向对象编程
-虽然函数式编程也很好玩，但是我认为python最丰富、可玩性最高的还是OOP（面向对象编程，Object Oriented Programming）。
+虽然函数式编程也很好玩，但是我认为Python最丰富、可玩性最高的还是OOP（面向对象编程，Object Oriented Programming）。
 
 在这里你几乎可以**控制Python对象的一切行为**：
 
-- `with`语句如何创建对象
 - `for`语句如何迭代对象
 - `print(object)`会输出什么东西
+- `with`语句如何创建对象，语句结束之后执行什么操作
 - `()`,`[]`,`.`,`+`,`-`,`*=`,`/=`等操作符的行为
 
-诸如此类。
+诸如此类。你甚至可以用元类（metaclass）来控制定义类的过程，比如要求所有的方法命名都必须用小写字母。
 
-甚至可以用元类（metaclass）来控制定义类的过程，比如要求所有的方法命名都必须用小写字母。
+也正是因为Python在语法重载上的高度自由，我们可以在各类库中见识到千奇百怪的语法行为：
 
-之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword)和[内置类](../BasicSyntax/builtin_class)已经回答了下面的问题：
+!!! example "pathlib"
+    pathlib是Python的标准库之一，提供了方便快捷的路径操作接口。例如我们可以用除法`/`来组合路径：
 
-- 什么是类？
+    ```python
+    >>> from pathlib import Path
+    >>> p = Path('/etc')
+    >>> q = p / 'init.d' / 'reboot'
+    >>> q
+    PosixPath('/etc/init.d/reboot')
+    ```
+
+!!! example "NumPy"
+    NumPy中比较著名的就是**广播机制**了，能做到这一点是因为NumPy重载了`numpy.ndarray`的各种运算符。例如乘法的广播：
+
+    ```python
+    import numpy as np
+    arr = np.array([1,2,3])
+    print(arr*3) # print [3 6 9]
+    ```
+
+!!! example "pandas"
+    pandas更是不必多说，`DataFrame`实现的各种花式索引、赋值、广播操作都让人印象深刻。例如：
+
+    ```python
+    df.loc[df.age > 30]
+    ```
+
+!!! example "plotnine"
+    如果你用过R语言的ggpolt2绘画包，一定对它的语法印象深刻，你可以使用加法来组合图像：
+
+    ```R
+    library(ggplot2)
+
+    ggplot(mpg, aes(displ, hwy, colour = class)) + 
+    geom_point()
+    ```
+
+    ![](https://ggplot2.tidyverse.org/reference/figures/README-example-1.png)
+
+    Python中也有一个类似的包，语法非常简洁优雅：
+
+    ```python
+    from plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap
+    from plotnine.data import mtcars
+
+    (ggplot(mtcars, aes("wt", "mpg", color="factor(gear)"))
+    + geom_point()
+    + stat_smooth(method="lm")
+    + facet_wrap("~gear"))
+    ```
+
+    ![](https://plotnine.readthedocs.io/en/v0.12.4/_images/readme-image-4.png)
+
+!!! example "PyTorch"
+    最后再举一个PyTorch的例子。在模型推理的过程中，我们一般不需要计算梯度。那么就可以使用`torch.no_grad`这样的上下文管理器来控制**局部不计算梯度**：
+
+    ```python
+    import torch
+    x = torch.tensor([1.], requires_grad=True)
+    with torch.no_grad():
+         y = x * 2
+    ```
+
+## 类的基础知识
+
+之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword)和[内置类](../BasicSyntax/builtin_class)已经零零碎碎地回答了下面的问题：
+
+1. 什么是类？
     - 类就是某些对象的抽象，几乎python中一切的东西都是类（或者由类生成的对象或者叫实例 i.e. instance）
-- 为什么使用类？
+2. 为什么使用类？
     - 因为类是一类对象的抽象，可以很好的提供这些对象的统一接口便于维护，极大提高了代码的复用率。同时类之间的继承关系也可以很方便地简化代码。
     - 类的关键在于**抽象**和**复用**。
-- 如何自定义一个类？
+3. 如何自定义一个类？
     - 使用`class`关键字
-- 如何访问类的属性、方法？
+4. 如何访问类的属性、方法？
     - 使用`.`运算符
-- 从类到对象的过程？
+5. 从类到对象的过程？
     - 例如`a = A()`
-    - 首先会运行`A.__new__(cls)`方法来创建一个实例，必须传入参数`cls`，返回一个实例`a`。
-    - 然后会运行`A.__init__(self)`方法来初始化实例，这个方法必须传入参数`self`，没有返回值。
+    - 首先会运行`A.__new__(cls)`方法来创建一个实例。
+    - 然后会运行`A.__init__(self)`方法来初始化实例。
     - 于是乎一个实例就被创造好了。
-- 如何继承一个类？
+6. 如何继承一个类？
     - 这么写：`class MyClass(FatherClass)`
 
 这篇文章我们来补充一些OOP的知识。
@@ -59,7 +124,16 @@ tags:
 先看看里面都有啥：
 ```python
 >>> dir(Example)
-['_Example__private', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_private', 'class_attribute', 'property_attribute']
+[ '_Example__private', '__class__', '__delattr__', 
+  '__dict__', '__dir__', '__doc__', '__eq__', 
+  '__format__', '__ge__', '__getattribute__', 
+  '__getstate__', '__gt__', '__hash__', 
+  '__init__', '__init_subclass__', '__le__', 
+  '__lt__', '__module__', '__ne__', '__new__', 
+  '__reduce__', '__reduce_ex__', '__repr__', 
+  '__setattr__', '__sizeof__', '__str__', 
+  '__subclasshook__', '__weakref__', 
+  '_private', 'class_attribute', 'property_attribute']
 >>> e = Example() 
 >>> e.__dir__()
 [ '_Example__private', '__class__', '__delattr__',
@@ -83,10 +157,15 @@ tags:
 - `class_attribute_in_method`
 - `property_attribute`
 
+
+但是`e.__dict__`只能查到通过`self.`赋值的变量（也就是实例属性）。
+
+
+我们可以尝试调用这些变量：
+
 !!! caution "类属性是共享的"
     请注意，类属性是这个类的所有实例共享的。每个实例都可以访问、修改这个属性。请不要把本该属于实例的属性放到类属性中。
 
-但是`e.__dict__`只能查到通过`self.`赋值的变量（也就是实例属性）。
 ```python
 >>> e.class_attribute
 '类属性'
@@ -105,7 +184,7 @@ tags:
 '惯用私有 类属性'
 ```
 
-此外，如果同样的属性名称同时出现在实例和类中，则属性查找会优先选择实例。
+此外，如果同样的属性名称同时出现在实例和类中，则属性查找会优先选择实例：
 ```python
 >>> class Warehouse:
 ...    purpose = 'storage'
@@ -121,7 +200,7 @@ storage east
 ```
 
 ### 模式匹配
-`__match_args__`，定义了`match`语句中对象的行为，规定了使用哪些变量来进行匹配。
+`__match_args__`，定义了`match`语句中对象的行为，规定了使用哪些变量来进行匹配：
 
 ```python
 class A:
@@ -149,7 +228,7 @@ class A:
   __slots__  = ['data']
   pass
 ```
-这样A的所有实例就都只有`data`这个属性了，也不可以通过赋值的方式增加其他属性。
+这样A的所有实例就都只有`data`这个属性了，不可以在`class`的定义中使用其他属性，实例化后也不可以通过赋值的方式增加其他属性。
 
 ## 方法（method）
 > 方法就是命名空间中的函数
@@ -189,9 +268,9 @@ TypeError: Example.f() takes 1 positional argument but 2 were given
 ### 类方法装饰器
 我们在函数式编程已经介绍了装饰器。在类的方法定义中，我们也常用装饰器来实现一些功能。
 
-> 根据我们之前的介绍，所谓装饰器就是一个返回函数的函数。所以Python中所谓的内置装饰器就是内置函数，大概只有`staticmethod`, `classmethod`和`property`。也有很多其他的装饰器被python安置在了各个标准库中，例如`functools.cache`等。
+> 根据我们之前的介绍，所谓装饰器就是一个返回值是函数的函数。Python内置函数中可以用作装饰器的有三个：`staticmethod`, `classmethod`和`property`。也有很多其他的装饰器被python安置在了各个标准库中，例如`functools.cache`等。
 
-`@staticmethod`装饰的**静态方法**可以解决我们上面提到的问题，静态方法不会把`self`作为第一个参数传入。
+`@staticmethod`装饰的**静态方法**可以解决我们上面提到的函数行为被改变的问题，静态方法不会把`self`作为第一个参数传入。
 
 `@classmethod`装饰的**类方法**可以在不实例化的使用。
 
@@ -241,8 +320,10 @@ I am Alice
 >>> galler.hello()
 I am Dr.Galler
 ```
+这是OOP中最常见也最好用特性，但也要小心不要混淆不同行为的接口。
+
 ## 魔法方法（magic method）
-类的方法中最好玩的一部分就是魔法方法了。
+类的方法中最好玩的一部分就是魔法方法了。诚如其名，魔法一般，无所不能。
 
 这些方法是Python设计的用于定义类的一些重要行为（例如重载运算符）的方法，命名前后都有双下划线。例如：
 
@@ -250,7 +331,7 @@ I am Dr.Galler
 - `__new__`
 - `__call__`
 
-需要注意，很多时候我们并不是完全重写这些方法，只是想要在默认的行为中加上一点内容。所以我们首先需要学会如何复现默认的行为（实际上这在前面的文中已经展示过了）。
+需要注意，很多时候我们并不是完全重写这些方法，只是想要在默认的行为中加上一点内容。所以我们首先需要学会如何复现默认的行为（实际上这在基础语法的文中已经展示过了）。
 
 例如我们想要在`__hash__`被调用的时候输出一句话，然后采用默认的行为：
 
@@ -376,13 +457,13 @@ vec(1,2,3)
 ### 实例属性访问控制
 `__getattribute__`和`__getattr__`, `__setattr__`, `__delattr__`, `__dir__`这几个方法可以控制实例属性被访问时的行为。
 
-其中`__getattribute__`和`__getattr__`这两个魔术方法的取名非常迷惑。
+其中`__getattribute__`和`__getattr__`这两个方法的取名**非常迷惑**，它们的触发条件有所不同：
 
 - 只要我们尝试访问一个类实例的属性，就会触发`__getattribute__`方法。
     - 特别注意，我们在写类定义的时候`self.xxx`也是会触发`__getattribute__`的，所以需要特别避免递归调用。
 - 只有我们尝试一个**不存在的**类实例的属性，才会触发`__getattr__`方法。
 
-例如我们想让这个类被访问到不存在属性的时候返回`None`，就可以：
+例如我们想让这个类被访问到不存在属性的时候返回`None`，就可以这么写：
 ```python
 class A:
     
@@ -400,24 +481,24 @@ print(a.x) # print 1
 print(a.data) # print None
 ```
 
-当我们给实例的属性赋值时会触发`__setattr__`，例如`a.data = 1`（同样的在定义类的时候, `self.data=1`也是会触发这个方法的，需要注意避免循环调用）
+当我们给实例的属性赋值时会触发`__setattr__`，例如`a.data = 1`。
+
+另外**在定义类的时候**, `self.data=1`也是会触发这个方法的，因此需要格外注意避免循环调用。
 
 当我们删除实例的属性时会触发`__delattr__`，例如`del a.data`。
 
-`__dir__`方法控制了`dir(object)`的行为，Python要求这个函数必须返回一个序列（例如列表）。
+`__dir__`方法则控制了`dir(object)`的行为，Python要求这个函数必须返回一个序列（例如列表）。
 
 ### 迭代器
 > 一个典型的例子就是python内置的`range`类
 
-定义了`__next__`的是一个迭代器，定义了`__iter__`的是一个可迭代对象。
+我们之前提到过，定义了`__next__`的是一个迭代器，定义了`__iter__`的是一个可迭代对象。使用`iter(iterable_object)`可以返回一个迭代器。
 
-实现`__reversed__`这个方法可以让对象支持`reversed()`内置函数，这个方法应当返回一个逆序迭代器。
-
-使用`iter(iterable_object)`可以返回一个迭代器。
+此外实现`__reversed__`这个方法可以让对象支持`reversed()`内置函数，按照规范这个方法应当返回一个逆序迭代器。
 
 使用`for`语句可以遍历一个可迭代对象（实际上会创建一个迭代器），每一次迭代实际上就是通过`.__next__()`获取迭代器中的下一个值。
 
-例如一个整数迭代器：
+例如我们自己写一个整数迭代器：
 ```python
 class Range:
     """Range(n) is a iterator from 1 to n"""
@@ -496,7 +577,9 @@ class Directory:
     ```python
     a[slice(1, 2, None)] = b
     ```
-    只要在这三个魔法方法里实现对`slice`参数对支持就行了。
+    其他形式以此类推。略去的切片项总是以 None 补全。
+
+    所以，想要支持切片只要在这三个魔法方法里实现对`slice`类参数的支持就行了。
 
     特别的，`...`在python中和`Ellipsis`是完全相同的，要在切片中定义这个参数的行为就需要特别判断一下。
 
@@ -516,7 +599,6 @@ class Directory:
 
     读者可以自行思考这些索引的实现方式。
 
-其他形式以此类推。略去的切片项总是以 None 补全。
 ### 上下文管理器
 > 一个典型的例子是python的`open`函数
 
@@ -573,7 +655,7 @@ inside func()
 Exited func
 ```
 
-具体的原理读者可以回想我们对`@`语法糖的解释。
+具体的原理读者可以回想我们对`@`语法糖的[解释](./functional_programming/#_13)。
 
 ### 协程行为
 > 这部分比较专业，异步编程常用于网络通信工程，我只在写爬虫的时候偶尔能用上。
@@ -624,14 +706,14 @@ class AsyncContextManager:
 ## 控制类的创建
 我们说Python万物皆对象，实际上类是元类的对象。
 
-默认情况下，类是使用元类`type()`来构建的，它的`__class__`是`type`。
+默认情况下，类是使用元类`type()`来构建的，这时候类的`__class__`是`type`。
 
 例如：
 ```python
 class A:
     pass
 ```
-实际上和
+这实际上和
 ```python
 A = type("A", (), {})
 ```
