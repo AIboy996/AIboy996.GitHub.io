@@ -17,7 +17,7 @@ tags:
 
 也正是因为Python在语法重载上的高度自由，我们可以在各类库中见识到千奇百怪的语法行为：
 
-!!! example "pathlib"
+??? example "pathlib"
     pathlib是Python的标准库之一，提供了方便快捷的路径操作接口。例如我们可以用除法`/`来组合路径：
 
     ```python
@@ -28,7 +28,7 @@ tags:
     PosixPath('/etc/init.d/reboot')
     ```
 
-!!! example "NumPy"
+??? example "NumPy"
     NumPy中比较著名的就是**广播机制**了，能做到这一点是因为NumPy重载了`numpy.ndarray`的各种运算符。例如乘法的广播：
 
     ```python
@@ -37,14 +37,14 @@ tags:
     print(arr*3) # print [3 6 9]
     ```
 
-!!! example "pandas"
+??? example "pandas"
     pandas更是不必多说，`DataFrame`实现的各种花式索引、赋值、广播操作都让人印象深刻。例如：
 
     ```python
     df.loc[df.age > 30]
     ```
 
-!!! example "Flask"
+??? example "Flask"
     Flask是一个很好用的web框架，它的Python包实现了一套非常简洁美观的语法（尤其是Flask使用装饰器来配置路由、错误回调等）。
     
     我们用几行代码就可以创建一个Flask应用：
@@ -63,7 +63,7 @@ tags:
         return render_template('page_not_found.html'), 404
     ```
 
-!!! example "plotnine"
+??? example "plotnine"
     如果你用过R语言的ggpolt2绘画包，一定对它的语法印象深刻，你可以使用加法来组合图像：
 
     ```R
@@ -89,7 +89,7 @@ tags:
 
     ![](https://plotnine.readthedocs.io/en/v0.12.4/_images/readme-image-4.png)
 
-!!! example "PyTorch"
+??? example "PyTorch"
     最后再举一个PyTorch的例子。在模型推理的过程中，我们一般不需要计算梯度。那么就可以使用`torch.no_grad`这样的上下文管理器来控制**局部不计算梯度**：
 
     ```python
