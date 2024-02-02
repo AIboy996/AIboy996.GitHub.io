@@ -41,8 +41,10 @@ tags:
 ## 属性（attribute）
 > 属性就是类命名空间中的变量
 
-### 各种属性
+### 类属性和实例属性
+
 我们定义这样一个类来展示类中几种不同的属性：
+
 ```python
 >>> class Example:
 ...     class_attribute = '类属性'
@@ -148,6 +150,7 @@ class A:
   pass
 ```
 这样A的所有实例就都只有`data`这个属性了，也不可以通过赋值的方式增加其他属性。
+
 ## 方法（method）
 > 方法就是命名空间中的函数
 
@@ -182,6 +185,42 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: Example.f() takes 1 positional argument but 2 were given
 ```
+
+### 类方法装饰器
+我们在函数式编程已经介绍了装饰器。在类的方法定义中，我们也常用装饰器来实现一些功能。
+
+> 根据我们之前的介绍，所谓装饰器就是一个返回函数的函数。所以Python中所谓的内置装饰器就是内置函数，大概只有`staticmethod`, `classmethod`和`property`。也有很多其他的装饰器被python安置在了各个标准库中，例如`functools.cache`等。
+
+`@staticmethod`装饰的**静态方法**可以解决我们上面提到的问题，静态方法不会把`self`作为第一个参数传入。
+
+`@classmethod`装饰的**类方法**可以在不实例化的使用。
+
+`@property`装饰的**方法会成为一个属性**。这个属性会有`getter`, `setter`, `deleter`三个方法，分别使用`@property`, `@x.setter`, `@x.deleter`装饰即可。使用这个装饰器可以更加精细地控制属性的行为，例如我希望`person.age`这个属性永远是正整数，就可以写一个方法来实现。
+
+例如：
+```python
+class C:
+    def __init__(self):
+        self._x = None
+
+    @property
+    def x(self):
+        """I'm the 'x' property."""
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        self._x = value
+
+    @x.deleter
+    def x(self):
+        del self._x
+```
+
+再如`abc`包中的`@abstractmethod`，是用于声明抽象方法的装饰器。一般用于抽象基类中为实现的方法。
+
+更多的内容我们在介绍标准库的时候再来看。
+
 ### 多态（polymorphism）
 多态是一个计算机术语，也就是同一个接口在不同的类上表现出的行为不同。例如：
 ```python
@@ -314,6 +353,7 @@ vec(1,2,3)
 此外还有一些加强（implemented）运算符（`+=, -=, *=, @=, /=, //=, %=, **=, <<=, >>=, &=, ^=, |=`）。
 
 例如`a += b`等价于`a = a.__iadd__(b)`，如果没实现`__iadd__`就会调用`a.__add__(b)`。
+
 ### 一元运算符
 运算符号与方法名称的对应关系如下：
 
@@ -367,11 +407,50 @@ print(a.data) # print None
 `__dir__`方法控制了`dir(object)`的行为，Python要求这个函数必须返回一个序列（例如列表）。
 
 ### 迭代器
+> 一个典型的例子就是python内置的`range`类
+
 定义了`__next__`的是一个迭代器，定义了`__iter__`的是一个可迭代对象。
+
+实现`__reversed__`这个方法可以让对象支持`reversed()`内置函数，这个方法应当返回一个逆序迭代器。
 
 使用`iter(iterable_object)`可以返回一个迭代器。
 
-使用`for`语句可以遍历迭代器，每一次迭代实际上就是通过`.__next__()`或许序列中的下一个值。
+使用`for`语句可以遍历一个可迭代对象（实际上会创建一个迭代器），每一次迭代实际上就是通过`.__next__()`获取迭代器中的下一个值。
+
+例如一个整数迭代器：
+```python
+class Range:
+    """Range(n) is a iterator from 1 to n"""
+    def __init__(self, n) -> None:
+        self.max = n
+        self.now = 0
+        self.inc = 1 # 增量，顺序为1，逆序为-1
+    
+    def __next__(self):
+        while self.now != self.max:
+            self.now += self.inc
+            return self.now
+        else:
+            raise StopIteration
+
+    def __iter__(self):
+        # 顺序迭代
+        return self
+    
+    def __reversed__(self):
+        # 逆序迭代
+        self.inc = -1
+        self.max, self.now = self.now+1, self.max+1
+        return self
+
+for i in Range(3): 
+    # 输出 1 2 3
+    print(i)
+
+for j in reversed(Range(3)):
+    # 输出 3 2 1
+    print(j)
+```
 
 ### 描述器
 实现了`__get__`, `__set__`和`__delete__`三个方法中的任意一个的对象称为描述器。他的主要作用是充当另外一个拥有者类的一个可变属性。
@@ -395,9 +474,52 @@ class Directory:
 
 更多描述器的使用指南[参见官网](https://docs.python.org/zh-cn/3/howto/descriptor.html)。
 ### 容器
-`__getitem__`
+> 一个典型的例子就是python内置的字典
 
+- `__len__`定义了`len(object)`的行为，通常我们会返回容器的大小。
+- `__length_hint__`，定义了一个长度的估计值，实现这个估计的方法可以提高性能。
+- `__getitem__`定义了`[key]`这一取值操作符的行为。
+- `__setitem__`则定义了对象在等号左侧时`object[key] = `的赋值行为。
+- `__delitem__`定义了`del object[key]`这样删除内容的行为。
+- `__missing__`定义了找不到`key`时候的行为。
+- `__iter__`和`__reversed__`分别定义了顺序迭代和逆序迭代的行为。
+- `__contains__`定义了成员检测操作符`in`的行为。
+
+!!! info "切片的行为"
+    实际上切片的行为也是通过`__getitem__`、`__setitem__`和`__delitem__`这三个方法定义的。
+
+    以下形式的调用
+    ```python
+    a[1:2] = b
+    ```
+    会被解释器为转写为
+    ```python
+    a[slice(1, 2, None)] = b
+    ```
+    只要在这三个魔法方法里实现对`slice`参数对支持就行了。
+
+    特别的，`...`在python中和`Ellipsis`是完全相同的，要在切片中定义这个参数的行为就需要特别判断一下。
+
+!!! example "pandas.DataFrame的花式索引"
+    如果你用过pandas那么一定会感叹于各种花式索引的便利。
+
+    你可以使用以下的索引方式：
+    ```python
+    df[key]
+
+    df.loc[key, ...]
+
+    df.iloc[key, ...]
+    ```
+
+    传入的参数也是很多样的。
+
+    读者可以自行思考这些索引的实现方式。
+
+其他形式以此类推。略去的切片项总是以 None 补全。
 ### 上下文管理器
+> 一个典型的例子是python的`open`函数
+
 定义了`__enter__(self)`和`__exit__(self, exc_type, exc_value, traceback)`的类是一个上下文管理器，可以在`with`语句中使用。
 
 ```python
@@ -409,44 +531,201 @@ with ContextManager() as c:
 ```
 
 ### 可调用对象
-`__call__`
+> 很多python的内置数据类型都实现了这个方法，例如`list`再如`dict`，他们都可以当成一个函数来使用。
+
+`__call__`定义了对象被调用时的行为：`object(args, ...)`。
+
+例如：
+```python
+class Hello:
+    def __init__(self, name) -> None:
+        self.name = name
+
+    def __call__(self):
+        print(f'Hello {self.name}.')
+
+h = Hello('python')
+h() # print Hello python.
+```
+
+另外值得一提的是，既然类可以实现`__call__`从而变成`callable`对象，那么它自然可以作为一个装饰器，这就是类装饰器。
+
+例如：
+```python
+class entryExit(object):
+    def __init__(self, f):
+        self.f = f
+    def __call__(self):
+        print("Entering", self.f.__name__)
+        self.f()
+        print("Exited", self.f.__name__)
+
+@entryExit
+def func():
+    print("inside func()")
+
+func()
+```
+这个函数调用会输出：
+```
+Entering func
+inside func()
+Exited func
+```
+
+具体的原理读者可以回想我们对`@`语法糖的解释。
 
 ### 协程行为
-`__await__`
+> 这部分比较专业，异步编程常用于网络通信工程，我只在写爬虫的时候偶尔能用上。
 
-`__aiter__`
+实现了`__await__`的对象是可等待（awatiable）对象。
 
-`__anext__`
+> 使用`async def`定义的异步函数必须返回一个可等待对象。
 
-`__aenter__`
+`__aiter__`和`__anext__`定义了异步迭代器的行为。例如：
+```python
+class Reader:
+    async def readline(self):
+        ...
 
-`__aexit__`
+    def __aiter__(self):
+        return self
 
-我也不会。
+    async def __anext__(self):
+        val = await self.readline()
+        if val == b'':
+            raise StopAsyncIteration
+        return val
+```
 
-### 类方法装饰器
-`@staticmethod`
+`__aenter__`和`__aexit__`定义了异步上下文管理器的行为。例如：
+```python
+class AsyncContextManager:
+    async def __aenter__(self):
+        await log('entering context')
 
-`@classmethod`
+    async def __aexit__(self, exc_type, exc, tb):
+        await log('exiting context')
+```
 
-`@abstractmethod`
+### 泛型（generic type）
+> PEP 484 – Type Hints提出了Python的类型提示。
 
-`@property`
+有这样一种写法你肯的见过：`l: list[int] = [1,2,3]`。
+
+这行代码的type hint用到了`list[int]`，它的实现方式是`__class_getitem__`方法，这个方法应当返回一个 `GenericAlias` 对象。当在类上定义时，`__class_getitem__` 会自动成为类方法。 因此，当它被定义时没有必要使用 `@classmethod` 来装饰。
+
+这个设计的目的就是允许标准库泛型类的运行时形参化以更方便地对这些类应用类型提示。
 
 ## 控制类的创建
-我们说Python万物皆对象，自然类本身也是一个对象。默认情况下，类是使用`type()`来构建的，它的`__class__`是`type`。
+我们说Python万物皆对象，实际上类是元类的对象。
+
+默认情况下，类是使用元类`type()`来构建的，它的`__class__`是`type`。
+
+例如：
+```python
+class A:
+    pass
+```
+实际上和
+```python
+A = type("A", (), {})
+```
+是等价的。
 
 当一个类定义（`class`语块）被执行时，将发生以下步骤:
 
-- 解析 MRO 条目；`__mro_entries__`
-- 确定适当的元类；
-- 准备类命名空间；`__prepare__`
-- 执行类定义的主体；
-- 创建类对象。`__new__`
+1. 调用基类的`__mro_entries__`方法，解析 MRO 条目；
+2. 确定适当的元类；
+    - 如果没有基类且没有显式指定元类，则使用 `type()`；
+    - 如果给出一个显式元类而且 不是 `type()` 的实例，则其会被直接用作元类；
+    - 如果给出一个 `type()` 的实例作为显式元类，或是定义了基类，则使用最近派生的元类。
+3. 调用元类的`__prepare__`方法，准备类命名空间；
+4. 执行类定义的主体（类似于`exec`类定义的所有代码）；
+5. 调用元类的`__new__`方法，创建类对象。
 
-### 自定义父类
+### 父类
+当一个类继承另一个类时，会在这个父类上调用 `__init_subclass__()`。 这样，就使得编写改变子类行为的类成为可能。
 
-### 自定义元类
+例如：
+```python
+class Philosopher:
+    def __init_subclass__(cls, /, default_name, **kwargs):
+        super().__init_subclass__(**kwargs)
+        cls.default_name = default_name
+
+class AustralianPhilosopher(Philosopher, default_name="Bruce"):
+    pass
+```
+### 元类
+元类可以实现的自定义行为就更多了。
+
+例如我们开头提到的，要求所有的方法命名都必须用小写字母:
+```python
+class Meta(type):
+    def __new__(cls, name, bases, dict):
+        flag = all(name==name.lower() for name in dict)
+        assert flag, "CapitalName"
+        return type.__new__(cls, name, bases, dict)
+
+    def __init__(self, name, bases, dict):
+        return type.__init__(self, name, bases, dict)
+    
+    def __call__(cls, *args, **kwds):
+        print("meta_called")
+        return type.__call__(cls, *args, **kwds)
+```
+如果我们这样定义一个类：
+```python
+class MyClass(metaclass=Meta):
+    
+    def Apple(self):
+        pass
+```
+就会触发错误：
+```python
+Traceback (most recent call last):
+  File "/Users/yang/Desktop/example.py", line 12, in <module>
+    class MyClass(metaclass=Meta):
+  File "/Users/yang/Desktop/example.py", line 3, in __new__
+    assert all(name==name.lower() for name in dict), "CapitalName"
+AssertionError: CapitalName
+```
+
+把方法改成小写就可以正常定义了：
+```python
+class MyClass(metaclass=Meta):
+    
+    def apple(self):
+        pass
+
+    def __call__(cls):
+        print("subclass_called")
+        pass
+
+obj = MyClass()
+
+obj() 
+# print meta_called then print subclass_called
+```
+
+指的注意的是，元类的`__call__`是在`MyClass`的对象被调用时才运行（如果子类也有`__call__`那么会先调用元类，在调用子类）。
+
+这个时候`MyClass.__class__`是`<class '__main__.Meta'>`，不再是常见的`<class 'type'>`。
+
+这也佐证了我们对类的叙述：类是元类的对象。
 
 
-TBC:Python OOP
+## 写在最后
+
+Python语法的介绍到此为止了。后面会介绍各种库（标准库和第三方库）的使用，以及一些具体的实战案例。
+
+我在本系列教程的第一篇文章说：Python是少儿编程的摇篮，我上二年级的小侄子都可以学会。
+
+好吧，我承认Python的语法如此庞杂，小侄子估计不太能搞定，大概只能入个门。
+
+奉劝各位读者莫要过分纠结这些fancy的语法，记住：你不会的语法全都对你没用，如果你哪天需要用了，自然就学会了。
+
+编程领域不适用"书到用时方恨少"，学得越多忘得越快，天天用的才是真的学到手的。
+
+此致。
