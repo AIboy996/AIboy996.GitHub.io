@@ -44,6 +44,25 @@ tags:
     df.loc[df.age > 30]
     ```
 
+!!! example "Flask"
+    Flask是一个很好用的web框架，它的Python包实现了一套非常简洁美观的语法（尤其是Flask使用装饰器来配置路由、错误回调等）。
+    
+    我们用几行代码就可以创建一个Flask应用：
+
+    ```python
+    from flask import Flask
+
+    app = Flask(__name__)
+
+    @app.route("/") # 访问 / 路径时返回的内容
+    def hello_world():
+        return "<p>Hello, World!</p>"
+
+    @app.errorhandler(404) # 找不到页面时返回的内容
+    def page_not_found(error):
+        return render_template('page_not_found.html'), 404
+    ```
+
 !!! example "plotnine"
     如果你用过R语言的ggpolt2绘画包，一定对它的语法印象深刻，你可以使用加法来组合图像：
 
