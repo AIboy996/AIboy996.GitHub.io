@@ -1,7 +1,6 @@
 ---
 tags:
 - blog
-- 恋爱日记
 hide:
 - math
 ---
