@@ -112,6 +112,7 @@ strptime(string, format) -> struct_time
 - `%Y年%m月%d日 %H时%M分`
 
 其中用`%`开头的是转义字符，他们的含义如下：
+
 |指令|含意|
 |--|--|
 |%a|本地化的缩写星期中每日的名称。|
@@ -139,3 +140,12 @@ strptime(string, format) -> struct_time
 |%%|字面的 '%' 字符。|
 
 ## datetime
+
+### f-string
+
+```python
+from datetime import datetime
+
+d = datetime.now()
+print(f"{d:%X %x}")
+```

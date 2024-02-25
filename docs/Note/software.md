@@ -15,7 +15,7 @@ tags:
 最好用的协作笔记
 ### [Google Chrome](https://www.google.com/chrome/)
 唯一指定的浏览器
-### [Visual Studio Code | VSCode](https://code.visualstudio.com/)
+### [Visual Studio Code](https://code.visualstudio.com/)
 唯一指定的文本（代码）编辑器，插件丰富
 ### [Termius](https://termius.com/)
 ssh客户端
@@ -27,7 +27,7 @@ ssh客户端
 美观易用的个人媒体服务器，支持全平台客户端和服务端
 ### [Apple Music](https://music.apple.com/)
 唯一指定听歌软件，谁用谁说好
-### [Open Broadcaster Software | OBS](https://obsproject.com/)
+### [Open Broadcaster Software](https://obsproject.com/)
 唯一指定录屏软件
 ### [iCloud](https://www.icloud.com/)
 死贵，但是没法回头的云盘（Windows也勉强能用，但是一坨）
@@ -80,6 +80,8 @@ Fast, light, simple Docker & Linux on macOS
 网站规则提取，信息聚合
 ### GoodNotes
 虽然GoodNotes 6狠狠恶心了用户一波，但不妨碍这是一个好的手写笔记软件
+
+
 ## Android
 ### [Tachiyomi](https://tachiyomi.org/)
 看漫画的软件，可以聚合各个漫画平台
