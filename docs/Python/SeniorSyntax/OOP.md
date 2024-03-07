@@ -17,6 +17,19 @@ tags:
 
 也正是因为Python在语法重载上的高度自由，我们可以在各类库中见识到千奇百怪的语法行为：
 
+??? example "datetime"
+    datetime是Python的标准库之一，提供处理时间和日期的接口。我们可以在f-string中使用特殊的format输出日期。
+    ```python
+    >>> from datetime import datetime
+    >>> t = datetime.now()
+    >>> print(t)
+    2024-03-07 21:42:39.762597
+    >>> print(f"{t:%X}")
+    21:42:39
+    >>> print(f"{t:%X %x}")
+    21:42:39 03/07/24
+    ```
+
 ??? example "pathlib"
     pathlib是Python的标准库之一，提供了方便快捷的路径操作接口。例如我们可以用除法`/`来组合路径：
 

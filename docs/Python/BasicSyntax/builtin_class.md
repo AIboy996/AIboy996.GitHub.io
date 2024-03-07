@@ -557,6 +557,69 @@ upper(self, /)
 
 其他的函数我就不再介绍了，读者可以如法炮制，用`help`函数来学习。
 
+### 字符串与字节串字面值
+关于字符串还有一部分重要的知识就是[字符串的字面值](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#literals)。
+
+我们知道python中单引号、双引号、三引号之内的都是字符串：
+```python
+'apple'
+
+"apple"
+
+"""apple"""
+
+'''apple'''
+
+```
+
+??? info "字符串拼接"
+    python允许下面的行为：
+    ```python
+    s = "abc"  "def"
+    ```
+    
+    这等价于`s = "abcdef"`
+
+    ```python
+    s = (
+        "abc"
+        "def"
+        "ghi"
+    )
+    ```
+    这等价于`s = "abcdefghi"`
+
+但是，字符串并不总是如此简单的，很多时候实际的值和字面值不同，例如：
+```python
+x = 1.4
+string_1 = "{x:.3f}"
+string_2 = f"{x:.3f}"
+print(string_1, string_2) # 输出：{x:.3f} 1.400
+```
+这时候，`string_2`实际上会被解释为`1.400`，而`string_1`还是字面上的`{x:.3f}`，我们通过在字符串的前面添加了前缀`f`控制了这一行为。
+
+具体来说，字符串的句法元素为：
+```python title="普通字符串"
+stringliteral   ::=  [stringprefix](shortstring | longstring)
+stringprefix    ::=  "r" | "u" | "R" | "U" | "f" | "F"
+                     | "fr" | "Fr" | "fR" | "FR" | "rf" | "rF" | "Rf" | "RF"
+```
+其中stringprefix是前缀，shortstring是单引号或者双引号括起来的短字符，longstring是三引号括起来的长字符。以及：
+```python title="字节码"
+bytesliteral   ::=  bytesprefix(shortbytes | longbytes)
+bytesprefix    ::=  "b" | "B" | "br" | "Br" | "bR" | "BR" | "rb" | "rB" | "Rb" | "RB"
+```
+
+这些前缀的作用各不相同，常用的是：
+
+前缀|含义|作用|示例
+--|--|--|--
+`r`或者`R`|raw|原（不转义）字符串| r"\n"
+`f`或者`F`|format|格式化字符串| f"{1.2 : .3f}"
+`u`|unicode|Unicode字符串| 兼容性的遗留代码，高版本的Python无实际含义
+`b`或者`B`|bytes|字节码字符串| b"123"
+
+关于转义字符和格式化字符还有很多内容可说，但我们就此略过，可以参考Python手册中：[字符串的字面值](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#literals)。
 ### list
 python中最常用的数据类型，没有之一。它的创建语法是：`[]`，用方括号括起来的东西就成为列表的元素。
 
@@ -580,7 +643,52 @@ python中最常用的数据类型，没有之一。它的创建语法是：`[]`�
 
 列表也支持切片操作，切片方法和字符串完全一致。
 
+### 列表推导式
+关于列表也还有一部分重要的知识就是列表推导式。它是Python中通过for循环产生列表的简略写法，例如：
+```python
+one_to_ten = [n for n in range(1,11)]
+```
+这一行在效果上等价于：
+```python
+one_to_ten = []
+for n in range(1,11):
+    one_to_ten.append(n)
+```
+都建立了一个包含1～10数字的列表。
 
+具体来说，推导式的句法元素为：
+```python
+comprehension ::=  assignment_expression comp_for
+comp_for      ::=  ["async"] "for" target_list "in" or_test [comp_iter]
+comp_iter     ::=  comp_for | comp_if
+comp_if       ::=  "if" or_test [comp_iter]
+```
+我们可以在`[]`当中嵌套使用`for`语句和`if`语句（值得注意的是，推导式中嵌套语句的解析顺序是从右往左的），甚至可以使用`async for`语句来实现异步遍历。
+
+例如
+```python title="添加if语句"
+odd_one_to_ten = [n for n in range(1,11) if n%2==1]
+```
+它的结果是：`[1, 3, 5, 7, 9]`
+再如
+```python title="双层for循环"
+lst = [i*j for i in range(5) for j in range(5)]
+```
+它的结果是：`[0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 0, 2, 4, 6, 8, 0, 3, 6, 9, 12, 0, 4, 8, 12, 16]`
+
+类似的，其实字典（dict）和集合（set）也可以使用推导式生成：
+```python title="字典推导式"
+{
+    i:j for i,j in zip(range(10),range(10))
+}
+```
+它的结果是：`{0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9}`
+```python title="集合推导式"
+{
+    i for i in range(10)
+}
+```
+它的结果是：`{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}`
 ### 其他
 常用的类型还有`int`,`float`,`bool`,`range`,`dict`,`tuple`,`set`等等。他们本质都是类，里面的方法和属性大差不差，读者可以自行探索。
 
