@@ -1,8 +1,6 @@
 ---
 tags:
 - blog
-hide:
-- math
 ---
 
 # 冬が一番嫌い

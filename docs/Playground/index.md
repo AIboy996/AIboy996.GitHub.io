@@ -2,6 +2,8 @@
 title: Playground of Markdown
 hide:
 - navigation
+include:
+- math
 ---
 
 
@@ -43,6 +45,12 @@ hide: <!--(3)-->
     - tags：隐藏tag
     - edit：隐藏编辑按钮
 
+!!! caution "新的变化 2024.03.07"
+    本站现在默认不加载math.js（因为真的很慢），如果页面需要写数学公式可以使用
+    ```md
+    include:
+    - math
+    ```
 ## 命令行组件
 [termynal](https://github.com/ines/termynal)是一款简洁好看的命令行演示组件。
 

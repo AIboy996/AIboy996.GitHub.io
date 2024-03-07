@@ -1,6 +1,8 @@
 ---
 tags:
  - Jupyter
+include:
+- math
 ---
 
 今天我们介绍jupyter notebook的保姆级基本使用方法

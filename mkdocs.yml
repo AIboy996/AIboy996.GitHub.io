@@ -86,9 +86,21 @@ nav:
       - Python/StandardLibrary/time.md
     - 第三方库:
       - Python/ThirdPartyLibrary/package_management.md
-      - Python/ThirdPartyLibrary/numpy.md
-      - Python/ThirdPartyLibrary/pandas.md
       - Python/ThirdPartyLibrary/DIY.md
+      - numpy:
+        - Python/ThirdPartyLibrary/numpy/index.md
+        - Python/ThirdPartyLibrary/numpy/ndarray.md
+      - matplotlib:
+        - Python/ThirdPartyLibrary/matplotlib/index.md
+        - Python/ThirdPartyLibrary/matplotlib/plt.md
+        - Python/ThirdPartyLibrary/matplotlib/subplots.md
+      - pandas:
+        - Python/ThirdPartyLibrary/pandas/index.md
+        - Python/ThirdPartyLibrary/pandas/dataframe.md
+      - pytorch:
+        - Python/ThirdPartyLibrary/pytorch/index.md
+        - Python/ThirdPartyLibrary/pytorch/tensor.md
+        - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
     - 应用案例（MISC）:
       - Python/Example/email.md
     - 应用案例（爬虫）:

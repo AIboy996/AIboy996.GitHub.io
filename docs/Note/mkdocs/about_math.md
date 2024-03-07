@@ -1,6 +1,8 @@
 ---
 tags:
 - mkdocs
+include:
+- math
 ---
 
 # 写数学公式的坑

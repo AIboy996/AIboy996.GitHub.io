@@ -3,8 +3,6 @@ tags:
 - blog
 - 毕业碎碎念
 - 留影
-hide:
-- math
 ---
 
 # 毕业.留影

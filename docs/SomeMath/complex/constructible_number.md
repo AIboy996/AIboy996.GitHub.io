@@ -1,6 +1,8 @@
 ---
 tags:
 - 抽象代数
+include:
+- math
 ---
 
 # 规矩数

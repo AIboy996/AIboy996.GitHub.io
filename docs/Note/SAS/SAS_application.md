@@ -1,6 +1,8 @@
 ---
 tags:
 - SAS
+include:
+- math
 ---
 
 # SAS统计应用

@@ -3,6 +3,8 @@ title: 几乎处处
 hide:
 - feedback
 - comments
+include:
+- math
 ---
 
 # 统计学🎲

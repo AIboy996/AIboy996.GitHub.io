@@ -1,6 +1,8 @@
 ---
 tags:
   - 概率论
+include:
+- math
 ---
 # Montmort问题（一）
 ## Treize

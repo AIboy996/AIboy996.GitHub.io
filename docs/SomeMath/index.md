@@ -3,6 +3,8 @@ title: 胡数八道
 hide:
 - feedback
 - comments
+include:
+- math
 ---
 # 数学➗
 

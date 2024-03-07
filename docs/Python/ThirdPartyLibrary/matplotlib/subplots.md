@@ -1,8 +1,7 @@
 ---
 tags:
 - python第三方库
+- matplotlib
 ---
 
-# NumPy
-
-TBD:Python Numpy
+# axes and figure

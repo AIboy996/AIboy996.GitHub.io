@@ -1,8 +1,6 @@
 ---
 tags:
  - Linux
-hide:
- - math
 ---
 
 # All About Linux

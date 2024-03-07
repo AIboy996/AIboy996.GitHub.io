@@ -12,7 +12,7 @@ Latest Update(๑•ᴗ•๑)♡ :  <a href="/Python/SeniorSyntax/OOP/">面向�
 <!-- 数学公式格式支持，用html嵌入的方式支持数学公式自动换行，mathjax似乎要支持但是现在还没实现。
 Automatic line breaking has not yet been implemented in MathJax version 3, 
 but is high on our list for inclusion in a future release. -->
-{% if page.meta and ("math" not in page.meta.hide) %}
+{% if page.meta and ("math" in page.meta.include) %}
 <script src="{{ 'assets/javascripts/math.js' | url }}"></script>
 {% endif %}
 {% endblock %}

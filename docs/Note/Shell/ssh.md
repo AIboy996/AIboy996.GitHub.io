@@ -2,8 +2,6 @@
 tags:
  - Shell
  - Linux
-hide:
- - math
 ---
 
 # SSH

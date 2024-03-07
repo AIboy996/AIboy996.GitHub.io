@@ -1,8 +1,6 @@
 ---
 tags:
 - blog
-hide:
-- math
 ---
 
 # 铁树开花

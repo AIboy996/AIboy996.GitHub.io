@@ -1,6 +1,8 @@
 ---
 tags:
 - 数学分析
+include:
+- math
 ---
 
 # Gamma函数

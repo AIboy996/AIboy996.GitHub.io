@@ -1,6 +1,8 @@
 ---
 tags:
  -  mkdocs
+include:
+- math
 ---
 # 实践
 

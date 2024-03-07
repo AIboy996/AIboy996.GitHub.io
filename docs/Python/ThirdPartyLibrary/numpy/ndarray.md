@@ -1,8 +1,9 @@
 ---
 tags:
 - python第三方库
+- numpy
 ---
 
-# pandas
+# array
 
-TBD:Python pandas
+TBD:Python Numpy

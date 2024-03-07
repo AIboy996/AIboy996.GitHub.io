@@ -3,7 +3,6 @@ title: 胡言乱语
 hide:
 - feedback
 - comments
-- math
 ---
 
 # 博客📕
