@@ -26,16 +26,17 @@ tags:
 
 ## 公开课
 
-### 清华刘思齐
+### [清华刘思齐](https://www.bilibili.com/video/BV1F7411L7LS)
 
 哔哩哔哩【我真的不懂分析】，647老师的数分有点难，并且没有数学分析一。
 
-### 复旦谢锡麟
+### [复旦谢锡麟](https://space.bilibili.com/589977552/channel/series)
 
-好课。
+好课，看谢老师写板书是一种享受。
 
-### MIT 18.100A
+### [MIT 18.100A | Fall 2020 | Undergraduate, Graduate](https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/)
 
 !!! cite "[MIT 18.100A 2020 fall lec4] Dr. Casey Rodriguez"
     Algebraic things are, to me, very nice. Because somehow you always deal with equality. So how hard could it be to prove two things are equal to each other? Yet, analysis deals a lot with inequality, which somehow is much more subtle.
 
+这段话我是认可的，毕竟代数确实搞不出啥不等式。
