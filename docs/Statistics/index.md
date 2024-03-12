@@ -15,4 +15,11 @@ include:
     $$
 
 
-<u>不硬核统计系</u>速通手册，介绍课程内容、推荐教材、公开课。
+<u>不硬核统计系</u>速通手册，介绍我修过的统计相关课程。
+
+包括但不限于：
+
+- [FDSM](https://www.fdsm.fudan.edu.cn/)本科课
+- [FDSDS](https://sds.fudan.edu.cn/)研究生课
+- [华五AI+X](https://huawuwei.fanya.chaoxing.com/portal/1)微专业课
+- 网络公开课（[MIT OC](https://ocw.mit.edu/)、慕课……）

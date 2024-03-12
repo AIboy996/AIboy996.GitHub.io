@@ -17,7 +17,7 @@ hide:
 - [**Blog**](../Blog)：博客板块，记录日常的博客。
 - [**Python**](../Python)：Python板块，包含基础、高级语法知识和各种库的使用。
 - [**Project**](../Project)：项目板块，本人的一些开源项目。
-- [**Statistics**](../Statistics)：统计学相关。
+- [**Statistics**](../Statistics)：鄙人专业相关。
 - [**SomeMath**](../SomeMath)：数学相关。
 - [**PlayGround**](../Playground)：用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](../Tags/)：👇

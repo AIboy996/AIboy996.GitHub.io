@@ -1,5 +1,4 @@
 ---
-title: 基于PyScript的matplotlib画廊
 tags:
 - PyScript
 - 开源项目

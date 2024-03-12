@@ -1,7 +1,8 @@
 ---
 tags:
-- python第三方库
 - matplotlib
 ---
 
-# plt
+# plt everything
+
+matplotlib的函数式调用。

@@ -100,6 +100,7 @@ nav:
       - pytorch:
         - Python/ThirdPartyLibrary/pytorch/index.md
         - Python/ThirdPartyLibrary/pytorch/tensor.md
+        - Python/ThirdPartyLibrary/pytorch/model.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
     - 应用案例（MISC）:
       - Python/Example/email.md
@@ -114,29 +115,40 @@ nav:
     - Project/Course-Selection-System.md
     - Project/qrq.md
     - Project/pymd.md
-    - Project/high_school_math.md
     - Project/AirPrint-with-Python.md
+    - Project/high_school_math.md
   - Statistics:
     - Statistics/index.md
     - 基础课:
-      - Statistics/Calculus.md
-      - Statistics/Linear_Algebra.md
-      - Statistics/Operations_Research.md
-      - Statistics/Probability_Theory_and_Mathematical_Statistics.md
-      - Statistics/Statistical_Software.md
+      - Statistics/basic/Calculus.md
+      - Statistics/basic/Linear_Algebra.md
+      - Statistics/basic/Operations_Research.md
+      - Statistics/basic/Probability_Theory_and_Mathematical_Statistics.md
+      - Statistics/basic/Statistical_Software.md
     - 专业课:
-      - Statistics/Statistical_Inference.md
-      - Statistics/Regression_Analysis.md
-      - Statistics/Time_Series_Analysis.md
-      - Statistics/Sampling.md
-      - Statistics/Multivariate_Analysis.md
-      - Statistics/Stochastic_Process.md
-      - Statistics/Categorical_Data_Analysis.md
-      - Statistics/Nonparametric_Statistics.md
+      - Statistics/specialized/Statistical_Inference.md
+      - Statistics/specialized/Regression_Analysis.md
+      - Statistics/specialized/Time_Series_Analysis.md
+      - Statistics/specialized/Sampling.md
+      - Statistics/specialized/Multivariate_Analysis.md
+      - Statistics/specialized/Stochastic_Process.md
+      - Statistics/specialized/Categorical_Data_Analysis.md
+      - Statistics/specialized/Nonparametric_Statistics.md
     - 选修课:
-      - Statistics/Computational_Statistics.md
-      - Statistics/Data_Mining.md
-      - Statistics/Pattern_Recognition_and_Machine_Learning.md
+      - Statistics/elective/Computational_Statistics.md
+      - Statistics/elective/Data_Mining.md
+      - Statistics/elective/Algorithm.md
+      - Statistics/elective/DSPython.md
+      - Statistics/elective/Database.md
+      - Statistics/elective/Pattern_Recognition_and_Machine_Learning.md
+      - Statistics/elective/SeniorPython.md
+      - Statistics/elective/OpenMMLab.md
+    - 研究生课:
+      - Statistics/postgrad/Probability_Theory.md
+      - Statistics/postgrad/Convex_Optimization.md
+      - Statistics/postgrad/Numerical_Analysis.md
+      - Statistics/postgrad/Time_Series.md
+      - Statistics/postgrad/journal_club.md
   - SomeMath:
     - SomeMath/index.md
     - 实分析:
