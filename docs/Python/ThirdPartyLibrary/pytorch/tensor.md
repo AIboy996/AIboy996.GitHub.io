@@ -20,3 +20,5 @@ assert out[0,0,5,0] == raw_tensor[0,0,:11,:].sum()
 # out的第1个像素点就是pad完的第一个窗口内像素的求和
 assert out[0,0,0,0] == tensor[0,0,:11,:].sum()
 ```
+
+TBD:pytorch tensor

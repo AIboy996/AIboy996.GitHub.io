@@ -149,3 +149,5 @@ from datetime import datetime
 d = datetime.now()
 print(f"{d:%X %x}")
 ```
+
+TBC:Python time

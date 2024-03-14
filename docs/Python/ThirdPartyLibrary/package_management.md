@@ -24,4 +24,4 @@ tags:
 如果想要使用第三方的库，就需要使用一种包管理软件。
 
 
-TBD:Python Package Management
+TBC:Python Package Management

@@ -166,5 +166,7 @@ flowchart LR
     click 自己写一个库 "./ThirdPartyLibrary/DIY"
     click numpy "./ThirdPartyLibrary/numpy"
     click pandas "./ThirdPartyLibrary/pandas"
+    click matplotlib "./ThirdPartyLibrary/matplotlib"
+    click pytorch "./ThirdPartyLibrary/pytorch"
 ```
 
