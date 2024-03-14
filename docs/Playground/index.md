@@ -41,16 +41,16 @@ hide: <!--(3)-->
     - toc：隐藏目录
     - feedback：隐藏反馈按钮
     - comments：隐藏评论区
-    - math：不加载math.js
+    - <s>math：不加载math.js</s>
     - tags：隐藏tag
     - edit：隐藏编辑按钮
 
-!!! caution "新的变化 2024.03.07"
-    本站现在默认不加载math.js（因为真的很慢），如果页面需要写数学公式可以使用
-    ```md
-    include:
-    - math
-    ```
+    !!! caution "新的变化 2024.03.07"
+        本站现在默认不加载math.js（因为真的很慢），如果页面需要写数学公式需要额外申明
+        ```md
+        include:
+        - math
+        ```
 ## 命令行组件
 [termynal](https://github.com/ines/termynal)是一款简洁好看的命令行演示组件。
 
@@ -288,7 +288,7 @@ mkdocs-material支持更好看的样式：
     </figure>
     ```
 ### 放大显示
-使用glightbox插件支持了图片的放大显示。
+使用glightbox插件支持了图片的放大显示。添加`{.nozoom}`类标签可以禁用glightbox组件。
 ## 数学公式
 本站的LaTex支持则是依靠MathJax实现的，语法上需要小心并非所有的写法通用，具体有何差异可以去官网看一看[^4]。
 
@@ -297,6 +297,10 @@ $$
 \sin^2\theta +\cos^2\theta =1
 $$
 都是支持的。
+
+!!! caution "新的变化 2024.03.14"
+    现在的数学公式不再依赖`pymdownx.arithmatex`这个插件，而是直接使用mathjax渲染。更快而且错误更少了，此外还通过[Peter Krautzberger写的代码](https://codepen.io/pkra/pen/EPeKjo)实现了数学公式自动换行。
+
 ## 视频
 ### 文件嵌入
 视频的文件嵌入使用了mkdocs video插件，效果如下：
@@ -335,6 +339,40 @@ mermaid是简单强大的流程图绘制工具，具体细节参见它的的官�
       B ---->|No| E[Yay!];
     ```
     ````
+## pdf文件嵌入
+使用html的`application/pdf`实现：
+
+```html
+<center>
+<object
+    type="application/pdf"
+    data="../../Statistics/postgrad/assets/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
+    width=80%
+    height=400>
+</object>
+</center>
+```
+其中传递了一些参数
+
+- page=1，加载的时候打开第一页
+- view=FitH，视图设置为Horizontal Fit
+- toolbar=1，显示工具栏
+- navpanes=0，默认不显示导航栏
+
+还有很多其他可用的参数，具体可以参考Adobe的文档：[Parameters for Opening PDF Files](https://pdfobject.com/pdf/pdf_open_parameters_acro8.pdf)。
+
+嵌入效果就是：
+
+<center>
+<object
+    type="application/pdf"
+    data="../../Statistics/postgrad/assets/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
+    width=80%
+    height=400>
+</object>
+</center>
+
+
 ## Google广告
 当然，本站仅有此处嵌入了广告，仅做测试使用。
 ### 展示广告

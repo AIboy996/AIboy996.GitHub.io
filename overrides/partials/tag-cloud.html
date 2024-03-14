@@ -55,16 +55,17 @@
                         {% if sz > 10 %}
                             {% set sz = 10 %}
                         {% endif %}
-                    {% if page.url == 'tags/' %}
-                        font-size:{{ 1.75+sz*0.06}}rem;
+                    {% if page.url == 'Tags/' %}
+                        font-size:{{ 0.8 +sz*0.04}}rem;
                     {% else %}
-                        font-size:{{ 0.75+sz*0.06}}rem;
+                        font-size:{{ 0.75+sz*0.04}}rem;
                     {% endif %}
                     color:{{ color( loop.index%12) }};
                 ">
                     {{- tag -}} &nbsp;
                 </span>
-                <!--<sup class="tag-count">{{- ps|count -}}</sup>-->
+                <!-- 上标还是算了，有点乱 -->
+                <!-- <sup class="tag-count">{{- ps|count -}}</sup> -->
             </a>
         {% endfor %}
     {% else %}

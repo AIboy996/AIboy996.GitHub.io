@@ -20,7 +20,7 @@ nav:
     - Git:
       - Note/Git/git.md
       - Note/Git/git_server.md
-    - 墙和梯子:
+    - GreatFirewall:
       - Note/GFW/intro.md
       - Note/GFW/client.md
       - Note/GFW/server.md
