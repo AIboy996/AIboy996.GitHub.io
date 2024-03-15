@@ -1,6 +1,6 @@
 site_name: yangzhang's Site
 site_url: https://yangzhang.site/
-site_author: yangzhang
+site_author: Yang Zhang
 site_description: 张杨的个人网站
 nav:
   - About:
@@ -24,27 +24,28 @@ nav:
       - Note/GFW/intro.md
       - Note/GFW/client.md
       - Note/GFW/server.md
-    - mkdocs:
-      - Note/mkdocs/theory.md
-      - Note/mkdocs/practice.md
-      - Note/mkdocs/best_practices.md
-      - Note/mkdocs/about_math.md
-    - LaTeX:
-      - Note/latex/basic_latex.md
-    - ManimGL:
-      - Note/manim/hello.md
     - Jupyter:
       - 介绍: Note/jupyter/jupyter1.md
       - 基础使用: Note/jupyter/jupyter2.md
       - 远程服务: Note/jupyter/jupyter3.md
       - 进阶使用: Note/jupyter/jupyter4.md
-    - SAS:
-      - SAS的基本操作: Note/SAS/SAS_basic.md
-      - SAS的统计应用: Note/SAS/SAS_application.md
+    - LaTeX:
+      - Note/latex/basic_latex.md
     - Linux & Shell:
       - Note/Shell/linux.md
       - Note/Shell/man.md
       - Note/Shell/ssh.md
+    - ManimGL:
+      - Note/manim/hello.md
+    - MkDocs:
+      - Note/mkdocs/theory.md
+      - Note/mkdocs/practice.md
+      - Note/mkdocs/best_practices.md
+      - Note/mkdocs/about_math.md
+    - SAS:
+      - SAS的基本操作: Note/SAS/SAS_basic.md
+      - SAS的统计应用: Note/SAS/SAS_application.md
+
   - Blog:
     - Blog/index.md
     - 2019:
@@ -111,12 +112,12 @@ nav:
       - Python/Example/Excel/csv2xlsx.md
   - Project:
     - Project/index.md
-    - Project/plt-gallery.md
-    - Project/Course-Selection-System.md
     - Project/qrq.md
     - Project/pymd.md
-    - Project/AirPrint-with-Python.md
+    - Project/plt-gallery.md
     - Project/high_school_math.md
+    - Project/AirPrint-with-Python.md
+    - Project/Course-Selection-System.md
   - Statistics:
     - Statistics/index.md
     - 基础课:
@@ -211,7 +212,7 @@ theme:
 
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2023 yangzhang</a>" # 左下角的版权声明
+copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2024 Yang Zhang</a>" # 左下角的版权声明
 
 extra:
   consent:

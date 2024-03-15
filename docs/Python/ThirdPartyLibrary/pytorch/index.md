@@ -9,4 +9,6 @@ hide:
 
 # pytorch
 
+梯度下降的艺术。
+
 TBD:pytorch介绍
