@@ -1,5 +1,5 @@
 ---
-title: 关于墙和梯子的基础知识
+title: 介绍
 tags: 
   - GFW和VPN
 ---

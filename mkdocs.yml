@@ -100,8 +100,11 @@ nav:
         - Python/ThirdPartyLibrary/pandas/dataframe.md
       - pytorch:
         - Python/ThirdPartyLibrary/pytorch/index.md
+        - Python/ThirdPartyLibrary/pytorch/quick_start.md
         - Python/ThirdPartyLibrary/pytorch/tensor.md
+        - Python/ThirdPartyLibrary/pytorch/data.md
         - Python/ThirdPartyLibrary/pytorch/model.md
+        - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
     - 应用案例（MISC）:
       - Python/Example/email.md

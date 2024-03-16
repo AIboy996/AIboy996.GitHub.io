@@ -7,11 +7,12 @@ hide:
 
 ## 友链
 
-- [杨希杰的主页](https://yang-xijie.github.io/)
-- [谢益辉的主页](https://yihui.org/)
+- [刘原冶](https://henrylau7.github.io/)
+- [杨希杰](https://yang-xijie.github.io/)
+- [谢益辉](https://yihui.org/)
 - [老陳网志](https://blog.chenyyds.com/)
-- [朱英华的主页](https://williamzhu01.github.io/william-circle.github.io/)
-- [张舟的主页](https://zhangzhou.site/)
+- [朱英华](https://williamzhu01.github.io/william-circle.github.io/)
+- [张舟](https://zhangzhou.site/)
 
 ## 或许有用
 
