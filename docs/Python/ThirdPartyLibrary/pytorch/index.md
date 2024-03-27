@@ -159,7 +159,7 @@ class NeuralNetwork(nn.Module):
 ```
 
 ## 高性能计算
-> [torch.tensor](https://pytorch.org/docs/stable/tensors.html)
+> [torch.Tensor](https://pytorch.org/docs/stable/tensors.html)
 
 最后但不得不提的是PyTorch的高性能计算，作为出了名的慢速语言Python的库（当然PyTorch也提供其他语言比如C++的api），PyTorch却不是很慢，它的底层运算主要是是C、C++和CUDA等高性能的代码来处理。
 

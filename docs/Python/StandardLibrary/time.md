@@ -7,9 +7,9 @@ tags:
 
 python中常用的时间相关的标准库有三个。
 
-- time
-- datetime
-- calender
+- time：提供更底层的接口
+- datetime：提供更易用的接口
+- calender：输出日历
 
 我们一网打尽。
 
@@ -64,15 +64,15 @@ OK，故事讲到这里你就可以理解为什么**时间戳**（timestamp）�
 1682676590.8083282
 >>> time.strftime('%c') # 获取格式化的字符串时间
 'Fri Apr 28 18:10:07 2023'
->>> time.gmtime() # 获取结构化的时间
+>>> time.localtime() # 获取结构化的时间
 time.struct_time(
     tm_year=2023, tm_mon=4, tm_mday=28, 
     tm_hour=10, tm_min=10, tm_sec=40, 
     tm_wday=4, tm_yday=118, tm_isdst=0
 )
->>> time.gmtime()[0] # 可以通过指标来获取指定位置的数值
+>>> time.localtime()[0] # 可以通过指标来获取指定位置的数值
 2023
->>> time.gmtime().tm_mday # 也可以通过属性名来获取
+>>> time.localtime().tm_mday # 也可以通过属性名来获取
 28
 ```
 
@@ -83,20 +83,30 @@ python中的`time.struct_time`是比较理想的结构化数据（tuple），所
 
 #### 时间戳转化成元组
 ```python
-gmtime([seconds]) -> (tm_year, tm_mon, tm_mday, tm_hour, tm_min,
+time.gmtime([seconds]) -> (tm_year, tm_mon, tm_mday, tm_hour, tm_min,
                        tm_sec, tm_wday, tm_yday, tm_isdst)
+```
+
+特别的，`localtime`可以考虑夏令时、时区等因素
+```python
+time.localtime([seconds]) -> (tm_year,tm_mon,tm_mday,tm_hour,tm_min,
+                          tm_sec,tm_wday,tm_yday,tm_isdst)
 ```
 #### 元组转化成时间戳
 ```python
-mktime(tuple) -> floating point number
+time.mktime(tuple) -> floating point number
 ```
 #### 元组转化成字符串
 ```python
-strftime(format[, tuple]) -> string
+time.strftime(format[, tuple]) -> string
+```
+特别的，`asctime`可以把时间格式化成'Wed Mar 27 17:12:14 2024'样式：
+```python
+time.asctime([tuple]) -> string
 ```
 #### 字符串转化成元组
 ```python
-strptime(string, format) -> struct_time
+time.strptime(string, format) -> struct_time
 ```
 
 注意到涉及到字符串的转化时需要指定字符串时间的格式（format），诸如：
@@ -106,12 +116,14 @@ strptime(string, format) -> struct_time
 - `#!python "2023年10月20日 21时30分"`
 
 他们的格式参数分别是：
+<div id="hook"></div>
 
 - `%Y-%m-%d %H:%M %p`
 - `%a, %d %b %Y %H:%M:%S +0000`
 - `%Y年%m月%d日 %H时%M分`
 
 其中用`%`开头的是转义字符，他们的含义如下：
+
 
 |指令|含意|
 |--|--|
@@ -139,15 +151,107 @@ strptime(string, format) -> struct_time
 |%Z|时区名称（如果不存在时区，则不包含字符）。|
 |%%|字面的 '%' 字符。|
 
-## datetime
 
-### f-string
-
+### 其他有用的函数
+让程序睡一会儿
 ```python
-from datetime import datetime
+time.sleep(seconds)
+```
+但并不总是可靠！
 
-d = datetime.now()
-print(f"{d:%X %x}")
+## datetime
+datetime 模块提供了用于操作日期和时间的类。
+
+在支持日期时间数学运算的同时，实现的关注点更着重于如何能够更有效地解析其属性用于格式化输出和数据操作。
+
+datetime实现了以下的类：
+```
+object
+    timedelta：时间跨度，实现时间的计算
+    tzinfo：抽象基类
+        timezone：时区类
+    time：时间类（不特定于某一天，独立于日期）
+    date：日期类（不包含时间）
+        datetime：日期+时间
+```
+其中`datetime`是最常用的接口。
+
+### date类
+
+#### 创建对象
+- 我们可以直接用`datetime.date`创建特定的`date`对象：
+    - `#!python class datetime.date(year, month, day)`
+- 可以创建今天的日期：
+    - `#!python classmethod date.today()`
+- 可以指定从公元 1 年 1 月 1 日开始的第n天：
+    - `#!python classmethod date.fromordinal(ordinal)`
+- 还可以从时间戳创建：
+    - `#!python classmethod date.fromtimestamp(timestamp)`
+- 也可以从字符串创建：
+    - `#!python classmethod date.fromisoformat(date_string)`
+    - 支持大部分 ISO 8601 格式给出的日期。
+
+#### 实例属性
+`year`，`month`和`day`
+
+#### 实例方法
+
+包括
+
+- `replace`：改变`year`、`month`或者`day`属性
+- `timetuple`：返回元组形式的日期
+- `toordinal`：返回从公元 1 年 1 月 1 日开始计算的天数
+- `weekday`：返回星期几（0-6）
+- `isoweekday`：返回星期几（1-7）
+- `isocalendar`：返回ISO历法（XXXX年，第XX周，第XX天）
+- `isoformat`：返回日期字符串（YYYY-MM-DD）
+- `ctime`：返回日期字符串（'Wed Dec  4 00:00:00 2002'）
+- `strftime`：返回特定格式的日期字符串，和之前讲的[time.strftime](./#hook)行为类似
+- `__str__`：等价于`isoformat`
+    - 控制了`str()`的行为，例如直接打印的行为`#!python print(date)`
+- `__format__`：和`strftime`类似
+    - 控制了`format()`的行为，例如f-string中的行为：`#!python print(f"{date:%X}")`
+### time类
+这个类不怎么用，它实现的是不特定于某一天的时间，例如`下午三点`。
+
+### timedelta类
+`#!python class datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)`
+时间跨度，可以用来做加减乘除
+
+例如
+```python
+>>> import datetime
+>>> datetime.timedelta(days=1)+datetime.timedelta(seconds=300000)
+datetime.timedelta(days=4, seconds=40800)
 ```
 
-TBC:Python time
+`date`和`datetime`对象之间的加减法返回值都是`timedelta`：
+```python
+>>> import datetime
+>>> datetime.date(2023,2,28) - datetime.date(2023,1,9)
+datetime.timedelta(days=50)
+```
+
+`time`对象不能做加减法。
+
+### datetime类
+就是带了具体时间的`date`类，属性、方法都稍微丰富一点。
+
+
+## calender
+纯Python实现的很有趣的一个库，可以查查日历：
+
+<div class="console">
+
+```console
+$ python -m calendar 2024 03
+     March 2024
+Mo Tu We Th Fr Sa Su
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+```
+
+</div>

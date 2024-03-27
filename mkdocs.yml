@@ -168,7 +168,8 @@ nav:
     - 代数:
       - SomeMath/algebra/linear_differential_equation.md
     - 概率论:
-      - SomeMath/prob/Montmort1.md
+      - SomeMath/prob/Montmort.md
+      - SomeMath/prob/conditional_expectation.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
 
