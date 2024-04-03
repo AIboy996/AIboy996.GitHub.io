@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block content%}
+{{ page.content }}
+
+<!-- Last three posts -->
+{% include "partials/latest-posts.html" %}
+
+<!-- Source file information -->
+{% if page.meta and page.meta.git_revision_date_localized %}
+    {% include "partials/source-file.html" %}
+{% endif %}
+
+<!-- Comment system -->
+{% include "partials/comments.html" %}
+{% endblock%}

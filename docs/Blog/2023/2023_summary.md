@@ -144,7 +144,7 @@ tags:
 
 <figure markdown>
 
-![Alt text](./assets/A04E663E-D21A-45E6-B5F3-B57D29F12C8D_1_105_c.jpeg){width=300}
+![Alt text](/Blog/2023/assets/A04E663E-D21A-45E6-B5F3-B57D29F12C8D_1_105_c.jpeg){width=300}
 
 <figcaption>林克吃着炸串啤酒救下了塞尔达公主！</figcaption>
 </figure>
@@ -250,7 +250,7 @@ tags:
 和狗子吃最后的午餐，然后就滚回上海咯
 <figure markdown>
 
-![Alt text](./assets/982D832D-3D56-43F8-A6FC-BAC3D647B956_1_105_c.jpeg){width=400}
+![Alt text](/Blog/2023/assets/982D832D-3D56-43F8-A6FC-BAC3D647B956_1_105_c.jpeg){width=400}
 
 <figcaption>别人家到狗子，很乖</figcaption>
 </figure>
@@ -388,7 +388,7 @@ tags:
 
 <figure markdown>
 
-![Alt text](./assets/CDB38E40-3048-4BFF-B7EB-42866348045B_1_105_c.jpeg){width=400}
+![Alt text](/Blog/2023/assets/CDB38E40-3048-4BFF-B7EB-42866348045B_1_105_c.jpeg){width=400}
 
 <figcaption>模特是不是乱动了</figcaption>
 </figure>

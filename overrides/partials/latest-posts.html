@@ -1,0 +1,22 @@
+{% set recent_blog_pages=[] %}
+{% for p in (pages | sort(attribute="page.meta.git_creation_date_localized", reverse=True)) %}
+    {% set page=p.page %}
+    {% if page.meta.tags and ("blog" in page.meta.tags) %}
+        {{ recent_blog_pages.append(page) or ""}} 
+    {% endif %}
+{% endfor %}
+
+{% for page in recent_blog_pages[:3] %}
+    <details class="quote">
+    <summary>{{ page.meta.git_creation_date_localized }} posted: {{ page.title }}</summary>
+    <br>
+    {{ page.content }}
+    <br>
+    <a href="{{ page.url | url }}">👉阅读原文</a>
+    {% if page.meta and page.meta.git_revision_date_localized %}
+        {% include "partials/source-file.html" %}
+    {% endif %}
+    </details>
+{% endfor %}
+
+更多其他博客见左侧Archive

@@ -48,7 +48,7 @@ tags:
 
     当然，2019年少不了我上半学年的绩点
 
-    ![Alt text](./assets/grades.png)
+    ![Alt text](/Blog/2019/assets/grades.png)
 
     我本来还是很期待绩点的揭晓的，可是事与愿违，我最终还是没能达到理想的3.7。
 

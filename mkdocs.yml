@@ -71,6 +71,7 @@ nav:
       - Blog/2024/otaku.md
       - Blog/2024/winter.md
       - Blog/2024/sakura.md
+      - Blog/2024/new_blog.md
   - Python:
     - Python/index.md
     - Python/pre_python.md
@@ -294,6 +295,7 @@ plugins:
   ## 文章日期插件
   - git-revision-date-localized:
       enable_creation_date: true
+      type: iso_datetime
   ## 搜索插件
   - search:
       lang:

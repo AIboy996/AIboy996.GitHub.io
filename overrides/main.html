@@ -2,8 +2,12 @@
 
 
 {% block announce %}
+{% set all_pages=[] %}
+{% for p in (pages | sort(attribute="page.meta.git_creation_date_localized", reverse=True)) %}
+    {{ all_pages.append(p.page) or ""}}
+{% endfor %}
 <!-- Add announcement here, including arbitrary HTML -->
-Latest Update(๑•ᴗ•๑)♡ :  <a href="/Python/ThirdPartyLibrary/pytorch/">PyTorch简介</a>
+Latest Update(๑•ᴗ•๑)♡ :  <a href="{{ all_pages[0].url | url }}">&nbsp; {{ all_pages[0].title }}</a>
 {% endblock %}
 
 

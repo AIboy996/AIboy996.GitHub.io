@@ -13,7 +13,7 @@ tags:
 
 相册里翻到这样一张梗图：
 
-![](./assets/IMG_3865.JPG){width=400}
+![](/Blog/2023/assets/IMG_3865.JPG){width=400}
 
 ??? question "什么梗？"
     这个图有两个梗。
@@ -22,7 +22,7 @@ tags:
     
     其二则是疫情之下，各大高校纷纷缩短假期、增加课时，以期早点放（定时炸弹的）学生们回去。
     
-    ![猪图腾](./assets/%E7%8C%AA.jpg){width=400}
+    ![猪图腾](/Blog/2023/assets/%E7%8C%AA.jpg){width=400}
 
 
 还翻到一张有生之年头发最长时刻的留影：
@@ -31,7 +31,7 @@ tags:
 
     不是吧，真的会有人在头发还没完全干的时候把它扎起来吗？
 
-    ![](./assets/IMG_3940.jpg){width=300}
+    ![](/Blog/2023/assets/IMG_3940.jpg){width=300}
 
     是的，因为不想吹头发，并且不想头发遮住眼睛。
 
@@ -48,7 +48,7 @@ tags:
 记忆比较深刻的一些事物：
 
 - Gilbert Strang的线性代数课上，MIT刀斧手
-![](./assets/IMG_4174.jpg){width=800}
+![](/Blog/2023/assets/IMG_4174.jpg){width=800}
 - 完成了DIY主机初体验。体验的方式是，把（用2000 ￥从朋友那里买过来的）三手电脑主机完全拆散，然后替换CPU、风扇和SSD之后再重新组装。我也是装机辕了！！
 - 陪伴了我一年整的（二手）Xbox天蝎座，挂咸鱼了。含泪小赚200。
 - 和霄哥拍了毕业照。
@@ -69,17 +69,17 @@ tags:
 
 ??? warning "大闸蟹警告"
 
-    ![](./assets/IMG_4569.jpg)
+    ![](/Blog/2023/assets/IMG_4569.jpg)
 
     可惜2022的中秋有些早了，不是吃蟹最好的季节
 
 然后就开始高强度的复习了。理想中的时间表是这样的：
 
-![](./assets/IMG_4592.jpg){width=400}
+![](/Blog/2023/assets/IMG_4592.jpg){width=400}
 
 当然，实际执行起来难度很大。日子就这么一天天过，很快就到了十一月。
 
-![](./assets/IMG_4838.PNG){width=400}
+![](/Blog/2023/assets/IMG_4838.PNG){width=400}
 
 这些老师总算也都混了个脸熟，但是我的复习进度有点危险：
 
@@ -128,7 +128,7 @@ tags:
 
 2023年2月21日，平平无奇的下午，实习摸鱼的空挡，我终于查到了分数：389。
 
-![](./assets/InkedIMG_5193.jpg)
+![](/Blog/2023/assets/InkedIMG_5193.jpg)
 
 !!! quote "五分钟思想斗争"
     第一念头：肯定是我阳了没发挥好。
@@ -177,7 +177,7 @@ tags:
 
 虽然很开心，但是真的很难以置信。大概是去南京求的福袋显灵了！
 
-![](./assets/IMG_5322.jpg){width=600}
+![](/Blog/2023/assets/IMG_5322.jpg){width=600}
 
 ## 7 复试
 之后就是从零开始准备复试了。
@@ -195,8 +195,8 @@ tags:
 
 ??? success "嘿嘿"
 
-    ![](./assets/IMG_5544.PNG){width=400}
-    ![](./assets/InkedIMG_5545.jpg){width=400}
+    ![](/Blog/2023/assets/IMG_5544.PNG){width=400}
+    ![](/Blog/2023/assets/InkedIMG_5545.jpg){width=400}
 
 ## 8 写在最后
 接下来坐等拟录取公示了，希望后续能顺利毕业、入学。
