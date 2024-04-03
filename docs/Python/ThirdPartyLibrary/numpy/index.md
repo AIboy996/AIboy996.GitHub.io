@@ -9,4 +9,4 @@ hide:
 
 # numpy
 
-TBD:numpy介绍
+TBD:numpy 介绍

@@ -5,4 +5,4 @@ tags:
 
 # pandas
 
-TBD:Python pandas
+TBD:pandas df
