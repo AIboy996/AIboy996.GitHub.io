@@ -295,6 +295,7 @@ plugins:
         - nonzoom
   ## 文章日期插件
   - git-revision-date-localized:
+      timezone: Asia/Irkutsk
       enable_creation_date: true
       type: iso_datetime
   ## 搜索插件
