@@ -1,6 +1,8 @@
 ---
 tags:
 - blog
+include:
+- alert
 ---
 
 # 纸短情长

@@ -50,3 +50,13 @@
 
 <!-- Comment system -->
 {% include "partials/comments.html" %}
+
+<!-- Alert -->
+{% if page.meta and ("alert" in page.meta.include) %}
+<script>
+if (window.confirm("你确定要看嘛？现在后悔还来得及🙊")) {
+} else {
+  window.history.back();
+}
+</script>
+{% endif %}

@@ -2,6 +2,8 @@
 tags:
 - blog
 - 年度总结
+include:
+- alert
 ---
 
 # 2020年度总结

@@ -1,6 +1,8 @@
 ---
 tags:
 - blog
+include:
+- alert
 ---
 
 # 称呼zy的20种方法

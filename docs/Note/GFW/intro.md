@@ -2,6 +2,8 @@
 title: 介绍
 tags: 
   - GFW和VPN
+include:
+- alert
 ---
 
 !!! cite "哲居华·沃硕德"
