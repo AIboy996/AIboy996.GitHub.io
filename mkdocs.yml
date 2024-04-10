@@ -45,7 +45,6 @@ nav:
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
-
   - Blog:
     - Blog/index.md
     - 2019:
@@ -156,6 +155,8 @@ nav:
       - Statistics/postgrad/Convex_Optimization.md
       - Statistics/postgrad/Numerical_Analysis.md
       - Statistics/postgrad/Time_Series.md
+      - Statistics/postgrad/Deep_Learning.md
+      - Statistics/postgrad/Reinforcement_Learning.md
       - Statistics/postgrad/journal_club.md
   - SomeMath:
     - SomeMath/index.md
