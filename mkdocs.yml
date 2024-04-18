@@ -119,6 +119,7 @@ nav:
   - Project:
     - Project/index.md
     - Project/qrq.md
+    - Project/npnn.md
     - Project/pymd.md
     - Project/plt-gallery.md
     - Project/high_school_math.md
