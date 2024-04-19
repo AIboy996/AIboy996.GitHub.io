@@ -5,7 +5,9 @@ tags:
 ---
 # plt-gallery
 
-!!! failure inline
-    刚刚新建的项目，体验一下pyscript的基本功能。
-
+<figure markdown>
 [![AIboy996/plt-gallery - GitHub](https://gh-card.dev/repos/AIboy996/plt-gallery.svg?fullname=)](https://github.com/AIboy996/plt-gallery)
+</figure>
+
+!!! failure
+    刚刚新建的项目，体验一下pyscript的基本功能。
