@@ -1,7 +1,7 @@
 ---
 title: 介绍
 tags: 
-  - GFW和VPN
+  - VPN
 include:
 - alert
 ---

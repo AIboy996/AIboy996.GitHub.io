@@ -1,6 +1,6 @@
 ---
 tags:
-- 抽象代数
+- Algebra
 include:
 - math
 ---

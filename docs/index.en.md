@@ -18,10 +18,11 @@ while "False":
 
 Welcome to [Yang Zhang's](./About/resume.html) homepage, check [About](./About/) for overview of this site.
 
-<h2>Contact info</h2>
+<h3>Contact</h3>
 
+- Leave a comment
 - 📫 Email: [mail@yangzhang.site](mailto:mail@yangzhang.site)
-- WeChat Subscriptions
+- WeChat Subscription
 
 <figure markdown>
 ![](../assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}

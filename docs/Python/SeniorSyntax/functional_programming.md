@@ -1,6 +1,6 @@
 ---
 tags:
-- python进阶
+- PySenior
 ---
 
 # 函数式编程

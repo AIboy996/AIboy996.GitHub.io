@@ -1,6 +1,6 @@
 ---
 tags:
-- python案例
+- PyEg
 ---
 
 # 发邮件

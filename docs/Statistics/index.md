@@ -20,6 +20,6 @@ include:
 包括但不限于：
 
 - [FDSM](https://www.fdsm.fudan.edu.cn/)统计系本科生课
-- [FDSDS](https://sds.fudan.edu.cn/)统计系研究生课
+- [FDSDS](https://sds.fudan.edu.cn/)统计系（硕士）研究生课
 - [华五AI+X](https://huawuwei.fanya.chaoxing.com/portal/1)微专业课
-- 网络公开课（[MIT OC](https://ocw.mit.edu/)、慕课……）
+- 网络公开课（[MIT OCW](https://ocw.mit.edu/)、[Standford online](https://online.stanford.edu/free-courses)、慕课……）

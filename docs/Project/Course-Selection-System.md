@@ -1,7 +1,7 @@
 ---
 tags:
 - Django
-- python项目
+- PyPJ
 - 开源项目
 ---
 

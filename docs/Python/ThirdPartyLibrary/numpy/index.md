@@ -1,6 +1,6 @@
 ---
 tags:
-- python第三方库
+- PyLib
 - numpy
 hide:
 - tags

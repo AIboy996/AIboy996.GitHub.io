@@ -1,6 +1,6 @@
 ---
 tags:
-- python入门
+- PyIntro
 ---
 
 # 前置知识

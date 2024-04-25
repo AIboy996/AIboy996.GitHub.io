@@ -1,6 +1,6 @@
 ---
 tags:
-  - 数学分析
+  - Calculus
 include:
 - math
 ---

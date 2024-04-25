@@ -1,6 +1,6 @@
 ---
 tags:
-- python进阶
+- PySenior
 ---
 
 # 面向对象编程

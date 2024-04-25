@@ -1,6 +1,5 @@
 ---
 tags:
-- python
 - manim
 ---
 

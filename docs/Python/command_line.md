@@ -1,6 +1,6 @@
 ---
 tags:
-- python入门
+- PyIntro
 ---
 # 安装以及交互式运行
 ## python环境的配置

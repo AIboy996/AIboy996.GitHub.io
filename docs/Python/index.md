@@ -1,7 +1,7 @@
 ---
 title: Python从入门到入狱
 tags:
-- python入门
+- PyIntro
 hide:
 - tags
 - toc

@@ -2,7 +2,7 @@
 tags:
 - 复分析
 - 647老师
-- 抽象代数
+- Algebra
 include:
 - math
 ---

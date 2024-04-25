@@ -1,6 +1,6 @@
 ---
 tags:
-- python入门
+- PyIntro
 ---
 
 # 脚本式运行和脚本书写规范
