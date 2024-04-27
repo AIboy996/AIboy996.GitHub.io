@@ -7,6 +7,7 @@ hide:
 
 ## Exchange Links
 
+- [Henry Liu](https://henrylau7.github.io/)
 - [Yang-xijie's Homepage](https://yang-xijie.github.io/)
 - [Yihui's Homepage](https://yihui.org/)
 - [Chen's Blog](https://blog.chenyyds.com/)
