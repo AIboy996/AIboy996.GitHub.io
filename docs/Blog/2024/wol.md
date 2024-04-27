@@ -1,6 +1,7 @@
 ---
 tags:
 - blog
+- 折腾
 ---
 
 # Wake on LAN and WAN

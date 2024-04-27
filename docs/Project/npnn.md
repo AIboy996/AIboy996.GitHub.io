@@ -12,6 +12,7 @@ tags:
 
 
 !!! success
-    [![PyPI - Version](https://img.shields.io/pypi/v/npnn)](https://pypi.org/project/npnn/0.0.1/)
-    
-    已完成基础功能，支持向量的全连接神经网络的计算。
+    [![PyPI - Version](https://img.shields.io/pypi/v/npnn)](https://pypi.org/project/npnn/)
+    ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/npnn)
+
+    已完成基础功能，支持向量的全连接神经网络的计算，支持batch train。
