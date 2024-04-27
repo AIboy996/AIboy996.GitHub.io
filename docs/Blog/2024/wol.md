@@ -4,7 +4,7 @@ tags:
 - 折腾
 ---
 
-# Wake on LAN and WAN
+# Wake on LAN & WAN
 > Wake-on-LAN (WoL or WOL) is an Ethernet or Token Ring computer networking standard that allows a computer to be turned on or awakened from sleep mode by a network message.
 
 最近终于解决了宿舍电脑广域网远程开机（Wake on WAN）的问题，特地分享一下。
