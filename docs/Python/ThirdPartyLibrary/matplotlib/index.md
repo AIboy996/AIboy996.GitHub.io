@@ -10,7 +10,8 @@ hide:
 
 ## 简介
 
-Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. **Matplotlib makes easy things easy and hard things possible**.
+!!! cite "official intro"
+    Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. **Matplotlib makes easy things easy and hard things possible**.
 
 加粗的这句话说的非常好，如果读者看过一些古老的Python教科书，一定会知道Python还有一个知名的绘画库：turtle，这是一个非常有趣的库但是非常难用，很简单的图也需要很复杂的代码才能画出来。相比之下，matplotlib真正做到了：简单的几句话就搞定，再复杂的图也能搞定。
 

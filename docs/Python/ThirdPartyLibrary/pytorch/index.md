@@ -10,6 +10,9 @@ include:
 
 # pytorch
 
+!!! cite "official intro"
+    PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.
+
 [PyTorch](https://pytorch.org/)是一个开源的Python机器学习库，基于[torch](http://torch.ch/)实现。它们二者的关系大家可以看看[浅谈Pytorch与Torch的关系
 ](https://oldpan.me/archives/pytorch-torch-relation)。
 
