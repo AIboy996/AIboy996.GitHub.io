@@ -50,11 +50,11 @@ $$
 
     如果$C$还是线性子空间，那么$m$是唯一的元素使得$x-m \perp C$。
 
-    其中$m$称为$x$在$C$上的投影。
+    其中$m$称为$x$在$C$上的投影（$m$是我们在$C$中找到的，对$x$对平方损失下的最佳近似）。
 
 有了这个定理，我们就可以来构造期望和条件期望了。
 ### 期望
-所有常数构成的集合$\mathbb{R}$是$L^2$的子空间，那么存在唯一的$m\in \mathbb{R}$：
+所有常数构成的集合$\mathbb{R}$是$L^2$的线性闭子空间，那么存在唯一的$m\in \mathbb{R}$：
 $$
 m = \argmin_{y \in \mathbb{R}} \lVert X-y \rVert = \argmin_{y \in \mathbb{R}} \mathbb{E}|X-y|^2
 $$
@@ -70,7 +70,7 @@ $$
 $$
 直接得到：$m=\mathbb{E}(X)$
 ### 条件期望
-假设随机变量$Y\in L^2$，集合$G(Y) = \{ g(Y): g \text{可测} ,\quad  g(Y)\in L^2 \}$是$L^2$的子空间，那么存在唯一的$m = e_X(Y)$：
+假设随机变量$Y\in L^2$，集合$G(Y) = \{ g(Y): g \text{可测} ,\quad  g(Y)\in L^2 \}$是$L^2$的线性闭子空间，那么存在唯一的$m = e_X(Y)$：
 $$
 m = e_X(Y)= \argmin_{y \in G(Y)} \lVert X-y \rVert
 $$
@@ -82,5 +82,29 @@ $$
 \mathbb{E}(g(Y)(X-e_X(Y))) = 0 \quad \forall g \text{可测}
 $$
 
-## 测度定义
-TBC:条件期望
+## 测度论
+在测度论中，我们也学过一个条件期望的定义：
+
+$Z$是$(\Omega,\mathcal{F}, P)$上的可积随机变量，$\mathcal{G}是\mathcal{F}$的子sigma代数。如果$m$满足：
+
+- $m$是$(\Omega,\mathcal{F}, P)$上的可测函数
+- $\forall A \in \mathcal{G}$都有$\int_A mdP = \int_A zdP$
+
+那么$m$称为$Z$关于$\mathcal{G}$的条件期望，记为$\mathbb{E}(Z|\mathcal{G})$。
+
+另外我们也定义：
+$$
+\mathbb{E}(Z|Y) = \mathbb{E}(Z|\sigma(Y)) 
+$$
+其中$\sigma(Y)$是随机变量$Y$生成的最小sigma代数。
+
+实际上，测度论的这一套语言和Hilbert空间下的语言是完全一一对应的：
+
+- 一般情况下，我们定义的条件期望是从Hilbert空间投影到一个闭子空间
+  - 在测度论中就是一个子sigma代数
+- 我们定义条件于随机变量的条件期望是投影到所有Borel可测函数的象集
+  - 在测度论中就是由随机变量生成的最小sigma代数
+
+略有不同的是，投影定理是从**最佳估计**出发的。而测度论的条件期望则是从**正交性**出发的。
+
+TBC:证明细节
