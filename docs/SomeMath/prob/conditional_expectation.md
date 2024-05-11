@@ -45,7 +45,7 @@ $$
 !!! cite "投影定理"
     $\mathcal{H}$是Hilbert空间，那么$\forall x\in \mathcal{H}$，任意非空闭子集$C\subset \mathcal{H}$，都存在唯一的$m \in C$使得
     $$
-    m = \argmin_{y \in C} \lVert x-y \rVert
+    m = \arg\min_{y \in C} \lVert x-y \rVert
     $$
 
     如果$C$还是线性子空间，那么$m$是唯一的元素使得$x-m \perp C$。
@@ -56,7 +56,7 @@ $$
 ### 期望
 所有常数构成的集合$\mathbb{R}$是$L^2$的线性闭子空间，那么存在唯一的$m\in \mathbb{R}$：
 $$
-m = \argmin_{y \in \mathbb{R}} \lVert X-y \rVert = \argmin_{y \in \mathbb{R}} \mathbb{E}|X-y|^2
+m = \arg\min_{y \in \mathbb{R}} \lVert X-y \rVert = \arg\min_{y \in \mathbb{R}} \mathbb{E}|X-y|^2
 $$
 这个优化问题有显示解：$m = \mathbb{E}(X)$，实际上这里的投影就是期望。
 
@@ -72,7 +72,7 @@ $$
 ### 条件期望
 假设随机变量$Y\in L^2$，集合$G(Y) = \{ g(Y): g \text{可测} ,\quad  g(Y)\in L^2 \}$是$L^2$的线性闭子空间，那么存在唯一的$m = e_X(Y)$：
 $$
-m = e_X(Y)= \argmin_{y \in G(Y)} \lVert X-y \rVert
+m = e_X(Y)= \arg\min_{y \in G(Y)} \lVert X-y \rVert
 $$
 
 这个$e_X(Y)$就是条件期望了。
@@ -101,9 +101,9 @@ $$
 实际上，测度论的这一套语言和Hilbert空间下的语言是完全一一对应的：
 
 - 一般情况下，我们定义的条件期望是从Hilbert空间投影到一个闭子空间
-  - 在测度论中就是一个子sigma代数
+    - 在测度论中就是一个子sigma代数
 - 我们定义条件于随机变量的条件期望是投影到所有Borel可测函数的象集
-  - 在测度论中就是由随机变量生成的最小sigma代数
+    - 在测度论中就是由随机变量生成的最小sigma代数
 
 略有不同的是，投影定理是从**最佳估计**出发的。而测度论的条件期望则是从**正交性**出发的。
 
