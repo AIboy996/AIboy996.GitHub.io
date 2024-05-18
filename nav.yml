@@ -39,6 +39,7 @@ nav:
       - Note/mkdocs/practice.md
       - Note/mkdocs/best_practices.md
       - Note/mkdocs/about_math.md
+      - Note/mkdocs/plugin.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
