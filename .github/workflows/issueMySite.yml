@@ -17,6 +17,7 @@ jobs:
         with:
           python-version: "3.11.5"
       - run: python3 -m pip install -r requirements.txt
+      - run: python3 -m pip install -e plugins
       - run: mkdocs gh-deploy --force -b publishment
   deployment-cloudfare-pages:
     needs: build

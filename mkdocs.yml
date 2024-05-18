@@ -106,42 +106,46 @@ plugins:
           build: true
           nav_translations:
               正式的简历: Resume
-  ## jupyter文件支持
-  ########## 暂时移除此功能
+  ## jupyter文件支持 ########## 暂时移除此功能
   #- mkdocs-jupyter
-  - mkdocs-video:
-      is_video: true
-      video_muted: false
-      video_controls: true
-      video_autoplay: false
-      css_style:
-        width: "80%"
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-  - tags
-  ## 图片放大插件
-  - glightbox:
-      effect: zoom
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - nonzoom
-  ## 文章日期插件
-  - git-revision-date-localized:
-      timezone: Asia/Irkutsk
-      enable_creation_date: true
-      type: iso_datetime
-  ## 搜索插件
-  - search:
-      lang:
-        - en
-        # 日语搜索汉字
-        - ja
-        - zh
-  - minify:
-      minify_html: true
-  - rss
+  - group:
+      # 在开发的时候设置环境变量DEPLOY=false来加快编译速度
+      enabled: !ENV [DEPLOY, true]
+      plugins:
+        - tags
+        # 视频插件
+        - mkdocs-video:
+            is_video: true
+            video_muted: false
+            video_controls: true
+            video_autoplay: false
+            css_style:
+              width: "80%"
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+        # 图片放大插件
+        - glightbox:
+            effect: zoom
+            zoomable: true
+            draggable: true
+            skip_classes:
+              - nonzoom
+        ## 文章日期插件
+        - git-revision-date-localized:
+            timezone: Asia/Irkutsk
+            enable_creation_date: true
+            type: iso_datetime
+        ## 搜索插件
+        - search:
+            lang:
+              - en
+              # 日语搜索汉字
+              - ja
+              - zh
+        - minify:
+            minify_html: true
+        - rss
 
 markdown_extensions:
   - md_in_html

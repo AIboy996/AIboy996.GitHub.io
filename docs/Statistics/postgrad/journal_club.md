@@ -16,8 +16,17 @@ Journal Club是我导组织的论文分享会，我偶尔也会上去分享一�
 <center>
 <object
     type="application/pdf"
-    data="../assets/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
-    width=80%
+    data="../slides/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
+    width=100%
     height=400>
 </object>
 </center>
+
+
+## 2024-05-18
+
+- **Shared Paper**: *KAN: Kolmogorov–Arnold Networks*
+- **Publication**: Preprint 2024
+- **Keywords**: K-A theorem based NN, Neural Scaling Laws, Mechanistic Interpretability
+
+<iframe width=100% height=400 src="../slides/kan.html"></iframe>
