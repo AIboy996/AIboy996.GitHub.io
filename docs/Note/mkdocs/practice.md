@@ -4,7 +4,7 @@ tags:
 include:
 - math
 ---
-# 实践
+# mkdocs实践
 
 !!! info "演示的环境"
     本次演示在HyperV创建的windows 10虚拟机中进行，提前没有安装任何软件，面向小白，从零开始，可以放心食用。

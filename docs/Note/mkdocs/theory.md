@@ -4,7 +4,7 @@ tags:
 include:
 - math
 ---
-# 理论
+# mkdocs介绍
 
 !!! info "注意"
     如果要学怎么搭建网站，推荐看下一篇文章[《实践》](../../../Note/mkdocs/practice/)，这里写的内容比较杂乱，仅供我个人备忘。

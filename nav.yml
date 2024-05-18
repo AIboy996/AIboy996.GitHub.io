@@ -1,3 +1,4 @@
+INHERIT: !ENV [PLUGIN, ./plugins_simplify.yml]
 nav:
   - About:
     - About/index.md
