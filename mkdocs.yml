@@ -110,6 +110,8 @@ plugins:
   #- mkdocs-jupyter
   - group:
       # 在开发的时候设置环境变量DEPLOY=false来加快编译速度
+      # 编译时间从 30秒 减少到 4秒
+      # 立竿见影啊！
       enabled: !ENV [DEPLOY, true]
       plugins:
         - tags
