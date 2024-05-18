@@ -14,8 +14,16 @@ tags:
 
 <figure markdown>
 
-![](assets/2024-05-18-15-22-03.png){width=400}
+![](/Blog/2024/assets/2024-05-18-15-22-03.png){width=400}
 
 </figure>
 
-复日教育集团有限公司，🔥招生中！
+> 复日教育集团有限公司，🔥招生中！
+
+太多的案例证明了，世界上韭菜真的很多😭能不能让我也噶一点😭
+
+<figure markdown>
+
+![](/Blog/2024/assets/2024-05-18-15-28-14.png){width=400}
+
+</figure>
