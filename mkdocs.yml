@@ -116,6 +116,7 @@ markdown_extensions:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/termynal.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
 extra_javascript:
   # 百度的页面访问统计【暂时移除百度的访问统计（加载实在是有点慢】

@@ -40,9 +40,10 @@
 </div>
 
 <!-- cookie -->
-<div class="cookie-message">
+<div class="cookie-message" id="cookie">
   <img src="/assets/images/cookie.png">
   <span>I am using cookies to provide you the best possible experience. But don't panic - I won't share any of your data. You can find more informations about the cookies <a href="/About">here</a>.</span>
+  <a class="close" href="#" onclick="var element = document.getElementById('cookie'); element.parentNode.removeChild(element);"><i class="fa fa-times"></i></a>
 </div>
 
 {% endif %}
