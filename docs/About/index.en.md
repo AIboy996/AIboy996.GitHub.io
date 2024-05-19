@@ -51,7 +51,7 @@ Subscribe [RSS Link1](../feed_rss_updated.xml)(sorted in updated date) for lates
 
 Theme color changes:
 
-- Sun: <span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
+- Sun: <span style="background-color:#ab47bd;padding:5px;margin:3px;color:white;">purple</span>
 - Mon: <span style="background-color:#757575;padding:5px;margin:3px;color:white;">grey</span>
 - Tue: <span style="background-color:#546d78;padding:5px;margin:3px;color:white;">blue grey</span>
 - Sat: <span style="background-color:#009485;padding:5px;margin:3px;color:white;">teal</span>

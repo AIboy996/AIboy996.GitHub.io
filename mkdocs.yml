@@ -14,9 +14,12 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/images/summation.png
-  palette:  # 一周七天，六种颜色
+  palette:  # 一周七天不同颜色，白色占位
+    - scheme: placeholder
+      primary: white
+      accent: orange
     - scheme: sun
-      primary: deep purple
+      primary: purple
       accent: orange
     - scheme: mon
       primary: grey
@@ -34,7 +37,7 @@ theme:
       primary: pink
       accent: orange
     - scheme: sat
-      primary: deep purple
+      primary: deep-purple
       accent: orange
 
   features:

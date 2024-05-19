@@ -1,3 +1,13 @@
+/* 添加颜色改变的过渡效果 */
+header.md-header {
+    transition: background-color 1s ease;
+}
+
+nav.md-tabs {
+    transition: background-color 1s ease;
+    
+}
+
 /* termynal组件 */
 .termynal-comment {
     color: #4a968f;
