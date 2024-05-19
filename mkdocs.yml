@@ -56,13 +56,6 @@ repo_url: https://github.com/AIboy996/AIboy996.github.io
 copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2024 Yang Zhang</a>" # 左下角的版权声明
 
 extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      I am using cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of posts and whether users can find what 
-      they're searching for. With your consent, all of this are helping me to
-      make my site better.
   analytics:
     provider: google
     property: G-8R9VRSN3S0
