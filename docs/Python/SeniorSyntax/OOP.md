@@ -1,6 +1,8 @@
 ---
 tags:
 - PySenior
+include:
+- ai-summary
 ---
 
 # 面向对象编程

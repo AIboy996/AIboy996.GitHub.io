@@ -1,6 +1,8 @@
 ---
 tags:
 - blog
+include:
+- ai-summary
 ---
 
 # 冬が一番嫌い

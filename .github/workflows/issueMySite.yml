@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: mkdocs-build
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,7 +18,7 @@ jobs:
         with:
           python-version: "3.11.5"
       - run: python3 -m pip install -r requirements.txt
-      - run: PLUGIN="./plugins_full.yml" mkdocs gh-deploy --force -b publishment
+      - run: PLUGIN="./plugins_full.yml" DASHSCOPE_API_KEY=${{ secrets.DASHSCOPE_API_KEY }} mkdocs gh-deploy --force -b publishment
   deployment-cloudfare-pages:
     needs: build
     runs-on: ubuntu-latest

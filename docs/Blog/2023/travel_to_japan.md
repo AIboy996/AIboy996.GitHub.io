@@ -3,6 +3,8 @@ tags:
 - blog
 - 毕业碎碎念
 - 旅行
+include:
+- ai-summary
 ---
 
 # 毕业.旅行

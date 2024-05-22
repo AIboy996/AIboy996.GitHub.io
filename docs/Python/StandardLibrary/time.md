@@ -1,6 +1,8 @@
 ---
 tags:
 - PyLib
+include:
+- ai-summary
 ---
 
 # time

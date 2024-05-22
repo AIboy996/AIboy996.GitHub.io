@@ -2,6 +2,8 @@
 tags:
 - blog
 - 旅行
+include:
+- ai-summary
 ---
 
 # 五一暴走广东

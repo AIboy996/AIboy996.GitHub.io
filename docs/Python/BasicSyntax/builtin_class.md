@@ -1,6 +1,8 @@
 ---
 tags:
 - PyIntro
+include:
+- ai-summary
 ---
 
 # 内置类

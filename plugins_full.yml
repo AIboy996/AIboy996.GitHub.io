@@ -1,4 +1,5 @@
 plugins:
+  - ai-summary
   - i18n:
       docs_structure: suffix
       languages:

@@ -1,6 +1,8 @@
 ---
 tags:
 - PySenior
+include:
+- ai-summary
 ---
 
 # 函数式编程
