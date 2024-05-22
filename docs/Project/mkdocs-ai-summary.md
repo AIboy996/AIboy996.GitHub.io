@@ -17,4 +17,4 @@ tags:
     [![PyPI - Version](https://img.shields.io/pypi/v/mkdocs-ai-summary)](https://pypi.org/project/mkdocs-ai-summary/)
     ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mkdocs-ai-summary)
 
-    已完成基础功能，支持使用通义千问的api生成文章摘要。
+    已完成基础功能，支持使用ChatGPT和通义千问的api生成文章摘要。
