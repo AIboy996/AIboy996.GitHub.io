@@ -41,6 +41,7 @@ nav:
       - Note/mkdocs/best_practices.md
       - Note/mkdocs/about_math.md
       - Note/mkdocs/plugin.md
+      - Note/mkdocs/plugin_dev.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
@@ -129,6 +130,7 @@ nav:
     - Project/pymd.md
     - Project/plt-gallery.md
     - Project/high_school_math.md
+    - Project/mkdocs-ai-summary.md
     - Project/AirPrint-with-Python.md
     - Project/Course-Selection-System.md
   - Statistics:
