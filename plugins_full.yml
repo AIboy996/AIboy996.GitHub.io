@@ -1,11 +1,11 @@
 plugins:
   - ai-summary:
       api: "chatgpt"
-      model: "gpt-4-turbo"
+      model: "gpt-4o"
       ignore_code: true
       cache: true
       cache_dir: "./"
-      prompt: "请帮我把下面的内容总结为200字以内的摘要："
+      prompt: "请帮我把下面的内容总结为200字以内的摘要，请不要出现连续换行："
   - i18n:
       docs_structure: suffix
       languages:

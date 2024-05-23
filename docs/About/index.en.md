@@ -3,6 +3,8 @@ tags:
 - About
 hide:
 - tags
+include:
+- ai-summary
 ---
 
 # Navigation🧭
@@ -23,6 +25,21 @@ hide:
 - [**Tags**](../Tags/): 👇
 
 ## Plugins
+
+### AI Summary
+
+Powered by [mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary).
+
+Support two model:
+
+!!! tongyiai-summary "tongyi qianwen"
+	From aliyun.com
+
+And
+
+!!! chatgpt-summary "ChatGPT"
+	From openai.com
+
 ### Tags
 I always add tags for each page(but sometimes I hide them for simplification), check [**Tags**](../Tags) to get a Category View.
 
