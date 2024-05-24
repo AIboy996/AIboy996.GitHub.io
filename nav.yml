@@ -2,11 +2,11 @@ INHERIT: !ENV [PLUGIN, ./plugins_simplify.yml]
 nav:
   - About:
     - About/index.md
-    - About/about.md
-    - About/devices.md
-    - About/map.md
+    - 关于本站和我的一切: About/about.md
+    - 我的电子设备们: About/devices.md
+    - 点亮的地图: About/map.md
     - 正式的简历: About/resume.html
-    - About/hobby.md
+    - 兴趣: About/hobby.md
     - About/links.md
   - Note:
     - Note/index.md
@@ -15,6 +15,11 @@ nav:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
       - Note/Docker/docker_senior.md
+    - Fudan:
+      - Note/Fudan/index.md
+      - Note/Fudan/campus.md
+      - Note/Fudan/fdulife.md
+      - Note/Fudan/script.md
     - Git:
       - Note/Git/git.md
       - Note/Git/git_server.md
@@ -174,10 +179,11 @@ nav:
     - 实分析:
       - SomeMath/real/rational_numbers_countable.md
       - SomeMath/real/taylor_expand/taylor_expand.md
-      - SomeMath/real/hyperbolic_function.md
-      - SomeMath/real/a_limit.md
       - SomeMath/real/derivatives.md
+      - SomeMath/real/hyperbolic_function.md
       - SomeMath/real/gamma_func.md
+      - 习题:
+        - SomeMath/real/problems/a_limit.md
     - 复分析:
       - SomeMath/complex/why_complex.md
       - SomeMath/complex/constructible_number.md

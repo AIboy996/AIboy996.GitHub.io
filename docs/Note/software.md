@@ -28,8 +28,10 @@ ssh客户端
 功能强大的种子下载客户端
 ### [Plex](https://www.plex.tv/)
 美观易用的个人媒体服务器，支持全平台客户端和服务端
+### Clash
+懂得都懂，clash是开源内核，在各个平台都有对应的客户端。
 ### [Apple Music](https://music.apple.com/)
-唯一指定听歌软件，谁用谁说好
+唯一指定听歌软件，谁用谁说好。另外它是全平台可用的。
 ### [Open Broadcaster Software](https://obsproject.com/)
 唯一指定录屏软件
 ### [iCloud](https://www.icloud.com/)
@@ -53,8 +55,6 @@ Win上的装机必备搜索软件，速度非常快！
 好用的卸载工具
 ### [Lyricify](https://github.com/WXRIW/Lyricify-App)
 可以显示iTunes的歌词，还可以检索网易云等平台等翻译版本
-### Clash
-懂得都懂，clash是开源内核，在各个平台都有对应的客户端。
 ### [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 任务栏看看网速啥的，小巧玲珑
 ### [Cygwin](https://www.cygwin.com/)

@@ -30,7 +30,7 @@ include:
 
 Powered by [mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary).
 
-Support two model:
+Support two models for now:
 
 !!! tongyiai-summary "tongyi qianwen"
 	From aliyun.com

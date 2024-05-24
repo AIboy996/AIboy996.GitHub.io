@@ -4,6 +4,7 @@ hide:
 - navigation
 include:
 - math
+- ai-summary
 ---
 
 

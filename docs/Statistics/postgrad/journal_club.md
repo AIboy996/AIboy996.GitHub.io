@@ -15,7 +15,6 @@ Journal Club是我导组织的论文分享会，我偶尔也会上去分享一�
 
 <center>
 <object
-    type="application/pdf"
     data="../slides/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
     width=100%
     height=400>
