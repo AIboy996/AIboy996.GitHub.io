@@ -5,6 +5,8 @@ hide:
 - tags
 include:
 - ai-summary
+ai-summary-config:
+    prompt: "帮我把下面的内容总结为200字以内的英文摘要，请不要出现连续换行："
 ---
 
 # Navigation🧭
