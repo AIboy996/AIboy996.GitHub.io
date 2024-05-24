@@ -53,4 +53,8 @@ plugins:
         - zh
   - minify:
       minify_html: true
-  - rss
+  - rss:
+      abstract_chars_count: 200
+      match_path: "Blog/.*"
+      categories:
+        - tags
