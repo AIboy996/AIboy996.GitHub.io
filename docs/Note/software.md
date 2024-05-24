@@ -9,6 +9,9 @@ tags:
 如果您也有什么**宝藏软件**想要分享，请务必留下评论！！
 
 ## 全平台
+
+### [LICEcap](https://www.cockos.com/licecap/)
+超好用的GIF录屏软件。
 ### [Typora](https://typora.io/)
 值得掏腰包的markdown编辑软件
 ### [Notion](https://www.notion.so/)

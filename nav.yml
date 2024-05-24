@@ -45,16 +45,22 @@ nav:
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
-    - vscode:
+    - VSCode:
       - Note/vscode/modify_extension.md
   - Blog:
     - Blog/index.md
-    - 2019:
-      - Blog/2019/2019_summary.md
-    - 2020:
-      - Blog/2020/2020_summary.md
-    - 2022:
-      - Blog/2022/2022_summary.md
+    - 2024:
+      - Blog/2024/otaku.md
+      - Blog/2024/winter.md
+      - Blog/2024/sakura.md
+      - Blog/2024/new_blog.md
+      - Blog/2024/envelope.md
+      - Blog/2024/no_argmax.md
+      - Blog/2024/nomoney.md
+      - Blog/2024/wol.md
+      - Blog/2024/self-hosted-overleaf.md
+      - Blog/2024/travel_to_hk.md
+      - Blog/2024/career.md
     - 2023:
       - Blog/2023/intern.md
       - Blog/2023/curriculum.md
@@ -68,18 +74,12 @@ nav:
       - Blog/2023/name.md
       - Blog/2023/bloom.md
       - Blog/2023/2023_summary.md
-    - 2024:
-      - Blog/2024/otaku.md
-      - Blog/2024/winter.md
-      - Blog/2024/sakura.md
-      - Blog/2024/new_blog.md
-      - Blog/2024/envelope.md
-      - Blog/2024/no_argmax.md
-      - Blog/2024/nomoney.md
-      - Blog/2024/wol.md
-      - Blog/2024/self-hosted-overleaf.md
-      - Blog/2024/travel_to_hk.md
-      - Blog/2024/career.md
+    - 2022:
+      - Blog/2022/2022_summary.md
+    - 2020:
+      - Blog/2020/2020_summary.md
+    - 2019:
+      - Blog/2019/2019_summary.md
   - Python:
     - Python/index.md
     - Python/pre_python.md

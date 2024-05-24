@@ -5,8 +5,36 @@ tags:
 
 
 # 兴趣
-> 间歇性感兴趣
 
+本人熟悉Python的使用，包括但不限于用它来搞：
+
+- GUI软件（pyqt，threading，pygame）
+- Web服务器（Django，Fastapi）
+- 网络爬虫（requests，parsel，asyncio）
+- 数据库操作（pyodbc，pymysql，pymongo）
+- 深度学习（pytorch）
+- 统计分析（pandas，sklearn，matplotlib，scipy，statsmodel）
+- 数值分析（numpy，scipy）
+- 自动化办公（pyautogui，pywin32，docx）
+
+掌握以下语言的Hello World，但都不如Python熟悉：
+
+- SAS统计软件
+- R语言
+- Matlab
+- Julia
+- C语言
+- Go语言
+- Rust
+- Java
+- JavaScript（node.js）
+- Swift
+
+此外我对Docker技术以及云服务器有些兴趣，熟悉Linux服务器的运维。
+
+最后，我艾尔登法环不看攻略66小时全Boss击破，望周知。
+
+> 间歇性感兴趣
 
 <style type="text/css">
   .row {
