@@ -1,0 +1,26 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+<hr>
+<div class="md-source-file">
+  <small>
+    <!-- 优先使用meta信息 -->
+    {% if page.meta.revision_date %}
+      {{ lang.t("source.file.date.updated") }}:
+      {{ page.meta.revision_date }}
+    <!-- 如果没有meta信息，使用git信息 -->
+    {% elif page.meta.git_revision_date_localized %}
+      {{ lang.t("source.file.date.updated") }}:
+      {{ page.meta.git_revision_date_localized }}
+    {% endif %}
+    {% if page.meta.creation_date %}
+      <br>
+      {{ lang.t("source.file.date.created") }}:
+      {{ page.meta.creation_date }}
+    {% elif page.meta.git_creation_date_localized %}
+      <br>
+      {{ lang.t("source.file.date.created") }}:
+      {{ page.meta.git_creation_date_localized }}
+  {% endif %}
+  </small>
+</div>
