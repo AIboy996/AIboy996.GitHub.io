@@ -47,6 +47,12 @@ nav:
       - Note/mkdocs/about_math.md
       - Note/mkdocs/plugin.md
       - Note/mkdocs/plugin_dev.md
+    - NAS:
+      - Note/NAS/media.md
+    - NintendoSwitch:
+      - Note/NS/crack.md
+      - Note/NS/stream.md
+      - Note/NS/nro.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
@@ -80,9 +86,9 @@ nav:
       - Blog/2023/bloom.md
       - Blog/2023/2023_summary.md
     - 2022:
-      - Blog/2022/school.md
       - Blog/2022/2022_summary.md
     - 2020:
+      - Blog/2020/school.md
       - Blog/2020/2020_summary.md
     - 2019:
       - Blog/2019/2019_summary.md
