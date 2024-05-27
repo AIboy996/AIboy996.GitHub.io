@@ -61,6 +61,8 @@ nav:
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
+    - Spider:
+      - Note/Spider/antispider.md
     - VSCode:
       - Note/vscode/modify_extension.md
   - Blog:
@@ -119,6 +121,7 @@ nav:
       - numpy:
         - Python/ThirdPartyLibrary/numpy/index.md
         - Python/ThirdPartyLibrary/numpy/ndarray.md
+        - Python/ThirdPartyLibrary/numpy/linalg.md
       - matplotlib:
         - Python/ThirdPartyLibrary/matplotlib/index.md
         - Python/ThirdPartyLibrary/matplotlib/plt.md
@@ -126,6 +129,8 @@ nav:
       - pandas:
         - Python/ThirdPartyLibrary/pandas/index.md
         - Python/ThirdPartyLibrary/pandas/dataframe.md
+        - Python/ThirdPartyLibrary/pandas/calculation.md
+        - Python/ThirdPartyLibrary/pandas/plotting.md
       - pytorch:
         - Python/ThirdPartyLibrary/pytorch/index.md
         - Python/ThirdPartyLibrary/pytorch/quick_start.md
@@ -134,6 +139,7 @@ nav:
         - Python/ThirdPartyLibrary/pytorch/model.md
         - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
+        - Python/ThirdPartyLibrary/pytorch/compile.md
     - 应用案例（MISC）:
       - Python/Example/email.md
     - 应用案例（爬虫）:

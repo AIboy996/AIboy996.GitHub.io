@@ -6,4 +6,4 @@ tags:
 
 # NS串流PS5
 
-TBD
+TBD:NS stream

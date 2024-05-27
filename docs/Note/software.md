@@ -75,8 +75,9 @@ Fast, light, simple Docker & Linux on macOS
 ### [Rectangle](https://rectangleapp.com/)
 窗口管理
 ### [iTerm2](https://iterm2.com/)
-终端软件
-
+终端软件。
+### [sketchybar](https://github.com/FelixKratz/SketchyBar)
+菜单栏软件，替代原生的菜单栏。
 
 ## iOS/iPadOS
 ### Yealico

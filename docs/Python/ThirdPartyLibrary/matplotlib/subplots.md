@@ -3,7 +3,7 @@ tags:
 - matplotlib
 ---
 
-# Axes and Figure
+# 面向对象式
 
 matplotlib的面向对象式调用。
 

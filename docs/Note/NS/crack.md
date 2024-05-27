@@ -6,4 +6,4 @@ tags:
 
 # NS破解
 
-TBD
+TBD:crack NS

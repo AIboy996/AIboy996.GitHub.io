@@ -119,10 +119,10 @@ flowchart LR
     end
     subgraph 数据
     string;re;datetime;calender;time;
-    collections;copy;pprint;
+    collections;copy;pprint;hashlib;
     end
     subgraph 数学
-    math; cmath; fractions; random; statistics
+    math; cmath; fractions; random; statistics; array
     end
     subgraph 函数式编程模块
     itertools; functools; operator

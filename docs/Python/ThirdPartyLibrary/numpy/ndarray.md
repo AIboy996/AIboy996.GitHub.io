@@ -3,6 +3,6 @@ tags:
 - numpy
 ---
 
-# array
+# 多维数组
 
-TBD:numpy array
+TBD:numpy ndarray

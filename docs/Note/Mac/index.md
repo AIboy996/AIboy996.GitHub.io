@@ -12,7 +12,7 @@ tags:
 
 相关的配置文件保存在我的[dotfiles仓库](https://github.com/AIboy996/dotfiles)。
 
-??? question "Ask GPT: 什么是dotfiles？"
+??? chatgpt-summary "Ask GPT: 什么是dotfiles？"
     Dotfiles 是一种用来配置和定制操作系统环境和各种应用程序的配置文件的统称。这些文件通常是隐藏文件，文件名以点号 (".") 开头，因此被称为 "dotfiles"。这些文件一般位于用户的主目录中，例如 `~/.bashrc`、`~/.vimrc`、`~/.gitconfig` 等。
 
     以下是一些常见的 dotfiles 及其用途：

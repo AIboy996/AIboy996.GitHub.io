@@ -3,8 +3,8 @@ tags:
 - matplotlib
 ---
 
-# plt everything
+# 函数式
 
 matplotlib的函数式调用。
 
-TBD:plt everything
+TBD:函数式 plt
