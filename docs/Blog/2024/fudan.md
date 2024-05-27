@@ -70,7 +70,7 @@ include:
 
 <figure markdown>
 
-![](assets/2024-05-26-14-20-13.png){width=500}
+![](/Blog/2024/assets/2024-05-26-14-20-13.png){width=500}
 
 <figurecaption>
 把这张纸翻出来废了我老大劲，不过确实很有纪念意义

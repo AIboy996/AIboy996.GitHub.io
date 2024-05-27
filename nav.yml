@@ -38,6 +38,10 @@ nav:
       - Note/Shell/linux.md
       - Note/Shell/man.md
       - Note/Shell/ssh.md
+    - Mac:
+      - Note/Mac/index.md
+      - Note/Mac/zsh.md
+      - Note/Mac/sketchybar.md
     - ManimGL:
       - Note/manim/hello.md
     - MkDocs:
@@ -49,6 +53,7 @@ nav:
       - Note/mkdocs/plugin_dev.md
     - NAS:
       - Note/NAS/media.md
+      - Note/NAS/domain.md
     - NintendoSwitch:
       - Note/NS/crack.md
       - Note/NS/stream.md
