@@ -6,6 +6,7 @@ mkdocs-material-extensions==1.1.1
 mkdocs-minify-plugin==0.6.2
 mkdocs-rss-plugin==1.7.0
 mkdocs-static-i18n @ git+https://github.com/AIboy996/mkdocs-static-i18n
+mkdocs-ai-summary @ git+https://github.com/AIboy996/mkdocs-ai-summary
+openai
 mkdocs-video==1.5.0
-mkdocs-ai-summary[chatgpt]==0.2.3
 # mkdocs-jupyter==0.22.0
