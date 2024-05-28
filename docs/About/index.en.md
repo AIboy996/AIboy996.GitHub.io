@@ -20,6 +20,7 @@ ai-summary-config:
 - [**Note**](../Note): Some notes and tutorial(mainly related to CS).
 - [**Blog**](../Blog): Personal blog.
 - [**Python**](../Python): Python tutorial comprised of syntax, libraries and some examples.
+- [**Go**](../Go): Go lang.
 - [**Project**](../Project): Open source project of mine.
 - [**Statistics**](../Statistics): A guide for Statistics' undergraduate.
 - [**SomeMath**](../SomeMath): Literally some math.

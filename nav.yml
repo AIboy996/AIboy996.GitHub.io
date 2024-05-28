@@ -23,7 +23,7 @@ nav:
     - Git:
       - Note/Git/git.md
       - Note/Git/git_server.md
-    - GreatFirewall:
+    - Great Firewall:
       - Note/GFW/intro.md
       - Note/GFW/client.md
       - Note/GFW/server.md
@@ -42,7 +42,7 @@ nav:
       - Note/Mac/index.md
       - Note/Mac/zsh.md
       - Note/Mac/sketchybar.md
-    - ManimGL:
+    - Manim:
       - Note/manim/hello.md
     - MkDocs:
       - Note/mkdocs/theory.md
@@ -55,7 +55,7 @@ nav:
       - Note/NAS/media.md
       - Note/NAS/domain.md
       - Note/NAS/webhook.md
-    - NintendoSwitch:
+    - Nintendo Switch:
       - Note/NS/crack.md
       - Note/NS/stream.md
       - Note/NS/nro.md
@@ -148,6 +148,9 @@ nav:
       - Python/Example/Spider/local_FDA.md
     - 应用案例（微软三件套）:
       - Python/Example/Excel/csv2xlsx.md
+  - Go:
+    - Go/index.md
+    - Go/why_go.md
   - Project:
     - Project/index.md
     - Project/qrq.md

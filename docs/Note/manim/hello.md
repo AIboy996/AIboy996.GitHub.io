@@ -5,7 +5,7 @@ tags:
 
 # 初见manim
 !!! info "manim的版本"
-    我使用的是[社区版的manim](https://docs.manim.community)，此外还有一个3Blue1Brown维护的版本。
+    我使用的是[社区版的manim](https://docs.manim.community)，此外还有一个3Blue1Brown维护的版本[manimgl](https://3b1b.github.io/manim/index.html)。
 ## 配置环境
 Mac上需要用`homebrew`安装一些依赖：
 ```bash
