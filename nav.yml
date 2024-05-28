@@ -54,6 +54,7 @@ nav:
     - NAS:
       - Note/NAS/media.md
       - Note/NAS/domain.md
+      - Note/NAS/webhook.md
     - NintendoSwitch:
       - Note/NS/crack.md
       - Note/NS/stream.md
