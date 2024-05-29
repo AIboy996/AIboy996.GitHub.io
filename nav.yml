@@ -34,6 +34,7 @@ nav:
       - 进阶使用: Note/jupyter/jupyter4.md
     - LaTeX:
       - Note/latex/basic_latex.md
+      - Note/latex/latex_cn.md
     - Linux & Shell:
       - Note/Shell/linux.md
       - Note/Shell/man.md
