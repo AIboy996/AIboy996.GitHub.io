@@ -6,6 +6,7 @@ nav:
     - 我的电子设备们: About/devices.md
     - 点亮的地图: About/map.md
     - 正式的简历: About/resume.html
+    - About/log.md
     - 兴趣: About/hobby.md
     - About/links.md
   - Note:
@@ -32,6 +33,7 @@ nav:
       - 基础使用: Note/jupyter/jupyter2.md
       - 远程服务: Note/jupyter/jupyter3.md
       - 进阶使用: Note/jupyter/jupyter4.md
+      - Note/jupyter/print.md
     - LaTeX:
       - Note/latex/basic_latex.md
       - Note/latex/latex_cn.md
