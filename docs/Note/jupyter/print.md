@@ -12,7 +12,7 @@ tags:
     jupyter nbconvert --to pdf print.ipynb
     ```
 
-    [最简单的方法（除了截图）](./#nbconvert)：使用Jupyter的官方服务nbviewer
+    [最简单的方法（除了截图）](./#nbviewer)：使用Jupyter的官方服务nbviewer
 
 人生苦短，我用Jupyter。
 
