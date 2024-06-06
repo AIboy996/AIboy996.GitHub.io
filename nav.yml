@@ -199,7 +199,10 @@ nav:
       - Statistics/postgrad/Reinforcement_Learning.md
       - Statistics/postgrad/journal_club.md
     - 个人兴趣:
+      - Statistics/opencourse/cs61.md
+      - Statistics/opencourse/csapp.md
       - Statistics/opencourse/os.md
+      - Statistics/opencourse/computer_networking.md
   - SomeMath:
     - SomeMath/index.md
     - 实分析:

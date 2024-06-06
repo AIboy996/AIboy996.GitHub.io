@@ -4,7 +4,7 @@ tags:
 ---
 
 # 操作系统
-> 哔哩哔哩大学，绿导师
+> 24Summer Online
 
 理解计算机世界最重要的角色：操作系统。
 
@@ -17,7 +17,8 @@ tags:
 - 持久化
 
 ## 参考书
-[jyy给的《操作系统》教科书与参考资料](https://jyywiki.cn/OS/References.md)
+
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## 体会
 计算机世界没有黑魔法，一切都是有迹可循的。
