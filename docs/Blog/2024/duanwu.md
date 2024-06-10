@@ -100,7 +100,7 @@ Google Doodles: Dragon Boat Festival 2024
 
 <figure markdown>
 
-![](assets/2024-06-10-15-00-29.png){width=400}
+![](/Blog/2024/assets/2024-06-10-15-00-29.png){width=400}
 
 <figurecaption>
 西交走错道了，哈工大翻船了，望周知
