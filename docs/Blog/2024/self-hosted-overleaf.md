@@ -7,7 +7,7 @@ tags:
 
 # 自托管Overleaf服务器
 
-最近在更新之前写的[高中数学讲义](../../../Project/high_school_math)，气人的是讲义的页数多起来之后Overleaf就一直编译超时。
+最近在更新之前写的[高中数学讲义](../../../Project/high_school_math/)，气人的是讲义的页数多起来之后Overleaf就一直编译超时。
 
 <figure markdown>
 ![](/Blog/2024/assets/2024-04-27-22-47-52.png){width=500}

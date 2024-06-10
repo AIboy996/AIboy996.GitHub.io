@@ -7,8 +7,8 @@ tags:
 
 这系列的note打算写一写我的Mac软件配置，包括但不限于：
 
-- [终端配置](./zsh)（iTerm2+zsh）
-- [菜单栏配置](./sketchybar)（sketchybar+yabai）
+- [终端配置](./zsh/)（iTerm2+zsh）
+- [菜单栏配置](./sketchybar/)（sketchybar+yabai）
 
 相关的配置文件保存在我的[dotfiles仓库](https://github.com/AIboy996/dotfiles)。
 

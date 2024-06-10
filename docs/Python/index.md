@@ -158,15 +158,15 @@ flowchart LR
     click 魔法方法 "./SeniorSyntax/OOP/#magic-method"
     click 元类 "./SeniorSyntax/OOP/#_20"
     %% 标准库
-    click os "./StandardLibrary/os"
-    click re "./StandardLibrary/re"
-    click time "./StandardLibrary/time"
+    click os "./StandardLibrary/os/"
+    click re "./StandardLibrary/re/"
+    click time "./StandardLibrary/time/"
     %% 第三方库
-    click 包管理 "./ThirdPartyLibrary/package_management"
-    click 自己写一个库 "./ThirdPartyLibrary/DIY"
-    click numpy "./ThirdPartyLibrary/numpy"
-    click pandas "./ThirdPartyLibrary/pandas"
-    click matplotlib "./ThirdPartyLibrary/matplotlib"
-    click pytorch "./ThirdPartyLibrary/pytorch"
+    click 包管理 "./ThirdPartyLibrary/package_management/"
+    click 自己写一个库 "./ThirdPartyLibrary/DIY/"
+    click numpy "./ThirdPartyLibrary/numpy/"
+    click pandas "./ThirdPartyLibrary/pandas/"
+    click matplotlib "./ThirdPartyLibrary/matplotlib/"
+    click pytorch "./ThirdPartyLibrary/pytorch/"
 ```
 

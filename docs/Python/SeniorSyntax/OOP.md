@@ -116,7 +116,7 @@ include:
 
 ## 类的基础知识
 
-之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword)和[内置类](../BasicSyntax/builtin_class)已经零零碎碎地回答了下面的问题：
+之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword/)和[内置类](../BasicSyntax/builtin_class/)已经零零碎碎地回答了下面的问题：
 
 1. 什么是类？
     - 类就是某些对象的抽象，几乎python中一切的东西都是类（或者由类生成的对象或者叫实例 i.e. instance）

@@ -7,7 +7,7 @@ tags:
 # 高中数学讲义
 
 !!! success
-    此讲义放在[自托管的Overleaf](../../Blog/2024/self-hosted-overleaf)上，目前还在更新当中。
+    此讲义放在[自托管的Overleaf](../../Blog/2024/self-hosted-overleaf/)上，目前还在更新当中。
 
     下面是一个**未完成的初步版本**，仅供参考。
 

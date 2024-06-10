@@ -103,7 +103,7 @@ $$
 ![](assets/2024-05-29-20-13-45.png)
 
 
-当然你也可以[自己搭建overleaf服务器](../../../Blog/2024/self-hosted-overleaf)。
+当然你也可以[自己搭建overleaf服务器](../../../Blog/2024/self-hosted-overleaf/)。
 ### 本地环境
 如果你想在自己的电脑上编译，那么就需要去安装LaTeX编译器以及LaTeX代码编辑器如TeXworks、TeXstudio。当然一般安装编译器都会附带一个编辑器，或者你用VSCode、SublimeText这样的文本编辑器也可以。
 

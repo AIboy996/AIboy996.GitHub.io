@@ -14,15 +14,15 @@ include:
 
 ## 本站的几个板块
 
-- [**About**](../About)：当前板块，提供网站基本信息。
-- [**Note**](../Note)：笔记板块，放一些杂七杂八（主要是计算机技术）的教程、笔记。
-- [**Blog**](../Blog)：博客板块，记录日常的博客。
-- [**Python**](../Python)：Python板块，包含基础、高级语法知识和各种库的使用。
-- [**Go**](../Go)：Go语言。
-- [**Project**](../Project)：项目板块，本人的一些开源项目。
-- [**Statistics**](../Statistics)：鄙人专业相关。
-- [**SomeMath**](../SomeMath)：数学相关。
-- [**PlayGround**](../Playground)：用来调试mkdocs-material提供的markdown的扩展语法
+- [**About**](../About/)：当前板块，提供网站基本信息。
+- [**Note**](../Note/)：笔记板块，放一些杂七杂八（主要是计算机技术）的教程、笔记。
+- [**Blog**](../Blog/)：博客板块，记录日常的博客。
+- [**Python**](../Python/)：Python板块，包含基础、高级语法知识和各种库的使用。
+- [**Go**](../Go/)：Go语言。
+- [**Project**](../Project/)：项目板块，本人的一些开源项目。
+- [**Statistics**](../Statistics/)：鄙人专业相关。
+- [**SomeMath**](../SomeMath/)：数学相关。
+- [**PlayGround**](../Playground/)：用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](../Tags/)：👇
 
 ## 本站的一些功能
@@ -42,7 +42,7 @@ include:
 	openai的模型
 
 ### 分类标签
-本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](../Tags)板块按照分类标签查看文章。
+本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](../Tags/)板块按照分类标签查看文章。
 
 !!! question "新功能：标签云"
 	本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../)和[Tags](../Tags/)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。

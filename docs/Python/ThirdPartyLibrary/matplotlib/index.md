@@ -35,7 +35,7 @@ hide:
 
 ## 两套api
 初学者可能会很迷惑的点就是matplotlib画图是有两套交互方式的（虽然本质上他们相同），我们之后也会分别介绍。
-### [函数式：plt](./plt)
+### [函数式：plt](./plt/)
 这种方式是最常见的，也是简单任务下最方便快捷的方式，缺点就是很多操作是不透明的、全局的，plt的处理方法可能和你预想的不同。
 
 使用方法就是调用`matplotlib.pyplot`提供的各种api在默认的画布上绘制。
@@ -45,7 +45,7 @@ plt.plot(x, y)
 plt.title("Sample plot")
 plt.show()
 ```
-### [面向对象式：axes](./subplots)
+### [面向对象式：axes](./subplots/)
 这种方式的自由度更高，可以手动控制`Figure`和`Axes`对象。
 ```python
 import matplotlib.pyplot as plt
