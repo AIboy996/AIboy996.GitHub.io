@@ -8,7 +8,7 @@ tags:
 
 <figure markdown>
 
-![](assets/dragon-boat-festival-2024-6753651837110449-2xa.gif){width=400}
+![](/Blog/2024/assets/dragon-boat-festival-2024-6753651837110449-2xa.gif){width=400}
 
 <figurecaption>
 Google Doodles: Dragon Boat Festival 2024

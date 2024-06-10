@@ -60,9 +60,11 @@ Click 🙂 if you like the content, or click 🙁 if anything is wrong in which 
 Comments is powered by [giscus](https://giscus.app/). All the comments is stored in **GitHub's Discusions**.
 
 ### RSS
-RSS is powered by [mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/). 
+RSS for my personal Blog is powered by [mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/). 
 
-Subscribe [RSS Link1](../feed_rss_updated.xml)(sorted in updated date) for latest news. You can also subscribe [RSS Link2](../feed_rss_created.xml) for news sorted in created date.
+Subscribe [RSS Link](../feed_rss_created.xml)(sorted in created date) for latest news. 
+
+You can also subscribe [RSS Link Alternative](../feed_rss_updated.xml) (which is not redommanded, since i update some old blog sometimes. This link maybe sorted in chaos) for news sorted in updated date.
 
 ### Theme Colors
 > Some kind of my mood on each day.

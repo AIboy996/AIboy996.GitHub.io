@@ -89,7 +89,7 @@ extra:
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
     - icon: fontawesome/solid/rss
-      link: https://yangzhang.site/feed_rss_updated.xml
+      link: https://yangzhang.site/feed_rss_created.xml
       name: RSS
 
 markdown_extensions:

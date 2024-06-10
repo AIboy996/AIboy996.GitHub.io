@@ -76,9 +76,9 @@ include:
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
 
 ### RSS
-本站支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[更新序订阅源（推荐）](../feed_rss_updated.xml)，该链接是按照**更新日期**排序的。
+本站的Blog板块支持RSS订阅（由[mkdocs-rss-plugin](https://guts.github.io/mkdocs-rss-plugin/)驱动），订阅地址为：[创建序订阅源](../feed_rss_created.xml)，该链接是按照**创建日期**排序的。
 
-你也可以从[创建序订阅源](../feed_rss_created.xml)获取按照文档**创建日期**排序的订阅。
+你也可以从[更新序订阅源](../feed_rss_updated.xml)（*不推荐，我偶尔会更新旧的文档，这会导致顺序混乱*）获取按照文档**更新日期**排序的订阅。
 
 ### 颜色彩蛋
 随着星期几的变化，本站的主题色会随之改变：
