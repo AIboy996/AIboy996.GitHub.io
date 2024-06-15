@@ -43,7 +43,7 @@ $$
 在Hilbert空间上我们有：
 
 !!! cite "投影定理"
-    $\mathcal{H}$是Hilbert空间，那么$\forall x\in \mathcal{H}$，任意非空闭子集$C\subset \mathcal{H}$，都存在唯一的$m \in C$使得
+    $\mathcal{H}$是Hilbert空间，那么$\forall x\in \mathcal{H}$，任意非空闭子集$C\subset \mathcal{H}$，都**存在唯一**的$m \in C$使得
     $$
     m = \arg\min_{y \in C} \lVert x-y \rVert
     $$
@@ -60,6 +60,21 @@ m = \arg\min_{y \in \mathbb{R}} \lVert X-y \rVert = \arg\min_{y \in \mathbb{R}} 
 $$
 这个优化问题有显示解：$m = \mathbb{E}(X)$，实际上这里的投影就是期望。
 
+??? note "如何求解？"
+    实际上
+    $$
+    m = \arg\min_{y \in \mathbb{R}} \mathbb{E}|X-y|^2
+    $$
+    就是
+    $$
+    m = \arg\min_{y \in \mathbb{R}} [E(X^2)+y^2-2yE(X)]
+    $$
+    这是关于$y$的二次函数，显然在
+    $$
+    m = E(X)
+    $$
+    取到最小值。
+
 或者我们可以通过正交条件：
 $$
 \forall z \in \mathbb{R}\quad X-m \perp z
@@ -70,17 +85,71 @@ $$
 $$
 直接得到：$m=\mathbb{E}(X)$
 ### 条件期望
-假设随机变量$Y\in L^2$，集合$G(Y) = \{ g(Y): g \text{可测} ,\quad  g(Y)\in L^2 \}$是$L^2$的线性闭子空间，那么存在唯一的$m = e_X(Y)$：
+假设随机变量$Y\in L^2$，集合$G(Y) = \{ g(Y): g \text{可测} ,\quad  g(Y)\in L^2 \}$是$L^2$的线性闭子空间，那么对于任意$X\in L^2$，都存在（几乎处处相等的意义下）**唯一的**$m = e_X(Y)$：
 $$
 m = e_X(Y)= \arg\min_{y \in G(Y)} \lVert X-y \rVert
 $$
 
 这个$e_X(Y)$就是条件期望了。
+> 一般也写作：$E(X|Y)$，可以理解为用$Y$表示的$X$的最优估计。
 
 这时候正交条件是：
 $$
 \mathbb{E}(g(Y)(X-e_X(Y))) = 0 \quad \forall g \text{可测}
 $$
+
+??? note "证明"
+    我们来证明，满足正交条件的$y^* = e_X(Y) = E(X|Y)$可以最小化：
+    $$
+    \lVert X-y \rVert = E(X-y)^2
+    $$
+    只需要做拆分：
+    $$
+    \begin{aligned}
+    &\lVert X-y \rVert \\
+    = &E(X-y)^2 \\
+    = &E(X-y^*+y^*-y)^2\\
+    = &E(X-y^*)^2+E(y^*-y)^2 + 2E(X-y^*)(y^*-y)\\
+    \end{aligned}
+    $$
+    这个式子的第一项和$y$无关，并且$y^*-y \in G(Y)$，那么根据正交条件有第三项为0:
+    $$
+    E(y^*-y)(X-y^*) = 0
+    $$
+    于是
+    $$
+    \begin{aligned}
+    &e_X(Y)\\
+    =& \arg\min_{y \in G(Y)} \lVert X-y \rVert \\
+    =& \arg\min_{y \in G(Y)} [E(y^*-y)^2]\\
+    =& y^*
+    \end{aligned}
+    $$
+
+??? question "唯一性"
+    我们说的唯一性是在几乎处处相等的意义下的：
+    $$
+    x = y \iff E(x-y)^2=0
+    $$
+    举例来说，如果考虑
+    $$
+    Y = (y_1,y_2)^T = (X, 2X)^T
+    $$
+    那么
+    $$
+    E(X|Y) = y_1
+    $$
+    显然是最好的估计。同时：
+    $$
+    y_2-y_1,\quad 3y_1-y_2
+    $$
+    等等都是等价的最好的估计。
+
+    但是，我们认为他们是“相同”的：
+    $$
+    E(y_1 - (y_2-y_1))^2 = E(y_1 - (3y_1-y_2))^2 = 0
+    $$
+    满足我们叙述的唯一性。
 
 ## 测度论
 在测度论中，我们也学过一个条件期望的定义：
@@ -106,5 +175,3 @@ $$
     - 在测度论中就是由随机变量生成的最小sigma代数
 
 略有不同的是，投影定理是从**最佳估计**出发的。而测度论的条件期望则是从**正交性**出发的。
-
-TBC:证明细节

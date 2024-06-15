@@ -21,6 +21,9 @@ nav:
       - Note/Fudan/campus.md
       - Note/Fudan/fdulife.md
       - Note/Fudan/script.md
+    - Gaming:
+      - Note/Gaming/bloodborne.md
+      - Note/Gaming/eldenring.md
     - Git:
       - Note/Git/git.md
       - Note/Git/git_server.md
@@ -223,5 +226,6 @@ nav:
     - 概率论:
       - SomeMath/prob/Montmort.md
       - SomeMath/prob/conditional_expectation.md
+      - SomeMath/prob/kalman_filter.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
