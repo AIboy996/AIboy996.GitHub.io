@@ -8,7 +8,7 @@ or [![Blog](https://img.shields.io/badge/Go-yangz.site-red.svg)](https://yangz.s
 - 主题: [Material for MKDocs](https://github.com/squidfunk/mkdocs-material)
 - 插件: [requirements.txt](./requirements.txt)
 - <s>发布1: [GitHub Pages](https://pages.github.com) </s>
-- 发布2: [CloudFare Pages](https://cloudfare.com) 
+- 发布2: [Cloudflare Pages](https://cloudflare.com) 
 
 ## 网站搭建过程记录
 

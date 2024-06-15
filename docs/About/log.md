@@ -75,7 +75,7 @@ tags:
     - 增加了标签云组件。
 
 - 2023年03月24日
-    - 从GitPages部署，切换到CloudFare Pages部署。
+    - 从GitPages部署，切换到Cloudflare Pages部署。
 
 - 2023年03月01日
     - 新增了`math.js`，实现了数学公式自动换行。

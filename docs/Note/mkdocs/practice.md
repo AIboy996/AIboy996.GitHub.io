@@ -620,9 +620,9 @@ push完之后，我们到GitHub就可以在`Actions`板块看到刚才提交的w
 把这里的branch改为刚才生成的gh-pages【这就是前面所说的，指定某个branch**发布**到gitpages，换言之**复制**到微软的某个服务器】，即可在上面的网址<https://aiboy996.github.io/mkdocs-hello/>访问刚才生成的页面了！
 
 !!! info "最新消息"
-    我已经弃用了gitpages，转而使用cloudfare pages，因为后者在国内的可访问性更好。
+    我已经弃用了gitpages，转而使用cloudflare pages，因为后者在国内的可访问性更好。
     
-    所以我的个人域名<yangzhang.site>的DNS记录将解析到cloudfare的IP而非github的IP。也正因如此上述过程中出现的“自定义域名”<https://yangzhang.site/mkdocs-hello>也将不再可用。我把它挪到了<https://aiboy996.github.io/mkdocs-hello/>
+    所以我的个人域名<yangzhang.site>的DNS记录将解析到cloudflare的IP而非github的IP。也正因如此上述过程中出现的“自定义域名”<https://yangzhang.site/mkdocs-hello>也将不再可用。我把它挪到了<https://aiboy996.github.io/mkdocs-hello/>
 
 
 至此，从零开始搭建个人网站就结束了！

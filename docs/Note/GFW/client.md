@@ -190,7 +190,7 @@ VMess （由于是无状态协议）十分依赖于系统时间，需要确保�
 - vmess + tls
 - vmess + websocket + tls
 - vmess + websocket + tls + Nginx
-- vmess + websocket + tls + Nginx + cloudfare（CDN）
+- vmess + websocket + tls + Nginx + cloudflare（CDN）
 
 从上至下，一层层套娃，套的越多越安全，当然速度也就越慢。如果真的从头搭建起来，那就真是令人头都大了，还好有大神开发一键脚本，有兴趣的朋友自行搜索。
 
