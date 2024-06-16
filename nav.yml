@@ -225,6 +225,7 @@ nav:
       - SomeMath/complex/constructible_number.md
     - 代数:
       - SomeMath/algebra/linear_differential_equation.md
+      - SomeMath/algebra/rot.md
     - 概率论:
       - SomeMath/prob/Montmort.md
       - SomeMath/prob/conditional_expectation.md

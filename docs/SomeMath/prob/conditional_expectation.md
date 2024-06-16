@@ -99,32 +99,31 @@ $$
 $$
 
 ??? note "证明"
-    我们来证明，满足正交条件的$y^* = e_X(Y) = E(X|Y)$可以最小化：
+    我们来证明，满足正交条件的$y^\* = e_X(Y) = E(X|Y)$ 可以最小化：
     $$
     \lVert X-y \rVert = E(X-y)^2
     $$
     只需要做拆分：
-    $$
-    \begin{aligned}
-    &\lVert X-y \rVert \\
-    = &E(X-y)^2 \\
-    = &E(X-y^*+y^*-y)^2\\
-    = &E(X-y^*)^2+E(y^*-y)^2 + 2E(X-y^*)(y^*-y)\\
-    \end{aligned}
-    $$
+    $$\begin{aligned}
+    &\lVert X-y \rVert \\\\
+    = &E(X-y)^2 \\\\
+    = &E(X-y^\*+y^\*-y)^2\\\\
+    = &E(X-y^\*)^2+E(y^\*-y)^2 + 2E(X-y^\*)(y^\*-y)\\\\
+    \end{aligned}$$
     这个式子的第一项和$y$无关，并且$y^*-y \in G(Y)$，那么根据正交条件有第三项为0:
     $$
-    E(y^*-y)(X-y^*) = 0
+    E(y^\*-y)(X-y^\*) = 0
     $$
     于是
     $$
     \begin{aligned}
-    &e_X(Y)\\
-    =& \arg\min_{y \in G(Y)} \lVert X-y \rVert \\
-    =& \arg\min_{y \in G(Y)} [E(y^*-y)^2]\\
-    =& y^*
+    &e_X(Y)\\\\
+    =& \arg\min_{y \in G(Y)} \lVert X-y \rVert \\\\
+    =& \arg\min_{y \in G(Y)} [E(y^\*-y)^2]\\\\
+    =& y^\*
     \end{aligned}
     $$
+
 
 ??? question "唯一性"
     我们说的唯一性是在几乎处处相等的意义下的：
