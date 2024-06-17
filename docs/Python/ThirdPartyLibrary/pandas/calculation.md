@@ -3,6 +3,6 @@ tags:
 - pandas
 ---
 
-# 数据规约
+# 数据约减
 
 TBD:pandas cal

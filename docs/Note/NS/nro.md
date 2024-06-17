@@ -6,4 +6,6 @@ tags:
 
 # NS开发
 
-TBD:NS dev
+等我有空就来写一个NS小软件。
+
+TBC:NS dev
