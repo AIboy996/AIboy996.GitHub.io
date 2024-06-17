@@ -7,6 +7,10 @@ tags:
 > 倒序
 
 ## 2024
+
+- 2024年06月17日
+    - 增加新特性：外链（例如<https://bilibili.yangz.site>）会在新的标签页中打开。
+
 - 2024年06月01日
     - 更换文本字体为：`Noto Sans SC`。<p style="font-family:Roboto">mkdocs-material默认字体为Roboto：1lI</p> 
     - 解决了1lI的区分问题。 
