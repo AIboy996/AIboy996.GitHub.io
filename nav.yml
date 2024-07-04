@@ -212,7 +212,7 @@ nav:
       - Statistics/opencourse/computer_networking.md
   - SomeMath:
     - SomeMath/index.md
-    - 实分析:
+    - 数学分析:
       - SomeMath/real/rational_numbers_countable.md
       - SomeMath/real/taylor_expand/taylor_expand.md
       - SomeMath/real/derivatives.md
@@ -223,9 +223,11 @@ nav:
     - 复分析:
       - SomeMath/complex/why_complex.md
       - SomeMath/complex/constructible_number.md
-    - 代数:
+    - 线性代数:
       - SomeMath/algebra/linear_differential_equation.md
       - SomeMath/algebra/rot.md
+    - 初等数论:
+      - SomeMath/number_theory/divisible.md
     - 概率论:
       - SomeMath/prob/Montmort.md
       - SomeMath/prob/conditional_expectation.md
