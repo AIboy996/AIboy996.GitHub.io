@@ -228,6 +228,7 @@ nav:
       - SomeMath/algebra/rot.md
     - 初等数论:
       - SomeMath/number_theory/divisible.md
+      - SomeMath/number_theory/modulo.md
     - 概率论:
       - SomeMath/prob/Montmort.md
       - SomeMath/prob/conditional_expectation.md
