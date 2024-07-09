@@ -1,4 +1,5 @@
 ---
+title: yangzhang's Site
 tags:
 - About
 hide:
