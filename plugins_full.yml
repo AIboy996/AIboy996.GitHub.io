@@ -50,13 +50,13 @@ plugins:
       timezone: Asia/Irkutsk
       enable_creation_date: true
       type: iso_datetime
-  ## 搜索插件
-  - search:
-      lang:
-        - en
-        # 日语搜索汉字
-        - ja
-        - zh
+  ## 搜索插件 disabled: 太慢了！！！
+  # - search:
+  #     lang:
+  #       - en
+  #       # 日语搜索汉字
+  #       - ja
+  #       - zh
   - minify:
       minify_html: true
   - rss:
