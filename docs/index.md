@@ -1,8 +1,12 @@
 ---
 title: yangzhang's Site
-template: custom_index.html
 tags:
 - About
+hide:
+- comments
+- feedback
+- tags
+- edit
 ---
 
 # 👋

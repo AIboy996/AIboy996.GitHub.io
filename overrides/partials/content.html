@@ -31,6 +31,25 @@
 <!-- Markdown content -->
 {{ page.content }}
 
+{% if page.is_homepage %}
+
+<!-- 首页放一个标签云 -->
+<div class="tag-cloud-toc">
+  {% include "partials/tag-cloud.html" %}
+</div>
+
+<!-- cookie -->
+<div class="cookie-message" id="cookie">
+  <img src="/assets/images/cookie.png" alt="cookie">
+  <span>I am using cookies to provide you the best possible experience. But don't panic - I won't share any of your
+      data. You can find more informations about the cookies <a href="/About/#_6">here</a>.</span>
+  <a class="close" href="#"
+      onclick="var element = document.getElementById('cookie'); element.parentNode.removeChild(element);"><i
+          class="fa fa-times"></i></a>
+</div>
+
+{% endif %}
+
 <!-- Source file information -->
 {% if page.meta and page.meta.git_revision_date_localized %}
 {% include "partials/source-file.html" %}
