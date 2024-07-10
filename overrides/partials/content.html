@@ -1,5 +1,4 @@
-<!-- Edit and view button -->
-<!-- 是否隐藏编辑按钮 -->
+<!-- Source file button -->
 {% if page.meta and page.meta.hide %}
     {% set hiddenedit = "hidden" if "edit" in page.meta.hide %}
 {% endif %}
@@ -14,7 +13,6 @@
     {% include ".icons/material/file-eye-outline.svg" %}
 </a>
 {% endif %}
-
 
 <!-- Tags -->
 {% if "tags" in config.plugins %}
@@ -32,21 +30,6 @@
 
 <!-- Markdown content -->
 {{ page.content }}
-
-<!-- 首页放一个标签云 -->
-{% if page.is_homepage %}
-<div class="tag-cloud-toc">
-    {% include "partials/tag-cloud.html" %}
-</div>
-
-<!-- cookie -->
-<div class="cookie-message" id="cookie">
-  <img src="/assets/images/cookie.png" alt="cookie">
-  <span>I am using cookies to provide you the best possible experience. But don't panic - I won't share any of your data. You can find more informations about the cookies <a href="/About/#_6">here</a>.</span>
-  <a class="close" href="#" onclick="var element = document.getElementById('cookie'); element.parentNode.removeChild(element);"><i class="fa fa-times"></i></a>
-</div>
-
-{% endif %}
 
 <!-- Source file information -->
 {% if page.meta and page.meta.git_revision_date_localized %}

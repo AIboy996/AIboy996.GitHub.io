@@ -77,8 +77,8 @@ div.video-container {
     border-top: 1px solid #e4e4e4;
     position: fixed;
     z-index: 100;
-    bottom: 0%;
-    right: 0%;
+    bottom: 5%;
+    right: 2%;
     margin: auto;
     max-width: 540px;
     display: -ms-flexbox;

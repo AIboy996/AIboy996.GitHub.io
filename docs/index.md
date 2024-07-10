@@ -1,12 +1,8 @@
 ---
 title: yangzhang's Site
+template: custom_index.html
 tags:
 - About
-hide:
-- tags
-- edit
-- feedback
-- comments
 ---
 
 # 👋
@@ -27,5 +23,5 @@ while "False":
 - 个人微信订阅号：
 
 <figure markdown>
-![](./assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}
+![](./assets/images/qrcode.jpg){width=150 .nonzoom title='悖论14'}
 </figure>

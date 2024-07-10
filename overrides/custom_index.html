@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+
+{% block content%}
+{{ page.content }}
+
+<!-- Last post -->
+{% set recent_pages=[] %}
+{% for p in (pages | sort(attribute="page.meta.git_creation_date_localized", reverse=True)) %}
+{% set page=p.page %}
+{{ recent_pages.append(page) or ""}}
+{% endfor %}
+
+<h3>最近更新</h3>
+{% for recent_page in recent_pages[:3] %}
+<details class="quote">
+    <summary>{{ recent_page.meta.git_creation_date_localized }} posted: {{ recent_page.title }}</summary>
+    <br>
+    <a href="{{ recent_page.url | url }}">👉阅读原文</a>
+    <hr>
+    {% if recent_page.meta and recent_page.meta.git_revision_date_localized %}
+    {% include "partials/source-file.html" %}
+    {% endif %}
+</details>
+{% endfor %}
+
+<!-- 首页放一个标签云 -->
+<div class="tag-cloud-toc">
+    {% include "partials/tag-cloud.html" %}
+</div>
+
+<!-- cookie -->
+<div class="cookie-message" id="cookie">
+    <img src="/assets/images/cookie.png" alt="cookie">
+    <span>I am using cookies to provide you the best possible experience. But don't panic - I won't share any of your
+        data. You can find more informations about the cookies <a href="/About/#_6">here</a>.</span>
+    <a class="close" href="#"
+        onclick="var element = document.getElementById('cookie'); element.parentNode.removeChild(element);"><i
+            class="fa fa-times"></i></a>
+</div>
+
+<!-- Source file information -->
+{% if page.meta and (
+page.meta.git_revision_date_localized or
+page.meta.revision_date
+) %}
+{% include "partials/source-file.html" %}
+{% endif %}
+
+{% endblock%}
