@@ -3,10 +3,10 @@ tags:
 - blog
 ---
 
-# 音乐和记忆
+# 曲中有真意
 > 不定期更新
 
-!!! cite "ChatGPT"
+!!! chatgpt-summary "音乐和记忆？"
 
     音乐和记忆有着非常密切的联系。听一首歌曲，往往会唤起我们的回忆和情感，让我们回到过去的某个时刻。这是因为音乐能够刺激我们的感官，引发我们的情感，而这些情感和记忆经常是相互关联的。
 
@@ -94,6 +94,13 @@ tags:
 
 一位好朋友给我推荐的歌（难得的是她现在仍然是我为数不多的挚友之一），17岁的夏天太美好了，美好到记忆模糊，听这首歌总能涌现许多回忆。
 
+## Take me hands
+> 午睡
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2071452224&auto=0&height=66"></iframe>
+
+夏日午后，隔壁班的一位朋友特意提醒我留意今天的“起床铃声”，原是这首爱的直白，可惜我什么也没听懂。
+
 ## She
 > 英语课
 
@@ -146,6 +153,13 @@ tags:
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=387592&auto=0&height=66"></iframe>
 
 余罪的片尾曲，多是一部好剧啊。这剧是T同学强力推荐我看的，他也是我为数不多至今仍然保持联系的挚友。我们高中一起干过不少荒唐的事情，回忆起来让人哭笑不得。
+
+## 简单爱
+> 爱一点也不简单
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=185984&auto=0&height=66"></iframe>
+
+我曾唱这首歌给她听。可惜爱一点也不简单。
 
 ## Last Dance
 > 最后一曲
