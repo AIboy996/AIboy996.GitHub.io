@@ -67,6 +67,8 @@ nav:
       - Note/NS/crack.md
       - Note/NS/stream.md
       - Note/NS/nro.md
+    - Reading:
+      - Note/Reading/wuyingdeng.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
