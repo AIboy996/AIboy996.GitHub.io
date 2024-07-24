@@ -26,7 +26,6 @@ plugins:
               兴趣: Interests
   ## jupyter文件支持 ########## 暂时移除此功能
   #- mkdocs-jupyter
-  - tags
   # 视频插件
   - mkdocs-video:
       is_video: true
