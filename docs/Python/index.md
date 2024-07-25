@@ -133,10 +133,13 @@ flowchart LR
     subgraph 网络
     asyncio;email; json; html; urllib; http;
     end
-    subgraph 其他
-    tkinter;dis;timeit;venv;sys;atexit;dis
+    subgraph 开发
+    typing;doctest;unittest;
     end
-    标准库 --- 文件和系统 & 数据 & 数学 & 函数式编程模块 & 并发控制 & 网络 & 其他
+    subgraph 其他
+    tkinter;dis;timeit;venv;sys;atexit;ast;
+    end
+    标准库 --- 文件和系统 & 数据 & 数学 & 函数式编程模块 & 并发控制 & 网络 & 开发 & 其他
     click Python "."
     %% 基础语法
     click 学会查文档 "./BasicSyntax/builtin_class/#dirhelp"
@@ -161,6 +164,7 @@ flowchart LR
     click os "./StandardLibrary/os/"
     click re "./StandardLibrary/re/"
     click time "./StandardLibrary/time/"
+    click doctest "./StandardLibrary/doctest/"
     %% 第三方库
     click 包管理 "./ThirdPartyLibrary/package_management/"
     click 自己写一个库 "./ThirdPartyLibrary/DIY/"

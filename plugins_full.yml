@@ -1,4 +1,5 @@
 plugins:
+  - tags
   - ai-summary:
       api: "chatgpt"
       model: "gpt-3.5-turbo" # 贫穷啊，gpt4真的好贵

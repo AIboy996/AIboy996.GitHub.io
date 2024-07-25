@@ -16,7 +16,7 @@ nav:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
       - Note/Docker/docker_senior.md
-    - Fudan:
+    - 复旦:
       - Note/Fudan/index.md
       - Note/Fudan/campus.md
       - Note/Fudan/fdulife.md
@@ -67,12 +67,12 @@ nav:
       - Note/NS/crack.md
       - Note/NS/stream.md
       - Note/NS/nro.md
-    - Reading:
+    - 读书:
       - Note/Reading/wuyingdeng.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
-    - Spider:
+    - 爬虫:
       - Note/Spider/antispider.md
     - VSCode:
       - Note/vscode/modify_extension.md
@@ -126,6 +126,7 @@ nav:
       - Python/SeniorSyntax/functional_programming.md
       - Python/SeniorSyntax/OOP.md
     - 标准库:
+      - Python/StandardLibrary/doctest.md
       - Python/StandardLibrary/os.md
       - Python/StandardLibrary/re.md
       - Python/StandardLibrary/time.md
