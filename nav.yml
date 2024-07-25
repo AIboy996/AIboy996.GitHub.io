@@ -12,15 +12,19 @@ nav:
   - Note:
     - Note/index.md
     - Note/software.md
-    - Docker:
-      - Note/Docker/docker_intro.md
-      - Note/Docker/docker_basic.md
-      - Note/Docker/docker_senior.md
+    - 读书:
+      - Note/Reading/wuyingdeng.md
+    - 爬虫:
+      - Note/Spider/antispider.md
     - 复旦:
       - Note/Fudan/index.md
       - Note/Fudan/campus.md
       - Note/Fudan/fdulife.md
       - Note/Fudan/script.md
+    - Docker:
+      - Note/Docker/docker_intro.md
+      - Note/Docker/docker_basic.md
+      - Note/Docker/docker_senior.md
     - Gaming:
       - Note/Gaming/bloodborne.md
       - Note/Gaming/eldenring.md
@@ -67,13 +71,9 @@ nav:
       - Note/NS/crack.md
       - Note/NS/stream.md
       - Note/NS/nro.md
-    - 读书:
-      - Note/Reading/wuyingdeng.md
     - SAS:
       - SAS的基本操作: Note/SAS/SAS_basic.md
       - SAS的统计应用: Note/SAS/SAS_application.md
-    - 爬虫:
-      - Note/Spider/antispider.md
     - VSCode:
       - Note/vscode/modify_extension.md
   - Blog:
