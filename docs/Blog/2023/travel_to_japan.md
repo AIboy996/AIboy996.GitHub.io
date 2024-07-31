@@ -3,6 +3,7 @@ tags:
 - blog
 - 毕业碎碎念
 - 旅行
+- 留影
 include:
 - ai-summary
 ---

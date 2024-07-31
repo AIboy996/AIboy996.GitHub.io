@@ -47,11 +47,18 @@ include:
 !!! question "新功能：标签云"
 	本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../)和[Tags](../Tags/)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
 
-### 搜索
+### <s>搜索</s>（弃用）
+
+
+<s>
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
+</s>
 > FYI: 本站（正文中）的外链都会加上这样的小箭头：[github](https://github.com)
 
+<s>
 目前理论上是不支持中文搜索（`lunr.zh.js`）的，仅支持英语和日文（`lunr.ja.js`）搜索，但是基于日语的支持实际上也可以搜到一些汉字。
+</s>
+
 
 ??? question "为什么不支持中文"
 
@@ -66,6 +73,12 @@ include:
 	这个issue上有一个哥们稍微修改了mkdocs的源代码（`mkdocs.contrib.search.search_index.py`），用`jieba库`+`lunr.ja.js`实现了不错的中文搜索效果：
 	
 	![](https://user-images.githubusercontent.com/15652226/133886857-557cbe82-ea5e-486c-a40c-917176f9a387.png)
+
+??? question "为何弃用？"
+	一方面，我认为搜索功能没什么意义，因为站内的文章已经非常有条理了。
+
+	另外一方面，这个插件会极大影响页面的加载速度。
+
 
 ### 页面反馈
 本站有反馈功能（由[Google Analytics](https://analytics.google.com/analytics/web/)驱动，需要有cookie许可才能正常运作），在页面底部有`Was this page helpful?`的选项。
