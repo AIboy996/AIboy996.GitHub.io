@@ -79,40 +79,40 @@ nav:
   - Blog:
     - Blog/index.md
     - 2024:
-      - Blog/2024/otaku.md
-      - Blog/2024/winter.md
-      - Blog/2024/sakura.md
-      - Blog/2024/new_blog.md
-      - Blog/2024/envelope.md
-      - Blog/2024/no_argmax.md
-      - Blog/2024/nomoney.md
-      - Blog/2024/wol.md
-      - Blog/2024/self-hosted-overleaf.md
-      - Blog/2024/travel_to_hk.md
-      - Blog/2024/career.md
-      - Blog/2024/fudan.md
-      - Blog/2024/duanwu.md
-      - Blog/2024/chat.md
-      - Blog/2024/travel_to_xiamen.md
       - Blog/2024/cj2024.md
+      - Blog/2024/travel_to_xiamen.md
+      - Blog/2024/chat.md
+      - Blog/2024/duanwu.md
+      - Blog/2024/fudan.md
+      - Blog/2024/career.md
+      - Blog/2024/travel_to_hk.md
+      - Blog/2024/self-hosted-overleaf.md
+      - Blog/2024/wol.md
+      - Blog/2024/nomoney.md
+      - Blog/2024/no_argmax.md
+      - Blog/2024/envelope.md
+      - Blog/2024/new_blog.md
+      - Blog/2024/sakura.md
+      - Blog/2024/winter.md
+      - Blog/2024/otaku.md
     - 2023:
-      - Blog/2023/intern.md
-      - Blog/2023/curriculum.md
-      - Blog/2023/GEE.md
-      - Blog/2023/music.md
-      - Blog/2023/intern2.md
-      - Blog/2023/thesis.md
-      - Blog/2023/travel_to_japan.md
-      - Blog/2023/recall_high_school_math.md
-      - Blog/2023/graduation_pics.md
-      - Blog/2023/name.md
-      - Blog/2023/bloom.md
       - Blog/2023/2023_summary.md
+      - Blog/2023/bloom.md
+      - Blog/2023/name.md
+      - Blog/2023/graduation_pics.md
+      - Blog/2023/recall_high_school_math.md
+      - Blog/2023/travel_to_japan.md
+      - Blog/2023/thesis.md
+      - Blog/2023/intern2.md
+      - Blog/2023/music.md
+      - Blog/2023/GEE.md
+      - Blog/2023/curriculum.md
+      - Blog/2023/intern.md
     - 2022:
       - Blog/2022/2022_summary.md
     - 2020:
-      - Blog/2020/school.md
       - Blog/2020/2020_summary.md
+      - Blog/2020/school.md
     - 2019:
       - Blog/2019/2019_summary.md
   - Python:
