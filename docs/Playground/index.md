@@ -362,19 +362,7 @@ mermaid是简单强大的流程图绘制工具，具体细节参见它的的官�
 
 还有很多其他可用的参数，具体可以参考Adobe的文档：[Parameters for Opening PDF Files](https://pdfobject.com/pdf/pdf_open_parameters_acro8.pdf)。
 
-嵌入效果就是：
-
-<center>
-<object
-    type="application/pdf"
-    data="../../Statistics/postgrad/assets/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
-    width=80%
-    height=400>
-</object>
-</center>
-
-
-## Google广告
+## <s>Google广告</s>（deprecated）
 当然，本站仅有此处嵌入了广告，仅做测试使用。
 ### 展示广告
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
