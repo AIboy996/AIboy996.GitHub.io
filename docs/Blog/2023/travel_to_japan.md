@@ -8,7 +8,7 @@ include:
 - ai-summary
 ---
 
-# 毕业.旅行
+# 毕业.旅行.日本
 > From 2023.6.19 to 2023.6.27 in Japan
 
 <style>

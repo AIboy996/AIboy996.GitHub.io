@@ -1,6 +1,6 @@
 ---
 tags:
-- blog
+- Calculus
 include:
 - math
 ---

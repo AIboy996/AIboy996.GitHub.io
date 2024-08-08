@@ -64,9 +64,10 @@ nav:
     - NAS:
       - Note/NAS/index.md
       - Note/NAS/domain.md
+      - Note/NAS/wol.md
       - Note/NAS/media.md
-      - Note/NAS/overleaf.md
       - Note/NAS/nodemation.md
+      - Note/NAS/self-hosted-overleaf.md
     - Nintendo Switch:
       - Note/NS/crack.md
       - Note/NS/stream.md
@@ -86,8 +87,6 @@ nav:
       - Blog/2024/fudan.md
       - Blog/2024/career.md
       - Blog/2024/travel_to_hk.md
-      - Blog/2024/self-hosted-overleaf.md
-      - Blog/2024/wol.md
       - Blog/2024/nomoney.md
       - Blog/2024/no_argmax.md
       - Blog/2024/envelope.md
@@ -100,7 +99,6 @@ nav:
       - Blog/2023/bloom.md
       - Blog/2023/name.md
       - Blog/2023/graduation_pics.md
-      - Blog/2023/recall_high_school_math.md
       - Blog/2023/travel_to_japan.md
       - Blog/2023/thesis.md
       - Blog/2023/intern2.md
@@ -110,10 +108,13 @@ nav:
       - Blog/2023/intern.md
     - 2022:
       - Blog/2022/2022_summary.md
+    - 2021:
+      - Blog/2021/travel_to_chengdu.md
     - 2020:
       - Blog/2020/2020_summary.md
       - Blog/2020/school.md
     - 2019:
+      - Blog/2019/2019_memory.md
       - Blog/2019/2019_summary.md
   - Python:
     - Python/index.md
@@ -226,6 +227,7 @@ nav:
       - SomeMath/real/gamma_func.md
       - 习题:
         - SomeMath/real/problems/a_limit.md
+        - SomeMath/real/problems/recall_high_school_math.md
     - 复分析:
       - SomeMath/complex/why_complex.md
       - SomeMath/complex/constructible_number.md

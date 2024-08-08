@@ -1,10 +1,10 @@
 ---
-tags:
-- About
+title: yangzhang's Site
 hide:
+- comments
+- feedback
 - tags
 - edit
-- feedback
 ---
 
 # 🎉

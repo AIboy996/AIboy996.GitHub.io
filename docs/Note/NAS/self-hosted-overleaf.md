@@ -1,11 +1,11 @@
 ---
 tags:
-- blog
 - 折腾
 - Docker
+- NAS
 ---
 
-# 自托管Overleaf服务器
+# 自建Overleaf
 
 最近在更新之前写的[高中数学讲义](../../../Project/high_school_math/)，气人的是讲义的页数多起来之后Overleaf就一直编译超时。
 

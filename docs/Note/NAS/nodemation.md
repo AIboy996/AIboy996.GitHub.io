@@ -4,7 +4,7 @@ tags:
 - 折腾
 ---
 
-# 自动化
+# 自动化Workflow
 
 使用[n8n](https://n8n.io/)：a powerful workflow automation tool。
 

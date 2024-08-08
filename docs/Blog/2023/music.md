@@ -1,6 +1,7 @@
 ---
 tags:
 - blog
+- 音乐
 ---
 
 # 曲中有真意
@@ -125,6 +126,13 @@ tags:
 这首歌和《最好的我们》链接了我初中最美好的一段记忆。
 
 也是正因为这首歌，我把茉茉天空所有的歌都找来放到了歌单里，不时就找出来听一听。可惜他们后来不再活跃了，几年过去了也没听说有新的专辑。
+
+## 真心英雄
+> 高考
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27901965&auto=0&height=66"></iframe>
+
+**江苏高考广播**唯一指定歌曲，在考场上这样一首歌确实是非常可以给人力量的。
 
 ## 凤凰花开的路口
 > 毕业

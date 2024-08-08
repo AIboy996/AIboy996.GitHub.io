@@ -1,7 +1,5 @@
 ---
 title: yangzhang's Site
-tags:
-- About
 hide:
 - comments
 - feedback

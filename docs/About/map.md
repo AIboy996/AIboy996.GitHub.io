@@ -1,6 +1,6 @@
 ---
 tags:
-- 旅游
+- 旅行
 - About
 hide:
 - toc

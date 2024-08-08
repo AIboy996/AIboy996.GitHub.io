@@ -1,7 +1,6 @@
 ---
 tags:
 - blog
-- Annual
 creation_date: "2020.08.04"
 revision_date: "2020.08.04"
 ---
