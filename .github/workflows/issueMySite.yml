@@ -38,3 +38,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
           projectName: githubio
           directory: '.'
+          branch: main
