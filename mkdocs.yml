@@ -11,9 +11,7 @@ validation:
     # 为了i18n插件能正常工作，站内跳转使用相对链接
     unrecognized_links: ignore
 theme:
-  font:
-    # 可以区分1、I和l的衬线字体
-    text: Noto Sans SC
+  font: false
   name: material
   custom_dir: overrides
   logo: assets/images/summation.png

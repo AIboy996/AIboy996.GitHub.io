@@ -14,10 +14,10 @@ plugins:
       languages:
         - locale: zh
           default: true
-          name: 简体中文
+          name: zh
           build: true
         - locale: en
-          name: English
+          name: en
           build: true
           nav_translations:
               正式的简历: Resume
