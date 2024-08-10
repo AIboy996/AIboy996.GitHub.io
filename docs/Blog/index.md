@@ -28,13 +28,17 @@ title: 胡言乱语
 
     心宽体健养天年，不是神仙，胜似神仙。
 
-## [闲言碎语](https://whisper.yangz.site)
-> 这是一个类似微博的东西
-<figure markdown>
+## 闲言碎语
+> 这是一个类似微博的东西: <https://whisper.yangz.site>
 
-[![](assets/2024-08-07-15-29-48.png){width=600 nozoom}](https://whisper.yangz.site)
-
-</figure>
+<iframe
+  id="whisper"
+  title="闲言碎语"
+  height="400"
+  width="100%"
+  style="border:none;"
+  src="https://whisper.yangz.site">
+</iframe>
 
 
 ## 最近更新的博客
