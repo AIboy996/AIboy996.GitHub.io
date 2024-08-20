@@ -1,6 +1,8 @@
 ---
 tags:
+- NAS
 - 折腾
+- 计算机网络
 ---
 
 # Wake on LAN & WAN
