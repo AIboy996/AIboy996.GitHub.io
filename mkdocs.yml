@@ -89,9 +89,15 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: https://t.me/onsdriver
       name: Telegram | @onsdriver
+    - icon: material/brush
+      link: https://plt.yangz.site
+      name: plt画廊
     - icon: fontawesome/solid/list-check
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
+    - icon: material/plex
+      link: https://plex.yangz.site
+      name: Plex实况
     - icon: fontawesome/solid/message
       link: https://whisper.yangz.site
       name: 微博客

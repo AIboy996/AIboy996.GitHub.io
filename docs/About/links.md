@@ -5,6 +5,11 @@ hide:
 - comments
 ---
 
+## 我的
+- [追番列表](https://bangumi.tv/anime/list/759154/do)
+- [Plex实况](https://plex.yangz.site)
+- [微博客](https://whisper.yangz.site)
+
 ## 友链
 
 - [刘原冶](https://henrylau7.github.io/)
