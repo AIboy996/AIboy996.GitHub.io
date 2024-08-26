@@ -7,7 +7,7 @@ nav:
     - 点亮的地图: About/map.md
     - 正式的简历: About/resume.html
     - About/log.md
-    - 兴趣: About/hobby.md
+    - 兴趣爱好: About/hobby.md
     - About/links.md
   - Note:
     - Note/index.md
@@ -108,17 +108,17 @@ nav:
       - Blog/2023/curriculum.md
       - Blog/2023/intern.md
     - 2022:
-      - Blog/2022/2022_memory.md
+      - Blog/2022/reply_2022.md
       - Blog/2022/2022_summary.md
     - 2021:
-      - Blog/2021/2021_memory.md
+      - Blog/2021/reply_2021.md
       - Blog/2021/travel_to_chengdu.md
     - 2020:
-      - Blog/2020/2020_memory.md
+      - Blog/2020/reply_2020.md
       - Blog/2020/2020_summary.md
       - Blog/2020/school.md
     - 2019:
-      - Blog/2019/2019_memory.md
+      - Blog/2019/reply_2019.md
       - Blog/2019/2019_summary.md
   - Python:
     - Python/index.md
