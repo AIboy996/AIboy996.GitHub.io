@@ -1,6 +1,7 @@
 ---
 tags:
   - 时间序列
+  - Algebra
 include:
 - math
 ---

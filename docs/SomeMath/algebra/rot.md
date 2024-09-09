@@ -1,6 +1,6 @@
 ---
 tags:
-  - 线性代数
+  - Algebra
 include:
 - math
 ---

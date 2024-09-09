@@ -234,13 +234,15 @@ nav:
         - SomeMath/real/problems/recall_high_school_math.md
     - 复分析:
       - SomeMath/complex/why_complex.md
-      - SomeMath/complex/constructible_number.md
     - 线性代数:
       - SomeMath/algebra/linear_differential_equation.md
       - SomeMath/algebra/rot.md
     - 初等数论:
       - SomeMath/number_theory/divisible.md
       - SomeMath/number_theory/modulo.md
+    - 抽象代数:
+      - SomeMath/algebra/field.md
+      - SomeMath/algebra/constructible_number.md
     - 概率论:
       - SomeMath/prob/Montmort.md
       - SomeMath/prob/conditional_expectation.md
