@@ -52,6 +52,7 @@ nav:
       - Note/Mac/index.md
       - Note/Mac/zsh.md
       - Note/Mac/sketchybar.md
+      - Note/Mac/hammerspoon.md
     - Manim:
       - Note/manim/hello.md
     - MkDocs:

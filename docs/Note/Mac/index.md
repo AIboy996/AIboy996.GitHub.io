@@ -9,6 +9,7 @@ tags:
 
 - [终端配置](./zsh/)（iTerm2+zsh）
 - [菜单栏配置](./sketchybar/)（sketchybar+yabai）
+- [快捷键配置](./hammerspoon/)（hammerspoon）
 
 相关的配置文件保存在我的[dotfiles仓库](https://github.com/AIboy996/dotfiles)。
 

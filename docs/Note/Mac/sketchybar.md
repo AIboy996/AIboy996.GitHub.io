@@ -7,7 +7,7 @@ tags:
 # sketchybar+yabai
 > 相关的配置文件保存在我的[dotfiles仓库](https://github.com/AIboy996/dotfiles)。主要参照FelixKratz的[dotfiles](https://github.com/FelixKratz/dotfiles)。
 
-使用sketchybar+yabai来替代mac原生的菜单栏：
+使用[sketchybar](https://github.com/FelixKratz/SketchyBar)+[yabai](https://github.com/koekeishiya/yabai)来替代mac原生的菜单栏：
 
 ![type:video](./assets/2024-05-27.mov)
 
