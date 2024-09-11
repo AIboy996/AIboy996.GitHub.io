@@ -21,6 +21,12 @@ nav:
       - Note/Fudan/campus.md
       - Note/Fudan/fdulife.md
       - Note/Fudan/script.md
+    - 我用Mac:
+      - Note/Mac/index.md
+      - Note/Mac/zsh.md
+      - Note/Mac/sketchybar.md
+      - Note/Mac/hammerspoon.md
+      - Note/Mac/applescript.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
@@ -48,11 +54,6 @@ nav:
       - Note/Shell/linux.md
       - Note/Shell/man.md
       - Note/Shell/ssh.md
-    - Mac:
-      - Note/Mac/index.md
-      - Note/Mac/zsh.md
-      - Note/Mac/sketchybar.md
-      - Note/Mac/hammerspoon.md
     - Manim:
       - Note/manim/hello.md
     - MkDocs:
