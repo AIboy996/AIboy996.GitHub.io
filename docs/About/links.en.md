@@ -11,8 +11,9 @@ hide:
 - [Yang-xijie's Homepage](https://yang-xijie.github.io/)
 - [Yihui's Homepage](https://yihui.org/)
 - [Chen's Blog](https://blog.chenyyds.com/)
-- [William Zhu's Homepage](https://williamzhu01.github.io/william-circle.github.io/)
+- [Yinghua Zhu's Homepage](https://yinghuazhu.github.io/)
 - [Zhou Zhang's Homepage](https://zhangzhou.site/)
+- [Zishu's Blog](https://zishu.me/)
 
 ## Maybe Useful
 

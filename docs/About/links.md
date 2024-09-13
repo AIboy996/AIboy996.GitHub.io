@@ -16,8 +16,9 @@ hide:
 - [杨希杰](https://yang-xijie.github.io/)
 - [谢益辉](https://yihui.org/)
 - [老陳网志](https://blog.chenyyds.com/)
-- [朱英华](https://williamzhu01.github.io/william-circle.github.io/)
+- [朱英华](https://yinghuazhu.github.io/)
 - [张舟](https://zhangzhou.site/)
+- [子舒](https://zishu.me/)
 
 ## 或许有用
 
