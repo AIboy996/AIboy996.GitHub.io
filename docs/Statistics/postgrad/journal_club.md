@@ -10,6 +10,14 @@ Journal Club是我导组织的论文分享会，我偶尔也会上去分享一�
 ??? info "PPT绘制工具？"
     下面的PPT都是借助[Marp](https://marp.app/)绘制，源文件为Markdown，使用主题为[Beam](https://rnd195.github.io/marp-community-themes/theme/beam.html)。
 
+## 2024-09-21
+
+- **Shared Paper**: *Generative Image Dynamics*
+- **Publication**: CVPR 2024
+- **Keywords**: Diffusion, Generative model, FFT
+
+<iframe width=100% height=500 src="../slides/2024-09-21_张杨_Generative_Image_Dynamics.html"></iframe>
+
 ## 2024-05-18
 
 - **Shared Paper**: *KAN: Kolmogorov–Arnold Networks*
