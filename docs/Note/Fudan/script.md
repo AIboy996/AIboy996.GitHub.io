@@ -6,6 +6,16 @@ tags:
 
 # 复旦的自动化生活
 
+<figure markdown>
+
+[![aiboy996/fudan_spider - GitHub](https://gh-card.dev/repos/aiboy996/fudan_spider.svg?fullname=)](https://github.com/aiboy996/fudan_spider)
+
+</figure>
+
+!!! info "2024-09-25 最新实现"
+    我已经把这个脚本放到了GitHub上，利用GitHub actions实现了自动化。
+
+
 ## UIS
 众所周知，复旦几乎所有的服务都通过统一身份认证（UIS）来授权。所以如果你想写点脚本自动化完成一些工作，首先就需要完成自动化UIS。
 
