@@ -83,6 +83,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2024:
+      - Blog/2024/xiaoxia.md
       - Blog/2024/cj2024.md
       - Blog/2024/travel_to_xiamen.md
       - Blog/2024/chat.md
