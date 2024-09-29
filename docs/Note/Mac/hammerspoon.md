@@ -99,5 +99,4 @@ end)
 
 优雅！
 
-## TBD
-Hammerspoon的更多功能有待开发。
+TBC:Hammerspoon的更多功能有待开发。

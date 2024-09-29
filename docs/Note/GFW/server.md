@@ -18,4 +18,4 @@ tags:
 
 ## 安装trojan-go
 
-TBC: trojan-go
+TBC:trojan-go
