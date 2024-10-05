@@ -27,7 +27,7 @@ tags:
 
 另外一方面，作为一个网络工具、它实在是有点流氓。网上喷它的帖子还是很多的[^1]。
 
-我之前也发现我的Mac有一个常驻进程，一搜才发现就是Easy Connect的服务：
+我之前也发现我的Mac有一个常驻进程，一搜才发现就是EasyConnect的服务，很多人都吐槽过：
 !!! quote "Lufs's Blog：EasyConnect你想干甚？"
     > from <https://blog.isteed.cc/post/fuck-easyconnect-on-macos/>
     
@@ -106,7 +106,7 @@ Host example
 ![](assets/2024-10-05-01-59-21.png)
 
 这个也是很方便的。
-> 据我观察，致命的校内软件：**旦夕**就是用了这个服务来实现宿舍电费、教务通知、教室空位等内网信息的查询。
+> 据我观察，知名的校内软件：**旦夕**就是用了这个服务来实现宿舍电费、教务通知、教室空位等内网信息的查询。
 
 [^1]: 例如知乎：[sangfor文件如何彻底删除？](https://www.zhihu.com/question/333699380)
 [^2]: 代码来自：[将 Sangfor EasyConnect 校园 VPN 关进 Docker 里](https://naiv.fun/Ops/sangfor-in-docker.html)，又是一个在骂Easy Connect的
