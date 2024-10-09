@@ -21,9 +21,9 @@ tags:
 
 ### 万恶的EasyConnect
 
-然后这个客户端并不是很好用。
+然而这个客户端并不是很好用。
 
-一方面他会强制接管所有的流量，开了之后有些基于局域网的软件就没法用了（例如LocalSend）。
+一方面它会强制接管所有的流量，开了之后有些基于局域网的软件就没法用了（例如LocalSend）。
 
 另外一方面，作为一个网络工具、它实在是有点流氓。网上喷它的帖子还是很多的[^1]。
 
@@ -50,19 +50,19 @@ tags:
 
 </figure>
 
-按照它的文档，只需要一行代码[^2]就可以在命令行中开启一个Proxy服务器了：
+按照文档，只需要一行代码[^2]就可以在命令行中开启一个Proxy服务器了：
 
 ```bash
 touch ~/.easyconn # 创建一个文件用于存放持久化身份验证信息
-docker run -d\
+docker run -it --name easy \
     --device /dev/net/tun \
     --cap-add NET_ADMIN \
     -v $HOME/.easyconn:/root/.easyconn \
-    -p 127.0.0.1:1080:1080 \ # socks5 proxy
-    -p 127.0.0.1:8888:8888 \ # http proxy
+    -p 1080:1080 \ # socks5 proxy
+    -p 8888:8888 \ # http proxy
     -e EC_VER=7.6.7 \
-    -e CLI_OPTS="-d stuvpn.fudan.edu.cn -u USERNAME -p PASSWORD"\
-    hagb/docker-easyconnect:cli
+    -e CLI_OPTS="-d stuvpn.fudan.edu.cn -u USERNAME -p PASSWORD" \
+    hagb/docker-easyconnect:cli \
 ```
 
 然后就可以使用docker容器提供的proxy服务器了：
@@ -87,7 +87,7 @@ Host example
 ```
 注意这里的`c:\Program Files\Git`是我的Git安装路径。
 
-MacOS就可以直接使用`nc`命令了：
+MacOS和Linux则可以使用`nc`命令：
 ```bash title="MacOS配置" hl_lines="5"
 Host example
     HostName 1.1.1.1
