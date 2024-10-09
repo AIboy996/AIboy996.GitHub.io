@@ -3,6 +3,7 @@ tags:
 - NAS
 - 折腾
 - 计算机网络
+title: WOL
 ---
 
 # Wake on LAN & WAN

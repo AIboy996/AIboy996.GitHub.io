@@ -66,6 +66,7 @@ nav:
       - Note/mkdocs/plugin_dev.md
     - NAS:
       - Note/NAS/index.md
+      - Note/NAS/windows.md
       - Note/NAS/domain.md
       - Note/NAS/wol.md
       - Note/NAS/media.md

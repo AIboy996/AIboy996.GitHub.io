@@ -120,3 +120,45 @@ TLD 的另一个目的是帮助分类和传达域名的目的。每个 TLD 都�
 - SOA 记录 - 存储域的管理信息。
 - SRV 记录 - 指定用于特定服务的端口。
 - PTR 记录 - 在反向查询中提供域名。
+
+## DDNS
+> DDNS i.e. Dynamic DNS，动态域名解析
+
+如果你有一个静态的IP地址，那么只需要在DNS服务商那里配置好解析记录就可以了。
+
+然而国内实际情况是，很多时候我们只有一个动态的IPv4地址，这时候可以通过DDNS服务来自动保持`域名<-->IP`的映射。
+
+ddns-go就是一个很好用的软件：
+<figure markdown>
+[![](https://gh-card.dev/repos/jeessy2/ddns-go.svg)](https://github.com/jeessy2/ddns-go)
+</figure>
+
+- 支持Mac、Windows、Linux系统，支持ARM、x86架构
+- 支持的域名服务商 
+    - 阿里云 
+    - 腾讯云 
+    - Dnspod 
+    - Cloudflare 
+    - 华为云 
+    - Callback 
+    - 百度云 
+    - Porkbun 
+    - GoDaddy 
+    - Namecheap 
+    - NameSilo 
+    - Dynadot
+- 支持接口/网卡/命令获取IP
+- 支持以服务的方式运行
+- 默认间隔5分钟同步一次
+- 支持同时配置多个DNS服务商
+- 支持多个域名同时解析
+- 支持多级域名
+- 网页中配置，简单又方便，默认勾选禁止从公网访问
+- 网页中方便快速查看最近50条日志
+- 支持Webhook通知
+- 支持TTL
+- 支持部分DNS服务商传递自定义参数，实现地域解析/多IP等功能
+
+当然你也可以使用路由器自带的DDNS功能，只不过我的路由器比较垃圾，支持的DNS服务商比较少：
+
+![](assets/2024-10-09-22-52-03.png)
