@@ -4,7 +4,7 @@ tags:
  - Linux
 ---
 
-# Manual for Shell
+# Shell
 
 ## 什么是Shell
 

@@ -5,35 +5,91 @@ tags:
 ---
 
 # SSH
-SSH全称Secure Shell，是一种加密的网络传输协议。
 
-!!! quote "什么是 Secure Shell (SSH) 协议？"
-    > from <https://www.cloudflare.com/zh-cn/learning/access-management/what-is-ssh/>
+## 什么是SSH
 
-    Secure Shell (SSH) 协议是一种通过不安全网络向计算机**安全发送命令**的方法。SSH 使用加密技术对设备之间的连接进行验证和加密。SSH 还可以实现**隧道传输**或**端口转发**，这是指数据包可以穿越原本无法穿越的网络。 SSH 通常用于远程控制服务器、管理基础设施和传输文件。
+> from <https://www.cloudflare.com/zh-cn/learning/access-management/what-is-ssh/>
 
-## 远程连接
+Secure Shell (SSH) 协议是一种通过不安全网络向计算机**安全发送命令**的方法。SSH 使用加密技术对设备之间的连接进行验证和加密。SSH 还可以实现**隧道传输或端口转发**，这是指数据包可以穿越原本无法穿越的网络。 SSH 通常用于远程控制服务器、管理基础设施和传输文件。
 
-我们知道[Shell](../man)是人机交互的接口。而SSH就实现了一个远程访问的、安全的Shell。
+也就是说SSH有两大功能：
+
+- 远程Shell
+- 端口转发
+
+## 远程Shell
+
+我们知道[Shell](../man)是人机交互的接口。而SSH就实现了一个远程访问的、安全的Shell。可以通过远程连接，向计算机发送指令。
 
 和所有的网络应用一样，SSH需要服务端和客户端配合使用，使用最多的就是[OpenSSH](https://www.openssh.com/)。
 
-### 安装服务端
-Ubuntu为例，参考<https://ubuntu.com/server/docs/openssh-server>
+我们先来介绍OpenSSH服务端和客户端软件的安装。
 
-在服务器上安装服务端：
-```bash
+### Linux
+对于Linux系统我们Ubuntu为例，参考[官方的文档](https://ubuntu.com/server/docs/openssh-server)。
+
+实际上非常简单，直接使用包管理器来安装即可：
+```sh title="Ubuntu安装OpenSSH"
 sudo apt install openssh-server
+sudo apt install openssh-client # 一般情况下这是Ubuntu系统附带的，不用手动安装
 ```
-然后就可以查看`sshd`服务的状态了：
+
+安装完成之后就会自动注册`ssh`服务，开启一个`sshd`守护进程。
+
+我们可以用`systemctl`查看`sshd`的状态：
 ```bash
 sudo systemctl status sshd.service
 ```
 
-Windows的在[下面](#windows-ssh)。
+此时我们也可以使用`ssh`客户端来连接其他ssh服务器了，例如：
 
-### 配置服务端
-openssh默认的配置文件是`/etc/ssh/sshd_config`，我们可以使用文本编辑器修改一些配置。
+<div class='console'>
+
+```console
+$ ssh root@192.168.31.223
+root@192.168.31.223's password:
+Linux yangz 6.8.4-2-pve #1 SMP PREEMPT_DYNAMIC PMX 6.8.4-2 (2024-04-10T17:36Z) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Oct  5 15:15:09 2024
+root@yangz:~#
+
+```
+
+</div>
+
+连接成功之后会开启一个Shell，我们就可以正常使用系统了。
+
+!!! question "如何修改SSH登录时的默认Shell？"
+
+    如果你懒得改任何的配置，可以通过在ssh命令后加命令参数的方式来手动打开一个Shell：
+
+    例如`bash`
+    ```bash
+    ssh root@192.168.31.223 "bash"
+    ```
+    再如`powershell`
+    ```bash
+    ssh root@192.168.31.223 "powershell"
+    ```
+
+    在Linux和MacOS上，这里的默认Shell可以通过`chsh`命令来实现。相关的信息都保存在`/etc/passwd`文件中。这个我们[之前提到过](../../Shell/linux/#_4)。
+
+    在Windows上需要[修改注册表](https://learn.microsoft.com/zh-cn/windows-server/administration/OpenSSH/openssh-server-configuration#configuring-the-default-shell-for-openssh-in-windows)：
+    ```ps1
+    New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH"`
+        -Name DefaultShell`
+        -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"`
+        -PropertyType String -Force
+    ```
+    
+
+OpenSSH服务端默认的配置文件是`/etc/ssh/sshd_config`，我们可以使用文本编辑器修改一些配置。
 
 例如：
 
@@ -80,69 +136,68 @@ DESCRIPTION
 sudo systemctl restart sshd.service
 ```
 
-### 安装客户端
+### MacOS
+我们实际上不需要做任何操作，MacOS内置了SSH的客户端和服务端。在终端即可直接使用`ssh`、`ssh-keygen`等客户端工具。
 
-在MacOS和Linux上，ssh客户端应该是内置的。当然你可以手动安装最新的版本：
+服务端默认不开启，需要在[设置中打开“远程登录”](https://support.apple.com/zh-cn/guide/mac-help/mchlp1066/14.0/mac/14.0)：
 
-```bash title="MacOS"
+![](assets/2024-10-07-22-36-22.png)
+
+打开之后就可以远程访问Mac了。
+
+MacOS上OpenSSH服务端的默认配置文件也是`/etc/ssh/sshd_config`，和Linux完全一致，不再赘述。
+
+如果需要特定的版本，也我们使用Homebrew来安装：
+```bash title="MacOS安装OpenSSH"
 brew install openssh
 ```
 
-```bash title="Ubuntu"
-sudo apt install openssh-client
-```
+安装完之后应该可以使用下面这些工具（包含客户端和服务端）：
 
-安装完之后应该可以使用这些工具：
 - Remote operations are done using `ssh`, `scp`, and `sftp`.
 - Key management with `ssh-add`, `ssh-keysign`, `ssh-keyscan`, and `ssh-keygen`.
 - The service side consists of `sshd`, `sftp-server`, and `ssh-agent`.
 
-Windows需要手动安装，参考[Windows 终端中的 SSH](https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/ssh)：
+### Windows
+
+Windows需要手动安装，可以参考[微软的教程](https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/ssh)：
 
 ![](https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/media/ssh/ssh-optionalfeature.png)
 
-<p id="windows-ssh"></p>
+可以同时安装OpenSSH Server和Client。安装完了之后，Windows也会注册sshd服务（但是不一定会直接启动这个服务），我们可以去服务页面手动开启：
 
-同时可以安装OpenSSH Server。安装完了之后，Windows也会开启sshd服务，我们就可以用ssh远程访问Windows了。
+- 先用搜索功能（快捷键：++win+s++）打开“服务”管理器
+    ![](assets/2024-10-07-22-41-30.png)
 
-Windows的OpenSSH服务配置文件是
+- 然后找到OpenSSH服务，启动即可（建议设置为自启）
+    ![](assets/2024-10-07-22-44-34.png)
+
+然后我们就可以用ssh远程访问Windows了。
+
+Windows的OpenSSH服务端配置文件是：
 ```
 %programdata%\ssh\sshd_config
 ```
 
-不过我修改了这个文件似乎不生效。建议直接去修改
+默认配置保存在：
 
 ```
 %systemdrive%\Windows\System32\openssh\sshd_config_default
 ```
+如果你忘掉了修改前的配置文件，可以随时回滚。
 
-安装完了之后就可以访问服务器啦：
-
-<div class='console'>
-
-```console
-$ ssh root@192.168.31.223
-root@192.168.31.223's password:
-Linux yangz 6.8.4-2-pve #1 SMP PREEMPT_DYNAMIC PMX 6.8.4-2 (2024-04-10T17:36Z) x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Sat Oct  5 15:15:09 2024
-root@yangz:~#
-
-```
-
-</div>
 
 ### 无密码访问
 
-ssh可以基于非对称密钥来实现无密码访问。我们之前介绍过[RSA算法](../../SomeMath/number_theory/modulo/#rsa)就是最常见的非对称加密算法。
+ssh可以基于非对称密钥来实现无密码访问。我们之前介绍过[RSA算法](../../../SomeMath/number_theory/modulo/#rsa)就是最常见的非对称加密算法。
 
-首先我们要生成一个RSA密钥对：
+能使用无密码登录的**前提**是服务端配置（`sshd_config`文件）允许我们使用公钥验证身份：
+```bash
+PubkeyAuthentication yes
+```
+确认开启之后，我们再进行客户端的配置。
+
+首先我们要生成一个密钥对(我这里选择RSA算法)：
 
 <div class='console'>
 
@@ -175,7 +230,7 @@ The key's randomart image is:
 
 </div>
 
-于是我们就得到了公钥`id.pub`和私钥`id`：
+于是我们就得到了成对的公钥`id.pub`和私钥`id`：
 
 ```bash
 $ cat id.pub | cut -c-50
@@ -187,9 +242,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDA72SQFicV6K
 ssh-copy-id -i ./id.pub username@ipaddress -p port
 ```
 
-按照提示输入账号密码进行身份验证，之后就可以通过RSA密钥无密码访问了。
+按照提示输入账号密码进行身份验证，之后就可以通过RSA私钥实现无密码访问了。
 
-如果没有ssh-copy-id这个工具我们也可以手动把公钥粘贴到服务端的`~/.ssh/authorized_keys`文件中。每一行是一个公钥，该文件的访问权限需要是700：
+如果没有`ssh-copy-id`这个工具（即便有，**这个工具对Windows的SSH服务器也不生效**，因为它是依赖Linux的`echo`等工具的）我们也可以手动把公钥粘贴到服务端的`~/.ssh/authorized_keys`文件中。
+
+> FYI：Windows中的`C:\Users\username`，相当于Linux的用户家目录`~`，ssh客户端的配置文件都在家目录下的`.ssh`文件夹内。
+
+每一行是一个公钥，该文件的访问权限需要是700：
 
 ```bash title="文件权限修改" hl_lines="3"
 chmod go-w ~/
@@ -197,9 +256,47 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-### 配置客户端
+!!! warning "Windows上管理员用户的无密码登录"
+    > 参考官方教程：<https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement>
 
-每次都输入`ssh root@192.168.31.223 -p 22`太麻烦了，我们可以通过配置文件（`~/.ssh/config`）记录服务器的信息：
+    **这是个大坑**。
+
+    上述的过程在Windows只对非管理员用户生效。
+
+    这是因为，Windows的`sshd_config`默认情况下会有一个配置：
+
+    ```bash
+    Match Group administrators
+        AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+    ```
+    也就是说，对于管理员用户，需要把公钥添加到指定的目录：
+    ```
+    __PROGRAMDATA__/ssh/administrators_authorized_keys
+    ```
+
+    你可以注释掉这个配置，或者把公钥添加到他指定的目录。
+
+    这样才能实现管理员用户的无密码登录。
+
+    当然，官方的教程也给出了全自动的脚本：
+    ```ps1
+    # Get the public key file generated previously on your client
+    $authorizedKey = Get-Content -Path $env:USERPROFILE\.ssh\id_ed25519.pub
+
+    # Generate the PowerShell to be run remote that will copy the public key file generated previously on your client to the authorized_keys file on your server
+    $remotePowershell = "powershell Add-Content -Force -Path $env:ProgramData\ssh\administrators_authorized_keys -Value '''$authorizedKey''';icacls.exe ""$env:ProgramData\ssh\administrators_authorized_keys"" /inheritance:r /grant ""Administrators:F"" /grant ""SYSTEM:F"""
+
+    # Connect to your server and run the PowerShell using the $remotePowerShell variable
+    ssh username@domain1@contoso.com $remotePowershell
+    ```
+
+    但我实测这个脚本没什么卵用，最后还是注释掉了`Match Group administrators`这个选项。
+
+
+
+### 客户端配置文件
+
+每次都输入`ssh root@192.168.31.223 -p 22`这样的配置太麻烦了，我们可以通过配置文件（`~/.ssh/config`）记录服务器的信息：
 
 ```bash title="~/.ssh/config"
 Host My_debian_server
@@ -269,6 +366,8 @@ DESCRIPTION
 
 ## 端口转发
 > 部分转载自<https://www.lixueduan.com/posts/linux/07-ssh-tunnel/>
+
+接下来我们介绍SSH的第二大功能：端口转发。
 
 ### 本地转发/远程转发
 SSH 端口转发自然需要 SSH 连接，而 SSH 连接是有方向的，从 SSH Client 到 SSH Server 。而我们的应用也是有方向的，比如需要连接 MySQL Server 时，MySQL Server 自然就是 Server 端，我们应用连接的方向也是从应用的 Client 端连接到应用的 Server 端。如果这两个连接的方向一致，那我们就说它是本地转发。而如果两个方向不一致，我们就说它是远程转发。
