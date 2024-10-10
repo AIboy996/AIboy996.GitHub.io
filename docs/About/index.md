@@ -15,13 +15,13 @@ include:
 ## 本站的几个板块
 
 - [**About**](../About/)：当前板块，提供网站基本信息。
-- [**Note**](../Note/)：笔记板块，放一些杂七杂八（主要是计算机技术）的教程、笔记。
-- [**Blog**](../Blog/)：博客板块，记录日常的博客。
+- [**Note**](../Note/)（胡编乱造）：笔记板块，放一些杂七杂八（主要是计算机技术）的教程、笔记。
+- [**Blog**](../Blog/)（胡言乱语）：博客板块，记录日常的博客。
 - [**Python**](../Python/)：Python板块，包含基础、高级语法知识和各种库的使用。
 - [**Go**](../Go/)：Go语言。
-- [**Project**](../Project/)：项目板块，本人的一些开源项目。
-- [**Statistics**](../Statistics/)：鄙人专业相关。
-- [**SomeMath**](../SomeMath/)：数学相关。
+- [**Project**](../Project/)（胡作非为）：项目板块，本人的一些开源项目。
+- [**Statistics**](../Statistics/)（几乎处处）：鄙人专业相关。
+- [**SomeMath**](../SomeMath/)（胡数八道）：数学相关。
 - [**PlayGround**](../Playground/)：用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](../Tags/)：👇
 
@@ -30,6 +30,8 @@ include:
 ### AI摘要
 
 使用[mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary)插件实现的AI摘要功能。会在某些文章最开头添加一个AI生成的摘要。
+
+> FYI: 本站（正文中）的外链都会加上这样的小箭头：[github](https://github.com)
 
 暂时有两种AI模型可用：
 
@@ -47,13 +49,12 @@ include:
 !!! question "新功能：标签云"
 	本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../)和[Tags](../Tags/)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
 
-### <s>搜索</s>（弃用）
+### <s>搜索</s>（已弃用）
 
 
 <s>
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
 </s>
-> FYI: 本站（正文中）的外链都会加上这样的小箭头：[github](https://github.com)
 
 <s>
 目前理论上是不支持中文搜索（`lunr.zh.js`）的，仅支持英语和日文（`lunr.ja.js`）搜索，但是基于日语的支持实际上也可以搜到一些汉字。
@@ -81,11 +82,15 @@ include:
 
 
 ### 页面反馈
+> 需要使用Cookies
+
 本站有反馈功能（由[Google Analytics](https://analytics.google.com/analytics/web/)驱动，需要有cookie许可才能正常运作），在页面底部有`Was this page helpful?`的选项。
 
 如果你觉得该页面很好，可以留下🙂；如果您发现该页面有任何问题，可以选择🙁，并且填写相应的表单（会自动跳转到**GitHub的issue板块**）。
 
 ### 评论
+> 需要使用Cookies
+
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
 
 ### RSS
@@ -104,7 +109,7 @@ include:
 - 周五：<span style="background-color:#e92063;padding:5px;margin:3px;color:white;">pink</span>
 - 周六：<span style="background-color:#7e56c2;padding:5px;margin:3px;color:white;">deep purple</span>
 
-### 多语言
+### 多语言（i18n）
 > 等我有空了，会做某些文章的英语版，mkdocs matreials本身也是很好地支持了多语言的。
 
 本站使用[mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)实现多语言的支持，如果没有对应的语言默认展示中文的页面。
