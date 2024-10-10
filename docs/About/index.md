@@ -99,7 +99,7 @@ include:
 你也可以从[更新序订阅源](../feed_rss_updated.xml)（*不推荐，我偶尔会更新旧的文档，这会导致顺序混乱*）获取按照文档**更新日期**排序的订阅。
 
 ### 颜色彩蛋
-随着星期几的变化，本站的主题色会随之改变：
+从周日到周六，本站的主题色会每天切换（暗示我的心情）：
 
 - 周日：<span style="background-color:#ab47bd;padding:5px;margin:3px;color:white;">purple</span>
 - 周一：<span style="background-color:#757575;padding:5px;margin:3px;color:white;">grey</span>
