@@ -176,6 +176,8 @@ nav:
   - Go:
     - Go/index.md
     - Go/why_go.md
+    - Go/go_project.md
+    - Go/go_semicolons.md
   - Project:
     - Project/index.md
     - Project/qrq.md
