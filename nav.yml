@@ -12,8 +12,6 @@ nav:
   - Note:
     - Note/index.md
     - Note/software.md
-    - 读书:
-      - Note/Reading/wuyingdeng.md
     - 爬虫:
       - Note/Spider/antispider.md
     - 复旦:
@@ -22,12 +20,16 @@ nav:
       - Note/Fudan/fdulife.md
       - Note/Fudan/script.md
       - Note/Fudan/stuvpn.md
+    - 书影音:
+      - Note/Reading/wuyingdeng.md
+      - Note/Reading/summer.md
     - 我用Mac:
       - Note/Mac/index.md
       - Note/Mac/zsh.md
       - Note/Mac/sketchybar.md
       - Note/Mac/hammerspoon.md
       - Note/Mac/applescript.md
+      - Note/Mac/quicklook.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md

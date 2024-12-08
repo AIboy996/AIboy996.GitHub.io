@@ -1,6 +1,7 @@
 ---
 tags:
 - Mac
+- Shell
 ---
 
 # AppleScript
@@ -28,6 +29,7 @@ Generic Scripting System
 
 当然你也可以使用[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)作为脚本语言。不过我们这里主要使用AppleScript，因为它会提供很多独特、便捷的关键字函数。
 
+## 例子
 一个最简单的AppleScript例子是：
 
 <div class='console'>
@@ -35,6 +37,18 @@ Generic Scripting System
 ```console
 $ osascript -e 'get current date'
 date 2024年9月11日 星期三 15:29:30
+
+```
+
+</div>
+
+再比如你可以通过AppleScript来查询软件的包名（Bundle ID）
+<div class='console'>
+
+```console
+$ osascript -e 'id of app "wechat"'
+com.tencent.xinWeChat
+
 
 ```
 
