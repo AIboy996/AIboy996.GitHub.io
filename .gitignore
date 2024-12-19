@@ -5,5 +5,4 @@
 *.ipynb
 .checkpoints
 *.egg-info
-build
 __pycache__
