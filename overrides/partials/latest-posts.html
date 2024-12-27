@@ -10,7 +10,8 @@
     <details class="quote">
     <summary>{{ page.meta.git_creation_date_localized }} posted: {{ page.title }}</summary>
     <br>
-    {{ page.content }}
+    <!-- 对图片强制把相对路径转换为绝对路径 -->
+    {{ page.content | replace("../assets/", (page.url | url) + "../" + "assets/")}}
     <br>
     <a href="{{ page.url | url }}">👉阅读原文</a>
     {% if page.meta and page.meta.git_revision_date_localized %}
