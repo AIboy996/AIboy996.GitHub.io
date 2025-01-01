@@ -93,6 +93,8 @@ nav:
       - Note/vscode/modify_extension.md
   - Blog:
     - Blog/index.md
+    - 2025:
+      - Blog/2025/tjupt.md
     - 2024:
       - Blog/2024/2024_recall.md
       - Blog/2024/remove_tooth.md
