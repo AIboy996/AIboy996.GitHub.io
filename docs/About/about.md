@@ -4,6 +4,9 @@ tags:
 - About
 ---
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+
+
 ## 本站的来龙去脉
 
 ??? info "为了折叠"
@@ -95,6 +98,7 @@ tags:
         <form action="https://bark.yangz.site" method="get" target="_blank">
             <input type="text" name="title" placeholder="标题" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
             <input type="text" name="body" placeholder="正文（可留空）" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAA420QdUWVuMyAvd"></div>
             <button type="submit"  style="border: 1px solid #ccc; padding: 5px; margin: 5px;">发送</button>
             </form>
     </div>
