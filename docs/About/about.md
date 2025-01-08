@@ -89,3 +89,19 @@ tags:
 - 💬 本人微信号的`md5`码：`2868c4b14f63153fc45995d6f54c4750`
     - （如果你成功破解了请务必告诉我！我会很开心~赏咖啡一杯）
 <!-- hint：我的微信号是纯英文字母构成的 -->
+
+??? warning "直接给我发消息"
+    <div align="center">
+        <form action="https://bark.yangz.site" method="get" target="_blank">
+            <input type="text" name="title" placeholder="标题" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
+            <input type="text" name="body" placeholder="正文（可留空）" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
+            <button type="submit"  style="border: 1px solid #ccc; padding: 5px; margin: 5px;">发送</button>
+            </form>
+    </div>
+
+    > 本消息即时送达，请勿轰炸，不要逼我求你😭
+    
+    <figure markdown>
+     ![](assets/2025-01-08-18-00-57.png){width=300}
+    </figure>
+    

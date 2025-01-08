@@ -60,8 +60,8 @@ nav:
           - Note/Leetcode/148.md
       - 回溯:
           - Note/Leetcode/051.md
-    - Linux & Shell:
-      - Note/Shell/linux.md
+    - Linux:
+      - Note/Shell/index.md
       - Note/Shell/man.md
       - Note/Shell/ssh.md
     - Manim:

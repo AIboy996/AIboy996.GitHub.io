@@ -2,6 +2,7 @@
 tags:
  - Shell
  - Linux
+ - SSH
 ---
 
 # SSH
