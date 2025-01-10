@@ -5,8 +5,14 @@ hide:
 - comments
 ---
 
+## My
+- [Bangumi](https://bangumi.tv/anime/list/759154/do)
+- [Plex Avtivity](https://plex.yangz.site)
+- [Micro-blog](https://whisper.yangz.site)
+
 ## Exchange Links
 
+- [Lvista's Blog](https://lvista.github.io/)
 - [Henry Liu](https://henrylau7.github.io/)
 - [Yang-xijie's Homepage](https://yang-xijie.github.io/)
 - [Yihui's Homepage](https://yihui.org/)

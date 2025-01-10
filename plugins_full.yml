@@ -25,6 +25,7 @@ plugins:
               我的电子设备们: "My Devices"
               点亮的地图: "Travelled To"
               兴趣爱好: "Hobbies"
+              本站编年史: "Changelog"
   ## jupyter文件支持 ########## 暂时移除此功能
   #- mkdocs-jupyter
   # 视频插件

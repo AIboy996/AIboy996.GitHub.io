@@ -12,6 +12,7 @@ hide:
 
 ## 友链
 
+- [程智超](https://lvista.github.io/)
 - [刘原冶](https://henrylau7.github.io/)
 - [杨希杰](https://yang-xijie.github.io/)
 - [谢益辉](https://yihui.org/)
