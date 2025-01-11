@@ -2,6 +2,8 @@
 title: 关于本站和我的一切
 tags: 
 - About
+include:
+- live
 ---
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
@@ -49,6 +51,13 @@ tags:
     详细的建站教程参见文章[用mkdocs搭建个人网站](../../Note/mkdocs/practice/)
 
 ## 我是谁？
+
+> 下面是实况照片哦！PC端鼠标Hover即可触发、移动端长按即可触发～
+
+<div style="width: 40%; margin: auto;">
+<live-photo-element src="../assets/me.png" caption="绿帽子、黑皮肤、干嘴唇、满脸痘、爱喝甜水、总推眼镜">
+</live-photo-element>
+</div>
 
 我认为自述是非常困难的，面对不同的人、在不同的场合、不同的人生阶段我大概都会给出不同的答案。索性我就放弃写这么一段话了，在下面列举了一些我的关键词算作替代。
 

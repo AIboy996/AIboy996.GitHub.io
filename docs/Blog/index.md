@@ -1,6 +1,8 @@
 ---
 template: custom_blog.html
 title: 胡言乱语
+include:
+- live
 ---
 
 # 博客📕
