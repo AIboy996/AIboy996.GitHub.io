@@ -8,4 +8,8 @@ but is high on our list for inclusion in a future release. -->
 {% if page.meta and ("math" in page.meta.include) %}
 <script src="{{ 'assets/javascripts/math.js' | url }}"></script>
 {% endif %}
+<!-- 增加live photo的支持 -->
+{% if page.meta and ("live" in page.meta.include) %}
+<script src="{{ 'assets/javascripts/live.js' | url }}"></script>
+{% endif %}
 {% endblock %}

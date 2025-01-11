@@ -8,6 +8,10 @@ tags:
 
 ## 2025
 
+- 2025年01月11日
+    - 增加了[Live Photo功能](https://github.com/DavidAnson/live-photo-web)，现在本站可以插入实况照片啦！
+    - 注：实况照片会在右上角显示`live`，电脑上鼠标Hover即可触发、手机上需要长按触发～
+
 - 2025年01月08日
     - 增加了Text Me的功能，可以通过bark给我发送即时消息
 
