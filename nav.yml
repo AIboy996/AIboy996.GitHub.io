@@ -30,6 +30,10 @@ nav:
       - Note/Mac/hammerspoon.md
       - Note/Mac/applescript.md
       - Note/Mac/quicklook.md
+    - Data Analysis:
+      - Note/DataAnalysis/index.md
+      - Note/DataAnalysis/ab_test.md
+      - 假设检验: ../../Statistics/specialized/statistical_inference/hypothesis_testing/
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
@@ -220,7 +224,9 @@ nav:
       - Statistics/basic/Probability_Theory_and_Mathematical_Statistics.md
       - Statistics/basic/Statistical_Software.md
     - 专业课:
-      - Statistics/specialized/Statistical_Inference.md
+      - 统计推断:
+        - Statistics/specialized/statistical_inference/index.md
+        - Statistics/specialized/statistical_inference/hypothesis_testing.md
       - Statistics/specialized/Regression_Analysis.md
       - Statistics/specialized/Time_Series_Analysis.md
       - Statistics/specialized/Sampling.md
