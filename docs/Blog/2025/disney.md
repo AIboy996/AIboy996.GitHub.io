@@ -1,6 +1,7 @@
 ---
 tags:
 - blog
+- 留影
 include:
 - live
 ---
