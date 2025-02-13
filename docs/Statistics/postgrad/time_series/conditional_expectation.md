@@ -1,6 +1,7 @@
 ---
 tags:
-  - 概率论
+- Statistics
+- ML
 include:
 - math
 ---

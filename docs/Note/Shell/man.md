@@ -240,5 +240,3 @@ $ cat /etc/hosts
 ```
 
 </div>
-
-TBC:Linux常用命令

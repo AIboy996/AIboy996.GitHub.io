@@ -68,7 +68,6 @@ nav:
       - Note/Shell/index.md
       - Note/Shell/man.md
       - Note/Shell/redirect.md
-      - Note/Shell/pipe.md
       - Note/Shell/script.md
       - Note/Shell/ssh.md
       - Note/Shell/sftp.md
@@ -224,17 +223,22 @@ nav:
     - 专业课:
       - 统计推断:
         - Statistics/specialized/statistical_inference/index.md
+        - Statistics/specialized/statistical_inference/point_estimator.md
         - Statistics/specialized/statistical_inference/hypothesis_testing.md
       - Statistics/specialized/Regression_Analysis.md
       - Statistics/specialized/Time_Series_Analysis.md
       - Statistics/specialized/Sampling.md
-      - Statistics/specialized/Multivariate_Analysis.md
+      - 多元分析:
+        - Statistics/specialized/multivariate_analysis/index.md
+        - Statistics/specialized/multivariate_analysis/dim_reduction.md
       - Statistics/specialized/Stochastic_Process.md
       - Statistics/specialized/Categorical_Data_Analysis.md
       - Statistics/specialized/Nonparametric_Statistics.md
     - 选修课:
       - Statistics/elective/Computational_Statistics.md
-      - Statistics/elective/Data_Mining.md
+      - 数据挖掘:
+        - Statistics/elective/Data_Mining/index.md
+        - Statistics/elective/Data_Mining/bagging_and_boosting.md
       - Statistics/elective/Algorithm.md
       - Statistics/elective/DSPython.md
       - Statistics/elective/Database.md
@@ -245,10 +249,21 @@ nav:
       - Statistics/postgrad/Probability_Theory.md
       - Statistics/postgrad/Convex_Optimization.md
       - Statistics/postgrad/Numerical_Analysis.md
-      - Statistics/postgrad/Time_Series.md
+      - 时间序列:
+        - Statistics/postgrad/time_series/index.md
+        - Statistics/postgrad/time_series/conditional_expectation.md
+        - Statistics/postgrad/time_series/kalman_filter.md
       - Statistics/postgrad/Deep_Learning.md
       - Statistics/postgrad/Reinforcement_Learning.md
-      - Statistics/postgrad/journal_club.md
+      - 统计计算:
+        - Statistics/postgrad/computational_statistics/index.md
+        - Statistics/postgrad/computational_statistics/varitional_inference.md
+        - Statistics/postgrad/computational_statistics/mcmc.md
+      - Statistics/postgrad/risk_management.md
+      - Journal Club:
+        - Statistics/postgrad/journal_club/index.md
+        - Statistics/postgrad/journal_club/diffusion.md
+        - Statistics/postgrad/journal_club/llm.md
     - 个人兴趣:
       - Statistics/opencourse/cs61.md
       - Statistics/opencourse/csapp.md
@@ -278,7 +293,5 @@ nav:
       - SomeMath/algebra/constructible_number.md
     - 概率论:
       - SomeMath/prob/Montmort.md
-      - SomeMath/prob/conditional_expectation.md
-      - SomeMath/prob/kalman_filter.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md

@@ -1,6 +1,7 @@
 ---
 tags:
 - Statistics
+- ML
 include:
 - math
 ---
