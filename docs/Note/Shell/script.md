@@ -66,30 +66,6 @@ zsh各种花里胡哨的语法、命令和特性在fish上肯定没法完全兼�
 `bash`完全兼容了`sh`。
 
 ### Bourne Shell Builtins
-sh的内置只有这些：
-
-```
-:
-.
-break
-cd
-continue
-eval
-exec
-exit
-export
-getopts
-hash
-pwd
-readonly
-return
-shift
-test
-times
-trap
-umask
-unset
-```
 
 ### Bash Builtin Commands
 

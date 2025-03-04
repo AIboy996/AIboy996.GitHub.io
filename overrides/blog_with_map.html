@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+
+
+<!-- Sidebars -->
+{% block site_nav %}
+
+<!-- Navigation -->
+{% if nav %}
+{% if page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "navigation" in page.meta.hide %}
+{% endif %}
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            {% include "partials/nav.html" %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Table of contents -->
+{% if "toc.integrate" not in features %}
+{% if page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "toc" in page.meta.hide %}
+{% endif %}
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            {% include "partials/toc.html" %}
+        </div>
+        <div id="map-container" style="border: 1px dashed #797979;margin: 30px 0px 0px 30px;">
+            <object id="blog-map" type="image/svg+xml" data="../assets/blog_map.svg" width="300" height="300"
+            style="overflow: hidden;"></object>
+        </div>
+    </div>
+</div>
+{% endif %}
+<script src="../assets/blog_map.js"></script>
+{% endblock %}

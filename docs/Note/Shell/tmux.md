@@ -54,3 +54,7 @@ tmux kill-session -t $session_name
 这些就够用了！
 
 至于tmux花里胡哨的分屏、切换终端等操作，我一般是不用的。那太过geek了，我还是离不开触控板和鼠标。
+
+```
+error connecting to /tmp/tmux-1000/default (No such file or directory)
+```

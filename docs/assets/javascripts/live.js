@@ -28,7 +28,19 @@ class LivePhotoElement extends HTMLElement {
       const src = value || this.attributes.src.value;
       if (this.img && this.video) {
         this.img.src = src;
-        this.video.src = src.replace(/\.[^\.]+$/, ".mp4");
+        const videoSrc = src.replace(/\.[^\.]+$/, ".mp4");
+        // Check if the video source exists, if not, try .mov
+        fetch(videoSrc, { method: 'HEAD' })
+          .then(response => {
+            if (response.ok) {
+              this.video.src = videoSrc;
+            } else {
+              this.video.src = src.replace(/\.[^\.]+$/, ".mov");
+            }
+          })
+          .catch(() => {
+            this.video.src = src.replace(/\.[^\.]+$/, ".mov");
+          });
       }
     }
     if (name === "caption") {
@@ -51,7 +63,7 @@ class LivePhotoElement extends HTMLElement {
     badge.style.borderRadius = "3px";
     badge.style.fontSize = "12px";
     badge.style.fontWeight = "bold";
-    badge.style.zIndex = "10";
+    // badge.style.zIndex = "10";
 
     // Create a wrapper to hold the image and the badge
     const wrapper = document.createElement("div");
@@ -64,7 +76,7 @@ class LivePhotoElement extends HTMLElement {
     this.video = document.createElement("video");
     this.video.playsInline = true;
     this.video.loop = true;
-    this.video.muted = true;
+    // this.video.muted = true;
     this.video.style.display = "none";
     this.video.preload = "auto"; // Enable prefetching
     this.appendChild(this.video);
