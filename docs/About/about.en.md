@@ -18,12 +18,11 @@ include:
 
 ## WHO I AM?
 
-> This is a live photo, **hover** to trigger on PC and **long press** to trigger on touch screen
+<figure markdown>
 
-<div style="width: 40%; margin: auto;">
-<live-photo-element src="/About/assets/me.png" caption="绿帽子、黑皮肤、干嘴唇、满脸痘、爱喝甜水、总推眼镜">
-</live-photo-element>
-</div>
+![](assets/me.png){width=200px}
+
+</figure>
 
 I believe writing a self-introduction is quite challenging. Depending on the audience, the setting, or the stage of life I’m in, I might give completely different answers. So, I’ve decided to skip writing such a section altogether and instead listed some keywords about myself below as a substitute.
 
