@@ -362,51 +362,6 @@ mermaid是简单强大的流程图绘制工具，具体细节参见它的的官�
 
 还有很多其他可用的参数，具体可以参考Adobe的文档：[Parameters for Opening PDF Files](https://pdfobject.com/pdf/pdf_open_parameters_acro8.pdf)。
 
-## <s>Google广告</s>（deprecated）
-当然，本站仅有此处嵌入了广告，仅做测试使用。
-### 展示广告
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
-     crossorigin="anonymous"></script>
-<!-- ads -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2353855407972667"
-     data-ad-slot="9380940342"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-### 文章内嵌广告
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2353855407972667"
-     data-ad-slot="8348998079"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-### 多重广告
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-2353855407972667"
-     data-ad-slot="4381832902"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-### 其他广告
-
-……
-
 
 [^1]: [markdown官方教程：markdownguide.org](https://www.markdownguide.org/)
 
