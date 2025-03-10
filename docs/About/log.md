@@ -4,11 +4,13 @@ tags:
 ---
 
 # 本站编年史
+
 > 倒序
 
 ## 2025
+
 - 2025年03月09日
-    - 本站在部分页面放置了[Google Adsense](https://adsense.google.com/start/)广告。
+    - 在部分页面放置了[Google Adsense](https://adsense.google.com/start/)广告。
 - 2025年03月07日
     - 增加GitHub workflow自动更新`ai-summary-cache`的功能。
     - 如果cache文件被修改了，会由bot自动提交一个commit。
@@ -41,8 +43,8 @@ tags:
     - 增加新特性：外链（例如<https://bilibili.yangz.site>）会在新的标签页中打开。
 
 - 2024年06月01日
-    - 更换文本字体为：`Noto Sans SC`。<p style="font-family:Roboto">mkdocs-material默认字体为Roboto：1lI</p> 
-    - 解决了1lI的区分问题。 
+    - 更换文本字体为：`Noto Sans SC`。<p style="font-family:Roboto">mkdocs-material默认字体为Roboto：1lI</p>
+    - 解决了1lI的区分问题。
 
 - 2024年05月25日
     - 修改了`overrides/partials/source-file.html`，优先使用meta标签中的创建、修改时间。

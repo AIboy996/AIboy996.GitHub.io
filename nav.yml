@@ -30,6 +30,11 @@ nav:
       - Note/Mac/hammerspoon.md
       - Note/Mac/applescript.md
       - Note/Mac/quicklook.md
+    - Algorithm:
+      - Note/Algorithm/index.md
+      - 笔试:
+        - Note/Algorithm/interview/0309_ant.md
+        - Note/Algorithm/interview/0309_pdd.md
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
@@ -295,5 +300,6 @@ nav:
       - SomeMath/algebra/constructible_number.md
     - 概率论:
       - SomeMath/prob/Montmort.md
+      - SomeMath/prob/crit.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
