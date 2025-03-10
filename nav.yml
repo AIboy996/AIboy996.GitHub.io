@@ -34,6 +34,7 @@ nav:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
       - 假设检验: ../../Statistics/specialized/statistical_inference/hypothesis_testing/
+      - Note/DataAnalysis/sql.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md

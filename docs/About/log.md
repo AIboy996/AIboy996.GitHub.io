@@ -7,7 +7,14 @@ tags:
 > 倒序
 
 ## 2025
-
+- 2025年03月09日
+    - 本站在部分页面放置了[Google Adsense](https://adsense.google.com/start/)广告。
+- 2025年03月07日
+    - 增加GitHub workflow自动更新`ai-summary-cache`的功能。
+    - 如果cache文件被修改了，会由bot自动提交一个commit。
+- 2025年03月04日
+    - 增加了旅行专用的[博客模板](/Blog/2025/travel_to_japan2/)。
+    - 可以放置一个[自定义svg地图](https://simplemaps.com/custom/country)在目录下方，随着页面滚动聚焦旅行的地点。
 - 2025年01月11日
     - 增加了[Live Photo功能](https://github.com/DavidAnson/live-photo-web)，现在本站可以插入实况照片啦！
     - 注：实况照片会在右上角显示`live`，电脑上鼠标Hover即可触发、手机上需要长按触发～

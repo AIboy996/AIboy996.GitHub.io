@@ -42,7 +42,7 @@ QQ-轻松做自己。意义不明的slogan
 ### [Open Broadcaster Software](https://obsproject.com/)
 唯一指定录屏软件
 ### [Snipaste](https://www.snipaste.com/)
-截图软件，beta版本也已经支持MacOS了
+唯一指定截图软件，beta版本也已经支持MacOS了
 ### [Telegram](https://telegram.org/)
 a new era of messaging
 ### [Iriun Webcam](https://iriun.com/)
@@ -67,6 +67,8 @@ ssh、sftp客户端
 功能强大的种子下载客户端
 ### [坚果云](https://www.jianguoyun.com/)
 非付费用户，配合Zotero用的，是个还不错的云盘，主打办公
+### [夸克网盘](https://pan.quark.cn/)
+88vip包含它的会员，速度还可以，搭配alist看个电影不成问题
 ### [Alist](https://alist.nn.ci/)
 云盘集成，webdav映射
 ### [CasaOS](https://casaos.io/)
@@ -77,6 +79,11 @@ ssh、sftp客户端
 同上
 ### [Pocket](https://getpocket.com/)
 稍后再读
+### [SimpleTex](https://simpletex.cn/)
+mathpix的免费替代，识别率还算可以。重点是免费啊！！推荐~
+### [ChatGPT](https://openai.com/chatgpt/desktop/)
+无须多言的效率神器，在mac上很早就推出了客户端、win平台最近也上了。
+
 
 ## Windows
 ### [Chocolatey](https://chocolatey.org/)
@@ -148,6 +155,9 @@ Fast, light, simple Docker & Linux on macOS
 菜单栏软件，替代原生的菜单栏
 ### [MacTeX](https://www.tug.org/mactex/)
 TeX for Mac
+### Screen Mirror
+> 如果用AirPlay，那么只能在全屏的情况下投影
+可以把ipad的屏幕内容投影到Mac上。
 
 ## iOS/iPadOS
 > 部分支持MacOS
