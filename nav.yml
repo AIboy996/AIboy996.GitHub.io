@@ -32,9 +32,13 @@ nav:
       - Note/Mac/quicklook.md
     - Algorithm:
       - Note/Algorithm/index.md
+      - Note/Algorithm/diffusion.md
+      - Note/Algorithm/llm.md
+      - Note/Algorithm/reinforce.md
       - 笔试:
         - Note/Algorithm/interview/0309_ant.md
         - Note/Algorithm/interview/0309_pdd.md
+        - Note/Algorithm/interview/0312_wechat.md
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
@@ -269,10 +273,7 @@ nav:
         - Statistics/postgrad/computational_statistics/varitional_inference.md
         - Statistics/postgrad/computational_statistics/mcmc.md
       - Statistics/postgrad/risk_management.md
-      - Journal Club:
-        - Statistics/postgrad/journal_club/index.md
-        - Statistics/postgrad/journal_club/diffusion.md
-        - Statistics/postgrad/journal_club/llm.md
+      - Statistics/postgrad/journal_club/journal_club.md
     - 个人兴趣:
       - Statistics/opencourse/cs61.md
       - Statistics/opencourse/csapp.md

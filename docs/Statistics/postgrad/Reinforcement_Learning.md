@@ -29,3 +29,7 @@ Intro to AI.
 ### [Stanford CS234](https://web.stanford.edu/class/cs234/index.html)
 
 Reinforcement Learning.
+
+### [动手强化学习](https://hrl.boyuai.com/)
+
+从基础到前沿。

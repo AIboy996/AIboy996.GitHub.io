@@ -1,8 +1,8 @@
 ---
 tags:
-- ML
+- Alg
 - Papers
 ---
 
-# LLM
+# Diffusion Models
 
