@@ -92,12 +92,12 @@ extra:
     - icon: fontawesome/solid/list-check
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
-    - icon: material/calculator-variant
+    - icon: material/function-variant
       link: https://aiboy996.github.io/dzd/
       name: 高中数学典中典
-    - icon: material/brush
-      link: https://plt.yangz.site
-      name: plt画廊
+    # - icon: material/brush
+    #   link: https://plt.yangz.site
+    #   name: plt画廊
     - icon: material/plex
       link: https://plex.yangz.site
       name: Plex实况
