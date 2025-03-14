@@ -117,6 +117,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2025:
+      - Blog/2025/pi.md
       - Blog/2025/travel_to_japan2.md
       - Blog/2025/disney.md
       - Blog/2025/tjupt.md
@@ -284,6 +285,7 @@ nav:
   - SomeMath:
     - SomeMath/index.md
     - 数学分析:
+      - SomeMath/real/pi.md
       - SomeMath/real/rational_numbers_countable.md
       - SomeMath/real/taylor_expand/taylor_expand.md
       - SomeMath/real/derivatives.md
