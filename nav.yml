@@ -35,8 +35,7 @@ nav:
       - Note/Algorithm/diffusion.md
       - Note/Algorithm/llm.md
       - Note/Algorithm/reinforce.md
-      - 笔试:
-        - Note/Algorithm/interview/0309_ant.md
+      - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
     - Data Analysis:
@@ -46,6 +45,9 @@ nav:
       - 数据库:
         - Note/DataAnalysis/rel_db.md
         - Note/DataAnalysis/sql.md
+      - Interview:
+        - Note/DataAnalysis/interview/0309_ant.md
+        - Note/DataAnalysis/interview/0314_byte.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
@@ -273,7 +275,7 @@ nav:
         - Statistics/postgrad/computational_statistics/varitional_inference.md
         - Statistics/postgrad/computational_statistics/mcmc.md
       - Statistics/postgrad/risk_management.md
-      - Statistics/postgrad/journal_club/journal_club.md
+      - Statistics/postgrad/journal_club.md
     - 个人兴趣:
       - Statistics/opencourse/cs61.md
       - Statistics/opencourse/csapp.md
