@@ -38,6 +38,7 @@ nav:
       - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
+        - Note/Algorithm/interview/0315_pdd.md
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
@@ -306,7 +307,8 @@ nav:
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
     - 概率论:
-      - SomeMath/prob/Montmort.md
+      - SomeMath/prob/37rule.md
       - SomeMath/prob/crit.md
+      - SomeMath/prob/Montmort.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
