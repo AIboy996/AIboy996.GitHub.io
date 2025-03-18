@@ -35,6 +35,9 @@ nav:
       - Note/Algorithm/diffusion.md
       - Note/Algorithm/llm.md
       - Note/Algorithm/reinforce.md
+      - Note/Algorithm/search.md
+      - Note/Algorithm/advertising.md
+      - Note/Algorithm/redommendation.md
       - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
@@ -46,6 +49,7 @@ nav:
       - 数据库:
         - Note/DataAnalysis/rel_db.md
         - Note/DataAnalysis/sql.md
+      - Note/DataAnalysis/hadoop.md
       - Interview:
         - Note/DataAnalysis/interview/0309_ant.md
         - Note/DataAnalysis/interview/0314_byte.md
