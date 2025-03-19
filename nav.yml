@@ -37,11 +37,16 @@ nav:
       - Note/Algorithm/reinforce.md
       - Note/Algorithm/search.md
       - Note/Algorithm/advertising.md
-      - Note/Algorithm/redommendation.md
+      - 推荐:
+        - Note/Algorithm/redommendation/index.md
+        - Note/Algorithm/redommendation/intro.md
+        - Note/Algorithm/redommendation/ItemCF.md
+        - Note/Algorithm/redommendation/Swing.md
       - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
         - Note/Algorithm/interview/0315_pdd.md
+        - Note/Algorithm/interview/0318_pdd.md
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
@@ -53,6 +58,7 @@ nav:
       - Interview:
         - Note/DataAnalysis/interview/0309_ant.md
         - Note/DataAnalysis/interview/0314_byte.md
+        - Note/DataAnalysis/interview/0319_ant.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
