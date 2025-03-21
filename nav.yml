@@ -21,6 +21,7 @@ nav:
       - Note/Fudan/script.md
       - Note/Fudan/stuvpn.md
     - 书影音:
+      - Note/Reading/huozhe.md
       - Note/Reading/wuyingdeng.md
       - Note/Reading/summer.md
     - 我用Mac:
@@ -50,7 +51,9 @@ nav:
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
-      - 假设检验: ../../Statistics/specialized/statistical_inference/hypothesis_testing/
+      - 因果推断:
+        - Note/DataAnalysis/casual/index.md
+        - Note/DataAnalysis/casual/simpson.md
       - 数据库:
         - Note/DataAnalysis/rel_db.md
         - Note/DataAnalysis/sql.md
@@ -59,6 +62,7 @@ nav:
         - Note/DataAnalysis/interview/0309_ant.md
         - Note/DataAnalysis/interview/0314_byte.md
         - Note/DataAnalysis/interview/0319_ant.md
+        - Note/DataAnalysis/interview/0321_byte.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
