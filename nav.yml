@@ -195,6 +195,7 @@ nav:
       - Python/StandardLibrary/os.md
       - Python/StandardLibrary/re.md
       - Python/StandardLibrary/time.md
+      - Python/StandardLibrary/fractions.md
     - 第三方库:
       - Python/ThirdPartyLibrary/package_management.md
       - Python/ThirdPartyLibrary/DIY.md

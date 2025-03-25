@@ -165,6 +165,7 @@ flowchart LR
     click re "./StandardLibrary/re/"
     click time "./StandardLibrary/time/"
     click doctest "./StandardLibrary/doctest/"
+    click fractions "./StandardLibrary/fractions/"
     %% 第三方库
     click 包管理 "./ThirdPartyLibrary/package_management/"
     click 自己写一个库 "./ThirdPartyLibrary/DIY/"
