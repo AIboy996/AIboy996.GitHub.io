@@ -36,7 +36,7 @@ img {
 实话说，我们俩还是太特种兵了。旅行的疲劳累积起来，感觉最后几天我的跟腱都要断了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-40-02.png)
+![](assets/2025-03-04-20-40-02.png)
 <figurecaption style="font-style: italic;">
 暴走
 </figurecaption>
@@ -57,7 +57,7 @@ FYI，我把有用的信息汇总在了下面，希望能帮到你。
 23年的毕业旅行家里支持了一万，这次则完全是做家教打工攒的钱💰。走这一遭，直接把我的小金库扬了😭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-20-13-26.png)
+![](assets/2025-03-03-20-13-26.png)
 <figurecaption style="font-style: italic;">
 钱包瞬间干瘪
 </figurecaption>
@@ -67,7 +67,7 @@ FYI，我把有用的信息汇总在了下面，希望能帮到你。
     一定要关注汇率，提前在手机银行上买好**日元现钞**。我是2月10号在银行现场买的外钞，结果汇率一坨。如果趁着过年期间人民币比较给力，提前买好日元现钞能省一百多块钱。
 
     <figure markdown>
-    ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-14-51-21.png)
+    ![](assets/2025-03-04-14-51-21.png)
     <figurecaption style="font-style: italic;">
         被抄底了😭
     </figurecaption>
@@ -184,14 +184,14 @@ Check in的方式是前台人工办理。值得一提的是，这家在临时外
 > 你别说，好像还真行。反正随便坐～新干线也很爽。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-20-46-23.png)
+![](assets/2025-03-03-20-46-23.png)
 <figurecaption style="font-style: italic;">
 小小一张卡纸，价值两千多块钱，丢了就没了😭
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-19-42.png)
+![](assets/2025-03-03-21-19-42.png)
 <figurecaption style="font-style: italic;">
 纯纯铁屁股
 </figurecaption>
@@ -216,7 +216,7 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
 实测，即便是在手机上开通的电子suica，也可以在车站用现金充值。并且也可以随时在线上用银联卡充值。总之就是非常方便：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-20-42-23.png)
+![](assets/2025-03-03-20-42-23.png)
 <figurecaption style="font-style: italic;">
 可爱小企鹅
 </figurecaption>
@@ -232,28 +232,28 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
     
     - JR全日本Pass（我们买的）
         <figure markdown>
-        ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-04-57.png)
+        ![](assets/2025-03-03-21-04-57.png)
         <figurecaption style="font-style: italic;">
                 也有一定的[不适用范围](https://japanrailpass.net/cn/about_jrp/route/)
         </figurecaption>
         </figure>
     - JR东日本Pass：
         <figure markdown>
-        ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-06-31.png)
+        ![](assets/2025-03-03-21-06-31.png)
         <figurecaption style="font-style: italic;">
                 乱！
         </figurecaption>
         </figure>
     - JR北海道Pass：
         <figure markdown>
-        ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-04-05.png)
+        ![](assets/2025-03-03-21-04-05.png)
         <figurecaption style="font-style: italic;">
                 这个还挺简单易懂的
         </figurecaption>
         </figure>
     - JR西日本、东海、四国和九州Pass（这几个我没研究）：
         <figure markdown>
-        ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-02-29.png)
+        ![](assets/2025-03-03-21-02-29.png)
         <figurecaption style="font-style: italic;">
                 乱！
         </figurecaption>
@@ -264,7 +264,7 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
     JR Pass如果要坐指定席，可以在网上/车站/观光案内所提前预定、取好票。我们在出发前就预定了一些，在取Pass的时候就把票都拿到手了：
 
     <figure markdown>
-    ![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-11-37.png)
+    ![](assets/2025-03-03-21-11-37.png)
     <figurecaption style="font-style: italic;">
         这么多票，一看就是铁屁股特种兵
     </figurecaption>
@@ -326,7 +326,7 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
 这次我拿的依然是**学生签**。可惜的是现在日本单次旅游签都改为电子签了，仪式感大大降低！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-20-27-48.png)
+![](assets/2025-03-03-20-27-48.png)
 <figurecaption style="font-style: italic;">
 我是护照，我想被贴纸
 </figurecaption>
@@ -348,7 +348,7 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
 除了这些，这次学到比较多的就是日本的行政体系啦（依据1947年施行的《地方自治法》）：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-32-33.png)
+![](assets/2025-03-03-21-32-33.png)
 <figurecaption style="font-style: italic;">
 一都、一道、两府、四十三县
 </figurecaption>
@@ -373,28 +373,28 @@ Pass之外的时间，为了方便坐车，我在Apple Pay上开通了suica。�
 这次我们在北海道、中部也见了不少。很多人在街头大声宣发，还收到了宣传材料：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-49-28.png)
+![](assets/2025-03-04-20-49-28.png)
 <figurecaption style="font-style: italic;">
 by.札幌有志素人会
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-56-39.png)
+![](assets/2025-03-04-20-56-39.png)
 <figurecaption style="font-style: italic;">
 这东西也有人反对？
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-57-07.png)
+![](assets/2025-03-04-20-57-07.png)
 <figurecaption style="font-style: italic;">
 日本共产党
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-58-11.png)
+![](assets/2025-03-04-20-58-11.png)
 <figurecaption style="font-style: italic;">
 天皇陛下万岁？
 </figurecaption>
@@ -407,7 +407,7 @@ by.札幌有志素人会
 结果发现根本不冷🤭下暴雪的时候尤其不冷，化雪的时候倒是冷一些，但感觉不如宿迁冷。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-48-47.png)
+![](assets/2025-03-03-21-48-47.png)
 <figurecaption style="font-style: italic;">
 收拾收拾，该出发了
 </figurecaption>
@@ -420,7 +420,7 @@ by.札幌有志素人会
 起了个大早，天还没亮就从学校出发。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-53-43.png)
+![](assets/2025-03-03-21-53-43.png)
 <figurecaption style="font-style: italic;">
 怪好看的
 </figurecaption>
@@ -429,7 +429,7 @@ by.札幌有志素人会
 二月十四刚好是情人节，也是开学注册的日子。然而学校的系统出了问题，我们一直注册不上，无奈只能先不管了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-50-40.png)
+![](assets/2025-03-03-21-50-40.png)
 <figurecaption style="font-style: italic;">
 开学注册失败
 </figurecaption>
@@ -440,14 +440,14 @@ by.札幌有志素人会
 在飞机上看了《名侦探柯南：百万美元的五棱星》，味同嚼蜡。现在的柯南毫无逻辑，完全的粉丝向作品以及北海道旅游宣传片。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-57-15.png)
+![](assets/2025-03-03-21-57-15.png)
 <figurecaption style="font-style: italic;">
 不过，平次&和叶 还是很甜啦
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-52-08.png)
+![](assets/2025-03-03-21-52-08.png)
 <figurecaption style="font-style: italic;">
 落地札幌新千岁机场
 </figurecaption>
@@ -456,21 +456,21 @@ by.札幌有志素人会
 在机场里吃了点东西，然后就直奔我们住的地方了。在电车上，我的手机突然定位漂移了，居然在学校。然后我就注册成功了😁
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-21-59-21.png)
+![](assets/2025-03-03-21-59-21.png)
 <figurecaption style="font-style: italic;">
 おいしい
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-00-39.png)
+![](assets/2025-03-03-22-00-39.png)
 <figurecaption style="font-style: italic;">
 好多雪，开心！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-11-38.png)
+![](assets/2025-03-03-22-11-38.png)
 <figurecaption style="font-style: italic;">
 我和华哥，笑嘻了
 </figurecaption>
@@ -479,7 +479,7 @@ by.札幌有志素人会
 放下行李，我们就直奔札幌市区了。大通公园完全没开放，似乎刚搞完一个活动在清理。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-23-12.png)
+![](assets/2025-03-03-22-23-12.png)
 <figurecaption style="font-style: italic;">
 你能看出来图里有个公园吗
 </figurecaption>
@@ -488,21 +488,21 @@ by.札幌有志素人会
 没一会儿就下雪了，超大的雪❄️：
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_4011.png" caption="平生仅见">
+<live-photo-element src="../assets/IMG_4011.png" caption="平生仅见">
 </live-photo-element>
 </div>
 
 哦对了，今天是情人节。市区的小情侣真多呀～我们随便逛了逛，然后吃了个饭就回去睡觉了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-20-59.png)
+![](assets/2025-03-03-22-20-59.png)
 <figurecaption style="font-style: italic;">
 可爱！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-22-00.png)
+![](assets/2025-03-03-22-22-00.png)
 <figurecaption style="font-style: italic;">
 晚饭吃了成吉思汗烤肉～
 </figurecaption>
@@ -517,14 +517,14 @@ by.札幌有志素人会
 五点渴醒，果然不能喝酒喝太多。七点又醒了因此，九点终于挣扎起床。出门看了石狩湾和附近的丰足神社。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-26-53.png)
+![](assets/2025-03-03-22-26-53.png)
 <figurecaption style="font-style: italic;">
 海就在楼下
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-28-09.png)
+![](assets/2025-03-03-22-28-09.png)
 <figurecaption style="font-style: italic;">
 白色鸟居真的很好看
 </figurecaption>
@@ -533,7 +533,7 @@ by.札幌有志素人会
 然后我们去了札幌市区，在中岛公园玩了玩雪。该说不说，大雪过后札幌市区到处都是雪白一片，没带墨镜真的有点受不了😭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-30-13.png)
+![](assets/2025-03-03-22-30-13.png)
 <figurecaption style="font-style: italic;">
 可爱小熊雪人
 </figurecaption>
@@ -542,14 +542,14 @@ by.札幌有志素人会
 路过了柯南电影里的表白圣地之一：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-31-01.png)
+![](assets/2025-03-03-22-31-01.png)
 <figurecaption style="font-style: italic;">
 札幌计时台
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-31-34.png)
+![](assets/2025-03-03-22-31-34.png)
 <figurecaption style="font-style: italic;">
 雪人可爱捏
 </figurecaption>
@@ -558,7 +558,7 @@ by.札幌有志素人会
 中午吃了汤咖哩，巨好吃😭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-32-10.png)
+![](assets/2025-03-03-22-32-10.png)
 <figurecaption style="font-style: italic;">
 各种蔬菜简直绝了😋
 </figurecaption>
@@ -567,14 +567,14 @@ by.札幌有志素人会
 下去我们去了圆山公园，逛了逛北海道神宫。
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_4157.png" caption="蓝天白云乌鸦">
+<live-photo-element src="../assets/IMG_4157.png" caption="蓝天白云乌鸦">
 </live-photo-element>
 </div>
 
 二百日元，为我的学业求了一支签：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-39-12.png)
+![](assets/2025-03-03-22-39-12.png)
 <figurecaption style="font-style: italic;">
 厚积薄发，加油～
 </figurecaption>
@@ -583,7 +583,7 @@ by.札幌有志素人会
 打卡札幌的伏见稻荷神社，雪中的连环鸟居别有风味。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-40-17.png)
+![](assets/2025-03-03-22-40-17.png)
 <figurecaption style="font-style: italic;">
 通往天国的门
 </figurecaption>
@@ -592,7 +592,7 @@ by.札幌有志素人会
 最后去了白色恋人工厂，可惜去的晚了点没体验自制巧克力。买了一些其他纪念品。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-41-28.png)
+![](assets/2025-03-03-22-41-28.png)
 <figurecaption style="font-style: italic;">
 白い恋人
 </figurecaption>
@@ -601,21 +601,21 @@ by.札幌有志素人会
 这个地方太适合小情侣来了😭，可惜我只有好哥们。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-00-34.png)
+![](assets/2025-03-03-23-00-34.png)
 <figurecaption style="font-style: italic;">
 缺位拍照
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-27-10.png)
+![](assets/2025-03-03-23-27-10.png)
 <figurecaption style="font-style: italic;">
 我的另外一半，你咋不来？
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-26-56.png)
+![](assets/2025-03-03-23-26-56.png)
 <figurecaption style="font-style: italic;">
 哦不对，来了
 </figurecaption>
@@ -626,7 +626,7 @@ by.札幌有志素人会
 晚上找了家水产店，炫了螃蟹：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-45-06.png)
+![](assets/2025-03-03-22-45-06.png)
 <figurecaption style="font-style: italic;">
 这个蟹粉香昏了
 </figurecaption>
@@ -635,7 +635,7 @@ by.札幌有志素人会
 吃完饭从札幌回钱函。我们居然再一次坐过站了，来到了十几公里外的朝里站。这个车站倒是有点意思，有一个奇怪的闸机：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-46-50.png)
+![](assets/2025-03-03-22-46-50.png)
 <figurecaption style="font-style: italic;">
 嗯，真是个奇怪的站台
 </figurecaption>
@@ -644,14 +644,14 @@ by.札幌有志素人会
 所幸，刚出车站就有一辆出租车停在了门口。日本打车初体验～
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-47-48.png)
+![](assets/2025-03-03-22-47-48.png)
 <figurecaption style="font-style: italic;">
 事后总觉得不是运气，司机？猎人！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-22-53-12.png)
+![](assets/2025-03-03-22-53-12.png)
 <figurecaption style="font-style: italic;">
 体验还不错
 </figurecaption>
@@ -666,7 +666,7 @@ by.札幌有志素人会
 早上先去札幌站取了JRpass，然后坐了札幌-小樽的特急。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-30-02.png)
+![](assets/2025-03-03-23-30-02.png)
 <figurecaption style="font-style: italic;">
 有没有机车侠知道这是什么列车
 </figurecaption>
@@ -675,7 +675,7 @@ by.札幌有志素人会
 到了小樽我们先去了天狗山：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-33-30.png)
+![](assets/2025-03-03-23-33-30.png)
 <figurecaption style="font-style: italic;">
 可爱天狗👺
 </figurecaption>
@@ -684,14 +684,14 @@ by.札幌有志素人会
 山上的中国人含量很高，感觉一半以上的人都在说中文。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-33-51.png)
+![](assets/2025-03-03-23-33-51.png)
 <figurecaption style="font-style: italic;">
 还有人在拍婚纱照，祝幸福～
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-35-05.png)
+![](assets/2025-03-03-23-35-05.png)
 <figurecaption style="font-style: italic;">
 情书！
 </figurecaption>
@@ -702,21 +702,21 @@ by.札幌有志素人会
 在市区沿着运河随便走了走。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-38-00.png)
+![](assets/2025-03-03-23-38-00.png)
 <figurecaption style="font-style: italic;">
 爱蓝天白云
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-38-45.png)
+![](assets/2025-03-03-23-38-45.png)
 <figurecaption style="font-style: italic;">
 打卡船见坡
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-39-15.png)
+![](assets/2025-03-03-23-39-15.png)
 <figurecaption style="font-style: italic;">
 还真能看见船坞
 </figurecaption>
@@ -725,7 +725,7 @@ by.札幌有志素人会
 中午饿的不行了，随便吃了一个味增拉面。结果意外的好吃！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-40-02.png)
+![](assets/2025-03-03-23-40-02.png)
 <figurecaption style="font-style: italic;">
 香的嘞
 </figurecaption>
@@ -734,7 +734,7 @@ by.札幌有志素人会
 吃完饭继续在市区转悠
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-40-24.png)
+![](assets/2025-03-03-23-40-24.png)
 <figurecaption style="font-style: italic;">
 八音盒店，可爱！
 </figurecaption>
@@ -743,7 +743,7 @@ by.札幌有志素人会
 差点就冲动消费买下这个可爱的八音盒了：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-40-59.png)
+![](assets/2025-03-03-23-40-59.png)
 <figurecaption style="font-style: italic;">
 🐷
 </figurecaption>
@@ -754,35 +754,35 @@ by.札幌有志素人会
 接下来去逛了超市，买了一些食材，准备回我们的民宿自己做一顿寿喜烧！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-42-24.png)
+![](assets/2025-03-03-23-42-24.png)
 <figurecaption style="font-style: italic;">
 🛒
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-43-19.png)
+![](assets/2025-03-03-23-43-19.png)
 <figurecaption style="font-style: italic;">
 三个苹果四十块钱，抢钱呐
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-43-40.png)
+![](assets/2025-03-03-23-43-40.png)
 <figurecaption style="font-style: italic;">
 买了一堆食材！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-43-58.png)
+![](assets/2025-03-03-23-43-58.png)
 <figurecaption style="font-style: italic;">
 🧑‍🍳
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-44-29.png)
+![](assets/2025-03-03-23-44-29.png)
 <figurecaption style="font-style: italic;">
 好吃！！
 </figurecaption>
@@ -795,14 +795,14 @@ by.札幌有志素人会
 早起，在钱函海岸走了走。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-42-31.png)
+![](assets/2025-03-04-15-42-31.png)
 <figurecaption style="font-style: italic;">
 很有感觉的楼梯
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-44-56.png)
+![](assets/2025-03-04-15-44-56.png)
 <figurecaption style="font-style: italic;">
 我爱大海
 </figurecaption>
@@ -811,7 +811,7 @@ by.札幌有志素人会
 在路上还捡到了一个北海道JR Pass，本来想放到车站的失物招领。但是我们走的比较匆忙，这个Pass又是最后一天了最后就没放。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-42-55.png)
+![](assets/2025-03-04-15-42-55.png)
 <figurecaption style="font-style: italic;">
 随机一个人又心碎了
 </figurecaption>
@@ -820,14 +820,14 @@ by.札幌有志素人会
 下面又是铁屁股环节，一路坐车到旭川：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-45-43.png)
+![](assets/2025-03-04-15-45-43.png)
 <figurecaption style="font-style: italic;">
 我的包和这个车的颜色还挺搭
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-46-31.png)
+![](assets/2025-03-04-15-46-31.png)
 <figurecaption style="font-style: italic;">
 旭川站修的真漂亮
 </figurecaption>
@@ -836,28 +836,28 @@ by.札幌有志素人会
 中午就随便吃了个快餐，在旭川站外的雪地（后来查了一下，是宫前公园，怪不得这么漂亮）玩了一会儿，然后直奔美瑛町。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-46-53.png)
+![](assets/2025-03-04-15-46-53.png)
 <figurecaption style="font-style: italic;">
 pepper lunch 还不错
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-47-36.png)
+![](assets/2025-03-04-15-47-36.png)
 <figurecaption style="font-style: italic;">
 情书同款躺雪地
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-52-06.png)
+![](assets/2025-03-04-15-52-06.png)
 <figurecaption style="font-style: italic;">
 哈哈哈
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-52-25.png)
+![](assets/2025-03-04-15-52-25.png)
 <figurecaption style="font-style: italic;">
 挂雪的树是真漂亮
 </figurecaption>
@@ -866,7 +866,7 @@ pepper lunch 还不错
 哦对了，素晴3要来啦！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-15-54-21.png)
+![](assets/2025-03-04-15-54-21.png)
 <figurecaption style="font-style: italic;">
 KonoSuba!
 </figurecaption>
@@ -875,16 +875,16 @@ KonoSuba!
 坐了电车又转了公交，我们终于来到了绝美的白须瀑布：
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_4679.png" caption="绝景" muted="false">
+<live-photo-element src="../assets/IMG_4679.png" caption="绝景" muted="false">
 </live-photo-element>
 </div>
 
 在空无一人的山顶复刻了情书的名场面（在天狗山人太多了，没好意思哈哈哈哈）：
 
-![type:video](http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_4718.mov)
+![type:video](assets/IMG_4718.mov)
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-03-37.png)
+![](assets/2025-03-04-16-03-37.png)
 <figurecaption style="font-style: italic;">
 好大的雪
 </figurecaption>
@@ -893,7 +893,7 @@ KonoSuba!
 看完瀑布我们就溜了，等车回JR站的时候发现全是中国人：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-04-03.png)
+![](assets/2025-03-04-16-04-03.png)
 <figurecaption style="font-style: italic;">
 是的，图里全是国人😭
 </figurecaption>
@@ -904,7 +904,7 @@ KonoSuba!
 然后我们就一路坐车来到了富良野，太晚了想看的景点已经关门，我们就随便走了走。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-08-25.png)
+![](assets/2025-03-04-16-08-25.png)
 <figurecaption style="font-style: italic;">
 蓝调时刻
 </figurecaption>
@@ -913,14 +913,14 @@ KonoSuba!
 路上偶遇了一个神社，暖色调的灯光在雪地里很美。好笑的是这家神社的御守和绘马居然是自助贩卖机出售的。日本人到底是有多爱自助贩卖机啊！！这样做神明同意吗？？
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-09-43.png)
+![](assets/2025-03-04-16-09-43.png)
 <figurecaption style="font-style: italic;">
 北真神社
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-10-34.png)
+![](assets/2025-03-04-16-10-34.png)
 <figurecaption style="font-style: italic;">
 御守自助贩卖机😂
 </figurecaption>
@@ -929,7 +929,7 @@ KonoSuba!
 晚饭，转了几家店。搞笑的是我们在一路问的时候，有一家店说他们上菜比较慢，可以去对面看看。不过我们还要赶回程的电车，实在没时间排队等吃饭了，最终去了居酒屋：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-16-48.png)
+![](assets/2025-03-04-16-16-48.png)
 <figurecaption style="font-style: italic;">
 还不错～
 </figurecaption>
@@ -950,7 +950,7 @@ KonoSuba!
 吃完饭我们就坐富良野线直奔旭川的酒店了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-33-36.png)
+![](assets/2025-03-04-16-33-36.png)
 <figurecaption style="font-style: italic;">
 华哥直接昏睡过去了
 </figurecaption>
@@ -964,7 +964,7 @@ KonoSuba!
 哦对了，今天是月曜日，记得准时收看《月曜から夜ふかし》哦：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-16-40-51.png)
+![](assets/2025-03-04-16-40-51.png)
 <figurecaption style="font-style: italic;">
 看不懂思密达
 </figurecaption>
@@ -979,7 +979,7 @@ KonoSuba!
 上午我们直奔旭山动物园，公交车开了好久才到，幸好有个座位。这趟公交车还挺特别，用的是木地板：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-01-58.png)
+![](assets/2025-03-04-17-01-58.png)
 <figurecaption style="font-style: italic;">
 是不是因为总是下雪？
 </figurecaption>
@@ -988,7 +988,7 @@ KonoSuba!
 旭山动物园里我最想看的就是企鹅散步啦：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-00-47.png)
+![](assets/2025-03-04-17-00-47.png)
 <figurecaption style="font-style: italic;">
 可爱！
 </figurecaption>
@@ -996,35 +996,35 @@ KonoSuba!
 
 大家进了动物园好像也都是直奔企鹅散步：
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-02-44.png)
+![](assets/2025-03-04-17-02-44.png)
 <figurecaption style="font-style: italic;">
 可爱！
 </figurecaption>
 </figure>
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_4869.png" caption="可爱！">
+<live-photo-element src="../assets/IMG_4869.png" caption="可爱！">
 </live-photo-element>
 </div>
 
 看完了企鹅散步，我们就在园里深度优先搜索。依次看了山羊🐐、绵羊🐑、猪🐷、大猩猩🦍、鹿🦌、蛇🐍、雕、卡皮巴拉博物馆（卡皮巴拉没上班）、猴子🐒、北极熊、企鹅、海豹🦭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-05-32.png)
+![](assets/2025-03-04-17-05-32.png)
 <figurecaption style="font-style: italic;">
 打卡～
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-08-49.png)
+![](assets/2025-03-04-17-08-49.png)
 <figurecaption style="font-style: italic;">
 猴脸是真的红啊
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-09-54.png)
+![](assets/2025-03-04-17-09-54.png)
 <figurecaption style="font-style: italic;">
 在睡觉？
 </figurecaption>
@@ -1052,7 +1052,7 @@ KonoSuba!
 午饭就在旭山动物园吃个了拉面：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-15-41.png)
+![](assets/2025-03-04-17-15-41.png)
 <figurecaption style="font-style: italic;">
 可爱！
 </figurecaption>
@@ -1061,7 +1061,7 @@ KonoSuba!
 吃完饭，出门就是旭山公园，我们上去爬了会儿山：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-16-59.png)
+![](assets/2025-03-04-17-16-59.png)
 <figurecaption style="font-style: italic;">
 山的那边，啥也没有
 </figurecaption>
@@ -1072,7 +1072,7 @@ KonoSuba!
 > 真正的巡礼点在JR津軽線（三厩駅待合室），我们去的是JR东旭川站
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-23-32.jpg)
+![](assets/2025-03-04-17-23-32.jpg)
 <figurecaption style="font-style: italic;">
 如果椅子不是绿色就好了
 </figurecaption>
@@ -1081,7 +1081,7 @@ KonoSuba!
 到了旭川站，时间还早。我们打算去神乐冈公园转转，结果差点迷路了。还偶遇了一个中国留学生。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-30-18.png)
+![](assets/2025-03-04-17-30-18.png)
 <figurecaption style="font-style: italic;">
 积雪真厚啊，只能额外插路牌
 </figurecaption>
@@ -1090,14 +1090,14 @@ KonoSuba!
 > 叠甲：真不是我破坏公共设施，它就是直接插在雪地里的。拿起来看了一下我就放回去了！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-32-33.png)
+![](assets/2025-03-04-17-32-33.png)
 <figurecaption style="font-style: italic;">
 哈哈哈，我们偶遇的留子就是图里这个哥们
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-34-28.png)
+![](assets/2025-03-04-17-34-28.png)
 <figurecaption style="font-style: italic;">
 最爱的夕阳
 </figurecaption>
@@ -1108,7 +1108,7 @@ KonoSuba!
 这天回去的比较早，晚上还工作了一会儿，和xicheng讨论了一下论文的事情😭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-36-16.png)
+![](assets/2025-03-04-17-36-16.png)
 <figurecaption style="font-style: italic;">
 就这？日本人是真没见过冷的地方
 </figurecaption>
@@ -1121,14 +1121,14 @@ KonoSuba!
 早上七点多我们就从旭川出发了，在札幌换乘新北斗特急直奔登别：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-40-24.png)
+![](assets/2025-03-04-17-40-24.png)
 <figurecaption style="font-style: italic;">
 有Pass就是爽
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-42-00.png)
+![](assets/2025-03-04-17-42-00.png)
 <figurecaption style="font-style: italic;">
 看到了JR电车的幕后工作
 </figurecaption>
@@ -1139,21 +1139,21 @@ KonoSuba!
 放完行李去逛了地狱谷，味儿真大啊：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-46-37.png)
+![](assets/2025-03-04-17-46-37.png)
 <figurecaption style="font-style: italic;">
 👍
 </figurecaption>
 </figure>
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_5214.png" caption="还真有点地狱的意思">
+<live-photo-element src="../assets/IMG_5214.png" caption="还真有点地狱的意思">
 </live-photo-element>
 </div>
 
 逛完地狱谷刚好开始下冰雹了，山上的天气是真的多变。我们火速撤离，吃了个午饭，还是汤咖喱，但明显不如上一次的好吃。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-49-29.png)
+![](assets/2025-03-04-17-49-29.png)
 <figurecaption style="font-style: italic;">
 太咸了
 </figurecaption>
@@ -1162,7 +1162,7 @@ KonoSuba!
 吃完饭随便转了转，买了点纪念品。发现了登别的温泉娘：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-50-12.png)
+![](assets/2025-03-04-17-50-12.png)
 <figurecaption style="font-style: italic;">
 登别绫濑
 </figurecaption>
@@ -1171,7 +1171,7 @@ KonoSuba!
 是的，日本人疯了。温泉也有娘化形象，甚至全国各地的温泉都有温泉娘。他们还做了一个地图在车站可以免费取用：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-00-08.png)
+![](assets/2025-03-04-18-00-08.png)
 <figurecaption style="font-style: italic;">
 温泉娘地图
 </figurecaption>
@@ -1180,14 +1180,14 @@ KonoSuba!
 最最最搞的是，还有一个海外温泉娘：台湾新竹的[尖石内湾](https://onsen-musume.jp/character/jianshih_neiwan)
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-55-00.png)
+![](assets/2025-03-04-17-55-00.png)
 <figurecaption style="font-style: italic;">
 ？？
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-17-56-27.png)
+![](assets/2025-03-04-17-56-27.png)
 <figurecaption style="font-style: italic;">
 还挺好看
 </figurecaption>
@@ -1196,7 +1196,7 @@ KonoSuba!
 逛了一会儿我们就离开登别去看洞爷湖了。其实登别还有一个值得一看的熊牧场，但我们时间有限就放弃了。据我们之前偶遇的留子说这个熊牧场还有点意思，里面还举办了鸭子游泳比赛之类的活动。在最顶上还可以看到火山湖：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-03-23-31-06.png)
+![](assets/2025-03-03-23-31-06.png)
 <figurecaption style="font-style: italic;">
 俱多乐火山口湖
 </figurecaption>
@@ -1209,7 +1209,7 @@ KonoSuba!
 到了洞爷湖发现天气不是很好，云层很厚。远处的山根本看不见。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-05-15.png)
+![](assets/2025-03-04-18-05-15.png)
 <figurecaption style="font-style: italic;">
 打卡
 </figurecaption>
@@ -1218,7 +1218,7 @@ KonoSuba!
 湖边有一个游船🚢可以坐，但我们去的太迟了错过了最后一班。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-06-10.png)
+![](assets/2025-03-04-18-06-10.png)
 <figurecaption style="font-style: italic;">
 还挺好看
 </figurecaption>
@@ -1227,21 +1227,21 @@ KonoSuba!
 在湖边吹了一会儿风：
 
 <div style="width: 60%; margin: auto;">
-<live-photo-element src="../http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_5278.png" caption="湖水很蓝">
+<live-photo-element src="../assets/IMG_5278.png" caption="湖水很蓝">
 </live-photo-element>
 </div>
 
 实在冷的受不了，我就先润了。回车站等一小时一班的道南bus：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-08-41.png)
+![](assets/2025-03-04-18-08-41.png)
 <figurecaption style="font-style: italic;">
 这个车站也很有感觉
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-35-31.png)
+![](assets/2025-03-04-19-35-31.png)
 <figurecaption style="font-style: italic;">
 洞爷温泉娘
 </figurecaption>
@@ -1250,7 +1250,7 @@ KonoSuba!
 晚上，回到登别，我们俩饿的发昏，吃了个不排队的烤肉：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-09-25.png)
+![](assets/2025-03-04-18-09-25.png)
 <figurecaption style="font-style: italic;">
 很贵，只能说一般好吃
 </figurecaption>
@@ -1259,14 +1259,14 @@ KonoSuba!
 吃完烤肉就是期待已久的温泉环节了，换上浴衣的我酷似大佐：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-10-52.png)
+![](assets/2025-03-04-18-10-52.png)
 <figurecaption style="font-style: italic;">
 可惜没有武士刀
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-11-46.png)
+![](assets/2025-03-04-18-11-46.png)
 <figurecaption style="font-style: italic;">
 第一泷本馆的男汤
 </figurecaption>
@@ -1283,7 +1283,7 @@ KonoSuba!
 > 其实他们有个[官网](https://takimotokan.co.jp/ja/spa/)，介绍还挺全的
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-18-12-48.png)
+![](assets/2025-03-04-18-12-48.png)
 <figurecaption style="font-style: italic;">
 这张是违规偷拍的
 </figurecaption>
@@ -1305,7 +1305,7 @@ KonoSuba!
 泡完汤必须要来一杯冰牛奶：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-03-30.png)
+![](assets/2025-03-04-19-03-30.png)
 <figurecaption style="font-style: italic;">
 劲！
 </figurecaption>
@@ -1322,7 +1322,7 @@ KonoSuba!
 我发现在日本就算最村的地方，公交车都搞得不错。比如这个下车按钮，是全车每个位置都有，一个人按了所有地方都会亮，真不错：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-04-48.png)
+![](assets/2025-03-04-19-04-48.png)
 <figurecaption style="font-style: italic;">
 下车别忘了按：止まります
 </figurecaption>
@@ -1331,7 +1331,7 @@ KonoSuba!
 一路上的风景还是不错的，用go3s录了一些。有时间再放出来：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-08-00.png)
+![](assets/2025-03-04-19-08-00.png)
 <figurecaption style="font-style: italic;">
 这小相机还挺好用的
 </figurecaption>
@@ -1342,7 +1342,7 @@ KonoSuba!
 路上随机找了一家回转寿司，结果发现还挺好吃😋：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-09-16.png)
+![](assets/2025-03-04-19-09-16.png)
 <figurecaption style="font-style: italic;">
 大胃王就是在下
 </figurecaption>
@@ -1353,7 +1353,7 @@ KonoSuba!
 去海边吹了吹风：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-11-41.png)
+![](assets/2025-03-04-19-11-41.png)
 <figurecaption style="font-style: italic;">
 红白栏杆好好看
 </figurecaption>
@@ -1362,7 +1362,7 @@ KonoSuba!
 去看了柯南剧场版出现过的JR运输署。结果人家特地写了个告示牌，让我们别进去：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-12-08.png)
+![](assets/2025-03-04-19-12-08.png)
 <figurecaption style="font-style: italic;">
 柯南在日本的号召力还是太强了
 </figurecaption>
@@ -1371,7 +1371,7 @@ KonoSuba!
 只能远远在天桥上看了一眼：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-12-48.png)
+![](assets/2025-03-04-19-12-48.png)
 <figurecaption style="font-style: italic;">
 电车停车场属于是
 </figurecaption>
@@ -1380,21 +1380,21 @@ KonoSuba!
 时间差不多我们就直奔五稜郭塔了：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-13-35.png)
+![](assets/2025-03-04-19-13-35.png)
 <figurecaption style="font-style: italic;">
 外面也很好看
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-14-48.png)
+![](assets/2025-03-04-19-14-48.png)
 <figurecaption style="font-style: italic;">
 白天的五稜郭
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-15-09.png)
+![](assets/2025-03-04-19-15-09.png)
 <figurecaption style="font-style: italic;">
 晚上的五稜郭
 </figurecaption>
@@ -1410,7 +1410,7 @@ KonoSuba!
 从五稜郭塔下来天已经黑了，我们直奔函馆山去看“价值百万美元的夜景”：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-18-30.png)
+![](assets/2025-03-04-19-18-30.png)
 <figurecaption style="font-style: italic;">
 真不错，整个函馆尽收眼底
 </figurecaption>
@@ -1419,7 +1419,7 @@ KonoSuba!
 下山饿晕了，随便吃了个拉面：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-19-04.png)
+![](assets/2025-03-04-19-19-04.png)
 <figurecaption style="font-style: italic;">
 平平无奇
 </figurecaption>
@@ -1430,7 +1430,7 @@ KonoSuba!
 吃完饭我就先回去休息了。华哥还去看了一眼柯南电影里入住的酒店：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-21-17.png)
+![](assets/2025-03-04-19-21-17.png)
 <figurecaption style="font-style: italic;">
 柯南真是日本国民ip
 </figurecaption>
@@ -1443,7 +1443,7 @@ KonoSuba!
 又起了个大早，天还没亮我们就坐上了电车。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-23-06.png)
+![](assets/2025-03-04-19-23-06.png)
 <figurecaption style="font-style: italic;">
 六点钟🥱
 </figurecaption>
@@ -1452,7 +1452,7 @@ KonoSuba!
 今天要坐新干线，从新函馆北斗一路坐到东京：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-23-56.png)
+![](assets/2025-03-04-19-23-56.png)
 <figurecaption style="font-style: italic;">
 人好少
 </figurecaption>
@@ -1461,7 +1461,7 @@ KonoSuba!
 列车从北海道到东日本跨海的时候我还以为能看到大海。结果是我太天真了，日本这么多自然灾害，咋可能是跨海大桥呢？
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-24-37.png)
+![](assets/2025-03-04-19-24-37.png)
 <figurecaption style="font-style: italic;">
 原来是隧道
 </figurecaption>
@@ -1470,7 +1470,7 @@ KonoSuba!
 睡了醒、醒了睡，很快就到了东京：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-25-37.png)
+![](assets/2025-03-04-19-25-37.png)
 <figurecaption style="font-style: italic;">
 中央线！
 </figurecaption>
@@ -1479,21 +1479,21 @@ KonoSuba!
 我们把行李扔在新宿站就去代代木公园看花了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-26-59.png)
+![](assets/2025-03-04-19-26-59.png)
 <figurecaption style="font-style: italic;">
 白色的
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-27-13.png)
+![](assets/2025-03-04-19-27-13.png)
 <figurecaption style="font-style: italic;">
 粉色的
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-27-31.png)
+![](assets/2025-03-04-19-27-31.png)
 <figurecaption style="font-style: italic;">
 ✌️
 </figurecaption>
@@ -1504,14 +1504,14 @@ KonoSuba!
 在公园随便吃了点东西，我们就回车站准备直奔富士了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-28-16.png)
+![](assets/2025-03-04-19-28-16.png)
 <figurecaption style="font-style: italic;">
 可丽饼！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-28-45.png)
+![](assets/2025-03-04-19-28-45.png)
 <figurecaption style="font-style: italic;">
 鱼肉汉堡
 </figurecaption>
@@ -1520,14 +1520,14 @@ KonoSuba!
 在大月换乘富士急行列车：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-29-20.png)
+![](assets/2025-03-04-19-29-20.png)
 <figurecaption style="font-style: italic;">
 这列车还挺有特色
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-30-46.png)
+![](assets/2025-03-04-19-30-46.png)
 <figurecaption style="font-style: italic;">
 内饰也很有意思
 </figurecaption>
@@ -1535,12 +1535,12 @@ KonoSuba!
 
 还可以直接看到司机开车：
 
-![type:video](http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_5702.mov)
+![type:video](assets/IMG_5702.mov)
 
 在车上就可以远远看到富士山🗻了：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-32-54.png)
+![](assets/2025-03-04-19-32-54.png)
 <figurecaption style="font-style: italic;">
 天气不是很好
 </figurecaption>
@@ -1549,28 +1549,28 @@ KonoSuba!
 到酒店放下行李我们就出门闲逛了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-33-51.png)
+![](assets/2025-03-04-19-33-51.png)
 <figurecaption style="font-style: italic;">
 河口湖温泉娘
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-36-30.png)
+![](assets/2025-03-04-19-36-30.png)
 <figurecaption style="font-style: italic;">
 感觉富士山要喷发了
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-36-58.png)
+![](assets/2025-03-04-19-36-58.png)
 <figurecaption style="font-style: italic;">
 网红罗森
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-38-04.png)
+![](assets/2025-03-04-19-38-04.png)
 <figurecaption style="font-style: italic;">
 彩色的云和🗻
 </figurecaption>
@@ -1579,7 +1579,7 @@ KonoSuba!
 晚饭吃了个天妇罗，还不错～
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-38-45.png)
+![](assets/2025-03-04-19-38-45.png)
 <figurecaption style="font-style: italic;">
 炸鱿鱼特好吃
 </figurecaption>
@@ -1588,21 +1588,21 @@ KonoSuba!
 晚上在车站碰到了火影主题的富士急行电车：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-39-57.png)
+![](assets/2025-03-04-19-39-57.png)
 <figurecaption style="font-style: italic;">
 NARUTO
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-40-28.png)
+![](assets/2025-03-04-19-40-28.png)
 <figurecaption style="font-style: italic;">
 这么多起爆符，太危险了
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-41-14.png)
+![](assets/2025-03-04-19-41-14.png)
 <figurecaption style="font-style: italic;">
 迪达拉，你冷静点
 </figurecaption>
@@ -1615,7 +1615,7 @@ NARUTO
 又起了个大早，在河口湖看了富士山的日出：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-43-07.png)
+![](assets/2025-03-04-19-43-07.png)
 <figurecaption style="font-style: italic;">
 
 </figurecaption>
@@ -1630,7 +1630,7 @@ NARUTO
 河口湖和富士山还是很搭配的：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-44-12.png)
+![](assets/2025-03-04-19-44-12.png)
 <figurecaption style="font-style: italic;">
 好看！🤩
 </figurecaption>
@@ -1639,21 +1639,21 @@ NARUTO
 看完日出，我们又去爬山了。特种兵是也。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-44-49.png)
+![](assets/2025-03-04-19-44-49.png)
 <figurecaption style="font-style: italic;">
 这陡坡
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-45-28.png)
+![](assets/2025-03-04-19-45-28.png)
 <figurecaption style="font-style: italic;">
 天空鸟居
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-45-41.png)
+![](assets/2025-03-04-19-45-41.png)
 <figurecaption style="font-style: italic;">
 打卡✌️
 </figurecaption>
@@ -1664,7 +1664,7 @@ NARUTO
 下站就看到一个足汤，车隔那么长，等车的时候可以泡一泡：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-47-05.png)
+![](assets/2025-03-04-19-47-05.png)
 <figurecaption style="font-style: italic;">
 免费的哦
 </figurecaption>
@@ -1673,7 +1673,7 @@ NARUTO
 行李放在酒店，出门在楼下吃了荞麦面天妇罗，一般
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-47-51.png)
+![](assets/2025-03-04-19-47-51.png)
 <figurecaption style="font-style: italic;">
 是不是热的荞麦面没灵魂啊
 </figurecaption>
@@ -1682,21 +1682,21 @@ NARUTO
 吃完饭就在市区闲逛了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-48-27.png)
+![](assets/2025-03-04-19-48-27.png)
 <figurecaption style="font-style: italic;">
 间歇泉
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-48-51.png)
+![](assets/2025-03-04-19-48-51.png)
 <figurecaption style="font-style: italic;">
 上诹访温泉娘
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-49-30.png)
+![](assets/2025-03-04-19-49-30.png)
 <figurecaption style="font-style: italic;">
 足汤真不错！
 </figurecaption>
@@ -1705,7 +1705,7 @@ NARUTO
 吃完饭去看了诹访大社前宫，山上的天气太多变了，走几步就开始下雪。本宫、春宫、秋宫没来得及看我们就走了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-56-37.png)
+![](assets/2025-03-04-19-56-37.png)
 <figurecaption style="font-style: italic;">
 诹访大社
 </figurecaption>
@@ -1714,7 +1714,7 @@ NARUTO
 离开诹访大社，我们直奔立石公园，又是狠狠爬山。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-19-58-58.png)
+![](assets/2025-03-04-19-58-58.png)
 <figurecaption style="font-style: italic;">
 这里居然也有红楼梯
 </figurecaption>
@@ -1730,7 +1730,7 @@ NARUTO
 山上是真的冷，立石公园的海报有920米，冻的我直发抖。这次我们遇到的游客几乎都是日本人，君名的粉丝很多！旁边还有日本人在感慨你的名字都快十年啦！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-03-53.png)
+![](assets/2025-03-04-20-03-53.png)
 <figurecaption style="font-style: italic;">
 打卡👍
 </figurecaption>
@@ -1739,14 +1739,14 @@ NARUTO
 也是圣地巡礼成功啦：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-04-24.jpg)
+![](assets/2025-03-04-20-04-24.jpg)
 <figurecaption style="font-style: italic;">
 糸守镇
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-07-07.png)
+![](assets/2025-03-04-20-07-07.png)
 <figurecaption style="font-style: italic;">
 亮灯了也很好看
 </figurecaption>
@@ -1755,7 +1755,7 @@ NARUTO
 下山去吃了个烧鸟，超好吃！
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-07-36.png)
+![](assets/2025-03-04-20-07-36.png)
 <figurecaption style="font-style: italic;">
 绝顶烧鸟😋
 </figurecaption>
@@ -1764,14 +1764,14 @@ NARUTO
 吃完饭就回酒店了，身体有点不舒服，磕了药：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-08-13.png)
+![](assets/2025-03-04-20-08-13.png)
 <figurecaption style="font-style: italic;">
 救我狗命
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-08-33.png)
+![](assets/2025-03-04-20-08-33.png)
 <figurecaption style="font-style: italic;">
 是的，你可以在这家酒店免费看片
 </figurecaption>
@@ -1786,7 +1786,7 @@ NARUTO
 早上去看了一眼诹访湖畔公园，据华哥说是某个动画的巡礼，我倒是没什么兴趣：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-11-31.png)
+![](assets/2025-03-04-20-11-31.png)
 <figurecaption style="font-style: italic;">
 大犄角
 </figurecaption>
@@ -1797,7 +1797,7 @@ NARUTO
 在车站看到很多人拿着这种长长的树枝，不明觉厉：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-12-46.png)
+![](assets/2025-03-04-20-12-46.png)
 <figurecaption style="font-style: italic;">
 应该是有什么祭典？
 </figurecaption>
@@ -1806,7 +1806,7 @@ NARUTO
 结束了村里的旅行，终于来到了大城市：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-13-32.png)
+![](assets/2025-03-04-20-13-32.png)
 <figurecaption style="font-style: italic;">
 好诶，是大楼
 </figurecaption>
@@ -1815,14 +1815,14 @@ NARUTO
 在名古屋花620日元买了地铁一日通票，行李扔在酒店就去吃饭了。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-15-04.png)
+![](assets/2025-03-04-20-15-04.png)
 <figurecaption style="font-style: italic;">
 能回本
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-15-34.png)
+![](assets/2025-03-04-20-15-34.png)
 <figurecaption style="font-style: italic;">
 KURA，廉价回转小寿司
 </figurecaption>
@@ -1831,49 +1831,49 @@ KURA，廉价回转小寿司
 吃完饭去歧阜城转了转。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-19-37.png)
+![](assets/2025-03-04-20-19-37.png)
 <figurecaption style="font-style: italic;">
 织田信长～
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-19-54.png)
+![](assets/2025-03-04-20-19-54.png)
 <figurecaption style="font-style: italic;">
 小市民系列！！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-20-35.png)
+![](assets/2025-03-04-20-20-35.png)
 <figurecaption style="font-style: italic;">
 歧阜城
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-20-55.png)
+![](assets/2025-03-04-20-20-55.png)
 <figurecaption style="font-style: italic;">
 原来歧阜来自孔子+周文王
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-21-52.png)
+![](assets/2025-03-04-20-21-52.png)
 <figurecaption style="font-style: italic;">
 还真有睥睨天下的感觉
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-22-10.png)
+![](assets/2025-03-04-20-22-10.png)
 <figurecaption style="font-style: italic;">
 我是只狼，我需要立马跳上去杀人
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-23-31.png)
+![](assets/2025-03-04-20-23-31.png)
 <figurecaption style="font-style: italic;">
 这条河小市民系列里也有出现哦！
 </figurecaption>
@@ -1882,14 +1882,14 @@ KURA，廉价回转小寿司
 逛完从歧阜回到名古屋已经是晚饭时间了，去吃了名古屋特色炸鸡翅，平平无奇：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-24-29.png)
+![](assets/2025-03-04-20-24-29.png)
 <figurecaption style="font-style: italic;">
 排队的人倒是不少
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-24-43.png)
+![](assets/2025-03-04-20-24-43.png)
 <figurecaption style="font-style: italic;">
 这就是名古屋名物？
 </figurecaption>
@@ -1898,21 +1898,21 @@ KURA，廉价回转小寿司
 吃完饭我和华哥分头行动，他去药妆店、我去ビックカメラ逛了逛，买了点东西。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-26-36.png)
+![](assets/2025-03-04-20-26-36.png)
 <figurecaption style="font-style: italic;">
 帅！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-26-58.png)
+![](assets/2025-03-04-20-26-58.png)
 <figurecaption style="font-style: italic;">
 败犬！
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-27-13.png)
+![](assets/2025-03-04-20-27-13.png)
 <figurecaption style="font-style: italic;">
 日本到底为什么这么多弹珠店啊？？
 </figurecaption>
@@ -1995,14 +1995,14 @@ KURA，廉价回转小寿司
     日本人什么山之日、海之日都要放假，我看是没假硬放。中国那么多传统节日却不放假，相形见绌啊。
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-30-31.png)
+![](assets/2025-03-04-20-30-31.png)
 <figurecaption style="font-style: italic;">
 龙猫～
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-30-42.png)
+![](assets/2025-03-04-20-30-42.png)
 <figurecaption style="font-style: italic;">
 龙猫公共汽车
 </figurecaption>
@@ -2011,21 +2011,21 @@ KURA，廉价回转小寿司
 在车站体验了一下站着吃饭：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-31-19.png)
+![](assets/2025-03-04-20-31-19.png)
 <figurecaption style="font-style: italic;">
 真没座位
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-31-45.png)
+![](assets/2025-03-04-20-31-45.png)
 <figurecaption style="font-style: italic;">
 店员真的很有元气
 </figurecaption>
 </figure>
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-31-56.png)
+![](assets/2025-03-04-20-31-56.png)
 <figurecaption style="font-style: italic;">
 但不是很好吃，还很贵
 </figurecaption>
@@ -2034,7 +2034,7 @@ KURA，廉价回转小寿司
 吃完饭直奔中部机场：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-33-01.png)
+![](assets/2025-03-04-20-33-01.png)
 <figurecaption style="font-style: italic;">
 爱❤️中部
 </figurecaption>
@@ -2043,7 +2043,7 @@ KURA，廉价回转小寿司
 春秋航空便宜是真的便宜，垃圾也是真的垃圾。我本身就感冒了，加上飞机噪声巨大。整个降落的过程我的耳朵都很痛，我一度怀疑自己要聋了😭
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/2025-03-04-20-33-30.png)
+![](assets/2025-03-04-20-33-30.png)
 <figurecaption style="font-style: italic;">
 马里奥护照皮～
 </figurecaption>
@@ -2054,7 +2054,7 @@ KURA，廉价回转小寿司
 小小吐槽一下，浦东的托运出口是真的粗暴，行李箱直接飞到传送带上：
 
 <figure markdown>
-![](http://home.yangz.site:9000/docs/Blog/2025/assets/IMG_6215.gif)
+![](assets/IMG_6215.gif)
 <figurecaption style="font-style: italic;">
 是的，直接飞
 </figurecaption>

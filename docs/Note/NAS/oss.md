@@ -41,7 +41,7 @@ tags:
 >
 > 中国香港&海外地区包括：中国香港、新加坡、亚太东北 1（东京）、美西 1（硅谷）、美东 1（弗吉尼亚）等地域。各地域的资源单价有所不同。
 
-![](assets/2025-03-26-14-34-44.png)
+![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-14-34-44.png)
 
 但总归有[被攻击](https://www.bilibili.com/video/BV1Tb411Q7V4)的风险，我可不想一觉睡醒就拿到天价账单。
 
@@ -80,11 +80,11 @@ minio.exe server ./data --address "0.0.0.0:9000" --console-address ":9001"
 
 服务启动了之后，我们就可以在`localhost:9001`管理minio服务啦。和其他OSS服务一样，我们可以创建一个bucket：
 
-![](assets/2025-03-26-15-28-11.png)
+![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-11.png)
 
 创建完了之后，可以设置一下匿名访问：
 
-![](assets/2025-03-26-15-28-56.png)
+![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-56.png)
 
 这样就可以在没有身份认证的情况下，从`localhost:9000/<bucket-name>/<file-path>`访问到OSS中存储的文件啦。
 
@@ -168,8 +168,20 @@ mc rm <cloud>
 
 ### 效果展示
 
-我把<a href="/Blog/2025/travel_to_japan2" target="_blank">再游日本</a>中的所有图片url都替换为了本文搭建的图床。
+我把本页面中的所有图片url都替换为了本文搭建的图床。
 
-作为对比<a href="/Blog/2023/travel_to_japan" target="_blank">毕业.旅行.日本</a>中也有大量图片，依然托管在CloudFlare Pages上。
+作为对比<a href="/Note/NAS/tg-bot/" target="_blank">Telegram Bot</a>中也有一些图片，但是依然托管在CloudFlare Pages上。
 
 你可以感受一下它们的速度差异。
+
+!!! note "TLS证书"
+    为了把minio的图片嵌入本站，需要给minio服务签发tls证书。
+
+    我这里就直接用了CloudFlare签发了一个十年的。
+
+!!! warning "小水管受不了"
+    用了一会儿，发现虽然很多时候图片加载确实快多了，但是如果页面上有上百张图就直接完蛋。
+
+    家用宽带根本遭不住，我室友的CS2直接卡成ppt😈
+
+    于是还是作罢，只能少量使用。没法全站都用这个图床啦。
