@@ -75,7 +75,7 @@ minio.exe server D:\
 @echo off
 set MINIO_ROOT_USER=
 set MINIO_ROOT_PASSWORD=
-minio.exe server ./data --address "0.0.0.0:9000" --console-address ":9001"
+minio.exe server ./data --address "0.0.0.0:9002" --console-address ":9001"
 ```
 
 服务启动了之后，我们就可以在`localhost:9001`管理minio服务啦。和其他OSS服务一样，我们可以创建一个bucket：
@@ -86,7 +86,7 @@ minio.exe server ./data --address "0.0.0.0:9000" --console-address ":9001"
 
 ![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-56.png)
 
-这样就可以在没有身份认证的情况下，从`localhost:9000/<bucket-name>/<file-path>`访问到OSS中存储的文件啦。
+这样就可以在没有身份认证的情况下，从`localhost:9002/<bucket-name>/<file-path>`访问到OSS中存储的文件啦。
 
 ### mc-client
 
@@ -177,7 +177,47 @@ mc rm <cloud>
 !!! note "TLS证书"
     为了把minio的图片嵌入本站，需要给minio服务签发tls证书。
 
-    我这里就直接用了CloudFlare签发了一个十年的。
+    <s>我这里就直接用了CloudFlare签发了一个十年的。</s>
+
+    后来发现CF签发的没啥用，Chrome不认可。只能重新用acme.sh+letsencrypt搞了证书。
+
+    并且，不再直接使用MinIO对外服务，套了一层nginx，配置如下：
+
+    ```config
+    worker_processes  1;
+
+    events {
+        worker_connections  1024;
+    }
+
+    http {
+        include       mime.types;
+        default_type  application/octet-stream;
+        sendfile        on;
+        keepalive_timeout  65;
+        gzip  on;
+
+        server {
+            listen       9000 ssl;
+            server_name  <mydomain.com>;
+            ssl_certificate C:/Users/yangz/Desktop/cert.pem;
+            ssl_certificate_key C:/Users/yangz/Desktop/key.pem;
+            location / {
+                proxy_pass http://127.0.0.1:9002;  # 代理到本地 9002 端口
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_connect_timeout  300;
+
+            # Default is HTTP/1, keepalive is only enabled in HTTP/1.1
+            proxy_http_version 1.1;
+            proxy_set_header Connection "";
+            }
+        }
+    }
+
+    ```
 
 !!! warning "小水管受不了"
     用了一会儿，发现虽然很多时候图片加载确实快多了，但是如果页面上有上百张图就直接完蛋。
