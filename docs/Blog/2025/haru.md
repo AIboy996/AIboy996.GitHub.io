@@ -14,7 +14,7 @@ include:
 
 <figure markdown>
 
-![樱花？](assets/2025-03-25-13-22-51.png){width=400}
+![樱花？](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-13-22-51.png){width=400}
 
 </figure>
 
@@ -23,14 +23,14 @@ include:
 鲁迅公园的水清澈见底，还经常能看到鸭子和黑天鹅：
 
 <div style="width: 70%; margin: auto;">
-<live-photo-element src="../assets/IMG_6479.png" caption="🦆撅屁股">
+<live-photo-element src="http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/IMG_6479.png" caption="🦆撅屁股">
 </live-photo-element>
 </div>
 
 水边的万条垂下绿丝绦也是极美的：
 
 <div style="width: 70%; margin: auto;">
-<live-photo-element src="../assets/IMG_6473.png" caption="好嫩的绿色！">
+<live-photo-element src="http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/IMG_6473.png" caption="好嫩的绿色！">
 </live-photo-element>
 </div>
 
@@ -75,7 +75,7 @@ gpt说的非常系统全面，简单来说，樱花🌸相对于其他两种最�
 
 <figure markdown>
 
-![樱花缺](assets/2025-03-25-13-42-08.png){width=400}
+![樱花缺](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-13-42-08.png){width=400}
 
 <figurecaption>🌸</figurecaption>
 </figure>
@@ -88,7 +88,7 @@ gpt说的非常系统全面，简单来说，樱花🌸相对于其他两种最�
 
 <figure markdown>
 
-![花柄](assets/2025-03-25-13-46-13.png){width=400}
+![花柄](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-13-46-13.png){width=400}
 
 <figurecaption>清晰可见的花柄</figurecaption>
 </figure>
@@ -97,7 +97,7 @@ gpt说的非常系统全面，简单来说，樱花🌸相对于其他两种最�
 
 <figure markdown>
 
-![](assets/2025-03-25-13-48-20.png){width=400}
+![](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-13-48-20.png){width=400}
 
 <figurecaption>这应该是桃花吧</figurecaption>
 </figure>
@@ -106,7 +106,7 @@ gpt说的非常系统全面，简单来说，樱花🌸相对于其他两种最�
 
 <figure markdown>
 
-![](assets/2025-03-25-14-00-48.png){width=400}
+![](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-14-00-48.png){width=400}
 
 <figurecaption>这应该是梅花吧</figurecaption>
 </figure>
@@ -116,7 +116,7 @@ gpt说的非常系统全面，简单来说，樱花🌸相对于其他两种最�
 最后回学校顺便看了光草上的樱花：
 <figure markdown>
 
-![](assets/2025-03-25-14-02-48.png){width=500}
+![](http://yangz-blog.oss-cn-hongkong.aliyuncs.com/assets/2025-03-25-14-02-48.png){width=500}
 
 <figurecaption>美美美😭</figurecaption>
 </figure>

@@ -24,27 +24,22 @@ class LivePhotoElement extends HTMLElement {
   }
 
   attributeChangedCallback(name, old, value) {
-    if (name === "src") {
-      const src = value || this.attributes.src.value;
-      if (this.img && this.video) {
-        this.img.src = src;
-        const videoSrc = src.replace(/\.[^\.]+$/, ".mp4");
-        // Check if the video source exists, if not, try .mov
-        fetch(videoSrc, { method: 'HEAD' })
-          .then(response => {
-            if (response.ok) {
-              this.video.src = videoSrc;
-            } else {
-              this.video.src = src.replace(/\.[^\.]+$/, ".mov");
-            }
-          })
-          .catch(() => {
-            this.video.src = src.replace(/\.[^\.]+$/, ".mov");
-          });
-      }
-    }
-    if (name === "caption") {
-      this.caption.innerText = value || this.attributes.caption.value;
+    if (name === "src" && this.img && this.video) {
+      const src = value || this.getAttribute("src");
+      this.img.src = src;
+
+      const videoSrcMov = src.replace(/\.[^\.]+$/, ".mov");
+      const videoSrcMp4 = src.replace(/\.[^\.]+$/, ".mp4");
+
+      fetch(videoSrcMov, { method: "HEAD" })
+        .then(response => {
+          this.video.src = response.ok ? videoSrcMov : videoSrcMp4;
+        })
+        .catch(() => {
+          this.video.src = videoSrcMp4;
+        });
+    } else if (name === "caption" && this.caption) {
+      this.caption.innerText = value || this.getAttribute("caption");
     }
   }
 
