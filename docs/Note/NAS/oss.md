@@ -41,7 +41,7 @@ tags:
 >
 > 中国香港&海外地区包括：中国香港、新加坡、亚太东北 1（东京）、美西 1（硅谷）、美东 1（弗吉尼亚）等地域。各地域的资源单价有所不同。
 
-![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-14-34-44.png)
+![](https://oss.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-14-34-44.png)
 
 但总归有[被攻击](https://www.bilibili.com/video/BV1Tb411Q7V4)的风险，我可不想一觉睡醒就拿到天价账单。
 
@@ -80,11 +80,11 @@ minio.exe server ./data --address "0.0.0.0:9002" --console-address ":9001"
 
 服务启动了之后，我们就可以在`localhost:9001`管理minio服务啦。和其他OSS服务一样，我们可以创建一个bucket：
 
-![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-11.png)
+![](https://oss.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-11.png)
 
 创建完了之后，可以设置一下匿名访问：
 
-![](https://home.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-56.png)
+![](https://oss.yangz.site:9000/docs/Note/NAS/assets/2025-03-26-15-28-56.png)
 
 这样就可以在没有身份认证的情况下，从`localhost:9002/<bucket-name>/<file-path>`访问到OSS中存储的文件啦。
 

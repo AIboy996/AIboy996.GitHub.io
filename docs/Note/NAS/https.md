@@ -51,8 +51,18 @@ acme.sh --set-default-ca --server letsencrypt
 ```
 
 ```bash title="生成证书"
-acme.sh --issue --dns dns_cf -d home.yangz.site
+acme.sh --issue --dns dns_cf -d home.yangz.site --ecc
 ```
+
+!!! info "多域名"
+    如果是多个域名可以分别申请（多个证书文件）：
+    ```bash
+    acme.sh --issue --standalone -d a.example.com -d b.example.com -d c.example.com
+    ```
+    也可以一起申请（一个证书文件）：
+    ```bash
+    acme.sh --issue -d a.example.com -d b.example.com -d c.example.com
+    ```
 
 生成证书的过程比较漫长，大概分为下面几个步骤：
 
