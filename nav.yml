@@ -23,6 +23,7 @@ nav:
     - 书影音:
       - Note/Reading/huozhe.md
       - Note/Reading/wuyingdeng.md
+      - Note/Reading/yourname.md
       - Note/Reading/summer.md
     - 我用Mac:
       - Note/Mac/index.md
@@ -57,6 +58,7 @@ nav:
       - 数据库:
         - Note/DataAnalysis/rel_db.md
         - Note/DataAnalysis/sql.md
+        - Note/DataAnalysis/sql_opt.md
       - Note/DataAnalysis/hadoop.md
       - Interview:
         - Note/DataAnalysis/interview/0309_ant.md

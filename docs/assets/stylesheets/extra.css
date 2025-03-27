@@ -1,3 +1,12 @@
+.md-nav__link[for]:hover {
+    color: #000000 !important;
+    cursor: s-resize;
+}
+
+.md-nav__link[for]:focus {
+    color: #000000 !important;
+}
+
 /* 添加颜色改变的过渡效果 */
 header.md-header {
     transition: background-color 1s ease;
@@ -5,7 +14,7 @@ header.md-header {
 
 nav.md-tabs {
     transition: background-color 1s ease;
-    
+
 }
 
 /* termynal组件 */

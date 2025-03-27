@@ -9,6 +9,12 @@ tags:
 
 ## 2025
 
+- 2025年03月27日
+    - 修改了CSS，增强了侧边栏项目对**有无链接页面**的区分。
+    - 如果有链接页面就会使用`cursor: pointer`样式：
+        - <a style="cursor: pointer; color: black;" onmouseover="this.style.color='#ff9100';" onmouseout="this.style.color='black';">Nav Item With Link</a>
+    - 如果没有链接页面就会使用`cursor: s-resize`样式，并且Hover也不会高亮：
+        - <a style="cursor: s-resize; color: black;">Nav Item Without Link</a>
 - 2025年03月26日
     - 部分页面的图片现在使用**自建图床**引入，加快了加载速度。
 - 2025年03月09日
