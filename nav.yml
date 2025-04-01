@@ -90,11 +90,12 @@ nav:
       - Note/latex/latex_cn.md
     - Leetcode:
       - Note/Leetcode/index.md
-      - 链表:
-          - Note/Leetcode/206.md
-          - Note/Leetcode/148.md
-      - 回溯:
-          - Note/Leetcode/051.md
+      - Note/Leetcode/051.md
+      - Note/Leetcode/148.md
+      - Note/Leetcode/206.md
+      - Note/Leetcode/0309_pdd_2.md
+      - Note/Leetcode/0309_pdd_3.md
+      - Note/Leetcode/0309_pdd_4.md
     - Linux:
       - Note/Shell/index.md
       - Note/Shell/man.md
@@ -136,6 +137,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2025:
+      - Blog/2025/shwzoo.md
       - Blog/2025/haru.md
       - Blog/2025/pi.md
       - Blog/2025/travel_to_japan2.md

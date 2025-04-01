@@ -9,17 +9,24 @@ include:
 今天的推文是传销jupyter notebook的最后一篇啦！
 
 `❗❗超级长文警告❗❗`
+
 ## 系列推文回顾
+
 ### 开端
+
 第一篇推文作为系列的开端，给出了整个系列的大纲：
+
 - 简介
 - 基本使用
 - 高阶使用
 - markdown（番外
 
 差不多刚好是四篇推文的规划，然后就简单介绍了jupyter的几个特点，重点在于交互式编程和web服务器。
+
 ### 基础使用
+
 第二篇推文正式开始上手jupyter，我们介绍了：
+
 - 如何安装jupyter
 - 如何生成、修改配置文件
 - 如何安装插件
@@ -28,16 +35,23 @@ include:
 - 如何导出notebook
 
 总的来说内容比较杂乱，前面安装的部分事无巨细，后面介绍用法的部分比较粗略，显得虎头蛇尾~~（写着写着没耐心了）~~，不过也还是倾注了很多心血，看完之后上手jupyter应该没什么问题。
+
 ### 乱入
+
 第三篇推文和我的计划有些出入，本来远程连接这块只是一个甜点一样的东西，打算一带而过。然后写着写着发现这完全可以单独发一篇，就直接发了！
 
 基本上这篇完全是兴趣使然，没什么大作用，但是成功之后有种莫名其妙的成就感。
+
 ### 堆料
+
 于是今天我想要完结这个系列，就不得不写一个超级长文了。
 
 ## 安装其他kernel
+
 首先我们来介绍如何在jupyter中安装其他kernel。
+
 ### 什么是kernel
+
 所谓的kernel就是内核，笔记本的灵魂所在。
 
 <center><s>不过它的灵魂经常挂掉就是了</s></center>
@@ -47,13 +61,13 @@ include:
 </figure>
 <center><i>偶尔见</i></center>
 
-
 <figure markdown>
 ![](./assets/a51b518c-de9d-428d-a220-27aee07f1678.png)
 </figure>
 <center><i>经常见</i></center>
 
 因为jupyter notebook本身只是一个工具、一种代码的组织形式、一个容器罢了。它所呈现的内容，所依托的程序包就是它的内核。例如python就可以作为它的内核，类似的也有很多其他编程语言可以作为jupyter notebook的内核。
+
 ### R语言
 
 <figure markdown>
@@ -61,15 +75,21 @@ include:
 </figure>
 
 上一篇推文的代码演示中就已经有R内核的身影了，现在我们正式介绍如何在jupyter中安装R内核。
+
 #### Step1
+
 我们首先安装R语言，如果你使用的是python的anaconda发行版，那么可以在命令行输入以下环境创建一个R语言的虚拟环境：
+
 ```
 conda create -n r_env r-essentials r-base 
 ```
+
 等待安装完成之后，用以下命令激活`r_env`环境：
+
 ```
 conda activate r_env
 ```
+
 然后键入`R`来启动R的命令行程序，出现以下界面说明安装成功！
 
 <figure markdown>
@@ -91,7 +111,6 @@ conda activate r_env
 ![](./assets/f71af6e6-b1dc-4e59-827e-2320f6a12f9d.png)
 </figure>
 
-
 > 这里参考`https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/`官网永远有最好的教程！！！
 
 不过如果你不喜欢臃肿的anaconda，你也可以选择单独安装R语言，自己进行相应的配置。
@@ -101,17 +120,22 @@ conda activate r_env
 所以下面我们介绍不使用anaconda的方法。
 
 #### Step2
+
 我们在`R`的命令行运行下面的命令，就可以安装相应的库并且在jupyter中注册R内核：
+
 ```r
 install.packages('IRkernel')
 # to register the kernel in the current R installation
 IRkernel::installspec()  
 ```
+
 安装完之后，我们在Windows的命令行（一般CMD即可，可以使用快捷键`Win+R`打开运行窗口然后键入cmd快速打开）  
 输入下面的命令查看jupyter的内核列表：
+
 ```
 jupyter kernelspec list
 ```
+
 如果安装成功应该会多出一个`ir kernel`
 
 <figure markdown>
@@ -146,6 +170,7 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 </figure>
 
 ### 部分已支持的内核项目
+
 其他的内核我本人使用的也不多就不再介绍，你可以在这些项目的介绍页面查看如何安装对应的kernel，感谢社区大佬们的倾情奉献。
 
 <center><s>排名不分先后，python天下第一</s></center>
@@ -153,34 +178,45 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 - Python（Defult kernel）
 
 `https://github.com/ipython/ipython`
+
 - Julia
 
 `https://github.com/JuliaLang/IJulia.jl`
-- R 
+
+- R
 
 `https://github.com/IRkernel/IRkernel`
-- Ruby 
+
+- Ruby
 
 `https://github.com/minrk/iruby`
-- Haskell 
+
+- Haskell
 
 `https://github.com/gibiansky/IHaskell`
-- Scala 
+
+- Scala
 
 `https://github.com/Bridgewater/scala-notebook`
+
 - node.js
 
 `https://gist.github.com/Carreau/4279371`
-- Go 
+
+- Go
 
 `https://github.com/takluyver/igo`
+
 - Java
 
 `https://github.com/SpencerPark/IJava/`
 
 值得注意的是，每个项目都在相应的语言前面都加了一个`I`，例如`iruby`，这里的含义是`Interactive`，交互式的。
+
 ## markdown VS markup
+
 ### markdown
+
 <figure markdown>
 ![](./assets/hero.png)
 </figure>
@@ -189,6 +225,7 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 不论前端还是后端，不论新手还是Hacker，老少皆宜、阖家欢乐、举国同庆、世界大同的一门语言非`markdown`莫属！它很有可能是当前程序员世界最流行的（非编程）语言。
 
 不过不要被`语言`这个词吓到了，md的语法规则少得可怜，真的非常好写！保守估计2分钟上手，1小时熟练，1天精通。
+
 ### markup
 
 <figure markdown>
@@ -202,7 +239,9 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 ——摘自维基百科
 
 互联网三大基石——HTML、JS、CSS之一的HTML就是一种`markup`语言，而根据上面的定义，`markdown`也算是一种`markup`语言，甚至大多数时候，markdown文档的呈现都是借助`HTML`实现的，后面我们也会看到这一点。
+
 ### 编辑器
+
 我推荐使用的md编辑软件是`Typora`和`VS Code`。前者是专注markdown编辑的软件，bata测试了多年，前段时间正式开始收费，还掀起了一整风波；后者是全能型文本编辑器，巨硬出品，值得信赖！！
 
 <figure markdown>
@@ -210,14 +249,19 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 </figure>
 
 另外，各大主流的博客网站也都支持markdown语法来输出内容，例如`知乎`、`CSDN`、~~还有`旦夕`的树洞哈哈哈~~
+
 ### 语法简述
+
 下面我们就来看看这些东西如何用纯文本的markdown组织起来。
+
 - 标题
+
 ```md
 # 一级
 ## 二级
 ### 以此类推，最多六级
 ```
+
 渲染效果：
 <figure markdown>
 ![](./assets/cf8c9386-1dae-439b-bff6-9f5d1c1fe997.png)
@@ -238,6 +282,7 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 需要在句末留下至少两个空格即可换行
 
 段落之间留出一个空行可以实现换段。
+
 ```
 渲染效果：
 <figure markdown>
@@ -247,6 +292,7 @@ R内核的笔记本和python内核的笔记本有类似的地方也有截然不�
 ```md
 ![baidu](https://www.baidu.com/img/pc_9c5c85e6b953f1d172e1ed6821618b91.png)
 ```
+
 渲染效果：
 <figure markdown>
 ![](./assets/d594d112-0c8e-4df6-9059-6180610991be.png)
@@ -266,9 +312,11 @@ x = [i**2 for i in range(10)]
 </figure>
 
 - 引用
+
 ```md
 > 这里是引用内容
 ```
+
 渲染效果：
 <figure markdown>
 ![](./assets/284423a1-c44f-4acb-965e-9066c3e1f827.png)
@@ -277,6 +325,7 @@ x = [i**2 for i in range(10)]
 - 数学公式（扩展语法，大部分编辑器支持，但是原初的md似乎没有定义这部分内容
 
 数学公式的书写借用了LaTex的语法！甚至有的时候你可以在里面写一些更复杂的LaTex
+
 ```md
 行内公式$\sum X_n$
 行间公式
@@ -292,20 +341,25 @@ $$
 \end{pmatrix}
 $$
 ```
+
 渲染效果：
 <figure markdown>
 ![](./assets/d7f057e2-c9c8-42da-9b85-8aae5ed13dbc.png)
 </figure>
 
 掌握以上的语法大概只是看几眼的事情（LaTex语法除外），大概也足够日常使用。
+
 ### 嵌入HTML
+
 值得一提的是，markdown为了保持精简许多样式是不支持的，例如`下划线`，而前文也提到markdown大多时候是基于HTML实现的，所以我们可以在md文档中通过嵌入HTML标签的方式来引入内容。
 
 - 例如特定格式的文本
+
 ```html
 <center><u>居中、带下划线的文本</u></center>
 <font color=red>我是红字</font>
 ```
+
 渲染效果：
 <figure markdown>
 ![](./assets/f6e44285-a957-49a1-839a-79b748c541e2.png)
@@ -325,14 +379,18 @@ $$
 到这儿，你应该能感觉到其实markdown本质上就是简化版的HTML，你写的所有markdown都对应这一段HTML代码，编辑器在后台帮你做了这个事情。
 
 例如
+
 ```md
 # 标题
 ```
+
 对应着
+
 ```HTML
 <h1>标题</h1>
 ```
-> 更多关于markdown的内容，推荐到它的官网查看   
+
+> 更多关于markdown的内容，推荐到它的官网查看
 `https://markdown.com.cn/`
 
 <figure markdown>
@@ -340,7 +398,9 @@ $$
 </figure>
 
 ## 魔法命令介绍
+
 ### ipython
+
 前文也提到了，魔法命令是`ipython`的特性，只有在python kernel的笔记本中才能使用。
 
 ipython作为jupyter的父辈，很多时候可以作为jupyter notebook(python)的替代品（当你需要一个简单的交互环境又懒得打开notebook的时候）
@@ -355,9 +415,11 @@ ipython作为jupyter的父辈，很多时候可以作为jupyter notebook(python)
 我们就通过ipython的命令行程序来了解各个魔法命令。
 
 魔法命令分为两类，`line magics`和`cell magics`，前者需要用`%`声明，后者需要用`%%`声明，他们之间的区别可以通过下面的实例来体会
+
 ### Line magics
 
 #### %automagic
+
 或许你已经注意到了，虽然我一直说魔法命令需要用`%`或者`%%`来声明，但是很多时候我们不用百分号也可以正常使用。这是由于jupyter默认开启了`automagic`选项，可以缺省`%`前缀来使用魔法命令：
 <figure markdown>
 ![](./assets/1b9a59d4-865a-47be-afbe-7c32b7373123.png)
@@ -402,6 +464,7 @@ ipython作为jupyter的父辈，很多时候可以作为jupyter notebook(python)
 <center><s>也就是把每个命令敲了一遍看看什么效果</s></center>
 
 ## 插件推荐
+
 魔法命令介绍完了，再来介绍jupyter另外一个核心竞争力：强大、丰富的插件。
 
 按照第二篇推文的方法安装完插件之后，我们在笔记本的首页就可以看到插件选项
@@ -411,16 +474,19 @@ ipython作为jupyter的父辈，很多时候可以作为jupyter notebook(python)
 注意需要把箭头指向的tick取消勾选。
 
 选中某个插件之后可以在下方查看详细的描述，下面介绍几个我常用的插件。
+
 ### Code prettify
+
 这个插件的功能很简单，就是按照特定的标准格式化代码，点击小锤子按钮即可。这里不推荐Autopep8，因为它支持支python代码的格式化，而Code prettify可以支持其他语言的格式化。
 
 #### 格式化python代码
+
 <figure markdown>
-![](https://files.mdnice.com/user/25860/7cba7b91-7a80-4c7f-b3c6-18cc809a767f.gif)
+![](./assets/7cba7b91-7a80-4c7f-b3c6-18cc809a767f.gif)
 </figure>
 #### 格式化R代码
 <figure markdown>
-![](https://files.mdnice.com/user/25860/03b0d7dc-5f28-4e91-854f-27e706f67f36.gif)
+![](./assets/03b0d7dc-5f28-4e91-854f-27e706f67f36.gif)
 </figure>
 ### Codefolding
 同样简单而强大的插件，可以把长代码进行折叠：
@@ -444,7 +510,7 @@ ipython作为jupyter的父辈，很多时候可以作为jupyter notebook(python)
 
 RISE是强大的演示插件，可以在jupyter中实现类似PPT的演示效果，如果你需要做一些coding的pre，那么RISE是不二之选：
 <figure markdown>
-![](https://files.mdnice.com/user/25860/5c31d72b-bf16-4255-bc14-a0d262fe2875.gif)
+![](./assets/5c31d72b-bf16-4255-bc14-a0d262fe2875.gif)
 </figure>
 #### 操作逻辑
 <figure markdown>
@@ -468,7 +534,7 @@ RISE是强大的演示插件，可以在jupyter中实现类似PPT的演示效果
 
 演示：
 <figure markdown>
-![](https://files.mdnice.com/user/25860/6d49b619-4481-4229-ad9f-027aa18420f4.gif)
+![](./assets/6d49b619-4481-4229-ad9f-027aa18420f4.gif)
 </figure>
 在演示页面点击❓可以查看快捷键：
 <figure markdown>
@@ -477,33 +543,45 @@ RISE是强大的演示插件，可以在jupyter中实现类似PPT的演示效果
 ### Table of Contents (2)
 必装插件，没什么好说的，可以自动生成目录、自动添加标题序号：
 <figure markdown>
-![](https://files.mdnice.com/user/25860/7e991a0c-4b92-4ec3-9506-8a54264addf7.gif)
+![](./assets/7e991a0c-4b92-4ec3-9506-8a54264addf7.gif)
 </figure>
 点击顶部的按钮可以开启左侧的目录，点击目录中的项目可以快速跳转，注意只有markdown单元格的标题内容会出现在目录中。
 
 ### Variable Inspector
+
 一个还不错的变量监视器，可以实时显示global namespace的变量信息
 <figure markdown>
-![](https://files.mdnice.com/user/25860/bdb4e0c8-f0c7-4000-a961-977daa5a2628.gif)
+![](./assets/bdb4e0c8-f0c7-4000-a961-977daa5a2628.gif)
 </figure>
 
 也还要其他很多插件但是我平时一般不启用，大家可以多多探索！
+
 ## 自定义样式（美化
+
 最后一部分我们来解决一下jupyter外观的问题，默认的确实有些问题，字号小、没有深色模式……
+
 ### 启用主题
+
 命令行输入
+
 ```
 pip install jupyterthemes
 ```
+
 安装主题包，jupyterthemes的命令行使用`jt`作为快捷指令，输入下面的目录查看主题列表
+
 ```
 jt -l
 ```
+
 输入下面的目录安装特定的主题
+
 ```
 jt -t chesterish
 ```
+
 #### chesterish主题预览
+
 <figure markdown>
 ![](./assets/f9dca664-e499-4a65-8b8c-0602ebf461f3.png)
 </figure>
@@ -511,13 +589,17 @@ jt -t chesterish
 不难看，但也不怎么好看。
 
 更多主题相关的内容可以参考`知乎天意帝`的这篇博客：`https://zhuanlan.zhihu.com/p/54397619`
+
 ### 黑科技
+
 很多时候我们只是想调节一下字体、字号（当然这个操作用`jt`也可以实现），那么可以参考`博客园ZhangHT97`大佬的文章：`https://www.cnblogs.com/ZhangHT97/p/13336975.html`
 
 这位把jupyter web服务的CSS样式文件扒出来了，位于（anaconda路径因人而异）：
+
 ```
 C:\Users\Username\anaconda3\Lib\site-packages\notebook\static\components\codemirror\lib
 ```
+
 下面的CSS文件即使渲染jupyter网页使用的CSS之一
 <figure markdown>
 ![](./assets/30be55cd-7b33-4955-be26-6a1c4e08f5a8.png)
@@ -529,8 +611,7 @@ C:\Users\Username\anaconda3\Lib\site-packages\notebook\static\components\codemir
 </figure>
 
 ## 结语
+
 至此这个系列就正式完结了，洋洋洒洒写了蛮多东西的，不过营养其实不多、毕竟都是网上可以查到的东西，我把他们整理在一起只是方便自己、也方便别人随时查阅，希望能帮助到你。
-
-
 
 此致。

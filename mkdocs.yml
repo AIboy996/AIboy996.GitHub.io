@@ -6,6 +6,7 @@ site_description: 张杨的个人网站
 not_in_nav: index.md
 validation:
   links:
+    not_found: info
     # Blog文章的assets全部使用绝对链接
     absolute_links: ignore
     # 为了i18n插件能正常工作，站内跳转使用相对链接
