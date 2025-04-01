@@ -1,5 +1,6 @@
 # 只加载一个插件，提高编译速度
 plugins:
   - tags
+  - mkdocs-cust
   - mkdocs-video:
       is_video: true

@@ -10,3 +10,4 @@ mkdocs-ai-summary @ git+https://github.com/AIboy996/mkdocs-ai-summary
 openai
 mkdocs-video==1.5.0
 # mkdocs-jupyter==0.22.0
+mkdocs-cust @ git+https://github.com/AIboy996/mkdocs-cust

@@ -1,0 +1,3 @@
+[submodule "mkdocs-cust"]
+	path = mkdocs-cust
+	url = https://github.com/AIboy996/mkdocs-cust
