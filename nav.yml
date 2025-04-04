@@ -12,6 +12,7 @@ nav:
   - Note:
     - Note/index.md
     - Note/software.md
+    - Note/drug.md
     - 爬虫:
       - Note/Spider/antispider.md
     - 复旦:
@@ -32,6 +33,9 @@ nav:
       - Note/Mac/hammerspoon.md
       - Note/Mac/applescript.md
       - Note/Mac/quicklook.md
+    - 摄影:
+      - Note/Photography/terminology.md
+      - Note/Photography/Nikon_Z5.md
     - Algorithm:
       - Note/Algorithm/index.md
       - Note/Algorithm/diffusion.md
@@ -227,6 +231,8 @@ nav:
         - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
         - Python/ThirdPartyLibrary/pytorch/compile.md
+      - sklearn:
+        - Python/ThirdPartyLibrary/sklearn/index.md
     - 应用案例（MISC）:
       - Python/Example/email.md
     - 应用案例（爬虫）:

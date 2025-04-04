@@ -6,13 +6,10 @@
     {% endif %}
 {% endfor %}
 
-{% for page in recent_blog_pages[:3] %}
+{% for page in recent_blog_pages[:4] %}
     <details class="quote">
     <summary>{{ page.meta.git_creation_date_localized }} posted: {{ page.title }}</summary>
-    <br>
-    <!-- 对图片强制把相对路径转换为绝对路径 -->
-    {{ page.content | replace("../assets/", (page.url | url) + "../" + "assets/")}}
-    <br>
+    <p>...</p>
     <a href="{{ page.url | url }}">👉阅读原文</a>
     {% if page.meta and page.meta.git_revision_date_localized %}
         {% include "partials/source-file.html" %}
@@ -20,4 +17,4 @@
     </details>
 {% endfor %}
 
-更多其他博客见左侧Archive
+⬅️ 更多其他博客见左侧导航栏
