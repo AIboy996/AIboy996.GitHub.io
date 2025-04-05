@@ -143,6 +143,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2025:
+      - Blog/2025/hangzhou.md
       - Blog/2025/shwzoo.md
       - Blog/2025/haru.md
       - Blog/2025/pi.md
