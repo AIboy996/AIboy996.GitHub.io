@@ -9,6 +9,8 @@ tags:
 
 ## 2025
 
+- 2025年04月01日
+    - 增加了[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，用于自定义页面渲染的过程。
 - 2025年03月27日
     - 修改了CSS，增强了侧边栏项目对**有无链接页面**的区分。
     - 如果有链接页面就会使用`cursor: pointer`样式：
