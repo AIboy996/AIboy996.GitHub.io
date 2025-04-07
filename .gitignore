@@ -6,3 +6,4 @@
 .checkpoints
 *.egg-info
 __pycache__
+/docs/Note/Leetcode/*.py

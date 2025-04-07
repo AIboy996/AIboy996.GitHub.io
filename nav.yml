@@ -97,6 +97,7 @@ nav:
       - Note/latex/latex_cn.md
     - Leetcode:
       - Note/Leetcode/index.md
+      - Note/Leetcode/001.md
       - Note/Leetcode/051.md
       - Note/Leetcode/148.md
       - Note/Leetcode/206.md
