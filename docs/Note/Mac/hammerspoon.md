@@ -27,6 +27,7 @@ tags:
 ## Hammerspoon的安装
 
 非常简单，只需要：
+
 ```bash
 brew install hammerspoon --cask
 ```
@@ -34,7 +35,9 @@ brew install hammerspoon --cask
 然后打开相应的权限即可。
 
 ## 窗口同步移动
+
 要想实现窗口的同步移动，只需要在配置文件`init.lua`中加入：
+
 ```lua title="窗口同步移动" hl_lines="10"
 local function moveChatGPT()
     local targetFrame = hs.application.applicationsForBundleID(
@@ -56,6 +59,7 @@ telegramWindowFilter:subscribe(
     moveChatGPT
 )
 ```
+
 这几行代码的功能还是比较简单易懂的
 
 - 创建`telegramWindowFilter`来确定触发的窗口
@@ -64,6 +68,7 @@ telegramWindowFilter:subscribe(
 - 回调函数中先分别找到需要同步移动的窗口，然后稍作计算，最后使用`hs.window:setFrame()`接口设置窗口的位置即可
 
 ## 快捷键分屏
+
 在Mac上的分屏我一直用的是[rectangle](https://rectangleapp.com/)。它非常好，快捷键、窗口吸附都做的很好，可以得到和Windows差不多的体验。
 
 但是它有一个问题，在我使用[sketchybar](https://github.com/FelixKratz/SketchyBar)的时候，我会隐藏系统的任务栏。这样一来窗口管理器就会**认为屏幕是完全可用的**。
@@ -93,10 +98,30 @@ hs.hotkey.bind({ "cmd", "shift" }, "Up", function()
     win:setFrame(f)
 end)
 ```
+
 上面就进行了一个简单的判断，当前的主显示器是不是Redmi，如果是的话为全屏留下一定的宽度：
 
 ![](./assets/2024-09-1022.13.26-ezgif.com-video-to-gif-converter.gif)
 
 优雅！
+
+## Airpods音量调节
+
+我就纳了闷了，这个bug多久了，Apple就是不管。
+
+Airpods断开重连无法记录上次调节的音量，而且默认的音量巨大无比，每次都要被炸一下。写了个自动调节：
+
+```lua
+-- 切换到AirPods Pro的时候自动调整音量
+-- 不然真的要聋了
+hs.audiodevice.watcher.setCallback(function()
+    local now_device = hs.audiodevice.defaultEffectDevice()
+    if now_device:name() == "yang的AirPods Pro" then
+        hs.audiodevice.defaultOutputDevice():setVolume(25)
+        hs.alert.show("已切换到yang的AirPods Pro")
+    end
+end)
+hs.audiodevice.watcher.start()
+```
 
 TBC:Hammerspoon的更多功能有待开发。

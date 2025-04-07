@@ -20,8 +20,8 @@ hide:
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206/)|双指针遍历、递归|
 |回溯|[N皇后](https://leetcode.cn/problems/n-queens/)|[051](./051/)|回溯，排列枚举|
 |链表|[排序链表](https://leetcode.cn/problems/sort-list/)|[148](./148/)|归并排序|
-|动态规划|[多多传送门](../Algorithm/interview/0309_pdd)|[0309_pdd_2](./0309_pdd_2/)||
-|动态规划|[多多读书](../Algorithm/interview/0309_pdd)|[0309_pdd_3](./0309_pdd_3/)|`dp[i][j]` 表示剩余 i 时间，从第 j 页开始，能够获得的最大值|
+|动态规划|[多多传送门](../Algorithm/interview/0309_pdd)|[0309_pdd_2](./0309_pdd_2/)|也可以前缀和|
+|动态规划|[多多读书](../Algorithm/interview/0309_pdd)|[0309_pdd_3](./0309_pdd_3/)|`dp[i][j]`表示读完第i页，用了j时间，获得的最大知识|
 |动态规划|[剧院座位安排](../Algorithm/interview/0309_pdd)|[0309_pdd_4](./0309_pdd_4/)||
 |二叉树|[二叉树最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)|[124](./124/)||
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322/)||
