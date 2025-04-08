@@ -123,6 +123,7 @@ nav:
       - Note/mkdocs/plugin_dev.md
     - NAS:
       - Note/NAS/index.md
+      - Note/NAS/scrcpy.md
       - Note/NAS/https.md
       - Note/NAS/oss.md
       - Note/NAS/tg-bot.md

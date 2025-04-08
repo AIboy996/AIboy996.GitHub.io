@@ -14,6 +14,17 @@ hide:
 
 为了找工作，还是刷点题吧😭
 
+学习材料：
+
+- [👍 Datawhale面经](https://github.com/datawhalechina/daily-interview)
+- [👍 算法通关手册](https://algo.itcharge.cn/)
+- [Leetcode](https://leetcode.cn/studyplan/top-100-liked/)
+- [牛客](https://www.nowcoder.com/exam/oj/ta?tpId=37)
+- [代码随想录](https://programmercarl.com/)
+- [labuladong](https://labuladong.online/algo/)
+
+## 笔记
+
 |分类|题目|题解|思路|
 |-----|-----|-----|-----|
 |哈希|[两数之和](https://leetcode.cn/problems/two-sum/)|[001](./001/)||
@@ -27,7 +38,7 @@ hide:
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322/)||
 |数组|[下一个排列](https://leetcode.cn/problems/next-permutation/)|[031](./031/)||
 |概率|[排队上电梯](https://codeforces.com/problemset/problem/518/D/)|[518_d](./518_d/)||
-|？|[排列染色问题](../DataAnalysis/interview/0309_ant)|[0309_ant](./0309_ant/)||
+|回溯|[排列染色问题](../DataAnalysis/interview/0309_ant)|[0309_ant](./0309_ant/)||
 |动态规划|[爬楼梯问题](https://leetcode.cn/problems/climbing-stairs/)|[070](./070/)||
 
 TBC:Leetcode
