@@ -58,7 +58,7 @@ theme:
 
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
-copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2025 Yang Zhang</a>" # 左下角的版权声明
+copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2025 Yang Zhang</a><br><a href='https://icp.gov.moe/?keyword=20251021' target='_blank'>萌ICP备20251021号</a>" # 左下角的版权声明
 
 extra:
   analytics:
