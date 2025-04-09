@@ -2,13 +2,14 @@
 tags:
 - 折腾
 - adb
+- SSH
 ---
 
 # 远程控制安卓手机
 
 adb大家都不陌生，可以用来调试安卓机器，非常强大。
 
-基于adb提供的api，scrcpy可以远程**显示并且控制**安卓屏幕：
+基于adb提供的api，scrcpy（**scr**een **c**o**py**）可以**显示并且控制**安卓屏幕：
 
 <figure markdown>
 
@@ -34,7 +35,7 @@ adb大家都不陌生，可以用来调试安卓机器，非常强大。
 <div class='console'>
 
 ```console
-$ ./adb devices # 确保会输出设备信息
+$ ./adb devices # 确保连接成功
 List of devices attached
 HJS5T19A10009450 device
 ```
@@ -61,7 +62,7 @@ sudo ./adb start-server  # 开启本地的adb服务
     failed to connect to '192.168.31.126:5555': No route to host
     ```
 
-确保连接成功：
+确保Wi-Fi调试连接成功：
 
 <div class='console'>
 
@@ -104,3 +105,23 @@ List of devices attached
         --no-audio\
         --force-adb-forward
     ```
+
+算是零成本的网络摄像头了：
+
+<figure markdown>
+
+![](assets/2025-04-09-14-48-22.png)
+
+<figurecaption>web camera</figurecaption>
+</figure>
+
+可以远程视奸我的室友Counter Strike，哈哈哈哈：
+
+<figure markdown>
+
+![](assets/2025-04-09-14-50-41.png){width=500}
+
+<figurecaption>say hi</figurecaption>
+</figure>
+
+可惜的是，我的手机是Android 10，不能串流音频。没法听到他压力队友了😭
