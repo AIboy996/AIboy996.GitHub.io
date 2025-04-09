@@ -11,7 +11,7 @@ hide:
 
 ```python title="say_hi.py"
 while "False":
-	print("Welcome to my site!")
+    print("Welcome to my site!")
 ```
 
 <h2>你好！</h2>
@@ -25,5 +25,5 @@ while "False":
 - 个人微信订阅号：
 
 <figure markdown>
-![](./assets/images/qrcode.jpg){width=150 .nonzoom title='悖论14'}
+![](./assets/images/qrcode.jpg){width=200 .nonzoom title='悖论14'}
 </figure>

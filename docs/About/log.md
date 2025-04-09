@@ -9,6 +9,10 @@ tags:
 
 ## 2025
 
+- 2025年04月09日
+    - 现在未加载的图片会有一个占位，不会出现页面大幅度闪烁的情况。
+- 2025年04月09日
+    - 链接了[开往](https://www.travellings.cn/go.html)和[萌ICP备案](https://icp.gov.moe/?keyword=20251021)。
 - 2025年04月01日
     - 增加了[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，用于自定义页面渲染的过程。
 - 2025年03月27日
