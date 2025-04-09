@@ -6,6 +6,7 @@ hide:
 ---
 
 ## 我的
+
 - [追番列表](https://bangumi.tv/anime/list/759154/do)
 - [Plex实况](https://plex.yangz.site)
 - [微博客](https://whisper.yangz.site)
@@ -32,6 +33,11 @@ hide:
 - [David Lippman的主页：超好用的graphing tools](http://dlippman.imathas.com/)
 
 ## Special
+
 - TJUPT:
 
-[![](https://tjupt.org/mybar.php?userid=125498.png)](https://tjupt.org/promotionlink.php?key=1dff7324687a78a924366b15ea7fce7f)
+[![](https://tjupt.org/mybar.php?userid=125498.png){width=400}](https://tjupt.org/promotionlink.php?key=1dff7324687a78a924366b15ea7fce7f)
+
+- 开往:
+
+[![](https://www.travellings.cn/assets/light.png){width=400}](https://www.travellings.cn/)
