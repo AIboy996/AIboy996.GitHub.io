@@ -58,3 +58,20 @@ tags:
 
 <figurecaption>急急急</figurecaption>
 </figure>
+
+特别的，下面也放了一个广告：
+
+> 如果您使用了广告屏蔽器，可以以此判断本站的广告是否被屏蔽了
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
+     crossorigin="anonymous"></script>
+<!-- 广告介绍 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2353855407972667"
+     data-ad-slot="4469440034"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
