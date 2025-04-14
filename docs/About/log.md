@@ -9,6 +9,8 @@ tags:
 
 ## 2025
 
+- 2025年04月14日
+    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，支持`.ipynb`文件的渲染，渲染效果[请移步查看](/Note/jupyter/example/)。
 - 2025年04月09日
     - 现在未加载的图片会有一个占位，不会出现页面大幅度闪烁的情况。
 - 2025年04月09日

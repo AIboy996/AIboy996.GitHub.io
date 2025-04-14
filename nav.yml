@@ -93,6 +93,7 @@ nav:
       - 远程服务: Note/jupyter/jupyter3.md
       - 进阶使用: Note/jupyter/jupyter4.md
       - Note/jupyter/print.md
+      - ipynb展示: Note/jupyter/example.ipynb
     - LaTeX:
       - Note/latex/basic_latex.md
       - Note/latex/latex_cn.md

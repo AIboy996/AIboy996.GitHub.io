@@ -2,7 +2,7 @@
 /site
 .DS_Store
 .vscode
-*.ipynb
+/*.ipynb
 .checkpoints
 *.egg-info
 __pycache__

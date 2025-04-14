@@ -15,4 +15,10 @@ but is high on our list for inclusion in a future release. -->
 {% if page.meta and ("live" in page.meta.include) %}
 <script src="{{ 'assets/javascripts/live.js' | url }}"></script>
 {% endif %}
+<!-- 增加对Jupyter Notebook的支持，额外引入一些css -->
+{% if page.meta and page.meta.source_file == "ipynb" %}
+<link rel="stylesheet" href="{{ 'assets/stylesheets/jp-vars.css' | url }}">
+<link rel="stylesheet" href="{{ 'assets/stylesheets/jp-notebook.css' | url }}">
+<link rel="stylesheet" href="{{ 'assets/stylesheets/jp-custom.css' | url }}">
+{% endif %}
 {% endblock %}
