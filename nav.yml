@@ -265,6 +265,7 @@ nav:
     - Project/mkdocs-ai-summary.md
     - Project/AirPrint-with-Python.md
     - Project/Course-Selection-System.md
+    - 哔哩哔哩番剧分析: Project/bilibili-bangumi.ipynb
   - Statistics:
     - Statistics/index.md
     - 基础课:
