@@ -171,7 +171,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * Code font variables are used for typography of code and other monospaces content.
    */
 
-    --jp-code-font-size: 12px;
+    --jp-code-font-size: 14px;
     --jp-code-line-height: 1.3077;
     /* 17px for 13px base */
     --jp-code-padding: 5px;
