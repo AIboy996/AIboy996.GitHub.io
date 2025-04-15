@@ -6,9 +6,9 @@ tags:
 # 广告
 
 !!! info "Ads free"
-    当然，本站提供了一个**无广告**域名：<https://yangz.site>
+    当然，本站提供了一个**无广告**域名：[yangz.site](https://yangz.site)
 
-    不过我还是希望您能从主域名（<https://yangzhang.site>）访问本站的内容，万分感谢🙏
+    不过我还是希望您能从**主域名**（[yangzhang.site](https://yangzhang.site)）访问本站，万分感谢🙏
 
 本站自2025年3月7日开始，引入了Google Adsense广告。
 
@@ -61,7 +61,7 @@ tags:
 
 特别的，下面也放了一个广告：
 
-> 如果您使用了广告屏蔽器，可以以此判断本站的广告是否被屏蔽了
+> 如果您使用了广告屏蔽器，可以据此判断本站的广告是否被屏蔽了
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
      crossorigin="anonymous"></script>
