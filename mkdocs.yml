@@ -3,7 +3,6 @@ site_name: yangzhang's Site
 site_url: https://yangzhang.site/
 site_author: Yang Zhang
 site_description: 张杨的个人网站
-not_in_nav: index.md
 validation:
   links:
     not_found: info
@@ -61,6 +60,13 @@ repo_url: https://github.com/AIboy996/AIboy996.github.io
 copyright: "<a href='https://github.com/AIboy996/AIboy996.GitHub.io/blob/main/LICENSE'>&copy; 2022-2025 Yang Zhang</a><br><a href='https://icp.gov.moe/?keyword=20251021' target='_blank'>萌ICP备20251021号</a>" # 左下角的版权声明
 
 extra:
+  alternate:
+    - name: zh
+      link: /
+      lang: zh
+    - name: en
+      link: /en/ 
+      lang: en
   analytics:
     provider: google
     property: G-8R9VRSN3S0

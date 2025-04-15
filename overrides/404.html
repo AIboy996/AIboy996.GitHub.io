@@ -2,8 +2,22 @@
 
 <!-- Content -->
 {% block content %}
-  <div style="text-align: center;">
-    <h2>404 - Not found</h2>
-    <img src="/assets/images/404.JPG" alt="404" style="width: 70%;">
-  </div>
+<div style="text-align: center;">
+  <h2>404 - Not found</h2>
+  <img src="/assets/images/404.JPG" alt="404" style="width: 70%;">
+</div>
+<!-- 没翻译的页面进行回退 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const referrer = document.referrer;
+    if (window.location.pathname.startsWith("/en/")) {
+      alert("This page is not available in English yet qwq.");
+      if (referrer) {
+        window.history.back();
+      } else {
+        window.location.href = "/";
+      }
+    }
+  })();
+</script>
 {% endblock %}

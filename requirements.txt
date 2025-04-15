@@ -1,3 +1,4 @@
+openai
 mkdocs==1.5.3
 mkdocs-git-revision-date-localized-plugin==1.1.0
 mkdocs-glightbox==0.3.1
@@ -5,9 +6,6 @@ mkdocs-material==9.4.14
 mkdocs-material-extensions==1.3.1
 mkdocs-minify-plugin==0.6.2
 mkdocs-rss-plugin==1.7.0
-mkdocs-static-i18n @ git+https://github.com/AIboy996/mkdocs-static-i18n
-mkdocs-ai-summary @ git+https://github.com/AIboy996/mkdocs-ai-summary
-openai
 mkdocs-video==1.5.0
-# mkdocs-jupyter==0.22.0
+mkdocs-ai-summary @ git+https://github.com/AIboy996/mkdocs-ai-summary
 mkdocs-cust @ git+https://github.com/AIboy996/mkdocs-cust
