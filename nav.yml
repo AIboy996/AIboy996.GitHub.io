@@ -232,7 +232,7 @@ nav:
         - Python/ThirdPartyLibrary/pandas/plotting.md
       - pytorch:
         - Python/ThirdPartyLibrary/pytorch/index.md
-        - Python/ThirdPartyLibrary/pytorch/quick_start.md
+        - 快速入门: Python/ThirdPartyLibrary/pytorch/quick_start.ipynb
         - Python/ThirdPartyLibrary/pytorch/tensor.md
         - Python/ThirdPartyLibrary/pytorch/data.md
         - Python/ThirdPartyLibrary/pytorch/model.md

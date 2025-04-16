@@ -8,7 +8,6 @@ include:
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 
-
 ## Site History
 
 ??? info "To keep it folded"
@@ -20,13 +19,14 @@ include:
 
 <figure markdown>
 
-![](assets/me.png){width=200px}
+![](/About/assets/me.png){width=200px}
 
 </figure>
 
 I believe writing a self-introduction is quite challenging. Depending on the audience, the setting, or the stage of life I’m in, I might give completely different answers. So, I’ve decided to skip writing such a section altogether and instead listed some keywords about myself below as a substitute.
 
 ### Keywords
+
 - [**张杨**](../../Blog/2023/name/)(Zhāng, Yáng): My name is derived from my parents’ surnames.
 - **China**: I’m from **Siyang**, Jiangsu Province, China, a historic city located by the Grand Canal.
 - [**AIboy996**](https://github.com/AIboy996): My GitHub ID. GitHub always reminds me of <https://996.icu>. The prefix *AIboy* comes from *AIgirl*, a well-known game. In hindsight, it could also be interpreted as: my field of expertise is AI, so I am AIboy.
@@ -34,6 +34,7 @@ I believe writing a self-introduction is quite challenging. Depending on the aud
 - [**Python**](../../Python/): The first programming language I learned introduced me to the joy of coding. Unfortunately, I didn’t discover it earlier and switch my major. Now, I can only be a half-baked coder.
 
 - [**Fudan University**](../../Note/Fudan/): A university on Handan Road.
+
 > I recently extended my journey as a graduate student for another three years.
 
 - [**Statistics/Machine Learning**](../../Statistics/): My major. It would have been better to specialize in Computer Science or Mathematics during my undergraduate studies and then dive deeper into Statistics in graduate school.
@@ -46,6 +47,7 @@ I believe writing a self-introduction is quite challenging. Depending on the aud
 - **Jay Chou / Xu Song**: Not a big fan. I can hardly make out the lyrics of songs by Jay Chou and Xu Song (*Is this actually a good thing??*). Thus they’re perfect for listening while doing some work, and after hearing them enough, I ended up falling in love with their music.
 - **[NAS](../../Note/NAS/), Private Tracker**: You know m3.
 - **君和日本語が本当に上手だね**: I’m not a hardcore anime fan, but I watch a small number of series that pique my interest. I have some basic knowledge of Japanese and look forward to a graduation trip to Japan.
+
 > Done. Japan is great, I will visit it again and again.
 
 - **INFJ-T**: If you wonder. However, I’ve always thought personality tests like these are hard to rely on because people are so changeable. My personality can shift significantly depending on time, circumstances, and the situation—*perhaps this itself is a trait of mine*.
@@ -71,6 +73,6 @@ If you feel like I’m another version of you somewhere in the world, and it spa
     > This message will be delivered immediately. Please do not bombard me😭
     
     <figure markdown>
-     ![](assets/2025-01-08-18-00-57.png){width=300}
+     ![](/About/assets/2025-01-08-18-00-57.png){width=300}
     </figure>
     

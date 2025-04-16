@@ -4,7 +4,7 @@
 
 pre {
     line-height: 125%;
-    overflow: scroll;
+    overflow-x: auto;
 }
 
 td.linenos .normal {
