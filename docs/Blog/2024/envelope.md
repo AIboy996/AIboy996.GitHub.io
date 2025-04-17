@@ -27,7 +27,7 @@ include:
 
 
     <figure markdown>
-    ![](/Blog/2024/assets/2024-04-05-15-23-47.png){width=300}
+    ![](assets/2024-04-05-15-23-47.png){width=300}
     <figurecaption>可惜该褪色的还是会褪色</figurecaption>
     </figure>
 

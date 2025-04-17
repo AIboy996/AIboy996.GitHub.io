@@ -6,7 +6,7 @@ tags:
 # 统计计算
 > 24Fall DATA630014，统计计算概论，周渊
 
-这门课虽然叫统计计算，但实际上的内容主要是统计视角下的传统机器学习方法（Machine Learning: A Probabilistic Perspective）。和本科时候我选修的[统计计算](../../elective/Computational_Statistics)有很大区别，那门课主要聚焦在计算，涉及了较多的最优化、数值计算内容。
+这门课虽然叫统计计算，但实际上的内容主要是统计视角下的传统机器学习方法（Machine Learning: A Probabilistic Perspective）。和本科时候我选修的[统计计算](../../elective/Computational_Statistics.md)有很大区别，那门课主要聚焦在计算，涉及了较多的最优化、数值计算内容。
 
 课程主要从两个方面展开：
 
@@ -43,14 +43,14 @@ tags:
 - State Space Models
     - Kalman Filtering
     - Kalman Smoothing
-- [Varitional Inference](./varitional_inference)
+- [Varitional Inference](./varitional_inference.md)
     - Mean-field Method
     - Expectation Propagation
 - Sampling
     - Sampling From Gaussian
     - Rejection Sampling
     - Importance Sampling
-    - [MCMC](./mcmc)
+    - [MCMC](./mcmc.md)
         - Gibbs Sampling
         - Collapsed Gibbs Sampling
         - Metropolis Hastings Algorithm

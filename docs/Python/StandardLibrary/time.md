@@ -27,7 +27,7 @@ time是用C编写的，为python提供时间处理功能的标准库。
 
 !!! cite "秒"
     秒是国际单位制中时间的基本单位，符号是s。秒在英文里的原始词义是计算小时的六十分之一（分钟）后，再计算六十分之一。
-    
+
     - 在西元1000至1960年之间，秒的定义是平均太阳日的1/86,400（在一些天文及法律的定义中仍然适用）。
     - 在1960至1967年之间，定义为1960年地球自转一周时间的1/86,400。
     - 现在则是用原子的特性来定义。秒也可以用机械钟、电子钟或原子钟来计时。
@@ -40,7 +40,7 @@ time是用C编写的，为python提供时间处理功能的标准库。
 
 !!! cite "UTC"
     1963年，CCIR在其发布的第374号建议案中给出了首个对协调世界时作出定义的国际规范，国际时间局则在1965年开始以当时的原子时A3（国际原子时的前身）来计量UTC。
-    
+
     但由于UTC与原子时存在的频偏问题以及其时间单位与国际单位制下的秒长的不一致性，其后几年UTC经历了多次的调整。直到1970年，CCIR发布了第460号建议案，对上述两个问题进行了修正，且要求加入**跳秒机制**使UTC与原有世界时的偏移被控制在1秒以内，UTC的定义才得以稳定下来。这一新的UTC系统自1972年的1月1日零时开始使用，并沿用至今。
 
 比较有意思的是这个跳秒机制（leap second，也叫闰秒）。
@@ -78,35 +78,44 @@ time.struct_time(
 28
 ```
 
-
 ### 各种时间类型的转化
 
 python中的`time.struct_time`是比较理想的结构化数据（tuple），所以我们做时间类型转化可以用它作为中介。
 
 #### 时间戳转化成元组
+
 ```python
 time.gmtime([seconds]) -> (tm_year, tm_mon, tm_mday, tm_hour, tm_min,
                        tm_sec, tm_wday, tm_yday, tm_isdst)
 ```
 
 特别的，`localtime`可以考虑夏令时、时区等因素
+
 ```python
 time.localtime([seconds]) -> (tm_year,tm_mon,tm_mday,tm_hour,tm_min,
                           tm_sec,tm_wday,tm_yday,tm_isdst)
 ```
+
 #### 元组转化成时间戳
+
 ```python
 time.mktime(tuple) -> floating point number
 ```
+
 #### 元组转化成字符串
+
 ```python
 time.strftime(format[, tuple]) -> string
 ```
+
 特别的，`asctime`可以把时间格式化成'Wed Mar 27 17:12:14 2024'样式：
+
 ```python
 time.asctime([tuple]) -> string
 ```
+
 #### 字符串转化成元组
+
 ```python
 time.strptime(string, format) -> struct_time
 ```
@@ -125,7 +134,6 @@ time.strptime(string, format) -> struct_time
 - `%Y年%m月%d日 %H时%M分`
 
 其中用`%`开头的是转义字符，他们的含义如下：
-
 
 |指令|含意|
 |--|--|
@@ -153,20 +161,24 @@ time.strptime(string, format) -> struct_time
 |%Z|时区名称（如果不存在时区，则不包含字符）。|
 |%%|字面的 '%' 字符。|
 
-
 ### 其他有用的函数
+
 让程序睡一会儿
+
 ```python
 time.sleep(seconds)
 ```
+
 但并不总是可靠！
 
 ## datetime
+
 datetime 模块提供了用于操作日期和时间的类。
 
 在支持日期时间数学运算的同时，实现的关注点更着重于如何能够更有效地解析其属性用于格式化输出和数据操作。
 
 datetime实现了以下的类：
+
 ```
 object
     timedelta：时间跨度，实现时间的计算
@@ -176,11 +188,13 @@ object
     date：日期类（不包含时间）
         datetime：日期+时间
 ```
+
 其中`datetime`是最常用的接口。
 
 ### date类
 
 #### 创建对象
+
 - 我们可以直接用`datetime.date`创建特定的`date`对象：
     - `#!python class datetime.date(year, month, day)`
 - 可以创建今天的日期：
@@ -194,6 +208,7 @@ object
     - 支持大部分 ISO 8601 格式给出的日期。
 
 #### 实例属性
+
 `year`，`month`和`day`
 
 #### 实例方法
@@ -208,19 +223,23 @@ object
 - `isocalendar`：返回ISO历法（XXXX年，第XX周，第XX天）
 - `isoformat`：返回日期字符串（YYYY-MM-DD）
 - `ctime`：返回日期字符串（'Wed Dec  4 00:00:00 2002'）
-- `strftime`：返回特定格式的日期字符串，和之前讲的[time.strftime](./#hook)行为类似
+- `strftime`：返回特定格式的日期字符串，和之前讲的[time.strftime](./time.md#hook)行为类似
 - `__str__`：等价于`isoformat`
     - 控制了`str()`的行为，例如直接打印的行为`#!python print(date)`
 - `__format__`：和`strftime`类似
     - 控制了`format()`的行为，例如f-string中的行为：`#!python print(f"{date:%X}")`
+
 ### time类
+
 这个类不怎么用，它实现的是不特定于某一天的时间，例如`下午三点`。
 
 ### timedelta类
+
 `#!python class datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)`
 时间跨度，可以用来做加减乘除
 
 例如
+
 ```python
 >>> import datetime
 >>> datetime.timedelta(days=1)+datetime.timedelta(seconds=300000)
@@ -228,6 +247,7 @@ datetime.timedelta(days=4, seconds=40800)
 ```
 
 `date`和`datetime`对象之间的加减法返回值都是`timedelta`：
+
 ```python
 >>> import datetime
 >>> datetime.date(2023,2,28) - datetime.date(2023,1,9)
@@ -237,10 +257,11 @@ datetime.timedelta(days=50)
 `time`对象不能做加减法。
 
 ### datetime类
+
 就是带了具体时间的`date`类，属性、方法都稍微丰富一点。
 
-
 ## calender
+
 纯Python实现的很有趣的一个库，可以查查日历：
 
 <div class="console">

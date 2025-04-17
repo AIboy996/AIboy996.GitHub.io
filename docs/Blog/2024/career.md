@@ -14,7 +14,7 @@ tags:
 
 <figure markdown>
 
-![](/Blog/2024/assets/2024-05-18-15-22-03.png){width=400}
+![](assets/2024-05-18-15-22-03.png){width=400}
 
 </figure>
 
@@ -24,6 +24,6 @@ tags:
 
 <figure markdown>
 
-![](/Blog/2024/assets/2024-05-18-15-28-14.png){width=400}
+![](assets/2024-05-18-15-28-14.png){width=400}
 
 </figure>

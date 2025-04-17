@@ -130,7 +130,7 @@ $ jupyter nbconvert --to pdf print.ipynb
 
 但是会有一个问题，中文消失了。
 
-这也好办，我们只需要参考[使用LaTeX排版中文文档](../../latex/latex_cn/)的操作。给模版文件添加一个宏包即可：
+这也好办，我们只需要参考[使用LaTeX排版中文文档](../latex/latex_cn.md)的操作。给模版文件添加一个宏包即可：
 <figure markdown>
 
 ![](assets/2024-06-01-14-10-41.png){width=400}

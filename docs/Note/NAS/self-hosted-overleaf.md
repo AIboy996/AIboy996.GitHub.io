@@ -7,10 +7,10 @@ tags:
 
 # 自建Overleaf
 
-最近在更新之前写的[高中数学讲义](../../../Project/high_school_math/)，气人的是讲义的页数多起来之后Overleaf就一直编译超时。
+最近在更新之前写的[高中数学讲义](../../Project/high_school_math.md)，气人的是讲义的页数多起来之后Overleaf就一直编译超时。
 
 <figure markdown>
-![](/Blog/2024/assets/2024-04-27-22-47-52.png){width=500}
+![](assets/2024-04-27-22-47-52.png){width=500}
 <figurecaption>
 学生也要9$一个月，太贵啦！
 </figurecaption>
@@ -75,7 +75,7 @@ bin/up
 然后就完了，**就完了**！！实在是不能更简单了。
 
 <figure markdown>
-![](/Blog/2024/assets/2024-04-27-22-53-57.png)
+![](assets/2024-04-27-22-53-57.png)
 </figure>
 
 ## 自定义配置
@@ -109,7 +109,7 @@ OVERLEAF_ADMIN_EMAIL=mail@yangzhang.site
 
 在管理员新建用户的时候，（大概）可以自动给该邮箱发送注册信息：
 <figure markdown>
-![](/Blog/2024/assets/2024-04-27-23-16-39.png)
+![](assets/2024-04-27-23-16-39.png)
 </figure>
 ## 下载tex宏包
 默认情况下，overleaf使用texlive，并且宏包是不全的。如果想要安装宏包需要以下步骤：

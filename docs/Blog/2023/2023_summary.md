@@ -5,8 +5,9 @@ tags:
 ---
 
 # 2023年度回顾
+
 > 原标题：2023年度总结。
-> 
+>
 > 但我越写越觉得，一年之中发生的事情实在是太多了，每个不同的时间点我都有很多不同的想法。想要写一个年度总结是不现实的，就算写了也只是把我年末的想法写了下了。实际上我根本做不到把我这一年的种种思绪总结归纳出一篇日志。反而我真正想做的是回顾这一整年不同时间发生的事情，翻一翻我的相册，感受感受时光的流逝。所以标题改为2023年度回顾。
 
 2023是各种意义上开启新生活的一年！
@@ -34,8 +35,7 @@ tags:
 
 ## 二月
 
-没快活几天，我就回到了上海，继续那现在看来毫无意义的[实习](../intern/)。
-
+没快活几天，我就回到了上海，继续那现在看来毫无意义的[实习](./intern.md)。
 
 <figure markdown>
 
@@ -44,8 +44,7 @@ tags:
 <figcaption>绿色工位</figcaption>
 </figure>
 
-
-然后比较重量级的事情就是[考研初试](../GEE/)的分数出了，现在看来分数低的刚刚好，但当时我已经完全不抱希望、开始准备直接就业了。
+然后比较重量级的事情就是[考研初试](./GEE.md)的分数出了，现在看来分数低的刚刚好，但当时我已经完全不抱希望、开始准备直接就业了。
 <figure markdown>
 
 ![](assets/2023-12-31-18-10-58.png){width=600}
@@ -62,7 +61,6 @@ tags:
 
 <figcaption>集美</figcaption>
 </figure>
-
 
 <figure markdown>
 
@@ -82,7 +80,7 @@ tags:
 <figcaption>顺！</figcaption>
 </figure>
 
-然后就回到了上海，开启新一轮的[实习](../intern2/)，公司没什么好看的，边上有一家中古店倒是看起来不错，经常有一个神秘叔叔坐在门口。
+然后就回到了上海，开启新一轮的[实习](./intern2.md)，公司没什么好看的，边上有一家中古店倒是看起来不错，经常有一个神秘叔叔坐在门口。
 
 <figure markdown>
 
@@ -94,6 +92,7 @@ tags:
 三月还发生了很多很多事情
 
 - 考研的初试很烂，复试其实也很烂，但是学校还是捞了我一手，感恩戴德！！在三月的最后一天我收到了复试通过的邮件，心里一块巨石落地。
+
 <figure markdown>
 
 ![](assets/2023-12-31-18-34-46.png){width=300}
@@ -103,7 +102,6 @@ tags:
 
 - 我去办了护照，照片上有一个巨大的粉刺！！！签名也很丑！！！
 - 我爸又得了重感冒，陪他去医院检查、挂水，好在虚惊一场。老头子该退休了，希望我能顺利毕业早点找到工作……
-
 
 最后放一张美照吧：
 
@@ -115,10 +113,10 @@ tags:
 </figure>
 
 ## 四月
+
 四月好像什么也没发生。
 
 相册里只有几场电影，几顿饭，几个游戏和那么几首歌（还录了桦桦唱给异地女友的超好听的彩虹，这里就不放了～）
-
 
 放张新鲜出炉的显卡吧：
 <figure markdown>
@@ -139,12 +137,11 @@ tags:
 <figcaption>合照！</figcaption>
 </figure>
 
-
 五月还写完了毕业论文，通关了塞尔达传说（旷野之息+王国之泪二连破！），拿到了日本的旅游签证……一切都挺好
 
 <figure markdown>
 
-![Alt text](/Blog/2023/assets/A04E663E-D21A-45E6-B5F3-B57D29F12C8D_1_105_c.jpeg){width=300}
+![Alt text](assets/A04E663E-D21A-45E6-B5F3-B57D29F12C8D_1_105_c.jpeg){width=300}
 
 <figcaption>林克吃着炸串啤酒救下了塞尔达公主！</figcaption>
 </figure>
@@ -153,7 +150,7 @@ tags:
 
 六月就是毕业季了。
 
-留下了许许多多的[学士服照片](../graduation_pics/)：
+留下了许许多多的[学士服照片](./graduation_pics.md)：
 <figure markdown>
 
 ![](assets/2023-12-31-18-57-33.png){width=400}
@@ -161,8 +158,7 @@ tags:
 <figcaption>我和我清澈愚蠢的室友们</figcaption>
 </figure>
 
-
-也终于去日本来了一次[二次元朝圣](../travel_to_japan/)：
+也终于去日本来了一次[二次元朝圣](./travel_to_japan.md)：
 <figure markdown>
 
 ![](assets/2023-12-31-19-00-28.png){width=400}
@@ -231,7 +227,6 @@ tags:
 <figcaption>村里的天空真的很好看</figcaption>
 </figure>
 
-
 <figure markdown>
 
 ![](assets/2023-12-31-23-05-19.png){width=400}
@@ -250,7 +245,7 @@ tags:
 和狗子吃最后的午餐，然后就滚回上海咯
 <figure markdown>
 
-![Alt text](/Blog/2023/assets/982D832D-3D56-43F8-A6FC-BAC3D647B956_1_105_c.jpeg){width=400}
+![Alt text](assets/982D832D-3D56-43F8-A6FC-BAC3D647B956_1_105_c.jpeg){width=400}
 
 <figcaption>别人家到狗子，很乖</figcaption>
 </figure>
@@ -321,7 +316,6 @@ tags:
 <figcaption>麻友们眼都直了</figcaption>
 </figure>
 
-
 <figure markdown>
 
 ![](assets/2023-12-31-23-35-21.png){width=400}
@@ -388,13 +382,12 @@ tags:
 
 <figure markdown>
 
-![Alt text](/Blog/2023/assets/CDB38E40-3048-4BFF-B7EB-42866348045B_1_105_c.jpeg){width=400}
+![Alt text](assets/CDB38E40-3048-4BFF-B7EB-42866348045B_1_105_c.jpeg){width=400}
 
 <figcaption>模特是不是乱动了</figcaption>
 </figure>
 
 看来我只能当人像摄影师！这波是初音的问题。
-
 
 ## 十二月
 
@@ -423,7 +416,6 @@ tags:
 
 <figcaption>一圈人围着朝炉子里扔钱，堪称奇观</figcaption>
 </figure>
-
 
 在圣诞的前前夜许愿，圣诞老人能听见吗
 <figure markdown>

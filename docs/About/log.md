@@ -9,8 +9,14 @@ tags:
 
 ## 2025
 
+- 2025年04月17日
+    - 修缮了所有站内链接！累死我了，都是mkdocs-static-i18n造的孽啊！
+    - 现在站内链接统一使用相对路径文件引用（例如：`[link](./links.md)`，会被mkdocs自动渲染成[link](./links.md)）。
+- 2025年04月15日
+    - 移除了mkdocs-static-i18n插件，改用原生的i18n功能。
+    - 虽然很简陋，但是本站的英文受众很少（但绝对不是没有！还有英文读者给我发邮件呢😭）
 - 2025年04月14日
-    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，支持`.ipynb`文件的渲染，渲染效果[请移步查看](/Note/jupyter/example/)。
+    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，支持`.ipynb`文件的渲染，渲染效果[请移步查看](/Note/jupyter/example)。
 - 2025年04月09日
     - 现在未加载的图片会有一个占位，不会出现页面大幅度闪烁的情况。
 - 2025年04月09日
@@ -31,7 +37,7 @@ tags:
     - 增加GitHub workflow自动更新`ai-summary-cache`的功能。
     - 如果cache文件被修改了，会由bot自动提交一个commit。
 - 2025年03月04日
-    - 增加了旅行专用的[博客模板](/Blog/2025/travel_to_japan2/)。
+    - 增加了旅行专用的[博客模板](../Blog/2025/travel_to_japan2.md)。
     - 可以放置一个[自定义svg地图](https://simplemaps.com/custom/country)在目录下方，随着页面滚动聚焦旅行的地点。
 - 2025年01月11日
     - 增加了[Live Photo功能](https://github.com/DavidAnson/live-photo-web)，现在本站可以插入实况照片啦！

@@ -116,7 +116,7 @@ include:
 
 ## 类的基础知识
 
-之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword/)和[内置类](../BasicSyntax/builtin_class/)已经零零碎碎地回答了下面的问题：
+之前的两篇文章[内置关键字](../BasicSyntax/builtin_keyword.md)和[内置类](../BasicSyntax/builtin_class.md)已经零零碎碎地回答了下面的问题：
 
 1. 什么是类？
     - 类就是某些对象的抽象，几乎python中一切的东西都是类（或者由类生成的对象或者叫实例 i.e. instance）
@@ -689,7 +689,7 @@ inside func()
 Exited func
 ```
 
-具体的原理读者可以回想我们对`@`语法糖的[解释](./functional_programming/#_13)。
+具体的原理读者可以回想我们对`@`语法糖的[解释](./functional_programming.md#_13)。
 
 ### 协程行为
 > 这部分比较专业，异步编程常用于网络通信工程，我只在写爬虫的时候偶尔能用上。

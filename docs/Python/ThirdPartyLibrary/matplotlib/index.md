@@ -34,19 +34,26 @@ hide:
     ...
 
 ## 两套api
+
 初学者可能会很迷惑的点就是matplotlib画图是有两套交互方式的（虽然本质上他们相同），我们之后也会分别介绍。
-### [函数式：plt](./plt/)
+
+### [函数式：plt](./plt.md)
+
 这种方式是最常见的，也是简单任务下最方便快捷的方式，缺点就是很多操作是不透明的、全局的，plt的处理方法可能和你预想的不同。
 
 使用方法就是调用`matplotlib.pyplot`提供的各种api在默认的画布上绘制。
+
 ```python
 import matplotlib.pyplot as plt
 plt.plot(x, y)
 plt.title("Sample plot")
 plt.show()
 ```
-### [面向对象式：axes](./subplots/)
+
+### [面向对象式：axes](./subplots.md)
+
 这种方式的自由度更高，可以手动控制`Figure`和`Axes`对象。
+
 ```python
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
@@ -54,9 +61,10 @@ ax.plot(x, y)
 ax.set_title("Sample plot")
 plt.show()
 ```
+
 ## 库的架构
 
-```
+```text
 Modules include:
 
 :mod:`matplotlib.axes`
@@ -127,6 +135,7 @@ The following environment variables can be used to customize the behavior:
 ```
 
 ## 二次封装
+
 matplotlib作为Python最火爆的画图库，有很多其他的库对它进行了二次封装：
 
 A large number of third party packages extend and build on Matplotlib functionality, including several higher-level plotting interfaces (seaborn, HoloViews, ggplot, ...), and a projection and mapping toolkit (Cartopy).
@@ -134,7 +143,9 @@ A large number of third party packages extend and build on Matplotlib functional
 我用过的例如：[seaborn](https://seaborn.pydata.org/)、[plotnine](https://plotnine.readthedocs.io/en/stable/)都是开箱即用的好库。相比matplotlib的默认样式更加美观，但是自由度有所下降。
 
 ## 依赖
+
 matplotlib的最新版本是`3.8.3`，有以下依赖：
+
 ```toml
 dependencies = [
     "contourpy >= 1.0.1",

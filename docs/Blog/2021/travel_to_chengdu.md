@@ -11,7 +11,7 @@ tags:
 > 这次旅行由管院的兴青计划独家赞助～
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-27-22.png){width=500}
+![](assets/2024-08-09-22-27-22.png){width=500}
 <figurecaption>出发前的合影，8缺3</figurecaption>
 </figure>
 
@@ -38,7 +38,7 @@ tags:
 当时的心情，现在倒是完全记不起了。我是如此念旧，却又是如此健忘，实在可悲。好在我的日记记录了些许。<s>日记的内容就不给你看了。</s>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-02-11-42.png){width=500}
+![](assets/2024-08-10-02-11-42.png){width=500}
 <figurecaption>标题和封面是Bing的每日壁纸</figurecaption>
 </figure>
 
@@ -53,7 +53,7 @@ tags:
 本次的主要任务是兴青的暑期实践项目，所以我们的第一站是遂宁的射洪职高。
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-44-01.png){width=500}
+![](assets/2024-08-09-22-44-01.png){width=500}
 <figurecaption>在职高，8缺1</figurecaption>
 </figure>
 
@@ -62,69 +62,69 @@ tags:
 ### 汽修
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-49-06.png){width=500}
+![](assets/2024-08-09-22-49-06.png){width=500}
 <figurecaption>差点给我学会了</figurecaption>
 </figure>
 
 ### 数控
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-50-30.png){width=500}
+![](assets/2024-08-09-22-50-30.png){width=500}
 <figurecaption>这边应该是油漆</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-50-52.png){width=500}
+![](assets/2024-08-09-22-50-52.png){width=500}
 <figurecaption>普车！</figurecaption>
 </figure>
 
 ### 烹饪
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-52-01.png){width=500}
+![](assets/2024-08-09-22-52-01.png){width=500}
 <figurecaption>真的很热🔥</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-52-58.png){width=500}
+![](assets/2024-08-09-22-52-58.png){width=500}
 <figurecaption>真的很香😋</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-53-27.png){width=500}
+![](assets/2024-08-09-22-53-27.png){width=500}
 <figurecaption>看哥们颠勺</figurecaption>
 </figure>
 
 ### 酒店
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-54-19.png){width=500}
+![](assets/2024-08-09-22-54-19.png){width=500}
 <figurecaption>一分钟铺床，这就是专业！</figurecaption>
 </figure>
 
 ### 高考
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-56-52.png){width=500}
+![](assets/2024-08-09-22-56-52.png){width=500}
 <figurecaption>是的，职高也有高考班</figurecaption>
 </figure>
 
 ### 美容
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-58-05.png){width=500}
+![](assets/2024-08-09-22-58-05.png){width=500}
 <figurecaption>我愣是没学会</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-22-58-39.png){width=500}
+![](assets/2024-08-09-22-58-39.png){width=500}
 <figurecaption>同学们相互美容</figurecaption>
 </figure>
 
 ### 理发
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-00-26.png){width=500}
+![](assets/2024-08-09-23-00-26.png){width=500}
 <figurecaption>学这个真不愁吃上饭</figurecaption>
 </figure>
 
@@ -137,34 +137,34 @@ tags:
 来点美食写真吧，四川也太好吃了😭😭
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-21-58.png){width=500}
+![](assets/2024-08-09-23-21-58.png){width=500}
 <figurecaption>在四川的第一顿就吃了正宗火锅🥵</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-08-24.png){width=500}
+![](assets/2024-08-09-23-08-24.png){width=500}
 <figurecaption>这冰粉，六块一碗😭😭</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-04-45.png){width=500}
+![](assets/2024-08-09-23-04-45.png){width=500}
 <figurecaption>吃顿饭，润了</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-05-16.png){width=500}
+![](assets/2024-08-09-23-05-16.png){width=500}
 <figurecaption>😋</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-22-59.png){width=500}
+![](assets/2024-08-09-23-22-59.png){width=500}
 <figurecaption>喝酒技术人才培训基地</figurecaption>
 </figure>
 
 > 有一说一，白底黑字的招牌他们真敢挂啊
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-24-22.png){width=500}
+![](assets/2024-08-09-23-24-22.png){width=500}
 <figurecaption>三年过去了，我们采访过的小朋友过的如何呢？</figurecaption>
 </figure>
 
@@ -172,228 +172,228 @@ tags:
 
 ### IFS
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-26-14.png){width=500}
+![](assets/2024-08-09-23-26-14.png){width=500}
 <figurecaption>你好，成都</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-26-48.png){width=500}
+![](assets/2024-08-09-23-26-48.png){width=500}
 <figurecaption>苍蝇馆子～</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-28-49.png){width=500}
+![](assets/2024-08-09-23-28-49.png){width=500}
 <figurecaption>成都人均民谣歌手</figurecaption>
 </figure>
 
 ### 人民公园
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-30-29.png){width=500}
+![](assets/2024-08-09-23-30-29.png){width=500}
 <figurecaption>2号机位</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-37-16.png){width=500}
+![](assets/2024-08-09-23-37-16.png){width=500}
 <figurecaption>3号机位</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-31-13.png){width=500}
+![](assets/2024-08-09-23-31-13.png){width=500}
 <figurecaption>4号机位</figurecaption>
 </figure>
 
 可恶啊，缺了1号机位。
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-32-25.png){width=500}
+![](assets/2024-08-09-23-32-25.png){width=500}
 <figurecaption>巴适的茶</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-33-21.png){width=500}
+![](assets/2024-08-09-23-33-21.png){width=500}
 <figurecaption>🪷</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-34-06.png){width=500}
+![](assets/2024-08-09-23-34-06.png){width=500}
 <figurecaption>本人男，01年大学生，在线求缘</figurecaption>
 </figure>
 
 ### 宽窄巷子
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-35-32.png){width=500}
+![](assets/2024-08-09-23-35-32.png){width=500}
 <figurecaption>大家都吃甜品，是谁只喝矿泉水？？</figurecaption>
 </figure>
 
 ### 春熙路
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-36-26.png){width=500}
+![](assets/2024-08-09-23-36-26.png){width=500}
 <figurecaption>到此一游</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-49-00.png){width=500}
+![](assets/2024-08-09-23-49-00.png){width=500}
 <figurecaption>哈酒</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-49-12.png){width=500}
+![](assets/2024-08-09-23-49-12.png){width=500}
 <figurecaption>给我爱的人来一杯Mojito</figurecaption>
 </figure>
 
 ### 熊猫基地
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-50-25.png){width=500}
+![](assets/2024-08-09-23-50-25.png){width=500}
 <figurecaption>可爱死了🐼</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-52-12.png){width=500}
+![](assets/2024-08-09-23-52-12.png){width=500}
 <figurecaption>吃吃吃</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-52-58.png){width=500}
+![](assets/2024-08-09-23-52-58.png){width=500}
 <figurecaption>高冷熊哥</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-53-30.png){width=500}
+![](assets/2024-08-09-23-53-30.png){width=500}
 <figurecaption>🪷</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-09-23-56-40.png){width=500}
+![](assets/2024-08-09-23-56-40.png){width=500}
 <figurecaption>媚粉熊猫！</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-16-03.png){width=500}
+![](assets/2024-08-10-01-16-03.png){width=500}
 <figurecaption>像是卡在树上了，笨蛋熊猫</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-15-29.png){width=500}
+![](assets/2024-08-10-01-15-29.png){width=500}
 <figurecaption>众所周知，熊猫基地是有孔雀的</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-12-05.png){width=500}
+![](assets/2024-08-10-01-12-05.png){width=500}
 <figurecaption>出熊猫基地碰到了一片花田～</figurecaption>
 </figure>
 
 ### 锦里古街
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-18-23.png){width=500}
+![](assets/2024-08-10-01-18-23.png){width=500}
 <figurecaption>鉴定为商业街</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-18-59.png){width=500}
+![](assets/2024-08-10-01-18-59.png){width=500}
 <figurecaption>喜欢怀旧的店</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-16-46.png){width=500}
+![](assets/2024-08-10-01-16-46.png){width=500}
 <figurecaption>吃脑子=补脑子</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-17-27.png){width=500}
+![](assets/2024-08-10-01-17-27.png){width=500}
 <figurecaption>豆腐🤤🤤</figurecaption>
 </figure>
 
 ### 武侯祠
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-19-24.png){width=500}
+![](assets/2024-08-10-01-19-24.png){width=500}
 <figurecaption>四川人是不是对哈粉有执念</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-21-11.png){width=500}
+![](assets/2024-08-10-01-21-11.png){width=500}
 <figurecaption>刘</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-21-05.png){width=500}
+![](assets/2024-08-10-01-21-05.png){width=500}
 <figurecaption>关</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-21-17.png){width=500}
+![](assets/2024-08-10-01-21-17.png){width=500}
 <figurecaption>张</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-39-11.png){width=500}
+![](assets/2024-08-10-01-39-11.png){width=500}
 <figurecaption>暴雨的成都</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-22-17.png){width=500}
+![](assets/2024-08-10-01-22-17.png){width=500}
 <figurecaption>辣到头皮发麻</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-22-57.png){width=500}
+![](assets/2024-08-10-01-22-57.png){width=500}
 <figurecaption>唱了几首</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-23-18.png){width=500}
+![](assets/2024-08-10-01-23-18.png){width=500}
 <figurecaption>和大家一起喝了青梅酒～</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-23-43.png){width=500}
+![](assets/2024-08-10-01-23-43.png){width=500}
 <figurecaption>干杯</figurecaption>
 </figure>
 
 ### 太古里
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-24-27.png){width=500}
+![](assets/2024-08-10-01-24-27.png){width=500}
 <figurecaption>是的，又是火锅</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-24-39.png){width=500}
+![](assets/2024-08-10-01-24-39.png){width=500}
 <figurecaption>所幸，鸳鸯锅</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-25-25.png){width=500}
+![](assets/2024-08-10-01-25-25.png){width=500}
 <figurecaption>超好吃的甜品</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-25-38.png){width=500}
+![](assets/2024-08-10-01-25-38.png){width=500}
 <figurecaption>xy</figurecaption>
 </figure>
 
 ### 再见，成都
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-25-52.png){width=500}
+![](assets/2024-08-10-01-25-52.png){width=500}
 <figurecaption>如梦似幻的云上之城</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-26-48.png){width=500}
+![](assets/2024-08-10-01-26-48.png){width=500}
 <figurecaption>我们的民宿～</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-27-12.png){width=500}
+![](assets/2024-08-10-01-27-12.png){width=500}
 <figurecaption>泡面派对</figurecaption>
 </figure>
 
 <figure markdown>
-![](/Blog/2021/assets/2024-08-10-01-27-30.png){width=500}
+![](assets/2024-08-10-01-27-30.png){width=500}
 <figurecaption>哎，上海</figurecaption>
 </figure>

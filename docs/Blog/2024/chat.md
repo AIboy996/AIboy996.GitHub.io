@@ -13,7 +13,7 @@ tags:
 
 <figure markdown>
 
-![](/Blog/2024/assets/2024-07-11-00-07-26.png){width=150}
+![](assets/2024-07-11-00-07-26.png){width=150}
 
 </figure>
 

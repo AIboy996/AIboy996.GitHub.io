@@ -16,16 +16,16 @@ ai-summary-config:
 
 ## Subjects
 
-- [**About**](../About/): Here it is, providing an overview of this site.
-- [**Note**](/Note/): Some notes and tutorial(mainly related to CS).
-- [**Blog**](/Blog/): Personal blog.
-- [**Python**](/Python/): Python tutorial comprised of syntax, libraries and some examples.
-- [**Go**](/Go/): Go lang.
-- [**Project**](/Project/): Open source project of mine.
-- [**Statistics**](/Statistics/): A guide for Statistics' undergraduate.
-- [**SomeMath**](/SomeMath/): Literally some math.
-- [**PlayGround**](/Playground/): Playgorund for markdown syntax with some extensions.
-- [**Tags**](/Tags/): 👇
+- [**About**](../About/index.md): Here it is, providing an overview of this site.
+- [**Note**](../../Note/index.md): Some notes and tutorial(mainly related to CS).
+- [**Blog**](../../Blog/index.md): Personal blog.
+- [**Python**](../../Python/index.md): Python tutorial comprised of syntax, libraries and some examples.
+- [**Go**](../../Go/index.md): Go lang.
+- [**Project**](../../Project/index.md): Open source project of mine.
+- [**Statistics**](../../Statistics/index.md): A guide for Statistics' undergraduate.
+- [**SomeMath**](../../SomeMath/index.md): Literally some math.
+- [**PlayGround**](../../Playground/index.md): Playgorund for markdown syntax with some extensions.
+- [**Tags**](../../Tags/index.md): 👇
 
 ## Plugins
 
@@ -44,10 +44,10 @@ Powered by [mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary). S
 
 ### Tags
 
-I always add tags for each page(but sometimes I hide them for simplification), check [**Tags**](/Tags/) to get a Category View.
+I always add tags for each page(but sometimes I hide them for simplification), check [**Tags**](../../Tags/index.md) to get a Category View.
 
 !!! question "New: tags cloud"
-    Recently I add a *Tag Cloud*, check it on [Homepage](../) and [Tags](/Tags/) page.
+    Recently I add a *Tag Cloud*, check it on [Homepage](../index.md) and [Tags](../../Tags/index.md) page.
 
 ### <s>Searching</s> (Deprecated)
 

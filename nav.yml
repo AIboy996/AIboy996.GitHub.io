@@ -100,12 +100,20 @@ nav:
     - Leetcode:
       - Note/Leetcode/index.md
       - Note/Leetcode/001.md
+      - Note/Leetcode/031.md
       - Note/Leetcode/051.md
+      - Note/Leetcode/070.md
+      - Note/Leetcode/124.md
       - Note/Leetcode/148.md
       - Note/Leetcode/206.md
+      - Note/Leetcode/322.md
+      - Note/Leetcode/815.md
+      - Note/Leetcode/1125.md
+      - Note/Leetcode/518_d.md
       - Note/Leetcode/0309_pdd_2.md
       - Note/Leetcode/0309_pdd_3.md
       - Note/Leetcode/0309_pdd_4.md
+      - Note/Leetcode/0309_ant.md
     - Linux:
       - Note/Shell/index.md
       - Note/Shell/man.md
@@ -205,6 +213,7 @@ nav:
     - 基础语法:
       - Python/BasicSyntax/builtin_class.md
       - Python/BasicSyntax/builtin_keyword.md
+      - Python数据结构练习: Python/BasicSyntax/builtin_type.ipynb
     - 高级语法:
       - Python/SeniorSyntax/functional_programming.md
       - Python/SeniorSyntax/OOP.md

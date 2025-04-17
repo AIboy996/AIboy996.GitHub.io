@@ -8,7 +8,7 @@ tags:
 
 <figure markdown>
 
-![](/Blog/2024/assets/dragon-boat-festival-2024-6753651837110449-2xa.gif){width=400}
+![](assets/dragon-boat-festival-2024-6753651837110449-2xa.gif){width=400}
 
 <figurecaption>
 Google Doodles: Dragon Boat Festival 2024
@@ -100,7 +100,7 @@ Google Doodles: Dragon Boat Festival 2024
 
 <figure markdown>
 
-![](/Blog/2024/assets/2024-06-10-15-00-29.png){width=400}
+![](assets/2024-06-10-15-00-29.png){width=400}
 
 <figurecaption>
 西交走错道了，哈工大翻船了，望周知

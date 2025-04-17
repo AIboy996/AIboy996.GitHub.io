@@ -357,7 +357,7 @@ print(g(2).__class__) # 打印出 <class 'generator'>
     StopIteration
     ```
 ### 生成器推导式
-之前我们提到过列表、集合、字典可以使用[推导式生成](../../BasicSyntax/builtin_class/#_5)，实际上生成器也可以使用推导式。
+之前我们提到过列表、集合、字典可以使用[推导式生成](../BasicSyntax/builtin_class.md#_5)，实际上生成器也可以使用推导式。
 
 它的语法和列表生成器类似，只不过使用`()`来标识，例如：
 ```python

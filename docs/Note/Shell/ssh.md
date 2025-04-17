@@ -20,7 +20,7 @@ Secure Shell (SSH) 协议是一种通过不安全网络向计算机**安全发�
 
 ## 远程Shell
 
-我们知道[Shell](../man)是人机交互的接口。而SSH就实现了一个远程访问的、安全的Shell。可以通过远程连接，向计算机发送指令。
+我们知道[Shell](./man.md)是人机交互的接口。而SSH就实现了一个远程访问的、安全的Shell。可以通过远程连接，向计算机发送指令。
 
 和所有的网络应用一样，SSH需要服务端和客户端配合使用，使用最多的就是[OpenSSH](https://www.openssh.com/)。
 
@@ -79,7 +79,7 @@ root@yangz:~#
     ssh root@192.168.31.223 "powershell"
     ```
 
-    在Linux和MacOS上，这里的默认Shell可以通过`chsh`命令来实现。相关的信息都保存在`/etc/passwd`文件中。这个我们[之前提到过](../../Shell/linux/#_4)。
+    在Linux和MacOS上，这里的默认Shell可以通过`chsh`命令来实现。相关的信息都保存在`/etc/passwd`文件中。这个我们[之前提到过](../Shell/index.md#_4)。
 
     在Windows上需要[修改注册表](https://learn.microsoft.com/zh-cn/windows-server/administration/OpenSSH/openssh-server-configuration#configuring-the-default-shell-for-openssh-in-windows)：
     ```ps1
@@ -190,7 +190,7 @@ Windows的OpenSSH服务端配置文件是：
 
 ### 无密码访问
 
-ssh可以基于非对称密钥来实现无密码访问。我们之前介绍过[RSA算法](../../../SomeMath/number_theory/modulo/#rsa)就是最常见的非对称加密算法。
+ssh可以基于非对称密钥来实现无密码访问。我们之前介绍过[RSA算法](../../SomeMath/number_theory/modulo.md#rsa)就是最常见的非对称加密算法。
 
 能使用无密码登录的**前提**是服务端配置（`sshd_config`文件）允许我们使用公钥验证身份：
 ```bash

@@ -5,11 +5,15 @@ site_author: Yang Zhang
 site_description: 张杨的个人网站
 validation:
   links:
-    not_found: info
-    # Blog文章的assets全部使用绝对链接
-    absolute_links: ignore
-    # 为了i18n插件能正常工作，站内跳转使用相对链接
-    unrecognized_links: ignore
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: warn
+not_in_nav: |
+  index.md
+  en/index.md
+  en/About/index.md
+  en/About/about.md
+  en/About/links.md
 theme:
   font: false
   name: material
