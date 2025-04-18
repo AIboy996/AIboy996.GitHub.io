@@ -338,7 +338,7 @@ mkdocs-material支持更好看的样式：
     !!! abstract
     !!! info
     !!! tip
-    !!! subcess
+    !!! success
     !!! failure
     !!! question
     !!! warning

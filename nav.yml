@@ -16,6 +16,7 @@ nav:
     - Note/drug.md
     - 爬虫:
       - Note/Spider/antispider.md
+      - Note/Spider/antidebug.md
     - 复旦:
       - Note/Fudan/index.md
       - Note/Fudan/campus.md
@@ -252,7 +253,7 @@ nav:
         - Python/ThirdPartyLibrary/sklearn/index.md
     - 应用案例（MISC）:
       - Python/Example/email.md
-    - 应用案例（爬虫）:
+    - 应用案例（数据抓取）:
       - Python/Example/Spider/national_FDA.md
       - Python/Example/Spider/local_FDA.md
     - 应用案例（微软三件套）:
