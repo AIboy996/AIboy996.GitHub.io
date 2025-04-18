@@ -58,6 +58,7 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
+    annotation: material/alert-circle
 
 repo_name: AIboy996.github.io
 repo_url: https://github.com/AIboy996/AIboy996.github.io
@@ -133,6 +134,9 @@ markdown_extensions:
   - pymdownx.highlight: # 代码块高亮
       # auto_title: true # 显示编程语言名称
   - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
   - pymdownx.tasklist
   - pymdownx.inlinehilite

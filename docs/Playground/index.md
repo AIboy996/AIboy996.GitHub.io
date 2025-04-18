@@ -4,15 +4,14 @@ hide:
 - navigation
 include:
 - math
-- ai-summary
 ---
 
 
-!!! question "Playground"
+!!! info "兼mkdocs-material 9.4.14+ 特性介绍"
 
-    这里用于调试本站支持的各类组件和markdown扩展语法。markdown基础的语法这里就不赘述了，参见官方教程[^1]。本页面涉及的组件和语法都可以在mkdocs material的官网[^2]以及mkdocs wiki[^3]找到说明文档。
+    这里用于调试**本站支持的**各类组件和markdown扩展语法。markdown基础的语法这里就不赘述了，参见官方教程[^1]。本页面涉及的组件和语法都可以在mkdocs material的官网[^2]以及mkdocs wiki[^3]找到说明文档。
 
-!!! note "Snippets：提高写作效率"
+??? note "Snippets：提高写作效率"
     你可能会问，这么多复杂的语法，写起来是不是太麻烦了，能记得住吗？
 
     针对这个问题，我建议使用VSCode的[Snippets功能](https://code.visualstudio.com/docs/editing/userdefinedsnippets)：
@@ -41,19 +40,20 @@ include:
 
 ## 404 NotFound
 
-[👉本站的404页面](/not_found)，另外，如果你尝试去访问不存在的[英文版面](/en/not_found)，会弹窗提示并且自动回退。
+mkdocs-material允许用户自定义404页面。
+
+你可以去看看[本站的404页面](/not_found)，另外，如果你尝试去访问不存在的[英文版面](/en/not_found)，会弹窗提示并且自动回退。
 
 ## 页面元信息
 
 在markdown文件的开头可以进行meta信息的标注：
-（下面这个加号是可以点击的）
 
 ```html title="可以设置的meta信息"
 ---
-title: Playground of Markdown <!--(1)-->
-tags: <!--(2)-->
+title: Playground of Markdown <!--(1)!-->
+tags: <!--(2)!-->
   -  About
-hide: <!--(3)-->
+hide: <!--(3)!-->
   - navigation
   - toc
 
@@ -74,12 +74,16 @@ hide: <!--(3)-->
     - tags：隐藏tag
     - edit：隐藏编辑按钮
 
-    !!! caution "新的变化 2024.03.07"
+    !!! warning "新的变化 2024.03.07"
         本站现在默认不加载math.js（因为真的很慢），如果页面需要写数学公式需要额外申明
-        ```md
+        
+        ```html
         include:
         - math
+        - live <!--(1)!-->
         ```
+
+        1. 当然还可以额外引入[live-photo.js](https://github.com/DavidAnson/live-photo-web)等其他组件
 
 ## 命令行组件
 
@@ -119,6 +123,38 @@ wheel      0.37.0
 
 </div>
 
+## 注解
+
+### 脚注
+
+markdown支持一种比较通用的**脚注**方式：
+
+```markdown title="脚注"
+我家门前有两棵树，一颗是枣树，另外一颗也是枣树[^1]。
+
+[^1]: 这话是鲁迅说的。
+```
+
+这样一来会自动在文末生成一个脚注[^1]。
+
+### 旁注
+
+mkdocs-material还允许我们可以在文本中插入旁注(1)，插入的方式如下：
+{ .annotate }
+
+1. 你好👋，这里是一个旁注
+
+```markdown hl_lines="2"
+mkdocs-material还允许我们可以在文本中插入旁注(1)，插入的方式如下：
+{ .annotate }
+
+1. 你好👋，这里是一个旁注
+```
+
+这样可以更便捷地查看注释的内容。
+
+旁注的图标也可以自定义，默认是:material-plus-circle:，我改成了:material-alert-circle:。
+
 ## 代码块
 
 代码块是markdown的基础组件：
@@ -127,45 +163,9 @@ wheel      0.37.0
 print("Hello, world!")
 ```
 
-### 悬浮注释
->
-> 官方叫：Stripping comments，脱衣注释哈哈哈哈哈哈
+### 额外选项
 
-mkdocs material有一个注释的特殊写法，可以把注释的内容隐藏起来，变成可点击展开的小加号！
-
-具体来说就是把注释内容替换成`(num)`，然后在代码块下方写对应的数字`num.`+`注释内容`：
-
-=== "渲染效果"
-
-    ``` python
-    for i in range(10):
-      # (1)
-      print(i)
-    ```
-    
-    1. 这是一个for循环，依次打印出0-9
-
-=== "源代码"
-
-    ````html
-    <!-- (1)-->
-    
-    ``` python
-    for i in range(10):
-      # (1)
-      print(i)
-    ```
-    
-    1.  这是一个for循环，依次打印出0-9
-    ````
-    
-    2.  这里还有一个小技巧，如果要在markdown的代码环境中再写markdown代码，可以在外层使用(四个`)来避免和内层语义冲突。
-
-> 不过现在这个样子还是有点丑的，虽然把注释内容隐藏了起来，但是注释符号还在，非常难受！不过mkdocs现在已经在测试进一步的功能（insider已经可以使用了），可以实现更加美观的样式
-
-### 行号、标题、高亮
-
-代码块还可以自定义标题、显示行号、高亮显示某些行：
+mkdocs-material中，代码块还可以自定义标题、显示行号、高亮显示某些行：
 === "渲染效果"
 
     ``` python linenums="1" title="fibonacci" hl_lines="2 3"
@@ -189,6 +189,48 @@ mkdocs material有一个注释的特殊写法，可以把注释的内容隐藏�
             return fib(n-1)+fib(n-2)
     ```
     ````
+
+### 旁注
+
+代码块中也可以加入旁注：
+
+```python
+print() # (1)
+```
+
+1. 这时候会输出一个换行符`\n`
+
+此外代码块的旁注还有一种特殊写法，可以把注释提示词隐藏（例如python中的`#`），只留下注释的内容。
+
+> 官方叫：Stripping comments，脱衣注释哈哈哈哈哈哈
+
+=== "渲染效果"
+
+    ``` python
+    for i in range(10):
+      # (1)
+      print(i, end="") #(2)!
+    ```
+    
+    1. 这是一个for循环，依次打印出0-9
+    2. 使用end参数控制每次打印的休止符
+
+=== "源代码"
+
+    ````html hl_lines="5 6"
+    <!-- (1)-->
+    
+    ``` python
+    for i in range(10):
+      # (1)
+      print(i, end="") #(2)!
+    ```
+    
+    1. 这是一个for循环，依次打印出0-9
+    2. 使用end参数控制每次打印的休止符
+    ````
+    
+    1.  这里还有一个小技巧，如果要在markdown的代码环境中再写markdown代码，可以在外层使用(四个`)来避免和内层语义冲突。
 
 ## 并列内容
 
@@ -272,6 +314,9 @@ mkdocs-material支持更好看的样式：
 
         这里可以写一些内容
     ```
+
+### 折叠与否
+
 如果不需要折叠可以使用下面的写法：
 === "渲染效果"
     !!! caution "标题"
@@ -283,20 +328,31 @@ mkdocs-material支持更好看的样式：
 
         这里可以写一些内容
     ```
-支持以下的样式：
 
-- note
-- abstract, summary, tldr
-- info, todo
-- tip, hint, important
-- success, check, done
-- question, help, faq
-- warning, caution, attention
-- failure, fail, missing
-- danger, error
-- bug
-- example
-- quote, cite
+### 样式
+
+??? note "默认支持的样式"
+
+    !!! note
+        `note`是默认样式，其他样式加载失败就回退到这个样式。
+    !!! abstract
+    !!! info
+    !!! tip
+    !!! subcess
+    !!! failure
+    !!! question
+    !!! warning
+    !!! danger
+    !!! bug
+    !!! example
+    !!! quote
+
+此外我还自定义了一些样式：
+
+!!! theorem
+!!! tongyiai-summary
+!!! chatgpt-summary
+!!! deepseek-summary
 
 ## 图片
 
@@ -334,6 +390,18 @@ mkdocs-material支持更好看的样式：
 
 使用glightbox插件支持了图片的放大显示。添加`{.nonzoom}`类标签可以禁用glightbox组件。
 
+### 边框
+
+对于有`figurecaption`子节点的`figure`，会额外加一个边框，变成类似拍立得的效果：
+
+<figure markdown>
+
+![circle](./assets/circle.png){width=400}
+
+<figurecaption>Image caption</figurecaption>
+
+</figure>
+
 ## 数学公式
 
 本站的LaTex支持则是依靠MathJax实现的，语法上需要小心并非所有的写法通用，具体有何差异可以去官网看一看[^4]。
@@ -362,6 +430,12 @@ $$
 
 <div style="text-align:center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d_qvLDhkg00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+再如哔哩哔哩：
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?bvid=BV1nu9aYvEap&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0" frameborder="no" scrolling="no">
+</iframe>
 </div>
 
 ## 流程图
@@ -398,7 +472,7 @@ mermaid是简单强大的流程图绘制工具，具体细节参见它的的官�
 <center>
 <object
     type="application/pdf"
-    data="../../Statistics/postgrad/assets/2024-02-22_Evading_Simplicity_Bias.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
+    data="some.pdf#page=1&view=FitH&toolbar=1&navpanes=0"
     width=80%
     height=400>
 </object>
