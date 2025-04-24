@@ -58,6 +58,7 @@ nav:
         - Note/Algorithm/interview/0318_pdd.md
         - Note/Algorithm/interview/0330_pdd.md
         - Note/Algorithm/interview/0405_pdd.md
+        - Note/Algorithm/interview/0420_hikv.md
     - Data Analysis:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
@@ -74,6 +75,7 @@ nav:
         - Note/DataAnalysis/interview/0314_byte.md
         - Note/DataAnalysis/interview/0319_ant.md
         - Note/DataAnalysis/interview/0321_byte.md
+        - Note/DataAnalysis/interview/0419_dewu.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
