@@ -9,6 +9,8 @@ tags:
 
 ## 2025
 
+- 2025年04月28日
+    - 增加了**预览版本**：[dev.yangz.site](https://dev.yangz.site:9000)，实时更新草稿
 - 2025年04月17日
     - 修缮了所有站内链接！累死我了，都是mkdocs-static-i18n造的孽啊！
     - 现在站内链接统一使用相对路径文件引用（例如：`[link](./links.md)`，会被mkdocs自动渲染成[link](./links.md)）。
