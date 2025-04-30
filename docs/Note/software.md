@@ -158,6 +158,9 @@ TeX for Mac
 ### Screen Mirror
 > 如果用AirPlay，那么只能在全屏的情况下投影
 可以把ipad的屏幕内容投影到Mac上。
+### [Skim](https://skim-app.sourceforge.io/)
+PDF阅读/笔记软件。比preview好用多了。
+
 
 ## iOS/iPadOS
 > 部分支持MacOS

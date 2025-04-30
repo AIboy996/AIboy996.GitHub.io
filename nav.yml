@@ -76,6 +76,8 @@ nav:
         - Note/DataAnalysis/interview/0319_ant.md
         - Note/DataAnalysis/interview/0321_byte.md
         - Note/DataAnalysis/interview/0419_dewu.md
+        - Note/DataAnalysis/interview/0429_ten.md
+        - Note/DataAnalysis/interview/0430_ten.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md

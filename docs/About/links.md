@@ -13,14 +13,15 @@ hide:
 
 ## 友链
 
-- [程智超](https://lvista.github.io/)
-- [刘原冶](https://henrylau7.github.io/)
-- [杨希杰](https://yang-xijie.github.io/)
-- [谢益辉](https://yihui.org/)
-- [老陳网志](https://blog.chenyyds.com/)
-- [朱英华](https://yinghuazhu.github.io/)
-- [张舟](https://zhangzhou.site/)
-- [子舒](https://zishu.me/)
+- [Wcowin](https://wcowin.work/)：精美mkdocs博客站
+- [程智超](https://lvista.github.io/)：日本留子，网络知己
+- [刘原冶](https://henrylau7.github.io/)：同学
+- [杨希杰](https://yang-xijie.github.io/)：大佬
+- [谢益辉](https://yihui.org/)：大佬
+- [老陳网志](https://blog.chenyyds.com/)：大佬
+- [朱英华](https://yinghuazhu.github.io/)：同学
+- [张舟](https://zhangzhou.site/)：同学
+- [子舒](https://zishu.me/)：大佬
 
 ## 或许有用
 
