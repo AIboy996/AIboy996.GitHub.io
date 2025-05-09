@@ -3,11 +3,11 @@ plugins:
   - mkdocs-cust
   - ai-summary:
       api: "chatgpt"
-      model: "gpt-3.5-turbo" # 贫穷啊，gpt4真的好贵
+      model: "gpt-4o"
       ignore_code: true
       cache: true
       cache_dir: "./"
-      prompt: "请帮我把下面的内容总结为200字以内的摘要，使用源语言，请不要出现连续换行："
+      prompt: "帮我把下面的内容总结为200字以内的概要，使用原文语言。在输出的时候请不要出现连续换行符："
   # 视频插件
   - mkdocs-video:
       is_video: true
