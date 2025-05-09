@@ -52,14 +52,10 @@
             <a class="tag" href="/Tags/#{{ tag }}">
                 <span class="tag-name" style="display:inline-block;
                     {% set sz = ps|count %}
-                        {% if sz > 10 %}
-                            {% set sz = 10 %}
+                        {% if sz > 15 %}
+                            {% set sz = 15 %}
                         {% endif %}
-                    {% if page.url == 'Tags/' %}
-                        font-size:{{ 0.8 +sz*0.04}}rem;
-                    {% else %}
-                        font-size:{{ 0.75+sz*0.04}}rem;
-                    {% endif %}
+                    font-size:{{ 0.6 + sz*0.04}}rem;
                     color:{{ color( loop.index%12) }};
                 ">
                     {{- tag -}} &nbsp;
