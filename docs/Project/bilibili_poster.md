@@ -6,6 +6,7 @@ tags:
 ---
 
 # bilibili_poster
+
 Live at <https://bilibili.yangz.site>
 
 <figure markdown>
@@ -14,7 +15,6 @@ Live at <https://bilibili.yangz.site>
 
 </figure>
 
-
 <figure markdown>
 
 ![](assets/2024-06-10-01-57-20.png)
@@ -22,4 +22,6 @@ Live at <https://bilibili.yangz.site>
 </figure>
 
 !!! success
-    已完成，每日更新中。
+    [![](https://img.shields.io/badge/RSS-update_every_day-blue.svg)](https://bilibili.yangz.site/feed.xml)
+
+    已完成，每日更新中。欢迎[RSS](https://bilibili.yangz.site/feed.xml)订阅。
