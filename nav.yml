@@ -251,7 +251,7 @@ nav:
         - 快速入门: Python/ThirdPartyLibrary/pytorch/quick_start.ipynb
         - Python/ThirdPartyLibrary/pytorch/tensor.md
         - Python/ThirdPartyLibrary/pytorch/data.md
-        - Python/ThirdPartyLibrary/pytorch/model.md
+        - 搭建模型: Python/ThirdPartyLibrary/pytorch/model.ipynb
         - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
         - Python/ThirdPartyLibrary/pytorch/compile.md
