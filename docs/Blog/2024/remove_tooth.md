@@ -2,6 +2,7 @@
 tags:
 - blog
 - 看病
+- 生活
 include:
 - ai-summary
 ---
