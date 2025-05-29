@@ -23,7 +23,11 @@ hide:
 - [代码随想录](https://programmercarl.com/)
 - [labuladong](https://labuladong.online/algo/)
 
-### 题解
+## 题解
+
+某些印象深刻的题目我会写一写题解。
+
+### 已完成的题解
 
 |分类|题目|题解|思路|
 |-----|-----|-----|-----|
@@ -31,8 +35,10 @@ hide:
 |数组|[下一个排列](https://leetcode.cn/problems/next-permutation/)|[031](./031.md)|交换+双指针反转|
 |回溯|[N皇后](https://leetcode.cn/problems/n-queens/)|[051](./051.md)|排列枚举|
 |动态规划|[爬楼梯问题](https://leetcode.cn/problems/climbing-stairs/)|[070](./070.md)||
+|二叉树|[从前序与中序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)|[105](./105.md)||
 |二叉树|[二叉树最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)|[124](./124.md)|递归|
 |链表|[排序链表](https://leetcode.cn/problems/sort-list/)|[148](./148.md)|归并排序|
+|数组|[寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/description/)|[153](./153.md)||
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206.md)|双指针遍历、递归|
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322.md)|动态规划|
 |图|[公交线路](https://leetcode.cn/problems/bus-routes/)|[815](./815.md)|BFS|
@@ -43,4 +49,4 @@ hide:
 |动态规划|[剧院座位安排](../Algorithm/interview/0309_pdd.md)|[0309_pdd_4](./0309_pdd_4.md)||
 |回溯|[排列染色问题](../DataAnalysis/interview/0309_ant.md)|[0309_ant](./0309_ant.md)||
 
-TBC:Leetcode
+### TBC:Leetcode

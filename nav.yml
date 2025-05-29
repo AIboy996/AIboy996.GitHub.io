@@ -78,6 +78,7 @@ nav:
         - Note/DataAnalysis/interview/0419_dewu.md
         - Note/DataAnalysis/interview/0429_ten.md
         - Note/DataAnalysis/interview/0430_ten.md
+        - Note/DataAnalysis/interview/0514_dewu.md
     - Docker:
       - Note/Docker/docker_intro.md
       - Note/Docker/docker_basic.md
@@ -108,8 +109,10 @@ nav:
       - Note/Leetcode/031.md
       - Note/Leetcode/051.md
       - Note/Leetcode/070.md
+      - Note/Leetcode/105.md
       - Note/Leetcode/124.md
       - Note/Leetcode/148.md
+      - Note/Leetcode/153.md
       - Note/Leetcode/206.md
       - Note/Leetcode/322.md
       - Note/Leetcode/815.md
