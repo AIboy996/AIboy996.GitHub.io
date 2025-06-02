@@ -15,7 +15,8 @@
       if (referrer) {
         window.history.back();
       } else {
-        window.location.href = "/";
+        // 如果没有 referrer，直接跳转到对应的中文页面
+        window.location.href = window.location.pathname.replace("/en/", "/");
       }
     }
   })();
