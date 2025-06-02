@@ -12,12 +12,8 @@
     const referrer = document.referrer;
     if (window.location.pathname.startsWith("/en/")) {
       alert("This page is not available in English yet qwq.");
-      if (referrer) {
-        window.history.back();
-      } else {
-        // 如果没有 referrer，直接跳转到对应的中文页面
-        window.location.href = window.location.pathname.replace("/en/", "/");
-      }
+      // 对于404的英文字页面，直接跳转到对应的中文页面
+      window.location.href = window.location.pathname.replace("/en/", "/");
     }
   })();
 </script>
