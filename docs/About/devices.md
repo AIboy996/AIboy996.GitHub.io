@@ -26,6 +26,7 @@ tags:
 - `2020-202?`：华为mate 20
 - `2020-2021`：<s>Apple iPhone SE 2</s>
 - `2022-202?`：Apple iPhone 13
+- `2025-202?`：Apple iPhone 16 Pro（国补万岁！终于可以pro一回了🎉🎉）
 
 ## 平板电脑
 
