@@ -50,7 +50,7 @@ theme:
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
     - content.code.copy # 代码内容给一个复制按钮
     - content.code.annotate # 代码块内的注释
-    # - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.top # 返回顶部的按钮 在上滑时出现
     # - navigation.expand # 打开Tab时左侧目录全部展开
     # - search.suggest # 搜索输入一些字母时推荐补全整个单词
     # - search.highlight # 搜索出的文章关键词加入高亮

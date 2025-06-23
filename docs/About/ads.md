@@ -5,12 +5,21 @@ tags:
 
 # 广告
 
-!!! info "Ads free"
-    当然，本站提供了一个**无广告**域名：[yangz.site](https://yangz.site)
+是的，我厚颜无耻地在在本站插入了广告。
 
-    不过我还是希望您能从**主域名**（[yangzhang.site](https://yangzhang.site)）访问本站，万分感谢🙏
+!!! info "Ads free"
+    当然，本站提供了一个**无广告**域名：[yangz.site](https://yangz.site)。不过我还是希望您能从**主域名**（[yangzhang.site](https://yangzhang.site)）访问本站、或者将本站加入白名单，万分感谢🙏
 
 本站自2025年3月7日开始，引入了Google Adsense广告。
+
+!!! warning "请勿轻信广告内容"
+    广告的内容由Google Adsense自动插入，我无法控制🤷，并且广告内容大多数和本站内容不相关。
+
+    > 据我观察，梯子广告占比很高😭
+    
+    我也一直在找质量高一些的广告平台，之前看到了针对开发者的[EthicalAds](https://www.ethicalads.io/)感觉不错，但是他们不接受个人网站：
+
+    ![](assets/2025-06-23-22-21-47.png)
 
 为了降低对用户体验的影响，我只开启了锚定广告，你可以很轻松地隐藏/关闭它：
 
@@ -37,9 +46,10 @@ tags:
     </figure>
 </div>
 
-广告的内容由Google Adsense自动生成，与我无关🤷
+!!! note "20256月23日更新"
+    最近正在测试各种各样的广告方式。最新测试版本是：在评论区上方插入固定广告，并且插入**半小时最多出现一次**的站内跳转广告。
 
-> 据我观察，梯子广告占比很高😭
+    上面提到的锚定广告暂时关掉了，确实有点丑。
 
 目前，本站的收入情况如下：
 
@@ -58,20 +68,3 @@ tags:
 
 <figurecaption>急急急</figurecaption>
 </figure>
-
-特别的，下面也放了一个广告：
-
-> 如果您使用了广告屏蔽器，可以据此判断本站的广告是否被屏蔽了
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2353855407972667"
-     crossorigin="anonymous"></script>
-<!-- 广告介绍 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2353855407972667"
-     data-ad-slot="4469440034"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
