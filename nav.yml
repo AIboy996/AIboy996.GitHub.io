@@ -63,8 +63,9 @@ nav:
       - Note/DataAnalysis/index.md
       - Note/DataAnalysis/ab_test.md
       - 因果推断:
-        - Note/DataAnalysis/casual/index.md
-        - Note/DataAnalysis/casual/simpson.md
+        - Note/DataAnalysis/causal/index.md
+        - Note/DataAnalysis/causal/simpson.md
+        - Note/DataAnalysis/causal/causal_models.md
       - 数据库:
         - Note/DataAnalysis/rel_db.md
         - Note/DataAnalysis/sql.md
@@ -311,6 +312,7 @@ nav:
       - Statistics/elective/Computational_Statistics.md
       - 数据挖掘:
         - Statistics/elective/Data_Mining/index.md
+        - Statistics/elective/Data_Mining/tree.md
         - Statistics/elective/Data_Mining/bagging_and_boosting.md
       - Statistics/elective/Algorithm.md
       - Statistics/elective/DSPython.md
