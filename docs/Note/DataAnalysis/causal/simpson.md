@@ -1,7 +1,7 @@
 ---
 tags:
 - DA
-- 统计学
+- Statistics
 title: 辛普森悖论
 ---
 

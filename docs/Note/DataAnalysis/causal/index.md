@@ -1,7 +1,7 @@
 ---
 tags:
 - DA
-- 统计学
+- Statistics
 ---
 
 # 因果推断
