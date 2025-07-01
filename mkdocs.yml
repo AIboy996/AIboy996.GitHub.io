@@ -89,27 +89,21 @@ extra:
           note: >- 
             Thanks for your feedback! Help me improve this page by using the <a href="https://github.com/AIboy996/AIboy996.GitHub.io/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
   social: # icons
-    - icon: material/email
-      link: mailto:mail@yangzhang.site
-      name: 邮件
     - icon: fontawesome/brands/github
       link: https://github.com/AIboy996
       name: GitHub | AIboy996
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85735334
       name: BiliBili | 豆汁泡纳豆
-    # - icon: fontawesome/solid/paper-plane
-    #   link: https://t.me/onsdriver
-    #   name: Telegram | @onsdriver
+    - icon: fontawesome/brands/unsplash
+      link: https://unsplash.com/@onsdriver
+      name: Unsplash | @onsdriver
     - icon: fontawesome/solid/list-check
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
     - icon: material/function-variant
       link: https://aiboy996.github.io/dzd/
       name: 高中数学典中典
-    # - icon: material/brush
-    #   link: https://plt.yangz.site
-    #   name: plt画廊
     - icon: material/plex
       link: https://plex.yangz.site
       name: Plex实况
@@ -119,9 +113,15 @@ extra:
     - icon: fontawesome/solid/rss
       link: https://yangzhang.site/feed_rss_created.xml
       name: RSS
-    - icon: fontawesome/solid/train-subway
-      link: https://www.travellings.cn/go.html
-      name: 开往
+    - icon: material/email
+      link: mailto:mail@yangzhang.site
+      name: 邮件
+    # - icon: material/brush
+    #   link: https://plt.yangz.site
+    #   name: plt画廊
+    # - icon: fontawesome/solid/train-subway
+    #   link: https://www.travellings.cn/go.html
+    #   name: 开往
 
 markdown_extensions:
   - md_in_html
