@@ -23,6 +23,10 @@ tags:
 唯一指定的浏览器
 ### [Visual Studio Code](https://code.visualstudio.com/)
 唯一指定的文本（代码）编辑器，插件丰富
+### [Zed](https://zed.dev/)
+The editor for what's next.
+
+快就是好，比vscode还要快得多！
 ### [Docker](https://www.docker.com/)
 虚拟容器
 ### [MindLine](https://www.mindline.cn/)
@@ -160,7 +164,10 @@ TeX for Mac
 可以把ipad的屏幕内容投影到Mac上。
 ### [Skim](https://skim-app.sourceforge.io/)
 PDF阅读/笔记软件。比preview好用多了。
-
+### [MacZip](https://ezip.awehunt.com/)
+可以在Mac上预览zip文件！
+### [Dropshelf](https://pilotmoon.com/dropshelf/)
+文件临时存放，跨窗口拖拽文件。
 
 ## iOS/iPadOS
 > 部分支持MacOS
