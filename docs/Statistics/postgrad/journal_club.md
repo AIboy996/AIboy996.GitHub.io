@@ -10,6 +10,14 @@ Journal Club是我导组织的论文分享会，我偶尔也会上去分享一�
 ??? info "PPT绘制工具？"
     下面的PPT都是借助[Marp](https://marp.app/)绘制，源文件为Markdown，使用主题为[Beam](https://rnd195.github.io/marp-community-themes/theme/beam.html)。
 
+## 2025-07-04
+
+- **Shared Paper**: *Automated Characterization of Myocardial Scar Topological Patterns for Ventricular Tachycardia Screening*
+- **Publication**: MICCAI 2025
+- **Keywords**: Scar Segmentation, Polar Transformation
+
+<iframe width=100% height=500 src="../slides/2025-07-04_张杨_VTScreen.html"></iframe>
+
 ## 2025-04-14
 
 - **Shared Paper**: [*A Decade's Battle on Dataset Bias: Are We There Yet?*](https://arxiv.org/abs/2403.08632)
