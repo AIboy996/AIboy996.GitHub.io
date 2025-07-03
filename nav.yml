@@ -31,11 +31,12 @@ nav:
       - Note/Reading/i_just_called.md
     - 我用Mac:
       - Note/Mac/index.md
+      - Note/Mac/applemusic.md
+      - Note/Mac/applescript.md
+      - Note/Mac/quicklook.md
       - Note/Mac/zsh.md
       - Note/Mac/sketchybar.md
       - Note/Mac/hammerspoon.md
-      - Note/Mac/applescript.md
-      - Note/Mac/quicklook.md
     - 摄影:
       - Note/Photography/terminology.md
       - Note/Photography/Nikon_Z5.md
