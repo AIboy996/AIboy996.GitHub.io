@@ -13,8 +13,38 @@ include:
 !!! cite "official intro"
     PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.
 
-[PyTorch](https://pytorch.org/)是一个开源的Python机器学习库，基于[torch](http://torch.ch/)实现。它们二者的关系大家可以看看[浅谈Pytorch与Torch的关系
-](https://oldpan.me/archives/pytorch-torch-relation)。
+[PyTorch](https://pytorch.org/)是一个开源的Python机器学习库，基于[torch](http://torch.ch/)实现。它们二者的关系大家可以看看[浅谈Pytorch与Torch的关系](https://oldpan.me/archives/pytorch-torch-relation)。
+
+PyTorch同时提供Python和[C++](https://docs.pytorch.org/cppdocs/)的api，当然我只会Python。本系列笔记会分成下面几块内容来介绍pytorch：
+
+```mermaid
+flowchart TD
+    subgraph 速通
+        快速入门
+    end
+    subgraph 基础
+        张量基础
+        数据加载
+        搭建模型
+        优化模型
+    end
+    subgraph 进阶
+        多卡训练
+        编译优化
+        模型部署
+    end
+    速通 --> 基础 --> 进阶
+
+    click 快速入门 "./quick_start/"
+    click 张量基础 "./tensor/"
+    click 数据加载 "./data/"
+    click 搭建模型 "./model/"
+    click 优化模型 "./optimizer/"
+    click 多卡训练 "./multi_gpu/"
+    click 编译优化 "./compile/"
+```
+
+本篇文章则是对深度学习编程核心算法（autograd）的简短介绍。
 
 ## 自动梯度计算
 > [torch.autograd](https://pytorch.org/docs/stable/autograd.html)

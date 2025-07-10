@@ -3,6 +3,9 @@ tags:
 - pytorch
 ---
 
-# 训练模型
+# 优化模型
 
-TBD:pytorch 训练模型
+> [torch.optim](https://docs.pytorch.org/docs/stable/optim.html)
+
+
+TBD:pytorch 优化模型
