@@ -2,7 +2,6 @@
 title: 链接
 hide:
 - toc
-- comments
 ---
 
 ## 我的
@@ -13,6 +12,8 @@ hide:
 - [Plex实况](https://plex.yangz.site)
 
 ## 友链
+
+> 欢迎评论区留言，交换友链
 
 - [Wcowin](https://wcowin.work/)：精美mkdocs博客站
 - [程智超](https://lvista.github.io/)：日本留子，网络知己
@@ -26,13 +27,24 @@ hide:
 
 ## 或许有用
 
+### mkdocs
+
 - [mkdocs官网](https://www.mkdocs.org/)
 - [mkdocs WIKI](https://github.com/mkdocs/mkdocs/wiki)
 - [markdown教程](https://www.markdownguide.org/)
 - [mkdocs-material官网](https://squidfunk.github.io/mkdocs-material/)
 - [mkdocs-material的配置文档](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
-- [GitHub仓库小卡片生成](https://gh-card.dev/)
-- [David Lippman的主页：超好用的graphing tools](http://dlippman.imathas.com/)
+
+### 小工具
+
+- [shields.io：生成小badge](https://shields.io/)
+- [gh-card：生成GitHub仓库小卡片](https://gh-card.dev/)
+- [appicon forge：DIY图标](https://zhangyu1818.github.io/appicon-forge/)
+- [David Lippman's：超好用的graphing tools](http://dlippman.imathas.com/)
+- [graphviz：图可视化工具](https://www.graphviz.org/)
+- [penrose：数学对象可视化](https://penrose.cs.cmu.edu/)
+- [mermaid：流程图工具](https://mermaid.js.org/#/)
+- [nbviewer：在线展示Jupyter Notebook](https://nbviewer.org/)
 
 ## Special
 
