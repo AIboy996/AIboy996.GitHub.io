@@ -1,3 +1,10 @@
+.console span {
+    overflow: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
 .md-nav__link[for]:hover {
     color: #000000 !important;
     cursor: s-resize;

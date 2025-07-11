@@ -9,6 +9,8 @@ tags:
 
 ## 2025
 
+- 2025年07月11日
+    - 修复了`termynal.js`组件在手机上显示overflow问题。
 - 2025年04月28日
     - 增加了**预览版本**：[dev.yangz.site](https://dev.yangz.site:9000)，实时更新草稿
 - 2025年04月17日
