@@ -6,11 +6,9 @@ tags:
 - 召回
 ---
 
-# ItemCF
+# 召回1：ItemCF
 
-> Sarwar, Badrul, et al. "[Item-based collaborative filtering recommendation algorithms.](https://dl.acm.org/doi/pdf/10.1145/371920.372071)" Proceedings of the 10th international conference on World Wide Web. 2001.
-
-核心问题：如何判断**相似性**？
+核心问题：如何判断Item之间的**相似性**？
 
 - 基于知识图谱：例如两本书同作者
 - 基于用户行为

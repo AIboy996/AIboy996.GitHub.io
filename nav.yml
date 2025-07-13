@@ -52,6 +52,12 @@ nav:
         - Note/Algorithm/redommendation/intro.md
         - Note/Algorithm/redommendation/ItemCF.md
         - Note/Algorithm/redommendation/Swing.md
+        - Note/Algorithm/redommendation/UserCF.md
+        - Note/Algorithm/redommendation/MatrixCompletion.md
+        - Note/Algorithm/redommendation/two_tower.md
+        - Note/Algorithm/redommendation/deep_retrieval.md
+        - Note/Algorithm/redommendation/others_retrieval.md
+        - Note/Algorithm/redommendation/bloom_filter.md
       - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
