@@ -110,7 +110,7 @@ class MyIterableDataset(torch.utils.data.IterableDataset):
         return iter(range(self.start, self.end))
 ```
 
-这时候我们就只能按照数据集**定义好的顺序**来挨个访问数据，而无法像map style那样访问特定的数据，也就[无法实现随机采样](./#iterable-style_1)了。
+这时候我们就只能按照数据集**定义好的顺序**来挨个访问数据，而无法像map style那样访问特定的数据，也就[无法实现随机采样](#iterable-style_1)了。
 
 !!! warning "多进程数据加载"
     iterable style数据集在使用多进程DalaLoader的时候可能会出现数据重复的问题。例如上面定义的数据集：
@@ -121,7 +121,7 @@ class MyIterableDataset(torch.utils.data.IterableDataset):
     ```
     可以看到，数据会重复两次。并且数据被自动转换为了torch.Tensor。
 
-    这个问题可以通过DataLoader的worker_init_fn参数来解决。[后续的小节](./#worker_init_fn)我再来详细介绍。
+    这个问题可以通过DataLoader的worker_init_fn参数来解决。[后续的小节](#worker_init_fn)我再来详细介绍。
 
 一般来讲，大家都用map-style比较多。
 
@@ -166,7 +166,7 @@ DataLoader(
 
 - `prefetch_factor`参数控制预载的数据量，因为CPU可能比IO要快所以通常需要预载
 - `persistent_workers`参数控制在不同的epoch是否重启dataload workers
-- `sampler`和`batch_sampler`控制采样的行为，这个我们[最后一节](./#sampler)来介绍
+- `sampler`和`batch_sampler`控制采样的行为，这个我们[最后一节](#sampler)来介绍
 
 ### 参数冲突
 
@@ -379,4 +379,4 @@ torch还为我们封装了一些常用的Sampler：
 
 看名字就知道是干什么的。
 
-其中最后一个`torch.utils.data.distributed.DistributedSampler`比较特殊，它用于分布式训练。他会自动把整个按照分布式节点数数据集划分为若干个不相交的部分，然后给每个节点提供数据。后续的[多卡训练笔记](../multi_gpu/)还会详细介绍它。
+其中最后一个`torch.utils.data.distributed.DistributedSampler`比较特殊，它用于分布式训练。他会自动把整个按照分布式节点数数据集划分为若干个不相交的部分，然后给每个节点提供数据。后续的[多卡训练笔记](multi_gpu.md)还会详细介绍它。

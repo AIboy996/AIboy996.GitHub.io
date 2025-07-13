@@ -20,7 +20,7 @@ tags:
     - 移除了mkdocs-static-i18n插件，改用原生的i18n功能。
     - 虽然很简陋，但是本站的英文受众很少（但绝对不是没有！还有英文读者给我发邮件呢😭）
 - 2025年04月14日
-    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，支持`.ipynb`文件的渲染，渲染效果[请移步查看](/Note/jupyter/example)。
+    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，支持`.ipynb`文件的渲染，渲染效果[请移步查看](../Note/jupyter/example.ipynb)。
 - 2025年04月09日
     - 现在未加载的图片会有一个占位，不会出现页面大幅度闪烁的情况。
 - 2025年04月09日
