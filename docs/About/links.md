@@ -21,7 +21,7 @@ a.friend > div {
     left: 0;
     z-index: 100; /* 确保悬浮层在最前 */
     background: white; /* 可选，添加背景避免透明 */
-    border: 2px solid #ccc; /* 可选，添加边框 */
+    border: 5px solid var(--md-primary-fg-color); /* 可选，添加边框 */
     padding: 5px; /* 可选，添加内边距 */
     pointer-events: none;  /* 关键：鼠标事件穿透div，不影响a的hover */
 }
@@ -57,16 +57,16 @@ a.friend > div img {
 > 欢迎评论区留言，交换友链
 
 <ul>
-<li><a href="https://jixinlong.top/" class="friend">Ji Xinlong<div><img src="https://www.jixinlong.top/images/logo-%E7%A9%BA%E4%B8%AD%E8%8A%B1%E5%9B%AD.svg"></img></div></a>：宿迁老铁</li>
-<li><a href="https://wcowin.work/" class="friend">Wcowin<div><img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f.webp"></img></div></a>：精美mkdocs博客站</li>
-<li><a href="https://lvista.github.io/" class="friend">程智超<div><img src="https://lvista.github.io/assets/images/logo_noBG.png"></img></div></a>：日本留子，网络知己</li>
-<li><a href="https://henrylau7.github.io/" class="friend">刘原冶<div><img src="https://henrylau7.github.io/assets/img/profile.JPG"></img></div></a>：同学</li>
+<li><a href="https://jixinlong.top/" class="friend">Ji Xinlong<div><img class="nonzoom" src="https://www.jixinlong.top/images/logo-%E7%A9%BA%E4%B8%AD%E8%8A%B1%E5%9B%AD.svg"></img></div></a>：宿迁老铁</li>
+<li><a href="https://wcowin.work/" class="friend">Wcowin<div><img class="nonzoom" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f.webp"></img></div></a>：精美mkdocs博客站</li>
+<li><a href="https://lvista.github.io/" class="friend">程智超<div><img class="nonzoom" src="https://lvista.github.io/assets/images/logo_noBG.png"></img></div></a>：日本留子，网络知己</li>
+<li><a href="https://henrylau7.github.io/" class="friend">刘原冶<div><img class="nonzoom" src="https://henrylau7.github.io/assets/img/profile.JPG"></img></div></a>：同学</li>
 <li><a href="https://yinghuazhu.github.io/" class="friend">朱英华</a>：同学</li>
-<li><a href="https://zhangzhou.site/" class="friend">张舟<div><img src="https://zhangzhou.site/assets/logo_light.gif"></img></div></a>：同学</li>
-<li><a href="https://yang-xijie.github.io/" class="friend">杨希杰<div><img src="https://avatars.githubusercontent.com/u/57952362?v=4"></img></div></a>：大佬</li>
-<li><a href="https://yihui.org/" class="friend">谢益辉<div><img src="https://yihui.org/images/logo.png"></img></div></a>：大佬</li>
-<li><a href="https://blog.chenyyds.com/" class="friend">老陳网志<div><img src="https://blog.chenyyds.com/favicon.png"></img></div></a>：大佬</li>
-<li><a href="https://zishu.me/" class="friend">子舒<div><img src="https://imgurl.zishu.me/favicon.png"></img></div></a>：大佬</li>
+<li><a href="https://zhangzhou.site/" class="friend">张舟<div><img class="nonzoom" src="https://zhangzhou.site/assets/logo_light.gif"></img></div></a>：同学</li>
+<li><a href="https://yang-xijie.github.io/" class="friend">杨希杰<div><img class="nonzoom" src="https://avatars.githubusercontent.com/u/57952362?v=4"></img></div></a>：大佬</li>
+<li><a href="https://yihui.org/" class="friend">谢益辉<div><img class="nonzoom" src="https://yihui.org/images/logo.png"></img></div></a>：大佬</li>
+<li><a href="https://blog.chenyyds.com/" class="friend">老陳网志<div><img class="nonzoom" src="https://blog.chenyyds.com/favicon.png"></img></div></a>：大佬</li>
+<li><a href="https://zishu.me/" class="friend">子舒<div><img class="nonzoom" src="https://imgurl.zishu.me/favicon.png"></img></div></a>：大佬</li>
 </ul>
 
 ## 或许有用
