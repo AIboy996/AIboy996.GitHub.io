@@ -14,6 +14,8 @@ hide:
 
 ## Exchange Links
 
+- [Ji Xinlong](https://jixinlong.top/)
+- [Wcowin](https://wcowin.work/)
 - [Lvista's Blog](https://lvista.github.io/)
 - [Henry Liu](https://henrylau7.github.io/)
 - [Yang-xijie's Homepage](https://yang-xijie.github.io/)

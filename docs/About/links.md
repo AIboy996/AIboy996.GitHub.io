@@ -4,6 +4,47 @@ hide:
 - toc
 ---
 
+<style>
+a.friend {
+    position: relative; /* 为绝对定位的子元素提供参照 */
+    display: inline-block; /* 让 a 标签可以正确包含绝对定位元素 */
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
+    padding-right: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+a.friend > div {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* 显示在链接上方 */
+    left: 0;
+    z-index: 100; /* 确保悬浮层在最前 */
+    background: white; /* 可选，添加背景避免透明 */
+    border: 2px solid #ccc; /* 可选，添加边框 */
+    padding: 5px; /* 可选，添加内边距 */
+    pointer-events: none;  /* 关键：鼠标事件穿透div，不影响a的hover */
+}
+
+a.friend:hover > div {
+    display: block;
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+a.friend > div img {
+    max-width: 100px !important;
+    height: auto;
+    display: block;
+}
+
+</style>
+
 ## 我的
 
 - [摄影集](https://unsplash.com/@onsdriver)
@@ -15,15 +56,18 @@ hide:
 
 > 欢迎评论区留言，交换友链
 
-- [Wcowin](https://wcowin.work/)：精美mkdocs博客站
-- [程智超](https://lvista.github.io/)：日本留子，网络知己
-- [刘原冶](https://henrylau7.github.io/)：同学
-- [杨希杰](https://yang-xijie.github.io/)：大佬
-- [谢益辉](https://yihui.org/)：大佬
-- [老陳网志](https://blog.chenyyds.com/)：大佬
-- [朱英华](https://yinghuazhu.github.io/)：同学
-- [张舟](https://zhangzhou.site/)：同学
-- [子舒](https://zishu.me/)：大佬
+<ul>
+<li><a href="https://jixinlong.top/" class="friend">Ji Xinlong<div><img src="https://www.jixinlong.top/images/logo-%E7%A9%BA%E4%B8%AD%E8%8A%B1%E5%9B%AD.svg"></img></div></a>：宿迁老铁</li>
+<li><a href="https://wcowin.work/" class="friend">Wcowin<div><img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f.webp"></img></div></a>：精美mkdocs博客站</li>
+<li><a href="https://lvista.github.io/" class="friend">程智超<div><img src="https://lvista.github.io/assets/images/logo_noBG.png"></img></div></a>：日本留子，网络知己</li>
+<li><a href="https://henrylau7.github.io/" class="friend">刘原冶<div><img src="https://henrylau7.github.io/assets/img/profile.JPG"></img></div></a>：同学</li>
+<li><a href="https://yinghuazhu.github.io/" class="friend">朱英华</a>：同学</li>
+<li><a href="https://zhangzhou.site/" class="friend">张舟<div><img src="https://zhangzhou.site/assets/logo_light.gif"></img></div></a>：同学</li>
+<li><a href="https://yang-xijie.github.io/" class="friend">杨希杰<div><img src="https://avatars.githubusercontent.com/u/57952362?v=4"></img></div></a>：大佬</li>
+<li><a href="https://yihui.org/" class="friend">谢益辉<div><img src="https://yihui.org/images/logo.png"></img></div></a>：大佬</li>
+<li><a href="https://blog.chenyyds.com/" class="friend">老陳网志<div><img src="https://blog.chenyyds.com/favicon.png"></img></div></a>：大佬</li>
+<li><a href="https://zishu.me/" class="friend">子舒<div><img src="https://imgurl.zishu.me/favicon.png"></img></div></a>：大佬</li>
+</ul>
 
 ## 或许有用
 
