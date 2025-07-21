@@ -118,7 +118,7 @@ tags:
             <input type="text" name="title" placeholder="标题" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
             <input type="text" name="body" placeholder="正文（可留空）" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAA420QdUWVuMyAvd"></div>
-            <button type="submit" style="border: 1px solid #000000; padding: 5px; margin: 5px;">发送</button>
+            <button type="submit" class="md-button md-button--primary">发送</button>
         </form>
     </div>
 
