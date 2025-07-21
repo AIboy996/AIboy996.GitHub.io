@@ -65,11 +65,11 @@ If you feel like I’m another version of you somewhere in the world, and it spa
 ??? warning "Text Me Directly"
     <div align="center">
         <form action="https://bark.yangz.site" method="get" target="_blank">
-            <input type="text" name="title" placeholder="Title" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
-            <input type="text" name="body" placeholder="Message(Can be blank)" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
+            <input type="text" name="title" placeholder="Title" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
+            <input type="text" name="body" placeholder="Message(Can be blank)" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAA420QdUWVuMyAvd"></div>
-            <button type="submit"  style="border: 1px solid #ccc; padding: 5px; margin: 5px;">Shot</button>
-            </form>
+            <button type="submit" style="border: 1px solid #000000; padding: 5px; margin: 5px;">Shot</button>
+        </form>
     </div>
 
     > This message will be delivered immediately. Please do not bombard me😭

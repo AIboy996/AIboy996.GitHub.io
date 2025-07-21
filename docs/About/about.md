@@ -115,11 +115,11 @@ tags:
 ??? warning "直接给我发消息"
     <div align="center">
         <form action="https://bark.yangz.site" method="get" target="_blank">
-            <input type="text" name="title" placeholder="标题" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
-            <input type="text" name="body" placeholder="正文（可留空）" style="border: 1px solid #ccc; padding: 5px; margin: 5px;">
+            <input type="text" name="title" placeholder="标题" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
+            <input type="text" name="body" placeholder="正文（可留空）" style="border: 1px solid #ccc; padding: 5px; margin: 5px; display: block; width: 300px;">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAA420QdUWVuMyAvd"></div>
-            <button type="submit"  style="border: 1px solid #ccc; padding: 5px; margin: 5px;">发送</button>
-            </form>
+            <button type="submit" style="border: 1px solid #000000; padding: 5px; margin: 5px;">发送</button>
+        </form>
     </div>
 
     > 本消息即时送达，请勿轰炸，不要逼我求你😭
