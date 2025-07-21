@@ -7,3 +7,5 @@
 *.egg-info
 __pycache__
 /docs/Note/Leetcode/*.py
+.venv
+uv.lock

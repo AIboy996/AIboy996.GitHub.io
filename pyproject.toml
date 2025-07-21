@@ -1,0 +1,23 @@
+[project]
+name = "aiboy996-github-io"
+version = "0.1.0"
+description = "Yang Zhang's Blog"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs==1.5.3",
+    "mkdocs-ai-summary",
+    "mkdocs-cust",
+    "mkdocs-git-revision-date-localized-plugin==1.1.0",
+    "mkdocs-glightbox==0.3.1",
+    "mkdocs-material==9.4.14",
+    "mkdocs-material-extensions==1.3.1",
+    "mkdocs-minify-plugin==0.6.2",
+    "mkdocs-rss-plugin==1.7.0",
+    "mkdocs-video==1.5.0",
+    "openai>=1.97.0",
+]
+
+[tool.uv.sources]
+mkdocs-ai-summary = { git = "https://github.com/AIboy996/mkdocs-ai-summary" }
+mkdocs-cust = { git = "https://github.com/AIboy996/mkdocs-cust" }
