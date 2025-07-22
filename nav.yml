@@ -263,6 +263,7 @@ nav:
         - Python/ThirdPartyLibrary/pytorch/tensor.md
         - Python/ThirdPartyLibrary/pytorch/data.md
         - 搭建模型: Python/ThirdPartyLibrary/pytorch/model.ipynb
+        - Python/ThirdPartyLibrary/pytorch/init.md
         - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
         - Python/ThirdPartyLibrary/pytorch/compile.md

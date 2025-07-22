@@ -26,6 +26,7 @@ flowchart TD
         张量基础
         数据加载
         搭建模型
+        模型初始化
         优化模型
     end
     subgraph 进阶
@@ -39,6 +40,7 @@ flowchart TD
     click 张量基础 "./tensor/"
     click 数据加载 "./data/"
     click 搭建模型 "./model/"
+    click 模型初始化 "./init/"
     click 优化模型 "./optimizer/"
     click 多卡训练 "./multi_gpu/"
     click 编译优化 "./compile/"
