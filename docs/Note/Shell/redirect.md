@@ -4,9 +4,11 @@ tags:
  - Linux
 ---
 
-# Shell重定向
+# Shell Redirection
 
-## 标准IO流
+## IO流
+
+### 标准IO
 
 Shell 处理三个标准 I/O（输入/输出）流，每个都有一个文件描述符（FD）：
 
@@ -14,12 +16,49 @@ Shell 处理三个标准 I/O（输入/输出）流，每个都有一个文件描
 - 标准输出（stdout）：文件描述符 1（默认输出到终端）
 - 标准错误（stderr）：文件描述符 2（默认输出到终端）
 
-## 覆盖重定向
+> 在`/dev/fd`目录你可以看到这些文件文件描述符号，同时这些文件描述符号还会自动**链接**到`/dev/stdout`等目录。
 
-我们可以通过`>`操作符来把IO流输出到其他地方，这个操作就称为重定向（Redirection）。
+### 自定义fd
 
+除了系统提供的012三个fd，我们也可以使用`<>`操作符自己打开一些文件来使用：
 
-例如，写一行代码到`hello.py`，然后运行它：
+```bash
+$ exec 4<>a.py # 打开a.py作为fd 4，可读可写
+$ echo "print('hello')" >&4
+$ python a.py
+hello
+```
+
+## 输出重定向
+
+默认情况下，程序的的输出会定向到**标准输出**：
+
+<div class='console'>
+
+```console
+$ echo hello
+hello
+```
+
+</div>
+
+??? question "标准输出在哪"
+    结合我们之前介绍的文件描述符，实际上标准输出就是一个虚拟的文件：`/dev/fd/1`。当然通常我们使用它的链接`/dev/stdout`来指代。在终端环境中，标准输出会显示在用户面前。
+
+    因此，我们就不难理解下面两件事情是等价的：
+
+    ```bash
+    $ echo hello
+    hello
+    $ echo hello > /dev/stdout # 显式输出到stdout
+    hello
+    ```
+
+我们可以通过`>`操作符来把输出流输出到其他地方，这个操作就称为输出重定向（Redirection）。
+
+### 覆盖重定向
+
+`>`操作符是覆盖重定向，它会尝试创建或者覆盖已有的文件。例如，写一行代码到`hello.py`，然后运行它：
 
 <div class='console'>
 
@@ -50,16 +89,6 @@ SyntaxError: '(' was never closed
 
 当然也可以同时重定向：
 
-<div class='console'>
-
-```console
-$ python -c "print(1);print('2)" > out 2>&1
-
-
-```
-
-</div>
-
 ```bash
 # 1、2（stdout, stderr）都重定向到out
 python -c "print(1);print('2)" > out 2>&1
@@ -67,7 +96,20 @@ python -c "print(1);print('2)" > out 2>&1
 python -c "print(1);print('2)" &> out
 ```
 
-## 追加重定向
+??? question ">|"
+    有的时候你还能看见`>|`这种重定向符号，它的含义是强制覆盖写。
+
+    如果终端开启了选项`set -o noclobber`，这时候如果文件已经存在就无法`>`重定向，如果需要**强制覆盖写**就可以使用`>|`。
+
+    ```bash
+    $ set -o noclobber
+    $ echo 1 > a
+    $ echo 1 > a
+    bash: a: cannot overwrite existing file
+    $ echo 1 >| a
+    ```
+
+### 追加重定向
 
 `>`操作符会把流输出到指定的文件，这个输出是覆盖的。如果我们想在原来的文件末尾添加新的内容，可以使用`>>`操作符。
 

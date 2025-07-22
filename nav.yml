@@ -133,8 +133,9 @@ nav:
     - Linux:
       - Note/Shell/index.md
       - Note/Shell/man.md
-      - Note/Shell/redirect.md
       - Note/Shell/script.md
+      - Note/Shell/redirect.md
+      - Note/Shell/expansion.md
       - Note/Shell/ssh.md
       - Note/Shell/sftp.md
       - Note/Shell/tmux.md
