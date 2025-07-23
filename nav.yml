@@ -134,6 +134,7 @@ nav:
       - Note/Shell/index.md
       - Note/Shell/man.md
       - Note/Shell/script.md
+      - Note/Shell/shortcut.md
       - Note/Shell/redirect.md
       - Note/Shell/expansion.md
       - Note/Shell/ssh.md
