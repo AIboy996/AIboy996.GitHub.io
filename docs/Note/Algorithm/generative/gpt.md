@@ -2,7 +2,8 @@
 tags:
 - Alg
 - Papers
+- 生成
 - LLM
 ---
 
-# word2vec
+# GPT

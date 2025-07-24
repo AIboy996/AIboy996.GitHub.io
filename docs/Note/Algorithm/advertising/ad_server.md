@@ -2,7 +2,7 @@
 tags:
 - Alg
 - Papers
-- LLM
+- 广告
 ---
 
-# word2vec
+# 广告投放系统

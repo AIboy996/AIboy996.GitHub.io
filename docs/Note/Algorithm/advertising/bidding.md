@@ -2,7 +2,7 @@
 tags:
 - Alg
 - Papers
-- LLM
+- 广告
 ---
 
-# word2vec
+# 竞价

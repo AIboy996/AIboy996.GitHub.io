@@ -48,15 +48,18 @@ nav:
         - Note/Algorithm/llm/rl.md
       - 生成模型:
         - Note/Algorithm/generative/index.md
-        - Note/Algorithm/generative/gan.md
         - Note/Algorithm/generative/vae.md
+        - Note/Algorithm/generative/gan.md
+        - Note/Algorithm/generative/gpt.md
         - Note/Algorithm/generative/diffusion.md
         - Note/Algorithm/generative/flow_matching.md
-      - 搜索引擎:
+      - 搜索系统:
         - Note/Algorithm/search/index.md
         - Note/Algorithm/search/vec_database.md
-      - 广告算法:
+      - 广告系统:
         - Note/Algorithm/advertising/index.md
+        - Note/Algorithm/advertising/ad_server.md
+        - Note/Algorithm/advertising/bidding.md
       - 推荐系统:
         - Note/Algorithm/redommendation/index.md
         - Note/Algorithm/redommendation/intro.md

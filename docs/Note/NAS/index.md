@@ -10,7 +10,14 @@ tags:
 
 ## 3.0时代
 
-我现在的NAS就是我淘汰下来的Windows笔记本，续航血崩但是性能还行（i5-8265U + NV GeForce MX250）。外接俩机械硬盘，当个NAS绰绰有余！
+我现在的NAS就是我换下来的荣耀Windows笔记本，续航血崩但是性能还行（i5-8265U + NV GeForce MX250）。外接<s>俩</s>机械硬盘，当个NAS绰绰有余！
+
+<figure markdown>
+
+![](assets/2025-07-24-15-55-53.png){width=500}
+
+<figurecaption>灰是真的大</figurecaption>
+</figure>
 
 ### 3.0.3
 
@@ -56,8 +63,9 @@ tags:
 
 <figure markdown>
 
-![](assets/IMG_4778.jpg){width=400}
+![](assets/IMG_4778.jpg){width=300}
 
+<figurecaption>塑料感拉满了</figurecaption>
 </figure>
 
 但是不得不说，群晖毕竟是专业的，用起来很省心~
