@@ -4,7 +4,7 @@ tags:
 - Papers
 ---
 
-# Diffusion Models
+# Diffusion
 
 Diffusion是一类生成模型范式，通过逐步从噪声中恢复数据的逆向过程来生成样本。
 

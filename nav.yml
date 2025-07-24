@@ -42,12 +42,22 @@ nav:
       - Note/Photography/Nikon_Z5.md
     - Algorithm:
       - Note/Algorithm/index.md
-      - Note/Algorithm/diffusion.md
-      - Note/Algorithm/llm.md
-      - Note/Algorithm/reinforce.md
-      - Note/Algorithm/search.md
-      - Note/Algorithm/advertising.md
-      - 推荐:
+      - LLM:
+        - Note/Algorithm/llm/index.md
+        - Note/Algorithm/llm/word2vec.md
+        - Note/Algorithm/llm/rl.md
+      - 生成模型:
+        - Note/Algorithm/generative/index.md
+        - Note/Algorithm/generative/gan.md
+        - Note/Algorithm/generative/vae.md
+        - Note/Algorithm/generative/diffusion.md
+        - Note/Algorithm/generative/flow_matching.md
+      - 搜索引擎:
+        - Note/Algorithm/search/index.md
+        - Note/Algorithm/search/vec_database.md
+      - 广告算法:
+        - Note/Algorithm/advertising/index.md
+      - 推荐系统:
         - Note/Algorithm/redommendation/index.md
         - Note/Algorithm/redommendation/intro.md
         - Note/Algorithm/redommendation/ItemCF.md
