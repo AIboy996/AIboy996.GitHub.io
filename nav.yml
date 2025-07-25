@@ -251,10 +251,11 @@ nav:
       - Python/SeniorSyntax/functional_programming.md
       - Python/SeniorSyntax/OOP.md
     - 标准库:
-      - Python/StandardLibrary/doctest.md
       - Python/StandardLibrary/os.md
       - Python/StandardLibrary/re.md
       - Python/StandardLibrary/time.md
+      - Python/StandardLibrary/doctest.md
+      - itertools: Python/StandardLibrary/itertools.ipynb
       - Python/StandardLibrary/fractions.md
     - 第三方库:
       - Python/ThirdPartyLibrary/package_management.md
