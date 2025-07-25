@@ -2,6 +2,7 @@
 title: 链接
 hide:
 - toc
+icon: material/link
 ---
 
 <style>

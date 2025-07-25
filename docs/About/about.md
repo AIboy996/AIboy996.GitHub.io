@@ -2,6 +2,7 @@
 title: 关于本站和我的一切
 tags: 
 - About
+icon: material/emoticon-wink-outline
 ---
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>

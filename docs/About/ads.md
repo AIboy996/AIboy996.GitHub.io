@@ -1,6 +1,7 @@
 ---
 tags: 
 - About
+icon: material/currency-jpy
 ---
 
 # 广告

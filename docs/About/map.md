@@ -4,6 +4,7 @@ tags:
 - About
 hide:
 - toc
+icon: material/map-check
 ---
 
 # 点亮的地图

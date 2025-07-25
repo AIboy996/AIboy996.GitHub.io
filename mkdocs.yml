@@ -14,6 +14,8 @@ not_in_nav: |
   en/About/index.md
   en/About/about.md
   en/About/links.md
+  en/About/resume.md
+  Blog/2025/folo.md
 theme:
   font: false
   name: material

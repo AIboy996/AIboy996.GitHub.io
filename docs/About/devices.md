@@ -1,6 +1,7 @@
 ---
 tags:
 - About
+icon: material/devices
 ---
 
 # 我的电子设备们

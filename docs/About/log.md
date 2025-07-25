@@ -1,6 +1,7 @@
 ---
 tags:
 - About
+icon: material/history
 ---
 
 # 本站编年史
