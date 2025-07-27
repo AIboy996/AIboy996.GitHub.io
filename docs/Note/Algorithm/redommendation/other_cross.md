@@ -9,20 +9,23 @@ tags:
 # 特征交叉3：LHUC、SENet、FiBiNet
 
 ## LHUC
->
-> LHUC一般只用在精排。最早是语音识别领域的工作。后来快手把它引入到推荐系统中。
-图中的神经网络中激活函数使用**sigmoid * 2**，从而在后续的Hadamard乘积中实现对语音信号特征**放大缩小**的效果。
+
+> [LHUC](https://ieeexplore.ieee.org/abstract/document/7462247)一般只用在精排。最早是语音识别领域的工作。后来[快手](https://www.51cto.com/article/644214.html)把它引入到推荐系统中。
+
+下图中的神经网络中激活函数使用**sigmoid * 2**，从而在后续的Hadamard乘积中实现对语音信号特征**放大缩小**的效果。
 
 ![IMAGE_1753596570234](assets/IMAGE_1753596570234.png)
+
 在推荐系统中，只需要把
 
 - 语音信号替换为物品特征
 - 说话者特征替换为用户特征
+
 即可实现一个排序模型。
 
 ## SENet
 >
-> SENet最早是CV领域的工作。后来被引入到推荐系统中。
+> [SENet](https://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Squeeze-and-Excitation_Networks_CVPR_2018_paper.html)最早是CV领域的工作。后来被引入到推荐系统中。
 
 ![IMAGE_1753597022270](assets/IMAGE_1753597022270.png)
 实际上就是一种自适应加权（或者叫缩放其实更合适），用深度学习的方法来计算特征的权重（缩放系数）。
@@ -44,7 +47,7 @@ Bilinear Cross不要求（其实就是非标准内积，二次型，双线性变
 
 ## FiBiNet
 >
-> FiBiNet发表于2019年，结合了SENet和Bilinear Cross。
+> [FiBiNet](https://dl.acm.org/doi/abs/10.1145/3298689.3347043)发表于2019年，结合了SENet和Bilinear Cross。
 
 ![IMAGE_1753597735157](assets/IMAGE_1753597735157.png)
 

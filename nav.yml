@@ -77,7 +77,7 @@ nav:
           - Note/Algorithm/redommendation/mmoe.md
           - Note/Algorithm/redommendation/fusion.md
           - Note/Algorithm/redommendation/video_play.md
-          - Note/Algorithm/redommendation/tritower.md
+          - Note/Algorithm/redommendation/pre-ranking.md
         - 特征工程:
           - Note/Algorithm/redommendation/fm.md
           - Note/Algorithm/redommendation/dcn.md
