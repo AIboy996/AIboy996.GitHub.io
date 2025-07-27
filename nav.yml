@@ -63,14 +63,26 @@ nav:
       - 推荐系统:
         - Note/Algorithm/redommendation/index.md
         - Note/Algorithm/redommendation/intro.md
-        - Note/Algorithm/redommendation/ItemCF.md
-        - Note/Algorithm/redommendation/Swing.md
-        - Note/Algorithm/redommendation/UserCF.md
-        - Note/Algorithm/redommendation/MatrixCompletion.md
-        - Note/Algorithm/redommendation/two_tower.md
-        - Note/Algorithm/redommendation/deep_retrieval.md
-        - Note/Algorithm/redommendation/others_retrieval.md
-        - Note/Algorithm/redommendation/bloom_filter.md
+        - 召回:
+          - Note/Algorithm/redommendation/ItemCF.md
+          - Note/Algorithm/redommendation/Swing.md
+          - Note/Algorithm/redommendation/UserCF.md
+          - Note/Algorithm/redommendation/MatrixCompletion.md
+          - Note/Algorithm/redommendation/two_tower.md
+          - Note/Algorithm/redommendation/deep_retrieval.md
+          - Note/Algorithm/redommendation/others_retrieval.md
+          - Note/Algorithm/redommendation/bloom_filter.md
+        - 排序:
+          - Note/Algorithm/redommendation/multi_task.md
+          - Note/Algorithm/redommendation/mmoe.md
+          - Note/Algorithm/redommendation/fusion.md
+          - Note/Algorithm/redommendation/video_play.md
+          - Note/Algorithm/redommendation/tritower.md
+        - 特征工程:
+          - Note/Algorithm/redommendation/fm.md
+          - Note/Algorithm/redommendation/dcn.md
+          - Note/Algorithm/redommendation/other_cross.md
+          - Note/Algorithm/redommendation/user_last_n.md
       - Interview:
         - Note/Algorithm/interview/0309_pdd.md
         - Note/Algorithm/interview/0312_wechat.md
