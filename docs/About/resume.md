@@ -1,6 +1,7 @@
 ---
 tags:
 - About
+- 工作
 icon: material/file-account
 hide:
 - comments
