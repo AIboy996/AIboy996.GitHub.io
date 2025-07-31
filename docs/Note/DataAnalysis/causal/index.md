@@ -8,4 +8,6 @@ tags:
 
 学习材料：
 
-- [统计之都](https://cosx.org/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD)因果推断系列文章
+- 统计之都[因果推断系列文章](https://cosx.org/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD)
+- JUDEA PEARL - [CAUSAL INFERENCEIN STATISTICS: A Primer](https://bayes.cs.ucla.edu/jp_home.html)
+- JUDEA PEARL - [CAUSALITY](https://bayes.cs.ucla.edu/BOOK-2K/)
