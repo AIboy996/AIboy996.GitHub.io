@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.11.5"
       - run: python3 -m pip install -r requirements.txt
-      - run: GH_TOKEN=${{ secrets.GITHUB_TOKEN }} PLUGIN="./plugins_full.yml" OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} DASHSCOPE_API_KEY=${{ secrets.DASHSCOPE_API_KEY }} mkdocs gh-deploy --force -b publishment
+      - run: PLUGIN="./plugins_full.yml" OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} DASHSCOPE_API_KEY=${{ secrets.DASHSCOPE_API_KEY }} mkdocs gh-deploy --force -b publishment
       - name: Commit files
         id: commit-files
         run: |

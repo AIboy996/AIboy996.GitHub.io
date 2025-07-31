@@ -15,44 +15,6 @@
 </script>
 
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-<div id="KnownIssues">
-    <h4><u>Known Issues</u></h4>
-    <ul id="issues-list"></ul>
-</div>
-<script>
-    async function fetchIssues(owner, repo) {
-        const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues`, {
-            headers: {
-                'Authorization': `Bearer {{ config.extra.ghtoken }}`, // 使用环境变量中的 GitHub Token
-                'X-GitHub-Api-Version': '2022-11-28'
-            }
-        });
-        if (!response.ok) {
-            document.getElementById('issues-list').innerHTML = '<li>Failed to load issues.</li>';
-            return;
-        }
-        const issues = await response.json();
-        const list = document.getElementById('issues-list');
-        list.innerHTML = '';
-        issues.forEach(issue => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${issue.html_url}" target="_blank">${issue.title}</a>`;
-            if (issue.title.includes(window.location.pathname)) {
-                const subnode = document.createElement('pre');
-                subnode.textContent = issue.body || 'No description provided.';
-                li.appendChild(subnode);
-                list.appendChild(li);
-            }
-        });
-        if (list.innerHTML === '') {
-            document.getElementById('KnownIssues').remove();
-            return;
-        }
-    }
-    // 替换为你的仓库信息
-    fetchIssues('aiboy996', 'aiboy996.github.io');
-</script>
-
 <script src="https://giscus.app/client.js" data-repo="AIboy996/AIboy996.GitHub.io"
     data-repo-id="MDEwOlJlcG9zaXRvcnkzNjkxOTAwODQ=" data-category="Announcements"
     data-category-id="DIC_kwDOFgFkxM4CT4vh" data-mapping="pathname" data-strict="1" data-reactions-enabled="0"

@@ -55,8 +55,8 @@ include:
 
 如果你想搜索本站的内容，可以使用Google或者Bing等搜索引擎。例如搜索本站**统计推断**相关的内容，只需要加上过滤器`site:yangzhang.site`即可：
 
-- <https://www.google.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site>
-- <https://www.bing.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site>
+- [Google搜索](https://www.google.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site)
+- [Bing搜索](https://www.bing.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site)
 
 <s>
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
@@ -80,9 +80,6 @@ include:
 > 需要使用Cookies
 
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
-
-!!! success "新功能：Known Issues"
-    为了配合页面反馈功能，在用户提交了**Issue**之后，会在评论区最顶端显示当前页面相关的Issues.
 
 ### RSS
 

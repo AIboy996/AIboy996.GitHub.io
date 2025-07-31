@@ -11,7 +11,8 @@ icon: material/history
 ## 2025
 
 - 2025年07月31日
-    - 增加了Known Issues功能：在评论上最上方显示GitHub中相关的issues
+    - <s>增加了Known Issues功能：在评论上最上方显示GitHub中相关的issues</s>
+    - 有点问题，懒得修了。遂放弃这个功能。
 - 2025年07月18日
     - 更新了友链页面，增加了头像的显示
 - 2025年07月11日
