@@ -15,15 +15,15 @@ include:
 ## 本站的几个板块
 
 - [**About**](../About/index.md)：当前板块，提供网站基本信息。
-- [**Note**](../Note/index.md)（胡编乱造）：笔记板块，放一些杂七杂八（主要是计算机技术）的教程、笔记。
-- [**Blog**](../Blog/index.md)（胡言乱语）：博客板块，记录日常的博客。
+- [**Note**](../Note/index.md)（胡编乱造）：笔记板块，放一些杂七杂八的教程、笔记。
+- [**Blog**](../Blog/index.md)（胡言乱语）：博客板块，分享日常。
 - [**Python**](../Python/index.md)：Python板块，包含基础、高级语法知识和各种库的使用。
-- [**Go**](../Go/index.md)：Go语言。
-- [**Project**](../Project/index.md)（胡作非为）：项目板块，本人的一些开源项目。
+- [**Go**](../Go/index.md)：Go板块。
+- [**Project**](../Project/index.md)（胡作非为）：项目板块，鄙人做的一些项目。
 - [**Statistics**](../Statistics/index.md)（几乎处处）：鄙人专业相关。
 - [**SomeMath**](../SomeMath/index.md)（胡数八道）：数学相关。
 - [**PlayGround**](../Playground/index.md)：用来调试mkdocs-material提供的markdown的扩展语法
-- [**Tags**](../Tags/index.md)：👇
+- [**Tags**](../Tags/index.md)：文章分类归纳。
 
 ## 本站的一些功能
 
@@ -48,31 +48,19 @@ include:
 
 本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](../Tags/index.md)板块按照分类标签查看文章。
 
-!!! question "新功能：标签云"
+!!! success "新功能：标签云"
     本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../index.md)和[Tags](../Tags/index.md)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
 
 ### <s>搜索</s>（已弃用）
 
+如果你想搜索本站的内容，可以使用Google或者Bing等搜索引擎。例如搜索本站**统计推断**相关的内容，只需要加上过滤器`site:yangzhang.site`即可：
+
+- <https://www.google.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site>
+- <https://www.bing.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site>
+
 <s>
 本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
 </s>
-
-<s>
-目前理论上是不支持中文搜索（`lunr.zh.js`）的，仅支持英语和日文（`lunr.ja.js`）搜索，但是基于日语的支持实际上也可以搜到一些汉字。
-</s>
-
-??? question "为什么不支持中文"
-
-    !!! quote "squidfunk commented on Jul 20, 2021"
-        Adding Chinese language support to the search plugin is currently **not possible** because of a dependency on `nodejieba`. `nodejieba` itself **depends on** `path` and `node-pre-gyp` and potentially other libraries that are not available in a browser environment, and – even worse – seems to include native code. Until those dependencies are removed from lunr-languages and it's upstream dependencies, and replaced with isomorphic JavaScript, adding Chinese search support is blocked.
-
-    简而言之就是`lunr.zh.js`有太多依赖，现在无法引入。
-
-    不过也有奇淫巧计可以实现`lunr.ja.js`的中文搜索效果：<https://github.com/mkdocs/mkdocs/issues/2509>
-
-    这个issue上有一个哥们稍微修改了mkdocs的源代码（`mkdocs.contrib.search.search_index.py`），用`jieba库`+`lunr.ja.js`实现了不错的中文搜索效果：
-
-    ![](https://user-images.githubusercontent.com/15652226/133886857-557cbe82-ea5e-486c-a40c-917176f9a387.png)
 
 ??? question "为何弃用？"
     一方面，我认为搜索功能没什么意义，因为站内的文章已经非常有条理了。
@@ -92,6 +80,9 @@ include:
 > 需要使用Cookies
 
 本站有评论功能（由[giscus](https://giscus.app/)驱动），评论的内容保存在**GitHub的discuss板块**中（所以需要先使用GitHub账号登录之后才可以评论）。
+
+!!! success "新功能：Known Issues"
+    为了配合页面反馈功能，在用户提交了**Issue**之后，会在评论区最顶端显示当前页面相关的Issues.
 
 ### RSS
 
@@ -117,4 +108,4 @@ include:
 
 <s>本站使用[mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)实现多语言的支持，如果没有对应的语言默认展示中文的页面。</s>
 
-> 已经弃用mkdocs-static-i18n，转而使用原生的i18n功能。因为mkdocs-static-i18n太繁重了，会极大影响其他插件的工作。
+> 已经弃用mkdocs-static-i18n，转而使用原生的i18n功能。因为mkdocs-static-i18n太重了，会极大影响其他插件的工作。
