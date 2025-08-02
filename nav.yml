@@ -148,13 +148,19 @@ nav:
       - Note/Leetcode/153.md
       - Note/Leetcode/206.md
       - Note/Leetcode/322.md
+      - Note/Leetcode/743.md
+      - Note/Leetcode/787.md
       - Note/Leetcode/815.md
       - Note/Leetcode/1125.md
+      - Note/Leetcode/1248.md
+      - Note/Leetcode/1334.md
+      - Note/Leetcode/2962.md
       - Note/Leetcode/518_d.md
       - Note/Leetcode/0309_pdd_2.md
       - Note/Leetcode/0309_pdd_3.md
       - Note/Leetcode/0309_pdd_4.md
       - Note/Leetcode/0309_ant.md
+      - Note/Leetcode/0802_jd.md
     - Linux:
       - Note/Shell/index.md
       - Note/Shell/man.md

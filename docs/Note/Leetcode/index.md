@@ -18,6 +18,7 @@ hide:
 
 - [👍 Datawhale面经](https://github.com/datawhalechina/daily-interview)
 - [👍 算法通关手册](https://algo.itcharge.cn/)
+- [Leetcode全解](https://leetcode.doocs.org/lc/1/)
 - [Leetcode](https://leetcode.cn/studyplan/top-100-liked/)
 - [牛客](https://www.nowcoder.com/exam/oj/ta?tpId=37)
 - [代码随想录](https://programmercarl.com/)
@@ -35,18 +36,24 @@ hide:
 |数组|[下一个排列](https://leetcode.cn/problems/next-permutation/)|[031](./031.md)|交换+双指针反转|
 |回溯|[N皇后](https://leetcode.cn/problems/n-queens/)|[051](./051.md)|排列枚举|
 |动态规划|[爬楼梯问题](https://leetcode.cn/problems/climbing-stairs/)|[070](./070.md)||
-|二叉树|[从前序与中序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)|[105](./105.md)||
+|二叉树|[从前序与中序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[105](./105.md)|递归&迭代|
 |二叉树|[二叉树最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)|[124](./124.md)|递归|
 |链表|[排序链表](https://leetcode.cn/problems/sort-list/)|[148](./148.md)|归并排序|
-|数组|[寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/description/)|[153](./153.md)||
+|数组|[寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)|[153](./153.md)||
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206.md)|双指针遍历、递归|
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322.md)|动态规划|
 |图|[公交线路](https://leetcode.cn/problems/bus-routes/)|[815](./815.md)|BFS|
+|图|[网络延迟时间](https://leetcode.cn/problems/network-delay-time/)|[743](743.md)|最短路算法|
+|图|[K站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/)|[787](787.md)|最短路算法|
 |动态规划|[最小的必要团队](https://leetcode.cn/problems/smallest-sufficient-team/)|[1125](./1125.md)|BFS，位运算|
+|数组|[优美子数组](https://leetcode.cn/problems/count-number-of-nice-subarrays/)|[1248](./1248.md)|双指针、单指针、前缀和|
+|图|[阈值距离内邻居最少的城市](https://leetcode.cn/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/)|[1334](./1334.md)|最短路算法|
+|数组|[least k - 子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/)|[2962](./2962.md)|双指针|
 |概率|[排队上电梯](https://codeforces.com/problemset/problem/518/D/)|[518_d](./518_d.md)||
 |动态规划|[多多传送门](../Algorithm/interview/0309_pdd.md)|[0309_pdd_2](./0309_pdd_2.md)|也可以前缀和|
 |动态规划|[多多读书](../Algorithm/interview/0309_pdd.md)|[0309_pdd_3](./0309_pdd_3.md)|`dp[i][j]`表示读完第i页，用了j时间，获得的最大知识|
 |动态规划|[剧院座位安排](../Algorithm/interview/0309_pdd.md)|[0309_pdd_4](./0309_pdd_4.md)||
 |回溯|[排列染色问题](../DataAnalysis/interview/0309_ant.md)|[0309_ant](./0309_ant.md)||
+|动态规划|灵动坐标系|[0802_jd](./0802_jd.md)|快速幂|
 
 ### TBC:Leetcode
