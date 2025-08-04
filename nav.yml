@@ -269,6 +269,8 @@ nav:
       - Python/SeniorSyntax/functional_programming.md
       - Python/SeniorSyntax/OOP.md
     - 标准库:
+      - Python/StandardLibrary/bisect.md
+      - Python/StandardLibrary/heapq.md
       - Python/StandardLibrary/os.md
       - Python/StandardLibrary/re.md
       - Python/StandardLibrary/time.md

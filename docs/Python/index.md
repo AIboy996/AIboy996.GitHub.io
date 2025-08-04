@@ -139,7 +139,10 @@ flowchart LR
     subgraph 其他
     tkinter;dis;timeit;venv;sys;atexit;ast;
     end
-    标准库 --- 文件和系统 & 数据 & 数学 & 函数式编程模块 & 并发控制 & 网络 & 开发 & 其他
+    subgraph 算法
+    heapq;bisect;
+    end
+    标准库 --- 文件和系统 & 数据 & 数学 & 函数式编程模块 & 并发控制 & 网络 & 开发 & 其他 & 算法
     click Python "."
     %% 基础语法
     click 学会查文档 "./BasicSyntax/builtin_class/#dirhelp"
@@ -166,6 +169,9 @@ flowchart LR
     click time "./StandardLibrary/time/"
     click doctest "./StandardLibrary/doctest/"
     click fractions "./StandardLibrary/fractions/"
+    click itertools "./StandardLibrary/itertools/"
+    click heapq "./StandardLibrary/heapq/"
+    click bisect "./StandardLibrary/bisect/"
     %% 第三方库
     click 包管理 "./ThirdPartyLibrary/package_management/"
     click 自己写一个库 "./ThirdPartyLibrary/DIY/"
@@ -173,5 +179,6 @@ flowchart LR
     click pandas "./ThirdPartyLibrary/pandas/"
     click matplotlib "./ThirdPartyLibrary/matplotlib/"
     click pytorch "./ThirdPartyLibrary/pytorch/"
+    click sklearn "./ThirdPartyLibrary/sklearn/"
 ```
 
