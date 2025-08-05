@@ -34,6 +34,7 @@ hide:
 |-----|-----|-----|-----|
 |哈希|[两数之和](https://leetcode.cn/problems/two-sum/)|[001](./001.md)||
 |数组|[下一个排列](https://leetcode.cn/problems/next-permutation/)|[031](./031.md)|交换+双指针反转|
+|数组|[接雨水](https://leetcode.cn/problems/trapping-rain-water)|[042](./042.md)|双指针、前缀和、单调栈、优先队列|
 |回溯|[N皇后](https://leetcode.cn/problems/n-queens/)|[051](./051.md)|排列枚举|
 |动态规划|[爬楼梯问题](https://leetcode.cn/problems/climbing-stairs/)|[070](./070.md)||
 |二叉树|[从前序与中序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[105](./105.md)|递归&迭代|
