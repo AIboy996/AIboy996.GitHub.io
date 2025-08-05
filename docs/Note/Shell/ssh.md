@@ -11,12 +11,24 @@ tags:
 
 > from <https://www.cloudflare.com/zh-cn/learning/access-management/what-is-ssh/>
 
-Secure Shell (SSH) 协议是一种通过不安全网络向计算机**安全发送命令**的方法。SSH 使用加密技术对设备之间的连接进行验证和加密。SSH 还可以实现**隧道传输或端口转发**，这是指数据包可以穿越原本无法穿越的网络。 SSH 通常用于远程控制服务器、管理基础设施和传输文件。
+!!! quote
+    Secure Shell (SSH) 协议是一种通过不安全网络向计算机**安全发送命令**的方法。SSH 使用加密技术对设备之间的连接进行验证和加密。SSH 还可以实现**隧道传输或端口转发**，这是指数据包可以穿越原本无法穿越的网络。 SSH 通常用于远程控制服务器、管理基础设施和传输文件。
 
-也就是说SSH有两大功能：
+换言之SSH有两大功能：
 
 - 远程Shell
 - 端口转发
+
+ssh命令行工具的参数如下：
+```bash
+ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] 
+[-b bind_address] [-c cipher_spec] [-D [bind_address:]port] 
+[-E log_file] [-e escape_char] [-F configfile] [-I pkcs11] 
+[-i identity_file] [-J destination] [-L address] [-l login_name] 
+[-m mac_spec] [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+[-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+destination [command [argument ...]] ssh [-Q query_option]
+```
 
 ## 远程Shell
 
@@ -371,27 +383,67 @@ DESCRIPTION
 接下来我们介绍SSH的第二大功能：端口转发。
 
 ### 本地转发/远程转发
-SSH 端口转发自然需要 SSH 连接，而 SSH 连接是有方向的，从 SSH Client 到 SSH Server 。而我们的应用也是有方向的，比如需要连接 MySQL Server 时，MySQL Server 自然就是 Server 端，我们应用连接的方向也是从应用的 Client 端连接到应用的 Server 端。如果这两个连接的方向一致，那我们就说它是本地转发。而如果两个方向不一致，我们就说它是远程转发。
+
+!!! question "如何区分本地/远程"
+    SSH 端口转发自然需要 SSH 连接，而 SSH 连接是有方向的，从 SSH Client 到 SSH Server 。
+
+    而我们的应用也是有方向的，比如一个`http.server`，连接的方向就是从浏览器到http服务器。
+
+    如果这两个连接的方向一致，那我们就说它是本地转发。而如果两个方向不一致，我们就说它是远程转发。
 
 ### 相关参数
 
-- “-L选项”：local，表示使用本地端口转发创建 ssh 隧道
-- “-R选项”：remote，表示使用远程端口转发创建 ssh 隧道
-- “-D选项”：dynamic，表示使用动态端口转发创建 ssh 隧道
-- “-N选项”： 表示创建隧道以后不连接到 sshServer端，通常与”-f”选项连用
-- “-f选项”：表示在后台运行ssh隧道，通常与”-N”选项连用
-- “-g选项”：表示 ssh 隧道对应的转发端口将监听在主机的所有IP中，不使用”-g选项”时，转发端口默认只监听在主机的本地回环地址中，”-g” 表示开启网关模式，远程端口转发中，无法开启网关功能
+- `-L`：local，表示使用本地端口转发创建 ssh 隧道
+- `-R`：remote，表示使用远程端口转发创建 ssh 隧道
+- `-D`：dynamic，表示使用动态端口转发创建 ssh 隧道
+- `-N`： 表示创建隧道以后不连接到 sshServer端，通常与`-f`选项连用
+- `-f`：表示在后台运行ssh隧道，通常与`-N`选项连用
+- `-g`：表示 ssh 隧道对应的转发端口将监听在主机的所有IP中，不使用`-g`时，转发端口默认只监听在主机的本地回环地址中，`-g`表示开启网关模式，远程端口转发中，无法开启网关功能
 
 ### 案例
-我们有一个服务器（`192.168.10.100`）在`8888`端口上开启了一个服务：
+
+```mermaid
+---
+title: 服务示意图
+---
+graph LR
+subgraph 192.168.10.36
+bro[浏览器: 9999]
+
+end
+subgraph 192.168.10.100
+y[http.server: 8888]
+end
+bro-->y
+```
+
+我们的`192.168.10.100`在`8888`端口上开启了一个网页服务：
 ```bash
 python3 -m http.server 8888
 ```
-本地有一台电脑（`192.168.10.36`）想要用浏览器**本地访问**这个服务。
+另外一个机器`192.168.10.36`想要用浏览器(通过9999端口)**本地访问**这个网页服务。
 
 #### 1、本地转发
 
-下面的命令需要在**本地运行**：
+```mermaid
+---
+title: 本地转发示意图
+---
+graph LR
+subgraph 192.168.10.36
+a[SSH client]
+bro[浏览器: 9999]
+
+end
+subgraph 192.168.10.100
+b[SSH server]
+y[http.server: 8888]
+end
+a-->b
+bro-->y
+```
+
+下面的命令需要在**36服务器**上运行，这时候100服务器是SSH Server：
 ```bash
 # 语法
 ssh -N -L [本地IP:]本地端口:目标服务器IP:目标端口 用户名@SSH服务器 
@@ -402,6 +454,15 @@ ssh -N -L 192.168.10.36:9999:localhost:8888 root@192.168.10.100
 # 省略本地 IP
 ssh -N -L 9999:localhost:8888 root@192.168.10.100
 ```
+
+!!! question "参数好多好乱，记不住咋办？"
+    端口转发的参数规则就是：
+
+    ```
+    ip_from:port_from:ip_to:port_to
+    ```
+
+    想清楚从哪里转发到哪里就可以了。不管是本地转发还是远程转发规则是一致的。
 
 转发完成之后，在本地服务器的9999端口就可以访问到远程服务器的8888端口了。
 
@@ -415,7 +476,25 @@ tcp   LISTEN 0  128       [::1]:9999     [::]:*  users:(("ssh",pid=2607972,fd=4)
 
 #### 2、远程转发
 
-下面的命令需要在**服务器运行**：
+
+```mermaid
+---
+title: 远程转发示意图
+---
+graph LR
+subgraph 192.168.10.36
+b[SSH server]
+bro[浏览器: 9999]
+end
+subgraph 192.168.10.100
+a[SSH client]
+y[http.server: 8888]
+end
+a-->b
+bro-->y
+```
+
+下面的命令需要在**100服务器**上运行，这时候36服务器是SSH Server：
 ```bash
 ssh -N -R 192.168.10.36:9999:localhost:8888 root@192.168.10.36
 ```
@@ -424,12 +503,13 @@ ssh -N -R 192.168.10.36:9999:localhost:8888 root@192.168.10.36
 
 #### 3、动态转发
 
-下面的命令需要在**本地运行**：
+动态转发比较特殊，它直接在本地的指定端口开启一个**socks代理**：
+
 ```bash
 ssh -N -D localhost:8888 root@192.168.10.85
 ```
 
-转发完成之后，可以通过socks代理的方式，把本地所有的请求都转发到远程服务器：
+转发完成之后，可以通过这个代理，把本地所有的请求都转发到远程服务器：
 ```bash
 http_proxy=socks5://localhost:8888 curl google.com
 ```
