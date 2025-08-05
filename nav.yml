@@ -169,6 +169,7 @@ nav:
       - Note/Shell/redirect.md
       - Note/Shell/expansion.md
       - Note/Shell/ssh.md
+      - Note/Shell/ssh_jump.md
       - Note/Shell/sftp.md
       - Note/Shell/tmux.md
     - Manim:
