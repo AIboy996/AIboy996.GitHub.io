@@ -10,6 +10,8 @@ icon: material/history
 
 ## 2025
 
+- 2025年08月05日
+    - ==加入了高亮显示的功能（pymdownx.mark）==
 - 2025年07月31日
     - <s>增加了Known Issues功能：在评论上最上方显示GitHub中相关的issues</s>
     - 有点问题，懒得修了。遂放弃这个功能。
