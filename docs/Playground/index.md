@@ -350,6 +350,7 @@ mkdocs-material支持更好看的样式：
 此外我还自定义了一些样式：
 
 !!! theorem
+!!! definition
 !!! tongyiai-summary
 !!! chatgpt-summary
 !!! deepseek-summary

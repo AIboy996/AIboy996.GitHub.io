@@ -15,6 +15,7 @@ nav:
     - Note/software.md
     - Note/drug.md
     - 爬虫:
+      - Note/Spider/single_line.md
       - Note/Spider/antispider.md
       - Note/Spider/antidebug.md
     - 复旦:
@@ -394,6 +395,8 @@ nav:
   - SomeMath:
     - SomeMath/index.md
     - 数学分析:
+      - SomeMath/real/ostrogradsky_method.md
+      - SomeMath/real/rational_func_int.md
       - SomeMath/real/pi.md
       - SomeMath/real/rational_numbers_countable.md
       - SomeMath/real/taylor_expand/taylor_expand.md
@@ -406,6 +409,10 @@ nav:
     - 复分析:
       - SomeMath/complex/why_complex.md
     - 线性代数:
+      - SomeMath/algebra/algebra_notes.md
+      - SomeMath/algebra/matrix_similarity.md
+      - SomeMath/algebra/orthogonal_subspace.md
+      - SomeMath/algebra/solde.md
       - SomeMath/algebra/linear_differential_equation.md
       - SomeMath/algebra/rot.md
     - 初等数论:
@@ -415,9 +422,14 @@ nav:
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
     - 概率论:
+      - SomeMath/prob/ind_det_mnorm.md
+      - SomeMath/prob/gaussian.md
       - SomeMath/prob/37rule.md
       - SomeMath/prob/crit.md
       - SomeMath/prob/Montmort.md
+      - 习题:
+        - SomeMath/prob/problems/random_vec.md
+        - SomeMath/prob/problems/func_rv.md
   - Tags: Tags/index.md
   - Playground: Playground/index.md
   - "开往": https://www.travellings.cn/go.html
