@@ -165,6 +165,7 @@ nav:
       - Note/Leetcode/0309_pdd_4.md
       - Note/Leetcode/0309_ant.md
       - Note/Leetcode/0802_jd.md
+      - 大步上台阶: Note/Leetcode/51nod_3100.ipynb
     - Linux:
       - Note/Shell/index.md
       - Note/Shell/man.md
