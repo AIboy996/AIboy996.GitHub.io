@@ -1031,6 +1031,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/Note/Spider/single_line/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/Note/jupyter/example/</loc>
          <lastmod>2025-08-06</lastmod>
          <changefreq>daily</changefreq>
@@ -1406,6 +1411,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/SomeMath/algebra/algebra_notes/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/SomeMath/algebra/constructible_number/</loc>
          <lastmod>2025-08-06</lastmod>
          <changefreq>daily</changefreq>
@@ -1421,7 +1431,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/SomeMath/algebra/matrix_similarity/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/algebra/orthogonal_subspace/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/SomeMath/algebra/rot/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/algebra/solde/</loc>
          <lastmod>2025-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1456,6 +1481,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/SomeMath/prob/gaussian/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/prob/ind_det_mnorm/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/prob/problems/func_rv/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/prob/problems/random_vec/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/SomeMath/real/derivatives/</loc>
          <lastmod>2025-08-06</lastmod>
          <changefreq>daily</changefreq>
@@ -1471,7 +1516,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/SomeMath/real/ostrogradsky_method/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/SomeMath/real/pi/</loc>
+         <lastmod>2025-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/SomeMath/real/rational_func_int/</loc>
          <lastmod>2025-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
