@@ -56,5 +56,6 @@ hide:
 |动态规划|[剧院座位安排](../Algorithm/interview/0309_pdd.md)|[0309_pdd_4](./0309_pdd_4.md)||
 |回溯|[排列染色问题](../DataAnalysis/interview/0309_ant.md)|[0309_ant](./0309_ant.md)||
 |动态规划|灵动坐标系|[0802_jd](./0802_jd.md)|快速幂|
+|动态规划|[大步上台阶](https://vjudge.net/problem/51Nod-3100)|[51nod_3100](./51nod_3100.ipynb)|快速幂|
 
 ### TBC:Leetcode
