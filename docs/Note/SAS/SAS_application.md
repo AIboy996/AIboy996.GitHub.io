@@ -1,44 +1,52 @@
 ---
 tags:
 - SAS
+- Statistics
 include:
 - math
 ---
 
 # SAS统计应用
+
 ## 描述统计
 
-### 定性变量——proc freq
+### 常用统计量
 
-+ 频数**frequence**
-+ 比例**percent**
-+ 众数**mode**
+- 定性变量
 
-### 定量变量——proc means，univariate
+	> proc freq
 
-+ 集中信息
-  + 均值**mean**
-  + 中位数**median**
-+ 波动信息
-  + 极差**range**
-  + 四分位差**qrange**
-  + 方差**var**
-  + 标准差**std**
-  + 变异系数**cv**
-+ 形状信息
-  + 偏度系数**skewness**
-  + 峰度系数**kurtosis**
-  + **qqplot**
+	+ 频数**frequence**
+	+ 比例**percent**
+	+ 众数**mode**
+
+- 定量变量
+
+	> proc means, univariate
+
+	+ 集中信息
+		+ 均值**mean**
+		+ 中位数**median**
+		+ 波动信息
+		+ 极差**range**
+		+ 四分位差**qrange**
+		+ 方差**var**
+		+ 标准差**std**
+		+ 变异系数**cv**
+	+ 形状信息
+		+ 偏度系数**skewness**
+		+ 峰度系数**kurtosis**
+		+ **qqplot**
 
 ### means过程
 
 ```sas
 proc means data=dataname 
-	mean median mode #中心水平———集中信息
-	n nmiss #非缺失值个数、缺失值个数
-	std var range qrange cv#离散水平——波动信息，cv变异系数
-	kurtosis skewness;#形状信息——峰度，偏度，简写为kurt，skew
-	maxdec=2;#保留小数
+	mean median mode # 中心水平———集中信息
+	n nmiss # 非缺失值个数、缺失值个数
+	std var range qrange cv # 离散水平——波动信息，cv变异系数
+	kurtosis skewness; # 形状信息——峰度，偏度，简写为kurt，skew
+	maxdec=2; # 保留小数
 
 	by var1;
 	class var2;
@@ -54,13 +62,15 @@ proc univariate data=dataname;
 	var 分析变量;
 	class 分类变量;
 	histogram 分析变量;
-	inset 统计量;#在直方图中插入统计量
-	qqplot 分析变量;画qq图
-	qqplot var1/normal(mu=est sigma=est);估计正态
+	inset 统计量; # 在直方图中插入统计量
+	qqplot 分析变量; # 画qq图
+	qqplot var1/normal(mu=est sigma=est); # 估计正态
 run;
 ```
 
-## 统计推断(估计+假设检验)
+## 统计推断
+
+> 点/区间估计+假设检验
 
 对于一个样本：
 
@@ -69,18 +79,20 @@ run;
 + 背后的分布某个参数是否等于（小于、大于）某个值？——假设检验
 + 数据是否来自正态分布？——假设检验
 
-### 区间估计——proc means
+### 区间估计
 
-**对置信水平的理解：**
+> proc means
 
-==**不断重复抽取样本，用此方法产生的许多区间中95%会覆盖真的参数**==
+!!! note "对置信水平的理解"
+	不断重复抽取样本，用此方法产生的许多区间中95%会覆盖真的参数。
 
-而不是参数落入区间的概率是95%，当区间确定了，参数是否落入区间是一个确定事件没有概率可言
+	而不是参数落入区间的概率是95%，当区间确定了，参数是否落入区间是一个确定事件没有概率可言。
 
 ```sas
-proc means data=dataname maxdec=2 stderr clm alpha=.1;标准误、置信区间、置信水平
+                              # 标准误、置信区间、置信水平
+proc means data=dataname maxdec=2 stderr clm alpha=.1;
 	var var1;
-	#不加var默认全部变量
+	# 不加var默认全部变量
 run;
 ```
 
@@ -88,27 +100,22 @@ run;
 
 思想和反证法类似：
 
-**做出原假设H0——导出矛盾（p值很小，原假设是小概率事件）——假设不成立，拒绝原假设**
+- 做出原假设H0 -->导出矛盾（p值很小，原假设是小概率事件）--> 假设不成立，拒绝原假设。
 
-假设零假设成立，可以得到该统计量的分布，再看这个统计量的实现值（realization）属不属于小概率事件
+假设零假设成立，可以得到该统计量的分布，再看这个统计量的实现值（realization）属不属于小概率事件。如果是小概率事件（p值小于显著性水平）那么就拒绝原假设，该检验显著；否则说没有足够的证据拒绝原假设，该检验不显著。
 
-如果是小概率事件（p值小于显著性水平）那么就拒绝原假设，该检验显著
-
-否则说没有足够的证据拒绝原假设，该检验不显著
-
-==**在零假设下，检验统计量取其实现值（沿着备择假设的方向）更加极端的概率称为p-值**==
+==在零假设下，检验统计量取其实现值（沿着备择假设的方向）更加极端的概率称为p-值。==
 
 假设检验的两类错误：
 
-第一类错误——拒真
+- 第一类错误——拒真
+- 第二类错误——取伪
 
-第二类错误——取伪
-
-**通常原假设是受到保护的，没有充足的证据不能推翻的**
+通常原假设是受到保护的，没有充足的证据不能推翻的。
 
 #### 正态样本均值推断
 
-h0是原假设，做单边检验 **均值不高于225（upper上界）**
+h0是原假设，做单边检验：均值不高于225（upper上界）。
 
 ```sas
 proc ttest data=dataname h0=225 sides=u alpha=0.05;
@@ -116,7 +123,11 @@ proc ttest data=dataname h0=225 sides=u alpha=0.05;
 run;
 ```
 
-**sides = u（upper）、 l（lower）、 2（双边检验）**
+sides参数：
+
+- u（upper）
+- l（lower）
+- 2（双边检验）
 
 检验统计量T：
 $$
@@ -124,7 +135,9 @@ T = \frac{\bar{X}-\mu_0}{s/\sqrt{n}}\sim t(n-1)
 $$
 
 
-#### 两独立正态样本均值差的推断——class语句
+#### 两独立正态样本均值差的推断
+
+> class语句
 
 ```sas
 proc ttest data=dataname;
@@ -133,9 +146,11 @@ proc ttest data=dataname;
 run;
 ```
 
-T检验，注意方差同性，如果**不满足同方差但是mn很大的时候看satterwaite检验**
+T检验，注意方差同性，如果不满足同方差但是mn很大的时候看satterwaite检验.
 
-#### 两个配对正态样本均值差的推断——paired语句
+#### 两个配对正态样本均值差的推断
+
+> paired语句
 
 ```sas
 proc ttest data=dataname;
@@ -151,7 +166,9 @@ proc ttest data=dataname;
 run;
 ```
 
-#### 正态性检验——univariate过程，normal选项
+#### 正态性检验
+
+> univariate过程，normal选项
 
 ```sas
 proc univariate data=dataname normal;
@@ -159,9 +176,8 @@ proc univariate data=dataname normal;
 run;
 ```
 
-**N<2000，以W检验为准**
-
-**N>2000，不输出W检验，以D检验为准**
+- N<2000，以W检验为准
+- N>2000，不输出W检验，以D检验为准
 
 ```sas
 proc univariate data=dataname normal;
@@ -186,7 +202,7 @@ run;
 #### 卡方检验——独立性检验
 
 $$
-\chi^2=\sum^I_{i=1}\frac{(n_{ij}-n\times\hat{p}_{ij})}{n\times\hat{p}_{ij}}
+\chi^2=\sum^I_{i=1}\frac{(n_{ij} - n\times\hat{p_{ij}})}{n\times\hat{p}_{ij}}
 $$
 
 ```sas
@@ -198,7 +214,7 @@ run;
 
 #### 符号检验——非参数检验
 
-==X与Y两者分布是否相同，样本做差，符号检验==
+X与Y两者分布是否相同，样本做差，符号检验.
 
 ```sas
 proc univariate data=pig normal;
@@ -206,9 +222,11 @@ proc univariate data=pig normal;
 run;
 ```
 
-#### 秩和检验——非参数检验——npar1way
+#### 秩和检验——非参数检验
 
-==多个类的分布是否相同==
+> npar1way过程
+
+检验多个类的分布是否相同:
 
 ```sas
 proc npar1way <options>;
@@ -217,11 +235,9 @@ proc npar1way <options>;
 run;
 ```
 
-options可以选`median`（中位数评分）或`wilcoxon`（秩和）计算各个分类来检验
+options可以选`median`（中位数评分）或`wilcoxon`（秩和）计算各个分类来检验。
 
-
-
-### 2.3 相关系数
+### 相关系数
 
 ```sas
 proc corr data=dataname 
@@ -229,19 +245,18 @@ proc corr data=dataname
 	plot = matrix(histogram)
 	outk=d1
 	outp=d2
-	outs=d3;#分不同相关系数类型输出数据集
+	outs=d3;
+	# 分不同相关系数类型输出数据集
 run;
 ```
 
 ```sas
-proc corr data=dataname plots=matrix;#plot选项可以画出矩阵散点图
+proc corr data=dataname plots=matrix; # plot选项可以画出矩阵散点图
 	var var1 var2 var3;
 	with var4;
-	#var4*(var1-3)
+	# var4*(var1~3)
 run;
 ```
-
-
 
 spearman相关系数$\rho$
 
@@ -252,7 +267,7 @@ $$
 
 kendall相关系数$\tau$
 $$
-\tau = \frac{(num\ of\ concordant\ pairs)-(num\ of\ discoreant\ pairs )}{n(n-1)/2}
+\tau = \frac{(\text{num of concordant pairs})-(\text{num of discoreant pairs})}{n(n-1)/2}
 $$
 
 Pearson相关系数$r$（样本相关系数用r表示）
@@ -262,181 +277,162 @@ $$
 
 ## 回归分析
 
-:happy:
-
 ### 回归分析框架
 
 #### 建模
 
-通过一些已知的变量信息来预测一些未知的变量信息，定量地理解变量之间的变化关系
+通过一些已知的变量信息来预测一些未知的变量信息，定量地理解变量之间的变化关系。
 
 #### 最简单的模型——线性模型
 
 + 模型写法：
+	$$
+	Y_i = \beta_0+\beta_1x_i+\epsilon_i
+	\\
+	\epsilon_i \sim _{i.i.d.}N(0,\sigma^2)
+	$$
 
-$$
-Y_i = \beta_0+\beta_1x_i+\epsilon_i
-\\
-\epsilon_i \sim _{i.i.d.}N(0,\sigma^2)
-$$
-
-​		$\sigma^2$影响着噪声的大小
-
-​		随机误差的均值假设为0
+	- $\sigma^2$影响着噪声的大小
+	- 随机误差的均值假设为0
 
 + 估计方法
-
-找一条直线：$\hat{y_i}=\hat{\beta_0}+\hat{\beta_1}x$，使得总的误差最小
-
-这里的误差我们使用误差平方和
-$$
-min_{\hat{\beta_0},\hat{\beta_1}} \ \sum_{i=1}^n(y_i-\hat{\beta_0}-\hat{\beta_1}x_i)^2
-$$
+	- 找一条直线：$\hat{y_i}=\hat{\beta_0}+\hat{\beta_1}x$，使得总的误差最小
+	- 这里的误差我们使用误差平方和
+	$$
+	min_{\hat{\beta_0},\hat{\beta_1}} \ \sum_{i=1}^n(y_i-\hat{\beta_0}-\hat{\beta_1}x_i)^2
+	$$
 
 #### 最小二乘估计：
 
-![image-20210624094036352](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624094036352.png)
-
-
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/OLS_geometric_interpretation.svg/500px-OLS_geometric_interpretation.svg.png)
 
 #### 模型评价
 
 考虑增加了自变量Xi带来的收益
 
-$SST=\sum_{i=1}^n(y_i-\bar{y})^2$——没有xi时拟合的误差总和
+- $\text{SST}=\sum_{i=1}^n(y_i-\bar{y})^2$
+	- 没有xi时拟合的误差总和
+- $\text{SSE}=\sum_{i=1}^n(y_i-\hat{y})^2$
+	- 有xi时拟合的误差总和
+- $\text{SSR}=\text{SST-SSE}=\sum_{i=1}^n(\hat{y}-\bar{y})^2$
+	- 有xi时减少的误差总和
 
-$SSE=\sum_{i=1}^n(y_i-\hat{y})^2$——有xi时拟合的误差总和
+决定系数：
 
-$SST=SST-SSE=\sum_{i=1}^n(\hat{y}-\bar{y})^2$——有xi时减少的误差总和
-
-判定系数：
 $$
 0\leq R^2 = {SSR\over SST} \leq1
 $$
-衡量Y的取值多大程度上可以被X的取值解释
 
-**R方越大，模型解释能力越强**
+衡量Y的取值多大程度上可以被X的取值解释。R方越大，模型解释能力越强。
 
 #### 模型的参数推断
 
-一个样本得到的$\hat{\beta_i}$只是真正系数的一个观测
+一个样本得到的$\hat{\beta_i}$只是真正系数的一个观测，需要对系数进行假设检验：
 
-原假设为$H_0 \ :\beta_i=0$
+![](static/reg-ttest.png)
 
-![image-20210624100333447](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624100333447.png)
-
-系数的检验，统计量服从T分布
+> [国家统计局](https://www.stats.gov.cn/zsk/snapshoot?reference=d466cfa12a8d807d0c267a76a75d1e42_0B06D49FA9080BAE957DFD3680B28848&index=resource_data&qt=%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0%E7%9A%84%E6%98%BE%E8%91%97%E6%80%A7%E6%A3%80%E9%AA%8C%20t%E6%A3%80%E9%AA%8C&siteCode=tjzsk)居然还有这种小知识库
 
 #### 模型的使用
 
-注意解释变量系数时的说法
+注意解释变量系数时的说法：
 
-截距项：当所有自变量为0时，**若此模型仍然成立**，Y的**期望**的估计值为截距项
+- 截距项：当所有自变量为0时，**若此模型仍然成立**，Y的**期望**的估计值为截距项
+- x系数：**当给定其他所有自变量值保持不变时**，x每增加一单位，Y**期望**增加值为系数
 
-x系数：**当给定其他所有自变量值保持不变时**，x每增加一单位，Y**期望**增加值为系数
+### 理论：多元线性回归
 
-### 多元线性回归
+增加无关变量R方也会上升，因此我们需要:arrow_right:调整R方：
 
-增加无关变量R方也会上升
-
-:arrow_right:调整R方
 $$
 R^2_a = 1-(1-R^2)(\frac{n-1}{n-p-1})
-\\
-p为自变量个数\\
-n为样本容量
 $$
+
+- p为自变量个数
+- n为样本容量
 
 #### 整个模型的显著性检验——F检验
 
-方差分析表
+方差分析表：
 
-![image-20210624101705605](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624101705605.png)
+![](static/reg-f.png)
 
 #### 每个自变量系数的显著性检验——t检验
 
-![image-20210624101838819](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624101838819.png)
+![](static/reg-t.png)
 
 #### 共线性问题
 
-变量不显著或是变量系数和预期不一致（符号不对），可能出现多重共线性问题了
+变量不显著或是变量系数和预期不一致（符号不对），说明可能出现了多重共线性问题。
 
-多个自变量之间相关系数较大，删去和响应变量相关性最弱的自变量
+如果多个自变量之间相关系数较大，可以考虑删去和响应变量相关性最弱的自变量。
 
-##### 方差膨胀因子VIF
+共线性的量化指标：
 
-$$
-VIF_i=\frac{1}{1-R_i^2}
-$$
+- 方差膨胀因子VIF
+	$$
+	\text{VIF}_i=\frac{1}{1-R_i^2}
+	$$
 
 其中$R_i^2$是$X_i\sim其他自变量回归的R^2$
 
 经验法则：
 
-VIF大于4需要进一步检查
-
-VIF大于10出现严重共线性，$X_i$可以被其他变量替代
+- VIF大于4需要进一步检查
+- VIF大于10出现严重共线性，$X_i$可以被其他变量替代
 
 #### 变量选择
 
-##### 向后消元法backward
-
-先所有变量加入模型，然后提出不显著的模型，重复直到所有变量显著性检验通过
-
-##### 向前选择法forward
-
-##### 逐步回归法stepwise
+- 向后消元法backward
+	- 先所有变量加入模型，然后提出不显著的模型，重复直到所有变量显著性检验通过
+- 向前选择法forward
+- 逐步回归法stepwise
 
 #### 模型诊断
 
-也就是验证`假设`
+也就是验证下面的一系列假设：
 
-+ 每个自变量对于Y取值的影响均是线性关系
-+ 残差与自变量无关
-  + 散点图
-+ 残差之间相互独立（最难检验）
-  + 时间序列图，检测趋势
-+ 残差之间同方差性
-  + 残差-拟合值的散点图，观察趋势
-+ 残差正态性
-  + 残差的QQ图
-+ 异常值检验
-  + 杠杆率图 RstudentByLeverage
-    + 影子价格？偏导数？
-    + Rstudent是studentized residuals学生化残差，标准化之后的残差
-    + 检查离群值
-  + CooksD
-    + 如果一个观测被排除在外，由此造成的回归系数变化进而Y的拟合值有多大
-
-![image-20210624102924025](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624102924025.png)
+1. 每个自变量对于Y取值的影响均是**线性关系**
+2. 残差与自变量**无关**
+	+ 散点图
+3. 残差之间**相互独立**（最难检验）
+	+ 时间序列图，检测趋势
+4. 残差之间**同方差性**
+	+ 残差-拟合值的散点图，观察趋势
+5. 残差**正态性**
+	+ 残差的QQ图
+6. 异常值检验
+	+ 杠杆率图 RstudentByLeverage
+		+ 影子价格？偏导数？
+		+ Rstudent是studentized residuals学生化残差，标准化之后的残差
+		+ 检查离群值
+	+ CooksD
+		+ 如果一个观测被排除在外，由此造成的回归系数变化进而Y的拟合值有多大
 
 #### AIC、SC准则
 
-$AIC=-2log(L)+2p$
+- $\text{AIC}=-2log(L)+2p$
+- $\text{SC}=-2log(L)+log(n)p$也称为BIC
 
-$SC=-2log(L)+log(n)p 也称为BIC$
+其中**L为似然函数在最大似然估计处的取值**，越大越好；也就是AIC、SC越小越好。这些准则用于比较对于同一个数据，哪个模型更好。并非绝对指标，不可以用于比较不同数据的模型。
 
-其中==**L为似然函数在最大似然估计处的取值**==，越大越好
+### 实战：线性回归
 
-也就是AIC、SC越小越好
+#### 拟合模型
 
-这些准则用于比较对于同一个数据，哪个模型更好
-
-### 线性回归
-
-##### reg过程需要quit
-
-```sas
-proc reg data=dataname plots(only label) = (RstudentByLeverage RstudentByLeverage);
-	model sales= population snow /clb p vif alpha=.1;
-			#clb置信区间，confidence limits for beta
-			#p产生残差分析
-			#vif方差膨胀因子——检查共线性
-			#alpha
-	id zone;
-run;
-quit;
-```
+!!! note "reg过程需要quit"
+	reg过程在运行的时候需要`run`然后手动`quit`：
+	```sas
+	proc reg data=dataname plots(only label) = (RstudentByLeverage RstudentByLeverage);
+		model sales= population snow /clb p vif alpha=.1;
+				# clb置信区间，confidence limits for beta
+				# p产生残差分析
+				# vif方差膨胀因子——检查共线性
+				# alpha
+		id zone;
+	run;
+	quit; # 别忘记了
+	```
 
 #### 预测
 
@@ -470,57 +466,100 @@ run;
 quit;
 ```
 
-还可以使用`forward stepwsie`
+还可以使用`forward`或者`stepwise`：
 
-forward 中`slentary=value`，默认为0.5
+- `forward`中`slentary=value`，默认为0.5
+- `stepwise`两个参数都可以指定，slentary，slstary，默认均为0.15
 
-stepwise两个参数都可以指定，slentary，slstary，默认均为0.15
+### 理论：广义线性模型
 
-### GLM广义线性模型
+设响应变量$Y$，均值为$\mu_Y$，某个链接函数$g$，广义线性模型为：
 
-响应变量$Y$，均值为$\mu_Y$
+$$
+g(\mu_Y)=\beta_0+\beta_1x_1+...+\beta_kx_k
+$$
 
-某个链接函数$g$
+- $Y\sim \text{Bernoulli}(p),\quad g=\text{logit}$
+	- 即为logistic回归
+- $Y\sim \text{Bernoulli}(p),\quad g=\Phi^{-1}$
+	- 即为probit回归
+- $Y\sim \text{Normal}(\mu,\sigma^2),\quad g=\text{idnetity}$
+	- 即为线性回归，适合响应变量是连续的
+- $Y\sim \text{Poisson}(\lambda),\quad g=\log$
+	- 即为poisson回归，适合响应变量是计数数据
 
-模型为：
+??? deepseek-summary "logit和probit模型的异同"
+	Logit和Probit模型都是用于处理**二元因变量**（如“是/否”、“成功/失败”）的回归模型，但它们在函数形式、假设和应用场景上存在一些异同。以下是它们的详细对比：
 
-==$g(\mu_Y)=\beta_0+\beta_1x_1+...+\beta_kx_k$==
+	相同点：
 
-$Y\sim Bernoulli(p), \ g=logit$  即为logistic回归，适合响应变量是某事发生的概率,这里的p是均值、期望
+	1. **用途**  
+		- 都用于建模**二元分类问题**（因变量为0或1）。
+		- 例如：预测用户是否购买产品、贷款是否违约等。
+	2. **输出概率**  
+		- 两者都通过**链接函数**将线性预测值（$X\beta$）映射到**[0,1]**区间，输出事件发生的概率。
+	3. **估计方法**  
+		- 通常使用**最大似然估计（MLE）**进行参数估计。
+	4. **非线性关系**  
+		- 均假设自变量与因变量之间存在非线性关系（通过S型曲线拟合）。
 
-$Y\sim Bernoulli(p), \  g=\Phi^{-1}$  即为probit回归
+	不同点：
 
-$Y\sim Normal(\mu,\sigma^2), \ g=idnetity（恒等函数）$   即为线性回归，适合响应变量是连续的
+	| **特征**       | **Logit模型**                                  | **Probit模型**                       |
+	| -------------- | ---------------------------------------------- | ------------------------------------ |
+	| **链接函数**   | Logistic函数（累积逻辑分布）                   | 标准正态分布的逆CDF（$\Phi^{-1}$） |
+	| **函数形式**   | $P(Y=1) = \frac{e^{X\beta}}{1+e^{X\beta}}$| $ P(Y=1) = \Phi(X\beta)$         |
+	| **分布假设**   | 逻辑分布（厚尾）                               | 标准正态分布（薄尾）                 |
+	| **系数解释**   | 优势比（Odds Ratio）                           | 边际效应（需计算）                   |
+	| **极端概率**   | 对极端值更敏感（尾部更厚）                     | 对极端值更保守                       |
+	| **计算便利性** | 解析解更简单（常用于机器学习）                 | 需数值积分（计算略复杂）             |
+	| **应用领域**   | 更常见于医学、社会科学                         | 更常见于经济学、金融                 |
 
-$Y\sim Poisson(\lambda), \ g=log$  即为poisson回归，适合响应变量是计数数据
+	如何选择？
 
-### logistic回归
+	1. **理论基础**  
+		- 如果数据生成过程符合正态分布（如经济学中的潜变量假设），选择**Probit**。  
+		- 如果关注**优势比**或需要更直观的解释（如医学研究），选择**Logit**。
+	2. **计算效率**  
+		- Logit的解析解更简单，适合大数据或实时预测场景。  
+		- Probit需数值积分，计算成本略高。
+	3. **结果差异**  
+		- 实际应用中，两者的预测结果通常非常接近（系数需按比例缩放后比较）。  
+		- Logit的系数约为Probit的**1.6~1.8倍**（因方差差异）。
 
-![image-20210624105331838](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624105331838.png)
+	- **边际效应**：Probit的边际效应需通过$\phi(X\beta)\beta$计算（$\phi$为标准正态PDF），而Logit的边际效应为$ \frac{e^{X\beta}}{(1+e^{X\beta})^2}\beta $。
+	- **扩展模型**：两者均可扩展为**有序（Ordered）**或**多元（Multinomial）**模型。
 
-描述为发生比
+	总结：
 
-x每增加一个单位，event的发生比乘以$exp(\beta)$
+	- **Logit**：直观、易解释、计算高效，适合大多数分类问题。  
+	- **Probit**：更符合正态假设，适合经济学或需要严格分布假设的场景。  
+
+	在实践中，若无明确理论偏好，Logit通常因其便利性被优先采用。
+
+### 实战：logistic回归
+
+回归的结果为发生比（或者说是log-odds），x每增加一个单位，event的发生比乘以$exp(\beta)$
 
 ```sas
 proc logistic data=bankrupt;
 	model Z = x1 - x3/selection=forward;
-run;默认水平Z取第一个，为0
+run; # 默认水平Z取第一个，为0
 ```
 
 ```sas
 proc logistic data=bankrupt;
-	model Z(enevt='1') = x1 - x3;  #可以指定event
+	model Z(enevt='1') = x1 - x3;  # 可以指定event
 run;
 ```
 
-==这里的model语句== 
+这里的model语句还可以这么写：
 
 ```sas
 model enevts/trials = <effects></options>;
 ```
 
-理解为，事件发生的次数
+理解为，事件发生的频率：
 
 ```sas
 proc logistic data=shuttle;
@@ -528,7 +567,9 @@ proc logistic data=shuttle;
 run;
 ```
 
-### probit回归
+### 实战：probit回归
+
+> probit回归也使用logistic过程，只不过可以指定link函数
 
 ```sas
 proc logistic data=dataname;
@@ -538,20 +579,22 @@ run;
 
 这里加了link选项，指定了链接函数（默认是logit函数
 $$
-logit(p) = log\frac{p}{1-p}
+\text{logit}(p) = \log\frac{p}{1-p}
 $$
 
 $$
-\\
-probit(p) = \Phi^{-1}(p)\\ 
-\\
-\\
-其中\Phi(x)是N(0,1)的累积分布函数, \ \Phi(x)=\int_{-\infty}^xexp(-\frac{x^2}{2})dx
+\text{probit}(p) = \Phi^{-1}(p)
+$$
+其中$\Phi(x)$是$N(0,1)$的累积分布函数：
+$$
+\Phi(x)=\int_{-\infty}^x \exp(-\frac{x^2}{2})dx
 $$
 
 ### genmod过程
 
-线性回归
+> genmod过程更加通用，啥都能做。是真正的广义线性模型（**Gen**eralized Linear **Mod**els）过程
+
+线性回归：
 
 ```sas
 proc genmod data=dataname;
@@ -559,7 +602,7 @@ proc genmod data=dataname;
 run;
 ```
 
-logistic回归
+logistic回归：
 
 ```sas
 proc genmod data=dataname;
@@ -569,6 +612,8 @@ run;
 
 ## 聚类分析
 
+聚类分析就是通过**某种距离度量**把样本按照距离远近划分为若干类的过程。
+
 ### 常用距离
 
 #### 明可夫斯基距离
@@ -577,9 +622,7 @@ $$
 d_{ij}=\\{\sum_{k=1}^p|x_{ik}-x_{jk}|^q\\}^{1/q}
 $$
 
-q=2时，即为欧氏距离
-
-缺点——量纲影响大，标准化可以解决
+q=2时，即为欧氏距离，它的缺点是受到量纲影响大，标准化可以解决～
 
 #### match
 
@@ -597,7 +640,9 @@ $$
 
 
 
-### distance过程——求距离矩阵
+### 求距离矩阵
+
+使用distance过程可以很方便地计算距离矩阵：
 
 ```sas
 proc distanse data=数据集 out=数据集 method=方法;
@@ -607,7 +652,16 @@ proc distanse data=数据集 out=数据集 method=方法;
 run;
 ```
 
-方法： euclid, cov, corr, l(p)——明可夫斯基距离p, match, dmatch, dsqmatch, cosine
+距离度量： 
+
+- euclid
+- cov
+- corr
+- l(p)——明可夫斯基距离p
+- match
+- dmatch
+- dsqmatch
+- cosine
 
 变量类型：interval, ratio, ordinal等
 
@@ -617,11 +671,13 @@ proc distanse data=family out = dis1 method=Euclid;
 run;
 ```
 
-标准化！std默认标准化方法
+标准化：std默认标准化方法。
 
 ### 系统聚类法
 
-输入原始数据（欧氏距离
+#### cluster聚类
+
+输入原始数据的情况下，默认使用欧氏距离进行聚类分析：
 
 ```sas
 proc cluster data=dataname 
@@ -635,37 +691,26 @@ proc cluster data=dataname
 run;
 ```
 
-method：（类间距离的定义不同）
+method：类间距离的定义
 
-#### single最短距离算法
-
-类与类之间的距离定义为最近观测之间的距离
-
-#### complete最长距离算法
-
-类与类之间的距离定义为最远观测之间的距离
-
-#### centroid重心法
-
-重心（均值）之间的欧氏距离
-
-#### average类平均法
-
-所有观测对之间的平均距离
-
-#### ward离差平方和法
-
-类中各个观测到中心的**平方欧氏距离之和**称为类内离差平方和
+- single最短距离算法
+	- 类与类之间的距离定义为最近观测之间的距离
+- complete最长距离算法
+	- 类与类之间的距离定义为最远观测之间的距离
+- centroid重心法
+	- 重心（均值）之间的欧氏距离
+- average类平均法
+	- 所有观测对之间的平均距离
+- ward离差平方和法
+	- 类中各个观测到中心的**平方欧氏距离之和**称为类内离差平方和
 
 类间距离：
 $$
 D_{KL}^2 = W_M-(W_K+W_L)
 $$
-$W_K,W_L$是类内离差平方和，$W_M$是K和L合并之后的类内平方和
+$W_K,W_L$是类内离差平方和，$W_M$是K和L合并之后的类内平方和。如果两类之间距离小，合并之后的增加的离差平方和应该较小。
 
-如果两类之间距离小，合并之后的增加的离差平方和应该较小
-
-#### ==画出谱系图==
+#### 画出谱系图
 
 ```sas
 proc tree data=dataname horizontal; #默认是竖直的，可选水平
@@ -680,12 +725,16 @@ run;
 
 #### 采用非欧氏距离
 
+需要先计算距离矩阵：
+
 ```sas
 proc distance data=dataname method=dcorr out=distdcorr;
 	var interval(div_1986--div_1990);
 	id company;
 run;
 ```
+
+然后把距离矩阵输入cluster过程：
 
 ```sas
 proc cluster data=distdcorr method=ward pseudo;
@@ -695,8 +744,10 @@ run;
 
 #### 什么是距离矩阵
 
+在SAS中距离矩阵是一种data type，我们甚至可以认为定义一个距离矩阵：
+
 ```sas
-data dist(type=distance);#指定数据集类型
+data dist(type=distance);# 指定数据集类型
 	input A B C D$;
 	cards;
 	1 2 3 A
@@ -708,9 +759,11 @@ run;
 
 ### 快速聚类法
 
-Kmeans
+Kmeans聚类：
 
-![image-20210624113005721](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624113005721.png)
+<figure markdown>
+![](https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif){width=300}
+</figure>
 
 ```sas
 proc fastclus data=数据集 
@@ -737,17 +790,19 @@ run;
 
 #### 谱系图
 
-找一个合适的树高，截断就好了
+从谱系图来看，寻找一个合适的树高，做截断即可：
 
-#### 观察散点图
+![](static/tree.png)
 
-但是变量较多的时候没法看
+#### 散点图
 
-可以使用主成分分析法
+也可以通过散点图来观察聚类效果。
 
-![image-20210624112725919](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624112725919.png)
+但是很多时候变量较多的时候没法看，这时候可以使用主成分分析法降低数据纬度再看。
 
 #### 使用统计量伪T方
 
-![image-20210624112743353](C:\Users\22078\AppData\Roaming\Typora\typora-user-images\image-20210624112743353.png)
+SAS会直接帮我们计算：
+
+![](static/pt2.png)
 
