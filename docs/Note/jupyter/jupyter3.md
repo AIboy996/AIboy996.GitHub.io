@@ -3,6 +3,8 @@ tags:
  - Jupyter
 ---
 
+> 原文发在本人的微信公众号
+
 几天不见，今天我们继续传销Jupyter Notebook
 
 之前的推文提到过，jupyter是一个“web服务器”，那么它理所应当的可以远程访问。

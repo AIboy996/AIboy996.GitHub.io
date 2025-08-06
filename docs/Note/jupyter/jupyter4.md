@@ -5,6 +5,7 @@ include:
 - math
 ---
 
+> 原文发在本人的微信公众号
 
 今天的推文是传销jupyter notebook的最后一篇啦！
 
