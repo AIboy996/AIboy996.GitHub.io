@@ -30,7 +30,8 @@ flowchart TD
         优化模型
     end
     subgraph 进阶
-        多卡训练
+        分布式训练
+        训练技巧
         编译优化
         模型部署
     end
@@ -42,8 +43,9 @@ flowchart TD
     click 搭建模型 "./model/"
     click 模型初始化 "./init/"
     click 优化模型 "./optimizer/"
-    click 多卡训练 "./multi_gpu/"
+    click 分布式训练 "./multi_gpu/"
     click 编译优化 "./compile/"
+    click 训练技巧 "./tricks/"
 ```
 
 本篇文章则是对深度学习编程核心算法（autograd）的简短介绍。

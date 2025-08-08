@@ -379,4 +379,4 @@ torch还为我们封装了一些常用的Sampler：
 
 看名字就知道是干什么的。
 
-其中最后一个`torch.utils.data.distributed.DistributedSampler`比较特殊，它用于分布式训练。他会自动把整个按照分布式节点数数据集划分为若干个不相交的部分，然后给每个节点提供数据。后续的[多卡训练笔记](multi_gpu.md)还会详细介绍它。
+其中最后一个`torch.utils.data.distributed.DistributedSampler`比较特殊，它用于分布式训练。他会自动把整个按照分布式节点数数据集划分为若干个不相交的部分，然后给每个节点提供数据。后续的[分布式训练笔记](multi_gpu.md)还会详细介绍它。

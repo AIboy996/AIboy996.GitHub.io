@@ -5,7 +5,7 @@ include:
 - math
 ---
 
-# 多卡训练
+# 分布式训练
 
 > [torch.distributed](https://docs.pytorch.org/docs/stable/distributed.html)
 
