@@ -309,6 +309,7 @@ nav:
         - Python/ThirdPartyLibrary/pytorch/init.md
         - Python/ThirdPartyLibrary/pytorch/optimizer.md
         - Python/ThirdPartyLibrary/pytorch/multi_gpu.md
+        - Python/ThirdPartyLibrary/pytorch/tricks.md
         - Python/ThirdPartyLibrary/pytorch/compile.md
       - sklearn:
         - Python/ThirdPartyLibrary/sklearn/index.md
