@@ -47,6 +47,7 @@ hide:
 |图|[网络延迟时间](https://leetcode.cn/problems/network-delay-time/)|[743](743.md)|最短路算法|
 |图|[K站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/)|[787](787.md)|最短路算法|
 |动态规划|[最小的必要团队](https://leetcode.cn/problems/smallest-sufficient-team/)|[1125](./1125.md)|BFS，位运算|
+|回溯|[铺瓷砖](https://leetcode.cn/problems/tiling-a-rectangle-with-the-fewest-squares/)|[1240](./1240.md)|回溯、剪枝|
 |数组|[优美子数组](https://leetcode.cn/problems/count-number-of-nice-subarrays/)|[1248](./1248.md)|双指针、单指针、前缀和|
 |图|[阈值距离内邻居最少的城市](https://leetcode.cn/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/)|[1334](./1334.md)|最短路算法|
 |数组|[least k - 子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/)|[2962](./2962.md)|双指针|
