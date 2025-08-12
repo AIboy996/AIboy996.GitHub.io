@@ -2,6 +2,7 @@
 tags:
 - PyLib
 - Leetcode
+- 数据结构
 ---
 
 # heapq
