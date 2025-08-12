@@ -42,6 +42,7 @@ hide:
 |链表|[排序链表](https://leetcode.cn/problems/sort-list/)|[148](./148.md)|归并排序|
 |数组|[寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)|[153](./153.md)||
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206.md)|双指针遍历、递归|
+|数组|[最长递增子列](https://leetcode.cn/problems/longest-increasing-subsequence/)|[300](./300.md)|动态规划、二分、树状数组|
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322.md)|动态规划|
 |图|[公交线路](https://leetcode.cn/problems/bus-routes/)|[815](./815.md)|BFS|
 |图|[网络延迟时间](https://leetcode.cn/problems/network-delay-time/)|[743](743.md)|最短路算法|
