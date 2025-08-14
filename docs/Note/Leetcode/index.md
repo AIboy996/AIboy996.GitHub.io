@@ -44,9 +44,11 @@ hide:
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206.md)|双指针遍历、递归|
 |数组|[最长递增子列](https://leetcode.cn/problems/longest-increasing-subsequence/)|[300](./300.md)|动态规划、二分、树状数组|
 |数组|[零钱兑换](https://leetcode.cn/problems/coin-change/)|[322](./322.md)|动态规划|
+|数组|[区间和的个数](https://leetcode.cn/problems/count-of-range-sum/description/)|[327](./327.md)|树状数组、排序|
 |图|[公交线路](https://leetcode.cn/problems/bus-routes/)|[815](./815.md)|BFS|
 |图|[网络延迟时间](https://leetcode.cn/problems/network-delay-time/)|[743](743.md)|最短路算法|
 |图|[K站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/)|[787](787.md)|最短路算法|
+|数组|[排序数组](https://leetcode.cn/problems/sort-an-array/description/)|[912](912.md)|排序算法|
 |动态规划|[最小的必要团队](https://leetcode.cn/problems/smallest-sufficient-team/)|[1125](./1125.md)|BFS，位运算|
 |回溯|[铺瓷砖](https://leetcode.cn/problems/tiling-a-rectangle-with-the-fewest-squares/)|[1240](./1240.md)|回溯、剪枝|
 |数组|[优美子数组](https://leetcode.cn/problems/count-number-of-nice-subarrays/)|[1248](./1248.md)|双指针、单指针、前缀和|
