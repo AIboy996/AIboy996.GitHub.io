@@ -24,6 +24,14 @@ hide:
 - [代码随想录](https://programmercarl.com/)
 - [labuladong](https://labuladong.online/algo/)
 
+## 笔记
+
+刷题的过程中学了更多算法与数据结构的知识，有一些笔记如下：
+
+- [常用数据结构](./data_structure.md)
+- [优先队列：heapq](../../Python/StandardLibrary/heapq.md)
+- [二分搜索：bisect](../../Python/StandardLibrary/bisect.md)
+
 ## 题解
 
 某些印象深刻的题目我会写一写题解。

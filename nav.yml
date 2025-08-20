@@ -146,6 +146,7 @@ nav:
       - Note/latex/latex_cn.md
     - Leetcode:
       - Note/Leetcode/index.md
+      - Note/Leetcode/data_structure.md
       - Note/Leetcode/001.md
       - Note/Leetcode/031.md
       - Note/Leetcode/042.md
