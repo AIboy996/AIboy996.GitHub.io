@@ -47,12 +47,12 @@ nav:
     - Algorithm:
       - Note/Algorithm/index.md
       - LLM:
-        - Note/Algorithm/llm/overview.md
+        - Note/Algorithm/llm/index.md
         - Note/Algorithm/llm/word2vec.md
         - Note/Algorithm/llm/transformer.md
         - Note/Algorithm/llm/rl.md
       - VLLM:
-        - Note/Algorithm/vllm/overview.md
+        - Note/Algorithm/vllm/index.md
         - Note/Algorithm/vllm/dino.md
       - 生成模型:
         - Note/Algorithm/generative/index.md
@@ -222,6 +222,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2025:
+      - Blog/2025/xiaoxia.md
       - Blog/2025/beijing.md
       - Blog/2025/hangzhou.md
       - Blog/2025/shwzoo.md

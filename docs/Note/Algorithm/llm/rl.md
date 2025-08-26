@@ -5,7 +5,7 @@ tags:
 - LLM
 ---
 
-# Reinforcement Learning
+# RLHF
 
 最近Deepseek的R1模型爆火了，在这之前OpenAI的o1模型也声势浩大。
 
