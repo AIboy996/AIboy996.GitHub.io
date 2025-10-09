@@ -90,7 +90,7 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help me improve this page by using the <a href="https://github.com/AIboy996/AIboy996.GitHub.io/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
-  social: # icons
+  social: # icons, see https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
     - icon: fontawesome/solid/rss
       link: https://yangzhang.site/feed_rss_created.xml
       name: RSS
@@ -106,6 +106,9 @@ extra:
     - icon: material/television-classic
       link: https://bangumi.tv/anime/list/759154/do
       name: bangumi追番列表
+    - icon: simple/douban
+      link: https://www.douban.com/people/227694035/
+      name: 豆瓣
     - icon: material/function-variant
       link: https://aiboy996.github.io/dzd/
       name: 高中数学典中典
@@ -115,9 +118,6 @@ extra:
     - icon: fontawesome/solid/blog
       link: https://whisper.yangz.site
       name: 微博客
-    - icon: material/email
-      link: mailto:mail@yangzhang.site
-      name: 邮件
     # - icon: material/brush
     #   link: https://plt.yangz.site
     #   name: plt画廊

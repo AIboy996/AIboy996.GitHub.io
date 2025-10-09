@@ -8,9 +8,61 @@ tags:
 
 > 倒叙，NAS i.e. Network Attached Storage
 
+已折腾：
+
+```mermaid
+graph LR
+NAS --- 基础设施 & 自建服务 & 其他好玩的
+subgraph 基础设施
+wnas[Win NAS配置]
+wow[Wake on Wan]
+域名
+tls[SSL/TLS证书]
+end
+subgraph 自建服务
+图床
+媒体库
+云相册
+Overleaf
+n8n自动化
+VSCode
+end
+subgraph 其他好玩的
+远程控制安卓
+Telegram机器人
+Plex实时活动
+end
+click Overleaf "./self-hosted-overleaf/"
+click wnas "./windows/"
+click wow "./wol/"
+click 域名 "./domain/"
+click tls "./https/"
+click 图床 "./oss/"
+click 媒体库 "./media/"
+click 云相册 "./pohtoprism/"
+click n8n自动化 "./nodemation/"
+click VSCode "./code-server/"
+click 远程控制安卓 "./scrcpy/"
+click Telegram机器人 "./tg-bot/"
+click Plex实时活动 "./tautulli/"
+```
+
+## 4.0时代
+
+手痒了，又买了一台品牌NAS，这次充分吸取了群晖220j的教训，买的是x86架构、2GB内存的**铁威马F2-220**（不是221哦）：
+
+<figure markdown>
+
+![](assets/2025-09-10-17-38-22.png){width=500}
+
+<figurecaption>男生自用88新</figurecaption>
+</figure>
+
+这下终于可以摆脱“尿袋式”硬盘盒了，双盘位刚好放两张4TB的机械盘，短期应该是够用了。铁威马不如群晖，也不如Windows和Linux，但也够用了。有一些基础的套件，还可以跑Docker～
+
 ## 3.0时代
 
-我现在的NAS就是我换下来的荣耀Windows笔记本，续航血崩但是性能还行（i5-8265U + NV GeForce MX250）。外接<s>俩</s>机械硬盘，当个NAS绰绰有余！
+这个时代的NAS就是我换下来的荣耀Windows笔记本，续航血崩但是性能还行（i5-8265U + NV GeForce MX250）。外接<s>俩</s>机械硬盘，当个NAS绰绰有余！
 
 <figure markdown>
 
@@ -19,17 +71,17 @@ tags:
 <figurecaption>灰是真的大</figurecaption>
 </figure>
 
-### 3.0.3
+### 3.3
 
 彻彻底底地remake，[换回了原生的Windows系统](./windows.md)（为此，我把之前在ext4磁盘上所有的数据都抹掉了😭😭），希望NTFS稳定一些。
 
-### 3.0.2
+### 3.2
 
 这次终于实践了我很久以前就想做的事情：刷一个PVE，玩一玩All in One
 
 然而事实证明，`all in one = all in boom`，很快PVE直接挂掉了，我的所有虚拟机毁于一旦，g
 
-### 3.0.1
+### 3.1
 
 这个时期用的系统是Ubuntu，主面板是[CasaOS](https://casaos.io/)
 
