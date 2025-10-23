@@ -1,2 +1,2 @@
 #! /bin/bash
-mc mirror --overwrite --remove docs/ lap/docs/
+mc mirror --overwrite --remove docs/ nas/docs/
