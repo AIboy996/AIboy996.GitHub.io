@@ -48,12 +48,9 @@ nav:
       - Note/Algorithm/index.md
       - LLM:
         - Note/Algorithm/llm/index.md
-        - Note/Algorithm/llm/flash_attention.md
-        - Note/Algorithm/llm/kv_cache.md
-        - Note/Algorithm/llm/mamba.md
         - Note/Algorithm/llm/word2vec.md
-        - Note/Algorithm/llm/transformer.md
         - Note/Algorithm/llm/rl.md
+        - Note/Algorithm/llm/transformer.md
       - VLLM:
         - Note/Algorithm/vllm/index.md
         - Note/Algorithm/vllm/dino.md
@@ -358,7 +355,9 @@ nav:
       - Statistics/basic/Calculus.md
       - Statistics/basic/Linear_Algebra.md
       - Statistics/basic/Operations_Research.md
-      - Statistics/basic/Probability_Theory_and_Mathematical_Statistics.md
+      - 概率论与数理统计:
+        - Statistics/basic/prob_statistics/index.md
+        - Statistics/basic/prob_statistics/lln_clt.md
       - Statistics/basic/Statistical_Software.md
     - 专业课:
       - 统计推断:
@@ -378,9 +377,9 @@ nav:
       - Statistics/elective/Computational_Statistics.md
       - 数据挖掘:
         - Statistics/elective/Data_Mining/index.md
+        - Statistics/elective/Data_Mining/bagging_and_boosting.md
         - Statistics/elective/Data_Mining/svm.md
         - Statistics/elective/Data_Mining/tree.md
-        - Statistics/elective/Data_Mining/bagging_and_boosting.md
       - Statistics/elective/Algorithm.md
       - Statistics/elective/DSPython.md
       - Statistics/elective/Database.md
@@ -438,7 +437,6 @@ nav:
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
     - 概率论:
-      - SomeMath/prob/lln_clt.md
       - SomeMath/prob/ind_det_mnorm.md
       - SomeMath/prob/gaussian.md
       - SomeMath/prob/37rule.md
