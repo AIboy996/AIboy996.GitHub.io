@@ -14,23 +14,24 @@ tags:
 graph LR
 NAS --- 基础设施 & 自建服务 & 其他好玩的
 subgraph 基础设施
-wnas[Win NAS配置]
-wow[Wake on Wan]
-域名
-tls[SSL/TLS证书]
+    wnas[Win NAS]
+    Fnnas[飞牛 OS]
+    域名
+    tls[SSL/TLS证书]
+    wow[Wake on Wan]
 end
 subgraph 自建服务
-图床
-媒体库
-云相册
-Overleaf
-n8n自动化
-VSCode
+    图床
+    媒体库
+    云相册
+    Overleaf
+    n8n自动化
+    VSCode
 end
 subgraph 其他好玩的
-远程控制安卓
-Telegram机器人
-Plex实时活动
+    远程控制安卓
+    Telegram机器人
+    Plex实时活动
 end
 click Overleaf "./self-hosted-overleaf/"
 click wnas "./windows/"
@@ -45,6 +46,7 @@ click VSCode "./code-server/"
 click 远程控制安卓 "./scrcpy/"
 click Telegram机器人 "./tg-bot/"
 click Plex实时活动 "./tautulli/"
+click Fnnas "./fnnas"
 ```
 
 ## 4.0时代
@@ -55,16 +57,20 @@ click Plex实时活动 "./tautulli/"
 
 ![](assets/2025-09-10-17-38-22.png){width=500}
 
-<figurecaption>男生自用88新</figurecaption>
+<figurecaption>男生自用88新<br>这该死的、迷人的铝合金</figurecaption>
 </figure>
 
-这下终于可以摆脱“尿袋式”硬盘盒了，双盘位刚好放两张4TB的机械盘，短期应该是够用了。铁威马不如群晖，也不如Windows和Linux，但也够用了。有一些基础的套件，还可以跑Docker～
+这下终于可以摆脱“尿袋式”硬盘盒了，双盘位刚好放两张4TB的机械盘，短期应该是够用了。
 
-### 4.2
+### 4.2 - 飞牛
 
-用上了新潮的飞牛OS，铁威马F2-220原装没有系统盘、只有一个引导U盘。而飞牛是基于Linux的，必须把系统装在硬盘上。于是我只能有外挂了一个硬盘盒专门放飞牛系统。安装完之后体验了几周，系统丝滑得很，比铁威马那个TNAS系统好用多了。甚至还有多平台的手机APP。爽！
+用上了新潮的[飞牛OS](./fnnas.md)。
 
-### 4.1
+由于铁威马F2-220原装没有系统盘、只有一个内嵌的引导U盘用于把系统安装到机械硬盘上，而飞牛是基于Linux的，必须把系统装在硬盘上。于是我只能有外挂了一个硬盘盒专门放飞牛系统。
+
+安装完之后体验了几周，系统丝滑得很，比铁威马那个TNAS系统好用多了。甚至还有多平台的手机APP。爽！
+
+### 4.1 - TOS
 
 用了一段时间铁威马自带的系统，能用但是忒卡了。还是最终放弃了，转向飞牛OS。
 
@@ -79,17 +85,17 @@ click Plex实时活动 "./tautulli/"
 <figurecaption>灰是真的大</figurecaption>
 </figure>
 
-### 3.3
+### 3.3 - Windows10
 
 彻彻底底地remake，[换回了原生的Windows系统](./windows.md)（为此，我把之前在ext4磁盘上所有的数据都抹掉了😭😭），希望NTFS稳定一些。
 
-### 3.2
+### 3.2 - PVE
 
 这次终于实践了我很久以前就想做的事情：刷一个PVE，玩一玩All in One
 
 然而事实证明，`all in one = all in boom`，很快PVE直接挂掉了，我的所有虚拟机毁于一旦，g
 
-### 3.1
+### 3.1 - Ubuntu
 
 这个时期用的系统是Ubuntu，主面板是[CasaOS](https://casaos.io/)
 
@@ -128,7 +134,7 @@ click Plex实时活动 "./tautulli/"
 <figurecaption>塑料感拉满了</figurecaption>
 </figure>
 
-但是不得不说，群晖毕竟是专业的，用起来很省心~
+但是不得不说，群晖毕竟是老牌专业的NAS，开箱即用、并且用起来很省心~
 
 ## 0.0时代
 
