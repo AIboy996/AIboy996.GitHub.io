@@ -2,43 +2,10 @@ name: publish site
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - publishment
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    environment: mkdocs-build
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # for mkdocs-git-revision-date-localized-plugin
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11.5"
-      - run: python3 -m pip install -r requirements.txt
-      - run: PLUGIN="./plugins_full.yml" OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} DASHSCOPE_API_KEY=${{ secrets.DASHSCOPE_API_KEY }} mkdocs gh-deploy --force -b publishment
-      - name: Commit files
-        id: commit-files
-        run: |
-          if [ -n "$(git status --porcelain _ai_summary_cache_chatgpt.json)" ]; then
-              git config --local user.email "github-actions[bot]@users.noreply.github.com"
-              git config --local user.name "github-actions[bot]"
-              git add .
-              git commit -m "[update] ai-summary cache"
-              echo "hasChange=true" >> $GITHUB_OUTPUT
-          else
-              echo "No changes detected"
-          fi
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        if: ${{ steps.commit-files.outputs.hasChange == 'true' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+  # build locally, then deploy to cf pages
   deployment-cloudflare-pages:
-    needs: build
     runs-on: ubuntu-latest
     environment: cloudflare-pages
     permissions:
