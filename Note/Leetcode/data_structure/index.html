@@ -63,12 +63,12 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 </code></pre></div> <h3 id=_9>单调栈<a class=headerlink href=#_9 title="Permanent link">¶</a></h3> <div class="admonition note"> <p class=admonition-title>Note</p> <ul> <li><a href=https://leetcode.cn/problems/trapping-rain-water target=_blank>42.接雨水</a></li> <li><a href=https://leetcode.cn/problems/daily-temperatures target=_blank>739.每日温度</a></li> </ul> </div> <p>单调栈是特殊的栈，它还要求维护元素是有序的（我们只需要在压栈的时候拿待压栈的元素和栈顶元素比较即可）。</p> <h3 id=_10>队列<a class=headerlink href=#_10 title="Permanent link">¶</a></h3> <p>队列是一种先进先出（FIFO）的线性表，在Python中可以用列表很方便地实现队列。</p> <div class=highlight><pre><span></span><code><span class=n>queue</span> <span class=o>=</span> <span class=p>[]</span>
 <span class=n>queue</span><span class=o>.</span><span class=n>insert</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>x</span><span class=p>)</span>     <span class=c1># 入队</span>
 <span class=n>y</span> <span class=o>=</span> <span class=n>queue</span><span class=o>.</span><span class=n>pop</span><span class=p>()</span>        <span class=c1># 出队</span>
-</code></pre></div> <p>当然Python标准库也有一个队列实现：<a href=https://github.com/python/cpython/tree/3.13/Lib/queue.py target=_blank>queue.py</a>，通常用于多线程消息分发：</p> <div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>threading</span>
-<span class=kn>import</span> <span class=nn>queue</span>
+</code></pre></div> <p>当然Python标准库也有一个队列实现：<a href=https://github.com/python/cpython/tree/3.13/Lib/queue.py target=_blank>queue.py</a>，通常用于多线程消息分发：</p> <div class=highlight><pre><span></span><code><span class=kn>import</span><span class=w> </span><span class=nn>threading</span>
+<span class=kn>import</span><span class=w> </span><span class=nn>queue</span>
 
 <span class=n>q</span> <span class=o>=</span> <span class=n>queue</span><span class=o>.</span><span class=n>Queue</span><span class=p>()</span>
 
-<span class=k>def</span> <span class=nf>worker</span><span class=p>():</span>
+<span class=k>def</span><span class=w> </span><span class=nf>worker</span><span class=p>():</span>
     <span class=k>while</span> <span class=kc>True</span><span class=p>:</span>
         <span class=n>item</span> <span class=o>=</span> <span class=n>q</span><span class=o>.</span><span class=n>get</span><span class=p>()</span>
         <span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s1>'Working on </span><span class=si>{</span><span class=n>item</span><span class=si>}</span><span class=s1>'</span><span class=p>)</span>
@@ -85,7 +85,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 <span class=c1># 阻塞直到所有任务完成。</span>
 <span class=n>q</span><span class=o>.</span><span class=n>join</span><span class=p>()</span>
 <span class=nb>print</span><span class=p>(</span><span class=s1>'All work completed'</span><span class=p>)</span>
-</code></pre></div> <h3 id=_11>双端队列<a class=headerlink href=#_11 title="Permanent link">¶</a></h3> <p>双端队列就是两边都可以入队、出队的队列。Python中可以用列表来模拟，也可以用标准库中的实现：</p> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>collections</span> <span class=kn>import</span> <span class=n>deque</span>
+</code></pre></div> <h3 id=_11>双端队列<a class=headerlink href=#_11 title="Permanent link">¶</a></h3> <p>双端队列就是两边都可以入队、出队的队列。Python中可以用列表来模拟，也可以用标准库中的实现：</p> <div class=highlight><pre><span></span><code><span class=kn>from</span><span class=w> </span><span class=nn>collections</span><span class=w> </span><span class=kn>import</span> <span class=n>deque</span>
 <span class=n>q</span> <span class=o>=</span> <span class=n>deque</span><span class=p>()</span>
 <span class=c1># api如下</span>
 
@@ -115,7 +115,7 @@ C[8] = A[1] + A[2] + A[3] + A[4] + A[5] + A[6] + A[7] + A[8]
               [1-2]   [3-4]  [5-6]   [7-8]
               /  \    /  \    /  \    /  \
             [1] [2] [3] [4] [5] [6] [7] [8]
-</code></pre></div> <h3 id=_20>哈希表<a class=headerlink href=#_20 title="Permanent link">¶</a></h3> <p>哈希表通过一个<strong>哈希函数</strong>，将键映射到一个数组中的特定位置，从而可以在平均情况下以常数时间复杂度 <code>O(1)</code> 进行插入、删除和查找操作。Python中的字典就是哈希表。</p> <h3 id=_21>堆<a class=headerlink href=#_21 title="Permanent link">¶</a></h3> <p>堆（heap）是一种树，每个节点的键值都大于等于其父亲键值的堆叫做小根堆，否则叫做大根堆。一般我们说的堆都指<strong>二叉堆</strong>，换言之它背后是一颗完全二叉树。</p> <h3 id=_22>优先队列<a class=headerlink href=#_22 title="Permanent link">¶</a></h3> <div class="admonition note"> <p class=admonition-title>Note</p> <ul> <li><a href=https://leetcode.cn/problems/sliding-window-maximum target=_blank>239.滑动窗口最大值</a></li> </ul> </div> <p>优先队列是一种特殊的队列，它不遵守先进先出（FIFO）的原则，而是在入队的时候携带一个<strong>优先级</strong>，出队的时候优先级最高的会先出队。优先队列通常用堆来实现，因此也叫堆队列。Python的标准库中有一个实现：<a href=https://github.com/python/cpython/tree/3.12/Lib/heapq.py target=_blank>heapq.py</a></p> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>heapq</span> <span class=kn>import</span> <span class=n>heappush</span><span class=p>,</span> <span class=n>heappop</span>
+</code></pre></div> <h3 id=_20>哈希表<a class=headerlink href=#_20 title="Permanent link">¶</a></h3> <p>哈希表通过一个<strong>哈希函数</strong>，将键映射到一个数组中的特定位置，从而可以在平均情况下以常数时间复杂度 <code>O(1)</code> 进行插入、删除和查找操作。Python中的字典就是哈希表。</p> <h3 id=_21>堆<a class=headerlink href=#_21 title="Permanent link">¶</a></h3> <p>堆（heap）是一种树，每个节点的键值都大于等于其父亲键值的堆叫做小根堆，否则叫做大根堆。一般我们说的堆都指<strong>二叉堆</strong>，换言之它背后是一颗完全二叉树。</p> <h3 id=_22>优先队列<a class=headerlink href=#_22 title="Permanent link">¶</a></h3> <div class="admonition note"> <p class=admonition-title>Note</p> <ul> <li><a href=https://leetcode.cn/problems/sliding-window-maximum target=_blank>239.滑动窗口最大值</a></li> </ul> </div> <p>优先队列是一种特殊的队列，它不遵守先进先出（FIFO）的原则，而是在入队的时候携带一个<strong>优先级</strong>，出队的时候优先级最高的会先出队。优先队列通常用堆来实现，因此也叫堆队列。Python的标准库中有一个实现：<a href=https://github.com/python/cpython/tree/3.12/Lib/heapq.py target=_blank>heapq.py</a></p> <div class=highlight><pre><span></span><code><span class=kn>from</span><span class=w> </span><span class=nn>heapq</span><span class=w> </span><span class=kn>import</span> <span class=n>heappush</span><span class=p>,</span> <span class=n>heappop</span>
 
 <span class=n>pq</span> <span class=o>=</span> <span class=p>[]</span>
 <span class=n>heappush</span><span class=p>(</span><span class=n>pq</span><span class=p>,</span> <span class=n>x</span><span class=p>)</span> <span class=c1># 入队</span>

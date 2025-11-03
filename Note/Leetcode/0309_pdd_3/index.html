@@ -57,7 +57,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
   Hack: check whether the content contains a h1 headline. If it
   doesn't, the page title (or respectively site name) is used
   as the main headline.
---> <!-- Markdown content --> <div><h1 id=_1>多多读书<a class=headerlink href=#_1 title="Permanent link">¶</a></h1> <p>可以一分钟看一页或者一分钟看两页。书本的每一页都有一定数量的知识： $$ book = [a_1,a_2,\cdots,a_n] $$ 如果一分钟看完一页，可以学到所有的知识。如果一分钟看完两页，只能学到两页知识之和的一半。</p> <p>问：m分钟看完这本书，最多可以学到多少知识？如果看不完输出-1。</p> <h2 id=_2>动态规划<a class=headerlink href=#_2 title="Permanent link">¶</a></h2> <p><code>dp[i][j]</code>表示读完第i页，用了j时间，获得的最大知识</p> <p>从前往后递推即可，最终我们的答案就是<code>dp[n][m]</code>。</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>dp_solver</span><span class=p>(</span><span class=n>line1</span><span class=p>,</span> <span class=n>line2</span><span class=p>):</span>
+--> <!-- Markdown content --> <div><h1 id=_1>多多读书<a class=headerlink href=#_1 title="Permanent link">¶</a></h1> <p>可以一分钟看一页或者一分钟看两页。书本的每一页都有一定数量的知识： $$ book = [a_1,a_2,\cdots,a_n] $$ 如果一分钟看完一页，可以学到所有的知识。如果一分钟看完两页，只能学到两页知识之和的一半。</p> <p>问：m分钟看完这本书，最多可以学到多少知识？如果看不完输出-1。</p> <h2 id=_2>动态规划<a class=headerlink href=#_2 title="Permanent link">¶</a></h2> <p><code>dp[i][j]</code>表示读完第i页，用了j时间，获得的最大知识</p> <p>从前往后递推即可，最终我们的答案就是<code>dp[n][m]</code>。</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>dp_solver</span><span class=p>(</span><span class=n>line1</span><span class=p>,</span> <span class=n>line2</span><span class=p>):</span>
     <span class=n>n</span><span class=p>,</span> <span class=n>m</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=n>line1</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
     <span class=n>a</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=n>line2</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
 
@@ -80,7 +80,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
                     <span class=n>dp</span><span class=p>[</span><span class=n>i</span> <span class=o>-</span> <span class=mi>2</span><span class=p>][</span><span class=n>j</span> <span class=o>-</span> <span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=p>(</span><span class=n>a</span><span class=p>[</span><span class=n>i</span> <span class=o>-</span> <span class=mi>2</span><span class=p>]</span> <span class=o>+</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span> <span class=o>-</span> <span class=mi>1</span><span class=p>])</span> <span class=o>/</span> <span class=mi>2</span>
                 <span class=p>)</span>
     <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=n>n</span><span class=p>][</span><span class=n>m</span><span class=p>]</span>
-</code></pre></div> <h2 id=_3>深度优先搜索<a class=headerlink href=#_3 title="Permanent link">¶</a></h2> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>dfs_solver</span><span class=p>(</span><span class=n>line1</span><span class=p>,</span> <span class=n>line2</span><span class=p>):</span>
+</code></pre></div> <h2 id=_3>深度优先搜索<a class=headerlink href=#_3 title="Permanent link">¶</a></h2> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>dfs_solver</span><span class=p>(</span><span class=n>line1</span><span class=p>,</span> <span class=n>line2</span><span class=p>):</span>
     <span class=n>n</span><span class=p>,</span> <span class=n>m</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=n>line1</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
     <span class=n>a</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=n>line2</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
 
@@ -88,7 +88,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
     <span class=c1># mp[(idx, m)] 表示从idx开始读，有m分钟，能获得的最大知识</span>
     <span class=n>mp</span> <span class=o>=</span> <span class=p>{}</span>
 
-    <span class=k>def</span> <span class=nf>dfs</span><span class=p>(</span><span class=n>idx</span><span class=p>,</span> <span class=n>m</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>dfs</span><span class=p>(</span><span class=n>idx</span><span class=p>,</span> <span class=n>m</span><span class=p>):</span>
         <span class=c1># idx: 下一个要读的页码</span>
         <span class=c1># m: 剩余时间</span>
         <span class=k>if</span> <span class=p>(</span><span class=n>idx</span><span class=p>,</span> <span class=n>m</span><span class=p>)</span> <span class=ow>in</span> <span class=n>mp</span><span class=p>:</span>

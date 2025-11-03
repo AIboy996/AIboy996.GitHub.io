@@ -57,7 +57,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
   Hack: check whether the content contains a h1 headline. If it
   doesn't, the page title (or respectively site name) is used
   as the main headline.
---> <!-- Markdown content --> <div><h1 id=doctest>doctest<a class=headerlink href=#doctest title="Permanent link">¶</a></h1> <p>所谓的doctest是一种简易的代码测试，例如：</p> <div class=highlight><span class=filename>add.py</span><pre><span></span><code><span class=k>def</span> <span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
+--> <!-- Markdown content --> <div><h1 id=doctest>doctest<a class=headerlink href=#doctest title="Permanent link">¶</a></h1> <p>所谓的doctest是一种简易的代码测试，例如：</p> <div class=highlight><span class=filename>add.py</span><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
 <span class=w>    </span><span class=sd>"""</span>
 <span class=sd>    Return addition of input: x and y</span>
 <span class=hll><span class=sd>    &gt;&gt;&gt; add(1, 2)</span>
@@ -84,7 +84,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 <span class=go>2 tests in 2 items.</span>
 <span class=go>2 passed and 0 failed.</span>
 <span class=go>Test passed.</span>
-</code></pre></div> </div> <h2 id=doctesttestmod><code>doctest.testmod()</code><a class=headerlink href=#doctesttestmod title="Permanent link">¶</a></h2> <p>我们也可以修改<code>add.py</code>的文件内容，使得每次它作为主脚本被运行的时候都进行doctest。</p> <div class=highlight><span class=filename>add.py</span><pre><span></span><code><span class=k>def</span> <span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
+</code></pre></div> </div> <h2 id=doctesttestmod><code>doctest.testmod()</code><a class=headerlink href=#doctesttestmod title="Permanent link">¶</a></h2> <p>我们也可以修改<code>add.py</code>的文件内容，使得每次它作为主脚本被运行的时候都进行doctest。</p> <div class=highlight><span class=filename>add.py</span><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
 <span class=w>    </span><span class=sd>"""</span>
 <span class=sd>    Return addition of input: x and y</span>
 <span class=sd>    &gt;&gt;&gt; add(1, 2)</span>
@@ -95,7 +95,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
     <span class=k>return</span> <span class=n>x</span> <span class=o>+</span> <span class=n>y</span>
 
 <span class=hll><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>"__main__"</span><span class=p>:</span>
-</span><span class=hll>    <span class=kn>import</span> <span class=nn>doctest</span>
+</span><span class=hll>    <span class=kn>import</span><span class=w> </span><span class=nn>doctest</span>
 </span><span class=hll>    <span class=n>doctest</span><span class=o>.</span><span class=n>testmod</span><span class=p>(</span><span class=n>verbose</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
 </span></code></pre></div> <div class=console> <div class=highlight><pre><span></span><code><span class=gp>$ </span>python<span class=w> </span>add.py
 <span class=go>Trying:</span>
@@ -115,22 +115,22 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 <span class=go>2 tests in 2 items.</span>
 <span class=go>2 passed and 0 failed.</span>
 <span class=go>Test passed.</span>
-</code></pre></div> </div> <h2 id=_1>面向对象编程<a class=headerlink href=#_1 title="Permanent link">¶</a></h2> <p>当然，我们的doctest也可以在其他的<code>__doc__</code>（也就是三引号注释）中使用，包括类的注释、类中方法的注释。</p> <div class=highlight><span class=filename>Operator.py</span><pre><span></span><code><span class=k>class</span> <span class=nc>Meta</span><span class=p>(</span><span class=nb>type</span><span class=p>):</span>
-    <span class=k>def</span> <span class=fm>__new__</span><span class=p>(</span><span class=bp>cls</span><span class=p>,</span> <span class=n>name</span><span class=p>,</span> <span class=n>bases</span><span class=p>,</span> <span class=nb>dict</span><span class=p>):</span>
+</code></pre></div> </div> <h2 id=_1>面向对象编程<a class=headerlink href=#_1 title="Permanent link">¶</a></h2> <p>当然，我们的doctest也可以在其他的<code>__doc__</code>（也就是三引号注释）中使用，包括类的注释、类中方法的注释。</p> <div class=highlight><span class=filename>Operator.py</span><pre><span></span><code><span class=k>class</span><span class=w> </span><span class=nc>Meta</span><span class=p>(</span><span class=nb>type</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=fm>__new__</span><span class=p>(</span><span class=bp>cls</span><span class=p>,</span> <span class=n>name</span><span class=p>,</span> <span class=n>bases</span><span class=p>,</span> <span class=nb>dict</span><span class=p>):</span>
         <span class=nb>dict</span><span class=p>[</span><span class=s2>"implemented_methods"</span><span class=p>]</span> <span class=o>=</span> <span class=p>[</span>
             <span class=n>name</span> <span class=k>for</span> <span class=n>name</span> <span class=ow>in</span> <span class=nb>dict</span> <span class=k>if</span> <span class=ow>not</span> <span class=n>name</span><span class=o>.</span><span class=n>startswith</span><span class=p>(</span><span class=s2>"_"</span><span class=p>)</span>
         <span class=p>]</span>
         <span class=k>return</span> <span class=nb>type</span><span class=o>.</span><span class=fm>__new__</span><span class=p>(</span><span class=bp>cls</span><span class=p>,</span> <span class=n>name</span><span class=p>,</span> <span class=n>bases</span><span class=p>,</span> <span class=nb>dict</span><span class=p>)</span>
 
 
-<span class=k>class</span> <span class=nc>Operator</span><span class=p>(</span><span class=n>metaclass</span><span class=o>=</span><span class=n>Meta</span><span class=p>):</span>
+<span class=k>class</span><span class=w> </span><span class=nc>Operator</span><span class=p>(</span><span class=n>metaclass</span><span class=o>=</span><span class=n>Meta</span><span class=p>):</span>
 <span class=w>    </span><span class=sd>"""</span>
 <span class=sd>    &gt;&gt;&gt; Operator.implemented_methods</span>
 <span class=sd>    ['add', 'sub']</span>
 <span class=sd>    """</span>
 
     <span class=nd>@staticmethod</span>
-    <span class=k>def</span> <span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>add</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
 <span class=w>        </span><span class=sd>"""</span>
 <span class=sd>        Return addition of input: x and y</span>
 <span class=sd>        &gt;&gt;&gt; Operator.add(1,2)</span>
@@ -139,7 +139,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
         <span class=k>return</span> <span class=n>x</span> <span class=o>+</span> <span class=n>y</span>
 
     <span class=nd>@staticmethod</span>
-    <span class=k>def</span> <span class=nf>sub</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>sub</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>):</span>
 <span class=w>        </span><span class=sd>"""</span>
 <span class=sd>        Return subtraction of input: x and y</span>
 <span class=sd>        &gt;&gt;&gt; Operator.sub(1,2)</span>

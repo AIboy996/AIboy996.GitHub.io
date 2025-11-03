@@ -67,8 +67,8 @@ Y=ab
 Z=aa
 
 最终的词汇表：acdYZ
-</code></pre></div> <p>得到了词汇表之后我们就可以把它们映射为整数id。当然真实世界的文本要复杂的多，标点符号、emoji、unicode字符等混合出现，需要小心处理。并且，你可以发现在本节开始的图中还有很多的<strong>special tokens</strong>，例如：</p> <ul> <li>UNK（unknown）</li> <li>BOS（begin of sequence）</li> <li>EOS（end of sequence）</li> </ul> <p>然而实践中这一步非常简单，因为社区已经造好了<a href=https://github.com/huggingface/tokenizers target=_blank>轮子</a>，直接支持BPE、Unigram、WordPiece、WordLevel算法：</p> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>tokenizers</span> <span class=kn>import</span> <span class=n>Tokenizer</span>
-<span class=kn>from</span> <span class=nn>tokenizers.models</span> <span class=kn>import</span> <span class=n>BPE</span>
+</code></pre></div> <p>得到了词汇表之后我们就可以把它们映射为整数id。当然真实世界的文本要复杂的多，标点符号、emoji、unicode字符等混合出现，需要小心处理。并且，你可以发现在本节开始的图中还有很多的<strong>special tokens</strong>，例如：</p> <ul> <li>UNK（unknown）</li> <li>BOS（begin of sequence）</li> <li>EOS（end of sequence）</li> </ul> <p>然而实践中这一步非常简单，因为社区已经造好了<a href=https://github.com/huggingface/tokenizers target=_blank>轮子</a>，直接支持BPE、Unigram、WordPiece、WordLevel算法：</p> <div class=highlight><pre><span></span><code><span class=kn>from</span><span class=w> </span><span class=nn>tokenizers</span><span class=w> </span><span class=kn>import</span> <span class=n>Tokenizer</span>
+<span class=kn>from</span><span class=w> </span><span class=nn>tokenizers.models</span><span class=w> </span><span class=kn>import</span> <span class=n>BPE</span>
 
 <span class=n>tokenizer</span> <span class=o>=</span> <span class=n>Tokenizer</span><span class=p>(</span><span class=n>BPE</span><span class=p>())</span>
 <span class=n>output</span> <span class=o>=</span> <span class=n>tokenizer</span><span class=o>.</span><span class=n>encode</span><span class=p>(</span><span class=s2>"Hello, y'all! How are you 😁 ?"</span><span class=p>)</span>

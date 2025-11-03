@@ -57,8 +57,8 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
   Hack: check whether the content contains a h1 headline. If it
   doesn't, the page title (or respectively site name) is used
   as the main headline.
---> <!-- Markdown content --> <div><h1 id=_1><a href=https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/ target=_blank>从前序与中序遍历构造二叉树</a><a class=headerlink href=#_1 title="Permanent link">¶</a></h1> <p>二叉树的遍历问题。</p> <h2 id=_2>二叉树<a class=headerlink href=#_2 title="Permanent link">¶</a></h2> <p>二叉树是最基本的数据结构之一。</p> <div class=highlight><pre><span></span><code><span class=k>class</span> <span class=nc>TreeNode</span><span class=p>:</span>
-    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>value</span><span class=p>,</span> <span class=n>left</span><span class=o>=</span><span class=kc>None</span><span class=p>,</span> <span class=n>right</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
+--> <!-- Markdown content --> <div><h1 id=_1><a href=https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/ target=_blank>从前序与中序遍历构造二叉树</a><a class=headerlink href=#_1 title="Permanent link">¶</a></h1> <p>二叉树的遍历问题。</p> <h2 id=_2>二叉树<a class=headerlink href=#_2 title="Permanent link">¶</a></h2> <p>二叉树是最基本的数据结构之一。</p> <div class=highlight><pre><span></span><code><span class=k>class</span><span class=w> </span><span class=nc>TreeNode</span><span class=p>:</span>
+    <span class=k>def</span><span class=w> </span><span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>value</span><span class=p>,</span> <span class=n>left</span><span class=o>=</span><span class=kc>None</span><span class=p>,</span> <span class=n>right</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>value</span> <span class=o>=</span> <span class=n>value</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>left</span> <span class=o>=</span> <span class=n>left</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>right</span> <span class=o>=</span> <span class=n>right</span>
@@ -75,7 +75,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 <span class=n>root</span><span class=o>.</span><span class=n>left</span><span class=o>.</span><span class=n>right</span> <span class=o>=</span> <span class=n>TreeNode</span><span class=p>(</span><span class=mi>5</span><span class=p>)</span>
 <span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=o>.</span><span class=n>left</span> <span class=o>=</span> <span class=n>TreeNode</span><span class=p>(</span><span class=mi>6</span><span class=p>)</span>
 <span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=o>.</span><span class=n>right</span> <span class=o>=</span> <span class=n>TreeNode</span><span class=p>(</span><span class=mi>7</span><span class=p>)</span>
-</code></pre></div> </details> <p>在上面这颗树里就是按照：</p> <ul> <li>第一层：1</li> <li>第二层：2 3</li> <li>第三层：4 5 6 7</li> </ul> <p>的顺序来遍历。</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>level_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>list</span><span class=p>:</span>
+</code></pre></div> </details> <p>在上面这颗树里就是按照：</p> <ul> <li>第一层：1</li> <li>第二层：2 3</li> <li>第三层：4 5 6 7</li> </ul> <p>的顺序来遍历。</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>level_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>list</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>"""层序遍历"""</span>
     <span class=c1># 遍历队列</span>
     <span class=n>queue</span> <span class=o>=</span> <span class=p>[]</span>
@@ -90,21 +90,21 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
         <span class=k>if</span> <span class=n>node</span><span class=o>.</span><span class=n>right</span><span class=p>:</span>
             <span class=n>queue</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>node</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
     <span class=k>return</span> <span class=n>res</span>
-</code></pre></div> <h3 id=dfs>DFS<a class=headerlink href=#dfs title="Permanent link">¶</a></h3> <p>DFS有三种规则，分别是前序、中序和后序。</p> <p>DFS就是一条路走到黑，每次都优先访问左侧节点。直到没有左侧节点，就回退到上一层访问右节点。</p> <p>在这个过程中，我们输出节点value的顺序可以有三种：</p> <p><a class=glightbox data-desc-position=bottom data-height=auto data-width=100% href=../assets/2025-06-02-22-14-01.png><img alt src=../assets/2025-06-02-22-14-01.png></a></p> <p>hello-algo的<a href=https://www.hello-algo.com/chapter_tree/binary_tree_traversal/#722 target=_blank>这张图</a>非常形象。</p> <p>换言之，我们的dfs都是通过递归实现。只不过输出节点value的时机有所不同：</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
+</code></pre></div> <h3 id=dfs>DFS<a class=headerlink href=#dfs title="Permanent link">¶</a></h3> <p>DFS有三种规则，分别是前序、中序和后序。</p> <p>DFS就是一条路走到黑，每次都优先访问左侧节点。直到没有左侧节点，就回退到上一层访问右节点。</p> <p>在这个过程中，我们输出节点value的顺序可以有三种：</p> <p><a class=glightbox data-desc-position=bottom data-height=auto data-width=100% href=../assets/2025-06-02-22-14-01.png><img alt src=../assets/2025-06-02-22-14-01.png></a></p> <p>hello-algo的<a href=https://www.hello-algo.com/chapter_tree/binary_tree_traversal/#722 target=_blank>这张图</a>非常形象。</p> <p>换言之，我们的dfs都是通过递归实现。只不过输出节点value的时机有所不同：</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
     <span class=c1># 前序遍历</span>
     <span class=k>if</span> <span class=n>root</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
         <span class=k>return</span>
     <span class=k>yield</span> <span class=n>root</span><span class=o>.</span><span class=n>value</span>
     <span class=k>yield from</span> <span class=n>pre_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>left</span><span class=p>)</span>
     <span class=k>yield from</span> <span class=n>pre_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
-<span class=k>def</span> <span class=nf>in_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
+<span class=k>def</span><span class=w> </span><span class=nf>in_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
     <span class=c1># 中序遍历</span>
     <span class=k>if</span> <span class=n>root</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
         <span class=k>return</span>
     <span class=k>yield from</span> <span class=n>in_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>left</span><span class=p>)</span>
     <span class=k>yield</span> <span class=n>root</span><span class=o>.</span><span class=n>value</span>
     <span class=k>yield from</span> <span class=n>in_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
-<span class=k>def</span> <span class=nf>post_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
+<span class=k>def</span><span class=w> </span><span class=nf>post_order</span><span class=p>(</span><span class=n>root</span><span class=p>:</span> <span class=n>TreeNode</span><span class=p>):</span>
     <span class=c1># 后序遍历</span>
     <span class=k>if</span> <span class=n>root</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
         <span class=k>return</span>
@@ -112,23 +112,23 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
     <span class=k>yield from</span> <span class=n>post_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
     <span class=k>yield</span> <span class=n>root</span><span class=o>.</span><span class=n>value</span>
 </code></pre></div> <details class=question> <summary>生成器递归</summary> <p>正常情况下，我们保存前序遍历的结果可以使用全局变量：</p> <div class=highlight><pre><span></span><code><span class=n>res</span> <span class=o>=</span> <span class=p>[]</span>
-<span class=k>def</span> <span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
+<span class=k>def</span><span class=w> </span><span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
     <span class=k>global</span> <span class=n>res</span>
     <span class=k>if</span> <span class=n>root</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
         <span class=k>return</span>
     <span class=n>res</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>value</span><span class=p>)</span>
     <span class=n>pre_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>left</span><span class=p>)</span>
     <span class=n>pre_order</span><span class=p>(</span><span class=n>root</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
-</code></pre></div> <p>当然，也可以使用闭包：</p> <p></p><div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
+</code></pre></div> <p>当然，也可以使用闭包：</p> <p></p><div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
     <span class=n>res</span> <span class=o>=</span> <span class=p>[]</span>
-    <span class=k>def</span> <span class=nf>dfs</span><span class=p>(</span><span class=n>node</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>dfs</span><span class=p>(</span><span class=n>node</span><span class=p>):</span>
         <span class=k>if</span> <span class=n>node</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
             <span class=k>return</span>
         <span class=n>res</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>node</span><span class=o>.</span><span class=n>value</span><span class=p>)</span>
         <span class=n>dfs</span><span class=p>(</span><span class=n>node</span><span class=o>.</span><span class=n>left</span><span class=p>)</span>
         <span class=n>dfs</span><span class=p>(</span><span class=n>node</span><span class=o>.</span><span class=n>right</span><span class=p>)</span>
     <span class=k>return</span> <span class=n>res</span>
-</code></pre></div> 比较fancy的写法就是我们这里的生成器写法： <p></p><div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
+</code></pre></div> 比较fancy的写法就是我们这里的生成器写法： <p></p><div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>pre_order</span><span class=p>(</span><span class=n>root</span><span class=p>):</span>
     <span class=k>if</span> <span class=n>root</span> <span class=ow>is</span> <span class=kc>None</span><span class=p>:</span>
         <span class=k>return</span>
     <span class=k>yield</span> <span class=n>root</span><span class=o>.</span><span class=n>value</span>
@@ -143,7 +143,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
 20 --&gt; 15
 20 --&gt; 7</code></pre> <div class=highlight><pre><span></span><code><span class=n>preorder</span> <span class=o>=</span> <span class=p>[</span><span class=mi>3</span><span class=p>,</span><span class=mi>9</span><span class=p>,</span><span class=mi>20</span><span class=p>,</span><span class=mi>15</span><span class=p>,</span><span class=mi>7</span><span class=p>]</span>
 <span class=n>inorder</span> <span class=o>=</span> <span class=p>[</span><span class=mi>9</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>15</span><span class=p>,</span><span class=mi>20</span><span class=p>,</span><span class=mi>7</span><span class=p>]</span>
-</code></pre></div> <p>那么我们知道，根节点是<code>3</code>，左子树的中序遍历结果为<code>9</code>，右子树的中序遍历结果为<code>15,20,7</code>，长度分别为1、3。</p> <p>所以在前序遍历中，<code>3</code>之后的长度为1、的子数组就是<code>9</code>、<code>20,15,7</code>，分别为左右子树的前序遍历。从而我们可以确定根节点的左子节点为<code>9</code>，右子节点为<code>20</code>。</p> <p>以此类推，我们只需要递归<strong>确定子树的根节点</strong>就行了：</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>build_tree</span><span class=p>(</span><span class=n>preorder</span><span class=p>,</span> <span class=n>inorder</span><span class=p>):</span>
+</code></pre></div> <p>那么我们知道，根节点是<code>3</code>，左子树的中序遍历结果为<code>9</code>，右子树的中序遍历结果为<code>15,20,7</code>，长度分别为1、3。</p> <p>所以在前序遍历中，<code>3</code>之后的长度为1、的子数组就是<code>9</code>、<code>20,15,7</code>，分别为左右子树的前序遍历。从而我们可以确定根节点的左子节点为<code>9</code>，右子节点为<code>20</code>。</p> <p>以此类推，我们只需要递归<strong>确定子树的根节点</strong>就行了：</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>build_tree</span><span class=p>(</span><span class=n>preorder</span><span class=p>,</span> <span class=n>inorder</span><span class=p>):</span>
     <span class=n>root_value</span> <span class=o>=</span> <span class=n>preorder</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
     <span class=c1># 每次都只需要找到子树的根节点即可</span>
     <span class=n>root</span> <span class=o>=</span> <span class=n>TreeNode</span><span class=p>(</span><span class=n>root_value</span><span class=p>)</span>
@@ -164,7 +164,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
             <span class=n>inorder</span><span class=p>[</span><span class=n>root_index</span> <span class=o>+</span> <span class=mi>1</span> <span class=p>:],</span>
         <span class=p>)</span>
     <span class=k>return</span> <span class=n>root</span>
-</code></pre></div> <p>当然这个代码还可以优化一下，我们每次使用<code>inorder.index(root_value)</code>都是<code>O(N)</code>的查询，可以用哈希表来加速。</p> <h3 id=_6>迭代<a class=headerlink href=#_6 title="Permanent link">¶</a></h3> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>buildTree</span><span class=p>(</span><span class=n>preorder</span><span class=p>,</span> <span class=n>inorder</span><span class=p>):</span>
+</code></pre></div> <p>当然这个代码还可以优化一下，我们每次使用<code>inorder.index(root_value)</code>都是<code>O(N)</code>的查询，可以用哈希表来加速。</p> <h3 id=_6>迭代<a class=headerlink href=#_6 title="Permanent link">¶</a></h3> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>buildTree</span><span class=p>(</span><span class=n>preorder</span><span class=p>,</span> <span class=n>inorder</span><span class=p>):</span>
     <span class=k>if</span> <span class=ow>not</span> <span class=n>preorder</span><span class=p>:</span>
         <span class=k>return</span> <span class=kc>None</span>
 

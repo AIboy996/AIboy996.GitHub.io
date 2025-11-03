@@ -64,7 +64,7 @@ but is high on our list for inclusion in a future release. --><script src=../../
 <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=o>-</span><span class=mi>1</span><span class=p>):</span>
     <span class=n>a</span><span class=p>,</span><span class=n>b</span> <span class=o>=</span> <span class=n>b</span><span class=p>,</span><span class=mi>2</span><span class=o>*</span><span class=n>b</span><span class=o>+</span><span class=n>a</span>
 <span class=nb>print</span><span class=p>(</span><span class=n>b</span><span class=p>)</span>
-</code></pre></div> <p>但是这还不够快（起码jd这个笔试应该是要求更快的算法，否则ac不了）。</p> <h3 id=_4>快速幂<a class=headerlink href=#_4 title="Permanent link">¶</a></h3> <p>实际上我们可以直接计算得到答案的通项： $$ f(n) = \frac{(1+\sqrt{2})^{n+1} + (1-\sqrt{2})^{n+1}}{2} $$</p> <p>不难发现，n稍微大一些第二项就可以忽略不计，得到： $$ f(n) = \left\lceil \frac{(1+\sqrt{2})^{n+1}}{2} \right\rceil $$</p> <p>但是这个东西是一个无理数幂次，想优化的话比较难，我还没查到怎么优化。</p> <p>如果直接考虑递推公式的话，通常我们使用矩阵快速幂来优化： $$ \begin{bmatrix} f(n+1)\\f(n) \end{bmatrix}=\begin{bmatrix} 2&amp;1\\ 1&amp;0 \end{bmatrix}^{n-1}\begin{bmatrix} f(2)\\f(1) \end{bmatrix} $$</p> <div class="admonition question"> <p class=admonition-title>快速幂</p> <p><a href=https://oi-wiki.org/math/binary-exponentiation/ target=_blank>快速幂</a>是计算机常用的一个小算法。</p> <p>例如我们要计算$x^n$，如果n是偶数，就可以拆分为： $$ x^{n/2} \cdot x^{n/2} $$ 如此递归地进行下去就可以在$\mathcal{O}(\log n)$的时间复杂度下完成计算了。</p> <p>或者更宏观地来看，我们对指数<code>n</code>做了如下分解（其实就是二进制转换）： $$ n = d_02^0 + d_12^1 +\cdots $$ 其中$d_i \in \{0,1\}$。</p> <p>从而 $$ x^n = (x^{2^0})^{d_0}\times (x^{2^1})^{d_1}\times \cdots $$ 代码实现如下： </p><div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>quick_power</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>n</span><span class=p>):</span>
+</code></pre></div> <p>但是这还不够快（起码jd这个笔试应该是要求更快的算法，否则ac不了）。</p> <h3 id=_4>快速幂<a class=headerlink href=#_4 title="Permanent link">¶</a></h3> <p>实际上我们可以直接计算得到答案的通项： $$ f(n) = \frac{(1+\sqrt{2})^{n+1} + (1-\sqrt{2})^{n+1}}{2} $$</p> <p>不难发现，n稍微大一些第二项就可以忽略不计，得到： $$ f(n) = \left\lceil \frac{(1+\sqrt{2})^{n+1}}{2} \right\rceil $$</p> <p>但是这个东西是一个无理数幂次，想优化的话比较难，我还没查到怎么优化。</p> <p>如果直接考虑递推公式的话，通常我们使用矩阵快速幂来优化： $$ \begin{bmatrix} f(n+1)\\f(n) \end{bmatrix}=\begin{bmatrix} 2&amp;1\\ 1&amp;0 \end{bmatrix}^{n-1}\begin{bmatrix} f(2)\\f(1) \end{bmatrix} $$</p> <div class="admonition question"> <p class=admonition-title>快速幂</p> <p><a href=https://oi-wiki.org/math/binary-exponentiation/ target=_blank>快速幂</a>是计算机常用的一个小算法。</p> <p>例如我们要计算$x^n$，如果n是偶数，就可以拆分为： $$ x^{n/2} \cdot x^{n/2} $$ 如此递归地进行下去就可以在$\mathcal{O}(\log n)$的时间复杂度下完成计算了。</p> <p>或者更宏观地来看，我们对指数<code>n</code>做了如下分解（其实就是二进制转换）： $$ n = d_02^0 + d_12^1 +\cdots $$ 其中$d_i \in \{0,1\}$。</p> <p>从而 $$ x^n = (x^{2^0})^{d_0}\times (x^{2^1})^{d_1}\times \cdots $$ 代码实现如下： </p><div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>quick_power</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>n</span><span class=p>):</span>
     <span class=n>res</span> <span class=o>=</span> <span class=mi>1</span>
     <span class=k>while</span> <span class=n>n</span><span class=p>:</span>
         <span class=c1># 如果最后一位是1，就乘上这个幂</span>
@@ -75,7 +75,7 @@ but is high on our list for inclusion in a future release. --><script src=../../
     <span class=k>return</span> <span class=n>res</span>
 </code></pre></div> <p>这个优化可以用在各个地方，当然也包括矩阵幂次。</p> </div> <p>本题的代码如下：</p> <div class=highlight><pre><span></span><code><span class=n>MOD</span> <span class=o>=</span> <span class=mi>10</span><span class=o>**</span><span class=mi>9</span> <span class=o>+</span> <span class=mi>7</span>
 
-<span class=k>def</span> <span class=nf>mul</span><span class=p>(</span><span class=n>A</span><span class=p>,</span><span class=n>B</span><span class=p>):</span>
+<span class=k>def</span><span class=w> </span><span class=nf>mul</span><span class=p>(</span><span class=n>A</span><span class=p>,</span><span class=n>B</span><span class=p>):</span>
 <span class=w>    </span><span class=sd>"""矩阵乘法"""</span>
     <span class=k>return</span> <span class=p>[</span>
         <span class=p>[</span>
@@ -88,7 +88,7 @@ but is high on our list for inclusion in a future release. --><script src=../../
         <span class=p>],</span>
     <span class=p>]</span>
 
-<span class=k>def</span> <span class=nf>qpow</span><span class=p>(</span><span class=n>M</span><span class=p>,</span> <span class=n>p</span><span class=p>):</span>
+<span class=k>def</span><span class=w> </span><span class=nf>qpow</span><span class=p>(</span><span class=n>M</span><span class=p>,</span> <span class=n>p</span><span class=p>):</span>
 <span class=w>    </span><span class=sd>"""矩阵快速幂"""</span>
     <span class=n>R</span> <span class=o>=</span> <span class=p>[[</span><span class=mi>1</span><span class=p>,</span><span class=mi>0</span><span class=p>],[</span><span class=mi>0</span><span class=p>,</span><span class=mi>1</span><span class=p>]]</span>
     <span class=k>while</span> <span class=n>p</span><span class=p>:</span>

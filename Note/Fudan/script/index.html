@@ -72,9 +72,9 @@ rmShown:<span class=w> </span><span class=m>1</span>
 </code></pre></div> <p>这其实是很常见的<a href=https://developers.yale.edu/cas-central-authentication-service target=_blank>CAS(Center Authentication Service)</a>，它是Yale大学开发的一款开源的单点登录项目，主要为web项目提供单点登录实现。</p> <p>如果多次登陆失败还会触发图片验证码，需要额外提交验证码的内容： </p><div class=highlight><pre><span></span><code>captchaResponse: xxxx
 </code></pre></div> <p>登陆成功之后，服务器会给我们设置Cookie：</p> <figure> <p><a class=glightbox data-desc-position=bottom data-height=auto data-width=100% href=../assets/2024-06-20-16-44-20.png><img alt src=../assets/2024-06-20-16-44-20.png width=500></a></p> </figure> <p>拿着这个Cookie就可以访问其他网站啦。</p> <h3 id=_3>模拟请求<a class=headerlink href=#_3 title="Permanent link">¶</a></h3> <ul> <li> <p>设置环境变量： </p><div class=highlight><pre><span></span><code><span class=nb>export</span><span class=w> </span><span class=nv>fudan_username</span><span class=o>=</span>xxx
 <span class=nb>export</span><span class=w> </span><span class=nv>fudan_password</span><span class=o>=</span>xxx
-</code></pre></div> </li> <li> <p>UIS认证 </p><div class=highlight><span class=filename>Python requests</span><pre><span></span><code><span class=kn>import</span> <span class=nn>os</span>
-<span class=kn>from</span> <span class=nn>requests</span> <span class=kn>import</span> <span class=n>Session</span>
-<span class=kn>from</span> <span class=nn>parsel</span> <span class=kn>import</span> <span class=n>Selector</span>
+</code></pre></div> </li> <li> <p>UIS认证 </p><div class=highlight><span class=filename>Python requests</span><pre><span></span><code><span class=kn>import</span><span class=w> </span><span class=nn>os</span>
+<span class=kn>from</span><span class=w> </span><span class=nn>requests</span><span class=w> </span><span class=kn>import</span> <span class=n>Session</span>
+<span class=kn>from</span><span class=w> </span><span class=nn>parsel</span><span class=w> </span><span class=kn>import</span> <span class=n>Selector</span>
 <span class=c1># 构造请求Session</span>
 <span class=n>se</span> <span class=o>=</span> <span class=n>Session</span><span class=p>()</span>
 <span class=c1># GET请求，拿到页面的HTML</span>

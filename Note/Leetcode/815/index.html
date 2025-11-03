@@ -63,7 +63,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
         <span class=k>if</span> <span class=n>station</span> <span class=ow>not</span> <span class=ow>in</span> <span class=n>d</span><span class=p>:</span>
             <span class=n>d</span><span class=p>[</span><span class=n>station</span><span class=p>]</span> <span class=o>=</span> <span class=nb>set</span><span class=p>()</span>
         <span class=n>d</span><span class=p>[</span><span class=n>station</span><span class=p>]</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>i</span><span class=p>)</span>
-</code></pre></div> <p>然后进行广度优先搜索：</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>travel</span><span class=p>(</span><span class=n>source</span><span class=p>,</span> <span class=n>target</span><span class=p>):</span>
+</code></pre></div> <p>然后进行广度优先搜索：</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>travel</span><span class=p>(</span><span class=n>source</span><span class=p>,</span> <span class=n>target</span><span class=p>):</span>
     <span class=n>distance</span> <span class=o>=</span> <span class=p>{</span><span class=n>source</span><span class=p>:</span> <span class=mi>0</span><span class=p>}</span>  <span class=c1># 这个字典表示从souce到每个key的距离</span>
     <span class=n>q</span> <span class=o>=</span> <span class=p>[</span><span class=n>source</span><span class=p>]</span>  <span class=c1># 维护一个队列，表示坐公交车的堆栈</span>
     <span class=n>visted</span> <span class=o>=</span> <span class=p>[]</span>  <span class=c1># 记录已经访问过的线路，避免重复访问</span>
@@ -79,7 +79,7 @@ but is high on our list for inclusion in a future release. --><!-- 增加live ph
                         <span class=n>q</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>station</span><span class=p>)</span>
                 <span class=n>visted</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>route</span><span class=p>)</span>  <span class=c1># 标记为已经访问过，避免重复访问</span>
     <span class=k>return</span> <span class=n>distance</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>target</span><span class=p>,</span> <span class=o>-</span><span class=mi>1</span><span class=p>)</span>
-</code></pre></div> <p>当然，我们还可以在搜索的过程中记录换乘的车站：</p> <div class=highlight><pre><span></span><code><span class=k>def</span> <span class=nf>travel_with_path</span><span class=p>(</span><span class=n>source</span><span class=p>,</span> <span class=n>target</span><span class=p>):</span>
+</code></pre></div> <p>当然，我们还可以在搜索的过程中记录换乘的车站：</p> <div class=highlight><pre><span></span><code><span class=k>def</span><span class=w> </span><span class=nf>travel_with_path</span><span class=p>(</span><span class=n>source</span><span class=p>,</span> <span class=n>target</span><span class=p>):</span>
     <span class=n>distance</span> <span class=o>=</span> <span class=p>{</span><span class=n>source</span><span class=p>:</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=p>[])}</span>  <span class=c1># 这个字典表示从souce到每个key的距离和路径</span>
     <span class=n>q</span> <span class=o>=</span> <span class=p>[</span><span class=n>source</span><span class=p>]</span>  <span class=c1># 维护一个队列，表示坐公交车的堆栈</span>
     <span class=n>visted</span> <span class=o>=</span> <span class=p>[]</span>  <span class=c1># 记录已经访问过的线路，避免重复访问</span>

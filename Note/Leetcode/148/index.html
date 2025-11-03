@@ -62,9 +62,9 @@ but is high on our list for inclusion in a future release. --><script src=../../
 <span class=c1>#     def __init__(self, val=0, next=None):</span>
 <span class=c1>#         self.val = val</span>
 <span class=c1>#         self.next = next</span>
-<span class=k>class</span> <span class=nc>Solution</span><span class=p>:</span>
-    <span class=k>def</span> <span class=nf>sortList</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>head</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>ListNode</span><span class=p>])</span> <span class=o>-&gt;</span> <span class=n>Optional</span><span class=p>[</span><span class=n>ListNode</span><span class=p>]:</span>
-        <span class=k>def</span> <span class=nf>merge</span><span class=p>(</span><span class=n>head1</span><span class=p>,</span> <span class=n>head2</span><span class=p>):</span>
+<span class=k>class</span><span class=w> </span><span class=nc>Solution</span><span class=p>:</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>sortList</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>head</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>ListNode</span><span class=p>])</span> <span class=o>-&gt;</span> <span class=n>Optional</span><span class=p>[</span><span class=n>ListNode</span><span class=p>]:</span>
+        <span class=k>def</span><span class=w> </span><span class=nf>merge</span><span class=p>(</span><span class=n>head1</span><span class=p>,</span> <span class=n>head2</span><span class=p>):</span>
             <span class=n>tmp_head</span> <span class=o>=</span> <span class=n>ListNode</span><span class=p>()</span>
             <span class=n>tmp</span><span class=p>,</span> <span class=n>p1</span><span class=p>,</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>tmp_head</span><span class=p>,</span> <span class=n>head1</span><span class=p>,</span> <span class=n>head2</span>
             <span class=k>while</span> <span class=n>p1</span> <span class=ow>and</span> <span class=n>p2</span><span class=p>:</span>
@@ -81,7 +81,7 @@ but is high on our list for inclusion in a future release. --><script src=../../
             <span class=k>elif</span> <span class=n>p2</span><span class=p>:</span>
                 <span class=n>tmp</span><span class=o>.</span><span class=n>next</span> <span class=o>=</span> <span class=n>p2</span>
             <span class=k>return</span> <span class=n>tmp_head</span><span class=o>.</span><span class=n>next</span>
-        <span class=k>def</span> <span class=nf>sort_ln</span><span class=p>(</span><span class=n>head</span><span class=p>,</span> <span class=n>tail</span><span class=p>):</span>
+        <span class=k>def</span><span class=w> </span><span class=nf>sort_ln</span><span class=p>(</span><span class=n>head</span><span class=p>,</span> <span class=n>tail</span><span class=p>):</span>
             <span class=c1># 递归出口</span>
             <span class=c1>## 空链表，直接返回</span>
             <span class=k>if</span> <span class=ow>not</span> <span class=n>head</span><span class=p>:</span>
@@ -140,12 +140,12 @@ head-.-&gt;2--&gt;3--&gt;5--&gt;1--&gt;Null</code></pre> <p>我们先要用快�
 head-.-&gt;2--&gt;3--&gt;5--&gt;1--&gt;Null
 fast--&gt;Null
 slow--&gt;5</code></pre> <p>然后直接递归求解即可：<code>return merge(sort_ln(head, mid), sort_ln(mid, tail))</code></p> <h2 id=_6>自底向上归并排序<a class=headerlink href=#_6 title="Permanent link">¶</a></h2> <p>为了降低空间复杂度，可以自底向上实现归并排序。</p> <p>去掉了递归调用，空间复杂度降低为：$\mathcal{O}(1)$</p> <h3 id=_7>代码<a class=headerlink href=#_7 title="Permanent link">¶</a></h3> <p>为了方便演示，给ListNode加了两个方法：</p> <div class=highlight><pre><span></span><code><span class=c1># Definition for singly-linked list.</span>
-<span class=k>class</span> <span class=nc>ListNode</span><span class=p>:</span>
-    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>val</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span> <span class=nb>next</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
+<span class=k>class</span><span class=w> </span><span class=nc>ListNode</span><span class=p>:</span>
+    <span class=k>def</span><span class=w> </span><span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>val</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span> <span class=nb>next</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>val</span> <span class=o>=</span> <span class=n>val</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>next</span> <span class=o>=</span> <span class=nb>next</span>
 
-    <span class=k>def</span> <span class=fm>__repr__</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=fm>__repr__</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
         <span class=n>s</span> <span class=o>=</span> <span class=p>[</span><span class=nb>str</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>val</span><span class=p>)]</span>
         <span class=n>cur</span> <span class=o>=</span> <span class=bp>self</span>
         <span class=k>while</span> <span class=n>cur</span><span class=o>.</span><span class=n>next</span><span class=p>:</span>
@@ -154,16 +154,16 @@ slow--&gt;5</code></pre> <p>然后直接递归求解即可：<code>return merge(
         <span class=k>return</span> <span class=s2>"--&gt;"</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>s</span><span class=p>)</span>
 
     <span class=nd>@staticmethod</span>
-    <span class=k>def</span> <span class=nf>new</span><span class=p>(</span><span class=nb>list</span><span class=p>):</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>new</span><span class=p>(</span><span class=nb>list</span><span class=p>):</span>
         <span class=n>head</span> <span class=o>=</span> <span class=n>ListNode</span><span class=p>(</span><span class=nb>list</span><span class=p>[</span><span class=mi>0</span><span class=p>])</span>
         <span class=n>cur</span> <span class=o>=</span> <span class=n>head</span>
         <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=nb>list</span><span class=p>)):</span>
             <span class=n>cur</span><span class=o>.</span><span class=n>next</span> <span class=o>=</span> <span class=n>ListNode</span><span class=p>(</span><span class=nb>list</span><span class=p>[</span><span class=n>i</span><span class=p>])</span>
             <span class=n>cur</span> <span class=o>=</span> <span class=n>cur</span><span class=o>.</span><span class=n>next</span>
         <span class=k>return</span> <span class=n>head</span>
-</code></pre></div> <p>算法如下：</p> <div class=highlight><pre><span></span><code><span class=k>class</span> <span class=nc>Solution</span><span class=p>:</span>
-    <span class=k>def</span> <span class=nf>sortList</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>head</span><span class=p>):</span>
-        <span class=k>def</span> <span class=nf>merge</span><span class=p>(</span><span class=n>head1</span><span class=p>,</span> <span class=n>head2</span><span class=p>):</span>
+</code></pre></div> <p>算法如下：</p> <div class=highlight><pre><span></span><code><span class=k>class</span><span class=w> </span><span class=nc>Solution</span><span class=p>:</span>
+    <span class=k>def</span><span class=w> </span><span class=nf>sortList</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>head</span><span class=p>):</span>
+        <span class=k>def</span><span class=w> </span><span class=nf>merge</span><span class=p>(</span><span class=n>head1</span><span class=p>,</span> <span class=n>head2</span><span class=p>):</span>
 <span class=w>            </span><span class=sd>"""合并有序链表"""</span>
             <span class=n>tmp_head</span> <span class=o>=</span> <span class=n>ListNode</span><span class=p>()</span>
             <span class=n>tmp</span><span class=p>,</span> <span class=n>p1</span><span class=p>,</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>tmp_head</span><span class=p>,</span> <span class=n>head1</span><span class=p>,</span> <span class=n>head2</span>
