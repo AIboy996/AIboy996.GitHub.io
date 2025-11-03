@@ -198,6 +198,7 @@ nav:
       - Note/mkdocs/plugin_dev.md
     - NAS:
       - Note/NAS/index.md
+      - Note/NAS/fnnas.md
       - Note/NAS/photoprism.md
       - Note/NAS/code-server.md
       - Note/NAS/scrcpy.md
@@ -223,6 +224,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2025:
+      - Blog/2025/wedding.md
       - Blog/2025/xiaoxia.md
       - Blog/2025/beijing.md
       - Blog/2025/hangzhou.md
