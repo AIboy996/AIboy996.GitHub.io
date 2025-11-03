@@ -22,11 +22,11 @@ jobs:
       - name: Commit files
         id: commit-files
         run: |
-          if [ -n "$(git status --porcelain _ai_summary_cache_chatgpt.json)" ]; then
+          if [ -n "$(git status --porcelain _ai_summary_cache_chatgpt.json _ai_summary_cache_tongyi.json)" ]; then
               git config --local user.email "github-actions[bot]@users.noreply.github.com"
               git config --local user.name "github-actions[bot]"
               git add .
-              git commit -m "[update] ai-summary cache"
+              git commit -m "[skip ci] ai-summary cache update"
               echo "hasChange=true" >> $GITHUB_OUTPUT
           else
               echo "No changes detected"
