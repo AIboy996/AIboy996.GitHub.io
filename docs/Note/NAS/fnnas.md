@@ -5,6 +5,10 @@ tags:
 - Docker
 include:
 - ai-summary
+ai-summary-config:
+    api: "tongyi"
+    model: "qwen-flash"
+    prompt: "帮我把下面的内容总结为150字以内的摘要，使用同样的语言。在输出的时候请不要出现连续换行："
 ---
 
 # 飞牛OS
