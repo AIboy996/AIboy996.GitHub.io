@@ -177,11 +177,11 @@ web端是飞牛最基本的入口，只要你有浏览器就可以访问，你�
 
 飞牛APP支持iOS和Android，和Web端功能基本一致。iOS客户端做的非常丝滑，相册、影视、Docker等子页面都很好使。配置了DDNS之后可以随时随地打开，很方便～
 
-<div style="display: flex; gap: 12px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
-    <img src="../assets/2025-11-03-14-00-00.png" alt="飞牛APP截图1" style="width: 20%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
-    <img src="../assets/2025-11-03-14-01-53.png" alt="飞牛APP截图2" style="width: 20%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
-    <img src="../assets/2025-11-03-14-02-05.png" alt="飞牛APP截图3" style="width: 20%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
-    <img src="../assets/2025-11-03-14-02-22.png" alt="飞牛APP截图4" style="width: 20%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
+<div>
+    <img src="../assets/2025-11-03-14-00-00.png" alt="飞牛APP截图1" style="width: 23%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
+    <img src="../assets/2025-11-03-14-01-53.png" alt="飞牛APP截图2" style="width: 23%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
+    <img src="../assets/2025-11-03-14-02-05.png" alt="飞牛APP截图3" style="width: 23%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
+    <img src="../assets/2025-11-03-14-02-22.png" alt="飞牛APP截图4" style="width: 23%; border-radius: 8px; box-shadow: 0 2px 8px #0001;">
 </div>
 
 ### 其他

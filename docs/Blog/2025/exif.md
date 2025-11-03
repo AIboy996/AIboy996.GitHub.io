@@ -101,6 +101,11 @@ exiftool -overwrite_original -r -all= -ext jpg -ext png -ext mp4 -ext mov .
 
 > 当然你也可以只删除比较敏感的信息，例如GPS信息：`-gps:all=`，我就索性全删了，反正正常人也不会看这些信息，除非别有用心之人
 
+!!! note "GitHub Push限额"
+    还有一个比较坑的事情，GitHub每次push最大2GB的内容。我这次把所有的图片都修改过之后，变化的内容超过了2GB，所以只能分成多个commit。
+
+    另外自动化build、commit的流程也挂了，原因同上。
+
 ### 自动化图片匿名
 
 处理好之前的图片还不够，还得预防一下以后上传的图片再泄漏隐私。好在git有一个机制可以帮我们实现这件事情：hook
