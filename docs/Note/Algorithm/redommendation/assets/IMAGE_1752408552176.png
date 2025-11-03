@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="spm_prefix" content="333.937">
+    <title>出错啦! - bilibili.com</title>
+    <style type="text/css">
+
+        html,body {
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+        }
+
+        div.center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25% 0 0 -320px;
+            width: 640px;
+            min-height: 427px;
+            padding: 0px;
+        }
+
+        div.errmsg {
+            text-align: left;
+            width: 640px;
+            line-height: 150%;
+        }
+
+        a {
+            text-decoration: none;
+            color: red
+        }
+
+        .center {
+            display: none
+        }
+
+        .h5-container {
+            display: none;
+        }
+        @media screen and (max-width: 500px) {
+            #biliMainHeader, #internationalHeader, .error-container {
+                display: none;
+            }
+
+            .h5-container {
+                display: block;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .h5__img {
+                display: block;
+                width: 300px;
+            }
+
+            .h5__desc {
+                color: #a0a0a0;
+                text-align: center;
+            }
+        }
+
+    </style>
+    <link rel="shortcut icon" href="//static.hdslb.com/images/favicon.ico">
+    <link href="//static.hdslb.com/error/dist/error.css" rel="stylesheet">
+    <script type="text/javascript">
+        var options = {
+            type: 'defaultError'
+        }
+        window.spmReportData = {};
+        window.reportConfig = {
+            sample: 1,
+            msgObjects: "spmReportData",
+        };
+    </script>
+    <script src="//s1.hdslb.com/bfs/seed/log/report/log-reporter.js"></script>
+    <script type="text/javascript" src="//s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery1.7.2.min.js"></script>
+</head>
+
+<body style="direction: ltr;">
+    <div id="biliMainHeader" style="height: 56px; background-color: #fff;"></div>
+    <div class="error-container">
+        <div class="error-panel server-error">
+            <div style="text-align: center; padding: 0 0 40px 0; margin-top: 40px;">
+              <a class="rollback-btn" style="padding: 0 20px; float: none;">返回上一页</a>
+            </div>
+        </div>
+        <div class="error-split">
+        </div>
+        <div class="error-manga">
+        </div>
+    </div>
+    <div class="h5-container">
+        <img class="h5__img" src="//s1.hdslb.com/bfs/static/jinkela/long/bitmap/error_01.png" alt="parse failed">
+        <div class="h5__desc">
+            <span>Σ(oﾟдﾟoﾉ) 服务器正在休息 zZ</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="//s1.hdslb.com/bfs/seed/jinkela/header-v2/header.js"></script>
+    <script type="text/javascript" charset="utf-8" src="//static.hdslb.com/error/dist/error.js"></script>
+</body>
+
+</html>
