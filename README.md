@@ -18,6 +18,15 @@
 
 [Part2 实践](https://yangzhang.site/Note/mkdocs/practice/)
 
+## 脚本
+
+- 使用[build.sh](./scripts/build.sh)来构建可供发布的网站
+- 使用[serve.sh](./scripts/serve.sh)来快速预览网站
+- 使用[clean_exif.sh](./scripts/clean_exif.sh)来匿名化所有的图片和视频
+- 使用[sync.sh](./scripts/sync.sh)来把所有文件备份到对象存储
+- 使用[cwebp.sh](./scripts/cwebp.sh)为所有的png图片创建一个压缩的webp版本
+- 超过50MB的文件GitHub不接受，如果是png图片可以用[compress.sh](./scripts/compress.sh)压缩一下
+
 -----
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
