@@ -21,9 +21,9 @@ plugins:
         margin-right: auto;
   # 图片放大插件
   - glightbox:
-      effect: zoom
+      effect: fade
       zoomable: true
-      draggable: true
+      draggable: false
       skip_classes:
         - nonzoom
   ## 文章日期插件
