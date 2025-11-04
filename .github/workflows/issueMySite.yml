@@ -49,6 +49,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: publishment
+          fetch-depth: 1
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
