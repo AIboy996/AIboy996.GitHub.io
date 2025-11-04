@@ -20,7 +20,7 @@ theme:
   font: false
   name: material
   custom_dir: overrides
-  logo: assets/images/summation.png
+  logo: assets/images/summation.png.webp
   palette:  # 一周七天不同颜色，白色占位
     - scheme: placeholder
       primary: white
