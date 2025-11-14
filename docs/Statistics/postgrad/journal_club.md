@@ -10,6 +10,22 @@ Journal Club是我导组织的论文分享会，我偶尔也会上去分享一�
 ??? info "PPT绘制工具？"
     下面的PPT都是借助[Marp](https://marp.app/)绘制，源文件为Markdown，使用主题为[Beam](https://rnd195.github.io/marp-community-themes/theme/beam.html)。
 
+## 2025-11-14
+
+- **Shared Paper**: *DiffAtlas & AnomalyDINO-DPMM*
+- **Publication**: MICCAI 2025
+- **Keywords**: Segmentation, Anomaly Detection
+
+<iframe width=100% height=500 src="../slides/2025-11-14_张杨_DiffAtlas_DPMM.html"></iframe>
+
+## 2025-08-28
+
+- **Shared Paper**: *Model Compression Techniques*
+- **Publication**: -
+- **Keywords**: Pruning, Approximation, Knowledge Distillation, Quantization
+
+<iframe width=100% height=500 src="../slides/2025-08-28_张杨_ModelCompression.html"></iframe>
+
 ## 2025-08-14
 
 - **Shared Paper**: *DeepMesh: Mesh-based Cardiac Motion Tracking using Deep Learning*
