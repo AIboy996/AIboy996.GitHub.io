@@ -105,16 +105,13 @@ extra:
       name: Unsplash | @onsdriver
     - icon: material/television-classic
       link: https://bangumi.tv/anime/list/759154/do
-      name: bangumi追番列表
+      name: bangumi追番列表 | 二次元
     - icon: simple/douban
-      link: https://www.douban.com/people/227694035/
-      name: 豆瓣
+      link: https://movie.douban.com/people/227694035/collect/
+      name: 豆瓣 | 三次元
     - icon: material/function-variant
       link: https://aiboy996.github.io/dzd/
       name: 高中数学典中典
-    - icon: material/plex
-      link: https://plex.yangz.site
-      name: Plex实况
     - icon: fontawesome/solid/blog
       link: https://whisper.yangz.site
       name: 微博客

@@ -34,7 +34,7 @@ plugins:
   - minify:
       minify_html: true
   - rss:
-      abstract_chars_count: -1
+      abstract_chars_count: 0
       match_path: "Blog/.*"
       categories:
         - tags
