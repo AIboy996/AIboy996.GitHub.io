@@ -223,6 +223,8 @@ nav:
       - Note/vscode/modify_extension.md
   - Blog:
     - Blog/index.md
+    - 2026:
+      - Blog/2026/siyang.md
     - 2025:
       - Blog/2025/2025_recall.md
       - Blog/2025/training_cost.md
@@ -416,6 +418,7 @@ nav:
   - SomeMath:
     - SomeMath/index.md
     - 数学分析:
+      - SomeMath/real/newtonian_mechanics.md
       - SomeMath/real/ostrogradsky_method.md
       - SomeMath/real/rational_func_int.md
       - SomeMath/real/pi.md
@@ -440,6 +443,7 @@ nav:
       - SomeMath/number_theory/divisible.md
       - SomeMath/number_theory/modulo.md
     - 抽象代数:
+      - SomeMath/algebra/galois.md
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
     - 概率论:
