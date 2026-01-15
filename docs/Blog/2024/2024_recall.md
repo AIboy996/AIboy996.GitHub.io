@@ -8,11 +8,11 @@ tags:
 
 <style>
 /* 图片居中 */
-img {
+figure {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 50% !important;
 }
 </style>
 

@@ -64,6 +64,7 @@ class LivePhotoElement extends HTMLElement {
     const wrapper = document.createElement("div");
     wrapper.style.position = "relative";
     this.img.style.display = "block";
+    this.img.style.width = "100%";
     wrapper.appendChild(this.img);
     wrapper.appendChild(badge);
     this.appendChild(wrapper);

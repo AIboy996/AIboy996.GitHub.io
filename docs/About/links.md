@@ -51,7 +51,7 @@ a.friend > div img {
 - [摄影集](https://unsplash.com/@onsdriver)
 - [微博客](https://whisper.yangz.site)
 - [追番列表](https://bangumi.tv/anime/list/759154/do)
-- [影音列表](https://movie.douban.com/people/227694035/collect/)
+- [影视列表](https://movie.douban.com/people/227694035/collect/)
 
 ## 友链
 
@@ -61,13 +61,13 @@ a.friend > div img {
 <li><a href="https://jixinlong.top/" class="friend">Ji Xinlong<div><img class="nonzoom" src="https://www.jixinlong.top/images/logo-%E7%A9%BA%E4%B8%AD%E8%8A%B1%E5%9B%AD.svg"></img></div></a>：宿迁老铁</li>
 <li><a href="https://wcowin.work/" class="friend">Wcowin<div><img class="nonzoom" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f.webp"></img></div></a>：精美mkdocs博客站</li>
 <li><a href="https://lvista.github.io/" class="friend">程智超<div><img class="nonzoom" src="https://lvista.github.io/assets/images/logo_noBG.png"></img></div></a>：日本留子，网络知己</li>
-<li><a href="https://henrylau7.github.io/" class="friend">刘原冶<div><img class="nonzoom" src="https://henrylau7.github.io/imgs/profiles/Yuanye_chill.JPG"></img></div></a>：同学</li>
+<li><a href="https://henrylau7.github.io/" class="friend">刘原冶<div><img class="nonzoom" src="https://avatars.githubusercontent.com/u/64403480"></img></div></a>：同学</li>
 <li><a href="https://yinghuazhu.github.io/" class="friend">朱英华<div><img class="nonzoom" src="/Blog/2025/assets/2025-03-03-22-11-38.png"></img></div></a>：同学</li>
 <li><a href="https://zhangzhou.site/" class="friend">张舟<div><img class="nonzoom" src="https://zhangzhou.site/assets/logo_light.gif"></img></div></a>：同学</li>
 <li><a href="https://yang-xijie.github.io/" class="friend">杨希杰<div><img class="nonzoom" src="https://avatars.githubusercontent.com/u/57952362?v=4"></img></div></a>：大佬</li>
 <li><a href="https://yihui.org/" class="friend">谢益辉<div><img class="nonzoom" src="https://yihui.org/images/logo.png"></img></div></a>：大佬</li>
 <li><a href="https://blog.chenyyds.com/" class="friend">老陳网志<div><img class="nonzoom" src="https://blog.chenyyds.com/favicon.png"></img></div></a>：大佬</li>
-<li><a href="https://zishu.me/" class="friend">子舒<div><img class="nonzoom" src="https://imgurl.zishu.me/favicon.png"></img></div></a>：大佬</li>
+<li><a href="https://zishu.me/" class="friend">子舒</a>：大佬</li>
 </ul>
 
 ## 或许有用
