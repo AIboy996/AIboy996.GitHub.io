@@ -443,6 +443,7 @@ nav:
       - SomeMath/number_theory/divisible.md
       - SomeMath/number_theory/modulo.md
     - 抽象代数:
+      - SomeMath/algebra/casus_irreducibilis.md
       - SomeMath/algebra/galois.md
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
