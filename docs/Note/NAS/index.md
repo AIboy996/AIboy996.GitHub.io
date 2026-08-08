@@ -27,6 +27,8 @@ subgraph 自建服务
     Overleaf
     n8n自动化
     VSCode
+    全自动追番
+    监控录像
 end
 subgraph 其他好玩的
     远程控制安卓
@@ -47,6 +49,8 @@ click 远程控制安卓 "./scrcpy/"
 click Telegram机器人 "./tg-bot/"
 click Plex实时活动 "./tautulli/"
 click Fnnas "./fnnas"
+click 全自动追番 "./bangumi"
+click 监控录像 "./capturing"
 ```
 
 ## 4.0时代

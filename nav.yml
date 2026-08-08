@@ -13,6 +13,7 @@ nav:
   - Note:
     - Note/index.md
     - Note/software.md
+    - Note/cook.md
     - Note/drug.md
     - 爬虫:
       - Note/Spider/single_line.md
@@ -204,6 +205,9 @@ nav:
       - Note/mkdocs/plugin_dev.md
     - NAS:
       - Note/NAS/index.md
+      - Note/NAS/fnos-change-disk.md
+      - Note/NAS/capturing.md
+      - Note/NAS/bangumi.md
       - Note/NAS/fnnas.md
       - Note/NAS/photoprism.md
       - Note/NAS/code-server.md
@@ -230,6 +234,11 @@ nav:
   - Blog:
     - Blog/index.md
     - 2026:
+      - Blog/2026/qingzang.md
+      - Blog/2026/bw2026.md
+      - Blog/2026/gundan.md
+      - Blog/2026/luoyang.md
+      - Blog/2026/xinjiang.md
       - Blog/2026/shandong.md
       - Blog/2026/wuhan.md
       - Blog/2026/sakura.md
@@ -294,6 +303,7 @@ nav:
     - 2019:
       - Blog/2019/reply_2019.md
       - Blog/2019/2019_summary.md
+      - Blog/2019/bw2019.md
   - Python:
     - Python/index.md
     - Python/pre_python.md
