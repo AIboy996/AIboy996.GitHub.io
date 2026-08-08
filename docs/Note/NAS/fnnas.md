@@ -3,6 +3,7 @@ tags:
 - NAS
 - 折腾
 - Docker
+- 飞牛
 include:
 - ai-summary
 ai-summary-config:
