@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/Blog/2019/bw2019/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/Blog/2019/reply_2019/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
@@ -316,12 +321,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/Blog/2026/bw2026/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/Blog/2026/funeral/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yangzhang.site/Blog/2026/gundan/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Blog/2026/luoyang/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yangzhang.site/Blog/2026/nian/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Blog/2026/qingzang/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -342,6 +367,11 @@
     </url>
     <url>
          <loc>https://yangzhang.site/Blog/2026/wuhan/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Blog/2026/xinjiang/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -367,6 +397,11 @@
     </url>
     <url>
          <loc>https://yangzhang.site/Note/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Note/cook/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -962,6 +997,16 @@
     </url>
     <url>
          <loc>https://yangzhang.site/Note/NAS/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Note/NAS/bangumi/</loc>
+         <lastmod>2026-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yangzhang.site/Note/NAS/capturing/</loc>
          <lastmod>2026-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
