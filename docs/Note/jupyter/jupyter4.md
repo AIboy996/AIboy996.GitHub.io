@@ -1,4 +1,5 @@
 ---
+title: 进阶使用
 tags:
  - Jupyter
 include:

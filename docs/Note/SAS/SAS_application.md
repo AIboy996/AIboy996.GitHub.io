@@ -6,7 +6,7 @@ include:
 - math
 ---
 
-# SAS统计应用
+# SAS的统计应用
 
 ## 描述统计
 

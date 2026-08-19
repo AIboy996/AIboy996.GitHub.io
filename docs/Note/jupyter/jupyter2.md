@@ -1,4 +1,5 @@
 ---
+title: 基础使用
 tags:
  - Jupyter
 include:

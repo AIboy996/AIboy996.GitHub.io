@@ -3,11 +3,11 @@ nav:
   - About:
     - About/index.md
     - About/about.md
-    - 我的电子设备们: About/devices.md
-    - 点亮的地图: About/map.md
-    - 正式的简历: About/resume.md
-    - 本站编年史: About/log.md
-    - 兴趣爱好: About/hobby.md
+    - About/devices.md
+    - About/map.md
+    - About/resume.md
+    - About/log.md
+    - About/hobby.md
     - About/links.md
     - About/ads.md
   - Note:
@@ -142,10 +142,10 @@ nav:
       - Note/GFW/client.md
       - Note/GFW/server.md
     - Jupyter:
-      - 介绍: Note/jupyter/jupyter1.md
-      - 基础使用: Note/jupyter/jupyter2.md
-      - 远程服务: Note/jupyter/jupyter3.md
-      - 进阶使用: Note/jupyter/jupyter4.md
+      - Note/jupyter/jupyter1.md
+      - Note/jupyter/jupyter2.md
+      - Note/jupyter/jupyter3.md
+      - Note/jupyter/jupyter4.md
       - Note/jupyter/print.md
       - ipynb展示: Note/jupyter/example.ipynb
     - LaTeX:
@@ -227,8 +227,8 @@ nav:
       - Note/NS/stream.md
       - Note/NS/nro.md
     - SAS:
-      - SAS的基本操作: Note/SAS/SAS_basic.md
-      - SAS的统计应用: Note/SAS/SAS_application.md
+      - Note/SAS/SAS_basic.md
+      - Note/SAS/SAS_application.md
     - VSCode:
       - Note/vscode/modify_extension.md
   - Blog:
