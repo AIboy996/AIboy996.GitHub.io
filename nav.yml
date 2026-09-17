@@ -234,6 +234,9 @@ nav:
   - Blog:
     - Blog/index.md
     - 2026:
+      - Blog/2026/neo.md
+      - Blog/2026/best_place.md
+      - Blog/2026/beijing.md
       - Blog/2026/qingzang.md
       - Blog/2026/bw2026.md
       - Blog/2026/gundan.md
