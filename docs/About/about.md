@@ -52,7 +52,7 @@ icon: material/emoticon-wink-outline
 
 <figure markdown>
 
-![](assets/me.png){width=200px}
+![](assets/me.jpg){width=250px}
 
 </figure>
 
