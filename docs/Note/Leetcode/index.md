@@ -48,6 +48,7 @@ hide:
 |二叉树|[从前序与中序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[105](./105.md)|递归&迭代|
 |二叉树|[二叉树最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)|[124](./124.md)|递归|
 |链表|[排序链表](https://leetcode.cn/problems/sort-list/)|[148](./148.md)|归并排序|
+|栈|[逆波兰表达式](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)|[150](./150.md)|栈、树的遍历|
 |数组|[寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)|[153](./153.md)||
 |链表|[反转链表](https://leetcode.cn/problems/reverse-linked-list/)|[206](./206.md)|双指针遍历、递归|
 |数组|[最长递增子列](https://leetcode.cn/problems/longest-increasing-subsequence/)|[300](./300.md)|动态规划、二分、树状数组|
