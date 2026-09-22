@@ -55,4 +55,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
-          command: pages deploy ./site --project-name=githubio
+          command: pages deploy ./ --project-name=githubio
