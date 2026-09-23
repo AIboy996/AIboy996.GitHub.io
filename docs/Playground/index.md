@@ -163,6 +163,16 @@ mkdocs-material还允许我们可以在文本中插入旁注(1)，插入的方�
 print("Hello, world!")
 ```
 
+除此之外还有行内代码块：`echo 1{0..9} | less`
+
+mkdocs-material不仅提供行间代码块的格式化，还提供行内代码块的格式化：`#!bash echo 1{0..9} | less`
+
+前者是markdown的标准语法，后者的写法如下：
+
+```markdown title="行内语法高亮代码块"
+`#!bash echo 1{0..9} | less`
+```
+
 ### 额外选项
 
 mkdocs-material中，代码块还可以自定义标题、显示行号、高亮显示某些行：

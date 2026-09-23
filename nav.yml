@@ -372,6 +372,7 @@ nav:
     - Go/go_semicolons.md
   - Java:
     - Java/index.md
+    - Java/RESTful_api.md
   - Project:
     - Project/index.md
     - Project/dzd.md
