@@ -23,6 +23,6 @@ cafebabe
 
 <figure markdown>
 
-![](../About/assets/java.svg){.nonzoom width=300}
+![](../About/assets/java.svg){.nonzoom width=200}
 
 </figure>
