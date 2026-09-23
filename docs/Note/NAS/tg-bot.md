@@ -2,7 +2,6 @@
 tags:
 - NAS
 - 折腾
-- Bot
 ---
 
 # Telegram Bot

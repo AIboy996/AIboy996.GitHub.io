@@ -1,6 +1,6 @@
 ---
 tags:
-- PyScript
+- PyPJ
 - 开源项目
 ---
 # plt-gallery

@@ -4,6 +4,7 @@ tags:
 - Java
 hide:
 - tags
+- toc
 ---
 
 # 爪哇咖啡🍵
@@ -18,6 +19,10 @@ cafebabe
 
 </div>
 
-来一杯爪哇咖啡冷静一下：
+累了困了，来一杯香醇可口的爪哇咖啡休息一下：
 
-![](../About/assets/java.svg){width=300}
+<figure markdown>
+
+![](../About/assets/java.svg){.nonzoom width=300}
+
+</figure>

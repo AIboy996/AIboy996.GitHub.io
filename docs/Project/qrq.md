@@ -1,6 +1,6 @@
 ---
 tags:
-- JavaScript
+- Web
 - 开源项目
 ---
 

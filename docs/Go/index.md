@@ -4,6 +4,7 @@ tags:
 - Go
 hide:
 - tags
+- toc
 ---
 
 # 走🏃

@@ -2,8 +2,8 @@ plugins:
   - tags
   - mkdocs-cust
   - ai-summary:
-      api: "chatgpt"
-      model: "gpt-4o"
+      api: "deepseek"
+      model: "deepseek-flash"
       ignore_code: true
       cache: true
       cache_dir: "./"

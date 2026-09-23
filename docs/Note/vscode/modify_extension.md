@@ -1,6 +1,6 @@
 ---
 tags:
- - vscode
+ - 折腾
 ---
 
 # 如何修改vscode扩展
