@@ -14,11 +14,6 @@ hide:
 ![](../assets/images/yangzhang.jpg){width=400}
 </figure>
 
-!!! info
-    这个人正在找*数据分析师* / *数据科学家* / *算法工程师* 等方向的工作；
-
-    如果有合适的工作机会请务必联系<mailto:mail@yangzhang.site>。
-
 ## 个人经历
 
 ### 教育

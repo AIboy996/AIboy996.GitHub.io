@@ -370,6 +370,8 @@ nav:
     - Go/why_go.md
     - Go/go_project.md
     - Go/go_semicolons.md
+  - Java:
+    - Java/index.md
   - Project:
     - Project/index.md
     - Project/dzd.md
@@ -484,5 +486,5 @@ nav:
         - SomeMath/prob/problems/random_vec.md
         - SomeMath/prob/problems/func_rv.md
   - Tags: Tags/index.md
-  - Playground: Playground/index.md
+  - PG: Playground/index.md
   - "开往": https://www.travellings.cn/go.html

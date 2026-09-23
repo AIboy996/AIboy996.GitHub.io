@@ -11,7 +11,6 @@ hide:
 ![](../../assets/images/yangzhang.jpg){width=400}
 </figure>
 
-
 Hi! This is yang(杨).
 
 As you know, Chinese naming conventions arrange the surname before the firstname. So my full-name is *ZHANG, YANG(张杨)*. Here's a button in case you're curious about its pronunciation:
@@ -32,7 +31,6 @@ Yang ...
     </li>
     <li>Loves programming, gaming and hiking.</li>
 </ul>
-
 
 Yang's research interests focus on ...
 <ul type="circle">

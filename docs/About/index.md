@@ -19,6 +19,7 @@ include:
 - [**Blog**](../Blog/index.md)（胡言乱语）：博客板块，分享日常。
 - [**Python**](../Python/index.md)：Python板块，包含基础、高级语法知识和各种库的使用。
 - [**Go**](../Go/index.md)：Go板块。
+- [**Java**](../Java/index.md)：Java板块。
 - [**Project**](../Project/index.md)（胡作非为）：项目板块，鄙人做的一些项目。
 - [**Statistics**](../Statistics/index.md)（几乎处处）：鄙人专业相关。
 - [**SomeMath**](../SomeMath/index.md)（胡数八道）：数学相关。
@@ -50,22 +51,6 @@ include:
 
 !!! success "新功能：标签云"
     本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../index.md)和[Tags](../Tags/index.md)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
-
-### <s>搜索</s>（已弃用）
-
-如果你想搜索本站的内容，可以使用Google或者Bing等搜索引擎。例如搜索本站**统计推断**相关的内容，只需要加上过滤器`site:yangzhang.site`即可：
-
-- [Google搜索](https://www.google.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site)
-- [Bing搜索](https://www.bing.com/search?q=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD+site%3Ayangzhang.site)
-
-<s>
-本站有搜索功能（由[lunrjs](https://lunrjs.com/)驱动，mkdocs material内置），支持搜索文章标题、文字内容、代码等。
-</s>
-
-??? question "为何弃用？"
-    一方面，我认为搜索功能没什么意义，因为站内的文章已经非常有条理了。
-
-    另外一方面，这个插件会极大影响页面的加载速度。
 
 ### 页面反馈
 
