@@ -19,7 +19,7 @@ include:
 
 <figure markdown>
 
-![](../../About/assets/me.png){width=200px}
+![](../../About/assets/me.jpg){width=200px}
 
 </figure>
 

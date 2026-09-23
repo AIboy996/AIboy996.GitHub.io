@@ -2,6 +2,10 @@
 tags:
 - misc
 - 生活
+include:
+- ai-summary
+ai-summary-config:
+    prompt: "帮我总结归纳一下本页面的菜使用用到的食材和做法，200字以内"
 ---
 
 # 中华小当家
@@ -29,15 +33,15 @@ tags:
 ### [萝卜肉片](https://whisper.yangz.site/posts/288)
 ### [青菜羊肉](https://whisper.yangz.site/posts/291)
 ### [韭菜黄炒鸡蛋](https://whisper.yangz.site/posts/299)
+### [油爆虾](https://whisper.yangz.site/posts/300)
+### [青椒土豆丝](https://whisper.yangz.site/posts/300)
 
 ## 蒸菜
 
-水蒸蛋
+### [水蒸蛋](https://whisper.yangz.site/posts/300)
 
 ## 煎炸
 
-水煎梅花肉
-
-花生米
+### [水煎梅花肉](https://whisper.yangz.site/posts/302)
 
 ## 凉拌

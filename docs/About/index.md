@@ -23,18 +23,18 @@ include:
 - [**Project**](../Project/index.md)（胡作非为）：项目板块，鄙人做的一些项目。
 - [**Statistics**](../Statistics/index.md)（几乎处处）：鄙人专业相关。
 - [**SomeMath**](../SomeMath/index.md)（胡数八道）：数学相关。
-- [**PlayGround**](../Playground/index.md)：用来调试mkdocs-material提供的markdown的扩展语法
+- [**PG**](../Playground/index.md)：用来调试mkdocs-material提供的markdown的扩展语法
 - [**Tags**](../Tags/index.md)：文章分类归纳。
 
 ## 本站的一些功能
 
 ### AI摘要
 
-使用[mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary)插件实现的AI摘要功能。会在某些文章最开头添加一个AI生成的摘要。
+使用[mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary)插件实现的AI摘要功能。会在某些文章最开头添加一个AI生成的摘要（本文就有）。
 
 > FYI: 本站（正文中）的外链都会加上这样的小箭头：[github](https://github.com)
 
-暂时有三种AI模型可用：
+暂时我只用三种AI模型：
 
 !!! tongyiai-summary "通义千问"
     阿里的模型
@@ -49,8 +49,8 @@ include:
 
 本站所有的文章都会加上一个简明的分类标签，你可以在[**Tags**](../Tags/index.md)板块按照分类标签查看文章。
 
-!!! success "新功能：标签云"
-    本站最近添加了*Tag Cloud* 功能，可以更加直观地显示各个标签，在[首页](../index.md)和[Tags](../Tags/index.md)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
+!!! success "标签云"
+    本站添加了*Tag Cloud* 功能，可以更加直观地显示各个标签出现的频率，在[首页](../index.md)和[Tags](../Tags/index.md)页面可以看到。点击标签云中的标签可以直接跳转到对应标签的文章列表。
 
 ### 页面反馈
 
@@ -74,7 +74,7 @@ include:
 
 ### 颜色彩蛋
 
-从周日到周六，本站的主题色会每天切换（暗示我的心情）：
+从周日到周六，本站的主题色会每天切换（暗示我的心情^-^）：
 
 - 周日：<span style="background-color:#ab47bd;padding:5px;margin:3px;color:white;">purple</span>
 - 周一：<span style="background-color:#757575;padding:5px;margin:3px;color:white;">grey</span>
