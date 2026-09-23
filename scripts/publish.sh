@@ -1,0 +1,1 @@
+wrangler pages deploy site --project-name=githubio --branch=publishment

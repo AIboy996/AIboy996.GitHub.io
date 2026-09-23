@@ -3,11 +3,11 @@ plugins:
   - mkdocs-cust
   - ai-summary:
       api: "deepseek"
-      model: "deepseek-flash"
+      model: "deepseek-v4-pro"
       ignore_code: true
       cache: true
       cache_dir: "./"
-      prompt: "帮我把下面的内容总结为200字以内的摘要，使用和内容相同的语言。在输出的时候请不要出现连续换行，尽量形成一个完整的、逻辑通顺的段落。可以使用一些emoji来增加趣味性，如果有关键内容也可以添加锚点链接提供直达："
+      prompt: "帮我把下面的内容总结为300字以内的摘要，力求简洁但是不丢失关键信息。如果内容实在是过多就选取一些重点、有趣、吸引人的内容进行呈现。尽量形成一个完整的、逻辑通顺的段落。注意使用和源内容相同的语言。另外注意你输出的内容会放入一个markdownn admonition环境内，如果要换行注意换行后缩进四个空格、并且需要留出一个单独的空行，这样才可以渲染正确。你可以使用一些emoji来增加趣味性；如果出现需要罗列的情况，请使用markdownn的枚举语法。你也可以善用各种markdownn语法，让整个摘要更加可读。"
   # 视频插件
   - mkdocs-video:
       is_video: true
