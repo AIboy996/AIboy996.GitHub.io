@@ -56,9 +56,12 @@ nav:
         - Note/Algorithm/llm/word2vec.md
         - Note/Algorithm/llm/rl.md
         - Note/Algorithm/llm/transformer.md
+        - Note/Algorithm/llm/harness.md
+        - Note/Algorithm/llm/llm_skill.md
       - VLLM:
         - Note/Algorithm/vllm/index.md
         - Note/Algorithm/vllm/dino.md
+        - Note/Algorithm/vllm/world_model.md
       - 生成模型:
         - Note/Algorithm/generative/index.md
         - Note/Algorithm/generative/vae.md
@@ -447,7 +450,7 @@ nav:
       - Statistics/opencourse/computer_networking.md
   - SomeMath:
     - SomeMath/index.md
-    - 数学分析:
+    - 实分析:
       - SomeMath/real/newtonian_mechanics.md
       - SomeMath/real/ostrogradsky_method.md
       - SomeMath/real/rational_func_int.md
