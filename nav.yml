@@ -239,6 +239,7 @@ nav:
   - Blog:
     - Blog/index.md
     - 2026:
+      - Blog/2026/lishui.md
       - Blog/2026/neo.md
       - Blog/2026/best_place.md
       - Blog/2026/beijing.md
