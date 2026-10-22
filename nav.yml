@@ -378,6 +378,12 @@ nav:
   - Java:
     - Java/index.md
     - Java/RESTful_api.md
+    - 面向对象:
+      - Java/OOP/index.md
+    - 软件设计:
+      - Java/design/index.md
+    - 软件测试:
+      - Java/test/index.md
   - Project:
     - Project/index.md
     - Project/dzd.md
