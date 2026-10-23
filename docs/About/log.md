@@ -8,6 +8,14 @@ icon: material/history
 
 > 倒序
 
+## 2026
+
+- 2026年10月23日
+    - 通过[mkdocs-cust](https://github.com/AIboy996/mkdocs-cust)插件，为所有AI Coauthor的文章添加醒目标识
+        - 例如：<button type="button" class="ai-coauthor-credit" style="appearance:none;border:0;padding:0;margin:.35em 0 0 .8em;background:transparent;cursor:pointer;font:inherit;line-height:inherit;text-align:right" data-info="Git commit co-authors:&#10;Claude Code &lt;noreply@anthropic.com&gt; (recognized as Claude)" onclick="window.alert(this.dataset.info)"><small style="color:#252525;font-size:1em;font-weight:500">Co-authored by <span class="ai-coauthor-signature" style="font-family:'Chalkboard SE','Comic Sans MS','Segoe Print',cursive;font-style:normal;font-size:1.15em">Claude</span></small></button><style>@keyframes ai-coauthor-signature-write{from{clip-path:inset(0 100% 0 0);opacity:.35}to{clip-path:inset(0 0 0 0);opacity:1}}.ai-coauthor-signature{display:inline-block;animation:ai-coauthor-signature-write 1s cubic-bezier(.2,.75,.3,1) both}@media(prefers-reduced-motion:reduce){.ai-coauthor-signature{animation:none}}</style>
+    - 本站正式进入AIGC的时代，此前我尽量不使用AI生成大段的内容；近日彻底放弃古法note，开始使用AI大量生成，而后手动整理、调整、学习
+    - 当然，Blog版块除外，**依然并且永远**将是纯粹的手写札记
+
 ## 2025
 
 - 2025年11月04日
