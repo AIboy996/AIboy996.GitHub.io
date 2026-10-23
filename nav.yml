@@ -382,6 +382,16 @@ nav:
       - Java/OOP/index.md
     - 软件设计:
       - Java/design/index.md
+      - 设计原则:
+        - Java/design/principles/single-responsibility.md
+        - Java/design/principles/open-closed.md
+        - Java/design/principles/liskov-substitution.md
+        - Java/design/principles/interface-segregation.md
+        - Java/design/principles/dependency-inversion.md
+      - 设计模式:
+        - Java/design/patterns/creational.md
+        - Java/design/patterns/structural.md
+        - Java/design/patterns/behavioral.md
     - 软件测试:
       - Java/test/index.md
   - Project:
