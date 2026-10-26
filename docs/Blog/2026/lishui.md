@@ -3,8 +3,6 @@ tags:
 - blog
 - 留影
 - 旅行
-include:
-- live
 ---
 
 # 秀山丽水
@@ -448,10 +446,10 @@ hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 </figurecaption>
 </figure>
 
-<div style="width: 50%; margin: auto;">
-<live-photo-element src="../assets/IMG_9058.png" caption="螳螂拳！">
-</live-photo-element>
-</div>
+<figure markdown>
+![](assets/IMG_9058.png){width=350}
+<figurecaption>螳螂拳！</figurecaption>
+</figure>
 
 吃的也都是好东西啊：
 
