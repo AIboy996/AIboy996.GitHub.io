@@ -28,7 +28,7 @@ include:
 
 <figure markdown>
 
-![](assets/2026-10-26-22-12-44.png){width=400}
+![](assets/2026-10-26-22-12-44.png){width=350}
 
 <figurecaption>就这么草率地决定了</figurecaption>
 </figure>
@@ -58,44 +58,80 @@ include:
 
 在丽水吃了顿午饭，简简单单一个豆腐娘一个溪鱼豆腐，都很好吃！
 
-![](assets/2026-10-26-22-36-50.png)
+<figure markdown>
+![](assets/2026-10-26-22-36-50.png){width=350}
+<figurecaption>
 绿色的，像某种咖喱的就是豆腐娘
+</figurecaption>
+</figure>
 
 吃完饭不知道干什么，又跑到了火车站准备去缙云。据说是《仙剑奇侠传》的一个取景地。
 
 景色还是不错的，天气有点差：
 
-![](assets/2026-10-26-22-51-28.png)
+<figure markdown>
+![](assets/2026-10-26-22-51-28.png){width=350}
+<figurecaption>
 大石头山
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-22-53-02.png)
+<figure markdown>
+![](assets/2026-10-26-22-53-02.png){width=350}
+<figurecaption>
 仙女来的
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-22-56-44.png)
+<figure markdown>
+![](assets/2026-10-26-22-56-44.png){width=350}
+<figurecaption>
 剑客来的
+</figurecaption>
+</figure>
 
 这个仙都是个巨大无比的景区，大概有四五个免费景区（或者叫非核心景区）和两个核心景区。走到最最里面居然别有洞天，又大一片的花海：
 
-![](assets/2026-10-26-23-00-37.png)
+<figure markdown>
+![](assets/2026-10-26-23-00-37.png){width=350}
+<figurecaption>
 在阴霾密布的天气里也是这么明亮
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-23-02-34.png)
+<figure markdown>
+![](assets/2026-10-26-23-02-34.png){width=350}
+<figurecaption>
 山里真不错
+</figurecaption>
+</figure>
 
 由于我们去的比较晚，随便逛逛就已经到了关门的时间，最后再来上一口缙云烧饼就得走了。
 
-![](assets/2026-10-26-23-03-42.png)
+<figure markdown>
+![](assets/2026-10-26-23-03-42.png){width=350}
+<figurecaption>
 香甜：馅儿是香的，皮是甜的，好吃！
+</figurecaption>
+</figure>
 
 回到市区又是急头白脸吃了一顿：
 
-![](assets/2026-10-26-23-05-38.png)
+<figure markdown>
+![](assets/2026-10-26-23-05-38.png){width=350}
+<figurecaption>
 豆腐丸子，似乎也是丽水特色
+</figurecaption>
+</figure>
 
 哦对了，这一次是带病出征，前几天一直在拉肚子。感觉人都要没了😭
 
-![](assets/2026-10-26-23-07-01.png)
+<figure markdown>
+![](assets/2026-10-26-23-07-01.png){width=350}
+<figurecaption>
 蒙脱石散真的很有用
+</figurecaption>
+</figure>
 
 ## 秀山丽水
 
@@ -104,121 +140,217 @@ include:
 !!! question "这是条什么江"
     有的人告诉我这是瓯江，一直往东直到从温州入海。地图上它叫大溪，一点也不像一条江的名字。我们骑车那个地段又叫南明湖，可它完全不是个湖。总之不论不类，俺也搞不明白。
 
-![](assets/2026-10-26-23-14-01.png)
+<figure markdown>
+![](assets/2026-10-26-23-14-01.png){width=350}
+<figurecaption>
 双人自行车哦，第一次骑
+</figurecaption>
+</figure>
 
 骑完车刚好丽水博物馆就在旁边，进去小逛了一下。
 
 畲族自然是丽水的特色：
 
-![](assets/2026-10-26-23-18-05.png)
+<figure markdown>
+![](assets/2026-10-26-23-18-05.png){width=350}
+<figurecaption>
 畲族最显著的特征就是这个发饰
+</figurecaption>
+</figure>
 
 我没想到的是丽水还有恐龙：
 
-![](assets/2026-10-26-23-19-01.png)
+<figure markdown>
+![](assets/2026-10-26-23-19-01.png){width=350}
+<figurecaption>
 我估计hxx作为丽水人也不知道
+</figurecaption>
+</figure>
 
 哦对了，秀山丽水真的不是咱们杜撰出来的，是官方很喜欢用的一个slogan：
 
-![](assets/2026-10-26-23-20-13.png)
+<figure markdown>
+![](assets/2026-10-26-23-20-13.png){width=350}
+<figurecaption>
 展厅介绍了不少丽水的好地方
+</figurecaption>
+</figure>
 
 逛完博物馆时间刚刚好，去迎接hxx王者归来。在火车站门口只有我们和另外一个大哥捧了花，尴尬的是大哥的花真的很大、而且他居然有四个！
 
-![](assets/2026-10-26-23-22-28.png)
+<figure markdown>
+![](assets/2026-10-26-23-22-28.png){width=350}
+<figurecaption>
 输了
+</figurecaption>
+</figure>
 
 不过我们的花更精致，虽然它是我在盒马花了9.9¥买的：
 
-![](assets/2026-10-26-23-21-36.png)
+<figure markdown>
+![](assets/2026-10-26-23-21-36.png){width=350}
+<figurecaption>
 这打电话姿势，大老板来的
+</figurecaption>
+</figure>
 
 从丽水到景宁差不多一个小时的车程，中间有一个巨长无比的隧道：[泗洲岭隧道](https://zh.wikipedia.org/wiki/%E6%B3%97%E6%B4%B2%E5%B2%AD%E9%9A%A7%E9%81%93)，足足六公里，吓晕了。当然，和我们在新疆穿越的天山胜利隧道（22公里）还是比不了一点。
 
 到了景宁就直奔酒店，开始大聚餐（写作大聚餐，读作大喝酒）：
 
-![](assets/2026-10-26-23-27-26.png)
+<figure markdown>
+![](assets/2026-10-26-23-27-26.png){width=350}
+<figurecaption>
 太高端了
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-23-28-22.png)
+<figure markdown>
+![](assets/2026-10-26-23-28-22.png){width=350}
+<figurecaption>
 我是顶不住了，赶紧倒上了核桃杏仁露
+</figurecaption>
+</figure>
 
 hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 
-![](assets/2026-10-26-23-31-29.png)
+<figure markdown>
+![](assets/2026-10-26-23-31-29.png){width=350}
+<figurecaption>
 喝！
+</figurecaption>
+</figure>
 
 喝完酒晚上去畲族风情街散了散步，很热闹～
 
-![](assets/2026-10-26-23-32-46.png)
+<figure markdown>
+![](assets/2026-10-26-23-32-46.png){width=350}
+<figurecaption>
 我就说发饰是最好辨认的
+</figurecaption>
+</figure>
 
 ## 畲族之窗
 
 第三天hxx的老爸带我们进山里走了走，云和梯田真不错。
 
-![](assets/2026-10-26-23-36-15.png)
+<figure markdown>
+![](assets/2026-10-26-23-36-15.png){width=350}
+<figurecaption>
 美哦
+</figurecaption>
+</figure>
 
 那边的山里全都是竹子，遮天蔽日：
 
-![](assets/2026-10-26-23-36-43.png)
+<figure markdown>
+![](assets/2026-10-26-23-36-43.png){width=350}
+<figurecaption>
 就很有武林的感觉
+</figurecaption>
+</figure>
 
 还遇到了一只大螳螂：
 
-![](assets/2026-10-26-23-37-56.png)
+<figure markdown>
+![](assets/2026-10-26-23-37-56.png){width=350}
+<figurecaption>
 一只对我张牙舞爪
+</figurecaption>
+</figure>
 
 下午hxx御驾亲征，带我们又去了畲族风情街：
 
-![](assets/2026-10-26-23-38-27.png)
+<figure markdown>
+![](assets/2026-10-26-23-38-27.png){width=350}
+<figurecaption>
 开车技术很棒，停车技术很拉
+</figurecaption>
+</figure>
 
 搞了一杯不知道网红不网红，但是看起来很网红其实不是很好喝的苔藓咖啡：
 
-![](assets/2026-10-26-23-39-43.png)
+<figure markdown>
+![](assets/2026-10-26-23-39-43.png){width=350}
+<figurecaption>
 应该是某种藻做的，并非苔藓
+</figurecaption>
+</figure>
 
 国庆期间还有婚庆习俗的演出：
 
-![](assets/2026-10-26-23-41-53.png)
+<figure markdown>
+![](assets/2026-10-26-23-41-53.png){width=350}
+<figurecaption>
 室外是公开的，室内是收费的，咱就没去
+</figurecaption>
+</figure>
 
 据hxx说，他们那边还有认股书为义父的习俗（？）
 
-![](assets/2026-10-26-23-42-20.png)
+<figure markdown>
+![](assets/2026-10-26-23-42-20.png){width=350}
+<figurecaption>
 但是hxx没认过
+</figurecaption>
+</figure>
 
 路上还能看到极具特色的廊桥，据说以前都是纯木质结构，还是很好看的：
 
-![](assets/2026-10-26-23-41-06.png)
+<figure markdown>
+![](assets/2026-10-26-23-41-06.png){width=350}
+<figurecaption>
 钢筋混凝土的廊桥
+</figurecaption>
+</figure>
 
 到了晚上自然又是哈酒时间，这次是在hxx的奶奶家。不喝红的，也不喝白的。整了两听啤酒和一杯家酿不知道多少度的黄酒。
 
-![](assets/2026-10-26-23-45-33.png)
+<figure markdown>
+![](assets/2026-10-26-23-45-33.png){width=350}
+<figurecaption>
 仅为展示，咱只喝了一小杯，度数太高了
+</figurecaption>
+</figure>
 
 吃完饭去剧院看了一场演出，是专门讲畲族历史的：
 
-![](assets/2026-10-26-23-47-50.png)
+<figure markdown>
+![](assets/2026-10-26-23-47-50.png){width=350}
+<figurecaption>
 这个真的很值得一看
+</figurecaption>
+</figure>
 
 从原始时期一直到抗战时期，一路迁徙。舞美、灯光、服装、舞蹈、特级演出都很棒：
 
-![](assets/2026-10-26-23-48-34.png)
+<figure markdown>
+![](assets/2026-10-26-23-48-34.png){width=350}
+<figurecaption>
 原始时期
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-23-51-30.png)
+<figure markdown>
+![](assets/2026-10-26-23-51-30.png){width=350}
+<figurecaption>
 💃
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-23-47-20.png)
+<figure markdown>
+![](assets/2026-10-26-23-47-20.png){width=350}
+<figurecaption>
 这一幕很美
+</figurecaption>
+</figure>
 
-![](assets/2026-10-26-23-51-11.png)
+<figure markdown>
+![](assets/2026-10-26-23-51-11.png){width=350}
+<figurecaption>
 这是真功夫
+</figurecaption>
+</figure>
 
 ## 云中大漈
 
@@ -231,74 +363,138 @@ hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 
 早上吃了hxx老妈钦点的英川粉皮，里面的肉丝红红的应该是红酒曲腌制过：
 
-![](assets/2026-10-26-23-57-15.png)
+<figure markdown>
+![](assets/2026-10-26-23-57-15.png){width=350}
+<figurecaption>
 左：类似凉粉；右：类似肠粉
+</figurecaption>
+</figure>
 
 去大漈的路上还路过了一个多肉村，我也是第一次知道，原来多肉可以长满整面墙。
 
-![](assets/2026-10-26-23-59-42.png)
+<figure markdown>
+![](assets/2026-10-26-23-59-42.png){width=350}
+<figurecaption>
 密集恐惧了
+</figurecaption>
+</figure>
 
 大漈这边有一个小景点，据说是黑神话悟空的取景地：
 
-![](assets/2026-10-27-00-00-34.png)
+<figure markdown>
+![](assets/2026-10-27-00-00-34.png){width=350}
+<figurecaption>
 下雨了很有感觉哦
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-01-23.png)
+<figure markdown>
+![](assets/2026-10-27-00-01-23.png){width=350}
+<figurecaption>
 榫卯古建，很有韵味
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-01-52.png)
+<figure markdown>
+![](assets/2026-10-27-00-01-52.png){width=350}
+<figurecaption>
 总感觉要跳出来一只Boss
+</figurecaption>
+</figure>
 
 再往山里走一点就到了一个瀑布。大概是因为这个瀑布，整座山都云雾缭绕的，很有仙气：
 
-![](assets/2026-10-27-00-02-25.png)
+<figure markdown>
+![](assets/2026-10-27-00-02-25.png){width=350}
+<figurecaption>
 配上廊桥很好看，就是右边的车太煞风景
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-04-48.png)
+<figure markdown>
+![](assets/2026-10-27-00-04-48.png){width=350}
+<figurecaption>
 刚好下雨了，水量很足
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-05-07.png)
+<figure markdown>
+![](assets/2026-10-27-00-05-07.png){width=350}
+<figurecaption>
 美哦
+</figurecaption>
+</figure>
 
 爬完山，就在山脚下找了个民宿吃饭。也是hxx老爸认识的朋友，看样子经常来吃。周围都是比较古朴的建筑，还有很多稀奇古怪的玩意儿：
 
-![](assets/2026-10-27-00-06-05.png)
+<figure markdown>
+![](assets/2026-10-27-00-06-05.png){width=350}
+<figurecaption>
 可爱哦
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-06-34.png)
+<figure markdown>
+![](assets/2026-10-27-00-06-34.png){width=350}
+<figurecaption>
 第一次见到美颜版的毛爷爷
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-06-54.png)
+<figure markdown>
+![](assets/2026-10-27-00-06-54.png){width=350}
+<figurecaption>
 山里起雾真的很快，有寂静岭的感觉了
+</figurecaption>
+</figure>
 
-<div style="width: 70%; margin: auto;">
+<div style="width: 50%; margin: auto;">
 <live-photo-element src="../assets/IMG_9058.png" caption="螳螂拳！">
 </live-photo-element>
 </div>
 
 吃的也都是好东西啊：
 
-![](assets/2026-10-27-00-14-20.png)
+<figure markdown>
+![](assets/2026-10-27-00-14-20.png){width=350}
+<figurecaption>
 山珍！
+</figurecaption>
+</figure>
 
 尤其是这个茭白和蘑菇，香晕了。在网上看了一下，大漈的茭白确实非常有名！
 
 吃完饭回市区，简单逛了一下畲族博物馆就准备离开景宁了。
 
-![](assets/2026-10-27-00-16-03.png)
+<figure markdown>
+![](assets/2026-10-27-00-16-03.png){width=350}
+<figurecaption>
 近距离看到了畲族头饰
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-16-32.png)
+<figure markdown>
+![](assets/2026-10-27-00-16-32.png){width=350}
+<figurecaption>
 畲族黑话
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-16-46.png)
+<figure markdown>
+![](assets/2026-10-27-00-16-46.png){width=350}
+<figurecaption>
 这真的不是二次元吗
+</figurecaption>
+</figure>
 
 景宁的第一眼，也是最后一眼：
 
-![](assets/2026-10-27-00-17-15.png)
+<figure markdown>
+![](assets/2026-10-27-00-17-15.png){width=350}
+<figurecaption>
 他们真的很爱凤凰这个意象
+</figurecaption>
+</figure>
 
 再见了，这个酒都不标度数的好客之乡。
 
@@ -308,48 +504,92 @@ hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 
 福州整体给我的感觉就是没什么好玩的，可能是太累了，在福州看啥都没意思。尤其是古街，太商业化了，全是妆造和拍照的店。偶尔能遇到一些演出倒是还挺有意思的。
 
-![](assets/2026-10-27-00-24-14.png)
+<figure markdown>
+![](assets/2026-10-27-00-24-14.png){width=350}
+<figurecaption>
 人造爱心树
+</figurecaption>
+</figure>
 
 相比之下，福建博物馆就能打多了。看到了很多没见过的稀奇玩意儿，甚至还看到了马首的原件。
 
-![](assets/2026-10-27-00-25-51.png)
+<figure markdown>
+![](assets/2026-10-27-00-25-51.png){width=350}
+<figurecaption>
 有点可爱是怎么回事
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-26-42.png)
+<figure markdown>
+![](assets/2026-10-27-00-26-42.png){width=350}
+<figurecaption>
 诡异
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-27-19.png)
+<figure markdown>
+![](assets/2026-10-27-00-27-19.png){width=350}
+<figurecaption>
 特别有设计感的印章
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-27-33.png)
+<figure markdown>
+![](assets/2026-10-27-00-27-33.png){width=350}
+<figurecaption>
 同一人之手，很贴合材料
+</figurecaption>
+</figure>
 
 黄昇特产也蛮有意思，讲了很多封建礼制、嫁娶习俗之类的东西。黄昇本人倒是没讲多少，可能她也实在是太短命了，乏善可陈。
 
-![](assets/2026-10-27-00-28-29.png)
+<figure markdown>
+![](assets/2026-10-27-00-28-29.png){width=350}
+<figurecaption>
 彩礼古来有之
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-30-23.png)
+<figure markdown>
+![](assets/2026-10-27-00-30-23.png){width=350}
+<figurecaption>
 这就是祖宗十八代
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-30-41.png)
+<figure markdown>
+![](assets/2026-10-27-00-30-41.png){width=350}
+<figurecaption>
 国宝来的
+</figurecaption>
+</figure>
 
 逛到下午饿的不行了，根据福州一位师兄的建议，去吃了朱富贵海鲜火锅，很来劲：
 
-![](assets/2026-10-27-00-31-20.png)
+<figure markdown>
+![](assets/2026-10-27-00-31-20.png){width=350}
+<figurecaption>
 后来还加了一些菜，吃撑了
+</figurecaption>
+</figure>
 
 吃完就准备去平潭了，路上买了一杯自助甜水儿。这个是真自助，开门都不需要扫码，直接就能打开。
 
-![](assets/2026-10-27-00-32-09.png)
+<figure markdown>
+![](assets/2026-10-27-00-32-09.png){width=350}
+<figurecaption>
 买了冬瓜茶，据说是台湾特色
+</figurecaption>
+</figure>
 
 福州的最后一眼：
 
-![](assets/2026-10-27-00-32-58.png)
+<figure markdown>
+![](assets/2026-10-27-00-32-58.png){width=350}
+<figurecaption>
 也不知道这棵树怎么火起来的
+</figurecaption>
+</figure>
 
 ## 海岛骑兵
 
@@ -357,106 +597,206 @@ hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 
 号称是距离台湾最近的地方，不过一点没有因此而大力建设。
 
-![](assets/2026-10-27-00-35-31.png)
+<figure markdown>
+![](assets/2026-10-27-00-35-31.png){width=350}
+<figurecaption>
 一股破败萧条的气息
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-43-34.png)
+<figure markdown>
+![](assets/2026-10-27-00-43-34.png){width=350}
+<figurecaption>
 天气也不是很好
+</figurecaption>
+</figure>
 
 上午就随便转了转，在海边捡了很多贝壳。
 
-![](assets/2026-10-27-00-37-22.png)
+<figure markdown>
+![](assets/2026-10-27-00-37-22.png){width=350}
+<figurecaption>
 中午喝了薇姐力荐的海鲜粥，不赖
+</figurecaption>
+</figure>
 
 幸运的是饭快吃完的时候终于出了太阳！海边果然还是得有太阳啊：
 
-![](assets/2026-10-27-00-21-00.png)
+<figure markdown>
+![](assets/2026-10-27-00-21-00.png){width=350}
+<figurecaption>
 嘟嘟嘟嘟，骑电驴出发咯
+</figurecaption>
+</figure>
 
 我们的计划是骑着电驴从龙王头沙滩出发，一路往北一直骑到风力发电厂再往回走。
 
-![](assets/2026-10-27-00-38-06.png)
+<figure markdown>
+![](assets/2026-10-27-00-38-06.png){width=350}
+<figurecaption>
 美哦
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-38-54.png)
+<figure markdown>
+![](assets/2026-10-27-00-38-54.png){width=350}
+<figurecaption>
 搁浅的渔船
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-39-15.png)
+<figure markdown>
+![](assets/2026-10-27-00-39-15.png){width=350}
+<figurecaption>
 最迷惑的景点
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-39-31.png)
+<figure markdown>
+![](assets/2026-10-27-00-39-31.png){width=350}
+<figurecaption>
 这个地方居然叫小镰仓，我是看不出哪里像了
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-40-59.png)
+<figure markdown>
+![](assets/2026-10-27-00-40-59.png){width=350}
+<figurecaption>
 这个地方居然也围起来收费
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-41-48.png)
+<figure markdown>
+![](assets/2026-10-27-00-41-48.png){width=350}
+<figurecaption>
 继续骑车～
+</figurecaption>
+</figure>
 
 等我们骑到北港村的时候已经是傍晚了，没办法只能放弃原计划。骑到哪算哪，看到啥算啥。
 
-![](assets/2026-10-27-00-47-01.png)
+<figure markdown>
+![](assets/2026-10-27-00-47-01.png){width=350}
+<figurecaption>
 海岛码头很好看哦
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-48-36.png)
+<figure markdown>
+![](assets/2026-10-27-00-48-36.png){width=350}
+<figurecaption>
 感觉会有火烧云
+</figurecaption>
+</figure>
 
 在海岛骑车经常遇到非常陡的坡，载人的话完全上不去。
 
-![](assets/2026-10-27-00-48-55.png)
+<figure markdown>
+![](assets/2026-10-27-00-48-55.png){width=350}
+<figurecaption>
 只能委屈一下小猪多爬爬坡了
+</figurecaption>
+</figure>
 
 好在最后我们也是如愿看到了风车：
 
-![](assets/2026-10-27-00-50-04.png)
+<figure markdown>
+![](assets/2026-10-27-00-50-04.png){width=350}
+<figurecaption>
 很有秩序感
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-50-39.png)
+<figure markdown>
+![](assets/2026-10-27-00-50-39.png){width=350}
+<figurecaption>
 开心咯
+</figurecaption>
+</figure>
 
 可惜的是我们最后也没赶上火烧云
 
-![](assets/2026-10-27-00-50-51.png)
+<figure markdown>
+![](assets/2026-10-27-00-50-51.png){width=350}
+<figurecaption>
 远在在山的那边
+</figurecaption>
+</figure>
 
 只能有啥景看啥景，贪婪地享受旅行的最后一程。
 
-![](assets/2026-10-27-00-51-44.png)
+<figure markdown>
+![](assets/2026-10-27-00-51-44.png){width=350}
+<figurecaption>
 傻咯
+</figurecaption>
+</figure>
 
 日落时分，我们找了一个沙滩下去。
 
-![](assets/2026-10-27-00-52-28.png)
+<figure markdown>
+![](assets/2026-10-27-00-52-28.png){width=350}
+<figurecaption>
 可爱字体
+</figurecaption>
+</figure>
 
 也是看到了绝美的落日余晖。
 
-![](assets/2026-10-27-00-53-02.png)
+<figure markdown>
+![](assets/2026-10-27-00-53-02.png){width=350}
+<figurecaption>
 闪光灯是对的！
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-54-04.png)
+<figure markdown>
+![](assets/2026-10-27-00-54-04.png){width=350}
+<figurecaption>
 最后的蓝天
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-54-36.png)
+<figure markdown>
+![](assets/2026-10-27-00-54-36.png){width=350}
+<figurecaption>
 为霞尚满天
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-55-49.png)
+<figure markdown>
+![](assets/2026-10-27-00-55-49.png){width=350}
+<figurecaption>
 海岛烟花🎆
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-00-56-05.png)
+<figure markdown>
+![](assets/2026-10-27-00-56-05.png){width=350}
+<figurecaption>
 回家了！！
+</figurecaption>
+</figure>
 
 ## 尾声
 
 整趟旅行最大的遗憾就是在平潭没吃到这个超级无敌爆炸香的刚出炉的枣糕：
 
-![](assets/2026-10-27-00-57-17.png)
+<figure markdown>
+![](assets/2026-10-27-00-57-17.png){width=350}
+<figurecaption>
 排队的人太多了
+</figurecaption>
+</figure>
 
 遇到的最搞笑的事就是有一对小情侣在火车站狂吃百香果，我还以为是火车不让带百香果。一问才知道，火车不让带刀🔪，所以他们乘着还有刀赶紧多吃点百香果。
 
-![](assets/2026-10-27-00-57-49.png)
+<figure markdown>
+![](assets/2026-10-27-00-57-49.png){width=350}
+<figurecaption>
 百香果仙人
+</figurecaption>
+</figure>
 
 神了！当然，除此之外还有高手。还有劲爆尾杀。
 
@@ -468,13 +808,21 @@ hxx倒是火力全开，甚至和他老妈拼了顿酒，实乃母慈子孝。
 
 没办法，只能等了。但我有点急，只能出门找一找厕所了。雪上加霜的是，我吹着冷风骑着共享单车终于到了最近的公厕，才发现公厕居然也要下班：
 
-![](assets/2026-10-27-01-03-02.png)
+<figure markdown>
+![](assets/2026-10-27-01-03-02.png){width=350}
+<figurecaption>
 TMD，谁琢磨的？厕所也要锁门
+</figurecaption>
+</figure>
 
 没办法只能等开锁师傅了。等到快四点钟，他终于来了。和网络上那种可以秒开的门不一样，杨老师这道门格外安全。而且非常旧，锁芯非常涩。开锁师傅干了半天都没干开，我急的满头大汗。
 
-![](assets/2026-10-27-01-02-14.png)
+<figure markdown>
+![](assets/2026-10-27-01-02-14.png){width=350}
+<figurecaption>
 所幸最后还是打开了
+</figurecaption>
+</figure>
 
 终于可以上厕所+洗澡+睡觉了😭
 
@@ -482,8 +830,16 @@ TMD，谁琢磨的？厕所也要锁门
 
 假期的最后一天咱们做了顿饭哦：
 
-![](assets/2026-10-27-01-07-12.png)
+<figure markdown>
+![](assets/2026-10-27-01-07-12.png){width=350}
+<figurecaption>
 西红柿鸡蛋大失败
+</figurecaption>
+</figure>
 
-![](assets/2026-10-27-01-07-44.png)
+<figure markdown>
+![](assets/2026-10-27-01-07-44.png){width=350}
+<figurecaption>
 😋
+</figurecaption>
+</figure>
