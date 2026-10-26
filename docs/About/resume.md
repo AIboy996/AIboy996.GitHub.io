@@ -8,7 +8,7 @@ hide:
 - tags
 ---
 
-# 张杨
+# 张杨的简历
 
 <figure markdown>
 ![](../assets/images/yangzhang.jpg){width=400}
