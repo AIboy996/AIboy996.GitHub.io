@@ -5,7 +5,7 @@ tags:
 include:
 - ai-summary
 ai-summary-config:
-    prompt: "帮我用表格分类归纳一下本页面的菜使用用到的食材。并且再另外写一段话分析一下我的喜好！最后从营养科学以及食品健康等角度给出一些建议。尽量简短，除去表格外500字左右。"
+    prompt: "帮我用表格分类归纳一下本页面的菜使用用到的食材。并且再另外写一段话分析一下我的喜好，再给我推荐几个菜！尽量简短，除去表格外500字左右。"
 ---
 
 # 中华小当家
@@ -20,6 +20,8 @@ ai-summary-config:
 ### [红烧鲫鱼](https://whisper.yangz.site/posts/281)
 ### [番茄牛腩](https://whisper.yangz.site/posts/291)
 ### [萝卜炖猪肉](https://whisper.yangz.site/posts/299)
+### [鲫鱼炖豆腐](https://whisper.yangz.site/posts/315)
+### [五花肉炖干豆角](https://whisper.yangz.site/posts/322)
 
 ## 炒菜
 
@@ -35,6 +37,10 @@ ai-summary-config:
 ### [韭菜黄炒鸡蛋](https://whisper.yangz.site/posts/299)
 ### [油爆虾](https://whisper.yangz.site/posts/300)
 ### [青椒土豆丝](https://whisper.yangz.site/posts/300)
+### [青菜熟牛肉](https://whisper.yangz.site/posts/311)
+### [农家一碗香](https://whisper.yangz.site/posts/311)
+### [口蘑鸡肉炒青椒](https://whisper.yangz.site/posts/315)
+### [西兰花炒虾仁](https://whisper.yangz.site/posts/322)
 
 ## 蒸菜
 
@@ -43,5 +49,6 @@ ai-summary-config:
 ## 煎炸
 
 ### [水煎梅花肉](https://whisper.yangz.site/posts/302)
+### [玉子烧](https://whisper.yangz.site/posts/322)
 
 ## 凉拌
