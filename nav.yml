@@ -394,6 +394,10 @@ nav:
         - Java/design/patterns/behavioral.md
     - 软件测试:
       - Java/test/index.md
+      - 测试方法:
+        - Java/test/blackbox.md
+        - Java/test/whitebox.md
+        - Java/test/experience.md
   - Project:
     - Project/index.md
     - Project/dzd.md
