@@ -122,6 +122,10 @@ extra:
     #   link: https://www.travellings.cn/go.html
     #   name: 开往
 
+# 保护数学环境中的 * 和 _，避免被 Python-Markdown 当成强调语法
+hooks:
+  - hooks/math_protect.py
+
 markdown_extensions:
   - md_in_html
   - attr_list # 给图片后面添加{width="300"}设置大小
