@@ -503,6 +503,7 @@ nav:
       - SomeMath/algebra/field.md
       - SomeMath/algebra/constructible_number.md
     - 概率论:
+      - SomeMath/prob/p_value.md
       - SomeMath/prob/kl_divergence.md
       - SomeMath/prob/ind_det_mnorm.md
       - SomeMath/prob/gaussian.md

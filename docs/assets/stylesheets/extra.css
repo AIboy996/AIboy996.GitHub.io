@@ -162,3 +162,12 @@ div.video-container {
 .md-content figure figurecaption {
     font-style: italic;
 }
+
+/* 宽屏下加宽整体布局：中间正文 + 左右两侧目录占视口宽度的 80%。
+   Material 默认 .md-grid 最大只有 61rem；76.25em 起才显示三栏布局，
+   从这里开始按比例放宽，避免窄屏时内容被压窄。 */
+@media screen and (min-width: 76.25em) {
+    .md-grid {
+        max-width: 80%;
+    }
+}
