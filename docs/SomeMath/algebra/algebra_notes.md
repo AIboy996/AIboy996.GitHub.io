@@ -31,7 +31,7 @@ include:
 
 7. 我们把全空间的向量按照子空间$M$进行分类，取一个代表元素$\alpha$，定义**商空间**：
    $$
-   \alpha+M=\\{\alpha+\beta\mid\beta\in M\\}
+   \alpha+M=\{\alpha+\beta\mid\beta\in M\}
    $$
    （类似于我们把自然数分为奇数和偶数两个类别）
 
@@ -95,7 +95,7 @@ include:
 
 24. 幂零矩阵（$A^m=O$）的特征值都是0，幂零矩阵可以定义一个由$a$生成的**循环不变子空间**：
     $$
-    I(a)=\mathrm{span}\\{a,Aa,\cdots,A^{k-1}a\\}
+    I(a)=\mathrm{span}\{a,Aa,\cdots,A^{k-1}a\}
     $$
     那么在上面这组基底下，该幂零线性变换称为一个Jordan形矩阵。
 

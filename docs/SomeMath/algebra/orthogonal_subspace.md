@@ -51,11 +51,11 @@ $$
 
 - 零空间（null space）, 就是$Ax=0$的解构成的线性空间
     $$
-    N(A)=\left\\{x:Ax=0\right\\}
+    N(A)=\left\{x:Ax=0\right\}
     $$
 - 行空间（column space）, 就是$A$的行向量所有可能的线性组合构成的线性空间
     $$
-    C(A^T)=\left\\{y:y=A^Tc,c\in R^{m\times 1}\right\\}
+    C(A^T)=\left\{y:y=A^Tc,c\in R^{m\times 1}\right\}
     $$
 
 显然对于任意的$x\in N(A), y \in C(A^T)$都有：
@@ -76,7 +76,7 @@ $$y^Tx=c^TAx=0$$
 
 其中对应于特征值$\lambda$的特征子空间是
 $$
-V_\lambda =\left\\{x:Ax=\lambda x\right\\}
+V_\lambda =\left\{x:Ax=\lambda x\right\}
 $$
 
 注意, 这些特征子空间不仅仅包含了属于该特征值的所有特征向量, 还加入了零向量. 否则不成为一个线性空间.
@@ -97,7 +97,7 @@ $$
 !!! definition "直积"
     如果$W$和 $U$,$V$之间存在下述关系
     $$
-    \forall w \in W, \exists! u\in U,v\in V \quad s.t.\quad w=\begin{pmatrix}u\\\\v\end{pmatrix}
+    \forall w \in W, \exists! u\in U,v\in V \quad s.t.\quad w=\begin{pmatrix}u\\v\end{pmatrix}
     $$
     那么我们称$W$是$U$和$V$的直积, 记作$W=U\times V$.
 
@@ -116,7 +116,7 @@ $$
     $$
     上述即为普通和. 直和是特殊的普通和, 可以通过**普通和+分解的唯一性**来定义直和.
 
-    特别的, 在$R^n$中, 如果$U\cap V=\\{0\\}$, 那么$W=U+V$就是直和, 也就是$W$中任意元素的分解是唯一的.
+    特别的, 在$R^n$中, 如果$U\cap V=\{0\}$, 那么$W=U+V$就是直和, 也就是$W$中任意元素的分解是唯一的.
 
 ### 一个例子
 
@@ -137,7 +137,7 @@ $$
 
 上面的正交补定义和下面的定义等价
 $$
-V^\perp=\\{x:x\perp v, \quad \forall v \in V\\}
+V^\perp=\{x:x\perp v, \quad \forall v \in V\}
 $$
 
 $V$的正交补中任何一个向量都和$V$中所有向量正交。
@@ -182,13 +182,13 @@ $$
 这里已知一个**1维**特征子空间$V_{\lambda=6}$内一个向量, 那么整个子空间为其所有的线性伸缩：
 
 $$
-V_{\lambda=6}=\\{x:x=k(1,1,1)^T,k\in R\\}
+V_{\lambda=6}=\{x:x=k(1,1,1)^T,k\in R\}
 $$
 进而根据上述的理论另外一个子空间就是它的正交补.
 
 也就是
 $$
-V_{\lambda=3}=\\{x:k(1,1,1)^Tx=0,\quad \forall k\\}=N\left((1,1,1)^T\right)
+V_{\lambda=3}=\{x:k(1,1,1)^Tx=0,\quad \forall k\}=N\left((1,1,1)^T\right)
 $$
 **根据线性方程组的理论**, 我们可以求得该子空间的一组基为
 $$
@@ -204,7 +204,7 @@ AP=\Lambda P
 $$
 其中$P$**满秩**,
 $$
-P=\begin{pmatrix}1&1&0\\\\1&0&1\\\\1&-1&-1\end{pmatrix}
+P=\begin{pmatrix}1&1&0\\1&0&1\\1&-1&-1\end{pmatrix}
 $$
 
 $$
@@ -213,7 +213,7 @@ $$
 
 那么可以求得
 $$
-A=P^{-1}\Lambda P=\begin{pmatrix}4&1&1\\\\1&4&1\\\\1&1&4\end{pmatrix}
+A=P^{-1}\Lambda P=\begin{pmatrix}4&1&1\\1&4&1\\1&1&4\end{pmatrix}
 $$
 这个题有了前面的铺垫解起来很轻松, 但是背后的实对称矩阵的理论以及线性方程组的理论还是很艰深的, 以后有时间再唠.
 

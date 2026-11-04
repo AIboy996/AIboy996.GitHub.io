@@ -45,7 +45,7 @@ $$
     - 或者说合理的检验函数是：
         $$
         \phi(x) = \begin{cases}
-        1 \quad |T(x)|\gt A\\\\
+        1 \quad |T(x)|\gt A\\
         0 \quad |T(x)|\le A
         \end{cases}
         $$
@@ -56,7 +56,7 @@ $$
         - 二类错误：取伪（原假设是不对的，但是我们没有拒绝它；也称为假阴）
     - 根据检验函数的定义，我们可以计算功效函数：
         $$
-        \beta_\phi (\theta) = \mathrm{P_\theta}\left\\{ \text{用检验}\phi \text{否定了}H_0 \right\\} = E_{\theta}(\phi(X))
+        \beta_\phi (\theta) = \mathrm{P_\theta}\left\{ \text{用检验}\phi \text{否定了}H_0 \right\} = E_{\theta}(\phi(X))
         $$
     - 那么假设检验错误的概率分别为：
         - 一类错误：$\alpha = \beta_\phi(\theta)\quad \theta\in\Theta_0$
@@ -64,7 +64,7 @@ $$
     - 一、二类错误，顾此失彼，无法兼顾。通常我们遵循Neyman-Pearson原则：**在控制犯一类错误概率的情况下，最小化犯二类错误的概率即可。**在这个原则下，犯一类错误的概率是有保障的。换言之，我们倾向于保护原假设，不让它被轻易否定。
     - 我们把犯一类错误的概率上限称为检验的水平：
         $$
-        \alpha^* = \sup \left\\{ \beta_\phi(\theta), \quad \theta \in \Theta_0 \right\\}
+        \alpha^* = \sup \left\{ \beta_\phi(\theta), \quad \theta \in \Theta_0 \right\}
         $$
 4. 对于特定的样本实现，计算统计量和临界值的关系，最终给出假设检验的结论
 
@@ -96,7 +96,7 @@ $$
     设$T(X)$是一个检验统计量。
     
     如果当$T$很大的时候我们会拒绝原假设
-    > 换言之，否定域的形式为：$D(X) = \\{X\mid T(X) \gt A\\}$
+    > 换言之，否定域的形式为：$D(X) = \{X\mid T(X) \gt A\}$
 
     那么，对于给定的样本实现$x$，定义（单边p值）
     $$
@@ -105,7 +105,7 @@ $$
     就是一个满足定义的p-value了。
 
     如果当$|T|$很大的时候我们会拒绝原假设
-    > 换言之，否定域的形式为：$D(X) = \\{X\mid |T(X)| \gt A\\}$
+    > 换言之，否定域的形式为：$D(X) = \{X\mid |T(X)| \gt A\}$
 
     那么，对于给定的样本实现$x$，可以定义（双边p值）
     $$
@@ -179,7 +179,7 @@ $$
 
 定义似然比检验：
 $$
-\phi(x) = \begin{cases}1&\lambda(x) \gt c \\\\ r&\lambda(x)= c \\\\ 0 &\lambda(x) \lt c\end{cases}
+\phi(x) = \begin{cases}1&\lambda(x) \gt c \\ r&\lambda(x)= c \\ 0 &\lambda(x) \lt c\end{cases}
 $$
 
 似然比统计量有一个美好的渐进分布：
@@ -208,8 +208,8 @@ $$
     $$
     \varphi(\boldsymbol{x})=
     \begin{cases} 
-    1,&f(\boldsymbol{x},\theta_1)/f(\boldsymbol{x},\theta_0)>c,\\\\
-    r,&f(\boldsymbol{x},\theta_1)/f(\boldsymbol{x},\theta_0)=c,\\\\
+    1,&f(\boldsymbol{x},\theta_1)/f(\boldsymbol{x},\theta_0)>c,\\
+    r,&f(\boldsymbol{x},\theta_1)/f(\boldsymbol{x},\theta_0)=c,\\
     0,&f(\boldsymbol{x},\theta_1)/f(\boldsymbol{x},\theta_0)<c
     \end{cases}
     $$
@@ -234,7 +234,7 @@ $$H_0:\theta=\theta_0\leftrightarrow H_1:\theta=\theta_1$$
 
 $$
 \begin{aligned}
-&(1) H_0:\theta \le \theta_0\leftrightarrow H_1:\theta\gt \theta_0 \\\\
+&(1) H_0:\theta \le \theta_0\leftrightarrow H_1:\theta\gt \theta_0 \\
 &(2) H_0:\theta \ge \theta_0\leftrightarrow H_1:\theta\lt \theta_0
 \end{aligned}
 $$
@@ -243,9 +243,9 @@ $$
 
 $$
 \begin{aligned}
-&(1) H_0:\theta \le \theta_0\leftrightarrow H_1:\theta\gt \theta_0 \\\\
-&(2) H_0:\theta \ge \theta_0\leftrightarrow H_1:\theta\lt \theta_0 \\\\
-&(3) H_0:\theta = \theta_0\leftrightarrow H_1:\theta\ne \theta_0 \\\\
+&(1) H_0:\theta \le \theta_0\leftrightarrow H_1:\theta\gt \theta_0 \\
+&(2) H_0:\theta \ge \theta_0\leftrightarrow H_1:\theta\lt \theta_0 \\
+&(3) H_0:\theta = \theta_0\leftrightarrow H_1:\theta\ne \theta_0 \\
 &(4) H_0:\theta_1 \le \theta \le \theta_2\leftrightarrow H_1:\theta\lt \theta_1\text{或}\theta\gt \theta_2 
 \end{aligned}
 $$

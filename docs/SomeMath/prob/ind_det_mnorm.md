@@ -27,8 +27,8 @@ $$X\sim N_n(0,I_n)$$
 也即对于可对角化的矩阵$A$，$B$（这里的对角化仅对方阵而言）
 $$
 \begin{aligned}
-AB&=BA\\\\
-&\Leftrightarrow \\\\
+AB&=BA\\
+&\Leftrightarrow \\
 \exists S, \  \ S^{-1}AS&=\Lambda_1, \ \ S^{-1}BS=\Lambda_2
 \end{aligned}
 $$
@@ -43,8 +43,8 @@ $$
 也即对于一个分块对角阵：
 $$
 C=\begin{pmatrix}
-C_{11}&  & \\\\
- & \ddots & \\\\
+C_{11}&  & \\
+ & \ddots & \\
 &  & C_{ss}
 \end{pmatrix}
 $$
@@ -55,33 +55,33 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     $$
     \begin{aligned}
     &\begin{pmatrix}
-    P_{11}^{-1}&  & \\\\
-    & \ddots & \\\\
+    P_{11}^{-1}&  & \\
+    & \ddots & \\
     &  & P_{ss}^{-1}
     \end{pmatrix}
     \begin{pmatrix}
-    C_{11}&  & \\\\
-    & \ddots & \\\\
+    C_{11}&  & \\
+    & \ddots & \\
     &  & C_{ss}
     \end{pmatrix}
     \begin{pmatrix}
-    P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}
-    \end{pmatrix}\\\\
+    \end{pmatrix}\\
     =&\begin{pmatrix}
-    P_{11}^{-1}C_{11}P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}^{-1}C_{11}P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}^{-1}C_{ss}P_{ss}
-    \end{pmatrix}\\\\
+    \end{pmatrix}\\
     =&\Lambda
     \end{aligned}
     $$
     记$Q$矩阵为：
     $$
     Q=\begin{pmatrix}
-    P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}
     \end{pmatrix}
     $$
@@ -90,74 +90,74 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     若$C$ 可对角化，则根据对角化理论，这等价于$C$ 有$n$（不妨设$C\in R^{n\times n}$）个线性无关的特征向量，不妨设为$x_i, \ i=1,2,\cdots,n$，而$C$ 有$s$个分块，不妨设每个分块的维度为$r_j,j=1,2,\cdots,s$，我们对$C$ 的每个特征向量也做同样的分块：
     $$
     x_i=\begin{pmatrix}
-    x_{1}^i\\\\
-    \vdots\\\\
+    x_{1}^i\\
+    \vdots\\
     x_{s}^i
     \end{pmatrix}
     $$
     于是，根据特征向量的定义：
     $$
     \begin{aligned}
-    &Cx_i=\lambda_ix_i\\\\
+    &Cx_i=\lambda_ix_i\\
     &\Rightarrow\begin{pmatrix}
-    C_{11}x_{1}^i\\\\
-    \vdots\\\\
+    C_{11}x_{1}^i\\
+    \vdots\\
     C_{ss}x_{s}^i
     \end{pmatrix}=\begin{pmatrix}
-    \lambda_ix_{1}^i\\\\
-    \vdots\\\\
+    \lambda_ix_{1}^i\\
+    \vdots\\
     \lambda_ix_{s}^i
     \end{pmatrix}
     \end{aligned}
     $$
-    所以当$x_i^j\ne0$时，$x_i^j$ 是$C_{jj}$的特征向量。而$C_{jj}$ 的维度为$r_j$，所以$rank\\{x_i^j\\}\le r_j$，求和得到$\sum_{j=1}^s rank\\{x_i^j\\}\le n$。
+    所以当$x_i^j\ne0$时，$x_i^j$ 是$C_{jj}$的特征向量。而$C_{jj}$ 的维度为$r_j$，所以$rank\{x_i^j\}\le r_j$，求和得到$\sum_{j=1}^s rank\{x_i^j\}\le n$。
 
     另外一方面，$\begin{pmatrix}
-    0\\\\
-    \vdots\\\\
-    x_j^i\\\\
-    \vdots\\\\
+    0\\
+    \vdots\\
+    x_j^i\\
+    \vdots\\
     0
-    \end{pmatrix}$是由$x_j^i$ 增加若干零元的来，于是$rank\\{\begin{pmatrix}
-    0\\\\
-    \vdots\\\\
-    x_j^i\\\\
-    \vdots\\\\
+    \end{pmatrix}$是由$x_j^i$ 增加若干零元的来，于是$rank\{\begin{pmatrix}
+    0\\
+    \vdots\\
+    x_j^i\\
+    \vdots\\
     0
-    \end{pmatrix}\\}=rank\\{x_i^j\\}$，并且$x_i$可由$\begin{pmatrix}
-    0\\\\
-    \vdots\\\\
-    x_j^i\\\\
-    \vdots\\\\
+    \end{pmatrix}\}=rank\{x_i^j\}$，并且$x_i$可由$\begin{pmatrix}
+    0\\
+    \vdots\\
+    x_j^i\\
+    \vdots\\
     0
     \end{pmatrix}$线性组合得到，于是
     $$
     \begin{aligned}
-    &rank\\{\begin{pmatrix}
-    x_{1}^i\\\\
-    \vdots\\\\
+    &rank\{\begin{pmatrix}
+    x_{1}^i\\
+    \vdots\\
     0
-    \end{pmatrix}\\}+\cdots+\\\\
-    &rank\\{\begin{pmatrix}
-    0\\\\
-    \vdots\\\\
-    x_j^i\\\\
-    \vdots\\\\
+    \end{pmatrix}\}+\cdots+\\
+    &rank\{\begin{pmatrix}
+    0\\
+    \vdots\\
+    x_j^i\\
+    \vdots\\
     0
-    \end{pmatrix}\\}+\cdots+\\\\
-    &rank\\{\begin{pmatrix}
-    0\\\\
-    \vdots\\\\
+    \end{pmatrix}\}+\cdots+\\
+    &rank\{\begin{pmatrix}
+    0\\
+    \vdots\\
     x_{s}^i
     \end{pmatrix}
-    \\}\ge rank\\{x_i\\}
+    \}\ge rank\{x_i\}
     \end{aligned}
     $$
     也即是
     $$
-    n\ge \sum_{j=1}^s rank\\{x_i^j\\}\ge rank\\{x_i\\}=n
+    n\ge \sum_{j=1}^s rank\{x_i^j\}\ge rank\{x_i\}=n
     $$
-    此不等式两边都取等号，所以$rank\\{x_i^j\\}=r_j$，每个维度为$r_j$ 的分块，都有$r_j$ 个线性无关的特征向量，所以每个分块都可以对角化，证毕。
+    此不等式两边都取等号，所以$rank\{x_i^j\}=r_j$，每个维度为$r_j$ 的分块，都有$r_j$ 个线性无关的特征向量，所以每个分块都可以对角化，证毕。
 
 ### 引理的证明
 
@@ -165,10 +165,10 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     如果$A$，$B$同时被$S$对角化了，那么显然有
     $$
     \begin{aligned}
-    AB&=S\Lambda_1S^{-1}S\Lambda_2S^{-1}\\\\
-    &=S\Lambda_1\Lambda_2S^{-1}\\\\
-    &=S\Lambda_2\Lambda_1S^{-1}\\\\
-    &=S\Lambda_2S^{-1}S\Lambda_1S^{-1}\\\\
+    AB&=S\Lambda_1S^{-1}S\Lambda_2S^{-1}\\
+    &=S\Lambda_1\Lambda_2S^{-1}\\
+    &=S\Lambda_2\Lambda_1S^{-1}\\
+    &=S\Lambda_2S^{-1}S\Lambda_1S^{-1}\\
     &=BA
     \end{aligned}
     $$
@@ -189,26 +189,26 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     于是：
     $$
     \begin{aligned}
-    C\Lambda_1&=P^{-1}BPP^{-1}AP\\\\
-    &=P^{-1}BAP\\\\
-    &=P^{-1}ABP\\\\
-    &=P^{-1}APP^{-1}BP\\\\
-    &=\Lambda_1C\\\\
+    C\Lambda_1&=P^{-1}BPP^{-1}AP\\
+    &=P^{-1}BAP\\
+    &=P^{-1}ABP\\
+    &=P^{-1}APP^{-1}BP\\
+    &=\Lambda_1C\\
     \end{aligned}
     $$
     也即$C$ 和 $\Lambda_1$可换，我们做如下分块：
     $$
     C=\begin{pmatrix}
-    C_{11}& \cdots & C_{1s}\\\\
-    \vdots & \ddots & \vdots\\\\
+    C_{11}& \cdots & C_{1s}\\
+    \vdots & \ddots & \vdots\\
     C_{s1}& \cdots & C_{ss}
     \end{pmatrix}
     $$
 
     $$
     \Lambda_1=\begin{pmatrix}
-    \lambda_1I_{r_1}&  & \\\\
-    & \ddots & \\\\
+    \lambda_1I_{r_1}&  & \\
+    & \ddots & \\
     &  & \lambda_sI_{r_s}
     \end{pmatrix}
     $$
@@ -217,24 +217,24 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     $$
     \begin{aligned}
     &\begin{pmatrix}
-    C_{11}& \cdots & C_{1s}\\\\
-    \vdots & \ddots & \vdots\\\\
+    C_{11}& \cdots & C_{1s}\\
+    \vdots & \ddots & \vdots\\
     C_{s1}& \cdots & C_{ss}
     \end{pmatrix}
     \begin{pmatrix}
-    \lambda_1I_{r_1}&  & \\\\
-    & \ddots & \\\\
+    \lambda_1I_{r_1}&  & \\
+    & \ddots & \\
     &  & \lambda_sI_{r_s}
-    \end{pmatrix}\\\\
-    &=\\\\
+    \end{pmatrix}\\
+    &=\\
     &\begin{pmatrix}
-    \lambda_1I_{r_1}&  & \\\\
-    & \ddots & \\\\
+    \lambda_1I_{r_1}&  & \\
+    & \ddots & \\
     &  & \lambda_sI_{r_s}
     \end{pmatrix}
     \begin{pmatrix}
-    C_{11}& \cdots & C_{1s}\\\\
-    \vdots & \ddots & \vdots\\\\
+    C_{11}& \cdots & C_{1s}\\
+    \vdots & \ddots & \vdots\\
     C_{s1}& \cdots & C_{ss}
     \end{pmatrix}
     \end{aligned}
@@ -248,8 +248,8 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     所以$P^{-1}BP=C$为分块对角矩阵：
     $$
     P^{-1}BP=\begin{pmatrix}
-    C_{11}&  & \\\\
-    & \ddots & \\\\
+    C_{11}&  & \\
+    & \ddots & \\
     &  & C_{ss}
     \end{pmatrix}
     $$
@@ -257,56 +257,56 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     $$
     \begin{aligned}
     &\begin{pmatrix}
-    P_{11}^{-1}&  & \\\\
-    & \ddots & \\\\
+    P_{11}^{-1}&  & \\
+    & \ddots & \\
     &  & P_{ss}^{-1}
     \end{pmatrix}
     \begin{pmatrix}
-    C_{11}&  & \\\\
-    & \ddots & \\\\
+    C_{11}&  & \\
+    & \ddots & \\
     &  & C_{ss}
     \end{pmatrix}
     \begin{pmatrix}
-    P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}
-    \end{pmatrix}\\\\
+    \end{pmatrix}\\
     =&\begin{pmatrix}
-    P_{11}^{-1}C_{11}P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}^{-1}C_{11}P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}^{-1}C_{ss}P_{ss}
-    \end{pmatrix}\\\\
+    \end{pmatrix}\\
     =&\begin{pmatrix}
-    \Lambda_{11}&  & \\\\
-    & \ddots & \\\\
+    \Lambda_{11}&  & \\
+    & \ddots & \\
     &  & \Lambda_{ss}
-    \end{pmatrix}\\\\
+    \end{pmatrix}\\
     =&\Lambda_2
     \end{aligned}
     $$
     记$Q$矩阵为：
     $$
     Q=\begin{pmatrix}
-    P_{11}&  & \\\\
-    & \ddots & \\\\
+    P_{11}&  & \\
+    & \ddots & \\
     &  & P_{ss}
     \end{pmatrix}
     $$
     于是：
     $$
     \begin{aligned}
-    &Q^{-1}CQ\\\\
-    =&Q^{-1}P^{-1}BPQ\\\\
-    =&(PQ)^{-1}B(PQ)\\\\
+    &Q^{-1}CQ\\
+    =&Q^{-1}P^{-1}BPQ\\
+    =&(PQ)^{-1}B(PQ)\\
     =&\Lambda_2
     \end{aligned}
     $$
     而Q作用于$\Lambda_1$上不改变其对角阵形式：
     $$
     \begin{aligned}
-    &Q^{-1}\Lambda_1Q\\\\
-    =&Q^{-1}P^{-1}APQ\\\\
-    =&(PQ)^{-1}A(PQ)\\\\
+    &Q^{-1}\Lambda_1Q\\
+    =&Q^{-1}P^{-1}APQ\\
+    =&(PQ)^{-1}A(PQ)\\
     =&\Lambda_1
     \end{aligned}
     $$
@@ -333,7 +333,7 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
     带入$AB=BA$得到：
     $$
     \begin{aligned}
-    &P'\Lambda_1PB = BP'\Lambda_1P \\\\
+    &P'\Lambda_1PB = BP'\Lambda_1P \\
     \iff & \Lambda_1PBP' = PBP'\Lambda_1
     \end{aligned}
     $$
@@ -356,18 +356,18 @@ $C$ 可对角化的充分必要条件是每个分块$C_{ii}$都可以对角化�
 $$(AB)'=B'A'=BA=0$$
 进而$AB=BA=0$, 所以它们是可换的. 应用引理可得:
 $$
-\text{存在正交矩阵}S\\\\
-S^{-1}AS=\Lambda_1=diag(\lambda_1^{(1)},\lambda_2^{(1)},\cdots,\lambda_n^{(1)})\\\\
+\text{存在正交矩阵}S\\
+S^{-1}AS=\Lambda_1=diag(\lambda_1^{(1)},\lambda_2^{(1)},\cdots,\lambda_n^{(1)})\\
 S^{-1}BS=\Lambda_2=diag(\lambda_1^{(2)},\lambda_2^{(2)},\cdots,\lambda_n^{(2)})
 $$
 所以:
 $$
 \begin{aligned}
-&AB\\\\
-=&S\Lambda_1S^{-1}S\Lambda_2S^{-1}\\\\
-=&S\Lambda_1\Lambda_2S^{-1}\\\\
-=&0\\\\
-\Rightarrow\\\\
+&AB\\
+=&S\Lambda_1S^{-1}S\Lambda_2S^{-1}\\
+=&S\Lambda_1\Lambda_2S^{-1}\\
+=&0\\
+\Rightarrow\\
 &\Lambda_1\Lambda_2=0
 \end{aligned}
 $$
@@ -378,18 +378,18 @@ $$Y=S'X\sim N_n(0,S'I_nS)=N_n(0,I_n)$$
 则$Y$的各个分量相互独立, $X=SY$进而:
 $$
 \begin{aligned}
-X'AX&=(SY)'A(SY)\\\\
-&=Y'(S'AS)Y\\\\
-&=Y'\Lambda_1Y\\\\
+X'AX&=(SY)'A(SY)\\
+&=Y'(S'AS)Y\\
+&=Y'\Lambda_1Y\\
 &=\sum_{i=1}^n\lambda_i^{(1)}Y_i^2
 \end{aligned}
 $$
 与
 $$
 \begin{aligned}
-X'BX&=(SY)'B(SY)\\\\
-&=Y'(S'BS)Y\\\\
-&=Y'\Lambda_2Y\\\\
+X'BX&=(SY)'B(SY)\\
+&=Y'(S'BS)Y\\
+&=Y'\Lambda_2Y\\
 &=\sum_{i=1}^n\lambda_i^{(2)}Y_i^2
 \end{aligned}
 $$

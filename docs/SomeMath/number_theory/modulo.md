@@ -117,11 +117,11 @@ $$
 实际上
 $$
 \begin{aligned}
-&3^4 \equiv 6 \pmod {25}\\\\
-&3^8 \equiv 6^2 \equiv 11 \pmod {25}\\\\
-&3^{12} \equiv 6\cdot 11 \equiv 16 \pmod {25}\\\\
-&3^{16} \equiv 11^2 \equiv 21 \pmod {25}\\\\
-&3^{20} \equiv 11\cdot 16 \equiv 1 \pmod {25}\\\\
+&3^4 \equiv 6 \pmod {25}\\
+&3^8 \equiv 6^2 \equiv 11 \pmod {25}\\
+&3^{12} \equiv 6\cdot 11 \equiv 16 \pmod {25}\\
+&3^{16} \equiv 11^2 \equiv 21 \pmod {25}\\
+&3^{20} \equiv 11\cdot 16 \equiv 1 \pmod {25}\\
 \end{aligned}
 $$
 于是我们知道：
@@ -136,13 +136,13 @@ $$
 !!! definition "同余类"
     定义集合：
     $$
-    r \bmod m = \\{n: n\equiv r \pmod m \quad \forall n\in \mathbb{Z}\\}
+    r \bmod m = \{n: n\equiv r \pmod m \quad \forall n\in \mathbb{Z}\}
     $$
     这个集合就称为$r$所属的模$m$同余类（或称剩余系）
 
     显然有等价定义：
     $$
-    r \bmod m = \\{n: n = mk+r \quad \forall k\in \mathbb{Z}\\}
+    r \bmod m = \{n: n = mk+r \quad \forall k\in \mathbb{Z}\}
     $$
 
     很多时候我们也用记号：
@@ -166,7 +166,7 @@ $$
 $$
 这些**同余类的集合**记作：
 $$
-\mathbb{Z}/m\mathbb{Z} = \mathbb{Z}_m = \\{j\bmod m : 0\le j \le m-1\\}
+\mathbb{Z}/m\mathbb{Z} = \mathbb{Z}_m = \{j\bmod m : 0\le j \le m-1\}
 $$
 (这是集合的集合！)
 
@@ -388,7 +388,7 @@ $$
 1,2,\cdots, j,\cdots, m
 $$
 按照和$m$的最大公约数分类，每一类对应一个正因数$d$。
-> 例如$\\{1,2,3,4,5,6\\}$分为四类$\\{1,5\\},\\{2,4\\},\\{3\\},\\{6\\},$
+> 例如$\{1,2,3,4,5,6\}$分为四类$\{1,5\},\{2,4\},\{3\},\{6\},$
 
 如果
 $$
@@ -505,7 +505,7 @@ $$
     $$
     那么
     $$
-    (-1)^xg_0^{y}\quad x\in \\{0,1\\}, 0\le y \lt 2^{l-2}
+    (-1)^xg_0^{y}\quad x\in \{0,1\}, 0\le y \lt 2^{l-2}
     $$
     都是模$2^l$的即约剩余系。
 

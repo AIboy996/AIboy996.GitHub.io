@@ -12,10 +12,10 @@ include:
 例如
 $$
 \begin{aligned}
-&F(x)\\\\
-=&\int f(x)\mathrm{d}x\\\\
-=&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d} x\\\\
-=&\int\left[\frac{1}{2(x+1)}-\frac{1}{(x+1)^{2}}+\frac{1}{2(x-1)} \mathrm{d}x\right]\\\\
+&F(x)\\
+=&\int f(x)\mathrm{d}x\\
+=&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d} x\\
+=&\int\left[\frac{1}{2(x+1)}-\frac{1}{(x+1)^{2}}+\frac{1}{2(x-1)} \mathrm{d}x\right]\\
 =&\frac{1}{2} \ln \left|x^{2}-1\right|+\frac{1}{x+1}+C
 \end{aligned}
 $$
@@ -61,9 +61,9 @@ $$
 那么
 $$
 \begin{aligned}
-&Q(x)=(x+1)^2(x-1)\\\\
+&Q(x)=(x+1)^2(x-1)\\
 \Rightarrow
-&Q_2(x)=(x+1)(x-1)\\\\
+&Q_2(x)=(x+1)(x-1)\\
 \Rightarrow
 &Q_1(x)=x+1
 \end{aligned}
@@ -71,7 +71,7 @@ $$
 设
 $$
 \begin{aligned}
-&P_1(x)=a\\\\
+&P_1(x)=a\\
 &P_2(x)=bx+c
 \end{aligned}
 $$
@@ -84,9 +84,9 @@ $$
 也就是
 $$
 \begin{aligned}
-&\frac{x^{2}+1}{(x+1)^{2}(x-1)}\\\\
-=&\frac{-a}{(x+1)^2}+\frac{bx+c}{(x+1)(x-1))}\\\\
-=&\frac{-a(x-1)+(bx+c)(x+1)}{(x+1)^2(x-1)}\\\\
+&\frac{x^{2}+1}{(x+1)^{2}(x-1)}\\
+=&\frac{-a}{(x+1)^2}+\frac{bx+c}{(x+1)(x-1))}\\
+=&\frac{-a(x-1)+(bx+c)(x+1)}{(x+1)^2(x-1)}\\
 \end{aligned}
 $$
 得到
@@ -100,7 +100,7 @@ $$
 回代得到
 $$
 \begin{aligned}
-&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d}\\\\
+&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d}\\
 =&\frac{1}{x+1}+\int \frac{x}{(x+1)(x-1)}\mathrm{d}x
 \end{aligned}
 $$
@@ -119,8 +119,8 @@ $$
 根据上一篇笔记介绍的[部分分式分解定理](./rational_func_int.md#_5), 任一有理函数都可以在实数域内分解为如下形式:
 $$
 \begin{aligned}
-&\frac{P(x)}{Q(x)}\\\\
-=&\sum_{i=1}^{s}\sum_{k=1}^{d_i}\frac{A_{ik}}{(x-a_i)^k}+\sum_{j=1}^{t}\sum_{k=1}^{e_j}\frac{B_{jk}x+C_{jk}}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^k}\\\\
+&\frac{P(x)}{Q(x)}\\
+=&\sum_{i=1}^{s}\sum_{k=1}^{d_i}\frac{A_{ik}}{(x-a_i)^k}+\sum_{j=1}^{t}\sum_{k=1}^{e_j}\frac{B_{jk}x+C_{jk}}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^k}\\
 \end{aligned}
 $$
 上面这个东西做不定积分, 结果有下面几类
@@ -165,10 +165,10 @@ $$
 
 $$
 \begin{aligned}
-&I_k\\\\
-=&\int \frac{1}{(x^2+c)^k}\mathrm{d}x\\\\
-=&\frac{x}{(x^2+c)^k}-\int \frac{-2kx^2}{(x^2+c)^{k+1}}\mathrm{d}x\\\\
-=&\frac{x}{(x^2+c)^k}+2k\int \frac{(x^2+c)-c}{(x^2+c)^{k+1}}\mathrm{d}x\\\\
+&I_k\\
+=&\int \frac{1}{(x^2+c)^k}\mathrm{d}x\\
+=&\frac{x}{(x^2+c)^k}-\int \frac{-2kx^2}{(x^2+c)^{k+1}}\mathrm{d}x\\
+=&\frac{x}{(x^2+c)^k}+2k\int \frac{(x^2+c)-c}{(x^2+c)^{k+1}}\mathrm{d}x\\
 =&\frac{x}{(x^2+c)^k}+2kI_k-2kcI_{k+1}
 \end{aligned}
 $$
@@ -183,11 +183,11 @@ $$
 于是$k\ge 2$时
 $$
 \begin{aligned}
-&I_k\\\\
-=&\frac{x}{2(k-1)c(x^2+c)^{k-1}}\\\\
-&+\frac{2k-3}{2(k-1)c}\frac{x}{2(k-2)c(x^2+c)^{k-2}}\\\\
-&\cdots\\\\
-&+\frac{(2k-1)!!}{(2k)!!c^{k-1}}I_1\\\\
+&I_k\\
+=&\frac{x}{2(k-1)c(x^2+c)^{k-1}}\\
+&+\frac{2k-3}{2(k-1)c}\frac{x}{2(k-2)c(x^2+c)^{k-2}}\\
+&\cdots\\
+&+\frac{(2k-1)!!}{(2k)!!c^{k-1}}I_1\\
 =&\sum_{n=1}^{k-1}\frac{c_nx}{(x^2+c)^n}+c_kI_1
 \end{aligned}
 $$
@@ -196,8 +196,8 @@ $$
 现在我们把所有的超越函数集中起来
 $$
 \begin{aligned}
-&\int \sum_i\frac{A_{ik}}{x-a_i}\mathrm{d}x+\\\\
-&\int\sum_j\frac{B_{jk}x+C_{jk}}{x^2-2\alpha_j x+\alpha_j^2+\beta_j^2}\mathrm{d}x+\\\\
+&\int \sum_i\frac{A_{ik}}{x-a_i}\mathrm{d}x+\\
+&\int\sum_j\frac{B_{jk}x+C_{jk}}{x^2-2\alpha_j x+\alpha_j^2+\beta_j^2}\mathrm{d}x+\\
 &\int\sum_k\frac{c_kC_{jk}}{x^2-2\alpha_j x+\alpha_j^2+\beta_j^2}\mathrm{d}x
 \end{aligned}
 $$
@@ -206,8 +206,8 @@ $$
 同样的我们把所有有理函数集中起来
 $$
 \begin{aligned}
-&\int \sum_{k\gt1}\sum_i\frac{A_{ik}}{(x-a_i)^k}\mathrm{d}x+\\\\
-&\int \sum_{k\gt1}\sum_j\frac{B_{jk}x}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^k}\mathrm{d}x\\\\
+&\int \sum_{k\gt1}\sum_i\frac{A_{ik}}{(x-a_i)^k}\mathrm{d}x+\\
+&\int \sum_{k\gt1}\sum_j\frac{B_{jk}x}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^k}\mathrm{d}x\\
 &\sum_{k\gt1}\sum_{n=1}^{k-1}\frac{c_nC_{jk}x}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^n}
 \end{aligned}
 $$
@@ -268,7 +268,7 @@ $$
 用一个例题来说明
 $$
 \begin{aligned}
-&P(x)=2x^6+3x^5+6x^4+6x^3+10x^2+3x+2\\\\
+&P(x)=2x^6+3x^5+6x^4+6x^3+10x^2+3x+2\\
 &Q(x)=x^7+3x^6+5x^5+7x^4+7x^3+5x^2+3x+1
 \end{aligned}
 $$
@@ -306,14 +306,14 @@ True
 我们得到了很漂亮的结果(我估摸着也是卓里奇凑出来的)
 $$
 \begin{aligned}
-Q_1(x)=&(Q(x),Q'(x))\\\\
+Q_1(x)=&(Q(x),Q'(x))\\
 =&x^4+2x^3+2x^2+2x+1
 \end{aligned}
 $$
 和
 $$
 \begin{aligned}
-Q_2(x)=&Q(x)/Q_1(x)\\\\
+Q_2(x)=&Q(x)/Q_1(x)\\
 =&x^3+x^2+x+1
 \end{aligned}
 $$
@@ -333,9 +333,9 @@ $$
 也就是
 $$
 \begin{aligned}
-&\int \frac{P(x)}{Q(x)}\mathrm{d}x\\\\
-=&\frac{3x^3+x^2+x-1}{2x^4+4x^3+4x^2+4x+2}\\\\
-&+\ln|x+1|+\frac{1}{2}\ln(x^2+1)\\\\
+&\int \frac{P(x)}{Q(x)}\mathrm{d}x\\
+=&\frac{3x^3+x^2+x-1}{2x^4+4x^3+4x^2+4x+2}\\
+&+\ln|x+1|+\frac{1}{2}\ln(x^2+1)\\
 &-\frac{1}{2}\arctan x +C
 \end{aligned}
 $$

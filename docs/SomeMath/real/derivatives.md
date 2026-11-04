@@ -53,8 +53,8 @@ $$
 例如
 $$
 G(x,y) = \begin{pmatrix}
-x^2&2&1\\\\
-2&y^3&\cos x\\\\
+x^2&2&1\\
+2&y^3&\cos x\\
 1&\cos x&xy
 \end{pmatrix}
 $$

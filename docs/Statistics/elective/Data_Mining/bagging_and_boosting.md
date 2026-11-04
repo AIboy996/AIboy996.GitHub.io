@@ -123,8 +123,8 @@ Boost方法非常多样，最具代表性的两类就是：
     为了处理长尾数据以及异常值，可以使用Huber Loss：
     $$
     L(y,F) = \begin{cases}
-    0.5(y-F)^2&|y-F|\le \delta\\\\
-    \delta(|y-F|-\delta / 2)&|y-F|\gt \delta\\\\
+    0.5(y-F)^2&|y-F|\le \delta\\
+    \delta(|y-F|-\delta / 2)&|y-F|\gt \delta\\
     \end{cases}
     $$
 
@@ -142,7 +142,7 @@ XGBoost（eXtreme Gradient Boosting）是2016年陈天奇等人提出的针对�
 我这里叙述一个简易版本：
 
 ??? note "XGBoost推导"
-    设数据集$(x_i, y_i) \in (R^d, R)\quad \forall i\in \\{1,2,\cdots,n\\}$
+    设数据集$(x_i, y_i) \in (R^d, R)\quad \forall i\in \{1,2,\cdots,n\}$
 
     对于一个树模型$f(\cdot)$，可以做如下的reformulation：
 
@@ -150,7 +150,7 @@ XGBoost（eXtreme Gradient Boosting）是2016年陈天奇等人提出的针对�
     f_t(x) = w_{q(x)}
     $$
 
-    其中$q: R^d\to \\{1,2,3,\cdots, T\\}$，把输入的特征映射到某一个叶子结点，$w_j$就是每个叶子结点的最终预测。
+    其中$q: R^d\to \{1,2,3,\cdots, T\}$，把输入的特征映射到某一个叶子结点，$w_j$就是每个叶子结点的最终预测。
 
     在这个记号下引入$l_p$正则化：
 
@@ -177,7 +177,7 @@ XGBoost（eXtreme Gradient Boosting）是2016年陈天奇等人提出的针对�
     记：
     $$
     \begin{aligned}
-    &g_i = \frac{\partial l(u, v)}{\partial v}\mid_{v=v_0}\\\\
+    &g_i = \frac{\partial l(u, v)}{\partial v}\mid_{v=v_0}\\
     &h_i = \frac{\partial^2 l(u, v)}{\partial v^2}\mid_{v=v_0}
     \end{aligned}
     $$
@@ -185,10 +185,10 @@ XGBoost（eXtreme Gradient Boosting）是2016年陈天奇等人提出的针对�
     代入$u=y_i, v=\hat{y_i}^{(t)}, v_0=\hat{y_i}^{(t-1)}$，得到：
     $$
     \begin{aligned}
-    &\mathrm{obj_t} \\\\
-    \approx& \sum_{i=1}^n \left [l(y_i, \hat{y_i}^{(t-1)}) +g_i (\hat{y_i}^{(t)} - \hat{y_i}^{(t-1)}) +\frac{1}{2} h_i (\hat{y_i}^{(t)} - \hat{y_i}^{(t-1)})^2 \right]  + \Omega_p(f_t)\\\\
-    \approx& \sum_{i=1}^n \left [g_i f_t(x_i) +\frac{1}{2}h_i f_t^2(x_i) \right]  + \Omega_p(f_t) + \mathrm{const}\\\\
-    \approx& \sum_{i=1}^n \left [g_iw_{q(x_i)}  +\frac{1}{2}h_i w_{q(x_i)}^2 \right]+ \Omega_p(f_t) + \mathrm{const}\\\\
+    &\mathrm{obj_t} \\
+    \approx& \sum_{i=1}^n \left [l(y_i, \hat{y_i}^{(t-1)}) +g_i (\hat{y_i}^{(t)} - \hat{y_i}^{(t-1)}) +\frac{1}{2} h_i (\hat{y_i}^{(t)} - \hat{y_i}^{(t-1)})^2 \right]  + \Omega_p(f_t)\\
+    \approx& \sum_{i=1}^n \left [g_i f_t(x_i) +\frac{1}{2}h_i f_t^2(x_i) \right]  + \Omega_p(f_t) + \mathrm{const}\\
+    \approx& \sum_{i=1}^n \left [g_iw_{q(x_i)}  +\frac{1}{2}h_i w_{q(x_i)}^2 \right]+ \Omega_p(f_t) + \mathrm{const}\\
     \approx& \sum_{j=1}^T \left [(\sum_{i: q(x_i) = j} g_i) w_j  + \frac{1}{2}(\sum_{i: q(x_i) = j} h_i) w_j^2 \right] + \gamma T + \frac{1}{2} \lambda \sum_{j=1}^T \mathcal{L}_p (w_j) + \mathrm{const}
     \end{aligned}
     $$
@@ -196,7 +196,7 @@ XGBoost（eXtreme Gradient Boosting）是2016年陈天奇等人提出的针对�
     记：
     $$
     \begin{aligned}
-    &G_j = (\sum_{i: q(x_i) = j} g_i) \\\\
+    &G_j = (\sum_{i: q(x_i) = j} g_i) \\
     &H_j = (\sum_{i: q(x_i) = j} h_i)
     \end{aligned}
     $$

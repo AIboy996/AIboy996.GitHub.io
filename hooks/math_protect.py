@@ -1,13 +1,13 @@
-"""Protect $...$ / $$...$$ math from Python-Markdown's inline processing.
+r"""Protect $...$ / $$...$$ math from Python-Markdown's inline processing.
 
 The site renders math with MathJax directly (no pymdownx.arithmatex).  This
 hook registers a tiny Markdown extension that stashes math spans before
 Markdown's emphasis/escape processors see them.  MathJax still receives the
 original delimiters, so nothing about the rendering pipeline changes.
 
-Existing source conventions keep working: inside math, backslash escapes are
-applied the same way Python-Markdown would apply them, so ``\\\\`` still turns
-into a TeX line break and ``\\{`` still turns into a literal brace.
+Math content is passed through verbatim.  Write standard TeX inside math:
+``\\`` for a line break, ``\{`` / ``\}`` for literal braces, ``*`` for an
+asterisk.
 """
 import re
 import xml.etree.ElementTree as etree
@@ -29,22 +29,12 @@ RE_DISPLAY_BLOCK = r'(?s)^\$\$(.*?)\$\$\s*$'
 _MATH_PAGE = False
 
 
-def _unescape(text, escaped_chars):
-    """Apply the same backslash escapes Python-Markdown would apply."""
-    return re.sub(
-        r'\\(.)',
-        lambda m: m.group(1) if m.group(1) in escaped_chars else m.group(0),
-        text,
-    )
-
-
 class MathInline(InlineProcessor):
     def handleMatch(self, m, data):
         if not _MATH_PAGE:
             return None, m.start(0), m.end(0)
-        math = _unescape(m.group(0), self.md.ESCAPED_CHARS)
         # AtomicString tells Markdown not to run emphasis/link/etc. on it.
-        return util.AtomicString(math), m.start(0), m.end(0)
+        return util.AtomicString(m.group(0)), m.start(0), m.end(0)
 
 
 class MathBlock(BlockProcessor):

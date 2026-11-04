@@ -75,7 +75,7 @@ print(f"模拟结果: {np.mean(sims):.6f}(\u00B1{np.std(sims):.4f})")
 $x(t)$和$y(t)$都是离散状态。状态空间分别为：
 
 $$
-X=\\{0.2,0.4,0.6,0.8,1.0\\},\quad Y=\\{10,20\\}
+X=\{0.2,0.4,0.6,0.8,1.0\},\quad Y=\{10,20\}
 $$
 
 ### 暴击率的稳态分布
@@ -83,11 +83,11 @@ $$
 $x(t)$的状态转移很简单，我们可以直接写出它的状态转移矩阵：
 $$
 P = \begin{bmatrix}
-&0.2 & 0.8 & 0.0 & 0.0 & 0.0\\\\
-&0.4 & 0.0 & 0.6 & 0.0 & 0.0\\\\
-&0.6 & 0.0 & 0.0 & 0.4 & 0.0\\\\
-&0.8 & 0.0 & 0.0 & 0.0 & 0.2\\\\
-&1.0 & 0.0 & 0.0 & 0.0 & 0.0\\\\
+&0.2 & 0.8 & 0.0 & 0.0 & 0.0\\
+&0.4 & 0.0 & 0.6 & 0.0 & 0.0\\
+&0.6 & 0.0 & 0.0 & 0.4 & 0.0\\
+&0.8 & 0.0 & 0.0 & 0.0 & 0.2\\
+&1.0 & 0.0 & 0.0 & 0.0 & 0.0\\
 \end{bmatrix}
 $$
 
@@ -106,11 +106,11 @@ $$
 其中
 $$
 x_0 = \begin{bmatrix}
-1\\\\
-0\\\\
-0\\\\
-0\\\\
-0\\\\
+1\\
+0\\
+0\\
+0\\
+0\\
 \end{bmatrix}
 $$
 代表初始状态为状态0.
@@ -148,7 +148,7 @@ print("稳态分布:", x)
 > 当然，也不一定非要用矩阵幂次算，稳态显然是下属方程的解：
 > $$
 > \begin{aligned}
-> &Px=x\\\\
+> &Px=x\\
 > &1^Tx = 1
 > \end{aligned}
 > $$
@@ -158,11 +158,11 @@ print("稳态分布:", x)
 
 $$
 \pi = \begin{bmatrix}
-0.39834289\\\\
-0.31867431\\\\
-0.19120459\\\\
-0.07648184\\\\
-0.01529637\\\\
+0.39834289\\
+0.31867431\\
+0.19120459\\
+0.07648184\\
+0.01529637\\
 \end{bmatrix}
 $$
 
@@ -172,20 +172,20 @@ $$
 
 $$
 \begin{aligned}
-&\mathbb{E}(y_\infty)\\\\
-= &\mathbb{E}\left(\mathbb{E}(y_\infty\mid x_\infty)\right)\\\\
-= &\sum_{i=0}^4\mathbb{E}(y_\infty\mid x_\infty=X[i])\cdot \mathbb{P}(x_\infty = X[i])\\\\
-= &\sum_{i=0}^4(20X[i]+10(1-X[i]))\cdot \pi[i]\\\\
-= &\left(20\cdot\begin{bmatrix}.2&.4&.6&.8&1\end{bmatrix}+10\cdot\begin{bmatrix}.8&.6&.4&.2.&0\end{bmatrix}\right) \cdot \pi\\\\
+&\mathbb{E}(y_\infty)\\
+= &\mathbb{E}\left(\mathbb{E}(y_\infty\mid x_\infty)\right)\\
+= &\sum_{i=0}^4\mathbb{E}(y_\infty\mid x_\infty=X[i])\cdot \mathbb{P}(x_\infty = X[i])\\
+= &\sum_{i=0}^4(20X[i]+10(1-X[i]))\cdot \pi[i]\\
+= &\left(20\cdot\begin{bmatrix}.2&.4&.6&.8&1\end{bmatrix}+10\cdot\begin{bmatrix}.8&.6&.4&.2.&0\end{bmatrix}\right) \cdot \pi\\
 = &\begin{bmatrix}
 12&14&16&18&20
 \end{bmatrix}\begin{bmatrix}
-0.39834289\\\\
-0.31867431\\\\
-0.19120459\\\\
-0.07648184\\\\
-0.01529637\\\\
-\end{bmatrix}\\\\
+0.39834289\\
+0.31867431\\
+0.19120459\\
+0.07648184\\
+0.01529637\\
+\end{bmatrix}\\
 = &13.983429
 \end{aligned}
 $$

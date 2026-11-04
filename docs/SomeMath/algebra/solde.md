@@ -20,9 +20,9 @@ $$
 或者**分量形式**：
 $$
 \begin{cases}
-y_1'=a_{11}y_1+a_{12}y_2+\cdots a_{1n}y_n+b_1(x)\\\\
-y_2'=a_{21}y_1+a_{22}y_2+\cdots a_{2n}y_n+b_2(x)\\\\
-\quad\vdots\\\\
+y_1'=a_{11}y_1+a_{12}y_2+\cdots a_{1n}y_n+b_1(x)\\
+y_2'=a_{21}y_1+a_{22}y_2+\cdots a_{2n}y_n+b_2(x)\\
+\quad\vdots\\
 y_n'=a_{n1}y_1+a_{n2}y_2+\cdots a_{nn}y_n+b_n(x)
 \end{cases}
 $$
@@ -40,7 +40,7 @@ $$
 不难发现, 如若$f^\star$是一个特解, 那么对任何一个解$g$
 $$
 \begin{aligned}
-g'&=ag+b(x)\\\\
+g'&=ag+b(x)\\
 {f^\star}'&=af^\star+b(x)
 \end{aligned}
 $$
@@ -73,7 +73,7 @@ $$
 最后我们解得
 $$
 \begin{aligned}
-&y'=ay+b(x)\\\\
+&y'=ay+b(x)\\
 \implies &y=e^{ax}C+y^\star
 \end{aligned}
 $$
@@ -83,7 +83,7 @@ $$
 如此一来, 我们忍不住遐想$n>1$的情形, 是否有同样的形式呢?
 $$
 \begin{aligned}
-&\frac{\partial \mathbf{y}}{\partial x}=A\mathbf{y}+\mathbf{b}(x)\\\\
+&\frac{\partial \mathbf{y}}{\partial x}=A\mathbf{y}+\mathbf{b}(x)\\
 \overset{?}{\implies} &\mathbf{y}=e^{Ax}C+\mathbf{y}^\star
 \end{aligned}
 $$
@@ -126,10 +126,10 @@ $$
 那么我们逐项求导即得
 $$
 \begin{aligned}
-&\frac{\partial\mathbf{\Phi}(x)}{\partial x}\\\\
-=&\frac{\partial e^{Ax}}{\partial x}\\\\
-=&\sum_{n=1}^{\infty}\frac{nx^{n-1}A^n}{n!}\\\\
-=&A\sum_{n=1}^{\infty}\frac{x^{n-1}A^{n-1}}{(n-1)!}\\\\
+&\frac{\partial\mathbf{\Phi}(x)}{\partial x}\\
+=&\frac{\partial e^{Ax}}{\partial x}\\
+=&\sum_{n=1}^{\infty}\frac{nx^{n-1}A^n}{n!}\\
+=&A\sum_{n=1}^{\infty}\frac{x^{n-1}A^{n-1}}{(n-1)!}\\
 =&Ae^{Ax}\\
 \end{aligned}
 $$
@@ -158,9 +158,9 @@ $$
 $$
 e^{Ax}=Pe^{xD}P^{-1}
 $$
-其中$xD=\mathrm{diag}\\{x\lambda_1,\cdots,x\lambda_n\\}$, 很容易得到
+其中$xD=\mathrm{diag}\{x\lambda_1,\cdots,x\lambda_n\}$, 很容易得到
 $$
-e^{xD}=\sum_{n\ge0}\frac{(xD)^n}{n!}=\mathrm{diag}\\{e^{x\lambda_1},\cdots,e^{x\lambda_n}\\}
+e^{xD}=\sum_{n\ge0}\frac{(xD)^n}{n!}=\mathrm{diag}\{e^{x\lambda_1},\cdots,e^{x\lambda_n}\}
 $$
 从而可以求得$e^{Ax}$.
 
@@ -180,7 +180,7 @@ $$
 !!! question
     一个机器需要添加润滑油才能工作, 设添加一次润滑油后能正常工作的时长$X\sim \exp(\mu)$, 停止工作后重新添加润滑油耗时$Y\sim \exp(\lambda)$. 已知机器在$t=0$时刻工作, 问机器在$t=10$时正常工作的概率.
 
-这是一个**生灭过程**. 状态空间为$\\{0,1\\}$, 其中$0$表示不工作, $1$表示工作. 我们的目标是求转移概率$P_{1,1}(10)$
+这是一个**生灭过程**. 状态空间为$\{0,1\}$, 其中$0$表示不工作, $1$表示工作. 我们的目标是求转移概率$P_{1,1}(10)$
 
 根据题意可知以下参数
 
@@ -197,43 +197,43 @@ $$
 列出微分方程组
 $$
 \begin{aligned}
-&P_{1,1}'(t)=\mu\left[P_{0,1}(t)-P_{1,1}(t)\right]\\\\
+&P_{1,1}'(t)=\mu\left[P_{0,1}(t)-P_{1,1}(t)\right]\\
 &P_{0,1}'(t)=\lambda\left[P_{1,1}(t)-P_{0,1}(t)\right]
 \end{aligned}
 $$
 矩阵形式为
 $$
 \frac{\partial}{\partial t}\begin{bmatrix}
-P_{1,1}(t)\\\\
+P_{1,1}(t)\\
 P_{0,1}(t)
 \end{bmatrix}=
 \begin{bmatrix}
--\mu & \mu\\\\
+-\mu & \mu\\
 \lambda &-\lambda
 \end{bmatrix}
 \begin{bmatrix}
-P_{1,1}(t)\\\\
+P_{1,1}(t)\\
 P_{0,1}(t)
 \end{bmatrix}
 $$
 这是一个常系数齐次线性微分方程组, 通解为
 $$
 \begin{bmatrix}
-P_{1,1}(t)\\\\
+P_{1,1}(t)\\
 P_{0,1}(t)
 \end{bmatrix}=e^{At}C
 $$
 下面我们考察$e^{At}$
 $$
 A=\begin{bmatrix}
--\mu & \mu\\\\
+-\mu & \mu\\
 \lambda &-\lambda
 \end{bmatrix}
 $$
 特征向量为
 $$
 \mathbf{\gamma_1}=\begin{bmatrix}
-1\\\\
+1\\
 1
 \end{bmatrix}
 $$
@@ -242,7 +242,7 @@ $$
 和
 $$
 \mathbf{\gamma_2}=\begin{bmatrix}
--\mu\\\\
+-\mu\\
 \lambda
 \end{bmatrix}
 $$
@@ -252,28 +252,28 @@ $A\mathbf{\gamma_2}=-(\lambda+\mu)\mathbf{\gamma_2}$
 根据上述两个不相等的特征值以及他们对应的特征向量, 通解为
 $$
 \begin{bmatrix}
-P_{1,1}(t)\\\\
+P_{1,1}(t)\\
 P_{0,1}(t)
 \end{bmatrix}=\begin{bmatrix}
-1&-\mu e^{-(\lambda+\mu)t}\\\\
+1&-\mu e^{-(\lambda+\mu)t}\\
 1&\lambda e^{-(\lambda+\mu)t}
 \end{bmatrix}C
 $$
 根据边界条件
 $$
 \begin{bmatrix}
-P_{1,1}(0)\\\\
+P_{1,1}(0)\\
 P_{0,1}(0)
 \end{bmatrix}=
 \begin{bmatrix}
-1\\\\
+1\\
 0
 \end{bmatrix}
 $$
 解得
 $$
 C=\begin{bmatrix}
-\frac{\lambda}{\lambda+\mu}\\\\
+\frac{\lambda}{\lambda+\mu}\\
 \frac{-1}{\lambda+\mu}
 \end{bmatrix}
 $$
@@ -281,18 +281,18 @@ $$
 $$
 \begin{aligned}
 \begin{bmatrix}
-P_{1,1}(t)\\\\
+P_{1,1}(t)\\
 P_{0,1}(t)
 \end{bmatrix}
 =&\begin{bmatrix}
-1&-\mu e^{-(\lambda+\mu)t}\\\\
+1&-\mu e^{-(\lambda+\mu)t}\\
 1&\lambda e^{-(\lambda+\mu)t}
 \end{bmatrix}\begin{bmatrix}
-\frac{\lambda}{\lambda+\mu}\\\\
+\frac{\lambda}{\lambda+\mu}\\
 \frac{-1}{\lambda+\mu}
-\end{bmatrix}\\\\
+\end{bmatrix}\\
 =&\begin{bmatrix}
-\frac{\lambda+\mu e^{-(\lambda+\mu)t}}{\lambda+\mu}\\\\
+\frac{\lambda+\mu e^{-(\lambda+\mu)t}}{\lambda+\mu}\\
 \frac{\lambda-\lambda e^{-(\lambda+\mu)t}}{\lambda+\mu}
 \end{bmatrix}
 \end{aligned}

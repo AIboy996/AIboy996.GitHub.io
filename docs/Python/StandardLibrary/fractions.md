@@ -462,7 +462,7 @@ $A$显然大于1, 故$A=\frac{1+\sqrt{5}}{2}=a$.
 
 可以看到, 实际上我们是在用一个数列$A_k$来逼近$a$
 $$
-\left\\{1,2,\frac{3}{2},\frac{5}{3},\frac{8}{5},\frac{13}{8},\frac{21}{13}\cdots\right\\}
+\left\{1,2,\frac{3}{2},\frac{5}{3},\frac{8}{5},\frac{13}{8},\frac{21}{13}\cdots\right\}
 $$
 逼近过程如图
 
@@ -496,9 +496,9 @@ $$
 并且根据定义有
 $$
 \begin{aligned}
-&r_{k}\\\\
-=&[a_k;a_{k+1},a_{k+2},\cdots]\\\\
-=&a_k+\frac{1}{a_{k+1}+\frac{1}{a_{k+2}\cdots}}\\\\
+&r_{k}\\
+=&[a_k;a_{k+1},a_{k+2},\cdots]\\
+=&a_k+\frac{1}{a_{k+1}+\frac{1}{a_{k+2}\cdots}}\\
 =&a_k+\frac{1}{r_{k+1}}> 1
 \end{aligned}
 $$
@@ -547,7 +547,7 @@ a=\frac{1}{a-1}
 $$
 所以$r_k\equiv a$, 从而$a_k\equiv 1$. 我们这里同时也给出黄金分割数的各阶渐进分数:
 $$
-\left\\{\frac{0}{1},\frac{1}{0},\frac{1}{1},\frac{2}{1},\frac{3}{2},\frac{5}{3},\frac{8}{5}\cdots\right\\}
+\left\{\frac{0}{1},\frac{1}{0},\frac{1}{1},\frac{2}{1},\frac{3}{2},\frac{5}{3},\frac{8}{5}\cdots\right\}
 $$
 不难发现, 分子分母各成一个斐波拉契数列, 实在是美轮美奂.
 
@@ -608,9 +608,9 @@ $$0\lt d\le b, \quad \frac{a}{b}\ne \frac{c}{d}\Rightarrow \left|d\alpha - c\rig
 我们举一个例子来说明第一类最佳逼近和第二类最佳逼近的区别与联系, 考虑自然对数底数$e$的最佳逼近:
 $$
 \begin{aligned}
-&e \approx 2.718281828459045\\\\
-&\mathrm{Type 1}\quad\left\\{\frac{3}{1}, \frac{5}{2},\frac{8}{3}, \frac{11}{4}, \frac{49}{18}, \frac{68}{25}, \frac{87}{32},\frac{106}{39}\cdots\right\\}\\\\
-&\mathrm{Type 2}\quad\left\\{\frac{3}{1}, \frac{8}{3}, \frac{11}{4}, \frac{19}{7}, \frac{87}{32}, \frac{106}{39}\cdots\right\\}
+&e \approx 2.718281828459045\\
+&\mathrm{Type 1}\quad\left\{\frac{3}{1}, \frac{5}{2},\frac{8}{3}, \frac{11}{4}, \frac{49}{18}, \frac{68}{25}, \frac{87}{32},\frac{106}{39}\cdots\right\}\\
+&\mathrm{Type 2}\quad\left\{\frac{3}{1}, \frac{8}{3}, \frac{11}{4}, \frac{19}{7}, \frac{87}{32}, \frac{106}{39}\cdots\right\}
 \end{aligned}
 $$
 显然可见, 第二类最佳逼近更加"稀疏", 第二类最佳逼近必然是第一类最佳逼近, 但是第一类最佳逼近不必是第二类最佳逼近.

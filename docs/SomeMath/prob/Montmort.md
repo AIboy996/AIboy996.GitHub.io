@@ -42,8 +42,8 @@ include:
         类似地，我们可以得到
         $$
         \begin{aligned}
-        &P(A_iA_j) = \frac{(n-2)!}{n!} \quad i\ne j \\\\
-        &P(A_iA_jA_k) = \frac{(n-3)!}{n!} \quad i,j,k \text{互不相等}\\\\
+        &P(A_iA_j) = \frac{(n-2)!}{n!} \quad i\ne j \\
+        &P(A_iA_jA_k) = \frac{(n-3)!}{n!} \quad i,j,k \text{互不相等}\\
         &P(\cap_{i=1}^n A_i) = \frac{1}{n!}
         \end{aligned}
         $$
@@ -55,9 +55,9 @@ include:
         根据加法公式
         $$
         \begin{aligned}
-        &P(\cup_{i=1}^n A_i) \\\\
-        = &\sum_{i} P(A_i) - \sum_{i\ne j} P(A_iA_j) +\cdots + (-1)^{n-1} P(\cap_{i=1}^n A_i)\\\\
-        = &\sum_{k=1}^n {n \choose k} (-1)^{k-1}\frac{(n-k)!}{n!}\\\\
+        &P(\cup_{i=1}^n A_i) \\
+        = &\sum_{i} P(A_i) - \sum_{i\ne j} P(A_iA_j) +\cdots + (-1)^{n-1} P(\cap_{i=1}^n A_i)\\
+        = &\sum_{k=1}^n {n \choose k} (-1)^{k-1}\frac{(n-k)!}{n!}\\
         = &\sum_{k=1}^n \frac{(-1)^{k-1}}{k!}
         \end{aligned}
         $$
@@ -85,9 +85,9 @@ include:
         所以
         $$
         \begin{aligned}
-        &P_k(n) \\\\
-        = &\frac{{n\choose k}(n-k)!P_0(n-k)}{n!} \\\\
-        = &\frac{{n\choose k}(n-k)!\sum_{i=0}^{n-k} \frac{(-1)^{i}}{i!}}{n!} \\\\
+        &P_k(n) \\
+        = &\frac{{n\choose k}(n-k)!P_0(n-k)}{n!} \\
+        = &\frac{{n\choose k}(n-k)!\sum_{i=0}^{n-k} \frac{(-1)^{i}}{i!}}{n!} \\
         = &\frac{1}{k!}\sum_{i=0}^{n-k}\frac{(-1)^i}{i!}
         \end{aligned}
         $$
@@ -143,9 +143,9 @@ include:
         $$
         $$
         \begin{aligned}
-        &\mathbb{D}(N(n)) \\\\
-        = &\sum_{i=1}^n \mathbb{D}(I_i) + 2\sum_{i\ne j} \mathrm{Cov}(I_i,I_j) \\\\
-        = & n\frac{n-1}{n^2} + 2{n \choose 2}\frac{1}{n^2(n-1)} \\\\
+        &\mathbb{D}(N(n)) \\
+        = &\sum_{i=1}^n \mathbb{D}(I_i) + 2\sum_{i\ne j} \mathrm{Cov}(I_i,I_j) \\
+        = & n\frac{n-1}{n^2} + 2{n \choose 2}\frac{1}{n^2(n-1)} \\
         = & \frac{n-1}{n} + \frac{1}{n} = 1
         \end{aligned}
         $$

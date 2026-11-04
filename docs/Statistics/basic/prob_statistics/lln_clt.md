@@ -126,17 +126,17 @@ $$
         考虑这样的事件：
 
         $$
-        A_k = \left\\{ |x_k - a_k| \gt \tau B_n \right\\}
+        A_k = \left\{ |x_k - a_k| \gt \tau B_n \right\}
         $$
 
         各个加项**均匀地小**描述为：
 
         $$
         \begin{aligned}
-        &P(\max_{1\le k\le n} |x_k-a_k|\gt \tau B_n) \\\\
-        = &P(\cup_{k=1}^n A_k )\\\\
-        \le & \sum_{k=1}^n P(A_k )\\\\
-        = &\sum_{k=1}^n \int_{|x-a_k| \gt \tau B_n} \mathrm{d}F_k(x)\\\\
+        &P(\max_{1\le k\le n} |x_k-a_k|\gt \tau B_n) \\
+        = &P(\cup_{k=1}^n A_k )\\
+        \le & \sum_{k=1}^n P(A_k )\\
+        = &\sum_{k=1}^n \int_{|x-a_k| \gt \tau B_n} \mathrm{d}F_k(x)\\
         \le &\frac{1}{\tau^2B_n^2}\sum_{k=1}^n \int_{|x-a_k| \gt \tau B_n} (x-a_k)^2 \mathrm{d}F_k(x)
         \end{aligned}
         $$

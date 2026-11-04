@@ -68,10 +68,10 @@ ID3 算法只能处理离散型属性；并且容易产生过拟合 (Overfitting
 
 $$
 \begin{aligned}
-&\frac{1}{|S|^2}\sum_i \sum_j \frac{1}{2}(y_i-y_j)^2 \\\\
-= &\frac{1}{|S|^2}\sum_i \sum_j \frac{1}{2} (y_i^2+y_j^2-2y_iy_j)\\\\
-=&\frac{1}{|S|^2}\sum_i \frac{1}{2}(|S|y_i^2+\sum_j y_j^2 - 2y_i \sum_j y_j) \\\\
-= &\frac{1}{|S|^2}\frac{1}{2}(|S|\sum_i y_i^2+|S|\sum_j y_j^2 - 2\sum_i y_i \sum_j y_j) \\\\
+&\frac{1}{|S|^2}\sum_i \sum_j \frac{1}{2}(y_i-y_j)^2 \\
+= &\frac{1}{|S|^2}\sum_i \sum_j \frac{1}{2} (y_i^2+y_j^2-2y_iy_j)\\
+=&\frac{1}{|S|^2}\sum_i \frac{1}{2}(|S|y_i^2+\sum_j y_j^2 - 2y_i \sum_j y_j) \\
+= &\frac{1}{|S|^2}\frac{1}{2}(|S|\sum_i y_i^2+|S|\sum_j y_j^2 - 2\sum_i y_i \sum_j y_j) \\
 = &\frac{1}{|S|}(\sum_i y_i^2-\left[\sum_i y_i^2\right]^2)
 \end{aligned}
 $$

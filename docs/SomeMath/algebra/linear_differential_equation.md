@@ -75,9 +75,9 @@ $$
 那么递推关系（1）的通解为：
 $$
 \begin{aligned}
-a_n=&\left(a_{1,0}+a_{1,1}n+\cdots+a_{1,m_1-1}m^{m_1-1}\right)r_1^n \\\\
-&+\left(a_{2,0}+a_{2,1}n+\cdots+a_{2,m_2-1}m^{m_2-1}\right)r_2^n \\\\
-&+\cdots+\left(a_{t,0}+a_{t,1}n+\cdots+a_{t,m_t-1}m^{m_t-1}\right)r_t^n &&(9) \\\\
+a_n=&\left(a_{1,0}+a_{1,1}n+\cdots+a_{1,m_1-1}m^{m_1-1}\right)r_1^n \\
+&+\left(a_{2,0}+a_{2,1}n+\cdots+a_{2,m_2-1}m^{m_2-1}\right)r_2^n \\
+&+\cdots+\left(a_{t,0}+a_{t,1}n+\cdots+a_{t,m_t-1}m^{m_t-1}\right)r_t^n &&(9) \\
 \end{aligned}
 $$
 其中$a_{i,j}$是常数，$1\leq i\leq t$ 且 $0\leq j\leq m_i-1$。
@@ -87,7 +87,7 @@ $$
 斐波拉契数列：$0,1,1,2,3,5,8,\cdots$
 $$
 \begin{aligned}
-&f_{n+2}= f_n+f_{n+1},\\\\
+&f_{n+2}= f_n+f_{n+1},\\
 &\text{When} \ \ f_0=0, f_1=1
 \end{aligned}
 $$
@@ -102,14 +102,14 @@ $$
 其中$a,b$ 由方程组：
 $$
 \begin{cases}
-f_1=a\left(\frac{1+\sqrt{5}}{2}\right)+b\left(\frac{1-\sqrt{5}}{2}\right)=1\\\\
+f_1=a\left(\frac{1+\sqrt{5}}{2}\right)+b\left(\frac{1-\sqrt{5}}{2}\right)=1\\
 f_0=a+b=0
 \end{cases}
 $$
 解出，得到：
 $$
 \begin{cases}
-a=\frac{1}{\sqrt5}\\\\
+a=\frac{1}{\sqrt5}\\
 b=-\frac{1}{\sqrt5}
 \end{cases}
 $$
@@ -125,20 +125,20 @@ $$
 考虑另外一个数列：$0,1,-1,-2,-1,1,2,1,-1,-2,\cdots$
 $$
 \begin{aligned}
-&a_{n+2} = a_{n+1}-a_n\\\\
+&a_{n+2} = a_{n+1}-a_n\\
 &\text{When} \ \ a_0=0,a_1=1
 \end{aligned}
 $$
 可以观察到这是一个周期数列
 $$
 a_n=\begin{cases}
-&0&\text{if  n=0}\\\\
-&1&\text{if  n=1+6k}, \ k\in N\\\\
-&-1&\text{if  n=2+6k}, \ k\in N\\\\
-&-2&\text{if  n=3+6k}, \ k\in N\\\\
-&-1&\text{if  n=4+6k}, \ k\in N\\\\
-&1&\text{if  n=5+6k}, \ k\in N\\\\
-&2&\text{if  n=6+6k}, \ k\in N\\\\
+&0&\text{if  n=0}\\
+&1&\text{if  n=1+6k}, \ k\in N\\
+&-1&\text{if  n=2+6k}, \ k\in N\\
+&-2&\text{if  n=3+6k}, \ k\in N\\
+&-1&\text{if  n=4+6k}, \ k\in N\\
+&1&\text{if  n=5+6k}, \ k\in N\\
+&2&\text{if  n=6+6k}, \ k\in N\\
 \end{cases}
 $$
 用上述理论解之：
@@ -150,15 +150,15 @@ $$
 则$a_n$ 的通解为：
 $$
 \begin{aligned}
-a_n &= \alpha\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)^n+\beta\left(\cos\frac{5\pi}{3}+i\sin\frac{5\pi}{3}\right)^n\\\\
-&=\alpha\left(\cos\frac{n\pi}{3}+i\sin\frac{n\pi}{3}\right)+\beta\left(\cos\frac{5n\pi}{3}+i\sin\frac{5n\pi}{3}\right)\\\\
+a_n &= \alpha\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)^n+\beta\left(\cos\frac{5\pi}{3}+i\sin\frac{5\pi}{3}\right)^n\\
+&=\alpha\left(\cos\frac{n\pi}{3}+i\sin\frac{n\pi}{3}\right)+\beta\left(\cos\frac{5n\pi}{3}+i\sin\frac{5n\pi}{3}\right)\\
 &=(\alpha+\beta)\cos\frac{n\pi}{3}+(\alpha-\beta)i\sin\frac{n\pi}{3}
 \end{aligned}
 $$
 其中$\alpha+\beta$由方程组：
 $$
 \begin{align}
-&a_1=\alpha\cos\frac{\pi}{3}+\beta\cos\frac{5\pi}{3}=1\\\\
+&a_1=\alpha\cos\frac{\pi}{3}+\beta\cos\frac{5\pi}{3}=1\\
 &\alpha-\beta=0（a_n的虚部为0）
 \end{align}
 $$

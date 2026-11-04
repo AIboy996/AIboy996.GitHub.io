@@ -50,11 +50,11 @@ $$
 所以：
 $$
 \begin{aligned}
-&P_k(A) \\\\
-=& \frac{k}{n} \sum_{i=k+1}^n \frac{1}{i-1} \\\\
-=& \frac{k}{n} \sum_{i=k}^{n-1} \frac{1}{i} \\\\
-\approx& \frac{k}{n} \int_k^{n-1} \frac{1}{x}dx \\\\
-=& \frac{k}{n}\ln(\frac{n-1}{k})\\\\
+&P_k(A) \\
+=& \frac{k}{n} \sum_{i=k+1}^n \frac{1}{i-1} \\
+=& \frac{k}{n} \sum_{i=k}^{n-1} \frac{1}{i} \\
+\approx& \frac{k}{n} \int_k^{n-1} \frac{1}{x}dx \\
+=& \frac{k}{n}\ln(\frac{n-1}{k})\\
 \approx& \frac{k}{n}\ln(\frac{n}{k})
 \end{aligned}
 $$

@@ -11,7 +11,7 @@ include:
 题目似乎是2022复旦432的考研题
 
 !!! question
-    设二维随机向量 $\left[\begin{array}{l}X \\\\ Y\end{array}\right]$ 经过一个正交旋转 $\left(\begin{array}{cc}\cos \rho & \sin \rho \\\\ -\sin \rho & \cos \rho\end{array}\right)\left[\begin{array}{l}X \\\\ Y\end{array}\right]$ 后与 $\left[\begin{array}{l}X \\\\ Y\end{array}\right]$ 同分 布, 其中 $\rho$ 为任意的, 且 $P(X=0, Y=0)=0$.
+    设二维随机向量 $\left[\begin{array}{l}X \\ Y\end{array}\right]$ 经过一个正交旋转 $\left(\begin{array}{cc}\cos \rho & \sin \rho \\ -\sin \rho & \cos \rho\end{array}\right)\left[\begin{array}{l}X \\ Y\end{array}\right]$ 后与 $\left[\begin{array}{l}X \\ Y\end{array}\right]$ 同分 布, 其中 $\rho$ 为任意的, 且 $P(X=0, Y=0)=0$.
 
     1. 求 $P(0<Y<X)$
     2. 求 $\frac{Y}{X}$ 的分布
@@ -32,7 +32,7 @@ $$
 
 那么所求概率为下述区域（注意不含顶点和边界）上的概率累计
 $$
-D_1=\left\\{(x,y):0<y<x\right\\}
+D_1=\left\{(x,y):0<y<x\right\}
 $$
 
 也即
@@ -42,28 +42,28 @@ $$
 
 那么根据旋转不变的特性，如果旋转$\pi/4$就有
 $$
-\left[\begin{array}{l}U \\\\ V\end{array}\right]=
+\left[\begin{array}{l}U \\ V\end{array}\right]=
 \begin{pmatrix}
-\sqrt2\over2& \sqrt2\over2\\\\
+\sqrt2\over2& \sqrt2\over2\\
 -\sqrt2\over2& \sqrt2\over2
-\end{pmatrix}\left[\begin{array}{l}X \\\\ Y\end{array}\right]=\left[\begin{array}{l}\frac{\sqrt2}{2}(X+Y) \\\\ \frac{\sqrt2}{2}(-X+Y)\end{array}\right]
+\end{pmatrix}\left[\begin{array}{l}X \\ Y\end{array}\right]=\left[\begin{array}{l}\frac{\sqrt2}{2}(X+Y) \\ \frac{\sqrt2}{2}(-X+Y)\end{array}\right]
 $$
 和
 $$
-\left[\begin{array}{l}X \\\\ Y\end{array}\right]
+\left[\begin{array}{l}X \\ Y\end{array}\right]
 $$
 同分布，那么
 $$
 \begin{aligned}
-&P(0<Y<X)\\\\
-=&P(0<V<U)\\\\
-=&P(0<-X+Y<X+Y)\\\\
+&P(0<Y<X)\\
+=&P(0<V<U)\\
+=&P(0<-X+Y<X+Y)\\
 =&P(0<X<Y)
 \end{aligned}
 $$
 也就是下图的蓝色区域和红色区域概率相等
 $$
-D_2=\\{(x,y):0<x<y\\}
+D_2=\{(x,y):0<x<y\}
 $$
 
 $$
@@ -85,9 +85,9 @@ $$
 否则，我们总可以通过旋转很小的角度（$\epsilon$），构造足够多的线（$N$个）使得
 $$
 \begin{aligned}
-&\sum_{i=1}^N \int_{L_i}dF\\\\
-=&\int_{\cup L_i}dF-(N-1)P(X=Y=0)\\\\
-=&\int_{\cup L_i}dF\\\\
+&\sum_{i=1}^N \int_{L_i}dF\\
+=&\int_{\cup L_i}dF-(N-1)P(X=Y=0)\\
+=&\int_{\cup L_i}dF\\
 =&N\delta>1
 \end{aligned}
 $$
@@ -136,9 +136,9 @@ $$
 
     $$
     \begin{aligned}
-    &P(\frac{Y}{X} \le t)\\\\
-    = &P(Y \le tX\mid X\gt 0)+P(Y \ge tX\mid X\lt 0) \\\\
-    = &\frac{2\arctan t + \pi}{2\pi}\\\\
+    &P(\frac{Y}{X} \le t)\\
+    = &P(Y \le tX\mid X\gt 0)+P(Y \ge tX\mid X\lt 0) \\
+    = &\frac{2\arctan t + \pi}{2\pi}\\
     = &\frac{\arctan t}{\pi} + \frac{1}{2}
     \end{aligned}
     $$

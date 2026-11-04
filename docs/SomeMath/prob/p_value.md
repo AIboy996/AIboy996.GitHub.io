@@ -138,7 +138,7 @@ print(f"双边   p = {p_two:.4f}")
 
     对连续且对称的检验统计量，正确的关系是
     $$
-    p_{\text{双边}}=2\min\\{p_{\text{左单边}},p_{\text{右单边}}\\}.
+    p_{\text{双边}}=2\min\{p_{\text{左单边}},p_{\text{右单边}}\}.
     $$
     只有观测方向与单边备择假设一致时，才有“双边 = 2 × 单边”。如果检验统计量的分布不对称，这个关系还要再改。
 
@@ -184,10 +184,10 @@ $$
 $$
 \begin{aligned}
 \mathbb{P}(p\le u)
-&=\mathbb{P}(1-F_0(T)\le u)\\\\
-&=\mathbb{P}(F_0(T)\ge1-u)\\\\
-&=\mathbb{P}\left(T\ge F_0^{-1}(1-u)\right)\\\\
-&=1-F_0\left(F_0^{-1}(1-u)\right)\\\\
+&=\mathbb{P}(1-F_0(T)\le u)\\
+&=\mathbb{P}(F_0(T)\ge1-u)\\
+&=\mathbb{P}\left(T\ge F_0^{-1}(1-u)\right)\\
+&=1-F_0\left(F_0^{-1}(1-u)\right)\\
 &=u.
 \end{aligned}
 $$
@@ -198,16 +198,16 @@ $$
 
 双边检验也一样。令 $U=F_0(T)$，双边p值为
 $$
-p=2\min\\{F_0(T),1-F_0(T)\\}=2\min\\{U,1-U\\}.
+p=2\min\{F_0(T),1-F_0(T)\}=2\min\{U,1-U\}.
 $$
 对 $0\le u\le1$：
 $$
 \begin{aligned}
 \mathbb{P}(p\le u)
-&=\mathbb{P}\left(2\min\\{U,1-U\\}\le u\right)\\\\
-&=\mathbb{P}\left(\min\\{U,1-U\\}\le\frac u2\right)\\\\
-&=\mathbb{P}\left(U\le\frac u2\right)+\mathbb{P}\left(U\ge1-\frac u2\right)\\\\
-&=\frac u2+\frac u2\\\\
+&=\mathbb{P}\left(2\min\{U,1-U\}\le u\right)\\
+&=\mathbb{P}\left(\min\{U,1-U\}\le\frac u2\right)\\
+&=\mathbb{P}\left(U\le\frac u2\right)+\mathbb{P}\left(U\ge1-\frac u2\right)\\
+&=\frac u2+\frac u2\\
 &=u.
 \end{aligned}
 $$

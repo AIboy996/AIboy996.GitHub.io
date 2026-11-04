@@ -12,25 +12,25 @@ include:
 $$
 \color{blue}
 \begin{bmatrix}
-\cos\theta &-\sin\theta\\\\
+\cos\theta &-\sin\theta\\
 \sin\theta &\cos\theta
 \end{bmatrix}
 $$
 $(x,y)$旋转后的坐标$(x',y')$可以用矩阵乘法来计算：
 $$
 \begin{bmatrix}
-x'\\\\y'
+x'\\y'
 \end{bmatrix}=
 {\color{blue}
 \begin{bmatrix}
-\cos\theta &-\sin\theta\\\\
+\cos\theta &-\sin\theta\\
 \sin\theta &\cos\theta
 \end{bmatrix}}
 \begin{bmatrix}
-x\\\\y
+x\\y
 \end{bmatrix}=
 \begin{bmatrix}
-x\cos\theta-y\sin\theta\\\\
+x\cos\theta-y\sin\theta\\
 x\sin\theta+y\cos\theta
 \end{bmatrix}
 $$
@@ -49,7 +49,7 @@ $$
 也就是说
 $$
 \begin{aligned}
-\rho \cos\alpha = x\\\\
+\rho \cos\alpha = x\\
 \rho \sin\alpha = y
 \end{aligned}
 $$
@@ -62,7 +62,7 @@ $$
 那么新的坐标就是：
 $$
 \begin{aligned}
-\rho \cos(\alpha+\theta) = x'\\\\
+\rho \cos(\alpha+\theta) = x'\\
 \rho \sin(\alpha+\theta) = y'
 \end{aligned}
 $$
@@ -70,7 +70,7 @@ $$
 $$
 \color{blue}
 \begin{aligned}
-x' = x\cos\theta-y\sin\theta\\\\
+x' = x\cos\theta-y\sin\theta\\
 y' = x\sin\theta+y\cos\theta
 \end{aligned}
 $$
@@ -84,7 +84,7 @@ $$
 然后做乘法：
 $$
 \begin{aligned}
-&(x+y\mathrm{i}){\color{blue}(\cos\theta + \mathrm{i} \sin\theta)} \\\\
+&(x+y\mathrm{i}){\color{blue}(\cos\theta + \mathrm{i} \sin\theta)} \\
 = &(x\cos\theta-y\sin\theta) + \mathrm{i} (x\sin\theta+y\cos\theta)
 \end{aligned}
 $$
@@ -99,7 +99,7 @@ $$
 众所不那么周知，复数和特殊的矩阵可以建立一个一一对应的关系：
 $$
 a+b\mathrm{i} \to \begin{bmatrix}
-a &-b\\\\
+a &-b\\
 b &a
 \end{bmatrix}
 $$
@@ -110,10 +110,10 @@ $$
 对应
 $$
 \color{blue}\exp(\begin{bmatrix}
-0 &-\theta\\\\
+0 &-\theta\\
 \theta &0
 \end{bmatrix}) = \begin{bmatrix}
-\cos\theta &-\sin\theta\\\\
+\cos\theta &-\sin\theta\\
 \sin\theta &\cos\theta
 \end{bmatrix}
 $$
@@ -126,14 +126,14 @@ $$
 对于
 $$
 M=\begin{bmatrix}
-0 &-\theta\\\\
+0 &-\theta\\
 \theta &0
 \end{bmatrix}
 $$
 这个矩阵，我们知道
 $$
 M^2 = \begin{bmatrix}
--\theta^2 &0\\\\
+-\theta^2 &0\\
 0 &-\theta^2
 \end{bmatrix} = -\theta^2 I
 $$
@@ -144,14 +144,14 @@ $$
 也就是：
 $$
 \exp(M) = \sum_{k=0}^\infty \frac{(-\theta^2)^k}{(2k)!} I + \sum_{l=0}^\infty \frac{(-\theta^2)^l}{(2l+1)!} \begin{bmatrix}
-0 &-\theta\\\\
+0 &-\theta\\
 \theta &0
 \end{bmatrix}
 $$
 也就是:
 $$
 \exp(M) = \sum_{k=0}^\infty \frac{(-\theta^2)^k}{(2k)!} I + \sum_{l=0}^\infty \frac{(-1)^l\theta^{2l+1}}{(2l+1)!} \begin{bmatrix}
-0 &-1\\\\
+0 &-1\\
 1 &0
 \end{bmatrix}
 $$
@@ -166,13 +166,13 @@ $$
 最终得到
 $$
 \exp(M) = \cos\theta \begin{bmatrix}
-1 &0\\\\
+1 &0\\
 0 &1
 \end{bmatrix}+ \sin\theta \begin{bmatrix}
-0 &-1\\\\
+0 &-1\\
 1 &0
 \end{bmatrix} = \begin{bmatrix}
-\cos\theta &-\sin\theta\\\\
+\cos\theta &-\sin\theta\\
 \sin\theta &\cos\theta
 \end{bmatrix}
 $$

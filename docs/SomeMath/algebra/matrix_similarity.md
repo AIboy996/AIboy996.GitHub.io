@@ -56,7 +56,7 @@ $$
 一般的：
 $$
 A(\lambda)=\begin{bmatrix}
-a_{11}(\lambda) &a_{12}(\lambda) \\\\
+a_{11}(\lambda) &a_{12}(\lambda) \\
 a_{21}(\lambda) &a_{22}(\lambda)
 \end{bmatrix}
 $$
@@ -67,7 +67,7 @@ $$
 例如：
 $$
 \begin{bmatrix}
-\lambda-1 &2\\\\
+\lambda-1 &2\\
 0&\lambda-3
 \end{bmatrix}
 $$
@@ -100,22 +100,22 @@ $$
 例如：
 $$
 A(\lambda)=\left(\begin{array}{ccc}
-\lambda & -1 & 1 \\\\
--3 & \lambda+2 & 0 \\\\
+\lambda & -1 & 1 \\
+-3 & \lambda+2 & 0 \\
 1 & -1 & \lambda+1
 \end{array}\right)
 $$
 可以通过一系列的初等变换化为相抵标准形：
 $$
 \left(\begin{array}{ccc}
-1 & 0 & 0 \\\\
-0 & 1 & 0 \\\\
+1 & 0 & 0 \\
+0 & 1 & 0 \\
 0 & 0 & (\lambda-1)\left(\lambda^2+4 \lambda+2\right)
 \end{array}\right)
 $$
 那么
 $$
-\left\\{1,1,(\lambda-1)(\lambda^2+4\lambda+2)\right\\}
+\left\{1,1,(\lambda-1)(\lambda^2+4\lambda+2)\right\}
 $$
 就称为矩阵$A(\lambda)$的法式。
 
@@ -126,7 +126,7 @@ $$
 - 行列式因子
     - 设 $A(\lambda) n$ 阶 $\lambda$-矩阵， $k$ 是不超过 $n$ 的正整数。如果 $A(\lambda)$ 的所有 $k$ 阶子式的最大公因子不 等于零，则称这个多项式为 $A(\lambda)$ 的 $k$ 阶行列式，记作 $D_k(\lambda)$
 - 不变因子
-    - 设 $n$ 阶 $\lambda$-矩阵 $A(\lambda)$ 的非零行列式因子为 $D_1(\lambda), D_2(\lambda), \ldots, D_m(\lambda)$ ，则必有 $D_i(\lambda) \mid D_{i+1}(\lambda)(i=1, \ldots, r-1)$ ，记 $d_i(\lambda)=D_i(\lambda) / D_{i-1}(\lambda)(i=1, \ldots, m)$ ，则 多项式 $\left\\{d_1(\lambda), d_2(\lambda), \ldots, d_m(\lambda)\right\\}$ 称为 $A(\lambda)$ 的不变因子。
+    - 设 $n$ 阶 $\lambda$-矩阵 $A(\lambda)$ 的非零行列式因子为 $D_1(\lambda), D_2(\lambda), \ldots, D_m(\lambda)$ ，则必有 $D_i(\lambda) \mid D_{i+1}(\lambda)(i=1, \ldots, r-1)$ ，记 $d_i(\lambda)=D_i(\lambda) / D_{i-1}(\lambda)(i=1, \ldots, m)$ ，则 多项式 $\left\{d_1(\lambda), d_2(\lambda), \ldots, d_m(\lambda)\right\}$ 称为 $A(\lambda)$ 的不变因子。
 
 利用这两个因子也可以来判定矩阵相似：
 
@@ -149,9 +149,9 @@ $$
     设特征矩阵 $\lambda I-A$ 经过初等变换化为下列对角阵:
     $$
     \left(\begin{array}{cccc}
-    f_1(\lambda) & & & \\\\
-    & f_2(\lambda) & & \\\\
-    & & \ddots & \\\\
+    f_1(\lambda) & & & \\
+    & f_2(\lambda) & & \\
+    & & \ddots & \\
     & & & f_n(\lambda)
     \end{array}\right),
     $$

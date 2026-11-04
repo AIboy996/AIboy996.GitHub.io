@@ -114,11 +114,11 @@ $$
 
 $$
 \begin{aligned}
-&\left(\frac{1}{2}\right)! \\\\
-=&\sqrt{\frac{2}{1}}\cdot\frac{2}{3}\cdot\sqrt{\frac{3}{2}}\cdot\frac{4}{5}\cdot\sqrt{\frac{4}{3}}\cdot\frac{6}{7}\cdot\sqrt{\frac{5}{4}}\cdot\frac{8}{9}\cdots \\\\
-=&\sqrt{\frac{4}{2}}\cdot\frac{2}{3}\cdot\sqrt{\frac{6}{6}}\cdot\frac{4}{5}\cdot\sqrt{\frac{8}{6}}\cdot\frac{6}{7}\cdot\sqrt{\frac{10}{8}}\cdot\frac{8}{9}\cdots \\\\
-=&\sqrt{\frac{4}{3}\cdot\frac{2}{3}}\cdot\sqrt{\frac{6}{5}\cdot\frac{4}{5}}\cdot\sqrt{\frac{8}{7}\cdot\frac{6}{7}}\cdot\sqrt{\frac{10}{9}\cdot\frac{8}{9}}\cdots \\\\
-=&\sqrt{\frac{2}{3}\cdot\frac{4}{3}\cdot\frac{4}{5}\cdot\frac{6}{5}\cdot\frac{6}{7}\cdot\frac{8}{7}\cdots} \\\\
+&\left(\frac{1}{2}\right)! \\
+=&\sqrt{\frac{2}{1}}\cdot\frac{2}{3}\cdot\sqrt{\frac{3}{2}}\cdot\frac{4}{5}\cdot\sqrt{\frac{4}{3}}\cdot\frac{6}{7}\cdot\sqrt{\frac{5}{4}}\cdot\frac{8}{9}\cdots \\
+=&\sqrt{\frac{4}{2}}\cdot\frac{2}{3}\cdot\sqrt{\frac{6}{6}}\cdot\frac{4}{5}\cdot\sqrt{\frac{8}{6}}\cdot\frac{6}{7}\cdot\sqrt{\frac{10}{8}}\cdot\frac{8}{9}\cdots \\
+=&\sqrt{\frac{4}{3}\cdot\frac{2}{3}}\cdot\sqrt{\frac{6}{5}\cdot\frac{4}{5}}\cdot\sqrt{\frac{8}{7}\cdot\frac{6}{7}}\cdot\sqrt{\frac{10}{9}\cdot\frac{8}{9}}\cdots \\
+=&\sqrt{\frac{2}{3}\cdot\frac{4}{3}\cdot\frac{4}{5}\cdot\frac{6}{5}\cdot\frac{6}{7}\cdot\frac{8}{7}\cdots} \\
 =&\sqrt{\frac{\pi}{4}}
 \end{aligned}
 $$
@@ -127,9 +127,9 @@ $$
 
 $$
 \begin{aligned} 
-&\frac{\pi}{2} \\\\
-=&\prod_{n=1}^{\infty}\left(\frac{4 n^{2}}{4 n^{2}-1}\right) \\\\ 
-=&\prod_{n=1}^{\infty} \frac{(2 n)(2 n)}{(2 n-1)(2 n+1)}\\\\
+&\frac{\pi}{2} \\
+=&\prod_{n=1}^{\infty}\left(\frac{4 n^{2}}{4 n^{2}-1}\right) \\ 
+=&\prod_{n=1}^{\infty} \frac{(2 n)(2 n)}{(2 n-1)(2 n+1)}\\
 =&\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdot \frac{8}{9} \cdots \end{aligned}
 $$
 
@@ -172,8 +172,8 @@ $$
 这里的技巧性很强, 我们设$a=\frac{f}{g}$, 整理得到:
 $$
 \begin{aligned}
-&\frac{b !}{(f+g)(f+2 g) \cdots(f+b g)}\\\\
-\\\\
+&\frac{b !}{(f+g)(f+2 g) \cdots(f+b g)}\\
+\\
 =&\frac{f+(b+1) g}{g^{b+1}} \int_{0}^{1} x^{\frac{f}{g}}(1-x)^{b} d x
 \end{aligned}
 $$
@@ -183,9 +183,9 @@ $$
 
 $$
 \begin{aligned}
-&\frac{b !}{(f+g)(f+2 g) \cdots(f+b g)}\\\\
-\\\\
-=&\frac{f+(b+1) g}{g^{b+1}} \int_{0}^{1} h\left(1-t^{h}\right)^{b} d t \\\\ 
+&\frac{b !}{(f+g)(f+2 g) \cdots(f+b g)}\\
+\\
+=&\frac{f+(b+1) g}{g^{b+1}} \int_{0}^{1} h\left(1-t^{h}\right)^{b} d t \\ 
 =&\frac{f+(b+1) g}{(f+g)^{b+1}} \int_{0}^{1}\left(\frac{1-t^{h}}{h}\right)^{b} dt
 \end{aligned}
 $$
@@ -194,10 +194,10 @@ $$
 
 $$
 \begin{aligned}
-&\lim_{h\to0}\frac{1-t^h}{h}\\\\
-=&\lim_{h\to0}-\frac{1-t^h}{0-h}\\\\
-=&-\left.\frac{d}{dh}t^h\right|_{h=0}\\\\
-=&-t^0\ln t\\\\
+&\lim_{h\to0}\frac{1-t^h}{h}\\
+=&\lim_{h\to0}-\frac{1-t^h}{0-h}\\
+=&-\left.\frac{d}{dh}t^h\right|_{h=0}\\
+=&-t^0\ln t\\
 =&-\ln t
 \end{aligned}
 $$
@@ -237,7 +237,7 @@ $$
 同样$B$函数也进行修正：
 $$
 \begin{aligned}
-\text{修正前 }&\tilde B(a,b)=\int_0^1x^{a}(1-x)^{b}dx\\\\
+\text{修正前 }&\tilde B(a,b)=\int_0^1x^{a}(1-x)^{b}dx\\
 \text{修正后 }&B(a,b)=\int_0^1x^{a-1}(1-x)^{b-1}dx
 \end{aligned}
 $$
@@ -261,11 +261,11 @@ $$
 
 $$
 \begin{aligned}
-&\frac{1}{1-x}\\\\
-\text{离散展开}=&\sum_{n=0}^\infty x^n\\\\
-\text{连续展开}=&\int_0^\infty e^{-(1-x)t}dt\\\\
-e^{xt}\text{ 展开}=&\int_0^\infty e^{-t}\sum_{n=0}^\infty \frac{(xt)^n}{n!}dt\\\\
-\text{(**)}=&\sum_0^\infty \frac{\int_0^\infty e^{-t}t^ndt}{n!}x^n\\\\
+&\frac{1}{1-x}\\
+\text{离散展开}=&\sum_{n=0}^\infty x^n\\
+\text{连续展开}=&\int_0^\infty e^{-(1-x)t}dt\\
+e^{xt}\text{ 展开}=&\int_0^\infty e^{-t}\sum_{n=0}^\infty \frac{(xt)^n}{n!}dt\\
+\text{(**)}=&\sum_0^\infty \frac{\int_0^\infty e^{-t}t^ndt}{n!}x^n\\
 \end{aligned}
 $$
 
@@ -314,7 +314,7 @@ $$
 $$
 其等价形式为：
 $$
-\color{RedViolet}\Gamma(z)=\frac{1}{z}\prod_{n=1}^\infty \\{ (1+\frac{z}{n})^{-1}\left(1+\frac{1}{n}\right)^z\\}
+\color{RedViolet}\Gamma(z)=\frac{1}{z}\prod_{n=1}^\infty \{ (1+\frac{z}{n})^{-1}\left(1+\frac{1}{n}\right)^z\}
 $$
 这个式子除了在$z=-n$外，都是良好定义的。
 
@@ -323,25 +323,25 @@ $$
 上述欧拉无穷乘积的极限形式为：
 $$
 \begin{aligned}
-&\Gamma(z)\\\\
+&\Gamma(z)\\
 =&\lim_{n\to \infty}\frac{1\cdot2\cdot3\cdots n}{z(1+z)(2+z)\cdots(n+z)}n^z
 \end{aligned}
 $$
 考虑把最后一个因式改写：
 $$
 \begin{aligned}
-&n^{z}\\\\
-=&\exp (z \ln n)\\\\
-=&\exp \\{z\left[\ln n-\sum_{m=1}^{n} \frac{1}{m}\right]\\} \prod_{m=1}^{n} \mathrm{e}^{z / m}
+&n^{z}\\
+=&\exp (z \ln n)\\
+=&\exp \{z\left[\ln n-\sum_{m=1}^{n} \frac{1}{m}\right]\} \prod_{m=1}^{n} \mathrm{e}^{z / m}
 \end{aligned}
 $$
 得到：
 $$
-\color{RedViolet}\frac{1}{\Gamma(z)}=z \mathrm{e}^{\gamma z} \prod_{n=1}^{\infty}\\{\left(1+\frac{z}{n}\right) \mathrm{e}^{-z / n}\\}
+\color{RedViolet}\frac{1}{\Gamma(z)}=z \mathrm{e}^{\gamma z} \prod_{n=1}^{\infty}\{\left(1+\frac{z}{n}\right) \mathrm{e}^{-z / n}\}
 $$
 其中$\gamma$为**欧拉常数**：
 $$
-\color{RedViolet}\gamma = \lim_{n\to\infty}\\{\sum_{m=1}^n\frac{1}{m}-\ln n\\}
+\color{RedViolet}\gamma = \lim_{n\to\infty}\{\sum_{m=1}^n\frac{1}{m}-\ln n\}
 $$
 在证明**调和级数发散**时我们遇到过这个极限。
 
@@ -355,7 +355,7 @@ $$
 使用上述的魏尔施特拉斯无穷乘积可以证明：
 $$
 \begin{aligned}
-&\Gamma(z)\Gamma(-z)\\\\
+&\Gamma(z)\Gamma(-z)\\
 =&-\frac{1}{z^2}\prod_{n=1}^{\infty}\left(1-\frac{z^2}{n^2}\right)^{-1}
 \end{aligned}
 $$
@@ -382,13 +382,13 @@ $$
 带入到本节最初的式子：
 $$
 \begin{aligned}
-&\Gamma(z)\Gamma(-z)\\\\
-=&-\frac{1}{z^2}\prod_{n=1}^{\infty}\left(1-\frac{z^2}{n^2}\right)^{-1}\\\\
-=&-\frac{1}{z^2}\frac{\pi z}{\sin \pi z}\\\\
-\Rightarrow\\\\
-&\Gamma(z)\Gamma(1-z)\\\\
-=&\Gamma(z)\left[(-z)\cdot\Gamma(-z)\right]\\\\
-=&-z\cdot\Gamma(z)\Gamma(-z)\\\\
+&\Gamma(z)\Gamma(-z)\\
+=&-\frac{1}{z^2}\prod_{n=1}^{\infty}\left(1-\frac{z^2}{n^2}\right)^{-1}\\
+=&-\frac{1}{z^2}\frac{\pi z}{\sin \pi z}\\
+\Rightarrow\\
+&\Gamma(z)\Gamma(1-z)\\
+=&\Gamma(z)\left[(-z)\cdot\Gamma(-z)\right]\\
+=&-z\cdot\Gamma(z)\Gamma(-z)\\
 =&\frac{\pi}{\sin \pi z}
 \end{aligned}
 $$
@@ -403,8 +403,8 @@ $$
 $$
 \color{RedViolet}
 \begin{aligned}
-&\prod_{k=1}^{n-1}\Gamma\left(z+\frac{k}{n}\right)\\\\
-\\\\
+&\prod_{k=1}^{n-1}\Gamma\left(z+\frac{k}{n}\right)\\
+\\
 =&(2 \pi)^{\frac{1}{2}(n-1)} n^{\frac{1}{2} n z} \Gamma(n z)
 \end{aligned}
 $$
@@ -438,27 +438,27 @@ $$
 标准正态分布的密度函数如下：
 $$
 \begin{aligned}
-&X\sim N(0,1)\\\\
-\\\\
-&f_X(x)=\frac{1}{\sqrt{2\pi}}\exp\\{-\frac{x^2}{2}\\}
+&X\sim N(0,1)\\
+\\
+&f_X(x)=\frac{1}{\sqrt{2\pi}}\exp\{-\frac{x^2}{2}\}
 \end{aligned}
 $$
 
 它的**规范性**基于如下积分：
 $$
-\color{RedViolet}\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx=\sqrt{2\pi}
+\color{RedViolet}\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}dx=\sqrt{2\pi}
 $$
 **证明法一**（$\Gamma$函数）：
 $$
 \begin{aligned}
-&\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx\\\\
-=&2\int_{0}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx\\\\
-\\\\
-&t=\frac{x^2}{2}, dx=\frac{1}{\sqrt{2t}}dt\\\\
-\\\\
-=&2\int_{0}^{+\infty}\frac{1}{\sqrt{2t}}e^{-t}dt\\\\
-=&\sqrt{2}\color{RedViolet}\int_{0}^{+\infty}t^{\frac{1}{2}-1}e^{-t}dt\\\\
-=&\sqrt{2}\cdot \Gamma(\frac{1}{2})\\\\
+&\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}dx\\
+=&2\int_{0}^{+\infty}\exp\{-\frac{x^2}{2}\}dx\\
+\\
+&t=\frac{x^2}{2}, dx=\frac{1}{\sqrt{2t}}dt\\
+\\
+=&2\int_{0}^{+\infty}\frac{1}{\sqrt{2t}}e^{-t}dt\\
+=&\sqrt{2}\color{RedViolet}\int_{0}^{+\infty}t^{\frac{1}{2}-1}e^{-t}dt\\
+=&\sqrt{2}\cdot \Gamma(\frac{1}{2})\\
 =&\sqrt{2\pi}
 \end{aligned}
 $$
@@ -467,38 +467,38 @@ $$
 
 令
 $$
-I_1=\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx
+I_1=\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}dx
 $$
 则有
 $$
 \begin{aligned}
-&I_1^2\\\\
-=&\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx\int_{-\infty}^{+\infty}\exp\\{-\frac{y^2}{2}\\}dy\\\\
-=&\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}\exp\\{-\frac{y^2}{2}\\}dxdy\\\\
-=&\iint_{R^2}\exp\\{-\frac{x^2+y^2}{2}\\}dxdy\\\\
-\\\\
-&x=r\cos\theta\\\\
-&y=r\sin\theta\\\\
-\\\\
-=&\int_0^{2\pi}\int_{0}^{\infty}\exp\\{-\frac{r^2\cos^2\theta+r^2\sin^2\theta}{2}\\}rdrd\theta\\\\
-=&\int_0^{2\pi}\left[\int_{0}^{\infty}\exp\\{-\frac{r^2}{2}\\}\frac{1}{2}dr^2\right]d\theta\\\\
-=&\int_0^{2\pi}1d\theta\\\\
+&I_1^2\\
+=&\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}dx\int_{-\infty}^{+\infty}\exp\{-\frac{y^2}{2}\}dy\\
+=&\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}\exp\{-\frac{y^2}{2}\}dxdy\\
+=&\iint_{R^2}\exp\{-\frac{x^2+y^2}{2}\}dxdy\\
+\\
+&x=r\cos\theta\\
+&y=r\sin\theta\\
+\\
+=&\int_0^{2\pi}\int_{0}^{\infty}\exp\{-\frac{r^2\cos^2\theta+r^2\sin^2\theta}{2}\}rdrd\theta\\
+=&\int_0^{2\pi}\left[\int_{0}^{\infty}\exp\{-\frac{r^2}{2}\}\frac{1}{2}dr^2\right]d\theta\\
+=&\int_0^{2\pi}1d\theta\\
 =&2\pi
 \end{aligned}
 $$
 于是
 $$
-I_1=\int_{-\infty}^{+\infty}\exp\\{-\frac{x^2}{2}\\}dx=\sqrt{2\pi}
+I_1=\int_{-\infty}^{+\infty}\exp\{-\frac{x^2}{2}\}dx=\sqrt{2\pi}
 $$
 
 ### 标准正态分布k阶矩
 
 $$
 \begin{aligned}
-&X\sim N(0,1)\\\\
-\\\\
+&X\sim N(0,1)\\
+\\
 &E(X^k)=\begin{cases}
-&0&k\text{为奇数}\\\\
+&0&k\text{为奇数}\\
 &(k-1)!!&k\text{为偶数}
 \end{cases}
 \end{aligned}
@@ -509,28 +509,28 @@ $$
 证明：
 $$
 \begin{aligned}
-&E(X^k)\\\\
-=&\int_{-\infty}^{+\infty}x^k\frac{1}{\sqrt{2\pi}}\exp\\{-\frac{x^2}{2}\\}dx\\\\
-=&\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^k\exp\\{-\frac{x^2}{2}\\}dx\\\\
+&E(X^k)\\
+=&\int_{-\infty}^{+\infty}x^k\frac{1}{\sqrt{2\pi}}\exp\{-\frac{x^2}{2}\}dx\\
+=&\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^k\exp\{-\frac{x^2}{2}\}dx\\
 \end{aligned}
 $$
 令
 $$
-I_2=\int_{-\infty}^{+\infty}x^k\exp\\{-\frac{x^2}{2}\\}dx\\\\
+I_2=\int_{-\infty}^{+\infty}x^k\exp\{-\frac{x^2}{2}\}dx\\
 $$
 当$k$为奇数时，被积函数为奇函数而积分区域关于原点对称，$I=0$显然
 
 当$k$为偶数时，令$t=\frac{x^2}{2}, dx=\frac{1}{\sqrt{2t}}dt$
 $$
 \begin{aligned}
-&I_2\\\\
-=&2\int_{0}^{+\infty}x^k\exp\\{-\frac{x^2}{2}\\}dx\\\\
-=&2\cdot\sqrt{2^k}\cdot\int_{0}^{+\infty}t^{(\frac{k}{2}+1)-1}e^{-t}\frac{1}{\sqrt{2t}}dt\\\\
-=&\sqrt{2}\cdot\sqrt{2^k}\color{RedViolet}\cdot\int_{0}^{+\infty}t^{\frac{k+1}{2}-1}e^{-t}dt\\\\
-=&\sqrt{2^{k+1}}\cdot\Gamma\left(\frac{k+1}{2}\right)\\\\
-=&\sqrt{2^{k+1}}\cdot\frac{k-1}{2}\cdot\Gamma\left(\frac{k-1}{2}\right)\\\\
-&\cdots\\\\
-=&\sqrt{2^{k+1}}\frac{(k-1)!!}{\sqrt{2^k}}\Gamma(\frac{1}{2})\\\\
+&I_2\\
+=&2\int_{0}^{+\infty}x^k\exp\{-\frac{x^2}{2}\}dx\\
+=&2\cdot\sqrt{2^k}\cdot\int_{0}^{+\infty}t^{(\frac{k}{2}+1)-1}e^{-t}\frac{1}{\sqrt{2t}}dt\\
+=&\sqrt{2}\cdot\sqrt{2^k}\color{RedViolet}\cdot\int_{0}^{+\infty}t^{\frac{k+1}{2}-1}e^{-t}dt\\
+=&\sqrt{2^{k+1}}\cdot\Gamma\left(\frac{k+1}{2}\right)\\
+=&\sqrt{2^{k+1}}\cdot\frac{k-1}{2}\cdot\Gamma\left(\frac{k-1}{2}\right)\\
+&\cdots\\
+=&\sqrt{2^{k+1}}\frac{(k-1)!!}{\sqrt{2^k}}\Gamma(\frac{1}{2})\\
 =&\sqrt{2\pi}(k-1)!!
 \end{aligned}
 $$
@@ -551,8 +551,8 @@ $$
 把被积函数作为**核**，于是有定义在$(0,+\infty)$上的$\Gamma$分布：
 $$
 \begin{aligned}
-&T\sim\Gamma(z,1)\\\\
-\\\\
+&T\sim\Gamma(z,1)\\
+\\
 &f_T(t)=\frac{t^{z-1}e^{-t}}{\Gamma(z)}
 \end{aligned}
 $$
@@ -563,8 +563,8 @@ $$
 如果再做变换$Y=\frac{1}{\lambda}T$，就得到一般的$\Gamma$分布，其中$\lambda$为**尺度参数**
 $$
 \begin{aligned}
-&Y\sim \Gamma(z,\lambda)\\\\
-\\\\
+&Y\sim \Gamma(z,\lambda)\\
+\\
 &\color{RedViolet}f_Y(y)=\frac{\lambda^z y^{z-1}e^{-\lambda y}}{\Gamma(z)}
 \end{aligned}
 $$

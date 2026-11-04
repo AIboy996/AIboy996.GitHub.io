@@ -28,7 +28,7 @@ $$
     - $\mathbb{N}$中任意一个元素至多是一个元素的后继，即$a^+=b^+ \implies a=b$
     - （归纳公理）设$S$是$\mathbb{N}$的子集，$e\in S$。如果$\forall n \in S \implies n^+\in S$，那么$S=\mathbb{N}$
 
-如果取$e=1$，取我们熟知的“加1”作为后继操作，那么$\mathbb{N} = \\{1,2,3,\cdots\\}$就是满足上述公理的自然数集。同时，我们把这个集合稍做扩展就得到整数集$\mathbb{Z} = \\{0,\pm 1, \pm 2, \cdots\\}$
+如果取$e=1$，取我们熟知的“加1”作为后继操作，那么$\mathbb{N} = \{1,2,3,\cdots\}$就是满足上述公理的自然数集。同时，我们把这个集合稍做扩展就得到整数集$\mathbb{Z} = \{0,\pm 1, \pm 2, \cdots\}$
 
 根据归纳公理（**自然数的本质特征**），我们很容易就可以导出数学归纳法：
 
@@ -145,13 +145,13 @@ $$
 5. $(m,a)=1 \implies (m,ab)=(m,b)$
 6. 如果$(m,a)=1$，那么$m\mid ab \implies m \mid b$
 7. $(a,b)[a,b]= |ab|$
-8. 设$a_1,a_2,\cdots,a_k$不全为零，那么$(a_1,a_2,\cdots,a_k) = \min_{s>0} s\in \\{s=a_1x_1+\cdots+a_kx_k, \quad x_j\in \mathbb{Z}\\}$
+8. 设$a_1,a_2,\cdots,a_k$不全为零，那么$(a_1,a_2,\cdots,a_k) = \min_{s>0} s\in \{s=a_1x_1+\cdots+a_kx_k, \quad x_j\in \mathbb{Z}\}$
 
 这8个定理中，8是最强的，可以由定理8出发证明其余所有的定理。
 
 这里只给出定理8的证明：
 
-设集合$S=\\{s=a_1x_1+\cdots+a_kx_k, \quad x_j\in \mathbb{Z} \\}$。由于
+设集合$S=\{s=a_1x_1+\cdots+a_kx_k, \quad x_j\in \mathbb{Z} \}$。由于
 $$
 a_1^2+a_2^2+\cdots+a_k^2 \in S
 $$
@@ -218,10 +218,10 @@ $$
 利用前述的最大公约数性质可以求一些特殊的最大公约数，例如：
 $$
 \begin{aligned}
-&(21n+4,14n+3) \\\\
-=& (21n+4 - 14n-3 , 14n+3) \\\\
-=& (7n+1 , 14n+3) \\\\
-=& (7n+1 , 14n+3-7n-1) \\\\
+&(21n+4,14n+3) \\
+=& (21n+4 - 14n-3 , 14n+3) \\
+=& (7n+1 , 14n+3) \\
+=& (7n+1 , 14n+3-7n-1) \\
 =& (7n+1 , 2) = 1
 \end{aligned}
 $$
@@ -282,11 +282,11 @@ $$
     对给定的整数$u_0,u_1$，其中$u_1\ne 0$，$u_1 \nmid u_0$，那么我们一定可以重复带余除法得到下列等式：
     $$
     \begin{aligned}
-    &u_0 = q_0u_1 + u_2, \quad 0 < u_2 < |u_1| \\\\
-    &u_1 = q_1u_2 + u_3, \quad 0 < u_3 < u_2 \\\\
-    &\vdots\\\\
-    &u_{k-1} = q_{k-1}u_{k} + u_{k+1}, \quad 0 < u_{k+1} < u_k \\\\
-    &u_k = q_k u_{k+1} \\\\
+    &u_0 = q_0u_1 + u_2, \quad 0 < u_2 < |u_1| \\
+    &u_1 = q_1u_2 + u_3, \quad 0 < u_3 < u_2 \\
+    &\vdots\\
+    &u_{k-1} = q_{k-1}u_{k} + u_{k+1}, \quad 0 < u_{k+1} < u_k \\
+    &u_k = q_k u_{k+1} \\
     \end{aligned}
     $$
     上述算法就称为辗转相除法或Euclid算法。
@@ -327,9 +327,9 @@ $$
 
 $$
 \begin{aligned}
-252 &= 1\cdot 198+54\\\\
-198 &= 3\cdot 54+36\\\\
-54 &= 1\cdot 36+18\\\\
+252 &= 1\cdot 198+54\\
+198 &= 3\cdot 54+36\\
+54 &= 1\cdot 36+18\\
 36 &= 2\cdot 18
 \end{aligned}
 $$
@@ -377,8 +377,8 @@ $$
 
 $$
 \begin{aligned}
-&a = p_1^{\alpha_1}\cdots p_s^{\alpha_s}\\\\
-&b = p_1^{\beta_1}\cdots p_s^{\beta_s}\\\\
+&a = p_1^{\alpha_1}\cdots p_s^{\alpha_s}\\
+&b = p_1^{\beta_1}\cdots p_s^{\beta_s}\\
 &c = p_1^{\gamma_1}\cdots p_s^{\gamma_s}
 \end{aligned}
 $$
@@ -389,7 +389,7 @@ $$
 $$
 其中
 $$
-\delta_j = \max \\{\beta_j, \gamma_j\\}
+\delta_j = \max \{\beta_j, \gamma_j\}
 $$
 
 那么
@@ -398,7 +398,7 @@ $$
 $$
 其中
 $$
-\epsilon_j = \min \\{\alpha_j, \delta_j\\} = \min \\{\alpha_j, \max \\{\beta_j, \gamma_j\\}\\}
+\epsilon_j = \min \{\alpha_j, \delta_j\} = \min \{\alpha_j, \max \{\beta_j, \gamma_j\}\}
 $$
 
 类似的我们知道
@@ -407,13 +407,13 @@ $$
 $$
 其中
 $$
-\zeta_j = \max \\{\min \\{\alpha_j, \beta_j\\}, \min \\{\alpha_j, \gamma_j\\}\\}
+\zeta_j = \max \{\min \{\alpha_j, \beta_j\}, \min \{\alpha_j, \gamma_j\}\}
 $$
 
 所以只需要证明：
 $$
-\max \\{\min \\{\alpha_j, \beta_j\\}, \min \\{\alpha_j, \gamma_j\\}\\}
-= \min \\{\alpha_j, \max \\{\beta_j, \gamma_j\\} \\}
+\max \{\min \{\alpha_j, \beta_j\}, \min \{\alpha_j, \gamma_j\}\}
+= \min \{\alpha_j, \max \{\beta_j, \gamma_j\} \}
 $$
 
 可以验证，不论$\alpha_j,\beta_j,\gamma_j$大小顺序如何，上式都成立。
@@ -527,13 +527,13 @@ $$
 然后计算指数：
 $$
 \begin{aligned}
-&\alpha(2,20) = [20/2]+[20/4]+[20/8]+[20/16] = 18\\\\
-&\alpha(3,20) = [20/3]+[20/9] = 8\\\\
-&\alpha(5,20) = [20/5] = 4\\\\
-&\alpha(7,20) = [20/7] = 2\\\\
-&\alpha(11,20) = [20/11] = 1\\\\
-&\alpha(13,20) = [20/13] = 1\\\\
-&\alpha(17,20) = [20/17] = 1\\\\
+&\alpha(2,20) = [20/2]+[20/4]+[20/8]+[20/16] = 18\\
+&\alpha(3,20) = [20/3]+[20/9] = 8\\
+&\alpha(5,20) = [20/5] = 4\\
+&\alpha(7,20) = [20/7] = 2\\
+&\alpha(11,20) = [20/11] = 1\\
+&\alpha(13,20) = [20/13] = 1\\
+&\alpha(17,20) = [20/17] = 1\\
 &\alpha(19,20) = [20/19] = 1
 \end{aligned}
 $$

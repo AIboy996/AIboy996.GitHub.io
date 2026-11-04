@@ -7,157 +7,66 @@ include:
 
 # 写数学公式的坑
 
-在使用Mkdocs生成网页的过程中，如果你的markdown中包含大量的数学公式，那么你大概率会遇到各种各样的问题。
+MkDocs 的 Markdown 解析发生在 MathJax 之前。如果公式里出现 `*`、`_`、`\`、`<` 这些字符，Markdown 可能会把它们当成强调、转义或 HTML 标签，导致公式被破坏。
 
-## `*`符号
+!!! info "最新实现：2026-11-04"
+    本站所有的数学公式现在由 `hooks/math_protect.py` 统一处理：
 
-我们知道这个符号在markdown中有特殊含义，在公式中使用此符号需要格外注意使用`\*`来取消它的特殊含义。
+    在 Markdown 解析前把 `$...$` 和 `$$...$$` 保护起来，公式内容原样交给 MathJax。因此公式内部可以按**标准 TeX** 写，不需要再做额外的转义。
 
-- 错误示范：
-=== "渲染"
-    $$
-    a*b*c
-    $$
-=== "源代码"
-    ```tex  hl_lines="2"
-    $$
-    a*b*c
-    $$
-    ```
+    此前出现的`\\ = \`,`\\{ = \{`之类的非标准tex语法都已经修复、`*_`之类的markdown保留符号也不会和数学符号再起冲突，感谢AI！
 
-- 正确示范：
-=== "渲染"
-    $$
-    a\*b\*c
-    $$
-=== "源代码"
-    ```tex hl_lines="2"
-    $$
-    a\*b\*c
-    $$
-    ```
+## `*` 和 `_`
 
+直接写即可：
 
-## `\`的转义
+```markdown
+$a*b*c$，$x_1*x_2*x_3$
+```
 
-我们都知道，`\`符号在tex中经常用到，而它markdown在文件中又是特殊的转义符号，需要格外注意。
+以前需要在 `*` 前加反斜杠（`\*`）来躲开 Markdown 的强调语法；现在不需要了。下标也直接写 `_`；如果要在 `\text{}` 里写一个字面下划线，再用 `\_`。
 
+## `\\`：换行
 
-### `\\`符号
-如果你想写一个$2\times 2$的矩阵。
+矩阵、`aligned`、`cases` 等环境里，行与行之间用 `\\`：
 
-- 错误示范：
-=== "渲染"
-    $$
-    \begin{pmatrix}
-    1&0\\
-    0&2
-    \end{pmatrix}
-    $$
-=== "源代码"
-    ```tex  hl_lines="3"
-    $$
-    \begin{pmatrix}
-    1&0\\
-    0&2
-    \end{pmatrix}
-    $$
-    ```
+```markdown
+$$
+\begin{pmatrix}
+1&0\\
+0&2
+\end{pmatrix}
+$$
+```
 
-- 正确示范：
-=== "渲染"
-    $$
-    \begin{pmatrix}
-    1&0\\\\
-    0&2
-    \end{pmatrix}
-    $$
-=== "源代码"
-    ```tex hl_lines="3"
-    $$
-    \begin{pmatrix}
-    1&0\\\\
-    0&2
-    \end{pmatrix}
-    $$
-    ```
-### `\{`和`\}`
-再比如我们要写一个自适应大小的大括号。
+不要写成 `\\\\`。在标准 TeX 里 `\\` 就是换行；写四个反斜杠反而可能多出空行。
 
-- 错误示范：
-=== "渲染"
-    $$
-    \exp\left\{ -\frac{x^2}{2} \right\}
-    $$
-=== "源代码"
-    ```tex hl_lines="2"
-    $$
-    \exp\left\{ -\frac{x^2}{2} \right\}
-    $$
-    ```
+## `\{` 和 `\}`：字面大括号
 
-- 正确示范：
-=== "渲染"
-    $$
-    \exp\left\\{ -\frac{x^2}{2} \right\\}
-    $$
+直接用 `\{`、`\}`：
 
-=== "源代码"
-    ```tex hl_lines="2"
-    $$
-    \exp\left\\{ -\frac{x^2}{2} \right\\}
-    $$
-    ```
+```markdown
+$$
+\exp\left\{ -\frac{x^2}{2} \right\}
+$$
+```
 
-或者是写一个分段函数。
+也不要把反斜杠翻倍成 `\\{`。
 
-=== "渲染"
-    $$
-    q(x) = \left\\{
-    \begin{aligned}
-    &1 \quad x\in \mathbb{Q}\\\\
-    &0\quad  \text{otherwise}
-    \end{aligned} \right.
-    $$
-=== "源代码"
-    ```tex hl_lines="4"
-    $$
-    q(x) = \left\\{
-    \begin{aligned}
-    &1 \quad x\in \mathbb{Q}\\\\
-    &0\quad  \text{otherwise}
-    \end{aligned} \right.
-    $$
-    ```
-## `< >`符号
-众所周知`<xxx>`和`</xxx>`这对符号在HTML中是特殊的保留字符，自然在以HTML为基础的markdown中他也会出现问题。
+## `<` 和 `>`
 
-我们写不等式的时候，需要注意一下用空格隔开即可。
+公式里的 `<`、`>` 也会被保护，直接写：
 
-- 错误示范：
-=== "渲染"
-    $$
-    1 <a> 2 \quad 1</a>2
-    $$
-=== "源代码"
-    ```tex hl_lines="2"
-    $$
-    1 <a> 2 \quad 1</a>2
-    $$
-    ```
+```markdown
+$$
+1 < a > 2
+$$
+```
 
-- 正确示范：
-=== "渲染"
-    $$
-    1 < a > 2 \quad 1 < / a > 2
-    $$
+MathJax 会收到原始的 `<`、`>`，不会把它们当成 HTML 标签。
 
-=== "源代码"
-    ```tex hl_lines="2"
-    $$
-    1 < a > 2 \quad 1 < / a > 2
-    $$
-    ```
+## 适用范围
 
+`hooks/math_protect.py` 只对 frontmatter 里写了 `include: math` 的页面启用。如果页面没有引入 MathJax，或者公式写在代码块里，仍然按普通 Markdown 规则处理。
 
 TBC:数学公式的坑

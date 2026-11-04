@@ -55,7 +55,7 @@ $$
 做换元：
 $$
 \begin{aligned}
-p &= -3mn\\\\
+p &= -3mn\\
 q &=-(m^3+n^3)
 \end{aligned}
 $$
@@ -74,7 +74,7 @@ $$
     那么只要
     $$
     \begin{aligned}
-    p &= -3mn\\\\
+    p &= -3mn\\
     q &=-(m^3+n^3)
     \end{aligned}
     $$
@@ -83,7 +83,7 @@ $$
 稍加整理得到：
 $$
 \begin{aligned}
-m^3n^3&={\left(-\frac{p}{3}\right)}^3\\\\
+m^3n^3&={\left(-\frac{p}{3}\right)}^3\\
 m^3+n^3&=-q
 \end{aligned}
 $$
@@ -94,19 +94,19 @@ $$
 进而可以使用求根公式得到：
 $$
 \begin{aligned}
-m^3 &= \frac{-q+\sqrt{q^2-4{\left(-\frac{p}{3}\right)}^3}}{2}\\\\
-&=-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}\\\\
-\\\\
-n^3 &= \frac{-q-\sqrt{q^2-4{\left(-\frac{p}{3}\right)}^3}}{2}\\\\
-&=-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}\\\\
+m^3 &= \frac{-q+\sqrt{q^2-4{\left(-\frac{p}{3}\right)}^3}}{2}\\
+&=-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}\\
+\\
+n^3 &= \frac{-q-\sqrt{q^2-4{\left(-\frac{p}{3}\right)}^3}}{2}\\
+&=-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}\\
 \end{aligned}
 $$
 也就是
 $$
 \begin{aligned}
-m &=\sqrt[3]{\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\\\
-\\\\
-n &=\sqrt[3]{-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\\\
+m &=\sqrt[3]{\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\
+\\
+n &=\sqrt[3]{-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\
 \end{aligned}
 $$
 记：
@@ -116,9 +116,9 @@ $$
 那么
 $$
 \begin{aligned}
-m &=\sqrt[3]{-\frac{q}{2}+\sqrt{\Delta}}\\\\
-\\\\
-n &=\sqrt[3]{-\frac{q}{2}-\sqrt{\Delta}}\\\\
+m &=\sqrt[3]{-\frac{q}{2}+\sqrt{\Delta}}\\
+\\
+n &=\sqrt[3]{-\frac{q}{2}-\sqrt{\Delta}}\\
 \end{aligned}
 $$
 回到最初换元之后的方程：
@@ -144,7 +144,7 @@ $$
 这里面就出现了$i=\sqrt{-1}$这样的虚数，我们先暂时接受他，写成：
 $$
 \begin{aligned}
-x_{2,3} &= \frac{-(m+n)\pm (m-n)\sqrt{3}i}{2}\\\\
+x_{2,3} &= \frac{-(m+n)\pm (m-n)\sqrt{3}i}{2}\\
 &=\frac{-1\pm\sqrt{3}i}{2}m+\frac{-1\mp \sqrt{3}i}{2}n
 \end{aligned}
 $$
@@ -166,19 +166,19 @@ $$
 的解为：
 $$
 \begin{aligned}
-x_1 =&\sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\\\
+x_1 =&\sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\
 &+\sqrt[3]{-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}
 \end{aligned}
 $$
 $$
 \begin{aligned}
-x_2  = & \frac{-1+\sqrt{3}i}{2} \sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\\\
+x_2  = & \frac{-1+\sqrt{3}i}{2} \sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}\\
 &+ \frac{-1-\sqrt{3}i}{2}\sqrt[3]{-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}
 \end{aligned}
 $$
 $$
 \begin{aligned}
-x_3 =& \frac{-1-\sqrt{3}i}{2}\sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}} \\\\
+x_3 =& \frac{-1-\sqrt{3}i}{2}\sqrt[3]{-\frac{q}{2}+\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}} \\
 &+\frac{-1+\sqrt{3}i}{2} \sqrt[3]{-\frac{q}{2}-\sqrt{{\left(\frac{q}{2}\right)}^2+{\left(\frac{p}{3}\right)}^3}}
 \end{aligned}
 $$
@@ -194,7 +194,7 @@ $$
 把
 $$
 \begin{aligned}
-p&=-\frac{3}{4}\\\\
+p&=-\frac{3}{4}\\
 q&=-\frac{1}{8}
 \end{aligned}
 $$

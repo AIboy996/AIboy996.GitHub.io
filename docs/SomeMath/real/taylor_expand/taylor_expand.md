@@ -27,7 +27,7 @@ include:
 
 泰勒展开的想法非常简单, 就是寻找一个合适的多项式$P_n(x)$来近似函数的值. 那么我们自然产生下面两个问题:
 ### 为什么这样的多项式近似(总是)存在?
-我们知道$\\{1,x,x^2,x^3,\cdots\\}$作为(有某些正则条件的,奇怪的函数不在考虑之列)函数空间这一**无穷维线性空间**的一组**基**, 它的**近似能力**或者说**表示能力**是无限的, 也就是说空间中任何一个函数都可以在这组基下找到一个线性表示.
+我们知道$\{1,x,x^2,x^3,\cdots\}$作为(有某些正则条件的,奇怪的函数不在考虑之列)函数空间这一**无穷维线性空间**的一组**基**, 它的**近似能力**或者说**表示能力**是无限的, 也就是说空间中任何一个函数都可以在这组基下找到一个线性表示.
 
 特别的, 如果函数高阶可微的话, 那么表示系数正比于函数的各阶导数.
 
@@ -42,11 +42,11 @@ include:
 
 举一个特殊的例子
 $$
-f(x)=|x|=\max\\{-x,x\\}
+f(x)=|x|=\max\{-x,x\}
 $$
 我们考虑这个函数在$x=0$附近的多项式近似, 显然$f$在$x=0$不可微. 但是我们知道这样一个事实
 $$
-\lim_{n\to\infty}\sqrt[n]{x^n+(-x)^n}=\max\\{x,-x\\}=|x|
+\lim_{n\to\infty}\sqrt[n]{x^n+(-x)^n}=\max\{x,-x\}=|x|
 $$
 那么我们就可以用一个光滑函数
 $$
@@ -56,7 +56,7 @@ $$
 <figure markdown>
 ![](./abs(x).jpg){width=500}
 </figure>
-作为类比, 我们可以用三角函数基$\\{1,\sin x, \cos x, \sin 2x, \cdots\\}$来表示任何一个函数(魏尔斯特拉斯第二逼近定理给出了这个结论), 这就成为常见的傅里叶级数, 逼近过程如图:
+作为类比, 我们可以用三角函数基$\{1,\sin x, \cos x, \sin 2x, \cdots\}$来表示任何一个函数(魏尔斯特拉斯第二逼近定理给出了这个结论), 这就成为常见的傅里叶级数, 逼近过程如图:
 <figure markdown>
 ![](./Fourier.jpg){width=500}
 </figure>
@@ -65,7 +65,7 @@ $$
 - $(-1,1)$上的正交基(勒让德多项式)
 $$
 \begin{aligned}
-\left\\\{P_n(x)\right\\\}_{n=0}^\infty=\left\\\{1,x,\frac{1}{2}(x^2-1),\frac{1}{2}(5x^3-3x),\cdots\right\\\}
+\left\{P_n(x)\right\}_{n=0}^\infty=\left\{1,x,\frac{1}{2}(x^2-1),\frac{1}{2}(5x^3-3x),\cdots\right\}
 \end{aligned}
 $$
 - 可以验证其中的多项式满足正交性且本身模非$0$
@@ -122,7 +122,7 @@ $$
 使用$n$次洛必达法则立得
 $$
 \begin{aligned}
-&\lim_{x\to a}\frac{R_n(x)}{(x-a)^n}\\\\
+&\lim_{x\to a}\frac{R_n(x)}{(x-a)^n}\\
 \overset{n次}{==}&\lim_{x\to a}\frac{f^{(n)}(x)-f^{(n)}(a)}{n!}
 \end{aligned}
 $$
@@ -131,8 +131,8 @@ $f$ 的$n+1$次可微性, 保证了$f^{(n)}$在$a$处的连续性, 因此上式�
 实际上在Peano余项下, 定理的条件可以放宽至$f$满足$n$次可微, 这时候只能用$n-1$次洛必达法则(若用$n$次得到上面的式子, 无法求得极限):
 $$
 \begin{aligned}
-&\lim_{x\to a}\frac{R_n(x)}{(x-a)^n}\\\\
-\overset{n-1次}{==}&\lim_{x\to a}\frac{f^{(n-1)}(x)-f^{(n-1)}(a)-f^{(n)}(a)(x-a)}{n!(x-a)}\\\\
+&\lim_{x\to a}\frac{R_n(x)}{(x-a)^n}\\
+\overset{n-1次}{==}&\lim_{x\to a}\frac{f^{(n-1)}(x)-f^{(n-1)}(a)-f^{(n)}(a)(x-a)}{n!(x-a)}\\
 =&\frac{1}{n!}\lim_{x\to a}\left[\frac{f^{(n-1)}(x)-f^{(n-1)}(a)}{(x-a)}-f^{(n)}(a)\right]
 &
 \end{aligned}
@@ -153,12 +153,12 @@ $$
 那么由Cauchy中值定理
 $$
 \begin{aligned}
-&\frac{R_n(x)}{g(x)}\\\\
-=&\frac{R_n(x)-R_n(a)}{g(x)-g(a)}\\\\
-=&\frac{R^{(1)}_n(\theta_1)}{g^{(1)}(\theta_1)}\\\\
-=&\frac{R^{(1)}_n(\theta_1)-R^{(1)}_n(a)}{g^{(1)}(\theta_1)-g^{(1)}(a)}\\\\
-\vdots\\\\
-=&\frac{R_n^{(n+1)}(\theta)}{g^{(n+1)}(\theta)}\\\\
+&\frac{R_n(x)}{g(x)}\\
+=&\frac{R_n(x)-R_n(a)}{g(x)-g(a)}\\
+=&\frac{R^{(1)}_n(\theta_1)}{g^{(1)}(\theta_1)}\\
+=&\frac{R^{(1)}_n(\theta_1)-R^{(1)}_n(a)}{g^{(1)}(\theta_1)-g^{(1)}(a)}\\
+\vdots\\
+=&\frac{R_n^{(n+1)}(\theta)}{g^{(n+1)}(\theta)}\\
 =&\frac{f^{(n+1)}(\theta)}{(n+1)!}
 \end{aligned}
 $$
@@ -172,17 +172,17 @@ $$
 使用牛顿莱布尼茨公式:
 $$
 \begin{aligned}
-&f(x)\\\\
-=&f(a)+f(x)-f(a)\\\\
-=&f(a)+\int_a^xf'(t)dt\\\\
+&f(x)\\
+=&f(a)+f(x)-f(a)\\
+=&f(a)+\int_a^xf'(t)dt\\
 \end{aligned}
 $$
 多次使用恒等式(分部积分)
 $$
 \begin{aligned}
-&\int_a^xf'(t)dt\\\\
-=&\int_a^xf'(t)d(t-x)\\\\
-=&\left[(t-x)f'(t)\right]\mid_a^x-\int_a^x(t-x)f''(t)dt\\\\
+&\int_a^xf'(t)dt\\
+=&\int_a^xf'(t)d(t-x)\\
+=&\left[(t-x)f'(t)\right]\mid_a^x-\int_a^x(t-x)f''(t)dt\\
 =&(x-a)f'(a)+\int_a^x(x-t)f''(t)dt
 \end{aligned}
 $$
@@ -274,7 +274,7 @@ $$
 例如
 $$
 \begin{aligned}
-f(x)&=\frac{1}{1-x^2}=\sum_{n=0}^\infty x^{2n}\\\\
+f(x)&=\frac{1}{1-x^2}=\sum_{n=0}^\infty x^{2n}\\
 g(x)&=\frac{1}{1+x^2}=\sum_{n=0}^\infty (-1)^nx^{2n}
 \end{aligned}
 $$
@@ -317,7 +317,7 @@ f(x)={\frac {1}{1+25x^{2}}}
 $$
 龙格发现如果使用$\le n$阶多项式$P_{n}(x)$在$−1$与$1$之间按照
 $$
-x_{i}=-1+(i-1){\frac{2}{n}},\quad i\in \left\\\{1,2,\dots ,n+1\right\\\}
+x_{i}=-1+(i-1){\frac{2}{n}},\quad i\in \left\{1,2,\dots ,n+1\right\}
 $$
 这样的等距点$x_i$进行插值, 那么在接近端点$−1$与$1$的地方插值结果就会出现大幅度的震荡.
 

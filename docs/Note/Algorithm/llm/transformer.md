@@ -111,8 +111,8 @@ $$
     我们会用一个线性变换分别计算出QKV：
     
     $$
-    Q = W_qx\\\\
-    K = W_kx\\\\
+    Q = W_qx\\
+    K = W_kx\\
     V = W_vx
     $$
 
@@ -229,7 +229,7 @@ $$
 Transformer使用的位置编码是正余弦，这是一种绝对的、固定的位置编码方式：
 
 $$
-PE_{(pos, 2i)} = \sin(pos / 10000^{2i/d_{\text{model}}})\\\\
+PE_{(pos, 2i)} = \sin(pos / 10000^{2i/d_{\text{model}}})\\
 PE_{(pos, 2i+1)} = \cos(pos / 10000^{2i/d_{\text{model}}})
 $$
 

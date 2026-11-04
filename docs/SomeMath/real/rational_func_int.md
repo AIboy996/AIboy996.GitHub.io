@@ -37,15 +37,15 @@ $$
 $$
 也就是两个多项式的商称为有理函数，这个概念显然是有理数某种意义上的推广：
 $$
-\mathbb{Q}=\left\\{f=\frac{p}{q}\mid p,q\in \mathbb{Z}, q\ne 0\right\\}
+\mathbb{Q}=\left\{f=\frac{p}{q}\mid p,q\in \mathbb{Z}, q\ne 0\right\}
 $$
 并且类似的，我们也定义真分式：
 $$
-\text{proper fraction}=\left\\{f(x)=\frac{P_m(x)}{Q_n(x)}\mid m<n\right\\}
+\text{proper fraction}=\left\{f(x)=\frac{P_m(x)}{Q_n(x)}\mid m<n\right\}
 $$
 和假分式：
 $$
-\text{improper fraction}=\left\\{f(x)=\frac{P_m(x)}{Q_n(x)}\mid m\ge n\right\\}
+\text{improper fraction}=\left\{f(x)=\frac{P_m(x)}{Q_n(x)}\mid m\ge n\right\}
 $$
 
 > 上面写成了集合形式，有些显而易见的条件就略去了，并且在我们讨论有理函数积分的场景下，不妨假设$P_m$和$Q_n$最高次项的系数都为1
@@ -88,7 +88,7 @@ $$
 有了上述$Q_n(x)$的实数域内的分解形式，我们就可以得到下面有理真分式的部分分式分解形式：
 $$
 \begin{aligned}
-&\frac{P(x)}{Q(x)}\\\\
+&\frac{P(x)}{Q(x)}\\
 =&\sum_{i=1}^{s}\sum_{k=1}^{d_i}\frac{A_{ik}}{(x-a_i)^k}+\sum_{j=1}^{t}\sum_{k=1}^{e_j}\frac{B_{jk}x+C_{jk}}{(x^2-2\alpha_j x+\alpha_j^2+\beta_j^2)^k}
 \end{aligned}
 $$
@@ -122,9 +122,9 @@ $$
 
 $$
 \begin{aligned}
-&F(x)\\\\
-=&\int \frac{x^4}{x^3+1}\mathrm{d}x\\\\
-=&\int \left[x-\frac{x}{x^3+1}\right]\mathrm{d}x\\\\
+&F(x)\\
+=&\int \frac{x^4}{x^3+1}\mathrm{d}x\\
+=&\int \left[x-\frac{x}{x^3+1}\right]\mathrm{d}x\\
 =&\frac{1}{2}x^2-\int \frac{x}{x^3+1}\mathrm{d}x
 \end{aligned}
 $$
@@ -140,8 +140,8 @@ $$
 于是有部分分解
 $$
 \begin{aligned}
-&\frac{x}{x^3+1}\\\\
-=&\frac{x}{(x+1)(x^2-x+1)}\\\\
+&\frac{x}{x^3+1}\\
+=&\frac{x}{(x+1)(x^2-x+1)}\\
 =&\frac{A}{x+1}+\frac{Bx+C}{x^2-x+1}
 \end{aligned}
 $$
@@ -168,8 +168,8 @@ $$
     比较(*)式中各次项系数即可得到线性方程组:
     $$
     \begin{aligned}
-    x^2& \ | \ A+B=0\\\\
-    x^1& \ | \ -A+B+C=1\\\\
+    x^2& \ | \ A+B=0\\
+    x^1& \ | \ -A+B+C=1\\
     x^0& \ | \ A+C=0
     \end{aligned}
     $$
@@ -181,8 +181,8 @@ $$
     对(*)求0,1,2阶导数可得:
     $$
     \begin{aligned}
-    0& \ | \ x=A(x^2-x+1)+(Bx+C)(x+1)\\\\
-    1& \ | \ 1=2Ax-A+B(x+1)+Bx+C\\\\
+    0& \ | \ x=A(x^2-x+1)+(Bx+C)(x+1)\\
+    1& \ | \ 1=2Ax-A+B(x+1)+Bx+C\\
     2& \ | \ 0=2A+B+B
     \end{aligned}
     $$
@@ -191,8 +191,8 @@ $$
 总而言之，我们可以得到部分分式分解形式：
 $$
 \begin{aligned}
-&F(x)\\\\
-=&\frac{1}{2}x^2-\int \frac{x}{x^3+1}\mathrm{d}x\\\\
+&F(x)\\
+=&\frac{1}{2}x^2-\int \frac{x}{x^3+1}\mathrm{d}x\\
 =&\frac{1}{2}x^2-\int \left[ \frac{-\frac{1}{3}}{x+1}+\frac{\frac{1}{3}x+\frac{1}{3}}{x^2-x+1}\right]\mathrm{d}x
 \end{aligned}
 $$
@@ -213,32 +213,32 @@ $$
 也就是
 $$
 \begin{aligned}
-&\int \frac{Bx+C}{x^2-2\alpha x+\beta}\mathrm{d}x\\\\
-=&\int \frac{B(x-\alpha)+C+\alpha B}{(x-\alpha)^2+\beta-\alpha^2}\mathrm{d}(x-\alpha)\\\\
-=&\int \frac{Bt+C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\\\
-=&\int \frac{1}{2}\frac{B}{t^2+\beta-\alpha^2}\mathrm{d}t^2+\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\\\
+&\int \frac{Bx+C}{x^2-2\alpha x+\beta}\mathrm{d}x\\
+=&\int \frac{B(x-\alpha)+C+\alpha B}{(x-\alpha)^2+\beta-\alpha^2}\mathrm{d}(x-\alpha)\\
+=&\int \frac{Bt+C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\
+=&\int \frac{1}{2}\frac{B}{t^2+\beta-\alpha^2}\mathrm{d}t^2+\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\
 =&\frac{B}{2}\ln|t^2+\beta-\alpha^2|+\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t
 \end{aligned}
 $$
 若$\beta-\alpha^2=0$
 $$
 \begin{aligned}
-&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\\\
+&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\
 =&-\frac{C+\alpha B}{t}+C
 \end{aligned}
 $$
 若$\beta-\alpha^2<0$
 $$
 \begin{aligned}
-&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\\\
-=&\frac{C+\alpha B}{2\sqrt{-\beta+\alpha^2}}\int \left[\frac{1}{t+\sqrt{-\beta+\alpha^2}}-\frac{1}{t-\sqrt{-\beta+\alpha^2}}\right]\mathrm{d}t\\\\
+&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\
+=&\frac{C+\alpha B}{2\sqrt{-\beta+\alpha^2}}\int \left[\frac{1}{t+\sqrt{-\beta+\alpha^2}}-\frac{1}{t-\sqrt{-\beta+\alpha^2}}\right]\mathrm{d}t\\
 =&\frac{C+\alpha B}{2\sqrt{-\beta+\alpha^2}} \left[\ln|t+\sqrt{-\beta+\alpha^2}|+\ln|t-\sqrt{-\beta+\alpha^2}|\right]+C
 \end{aligned}
 $$
 若$\beta-\alpha^2>0$
 $$
 \begin{aligned}
-&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\\\
+&\int \frac{C+\alpha B}{t^2+\beta-\alpha^2}\mathrm{d}t\\
 =&\frac{C+\alpha B}{\sqrt{\beta-\alpha^2}}\arctan (\frac{t}{\sqrt{\beta-\alpha^2}})+C
 \end{aligned}
 $$
@@ -249,12 +249,12 @@ $$
 例1 步骤3, 部分分式分解完之后应用积分公式求解
 $$
 \begin{aligned}
-&F(x)\\\\
-=&\frac{1}{2}x^2-\int \left[ \frac{-\frac{1}{3}}{x+1}+\frac{\frac{1}{3}x+\frac{1}{3}}{x^2-x+1}\right]\mathrm{d}x\\\\
-=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\int \frac{\frac{1}{3}(x-0.5)+\frac{1}{2}}{(x-0.5)^2+0.75}\mathrm{d}(x-0.5)\\\\
-=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\int \frac{\frac{1}{3}t+\frac{1}{2}}{t^2+0.75}\mathrm{d}t\\\\
-=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\frac{1}{6}\ln|(x-\frac{1}{2})^2+\frac{3}{4}|+\frac{\sqrt{3}}{3}\arctan(\frac{2\sqrt{3}}{3}(x-\frac{1}{2}))+C\\\\
-=&\frac{1}{6}\left\\{3x^2+2\ln|x+1|-\ln(x^2-x+1)-2\sqrt{3}\arctan(\frac{2x-1}{\sqrt{3}})\right\\}+C
+&F(x)\\
+=&\frac{1}{2}x^2-\int \left[ \frac{-\frac{1}{3}}{x+1}+\frac{\frac{1}{3}x+\frac{1}{3}}{x^2-x+1}\right]\mathrm{d}x\\
+=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\int \frac{\frac{1}{3}(x-0.5)+\frac{1}{2}}{(x-0.5)^2+0.75}\mathrm{d}(x-0.5)\\
+=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\int \frac{\frac{1}{3}t+\frac{1}{2}}{t^2+0.75}\mathrm{d}t\\
+=&\frac{1}{2}x^2+\frac{1}{3}\ln|x+1|-\frac{1}{6}\ln|(x-\frac{1}{2})^2+\frac{3}{4}|+\frac{\sqrt{3}}{3}\arctan(\frac{2\sqrt{3}}{3}(x-\frac{1}{2}))+C\\
+=&\frac{1}{6}\left\{3x^2+2\ln|x+1|-\ln(x^2-x+1)-2\sqrt{3}\arctan(\frac{2x-1}{\sqrt{3}})\right\}+C
 \end{aligned}
 $$
 
@@ -270,9 +270,9 @@ $$
 解:
 $$
 \begin{aligned}
-&\int \frac{\mathrm{d}x}{(x^2+1)(x^2+x)}\\\\
-&=\int\left[\frac{1}{x}-\frac{1}{2(x+1)}-\frac{1+x}{2\left(x^{2}+1\right)}\right] \mathrm{d} x \\\\
-&=\ln |x|-\frac{1}{2} \ln |x+1|-\frac{1}{2} \arctan x-\frac{1}{4} \int \frac{\mathrm{d}\left(x^{2}+1\right)}{x^{2}+1} \\\\
+&\int \frac{\mathrm{d}x}{(x^2+1)(x^2+x)}\\
+&=\int\left[\frac{1}{x}-\frac{1}{2(x+1)}-\frac{1+x}{2\left(x^{2}+1\right)}\right] \mathrm{d} x \\
+&=\ln |x|-\frac{1}{2} \ln |x+1|-\frac{1}{2} \arctan x-\frac{1}{4} \int \frac{\mathrm{d}\left(x^{2}+1\right)}{x^{2}+1} \\
 &=\ln |x|-\frac{1}{2} \ln |x+1|-\frac{1}{2} \arctan x-\frac{1}{4} \ln \left(x^{2}+1\right)+C
 \end{aligned}
 $$
@@ -285,8 +285,8 @@ $$
 解:
 $$
 \begin{aligned}
-&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d} x\\\\
-=&\int\left[\frac{1}{2(x+1)}-\frac{1}{(x+1)^{2}}+\frac{1}{2(x-1)} \mathrm{d}x\right]\\\\
+&\int \frac{x^{2}+1}{(x+1)^{2}(x-1)} \mathrm{d} x\\
+=&\int\left[\frac{1}{2(x+1)}-\frac{1}{(x+1)^{2}}+\frac{1}{2(x-1)} \mathrm{d}x\right]\\
 =&\frac{1}{2} \ln \left|x^{2}-1\right|+\frac{1}{x+1}+C
 \end{aligned}
 $$
@@ -299,8 +299,8 @@ $$
 解:
 $$
 \begin{aligned}
-F(x)=& \frac{1}{2} \int \frac{d x}{x^{2}-\sqrt{2} x+1}+ \frac{1}{2} \int \frac{d x}{x^{2}+\sqrt{2} x+1} \\\\
-=& \frac{1}{2} \int \frac{d x}{\left(x-\frac{\sqrt{2}}{2}\right)^{2}+\frac{1}{2}}+ \frac{1}{2} \int \frac{d x}{\left(x+\frac{\sqrt{2}}{2}\right)^{2}+\frac{1}{2}}\\\\
+F(x)=& \frac{1}{2} \int \frac{d x}{x^{2}-\sqrt{2} x+1}+ \frac{1}{2} \int \frac{d x}{x^{2}+\sqrt{2} x+1} \\
+=& \frac{1}{2} \int \frac{d x}{\left(x-\frac{\sqrt{2}}{2}\right)^{2}+\frac{1}{2}}+ \frac{1}{2} \int \frac{d x}{\left(x+\frac{\sqrt{2}}{2}\right)^{2}+\frac{1}{2}}\\
 =&\frac{1}{\sqrt{2}} \arctan (\sqrt{2} x-1)+ \frac{1}{\sqrt{2}} \arctan (\sqrt{2} x+1)+C
 \end{aligned}
 $$
@@ -313,9 +313,9 @@ $$
 解:
 $$
 \begin{aligned}
-& \int \frac{\mathrm{d} x}{x^{3}+1}\\\\
-=&\int\left[\frac{1}{3(x+1)}-\frac{x-2}{3\left(x^{2}-x+1\right)}\right] \mathrm{d} x \\\\
-=& \frac{1}{3} \int \frac{\mathrm{d} x}{x+1}-\frac{1}{6} \int \frac{2 x-1}{x^{2}-x+1} \mathrm{~d} x+\frac{1}{2} \int \frac{\mathrm{d}\left(x-\frac{1}{2}\right)}{\left(x-\frac{1}{2}\right)^{2}+\frac{3}{4}} \\\\
+& \int \frac{\mathrm{d} x}{x^{3}+1}\\
+=&\int\left[\frac{1}{3(x+1)}-\frac{x-2}{3\left(x^{2}-x+1\right)}\right] \mathrm{d} x \\
+=& \frac{1}{3} \int \frac{\mathrm{d} x}{x+1}-\frac{1}{6} \int \frac{2 x-1}{x^{2}-x+1} \mathrm{~d} x+\frac{1}{2} \int \frac{\mathrm{d}\left(x-\frac{1}{2}\right)}{\left(x-\frac{1}{2}\right)^{2}+\frac{3}{4}} \\
 =& \frac{1}{6} \ln \frac{(x+1)^{2}}{x^{2}-x+1}+\frac{1}{\sqrt{3}} \arctan \frac{2 x-1}{\sqrt{3}}+C .
 \end{aligned}
 $$
@@ -328,8 +328,8 @@ $$
 解:
 $$
 \begin{aligned}
-&\int \frac{\mathrm{d} x}{x^{4}-1}\\\\
-=&\frac{1}{2} \int\left[\frac{1}{x^{2}-1}-\frac{1}{x^{2}+1}\right] \mathrm{d} x\\\\
+&\int \frac{\mathrm{d} x}{x^{4}-1}\\
+=&\frac{1}{2} \int\left[\frac{1}{x^{2}-1}-\frac{1}{x^{2}+1}\right] \mathrm{d} x\\
 =&\frac{1}{4} \ln \left|\frac{x-1}{x+1}\right|-\frac{1}{2} \arctan x+C
 \end{aligned}
 $$

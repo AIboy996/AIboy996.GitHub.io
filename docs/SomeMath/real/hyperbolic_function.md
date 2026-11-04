@@ -102,7 +102,7 @@ $$
 由此可以得出一个重要的面积公式：
 $$
 \begin{aligned}
-&\int_1^{t} \sqrt{x^2-1} \ \mathrm{d}x\\\\
+&\int_1^{t} \sqrt{x^2-1} \ \mathrm{d}x\\
 =& \frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\alpha
 \end{aligned}
 $$
@@ -157,7 +157,7 @@ $\sinh x$在$R$上单调增
 
 $\cosh x$在负半轴单调减，在正半轴单调增
 
-$\tanh x$在$R/\\{0\\}$上单调增
+$\tanh x$在$R/\{0\}$上单调增
 
 - 奇偶性
 
@@ -168,9 +168,9 @@ $\tanh x$在$R/\\{0\\}$上单调增
 看到$e^x$我们不免想到欧拉公式，如果带入$\cosh ix$就有
 $$
 \begin{aligned}
-&\cosh ix \\\\
-=&\frac{1}{2}(e^{ix}+e^{-ix})\\\\
-=&\frac{1}{2}(\cos x+i\sin x+\cos x-i\sin x)\\\\
+&\cosh ix \\
+=&\frac{1}{2}(e^{ix}+e^{-ix})\\
+=&\frac{1}{2}(\cos x+i\sin x+\cos x-i\sin x)\\
 =&\cos x
 \end{aligned}
 $$
@@ -270,9 +270,9 @@ $$
 这时候我们就可以解决前面遗留的问题了
 $$
 \begin{aligned}
-&\int_1^{t} \sqrt{x^2-1} \ \mathrm{d}x\\\\
-=& \frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\alpha\\\\
-=&\frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\cosh^{-1}t\\\\
+&\int_1^{t} \sqrt{x^2-1} \ \mathrm{d}x\\
+=& \frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\alpha\\
+=&\frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\cosh^{-1}t\\
 =&\frac{1}{2}t\sqrt{t^2-1}-\frac{1}{2}\ln(t+\sqrt{t^2-1})
 \end{aligned}
 $$
@@ -319,19 +319,19 @@ $$
 这三个公式和反三角函数那里的结论高度重合，实际上可以看作是一种**复换元**：
 $$
 \begin{aligned}
-&\int\frac{1}{1-x^2}dx\\\\
-(x=it)=&\int \frac{i}{1+t^2}dt\\\\
-=&i\arctan t+C\\\\
+&\int\frac{1}{1-x^2}dx\\
+(x=it)=&\int \frac{i}{1+t^2}dt\\
+=&i\arctan t+C\\
 =&i\arctan (-ix)+C
 \end{aligned}
 $$
 而我们知道
 $$
 \begin{aligned}
-&\tanh ix = i\tan x\\\\
-\Rightarrow\quad&-i\tanh ix = \tan x\\\\
-\Rightarrow\quad&\arctan (-i\tanh ix) = x\\\\
-\Rightarrow\quad&\arctan(i\tanh x)=ix\\\\
+&\tanh ix = i\tan x\\
+\Rightarrow\quad&-i\tanh ix = \tan x\\
+\Rightarrow\quad&\arctan (-i\tanh ix) = x\\
+\Rightarrow\quad&\arctan(i\tanh x)=ix\\
 \Rightarrow\quad&\arctan(ix)=i\tanh^{-1}x
 \end{aligned}
 $$
@@ -342,10 +342,10 @@ $$
 回代得到
 $$
 \begin{aligned}
-&\int\frac{1}{1-x^2}dx\\\\
-(x=it)=&\int \frac{i}{1+t^2}dt\\\\
-=&i\arctan t+C\\\\
-=&i\arctan (-ix)+C\\\\
+&\int\frac{1}{1-x^2}dx\\
+(x=it)=&\int \frac{i}{1+t^2}dt\\
+=&i\arctan t+C\\
+=&i\arctan (-ix)+C\\
 =&\tanh^{-1}x+C
 \end{aligned}
 $$
@@ -354,11 +354,11 @@ $$
 - 双曲函数自身的积分
 $$
 \begin{aligned}
-&\int \sinh cx\mathrm{~d}x=\frac{1}{c} \cosh c x+C \\\\
-&\int \cosh c x \mathrm{~d} x=\frac{1}{c} \sinh c x+C \\\\
-&\int \tanh c x \mathrm{~d} x=\frac{1}{c} \ln(\cosh cx)+C \\\\
-&\int \operatorname{coth} c x \mathrm{~d} x=\frac{1}{c} \ln|\sinh cx|+C \\\\
-&\int \operatorname{sech} c x \mathrm{~d} x=\frac{1}{c} \arctan (\sinh c x)+C \\\\
+&\int \sinh cx\mathrm{~d}x=\frac{1}{c} \cosh c x+C \\
+&\int \cosh c x \mathrm{~d} x=\frac{1}{c} \sinh c x+C \\
+&\int \tanh c x \mathrm{~d} x=\frac{1}{c} \ln(\cosh cx)+C \\
+&\int \operatorname{coth} c x \mathrm{~d} x=\frac{1}{c} \ln|\sinh cx|+C \\
+&\int \operatorname{sech} c x \mathrm{~d} x=\frac{1}{c} \arctan (\sinh c x)+C \\
 &\int \operatorname{csch} c x \mathrm{~d} x=\frac{1}{c} \ln \left|\tanh \frac{c x}{2}\right|+C
 \end{aligned}
 $$
@@ -367,20 +367,20 @@ $$
 
 $$
 \begin{aligned}
-&\sinh x=x+\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}+\frac{x^{7}}{7 !}+\cdots=\sum_{n=0}^{\infty} \frac{x^{2 n+1}}{(2 n+1) !} \\\\
-&\cosh x=1+\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}+\frac{x^{6}}{6 !}+\cdots=\sum_{n=0}^{\infty} \frac{x^{2 n}}{(2 n) !} \\\\
-&\tanh x=x-\frac{x^{3}}{3}+\frac{2 x^{5}}{15}-\frac{17 x^{7}}{315}+\cdots=\sum_{n=1}^{\infty} \frac{2^{2 n}\left(2^{2 n}-1\right) B_{2 n} x^{2 n-1}}{(2 n) !},|x|<\frac{\pi}{2} \\\\
+&\sinh x=x+\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}+\frac{x^{7}}{7 !}+\cdots=\sum_{n=0}^{\infty} \frac{x^{2 n+1}}{(2 n+1) !} \\
+&\cosh x=1+\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}+\frac{x^{6}}{6 !}+\cdots=\sum_{n=0}^{\infty} \frac{x^{2 n}}{(2 n) !} \\
+&\tanh x=x-\frac{x^{3}}{3}+\frac{2 x^{5}}{15}-\frac{17 x^{7}}{315}+\cdots=\sum_{n=1}^{\infty} \frac{2^{2 n}\left(2^{2 n}-1\right) B_{2 n} x^{2 n-1}}{(2 n) !},|x|<\frac{\pi}{2} \\
 \end{aligned}
 $$
 - 不常见
 
 $$
 \begin{aligned}
-\operatorname{coth} x&=\frac{1}{x}+\frac{x}{3}-\frac{x^{3}}{45}+\frac{2 x^{5}}{945}+\cdots\\\\
-&=\frac{1}{x}+\sum_{n=1}^{\infty} \frac{2^{2 n} B_{2 n} x^{2 n-1}}{(2 n) !}, 0<|x|<\pi\text { (洛朗级数) } \\\\
-\operatorname{sech} x&=1-\frac{x^{2}}{2}+\frac{5 x^{4}}{24}-\frac{61 x^{6}}{720}+\cdots\\\\
-&=\sum_{n=0}^{\infty} \frac{E_{2 n} x^{2 n}}{(2 n) !},|x|<\frac{\pi}{2} \\\\
-\operatorname{csch} x&=\frac{1}{x}-\frac{x}{6}+\frac{7 x^{3}}{360}-\frac{31 x^{5}}{15120}+\cdots\\\\
+\operatorname{coth} x&=\frac{1}{x}+\frac{x}{3}-\frac{x^{3}}{45}+\frac{2 x^{5}}{945}+\cdots\\
+&=\frac{1}{x}+\sum_{n=1}^{\infty} \frac{2^{2 n} B_{2 n} x^{2 n-1}}{(2 n) !}, 0<|x|<\pi\text { (洛朗级数) } \\
+\operatorname{sech} x&=1-\frac{x^{2}}{2}+\frac{5 x^{4}}{24}-\frac{61 x^{6}}{720}+\cdots\\
+&=\sum_{n=0}^{\infty} \frac{E_{2 n} x^{2 n}}{(2 n) !},|x|<\frac{\pi}{2} \\
+\operatorname{csch} x&=\frac{1}{x}-\frac{x}{6}+\frac{7 x^{3}}{360}-\frac{31 x^{5}}{15120}+\cdots\\
 &=\frac{1}{x}+\sum_{n=1}^{\infty} \frac{2\left(1-2^{2 n-1}\right) B_{2 n} x^{2 n-1}}{(2 n) !}, 0<|x|<\pi \text { (洛朗级数) }
 \end{aligned}
 $$
@@ -392,7 +392,7 @@ $$
 
 例如
 $$
-\int \sqrt{x^2-1} \ \mathrm{d}x\\\\
+\int \sqrt{x^2-1} \ \mathrm{d}x\\
 $$
 如果用常规的三角换元
 $$
@@ -411,9 +411,9 @@ $$
 进而使用二倍角公式等，可以很容易求得结果，过程列在下面
 $$
 \begin{aligned}
-&\int\sqrt{x^2-1}dx\\\\
-=&\int \sinh^2\theta \ d\theta\\\\
-=&\frac{1}{2}\int (\cosh 2\theta-1) \ d\theta\\\\
+&\int\sqrt{x^2-1}dx\\
+=&\int \sinh^2\theta \ d\theta\\
+=&\frac{1}{2}\int (\cosh 2\theta-1) \ d\theta\\
 =&\frac{1}{4}\sinh 2\theta-\frac{1}{2}\theta+C
 \end{aligned}
 $$
@@ -428,7 +428,7 @@ $$
 也就是
 $$
 \begin{aligned}
-&\int \sqrt{x^2-1} \ dx\\\\
+&\int \sqrt{x^2-1} \ dx\\
 =&\frac{x\sqrt{x^2-1}}{2}-\frac{1}{2}\ln(x+\sqrt{x^2-1})+C
 \end{aligned}
 $$

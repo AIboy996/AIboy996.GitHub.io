@@ -61,12 +61,12 @@ $$
 
 $$
 \begin{aligned}
-&\max_{w,b} \quad \frac{2}{\sqrt{w^Tw}}\\\\
+&\max_{w,b} \quad \frac{2}{\sqrt{w^Tw}}\\
 s.t. &\quad y_i(w^Tx_i-b) \ge 1
 \end{aligned}
 $$
 
-其中$(x_i, y_i)$是训练数据，$y_i \in \\{ 1, -1 \\}$是样本的标签。
+其中$(x_i, y_i)$是训练数据，$y_i \in \{ 1, -1 \}$是样本的标签。
 
 ### 拉格朗日乘子法
 
@@ -74,7 +74,7 @@ $$
 
 $$
 \begin{aligned}
-&\min_{w,b} \quad \frac{1}{2} w^Tw\\\\
+&\min_{w,b} \quad \frac{1}{2} w^Tw\\
 s.t. &\quad y_i(w^Tx_i-b) \ge 1
 \end{aligned}
 $$
@@ -103,7 +103,7 @@ $$
 
 $$
 \begin{aligned}
-&\min_{\vec{a}} \quad \sum_i a_i - \frac{1}{2} \sum_i \sum_j (a_ia_jy_iy_j) \cdot  x^T_ix_j \\\\
+&\min_{\vec{a}} \quad \sum_i a_i - \frac{1}{2} \sum_i \sum_j (a_ia_jy_iy_j) \cdot  x^T_ix_j \\
 s.t. &\quad \sum_i a_iy_i = 0, \quad a_i\ge 0
 \end{aligned}
 $$
@@ -112,8 +112,8 @@ KKT条件如下：
 
 $$
 \begin{aligned}
-&a_i\ge 0\\\\
-&y_i(w^Tx_i - b)\ge 1\\\\
+&a_i\ge 0\\
+&y_i(w^Tx_i - b)\ge 1\\
 &a_i\left [y_i(w^Tx_i - b) - 1\right] = 0
 \end{aligned}
 $$
@@ -181,7 +181,7 @@ $$
 不妨设映射为$\phi$，那么优化问题变为：
 $$
 \begin{aligned}
-&\min_{w,b} \quad \frac{1}{2} w^Tw\\\\
+&\min_{w,b} \quad \frac{1}{2} w^Tw\\
 s.t. &\quad y_i(w^T\phi(x_i)-b) \ge 1
 \end{aligned}
 $$
@@ -190,7 +190,7 @@ $$
 
 $$
 \begin{aligned}
-&\min_{\vec{a}} \quad \sum_i a_i - \frac{1}{2} \sum_i \sum_j (a_ia_jy_iy_j) \cdot  \phi(x_i)^T\phi(x_j) \\\\
+&\min_{\vec{a}} \quad \sum_i a_i - \frac{1}{2} \sum_i \sum_j (a_ia_jy_iy_j) \cdot  \phi(x_i)^T\phi(x_j) \\
 s.t. &\quad \sum_i a_iy_i = 0, \quad a_i\ge 0
 \end{aligned}
 $$

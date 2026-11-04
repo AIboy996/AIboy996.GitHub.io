@@ -43,10 +43,10 @@ $$
 所以
 $$
 \begin{aligned}
-y&=\frac{1}{\cos(\pi/6-t)}+\frac{1}{\cos(\pi/6+t)}\\\\
-&=\frac{\cos(\pi/6-t)+\cos(\pi/6+t)}{\cos(\pi/6-t)\cos(\pi/6+t)}\\\\
-&=\frac{\sqrt{3}\cos t}{(\sqrt{3}/2\cos t)^2-(1/2\sin t)^2}\\\\
-&=\frac{\sqrt{3}\cos t}{\cos^2t-0.25}\\\\
+y&=\frac{1}{\cos(\pi/6-t)}+\frac{1}{\cos(\pi/6+t)}\\
+&=\frac{\cos(\pi/6-t)+\cos(\pi/6+t)}{\cos(\pi/6-t)\cos(\pi/6+t)}\\
+&=\frac{\sqrt{3}\cos t}{(\sqrt{3}/2\cos t)^2-(1/2\sin t)^2}\\
+&=\frac{\sqrt{3}\cos t}{\cos^2t-0.25}\\
 &=\frac{\sqrt{3}}{\cos t-0.25/\cos t}
 \end{aligned}
 $$

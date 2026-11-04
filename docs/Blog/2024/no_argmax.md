@@ -28,7 +28,7 @@ $$
 的导数是：
 $$
 \begin{pmatrix}
-1&1\\\\
+1&1\\
 1&1
 \end{pmatrix}
 $$

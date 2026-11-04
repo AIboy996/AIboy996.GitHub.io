@@ -9,7 +9,7 @@ include:
 
 题目来自哔哩哔哩UP主`@考研竞赛凯哥`：
 $$
-\lim_{x\to 0}\left\\\{1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\right\\\}/x
+\lim_{x\to 0}\left\{1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\right\}/x
 $$
 有点复杂，但是泰勒展开可以一战。
 
@@ -18,16 +18,16 @@ $$
 我们只需要知道**两个公式**
 $$
 \begin{aligned}
-&\ln(1+x)\\\\
-=&x-\frac{x^2}{2}+\frac{x^3}{3}+\cdots\\\\
+&\ln(1+x)\\
+=&x-\frac{x^2}{2}+\frac{x^3}{3}+\cdots\\
 =&x+o(x)
 \end{aligned}
 $$
 和
 $$
 \begin{aligned}
-&e^x\\\\
-=&1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots\\\\
+&e^x\\
+=&1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots\\
 =&1+x+o(x)
 \end{aligned}
 $$
@@ -42,10 +42,10 @@ $$
 那么带入指数函数有
 $$
 \begin{aligned}
-&\exp(\frac{\ln(1+x)}{x})\\\\
-=&e^{1-\frac{1}{2}x+o(x)}\\\\
-=&ee^{-\frac{1}{2}x}e^{o(x)}\\\\
-=&e(1-\frac{1}{2}x+o(x))(1+o(x))\\\\
+&\exp(\frac{\ln(1+x)}{x})\\
+=&e^{1-\frac{1}{2}x+o(x)}\\
+=&ee^{-\frac{1}{2}x}e^{o(x)}\\
+=&e(1-\frac{1}{2}x+o(x))(1+o(x))\\
 =&e-\frac{e}{2}x+o(x)
 \end{aligned}
 $$
@@ -58,9 +58,9 @@ $$
 **最后一个等式**是因为
 $$
 \begin{aligned}
-&(1-\frac{1}{2}x+o(x))(1+o(x))\\\\
-=&(1-\frac{1}{2}x+o(x))\times1+\color{blue}{(1-\frac{1}{2}x+o(x))\times o(x)}\\\\
-=&1-\frac{1}{2}x+o(x)+\color{blue}{o(x)}\\\\
+&(1-\frac{1}{2}x+o(x))(1+o(x))\\
+=&(1-\frac{1}{2}x+o(x))\times1+\color{blue}{(1-\frac{1}{2}x+o(x))\times o(x)}\\
+=&1-\frac{1}{2}x+o(x)+\color{blue}{o(x)}\\
 =&1-\frac{1}{2}x+o(x)
 \end{aligned}
 $$
@@ -75,8 +75,8 @@ $$
 最终我们得到
 $$
 \begin{aligned}
-&(1+x)^{1/x}\\\\
-=&\exp(\frac{\ln(1+x)}{x})\\\\
+&(1+x)^{1/x}\\
+=&\exp(\frac{\ln(1+x)}{x})\\
 =&\color{red}{e-\frac{e}{2}x+o(x)}
 \end{aligned}
 $$
@@ -86,18 +86,18 @@ $$
 **如法炮制**，把上面这个式子再带入指数函数有
 $$
 \begin{aligned}
-&e^{(1+x)^{1/x}}\\\\
-=&\exp(\color{green}{e-\frac{e}{2}x+o(x)})\\\\
-=&e^ee^{-ex/2}e^{o(x)}\\\\
-=&e^e(1-\frac{e}{2}x+o(x))(1+o(x))\\\\
-=&e^e(1-\frac{e}{2}x)+o(x)\\\\
+&e^{(1+x)^{1/x}}\\
+=&\exp(\color{green}{e-\frac{e}{2}x+o(x)})\\
+=&e^ee^{-ex/2}e^{o(x)}\\
+=&e^e(1-\frac{e}{2}x+o(x))(1+o(x))\\
+=&e^e(1-\frac{e}{2}x)+o(x)\\
 =&e^e-\frac{e^{e+1}}{2}x+o(x)
 \end{aligned}
 $$
 再加上一个$x$就是
 $$
 \begin{aligned}
-&x+e^{(1+x)^{1/x}}\\\\
+&x+e^{(1+x)^{1/x}}\\
 =&\color{red}{e^e+(1-\frac{e^{e+1}}{2})x+o(x)}
 \end{aligned}
 $$
@@ -107,9 +107,9 @@ $$
 把上面这个式子再带入对数函数有
 $$
 \begin{aligned}
-&\ln(x+e^{(1+x)^{1/x}})\\\\
-=&\ln(\color{green}{e^e+(1-\frac{e^{e+1}}{2})x+o(x)})\\\\
-=&\ln e^e+\ln(1+(e^{-e}-\frac{e}{2})x+o(x))\\\\
+&\ln(x+e^{(1+x)^{1/x}})\\
+=&\ln(\color{green}{e^e+(1-\frac{e^{e+1}}{2})x+o(x)})\\
+=&\ln e^e+\ln(1+(e^{-e}-\frac{e}{2})x+o(x))\\
 =&\color{red}{e+(e^{-e}-\frac{e}{2})x+o(x)}
 \end{aligned}
 $$
@@ -129,16 +129,16 @@ $$
 **如法炮制**，再把上面一步的结果带入对数函数有
 $$
 \begin{aligned}
-&\ln\left\\\{\ln(x+e^{(1+x)^{1/x}})\right\\\}\\\\
-=&\ln(\color{green}{e+(e^{-e}-\frac{e}{2})x+o(x)})\\\\
-=&\ln e+\ln(1+(e^{-e-1}-\frac{1}{2})x+o(x))\\\\
+&\ln\left\{\ln(x+e^{(1+x)^{1/x}})\right\}\\
+=&\ln(\color{green}{e+(e^{-e}-\frac{e}{2})x+o(x)})\\
+=&\ln e+\ln(1+(e^{-e-1}-\frac{1}{2})x+o(x))\\
 =&1+(e^{-e-1}-\frac{1}{2})x+o(x)
 \end{aligned}
 $$
 于是
 $$
 \begin{aligned}
-&1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\\\\
+&1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\\
 =&\color{red}-(e^{-e-1}-\frac{1}{2})x+o(x)
 \end{aligned}
 $$
@@ -148,8 +148,8 @@ $$
 回代最初的题目得到
 $$
 \begin{aligned}
-&\lim_{x\to0}\left\\\{1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\right\\\}/x\\\\
-=&\lim_{x\to0}-(e^{-e-1}-\frac{1}{2})x/x+\lim_{x\to0}o(x)/x\\\\
+&\lim_{x\to0}\left\{1-\ln\left[\ln(x+e^{(1+x)^{1/x}})\right]\right\}/x\\
+=&\lim_{x\to0}-(e^{-e-1}-\frac{1}{2})x/x+\lim_{x\to0}o(x)/x\\
 =&\frac{1}{2}-e^{-e-1}
 \end{aligned}
 $$

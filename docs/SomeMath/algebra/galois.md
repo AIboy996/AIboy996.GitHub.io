@@ -42,7 +42,7 @@ $$
 第二个重要的概念是Galois群，它的定义如下：
 
 $$
-G = \mathrm{Gal}(E/F) = \\{ \sigma \in \mathrm{Aut}(E) \mid \sigma(x) = x \quad \forall x \in F \\}
+G = \mathrm{Gal}(E/F) = \{ \sigma \in \mathrm{Aut}(E) \mid \sigma(x) = x \quad \forall x \in F \}
 $$
 
 其中$\mathrm{Aut}(E)$代表$E$上所有**自同构**。Galois群描绘了方程的根之间的关系。设$E$是多项式$f$的分裂域，那么$G$中的元素一定是$f$的根的一个**置换**。
@@ -69,7 +69,7 @@ $$
     $$
     \eta: a+b\sqrt{2} \to a-b\sqrt{2}
     $$
-    Galois群就是$\\{ e, \eta\\}$满足$\eta^2 = e$
+    Galois群就是$\{ e, \eta\}$满足$\eta^2 = e$
 
 上面这个群非常简单，和两个根的对称群同构。我们再看一个复杂一点的Galois群：
 
@@ -95,7 +95,7 @@ $$
 
     结果计算，实际上Galois群同构与$D_4$，也就是正方形的对称群：
     $$
-    G = <\eta, \xi> = \\{e, \eta, \eta^2, \eta^3, \xi, \xi\eta, \xi\eta^2, \xi\eta^3\\}
+    G = <\eta, \xi> = \{e, \eta, \eta^2, \eta^3, \xi, \xi\eta, \xi\eta^2, \xi\eta^3\}
     $$
     其中：
     $$
@@ -111,7 +111,7 @@ $$
     有限群$G$是可解群，当且仅当存在一个正规群列：
 
     $$
-    \\{ e \\} = G_0 \lhd G_1 \lhd G_2 \lhd \cdots \lhd G_r = G
+    \{ e \} = G_0 \lhd G_1 \lhd G_2 \lhd \cdots \lhd G_r = G
     $$
 
     其中商因子$G_i / G_{i-1}$都是素数阶循环群。
@@ -146,8 +146,8 @@ $$
 
 !!! theorem "Galois对应"
     设$E$是$F$的Galois扩域，$G = \mathrm{Gal}(E/F)$。再设：
-    $$\Sigma = \\{H \mid H\le G\\}$$是所有$G$的子群的集合。
-    $$\Omega=\\{K\mid F\subseteq K \subseteq E \\}$$是E、F的中间域。
+    $$\Sigma = \{H \mid H\le G\}$$是所有$G$的子群的集合。
+    $$\Omega=\{K\mid F\subseteq K \subseteq E \}$$是E、F的中间域。
     令：
     $$\phi: H\to \mathrm{Inv} H$$是一个从$\Sigma$到$\Omega$的映射（取子群的不动域）
     $$\psi: K\to \mathrm{Gal}(E/K)$$是一个从$\Omega$到$\Sigma$的映射（取中间域的Galois群）

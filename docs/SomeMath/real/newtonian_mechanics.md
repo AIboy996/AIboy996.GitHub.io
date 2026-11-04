@@ -149,10 +149,10 @@ $$
 
 $$
 \begin{aligned}
-&\vec{v}\\\\
-=& \vec{v_0} + \int_{0}^t \vec{a}dt \\\\
-=& (v_0\cos\theta, v_0\sin\theta) + (0, -gt)\\\\
-=& (v_0\cos\theta, v_0\sin\theta -gt)\\\\
+&\vec{v}\\
+=& \vec{v_0} + \int_{0}^t \vec{a}dt \\
+=& (v_0\cos\theta, v_0\sin\theta) + (0, -gt)\\
+=& (v_0\cos\theta, v_0\sin\theta -gt)\\
 \end{aligned}
 $$
 
