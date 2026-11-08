@@ -15,7 +15,7 @@ include:
 
 <figure markdown>
 
-[![thuml/depyf - GitHub](https://gh-card.dev/repos/thuml/depyf.svg?fullname=)](https://github.com/thuml/depyf)
+[![thuml/depyf - GitHub](https://github-stats-extended.vercel.app/api/pin?username=thuml&repo=thuml%2Fdepyf&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/thuml/depyf)
 
 </figure>
 

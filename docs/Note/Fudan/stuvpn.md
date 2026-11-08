@@ -46,7 +46,7 @@ tags:
 
 <figure markdown>
 
-[![docker-easyconnect/docker-easyconnect- GitHub](https://gh-card.dev/repos/docker-easyconnect/docker-easyconnect.svg?fullname=)](https://github.com/docker-easyconnect/docker-easyconnect)
+[![docker-easyconnect/docker-easyconnect- GitHub](https://github-stats-extended.vercel.app/api/pin?username=docker-easyconnect&repo=docker-easyconnect%2Fdocker-easyconnect&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/docker-easyconnect/docker-easyconnect)
 
 </figure>
 

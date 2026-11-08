@@ -21,7 +21,7 @@ tags:
 感谢Overleaf开源的代码！！
 
 <figure markdown>
-[![Overleaf - GitHub](https://gh-card.dev/repos/overleaf/toolkit.svg?fullname=)](https://github.com/overleaf/toolkit/)
+[![Overleaf - GitHub](https://github-stats-extended.vercel.app/api/pin?username=overleaf&repo=overleaf%2Ftoolkit&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/overleaf/toolkit/)
 </figure>
 
 ## 部署

@@ -37,7 +37,7 @@ sudo modprobe it87
 
 <figure markdown>
 
-[![guan-ry/FanControlServerApp - GitHub](https://gh-card.dev/repos/guan-ry/FanControlServerApp.svg?fullname=)](https://github.com/guan-ry/FanControlServerApp)
+[![guan-ry/FanControlServerApp - GitHub](https://github-stats-extended.vercel.app/api/pin?username=guan-ry&repo=guan-ry%2FFanControlServerApp&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/guan-ry/FanControlServerApp)
 
 </figure>
 

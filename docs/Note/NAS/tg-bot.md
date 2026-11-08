@@ -63,7 +63,7 @@ tags:
 
 <figure markdown>
 
-[![AIboy996/TMbot - GitHub](https://gh-card.dev/repos/AIboy996/TMbot.svg?fullname=)](https://github.com/AIboy996/TMbot)
+[![AIboy996/TMbot - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AIboy996&repo=AIboy996%2FTMbot&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AIboy996/TMbot)
 
 </figure>
 

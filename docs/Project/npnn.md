@@ -7,7 +7,7 @@ tags:
 # npnn
 
 <figure markdown>
-[![AIboy996/npnn - GitHub](https://gh-card.dev/repos/AIboy996/npnn.svg?fullname=)](https://github.com/AIboy996/npnn)
+[![AIboy996/npnn - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AIboy996&repo=AIboy996%2Fnpnn&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AIboy996/npnn)
 </figure>
 
 

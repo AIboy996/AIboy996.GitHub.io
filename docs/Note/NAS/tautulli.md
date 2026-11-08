@@ -25,7 +25,7 @@ tags:
 最近找到了一个新玩具：
 
 <figure markdown>
-[![ccbikai/BroadcastChannel - GitHub](https://gh-card.dev/repos/ccbikai/BroadcastChannel.svg?fullname=)](https://github.com/ccbikai/BroadcastChannel)
+[![ccbikai/BroadcastChannel - GitHub](https://github-stats-extended.vercel.app/api/pin?username=ccbikai&repo=ccbikai%2FBroadcastChannel&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/ccbikai/BroadcastChannel)
 </figure>
 
 这个项目可以把telegram的频道转换成一个**微博客**。我曾经苦苦寻找了很多类似的微博客项目，例如很热门的[Memos](https://github.com/usememos/memos)：
@@ -61,20 +61,20 @@ tags:
 它可以监控Plex的活动，还可以作为把Plex的实时活动推送到其他平台（自然是[支持Telegram](https://github.com/Tautulli/Tautulli/wiki/Notification-Agents-Guide#telegram)的），伟大无需多言！
 
 <figure markdown>
-[![Tautulli/Tautulli - GitHub](https://gh-card.dev/repos/Tautulli/Tautulli.svg?fullname=)](https://github.com/Tautulli/Tautulli)
+[![Tautulli/Tautulli - GitHub](https://github-stats-extended.vercel.app/api/pin?username=Tautulli&repo=Tautulli%2FTautulli&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/Tautulli/Tautulli)
 </figure>
 
 题外话：Tautalli是我从下面这个Bangumi自动点格子项目看到的，果然程序员的懒惰是第一生产力。
 
 <figure markdown>
-[![SanaeMio/Bangumi-syncer - GitHub](https://gh-card.dev/repos/SanaeMio/Bangumi-syncer.svg?fullname=)](https://github.com/SanaeMio/Bangumi-syncer)
+[![SanaeMio/Bangumi-syncer - GitHub](https://github-stats-extended.vercel.app/api/pin?username=SanaeMio&repo=SanaeMio%2FBangumi-syncer&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/SanaeMio/Bangumi-syncer)
 </figure>
 
 ### webhook payload模板
 默认情况下，Tautalli的Telegram消息模板太简陋了。我去找了一个比较丰富的：
 
 <figure markdown>
-[![smtdev/tautulli-telegram-notifications - GitHub](https://gh-card.dev/repos/smtdev/tautulli-telegram-notifications.svg?fullname=)](https://github.com/smtdev/tautulli-telegram-notifications)
+[![smtdev/tautulli-telegram-notifications - GitHub](https://github-stats-extended.vercel.app/api/pin?username=smtdev&repo=smtdev%2Ftautulli-telegram-notifications&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/smtdev/tautulli-telegram-notifications)
 </figure>
 
 例如每次看完一个剧集，就在频道内发送：
@@ -122,7 +122,7 @@ sudo snap install qv2ray
 V2ray core需要从Github下载：
 
 <figure markdown>
-[![v2fly/v2ray-core - GitHub](https://gh-card.dev/repos/v2fly/v2ray-core.svg?fullname=)](https://github.com/v2fly/v2ray-core)
+[![v2fly/v2ray-core - GitHub](https://github-stats-extended.vercel.app/api/pin?username=v2fly&repo=v2fly%2Fv2ray-core&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/v2fly/v2ray-core)
 </figure>
 
 下载Linux-86的预编译二进制文件，然后解压到Qv2ray指定的位置即可。

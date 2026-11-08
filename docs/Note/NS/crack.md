@@ -24,7 +24,7 @@ tags:
 
 <figure markdown>
 
-[![xfangfang/wiliwili - GitHub](https://gh-card.dev/repos/xfangfang/wiliwili.svg?fullname=)](https://github.com/xfangfang/wiliwili)
+[![xfangfang/wiliwili - GitHub](https://github-stats-extended.vercel.app/api/pin?username=xfangfang&repo=xfangfang%2Fwiliwili&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/xfangfang/wiliwili)
 
 </figure>
 
@@ -32,7 +32,7 @@ tags:
 
 <figure markdown>
 
-[![XorTroll/Goldleaf - GitHub](https://gh-card.dev/repos/XorTroll/Goldleaf.svg?fullname=)](https://github.com/XorTroll/Goldleaf)
+[![XorTroll/Goldleaf - GitHub](https://github-stats-extended.vercel.app/api/pin?username=XorTroll&repo=XorTroll%2FGoldleaf&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/XorTroll/Goldleaf)
 
 </figure>
 
@@ -40,7 +40,7 @@ tags:
 
 <figure markdown>
 
-[![thestr4ng3r/chiaki - GitHub](https://gh-card.dev/repos/thestr4ng3r/chiaki.svg?fullname=)](https://github.com/thestr4ng3r/chiaki)
+[![thestr4ng3r/chiaki - GitHub](https://github-stats-extended.vercel.app/api/pin?username=thestr4ng3r&repo=thestr4ng3r%2Fchiaki&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/thestr4ng3r/chiaki)
 
 </figure>
 
@@ -76,7 +76,7 @@ tags:
 
 <figure markdown>
 
-[![esrrhs/atmosphere-switch - GitHub](https://gh-card.dev/repos/esrrhs/atmosphere-switch.svg?fullname=)](https://github.com/esrrhs/atmosphere-switch)
+[![esrrhs/atmosphere-switch - GitHub](https://github-stats-extended.vercel.app/api/pin?username=esrrhs&repo=esrrhs%2Fatmosphere-switch&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/esrrhs/atmosphere-switch)
 
 </figure>
 
@@ -102,7 +102,7 @@ tags:
     1. 如果你的NS还可以正常进入系统
         - 直接使用一个GUI软件修改即可：
     <figure markdown>
-    [![CaiMiao/Tencent-switcher-GUI - GitHub](https://gh-card.dev/repos/CaiMiao/Tencent-switcher-GUI.svg?fullname=)](https://github.com/CaiMiao/Tencent-switcher-GUI)
+    [![CaiMiao/Tencent-switcher-GUI - GitHub](https://github-stats-extended.vercel.app/api/pin?username=CaiMiao&repo=CaiMiao%2FTencent-switcher-GUI&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/CaiMiao/Tencent-switcher-GUI)
     </figure>
 
     2. 如果你的NS无法正常引导系统了，但是还可以进Hekate

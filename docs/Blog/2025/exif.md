@@ -72,7 +72,7 @@ git push origin --force --tags
 
 <figure markdown>
 
-[![newren/git-filter-repo - GitHub](https://gh-card.dev/repos/newren/git-filter-repo.svg?fullname=)](https://github.com/newren/git-filter-repo)
+[![newren/git-filter-repo - GitHub](https://github-stats-extended.vercel.app/api/pin?username=newren&repo=newren%2Fgit-filter-repo&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/newren/git-filter-repo)
 
 </figure>
 
@@ -84,7 +84,7 @@ git push origin --force --tags
 
 <figure markdown>
 
-[![exiftool/exiftool - GitHub](https://gh-card.dev/repos/exiftool/exiftool.svg?fullname=)](https://github.com/exiftool/exiftool)
+[![exiftool/exiftool - GitHub](https://github-stats-extended.vercel.app/api/pin?username=exiftool&repo=exiftool%2Fexiftool&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/exiftool/exiftool)
 
 </figure>
 

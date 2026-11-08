@@ -7,7 +7,7 @@ tags:
 # AirPrint-with-Python
 
 <figure markdown>
-[![AIboy996/AirPrint-with-Python - GitHub](https://gh-card.dev/repos/AIboy996/AirPrint-with-Python.svg?fullname=)](https://github.com/AIboy996/AirPrint-with-Python)
+[![AIboy996/AirPrint-with-Python - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AIboy996&repo=AIboy996%2FAirPrint-with-Python&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AIboy996/AirPrint-with-Python)
 </figure>
 
 

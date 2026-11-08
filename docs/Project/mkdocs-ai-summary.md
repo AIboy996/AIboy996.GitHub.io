@@ -8,7 +8,7 @@ tags:
 
 <figure markdown>
 
-[![AIboy996/mkdocs-ai-summary - GitHub](https://gh-card.dev/repos/AIboy996/mkdocs-ai-summary.svg?fullname=)](https://github.com/AIboy996/mkdocs-ai-summary)
+[![AIboy996/mkdocs-ai-summary - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AIboy996&repo=AIboy996%2Fmkdocs-ai-summary&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AIboy996/mkdocs-ai-summary)
 
 </figure>
 

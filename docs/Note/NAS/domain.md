@@ -130,7 +130,7 @@ TLD 的另一个目的是帮助分类和传达域名的目的。每个 TLD 都�
 
 ddns-go就是一个很好用的软件：
 <figure markdown>
-[![](https://gh-card.dev/repos/jeessy2/ddns-go.svg)](https://github.com/jeessy2/ddns-go)
+[![](https://github-stats-extended.vercel.app/api/pin?username=jeessy2&repo=jeessy2%2Fddns-go&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/jeessy2/ddns-go)
 </figure>
 
 - 支持Mac、Windows、Linux系统，支持ARM、x86架构

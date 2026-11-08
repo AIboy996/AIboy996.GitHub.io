@@ -9,7 +9,7 @@ include:
 
 <figure markdown>
 
-[![owenliang/torch-thins - GitHub](https://gh-card.dev/repos/owenliang/torch-thins.svg?fullname=)](https://github.com/owenliang/torch-thins)
+[![owenliang/torch-thins - GitHub](https://github-stats-extended.vercel.app/api/pin?username=owenliang&repo=owenliang%2Ftorch-thins&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/owenliang/torch-thins)
 
 </figure>
 

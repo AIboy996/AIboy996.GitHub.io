@@ -24,7 +24,7 @@ QuickLook（快速预览）是Mac上最好用的功能之一。
 
 <figure markdown>
 
-[![toland/qlmarkdown - GitHub](https://gh-card.dev/repos/toland/qlmarkdown.svg?fullname=)](https://github.com/toland/qlmarkdown)
+[![toland/qlmarkdown - GitHub](https://github-stats-extended.vercel.app/api/pin?username=toland&repo=toland%2Fqlmarkdown&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/toland/qlmarkdown)
 
 </figure>
 
@@ -43,7 +43,7 @@ Mac上我使用的是[Keka](https://www.keka.io/en/)来压缩、解压缩文件�
 
 <figure markdown>
 
-[![srirangav/qlZipInfo - GitHub](https://gh-card.dev/repos/srirangav/qlZipInfo.svg?fullname=)](https://github.com/srirangav/qlZipInfo)
+[![srirangav/qlZipInfo - GitHub](https://github-stats-extended.vercel.app/api/pin?username=srirangav&repo=srirangav%2FqlZipInfo&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/srirangav/qlZipInfo)
 
 </figure>
 
@@ -71,7 +71,7 @@ Mac上我使用的是[Keka](https://www.keka.io/en/)来压缩、解压缩文件�
 
 <figure markdown>
 
-[![whomwah/qlstephen - GitHub](https://gh-card.dev/repos/whomwah/qlstephen.svg?fullname=)](https://github.com/whomwah/qlstephen)
+[![whomwah/qlstephen - GitHub](https://github-stats-extended.vercel.app/api/pin?username=whomwah&repo=whomwah%2Fqlstephen&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/whomwah/qlstephen)
 
 </figure>
 
@@ -91,7 +91,7 @@ brew install --cask qlstephen
 
 <figure markdown>
 
-[![haokaiyang/Mac-QuickLook - GitHub](https://gh-card.dev/repos/haokaiyang/Mac-QuickLook.svg?fullname=)](https://github.com/haokaiyang/Mac-QuickLook)
+[![haokaiyang/Mac-QuickLook - GitHub](https://github-stats-extended.vercel.app/api/pin?username=haokaiyang&repo=haokaiyang%2FMac-QuickLook&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/haokaiyang/Mac-QuickLook)
 
 </figure>
 
@@ -109,7 +109,7 @@ brew install --cask qlstephen
 
 <figure markdown>
 
-[![richie5um/QLZip - GitHub](https://gh-card.dev/repos/richie5um/QLZip.svg?fullname=)](https://github.com/richie5um/QLZip)
+[![richie5um/QLZip - GitHub](https://github-stats-extended.vercel.app/api/pin?username=richie5um&repo=richie5um%2FQLZip&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/richie5um/QLZip)
 
 </figure>
 

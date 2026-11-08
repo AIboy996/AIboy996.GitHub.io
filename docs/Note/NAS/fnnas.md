@@ -39,7 +39,7 @@ ai-summary-config:
 
 <figure markdown>
 
-[![miskcoo/ugreen_leds_controller - GitHub](https://gh-card.dev/repos/miskcoo/ugreen_leds_controller.svg?fullname=)](https://github.com/miskcoo/ugreen_leds_controller)
+[![miskcoo/ugreen_leds_controller - GitHub](https://github-stats-extended.vercel.app/api/pin?username=miskcoo&repo=miskcoo%2Fugreen_leds_controller&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/miskcoo/ugreen_leds_controller)
 
 </figure>
 

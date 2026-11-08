@@ -7,7 +7,7 @@ tags:
 
 vscode默认支持的markdown语法比较少，我日常使用的几个扩展语法都不支持。有个插件可以部分兼容，但总是有一些不满意的地方：
 <figure markdown>
-[![qjebbs/vscode-markdown-extended](https://gh-card.dev/repos/qjebbs/vscode-markdown-extended.svg?fullname=)](https://github.com/qjebbs/vscode-markdown-extended)
+[![qjebbs/vscode-markdown-extended](https://github-stats-extended.vercel.app/api/pin?username=qjebbs&repo=qjebbs%2Fvscode-markdown-extended&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/qjebbs/vscode-markdown-extended)
 </figure>
 
 好在它是开源的，那我就自己改一改。

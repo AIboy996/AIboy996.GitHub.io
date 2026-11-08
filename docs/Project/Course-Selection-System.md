@@ -8,7 +8,7 @@ tags:
 # Course-Selection-System
 
 <figure markdown>
-[![AIboy996/Course-Selection-System - GitHub](https://gh-card.dev/repos/AIboy996/Course-Selection-System.svg?fullname=)](https://github.com/AIboy996/Course-Selection-System)
+[![AIboy996/Course-Selection-System - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AIboy996&repo=AIboy996%2FCourse-Selection-System&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AIboy996/Course-Selection-System)
 </figure>
 
 !!! success

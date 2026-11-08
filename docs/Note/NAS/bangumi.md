@@ -17,7 +17,7 @@ B站追番已经成为历史，现在基本只能靠社区里热心二次元不�
 
 <figure markdown>
 
-[![EstrellaXD/Auto_Bangumi - GitHub](https://gh-card.dev/repos/EstrellaXD/Auto_Bangumi.svg?fullname=)](https://github.com/EstrellaXD/Auto_Bangumi)
+[![EstrellaXD/Auto_Bangumi - GitHub](https://github-stats-extended.vercel.app/api/pin?username=EstrellaXD&repo=EstrellaXD%2FAuto_Bangumi&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/EstrellaXD/Auto_Bangumi)
 
 </figure>
 
@@ -25,7 +25,7 @@ B站追番已经成为历史，现在基本只能靠社区里热心二次元不�
 
 <figure markdown>
 
-[![wushuo894/ani-rss - GitHub](https://gh-card.dev/repos/wushuo894/ani-rss.svg?fullname=)](https://github.com/wushuo894/ani-rss)
+[![wushuo894/ani-rss - GitHub](https://github-stats-extended.vercel.app/api/pin?username=wushuo894&repo=wushuo894%2Fani-rss&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/wushuo894/ani-rss)
 
 </figure>
 

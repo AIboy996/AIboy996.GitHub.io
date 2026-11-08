@@ -32,7 +32,7 @@ hide:
 - [markdown guide](https://www.markdownguide.org/)
 - [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 - [mkdocs-material configure file](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
-- [GitHub Card](https://gh-card.dev/)
+- [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats#github-extra-pins)
 - [David Lippman's Homepage: Great graphing tools](http://dlippman.imathas.com/)
 
 ## Special

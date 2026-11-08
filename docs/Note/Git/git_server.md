@@ -30,7 +30,7 @@ Gitee和GitHub类似，前者是国内的服务商提供的，网络访问更加
 
 <figure markdown>
 
-[![go-gitea/gitea - GitHub](https://gh-card.dev/repos/go-gitea/gitea.svg?fullname=)](https://github.com/go-gitea/gitea)
+[![go-gitea/gitea - GitHub](https://github-stats-extended.vercel.app/api/pin?username=go-gitea&repo=go-gitea%2Fgitea&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/go-gitea/gitea)
 
 </figure>
 
@@ -38,6 +38,6 @@ gitbucket：
 
 <figure markdown>
 
-[![gitbucket/gitbucket - GitHub](https://gh-card.dev/repos/gitbucket/gitbucket.svg?fullname=)](https://github.com/gitbucket/gitbucket)
+[![gitbucket/gitbucket - GitHub](https://github-stats-extended.vercel.app/api/pin?username=gitbucket&repo=gitbucket%2Fgitbucket&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/gitbucket/gitbucket)
 
 </figure>

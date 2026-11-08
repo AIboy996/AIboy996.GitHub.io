@@ -83,7 +83,7 @@ a.friend > div img {
 ### 小工具
 
 - [shields.io：生成小badge](https://shields.io/)
-- [gh-card：生成GitHub仓库小卡片](https://gh-card.dev/)
+- [github-stats-extended：生成GitHub仓库卡片](https://github.com/stats-organization/github-stats-extended)
 - [appicon forge：DIY图标](https://zhangyu1818.github.io/appicon-forge/)
 - [David Lippman's：超好用的graphing tools](http://dlippman.imathas.com/)
 - [graphviz：图可视化工具](https://www.graphviz.org/)

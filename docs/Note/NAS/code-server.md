@@ -20,7 +20,7 @@ vscode是最受欢迎的代码编辑器之一，也是我用的最多的编辑�
 
 <figure markdown>
 
-[![coder/code-server - GitHub](https://gh-card.dev/repos/coder/code-server.svg?fullname=)](https://github.com/coder/code-server)
+[![coder/code-server - GitHub](https://github-stats-extended.vercel.app/api/pin?username=coder&repo=coder%2Fcode-server&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/coder/code-server)
 
 </figure>
 

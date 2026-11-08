@@ -49,7 +49,7 @@ tags:
 
 <figure markdown>
 
-[![minio/minio - GitHub](https://gh-card.dev/repos/minio/minio.svg?fullname=)](https://github.com/minio/minio)
+[![minio/minio - GitHub](https://github-stats-extended.vercel.app/api/pin?username=minio&repo=minio%2Fminio&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/minio/minio)
 
 </figure>
 

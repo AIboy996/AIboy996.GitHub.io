@@ -12,7 +12,7 @@ adb大家都不陌生，可以用来调试安卓机器，非常强大。
 
 <figure markdown>
 
-[![Genymobile/scrcpy - GitHub](https://gh-card.dev/repos/Genymobile/scrcpy.svg?fullname=)](https://github.com/Genymobile/scrcpy)
+[![Genymobile/scrcpy - GitHub](https://github-stats-extended.vercel.app/api/pin?username=Genymobile&repo=Genymobile%2Fscrcpy&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/Genymobile/scrcpy)
 
 </figure>
 

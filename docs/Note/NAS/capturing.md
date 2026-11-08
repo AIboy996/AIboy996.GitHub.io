@@ -39,7 +39,7 @@ tags:
 
 <figure markdown>
 
-[![EasyNVR/EasyNVR - GitHub](https://gh-card.dev/repos/EasyNVR/EasyNVR.svg?fullname=)](https://github.com/EasyNVR/EasyNVR)
+[![EasyNVR/EasyNVR - GitHub](https://github-stats-extended.vercel.app/api/pin?username=EasyNVR&repo=EasyNVR%2FEasyNVR&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/EasyNVR/EasyNVR)
 
 </figure>
 
@@ -47,7 +47,7 @@ tags:
 
 <figure markdown>
 
-[![blakeblackshear/frigate - GitHub](https://gh-card.dev/repos/blakeblackshear/frigate.svg?fullname=)](https://github.com/blakeblackshear/frigate)
+[![blakeblackshear/frigate - GitHub](https://github-stats-extended.vercel.app/api/pin?username=blakeblackshear&repo=blakeblackshear%2Ffrigate&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/blakeblackshear/frigate)
 
 </figure>
 
@@ -57,7 +57,7 @@ tags:
 
 <figure markdown>
 
-[![AlexxIT/go2rtc - GitHub](https://gh-card.dev/repos/AlexxIT/go2rtc.svg?fullname=)](https://github.com/AlexxIT/go2rtc)
+[![AlexxIT/go2rtc - GitHub](https://github-stats-extended.vercel.app/api/pin?username=AlexxIT&repo=AlexxIT%2Fgo2rtc&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/AlexxIT/go2rtc)
 
 </figure>
 

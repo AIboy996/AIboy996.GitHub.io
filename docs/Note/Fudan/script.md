@@ -8,7 +8,7 @@ tags:
 
 <figure markdown>
 
-[![aiboy996/fudan_spider - GitHub](https://gh-card.dev/repos/aiboy996/fudan_spider.svg?fullname=)](https://github.com/aiboy996/fudan_spider)
+[![aiboy996/fudan_spider - GitHub](https://github-stats-extended.vercel.app/api/pin?username=aiboy996&repo=aiboy996%2Ffudan_spider&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/aiboy996/fudan_spider)
 
 </figure>
 
@@ -183,7 +183,7 @@ se.post(
 
 <figure markdown>
 
-[![Finb/Bark - GitHub](https://gh-card.dev/repos/Finb/Bark.svg?fullname=)](https://github.com/Finb/Bark)
+[![Finb/Bark - GitHub](https://github-stats-extended.vercel.app/api/pin?username=Finb&repo=Finb%2FBark&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/Finb/Bark)
 
 </figure>
 
@@ -206,7 +206,7 @@ se.post(
 
 <figure markdown>
 
-[![DanXi-Dev/DanXi - GitHub](https://gh-card.dev/repos/DanXi-Dev/DanXi.svg?fullname=)](https://github.com/DanXi-Dev/DanXi)
+[![DanXi-Dev/DanXi - GitHub](https://github-stats-extended.vercel.app/api/pin?username=DanXi-Dev&repo=DanXi-Dev%2FDanXi&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/DanXi-Dev/DanXi)
 
 </figure>
 

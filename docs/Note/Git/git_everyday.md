@@ -124,7 +124,7 @@ DESCRIPTION
 ## 学习git
 [learnGitBranching](https://learngitbranching.js.org/)是一个很好用的在线交互式git学习网站：
 <figure markdown>
-[![](https://gh-card.dev/repos/pcottle/learnGitBranching.svg)](https://github.com/pcottle/learnGitBranching)
+[![](https://github-stats-extended.vercel.app/api/pin?username=pcottle&repo=pcottle%2FlearnGitBranching&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/pcottle/learnGitBranching)
 </figure>
 
 ## git GUI

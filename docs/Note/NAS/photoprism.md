@@ -17,43 +17,43 @@ NAS上的云相册软件还是非常多的，我列举几个热门的如下：
 
 <figure markdown>
 
-[![photoprism/photoprism - GitHub](https://gh-card.dev/repos/photoprism/photoprism.svg?fullname=)](https://github.com/photoprism/photoprism)
+[![photoprism/photoprism - GitHub](https://github-stats-extended.vercel.app/api/pin?username=photoprism&repo=photoprism%2Fphotoprism&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/photoprism/photoprism)
 
 </figure>
 
 <figure markdown>
 
-[![immich-app/immich - GitHub](https://gh-card.dev/repos/immich-app/immich.svg?fullname=)](https://github.com/immich-app/immich)
+[![immich-app/immich - GitHub](https://github-stats-extended.vercel.app/api/pin?username=immich-app&repo=immich-app%2Fimmich&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/immich-app/immich)
 
 </figure>
 
 <figure markdown>
 
-[![LibrePhotos/librephotos - GitHub](https://gh-card.dev/repos/LibrePhotos/librephotos.svg?fullname=)](https://github.com/LibrePhotos/librephotos)
+[![LibrePhotos/librephotos - GitHub](https://github-stats-extended.vercel.app/api/pin?username=LibrePhotos&repo=LibrePhotos%2Flibrephotos&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/LibrePhotos/librephotos)
 
 </figure>
 
 <figure markdown>
 
-[![Webreaper/Damselfly - GitHub](https://gh-card.dev/repos/Webreaper/Damselfly.svg?fullname=)](https://github.com/Webreaper/Damselfly)
+[![Webreaper/Damselfly - GitHub](https://github-stats-extended.vercel.app/api/pin?username=Webreaper&repo=Webreaper%2FDamselfly&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/Webreaper/Damselfly)
 
 </figure>
 
 <figure markdown>
 
-[![photoview/photoview - GitHub](https://gh-card.dev/repos/photoview/photoview.svg?fullname=)](https://github.com/photoview/photoview)
+[![photoview/photoview - GitHub](https://github-stats-extended.vercel.app/api/pin?username=photoview&repo=photoview%2Fphotoview&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/photoview/photoview)
 
 </figure>
 
 <figure markdown>
 
-[![Piwigo/Piwigo - GitHub](https://gh-card.dev/repos/Piwigo/Piwigo.svg?fullname=)](https://github.com/Piwigo/Piwigo)
+[![Piwigo/Piwigo - GitHub](https://github-stats-extended.vercel.app/api/pin?username=Piwigo&repo=Piwigo%2FPiwigo&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/Piwigo/Piwigo)
 
 </figure>
 
 <figure markdown>
 
-[![LycheeOrg/Lychee - GitHub](https://gh-card.dev/repos/LycheeOrg/Lychee.svg?fullname=)](https://github.com/LycheeOrg/Lychee)
+[![LycheeOrg/Lychee - GitHub](https://github-stats-extended.vercel.app/api/pin?username=LycheeOrg&repo=LycheeOrg%2FLychee&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/LycheeOrg/Lychee)
 
 </figure>
 

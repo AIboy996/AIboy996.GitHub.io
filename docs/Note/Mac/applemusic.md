@@ -93,7 +93,7 @@ Apple Music绝对是我用过的最好的音乐软件，没有之一。
 
     <figure markdown>
     
-    [![foamzou/bilibili-downloader - GitHub](https://gh-card.dev/repos/foamzou/bilibili-downloader.svg?fullname=)](https://github.com/foamzou/bilibili-downloader)
+    [![foamzou/bilibili-downloader - GitHub](https://github-stats-extended.vercel.app/api/pin?username=foamzou&repo=foamzou%2Fbilibili-downloader&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/foamzou/bilibili-downloader)
     
     </figure>
 
@@ -107,7 +107,7 @@ Macbook上推荐使用：
 
 <figure markdown>
 
-[![ddddxxx/LyricsX - GitHub](https://gh-card.dev/repos/ddddxxx/LyricsX.svg?fullname=)](https://github.com/ddddxxx/LyricsX)
+[![ddddxxx/LyricsX - GitHub](https://github-stats-extended.vercel.app/api/pin?username=ddddxxx&repo=ddddxxx%2FLyricsX&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/ddddxxx/LyricsX)
 
 </figure>
 

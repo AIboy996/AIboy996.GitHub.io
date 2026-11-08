@@ -25,7 +25,7 @@ tags:
 
     <figure markdown>
     
-    [![aiboy996/fudan_spider - GitHub](https://gh-card.dev/repos/aiboy996/fudan_spider.svg?fullname=)](https://github.com/aiboy996/fudan_spider)
+    [![aiboy996/fudan_spider - GitHub](https://github-stats-extended.vercel.app/api/pin?username=aiboy996&repo=aiboy996%2Ffudan_spider&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/aiboy996/fudan_spider)
     
     </figure>
     
@@ -33,6 +33,6 @@ tags:
 
     <figure markdown>
     
-    [![aiboy996/bilibili_poster - GitHub](https://gh-card.dev/repos/aiboy996/bilibili_poster.svg?fullname=)](https://github.com/aiboy996/bilibili_poster)
+    [![aiboy996/bilibili_poster - GitHub](https://github-stats-extended.vercel.app/api/pin?username=aiboy996&repo=aiboy996%2Fbilibili_poster&show_owner=true&description_lines_count=1&theme=light_github_repocard)](https://github.com/aiboy996/bilibili_poster)
     
     </figure>
